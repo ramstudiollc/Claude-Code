@@ -11,12 +11,10 @@ import sys
 
 import pymupdf as fitz
 
-# Brand Guideline p.2 (white-on-navy). Boxes are in PDF units.
-PAGE = 1
+# (page index, aria label, box in PDF units) — boxes found by probing the guideline PDF.
 ASSETS = {
-    "LOGO_WHITE":  ("Ram Studio LLC",                  fitz.Rect(187.0, 457.3, 845.4, 577.7)),
-    "ICON_WHITE":  ("Ram Studio icon",                 fitz.Rect(1160.1, 219.2, 1280.5, 339.6)),
-    "BADGE_WHITE": ("Ram Studio LLC, established 2021", fitz.Rect(1172.2, 563.8, 1268.0, 659.5)),
+    # navy-on-white wordmark, Brand Guideline p.4 ("Reversed and single color")
+    "LOGO": (3, "Ram Studio LLC", fitz.Rect(838.4, 516.1, 1324.3, 606.2)),
 }
 
 
@@ -106,10 +104,10 @@ def build(page, key, label, box):
 
 
 def main(pdf_path, html_path):
-    page = fitz.open(pdf_path)[PAGE]
+    doc = fitz.open(pdf_path)
     html = open(html_path, encoding="utf-8").read()
-    for key, (label, box) in ASSETS.items():
-        svg = build(page, key, label, box)
+    for key, (pno, label, box) in ASSETS.items():
+        svg = build(doc[pno], key, label, box)
         pattern = re.compile(rf"<!--{key}-->.*?<!--/{key}-->", re.S)
         if not pattern.search(html):
             sys.exit(f"marker <!--{key}--> not found in {html_path}")
