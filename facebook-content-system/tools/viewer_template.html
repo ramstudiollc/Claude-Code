@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>30-Day Content Plan</title>
+<style>
+:root{--bg:#f7f7f5;--card:#ffffff;--ink:#1d1f23;--muted:#5d636e;--line:#e3e4e8;--accent:#0f766e;--accent-ink:#ffffff;--reel:#eef2ff;--reel-ink:#3730a3;--img:#ecfdf5;--img-ink:#065f46;--warn:#92400e;--code:#f1f2f4}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121417;--card:#1b1e23;--ink:#e8e9ec;--muted:#a0a6b1;--line:#2c3038;--accent:#2dd4bf;--accent-ink:#0b1514;--reel:#232a4a;--reel-ink:#c7d2fe;--img:#12312a;--img-ink:#a7f3d0;--warn:#fbbf24;--code:#23272e}}
+:root[data-theme="dark"]{--bg:#121417;--card:#1b1e23;--ink:#e8e9ec;--muted:#a0a6b1;--line:#2c3038;--accent:#2dd4bf;--accent-ink:#0b1514;--reel:#232a4a;--reel-ink:#c7d2fe;--img:#12312a;--img-ink:#a7f3d0;--warn:#fbbf24;--code:#23272e}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:12px 16px}
+h1{font-size:18px;margin:0 0 8px}
+.controls{display:flex;flex-wrap:wrap;gap:8px}
+select,input{font:inherit;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);min-width:0}
+input{flex:1 1 180px}
+main{max-width:980px;margin:0 auto;padding:12px 16px 48px}
+.day{margin:20px 0 6px;font-weight:700;color:var(--muted);font-size:13px;letter-spacing:.04em;text-transform:uppercase}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:8px 0;overflow:hidden}
+summary{cursor:pointer;padding:12px 14px;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;list-style:none}
+summary::-webkit-details-marker{display:none}
+.pill{font-size:12px;padding:2px 8px;border-radius:999px;font-weight:600;white-space:nowrap}
+.reel{background:var(--reel);color:var(--reel-ink)}.image{background:var(--img);color:var(--img-ink)}
+.meta{color:var(--muted);font-size:13px}
+.topic{font-weight:600;flex:1 1 300px}
+.body{padding:0 14px 14px}
+dl{display:grid;grid-template-columns:140px 1fr;gap:6px 12px;margin:8px 0}
+dt{color:var(--muted);font-size:13px}dd{margin:0}
+@media (max-width:600px){dl{grid-template-columns:1fr}dt{margin-top:6px}}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:640px}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{background:var(--code);font-size:12px;color:var(--muted)}
+pre{white-space:pre-wrap;background:var(--code);padding:10px;border-radius:8px;font:13px/1.45 ui-monospace,Menlo,Consolas,monospace;margin:6px 0}
+button{font:inherit;font-size:13px;padding:4px 10px;border-radius:8px;border:1px solid var(--line);background:var(--accent);color:var(--accent-ink);cursor:pointer}
+ul{margin:4px 0;padding-left:20px}
+a{color:var(--accent)}
+.vol{color:var(--warn);font-size:12px}
+h4{margin:14px 0 4px;font-size:14px}
+</style>
+</head>
+<body>
+<header>
+  <h1>30-Day Facebook Plan · AI + n8n Automation</h1>
+  <div class="controls">
+    <select id="fType"><option value="">All types</option><option value="reel">Reels</option><option value="image">Images</option></select>
+    <select id="fPillar"><option value="">All pillars</option></select>
+    <select id="fDay"><option value="">All days</option></select>
+    <input id="fq" type="search" placeholder="Search topic, hook, caption…">
+  </div>
+  <div class="meta" id="count"></div>
+</header>
+<main id="list"></main>
+<script>
+const POSTS = __DATA__;
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const pillars = [...new Map(POSTS.map(p => [p.pillar, p.pillar_name])).entries()];
+pillars.forEach(([k,v]) => $("#fPillar").insertAdjacentHTML("beforeend", `<option value="${k}">${k} — ${esc(v)}</option>`));
+for (let d=1; d<=30; d++) $("#fDay").insertAdjacentHTML("beforeend", `<option value="${d}">Day ${d}</option>`);
+try { const s = JSON.parse(localStorage.getItem("plan-filters")||"{}"); for (const k in s) { const el = document.getElementById(k); if (el) el.value = s[k]; } } catch(e) {}
+function card(p){
+  const isR = p.type === "reel";
+  let h = `<details id="${p.id}"><summary><span class="pill ${p.type}">${isR?"REEL "+p.runtime+"s":"IMAGE"}</span>
+  <span class="meta">#${String(p.post_no).padStart(3,"0")} · ${p.id} · ${p.time} BST</span><span class="topic">${esc(p.topic)}</span>
+  <span class="meta">${p.pillar} · ${esc(p.series)}</span></summary><div class="body"><dl>`;
+  [["Human problem","human_problem"],["Objective","objective"],["Hook","hook"],["Open loop","open_loop"],["Main idea","main_idea"],["Key value","value"],["Payoff","payoff"],["Takeaway","takeaway"],["CTA","cta"],["Visual concept","visual_concept"],["Format","format"]]
+    .filter(([l,k]) => p[k])
+    .forEach(([l,k]) => h += `<dt>${l}</dt><dd>${esc(p[k])}</dd>`);
+  if (p.loop) h += `<dt>Loop</dt><dd>${esc(p.loop)}</dd>`;
+  if (isR) h += `<dt>Pace</dt><dd>${p.wps} words/sec</dd>`;
+  h += `<dt>Spec</dt><dd>${esc(p.spec)}</dd></dl>`;
+  if (isR) {
+    h += `<h4>Retention drivers</h4><ul>` + Object.entries(p.retention).map(([k,v]) => `<li><b>${k}</b>: ${esc(v)}</li>`).join("") + `</ul>`;
+    h += `<h4>Script</h4><div class="tablewrap"><table><tr><th>Time</th><th>Voiceover</th><th>On-screen text</th><th>Visual</th></tr>` +
+      p.script.map(b => `<tr><td>${esc(b.t)}</td><td>${esc(b.vo)}</td><td>${esc(b.ost)}</td><td>${esc(b.vis)}</td></tr>`).join("") + `</table></div>`;
+  } else {
+    const d = p.design;
+    h += `<h4>On-image copy</h4><dl><dt>Headline</dt><dd><b>${esc(d.headline)}</b></dd>` + (d.subhead?`<dt>Subhead</dt><dd>${esc(d.subhead)}</dd>`:"") +
+      `<dt>Body</dt><dd><ul>${d.body.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></dd>` + (d.footer?`<dt>Footer</dt><dd>${esc(d.footer)}</dd>`:"") +
+      `<dt>Layout</dt><dd>${esc(d.layout)}</dd></dl>`;
+  }
+  h += `<h4>Caption <button data-copy="${p.id}">Copy</button></h4><pre>${esc(p.caption_full)}</pre>`;
+  h += `<h4>Production notes</h4><p>${esc(p.production_notes)}</p>`;
+  if (p.src.length) h += `<h4>Sources</h4><ul>` + p.src.map(s => `<li><a href="${esc(s.u)}" target="_blank" rel="noopener">${esc(s.t)}</a> — ${esc(s.p)}, ${esc(s.d)} ${s.v?'<span class="vol">re-check ≤48 h before posting</span>':''}</li>`).join("") + `</ul>`;
+  return h + `</div></details>`;
+}
+function render(){
+  const t=$("#fType").value, pl=$("#fPillar").value, d=$("#fDay").value, q=$("#fq").value.toLowerCase();
+  try { localStorage.setItem("plan-filters", JSON.stringify({fType:t,fPillar:pl,fDay:d})); } catch(e) {}
+  const rows = POSTS.filter(p => (!t||p.type===t) && (!pl||p.pillar===pl) && (!d||p.day==d) &&
+    (!q || (p.topic+" "+p.hook+" "+p.caption_full).toLowerCase().includes(q)));
+  let html = "", last = 0;
+  rows.forEach(p => { if (p.day !== last) { html += `<div class="day">Day ${p.day} · ${p.date}</div>`; last = p.day; } html += card(p); });
+  $("#list").innerHTML = html || "<p>No posts match.</p>";
+  $("#count").textContent = `${rows.length} of ${POSTS.length} posts`;
+}
+document.addEventListener("click", e => {
+  const id = e.target.dataset && e.target.dataset.copy; if (!id) return;
+  const p = POSTS.find(x => x.id === id);
+  navigator.clipboard && navigator.clipboard.writeText(p.caption_full).then(() => { e.target.textContent = "Copied"; setTimeout(()=>e.target.textContent="Copy",1200); });
+});
+["#fType","#fPillar","#fDay","#fq"].forEach(s => $(s).addEventListener("input", render));
+render();
+</script>
+</body>
+</html>
