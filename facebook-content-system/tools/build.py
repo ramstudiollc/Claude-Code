@@ -652,6 +652,8 @@ def main():
     write_qc(posts, sources, errors, warnings)
     if (ROOT / "tools" / "viewer_template.html").exists():
         write_viewer(posts, sources)
+    from content_pack import write_pack  # content only, no design: content-pack/
+    write_pack(posts, sources, PILLARS, ROOT, start)
     print(f"posts={len(posts)} reels={sum(p['type']=='reel' for p in posts)} images={sum(p['type']=='image' for p in posts)}")
     print(f"errors={len(errors)} warnings={len(warnings)}")
     for e in errors:

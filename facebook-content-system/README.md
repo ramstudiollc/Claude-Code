@@ -6,6 +6,7 @@ For the Facebook page **Asif** (facebook.com/Asif.myself.page). **120 production
 
 | You want to… | Open |
 |---|---|
+| **Just the content (ideas, scripts, image text, captions; no design)** | **`content-pack/`**: start with its README, then one file per day in `content-pack/days/` |
 | Browse every post on your phone or laptop (filters, copy-caption buttons) | `viewer.html` |
 | See the month at a glance | `03-calendar/calendar.md` |
 | Work in a spreadsheet (all fields, status column) | `03-calendar/calendar.xlsx` or `calendar.csv` |
@@ -36,8 +37,9 @@ For the Facebook page **Asif** (facebook.com/Asif.myself.page). **120 production
 06-production/   workflow.md · design-system.md · sourcing-and-licensing.md · image-fields.csv
 07-qc/           qc-report.md (generated) · manual-qc.md
 08-demos/        3 demo Reels (MP4) + 3 demo images (PNG) + README
+content-pack/    the whole plan as plain content: README · 30-day-plan.md · days/day-01…30.md · all-posts.json/.csv · HANDOFF-PROMPT.md (generated)
 data/            posts-w1…w4.yaml  ← the single source of truth · sources.yaml (47 dated sources)
-tools/           build.py (generate + QC) · export_image_fields.py · viewer_template.html
+tools/           build.py (generate + QC) · content_pack.py · export_image_fields.py · viewer_template.html
                  demo/  (voice-over, Reel and image renderers for 08-demos)
 viewer.html      (generated)
 ```
