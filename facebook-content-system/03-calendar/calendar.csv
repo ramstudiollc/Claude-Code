@@ -1,0 +1,1546 @@
+post_no,day,date,weekday,time_bst,id,type,series,pillar,format,topic,objective,hook,main_idea,key_value,cta,cta_type,visual_concept,caption,sources,spec,runtime_s,production_notes,script_or_copy_file,status
+1,1,2026-10-12,Mon,09:30,D01-I1,image,Automate This,AU — Automation & n8n,Decision tree,"Automate, delegate or delete? A 3-question filter",Saves + set the page's practical tone on Day 1,"Automate it, delegate it, or delete it?","Before automating a task, check if it should exist and if its steps are fixed.",A 3-question filter that stops people from automating broken or pointless processes.,Save it and run your own to-do list through it.,save,Clean vertical decision tree with three diamond questions and colour-coded exits.,"Before you automate anything, ask if it should exist at all.
+
+The 3-question filter I'd use before building any workflow:
+1. Does this task need to happen? If not, delete it.
+2. Are the steps the same every time? If not, a person should do it (or write the rules first).
+3. Does it happen every week or more? Then automation pays back the setup time.
+
+Automating a messy process just makes the mess faster.
+
+Save this and run your to-do list through it this week.
+
+#automation #productivity #n8n",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Build in the 'Decision tree' template (design-system.md). Q3 'No' exit = grey 'keep a checklist'. Keep arrows thick (8 px) so the flow reads at thumbnail size.,05-image-posts/week-1.md#D01-I1,planned
+2,1,2026-10-12,Mon,13:30,D01-R1,reel,Steal This Prompt,PA — Practical AI,Talking head + screen split,Reverse prompting: make AI ask you questions first,Reach + saves; first impression of 'one useful idea per Reel',Your AI stays generic until you add this.,Generic answers come from the AI guessing missing details; one line makes it ask instead of guess.,"Copy-paste line: 'Before you answer, ask me 5 questions…' that works in ChatGPT, Gemini or Claude.",Save the line (it's in the caption).,save,"Close-up talking head, cut to screen recording; side-by-side generic vs specific answer; final frame matches first frame for the loop.","Your AI stays generic until you add this one line before your request.
+
+Copy it:
+“Before you answer, ask me 5 questions that would help you do this better. Wait for my answers.”
+
+Why it works: the AI stops guessing your audience, budget and tone, and builds on your facts.
+
+Use it for posts, emails, plans and CVs. Anything where details matter.
+
+Save this for the next time an answer feels generic.
+
+#AItips #ChatGPT #productivity",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,34,Tool-agnostic: record in ChatGPT or Gemini. Use REAL outputs for the bakery example (record both versions on the day). Lock camera position so frame 1 and the last frame match exactly. Burned-in captions on.,04-reels/week-1.md#D01-R1,planned
+3,1,2026-10-12,Mon,18:30,D01-I2,image,AI Myth Check,LIT — AI literacy & safety,Glossary card,5 AI words explained in plain English,Shares to beginners; establish plain-language voice,"5 AI words, explained in plain English",Most AI news is confusing because of five words; plain definitions fix that.,"Plain definitions of model, prompt, context, hallucination and agent.",Send it to someone who just started using AI.,share,"Dictionary-style card: five bold terms in the accent colour, one-line definitions.","Most AI news is hard to follow because of 5 words. Here they are in plain English.
+
+Model: the AI 'brain' that writes the answer (GPT, Gemini, Claude are model families).
+Prompt: what you type or say.
+Context: everything the AI can see in this moment: your messages, files and instructions. More useful context, better answers.
+Hallucination: a confident answer that's wrong.
+Agent: AI that can do things (search, send, update a sheet), not just talk.
+
+Send this to someone who just started using AI.
+
+#AItips #ArtificialIntelligence #learnAI",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,"Glossary template. Keep definitions on one line each at 44 px minimum; if a line wraps, it's still fine at 2 lines but no more.",05-image-posts/week-1.md#D01-I2,planned
+4,1,2026-10-12,Mon,21:00,D01-R2,reel,Explain It Simply,AU — Automation & n8n,Diagram explainer + talking head,"Every automation is 3 parts: trigger, steps, result",Authority + mental model that later service posts build on,Every automation has just three parts.,Any automation = trigger (something happens) → steps (what should happen) → result (someone gets something).,A mental model that helps viewers spot automatable tasks in their own day.,"Comment a task you repeat daily; Asif replies with its trigger, steps and result.",question,Three empty boxes that fill one by one with icons; at the end the same three nodes appear as a real n8n canvas behind the diagram.,"Every automation has just three parts: trigger, steps, result.
+
+1) Trigger: something happens (a message, a form, 9 AM).
+2) Steps: what should happen next (save, check, write).
+3) Result: someone gets something (a reply, an alert, a file).
+
+If a task starts the same way and ends the same way every time, it can usually be automated.
+
+What's one task you repeat every day? Write it below and I'll reply with its trigger, steps and result.
+
+#automation #n8n #AIautomation",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,42,Motion template 'three boxes' (design-system.md). Build the 3-node n8n canvas on a demo workflow (Webhook → Google Sheets → Telegram/Messenger). Reply to every comment within 24 h with the 3 parts. Those replies are content for future posts.,04-reels/week-1.md#D01-R2,planned
+5,2,2026-10-13,Tue,09:30,D02-I1,image,Steal This Prompt,PA — Practical AI,Prompt card,Prompt rescue: 6 follow-ups when the first answer is bad,Saves,Bad AI answer? Don't start over. Send one of these.,The second message fixes most bad answers; match the problem to a follow-up.,Six problem → follow-up pairs people can copy.,Save it for the next disappointing answer.,save,"Two-column 'symptom → fix' card; symptoms in muted text, fixes as copyable quote chips.","Most people give up on a bad AI answer and open a new chat. The second message is usually where the good answer comes from.
+
+Match the problem to the fix:
+Too generic → “Use my details: [paste facts].”
+Too long → “Cut to 5 lines. Keep the numbers.”
+Wrong tone → “Rewrite like I'm texting a respected client.”
+Not sure it's true → “Which parts are you unsure about?”
+Messy → “Make a table: step, owner, deadline.”
+Missed the point → “My goal is [X]. What would you change?”
+
+Save this for the next answer that disappoints you.
+
+#AItips #ChatGPT #PromptTips",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Prompt-card template. Quote chips must be copyable from the caption (they are). Square brackets in accent colour to show 'fill this in'.,05-image-posts/week-1.md#D02-I1,planned
+6,2,2026-10-13,Tue,13:30,D02-R1,reel,Hidden Button,HF — Hidden features & tools,Phone-in-hand demo,Point your camera at a problem with Gemini Live,Reach + shares (feels like a discovery),Stop typing problems. Show them to AI.,Gemini Live's camera mode lets you show a real-world problem and talk through it; free on Android and iPhone.,"Where to tap, four everyday uses, and the one safety rule (never show passwords, cards or ID numbers).",Save it for the next thing that confuses you.,save,"Over-the-shoulder phone shots of real objects (router, bill, form, error screen) with the live AI response.","Stop typing problems. Show them to AI.
+
+Gemini Live has a camera mode: open Gemini → tap Live → turn on the camera, then ask out loud.
+It's free on Android and iPhone.
+
+I use it for:
+• blinking router lights
+• bills I don't understand
+• English forms
+• error screens
+
+One rule: never show passwords, bank cards or ID numbers on camera.
+And double-check any fix before you change settings. AI can be wrong.
+
+Save this for the next thing that confuses you.
+
+#GeminiAI #AItips #techtips","Gemini gets more personal, proactive and powerful (I/O 2025) (Google Blog (+ Gemini Apps Help 'Talk naturally with Gemini Live'), 2025-05-20) https://blog.google/products/gemini/gemini-app-updates-io-2025/",Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,38,"Record the router demo for real and keep the actual answer. If Gemini gets it wrong, re-shoot with a clearer label view; never fake the response. Blur account numbers on the bill. Record vertical at 1080×1920 with phone screen capture + a second angle.",04-reels/week-1.md#D02-R1,planned
+7,2,2026-10-13,Tue,18:30,D02-I2,image,What It Means For You,NEWS — Current developments,News card,5 AI updates from September 2026 that actually matter,Timeliness + shares; positions the page as current,5 AI updates from September that actually matter,Only five of September's AI updates change what normal users can do; here they are with who can use them.,"Plain-language summary of five verified updates, each with availability.",Save it; follow for the next monthly 'what matters' card.,follow,Numbered news list with small product logos replaced by neutral icons (no third-party logos); 'Checked 6 Oct 2026' stamp.,"Lots of AI news in September. These 5 actually change what you can do:
+
+1. Gemini Notebook (the tool formerly called NotebookLM) can now make ~60-second video summaries in 80+ languages, plus quizzes and flashcards from your notes.
+2. ChatGPT Images 2.5 (8 Sep): draw a rough sketch, and it turns it into a finished image. Also faster.
+3. Gemini skills (30 Sep): save an instruction once, use it with “/”. Gems turn into skills from November.
+4. Gemini app for Windows: Alt + Space opens it over any app.
+5. OpenAI dots (29 Sep): always-on agents. Only ChatGPT Pro and Business Premium for now.
+
+Which one will you try first?
+
+#AInews #ChatGPT #GeminiAI","Sharpen your study routine with new Gemini Notebook tools (Google Blog, 2026-09) https://blog.google/innovation-and-ai/products/gemini-notebook/new-study-tools-september-2026/ ; Introducing ChatGPT Images 2.5 (OpenAI, 2026-09-08) https://openai.com/index/introducing-chatgpt-images-2-5/ ; Let skills in Gemini tackle your most repetitive tasks (Google Blog (+ Gemini Apps Help 'About the transition from Gems to skills'), 2026-09-30) https://blog.google/products-and-platforms/products/gemini/automate-tasks-with-skills/ ; The Gemini desktop app is now available for Windows (Google Workspace Updates, 2026-09) https://workspaceupdates.googleblog.com/2026/09/the-gemini-desktop-app-is-now-available-for-Windows.html ; Introducing dots (OpenAI (help article ""Getting started with your dot""; TechCrunch 2026-09-29), 2026-09-29) https://openai.com/index/introducing-dots/","Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,News template. Do NOT use third-party logos on the image (trademark); neutral icons only. Re-check all five items the day before posting (volatile).,05-image-posts/week-1.md#D02-I2,planned
+8,2,2026-10-13,Tue,21:00,D02-R2,reel,AI Myth Check,LIT — AI literacy & safety,Green screen + diagram,Why AI makes things up (and the one prompt that catches it),Trust + shares; teaches safe use,AI doesn't lie. It does something stranger.,"AI predicts likely words, so it can produce realistic-looking fake sources; grounding + asking for exact quotes catches it.","Simple explanation of hallucination, the five hot-spot types, and the 'quote the exact line' check.",Follow for more AI Myth Checks.,follow,Asif over a green-screen of a chat containing a fake citation; animated 'next-word' probability bars; 'NOT FOUND' stamp.,"AI doesn't lie. It predicts.
+
+Language models generate the most likely next words. Ask for a source they don't have, and they can generate something that looks like a source: real-looking author, real-looking title, doesn't exist. That's a hallucination.
+
+Highest risk: exact numbers, dates, quotes, links and laws.
+
+The check I use:
+1. Turn on web search, or upload the document yourself.
+2. Ask: “Quote the exact line you used for each claim.”
+No quote, no trust.
+
+Follow for more AI Myth Checks.
+
+#AIliteracy #ChatGPT #AItips",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,40,Create the fake-citation example yourself by asking an AI for 'a source' on an obscure claim with search off; record it. Show the real search result returning nothing. Don't name or shame a specific tool; the behaviour applies to all.,04-reels/week-1.md#D02-R2,planned
+9,3,2026-10-14,Wed,09:30,D03-I1,image,Explain It Simply,AU — Automation & n8n,Glossary card,"Learn n8n in 4 words: trigger, node, credential, execution",Educate future automation buyers; saves,Learn n8n in 4 words,Four terms explain almost every n8n screen.,"Plain definitions of trigger, node, credential and execution, including the security habit of keeping logins in credentials.",Save it before you open n8n for the first time.,save,"Four tiles shaped like n8n nodes connected by a line, each holding one term and definition.","n8n looks complicated until you know 4 words.
+
+Trigger: what starts the workflow: a new message, a form, a time of day.
+Node: one step: read data, decide, write, send.
+Credential: your saved login to an app. Keep keys and passwords here, never typed inside a node.
+Execution: one run of the workflow. Open it to see exactly what happened at each step.
+
+Save this before you open n8n for the first time.
+
+#n8n #automation #nocode",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,"Draw node tiles in the brand style, not as copies of n8n's UI. The 'never typed inside a node' line is a deliberate security habit; keep it.",05-image-posts/week-1.md#D03-I1,planned
+10,3,2026-10-14,Wed,13:30,D03-R1,reel,Before → After,PA — Practical AI,Before/after split screen,"Show, don't describe: paste examples to get your style",Saves; practical writing win,Stop describing the style you want. Paste it.,Adjectives like 'friendly but professional' are guesses; 2–3 real examples make AI match your style.,A reusable 'same style as these' prompt + the warning that AI copies mistakes too.,Save it for your next caption or email.,save,Split screen: left = adjective prompt + stiff output; right = pasted examples + matching output with features circled.,"Stop describing the style you want. Paste it.
+
+“Friendly but professional” can mean 100 things to AI. Your own examples mean one thing.
+
+Try:
+“Here are 3 posts I wrote and liked: [paste]. Write a new post about [topic] in the same style: same length, same tone, same sign-off.”
+
+Only paste examples you'd sign. AI copies the mistakes too.
+
+Save this for your next caption or email.
+
+#AItips #ChatGPT #copywriting",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,35,"Use 2–3 of Asif's real past posts as the examples (they're his, so no rights issue). Record both outputs live. Circles drawn in the edit, accent colour.",04-reels/week-1.md#D03-R1,planned
+11,3,2026-10-14,Wed,18:30,D03-I2,image,Hidden Button,HF — Hidden features & tools,Hidden feature card,ChatGPT Temporary Chat: when to use it,Saves + privacy awareness,ChatGPT's Temporary Chat: when to use it,"Temporary Chat keeps a conversation out of history and memory; useful for one-offs, tests and screen-sharing.",Four concrete uses + the Aug 2026 personalization option + the limit (still not a place for secrets).,Save it.,save,"Simple UI-style mock of a chat window with a dotted 'temporary' outline (drawn, not a screenshot), four use cases beside it.","ChatGPT has a Temporary Chat mode, and most people never use it.
+
+Look for the Temporary chat option at the top of a new chat.
+
+Good for:
+• one-off questions you don't want in your history
+• testing a prompt without changing what ChatGPT remembers about you
+• sharing your screen without old chats showing
+
+Since 27 Aug 2026 you can choose before starting: personalized (uses your existing memory and instructions) or unpersonalized.
+Either way, it doesn't create new memories.
+
+Temporary doesn't mean secret. Still no passwords or ID numbers.
+
+Save this.
+
+#ChatGPT #privacy #AItips","Temporary chat in ChatGPT (OpenAI Help Center, 2026-08) https://help.openai.com/en/articles/8914046-temporary-chat-in-chatgpt ; ChatGPT — Release Notes (OpenAI Help Center, 2026-09) https://help.openai.com/en/articles/6825453-chatgpt-release-notes","Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Draw the UI as a simplified icon; don't screenshot. Re-check the toggle's location in the current ChatGPT app before posting (UI moves often).,05-image-posts/week-1.md#D03-I2,planned
+12,3,2026-10-14,Wed,21:00,D03-R2,reel,Build Log,SVC — Work with me (n8n services),Screen demo + face cam,The Messenger assistant I built in n8n (and the check most DIY bots skip),First proof of skill; Messenger leads,Customers message you at 2 AM? Watch this.,A 4-step n8n Messenger assistant: verify it's really Meta → ignore echoes → AI reply with per-customer memory → send in seconds.,"Shows what a safe auto-reply looks like, and what it should never do (payments, stock promises).",Message 'AUTOMATE' with your top customer questions.,message,"Phone notification at 2:07 AM → Asif face-cam over his real n8n canvas, zooming node by node; phone shows the reply arriving.","Customers message your page at 2 AM. Here's the Messenger assistant I built in n8n.
+
+How it works:
+1. Checks the message really came from Meta (signature check, which many DIY bots skip)
+2. Ignores its own replies so it never loops
+3. An AI agent writes a short reply and remembers each customer's conversation
+4. Sends the reply in seconds
+
+What it should NOT do: confirm payments or promise stock it can't see. For orders, I connect it to your Google Sheet and hand the chat to a person.
+
+Want one for your page? Message me “AUTOMATE” with the 3 questions customers ask you most.
+
+#n8n #MessengerAutomation #AIautomation",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,49,"Film Asif's real 'Facebook Messenger AI Auto Reply' workflow, zoomed so only node names show. NEVER show the Config node (it holds the page token and app secret) or any webhook URL. Use a test Page/test account for the 2 AM chat. Confirm you're happy to offer the 'order sheet + human handoff' add-on before posting.",04-reels/week-1.md#D03-R2,planned
+13,4,2026-10-15,Thu,09:30,D04-I1,image,AI Myth Check,LIT — AI literacy & safety,Checklist,5 hot spots where AI answers go wrong,Saves + trust,Check these 5 things in every AI answer,AI errors cluster in five predictable places; check those and use the rest as a draft.,A 5-item verification checklist.,Save it next to your AI app.,save,Checklist with five warning icons and a 'how to check' hint per line.,"AI mistakes aren't random. They show up in the same 5 places.
+
+✔ Numbers: recalculate prices, percentages and totals.
+✔ Dates: “latest” and “this year” are often out of date.
+✔ Names & quotes: check the person exists and said it.
+✔ Links & sources: click them. Some are invented.
+✔ Laws & rules: they change by country. Ask someone local.
+
+Use AI answers as a first draft, not the final word.
+
+Save this next to your AI app.
+
+#AIliteracy #AItips #factcheck",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Checklist template. This image pairs conceptually with D02-R2 (posted 2 days earlier) but adds the checklist. Don't reuse that Reel's visuals.,05-image-posts/week-1.md#D04-I1,planned
+14,4,2026-10-15,Thu,13:30,D04-R1,reel,Explain It Simply,AU — Automation & n8n,Diagram explainer + talking head,What is a webhook? Think of a doorbell,Authority; loop for rewatches,What is a webhook? Think of a doorbell.,Polling = checking the door every 5 minutes; a webhook = a doorbell that rings your automation the moment something happens.,"A clear analogy for a term that blocks many beginners, tied to Messenger replies.",Follow for the next 'Explain It Simply'.,follow,Door animation: a person walking to the door repeatedly (polling) vs a doorbell ringing (webhook); Messenger → bell → n8n node.,"What is a webhook? Think of a doorbell.
+
+Without a bell, you'd walk to the door every 5 minutes to check. That's “polling”: slow and wasteful.
+With a bell, the visitor tells you the moment they arrive.
+
+A webhook is that bell for software: when a customer messages your page, Messenger “rings” your automation instantly. That's why automated replies can feel live.
+
+Follow for the next Explain It Simply.
+
+#n8n #automation #webhook",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,28,Motion template 'Explain It Simply'. Keep the last frame identical to the first for the loop. Use a generic door illustration (own design or licensed vector).,04-reels/week-1.md#D04-R1,planned
+15,4,2026-10-15,Thu,18:30,D04-I2,image,Steal This Prompt,PA — Practical AI,Prompt card,"Think in Bangla, get it in English: 4 bilingual prompt lines",Shares in Bangladesh; relatability,Think in Bangla. Get it in English.,AI works as translator and editor; four lines cover the common bilingual needs.,"Four copy-paste lines for Bangla↔English writing, editing and client messages.",Send it to a friend who writes to foreign clients.,share,Prompt card with a small 'বাংলা → English' tag; four quote chips.,"You don't need perfect English to write good English with AI.
+
+4 lines I'd use:
+1. “I'll write in Bangla. Reply in simple English.”
+2. “Fix my English but keep my meaning. Show what you changed.”
+3. “Translate this for a client in the US. Polite, not stiff.”
+4. “Give me both: the English version + a Bangla explanation.”
+
+Line 2 is the one that teaches you. Read the changes, and next time you'll make fewer of them.
+
+Send this to a friend who writes to foreign clients.
+
+#AItips #freelancing #EnglishWriting",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Use a font with proper Bengali glyph support for the tag (e.g. Noto Sans Bengali). Check rendering on Android before posting.,05-image-posts/week-1.md#D04-I2,planned
+16,4,2026-10-15,Thu,21:00,D04-R2,reel,What It Means For You,NEWS — Current developments,Green screen + talking head,OpenAI's 'dots': always-on agents explained,Timeliness + authority on agents,ChatGPT's new dots keep working after you leave.,Dots are always-on ChatGPT agents with their own cloud computer that pursue a goal and report back; Pro/Business Premium only for now.,"What it is, how it works, who can use it, and a sensible way to start (low-risk jobs).",Follow for updates when it reaches more plans.,follow,Asif over a self-captured screenshot of the official announcement; simple goal → dot → report diagram; plan badges.,"ChatGPT's new “dots” keep working after you close the app.
+
+What they are (launched 29 Sep 2026):
+• An always-on agent: you give it a goal, not a single question
+• It has its own cloud computer, so it keeps going between conversations
+• You decide what it can do on its own; it brings results back for review
+• Reachable in ChatGPT, Slack and Teams
+
+Who can use it: ChatGPT Pro (outside the EEA, Switzerland and the UK) and Business Premium. Enterprise can try a beta if an admin turns it on. Not on Free or Plus yet.
+
+My take: give a new agent low-risk jobs first. Not your money, not your inbox.
+
+Follow and I'll post when it reaches more plans.
+
+#ChatGPT #AIagents #AInews","Introducing dots (OpenAI (help article ""Getting started with your dot""; TechCrunch 2026-09-29), 2026-09-29) https://openai.com/index/introducing-dots/",Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,45,"Capture the announcement page from your own screen (commentary use). Re-check plan availability the day before posting. If dots have reached Plus/Free by then, re-record beats 7–8.",04-reels/week-1.md#D04-R2,planned
+17,5,2026-10-16,Fri,09:30,D05-I1,image,What It Means For You,NEWS — Current developments,News card,NotebookLM is now Gemini Notebook: what changed,Prevent confusion; shares among students,NotebookLM has a new name: Gemini Notebook,"Same tool, new name since 16 July 2026, plus new study features; tutorials saying NotebookLM refer to it.","What changed, what didn't, what's new, so viewers aren't confused by old tutorials.",Send it to a classmate.,share,"'Old name → New name' header with a strike-through, then 5 short facts.","If you used NotebookLM, it now has a new name: Gemini Notebook.
+
+Renamed on 16 July 2026. Same product, same notebooks, nothing to move.
+
+What it does: you add your own sources (PDFs, notes, websites, YouTube links) and it answers from them, pointing to where each answer came from.
+
+New in September: ~60-second video summaries in 80+ languages, plus quizzes and flashcards.
+
+If an older tutorial says “NotebookLM”, it's talking about this tool.
+
+Send this to a classmate.
+
+#GeminiNotebook #NotebookLM #studytips","NotebookLM is now Gemini Notebook (Google Blog / Workspace Updates, 2026-07-16) https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/ ; Sharpen your study routine with new Gemini Notebook tools (Google Blog, 2026-09) https://blog.google/innovation-and-ai/products/gemini-notebook/new-study-tools-september-2026/ ; NotebookLM adds audio and YouTube support (Google Blog, 2024-09) https://blog.google/innovation-and-ai/products/notebooklm-audio-video-sources/","Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Use the product name as text only; no Google logos. Verify 'free to start' on the current pricing page the day before posting.,05-image-posts/week-1.md#D05-I1,planned
+18,5,2026-10-16,Fri,13:30,D05-R1,reel,AI Myth Check,LIT — AI literacy & safety,Numbered list + talking head,5 things you should never paste into AI,Shares (safety) + trust,Never paste these five things into AI.,Five categories of data don't belong in AI chats; placeholders keep the help without the risk.,A clear 'never paste' list + the placeholder technique.,Send it to your team.,share,Numbered cards slide in beside Asif; final screen recording shows names swapped for [CLIENT] placeholders.,"Never paste these 5 things into any AI chat:
+
+1. Passwords and OTP codes
+2. Card numbers and mobile-banking PINs
+3. NID or passport numbers (yours or anyone's)
+4. Customer phone lists or client files, without permission
+5. Anything under an NDA or confidentiality promise
+
+Need help with a real document? Replace the details with placeholders: [CLIENT], [AMOUNT], [PHONE]. You still get the help; the AI never sees the data.
+
+Send this to your team.
+
+#AIsafety #privacy #AItips",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,37,"Use a fake document for the placeholder demo. Don't show any real customer data, even blurred.",04-reels/week-1.md#D05-R1,planned
+19,5,2026-10-16,Fri,18:30,D05-I2,image,Steal This Prompt,WF — Workflows & productivity,Framework card,"A 10-minute daily AI routine: 3 morning prompts, 1 evening prompt",Saves; habit-forming,A 10-minute AI routine for busy days,Four prompts around your real task list turn AI into a daily planning partner.,"Three morning prompts (prioritise, break down, risks) + one evening prompt (carry over).",Save it and try it tomorrow morning.,save,"Sun/moon split card: morning section with 3 prompts, evening section with 1.","A 10-minute AI routine I'd use on busy days:
+
+Morning
+1. “Here's my task list: [paste]. Which 3 matter most today, and why?”
+2. “Break task #1 into steps under 30 minutes each.”
+3. “What could go wrong today? One line each.”
+
+Evening
+4. “Here's what I finished: [paste]. What should move to tomorrow?”
+
+Paste your real list. Vague list, vague advice.
+
+Save this and try it tomorrow morning.
+
+#productivity #AItips #planning",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,"Framework template. MORNING/EVENING labels as small caps, not counted as separate ideas.",05-image-posts/week-1.md#D05-I2,planned
+20,5,2026-10-16,Fri,21:00,D05-R2,reel,Steal This Prompt,PA — Practical AI,Screen demo + face cam,"Spreadsheet formulas from plain English, plus the 3-row test",Saves + practical win for office workers and sellers,Can't write Excel formulas? Describe them instead.,"Describe the goal, columns and rows; get a formula with an explanation; always test on rows you can check by hand.",Prompt template + the testing habit that makes AI formulas trustworthy.,Save it for your next spreadsheet.,save,Google Sheet order list; AI prompt and answer; 3 highlighted rows with hand math overlay; green tick.,"Can't write spreadsheet formulas? Describe them instead.
+
+Prompt:
+“I have a sheet. Column A = order date, B = amount, C = status. Data is in rows 2–500. Write a Google Sheets formula for the total amount of orders with status ‘Delivered’ in October 2026. Explain each part in one line.”
+
+Then the step most people skip: test it on 3 rows where you already know the answer. If it matches, use it on the full sheet. If not, paste the wrong result back and ask it to fix the formula.
+
+Works for Excel too. Just say “Excel” instead.
+
+Save this for your next spreadsheet.
+
+#GoogleSheets #Excel #AItips",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,44,"Build a demo sheet with fake orders. Make a separate 3-row test tab where the known total is 4,500 (1,200 + 2,000 + 1,300, all Delivered, all October). Record the real AI answer; if the formula differs from SUMIFS, show what you actually got.",04-reels/week-1.md#D05-R2,planned
+21,6,2026-10-17,Sat,09:30,D06-I1,image,AI Myth Check,AU — Automation & n8n,Myth vs fact,Myth: you need to code to automate,Lower the barrier; educate future buyers,Myth: you need to code to automate,"Visual tools make automation about process thinking, not code; AI now writes the small code bits.",Reframes the real skill (thinking in steps) and what you actually need.,Save it.,save,Myth (crossed out) vs Fact panels; small node-graph illustration.,"Myth: you need to be a programmer to automate your work.
+
+Fact: n8n, Make and Zapier are visual tools. You connect boxes: “when this happens → do this → then this”.
+
+What you actually need:
+• a clear process (write it on paper first)
+• logins to the apps involved
+• patience to test with fake data
+
+Code helps with edge cases, and AI can now write those small pieces for you.
+
+If you can write the steps down, you can learn to automate them.
+
+#automation #nocode #n8n",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,"Myth-vs-fact template. Tool names as plain text, no logos.",05-image-posts/week-1.md#D06-I1,planned
+22,6,2026-10-17,Sat,13:30,D06-R1,reel,Before → After,WF — Workflows & productivity,Phone-in-hand demo,"Brain-dump by voice, get a clean plan",Relatability + saves,Talk messy. Get a clean plan.,"Speaking a 2-minute messy brain-dump into voice mode, then asking for a grouped plan, beats typing.",The brain-dump method + the exact 'turn this into a plan' prompt.,Save the prompt from the caption.,save,Asif walking and talking into the phone; waveform; messy transcript turns into a neat grouped plan.,"When my head is full, I don't type. I talk.
+
+1. Open voice mode in your AI app (ChatGPT, Gemini, Claude all have one)
+2. Talk for 2 minutes: half-sentences, worries, random tasks. Bangla, English, both.
+3. Then say: “Turn this into a plan. Group by project, give each task one next step, and flag anything urgent or due this week.”
+
+Faster than typing, and nothing you mentioned gets lost.
+
+Save this and try it tonight.
+
+#productivity #AItips #voiceAI",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,36,"Record a genuine brain-dump (real tasks, nothing private). Show the actual transcript. Speed-ramp 2 minutes down to ~5 s.",04-reels/week-1.md#D06-R1,planned
+23,6,2026-10-17,Sat,18:30,D06-I2,image,Steal This Prompt,PA — Practical AI,Prompt card,Prompt: reply to an angry customer calmly,Saves for sellers and support staff,Steal this: reply to an angry customer,"A structured prompt produces a calm, human reply with options instead of excuses.",A copy-paste complaint-reply prompt with four rules.,Save it for your next difficult message.,save,Prompt card with an angry chat bubble icon turning into a calm one.,"Angry customer message? Don't reply while you're angry too. Use this:
+
+“Here's a customer message: [paste].
+Write a reply that:
+– says sorry once, without excuses
+– repeats their problem in one line so they know I understood
+– offers 2 clear options with times (e.g. replacement by Thursday or refund today)
+– sounds like a calm human, under 80 words.”
+
+Then check every name, price and promise before sending. You're responsible for what it says.
+
+Save this for the next difficult message.
+
+#customerservice #AItips #smallbusiness",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Prompt-card template. Keep the dash bullets inside the quote block so it reads as one prompt.,05-image-posts/week-1.md#D06-I2,planned
+24,6,2026-10-17,Sat,21:00,D06-R2,reel,Hidden Button,HF — Hidden features & tools,Screen demo + face cam,Turn a YouTube lecture into a quiz with Gemini Notebook,Saves + shares among students,"Long lecture, remember nothing? Try this.","Add a YouTube lecture + notes to Gemini Notebook, generate a quiz, test yourself first, then make flashcards from mistakes.",A study workflow built on retrieval practice using a free tool.,Send it to a classmate with exams coming.,share,"Laptop with a lecture → Gemini Notebook screens: add source, quiz, citation, flashcards.","Watched a long lecture and remember nothing? Do this:
+
+1. Open Gemini Notebook (the new name of NotebookLM)
+2. Create a notebook → add the YouTube link as a source, plus your slides or notes
+3. Create a quiz (short answer, multiple choice or fill-in-the-blank)
+4. Take it BEFORE re-reading. Wrong answers show you what to study.
+5. Ask it to explain each wrong answer and show the exact line from the lecture
+6. Turn your mistakes into flashcards
+
+Testing yourself beats re-reading. Free to start.
+
+Send this to a friend with exams coming.
+
+#studytips #GeminiNotebook #students","NotebookLM is now Gemini Notebook (Google Blog / Workspace Updates, 2026-07-16) https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/ ; Sharpen your study routine with new Gemini Notebook tools (Google Blog, 2026-09) https://blog.google/innovation-and-ai/products/gemini-notebook/new-study-tools-september-2026/ ; NotebookLM adds audio and YouTube support (Google Blog, 2024-09) https://blog.google/innovation-and-ai/products/notebooklm-audio-video-sources/",Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,44,"Use a public lecture you have the right to show briefly on screen (e.g. an openly licensed university lecture, or record your own 5-minute 'lecture'). Keep the third-party video on screen ≤ 3 s; focus on the Gemini Notebook UI. Verify quiz formats in the live UI before filming.",04-reels/week-1.md#D06-R2,planned
+25,7,2026-10-18,Sun,09:30,D07-I1,image,Work With Me,SVC — Work with me (n8n services),Service menu,What I build with n8n (service menu),First explicit offer; Messenger leads,What I build with n8n,"A menu of real workflow types Asif has built and runs, so buyers can recognise their need.","Concrete outcomes, not jargon; a clear next step.",Message 'AUTOMATE' with the task you repeat most.,message,Menu-style card with six icon rows and a Messenger CTA bar.,"People ask what I actually build. Here's the menu. All of these are workflows I've built and run in n8n:
+
+• Messenger & WhatsApp assistants that reply in seconds
+• Leads from forms or comments → Google Sheets + instant alert
+• Auto-publishing from a content sheet to your pages
+• File backups: Telegram → Google Drive, verified, no duplicates
+• Website AI assistant and calendar booking helper
+• Form and application intake → email or chat alerts
+
+Not sure if your task fits? Message me “AUTOMATE” and tell me the task you repeat most. I'll tell you honestly if it's worth automating.
+
+#n8n #automation #AIautomation",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Every line maps to a real workflow in Asif's n8n (see 01-research/page-audit.md §3). Remove any line you don't want to sell. Set up the AUTOMATE keyword reply in Meta Business Suite before this goes live.,05-image-posts/week-1.md#D07-I1,planned
+26,7,2026-10-18,Sun,13:30,D07-R1,reel,Automate This,AU — Automation & n8n,Numbered list + talking head,5 signs a task should be automated,Educate buyers to self-identify; comments,Five signs a task needs automating.,"Same steps, copy-paste, frequency, costly mistakes and someone waiting = automate; judgment-heavy = keep human.",A self-scoring checklist (3+ signs = strong candidate) and the honest exception.,Comment which task scored highest.,question,Counter graphic 1–5 with icons; tally at the end; 'keep it human' card.,"5 signs a task should be automated:
+
+1. The steps are the same every time
+2. You copy-paste between apps (Messenger → sheet → email)
+3. It happens daily or weekly
+4. A small mistake costs money (wrong price, missed order)
+5. Someone is waiting (customer, boss, delivery)
+
+3 or more? Strong candidate.
+Needs your judgment every time? Keep it human. Automation is for rules, not decisions.
+
+Which task scored highest for you?
+
+#automation #smallbusiness #n8n",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,40,List template with large numerals. Reply to comments with a one-line 'trigger → steps → result' for their task (consistent with D01-R2).,04-reels/week-1.md#D07-R1,planned
+27,7,2026-10-18,Sun,18:30,D07-I2,image,Hidden Button,HF — Hidden features & tools,Hidden feature card,3 Google Lens tricks most people miss,Shares; broad utility,3 Google Lens tricks most people miss,"Lens can copy text from images, translate in place and search what you see.",Three practical uses with where to find Lens.,Send it to someone who still types text from photos by hand.,share,"Three phone-shaped panels with icons for copy, translate and search.","3 Google Lens tricks most people miss:
+
+1. Copy text from any photo or screenshot: open it in Lens → Text → select → copy. No more typing phone numbers from pictures.
+2. Translate in place: point at a sign, menu or label → Translate. The words change on the image.
+3. Search what you see: point at a product, plant or part to find matches.
+
+Find Lens in the Google app, in Google Photos, or in the camera on many Android phones.
+
+Send this to someone who still types text from photos by hand.
+
+#GoogleLens #techtips #AItips",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Draw phone outlines; don't screenshot Google UI. Test each trick on an Android and an iPhone before posting so the wording matches both.,05-image-posts/week-1.md#D07-I2,planned
+28,7,2026-10-18,Sun,21:00,D07-R2,reel,Before → After,PA — Practical AI,Before/after split screen,Write emails that don't sound like AI,Saves + relatability for professionals,Your AI emails sound like AI. Here's why.,"AI fills space with safe, long, polite filler; notes + your own sample + hard limits fix it.",Three rules + read-aloud test + prompt in caption.,Save the prompt.,save,Generic email with filler highlighted in yellow → rewritten short email; split before/after.,"Your AI emails sound like AI because AI fills empty space with safe, polite, long sentences.
+
+Fix it with 3 rules:
+1. Give it your rough notes, not a topic
+2. Paste one real email you wrote, so it copies your voice
+3. Set limits: under 100 words, no opening small talk
+
+Prompt:
+“Write an email from these notes: [notes]. Match the style of this email I wrote: [paste]. Under 100 words. No ‘I hope this finds you well’. Plain, direct, friendly.”
+
+Then read it out loud. If you wouldn't say it, delete it.
+
+Save this.
+
+#emailtips #AItips #productivity",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,40,"Use a realistic but fictional email (supplier delay). Generate the 'before' with a bare prompt and the 'after' with the caption prompt, live.",04-reels/week-1.md#D07-R2,planned
+29,8,2026-10-19,Mon,09:30,D08-I1,image,Before → After,PA — Practical AI,Before/after table,"Say this, not that: 4 prompt upgrades",Saves; show prompting as a concrete skill,"Say this, not that: 4 prompt upgrades","Weak prompts lack audience, limits and the user's own material; adding them improves answers a lot.","Four side-by-side rewrites for everyday tasks (caption, CV, explanation, weekly plan).",Save it.,save,"Two-column table: greyed weak prompts left, bold strong prompts right.","Same task, better prompt. 4 upgrades:
+
+Instead of “Write a caption” → “Write 3 captions for [product], for mothers in Dhaka, under 40 words.”
+Instead of “Fix my CV” → “Rewrite these 3 bullets to show results. Don't invent numbers.”
+Instead of “Explain AI agents” → “Explain AI agents to a shop owner in 5 lines.”
+Instead of “Plan my week” → “Here are my 12 tasks and 3 deadlines. Plan Monday to Friday.”
+
+What changed each time: who it's for, a limit, and your own material.
+
+Save this.
+
+#AItips #ChatGPT #PromptTips",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Before/after table template. Keep [product] in accent colour as a fill-in.,05-image-posts/week-2.md#D08-I1,planned
+30,8,2026-10-19,Mon,13:30,D08-R1,reel,Explain It Simply,AU — Automation & n8n,Diagram explainer + talking head,Chatbot vs automation vs AI agent: the actual difference,Authority; helps buyers ask for the right thing,"Chatbot, automation, agent: not the same thing.",Chatbot talks; automation follows fixed steps; agent chooses its own steps with tools. Use the simplest that works and add human approval for money.,"One shared example ('Where's my order?') across all three, plus a decision rule.",Follow for more Explain It Simply.,follow,"Three columns, one per type, each answering the same customer bubble; straight arrow vs branching arrows.","Chatbot, automation, AI agent: the difference in one example.
+
+Customer asks: “Where's my order?”
+• Chatbot: talks. Answers from what it was told, but can't check anything.
+• Automation: fixed steps. When the order status changes, it sends an update. Same path every time.
+• AI agent: chooses its own steps. Reads the question, checks your order sheet, then the courier, then replies.
+
+Which do you need? The simplest one that works.
+Fixed rules → automation. Changing questions → agent with limits. Money involved → add a human approval.
+
+Follow for more Explain It Simply.
+
+#AIagents #automation #n8n",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,46,Three-column motion template. Keep each column's icon style identical so the only difference is the path shape.,04-reels/week-2.md#D08-R1,planned
+31,8,2026-10-19,Mon,18:30,D08-I2,image,Hidden Button,HF — Hidden features & tools,Hidden feature card,See and delete what ChatGPT remembers about you,Saves + privacy trust,See what ChatGPT remembers about you,ChatGPT's memory is visible and editable; most users never check it.,"Where to find memory, how to delete items, how to turn off chat-history reference.","Save it, then check your list today.",save,Drawn settings path (breadcrumb style) + a list with a delete icon.,"ChatGPT may remember things about you across chats. You can see exactly what, and delete it.
+
+1. Settings → Personalization → Memory
+2. Open the saved list and delete anything wrong or too personal
+3. Turn off “reference chat history” if you don't want old chats used
+4. Or just say: “Forget that I…”, then check the list to confirm
+
+Menu names change between app versions; look for Memory under Personalization.
+
+Save this, then check your list today. Most people are surprised.
+
+#ChatGPT #privacy #AItips","Memory in ChatGPT (OpenAI Help Center, current) https://help.openai.com/en/articles/8590148-memory-in-chatgpt","Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Verify the current menu path in both the mobile and web app the day before posting; update the breadcrumb if it changed. Draw the UI; don't screenshot it with real memories visible.,05-image-posts/week-2.md#D08-I2,planned
+32,8,2026-10-19,Mon,21:00,D08-R2,reel,Steal This Prompt,WF — Workflows & productivity,Talking head + screen split,Tailor your CV to a job post without lying,Saves + shares among job seekers,One CV for every job? Here's the fix.,"Extract the job's requirements, match each to real evidence, rewrite matched bullets in the employer's words, and handle gaps honestly.","A 4-step method + the 'don't invent anything, mark gaps' guardrail.",Send to a friend who's job hunting.,share,"Vertical split: Asif on the top half holding a printed CV, the screen on the bottom half: job post → requirement list → match table (green/red rows) → before/after bullet.","One CV for every job is why you're not getting calls. Tailor it in 10 minutes, honestly:
+
+1. Paste the job post: “List the top 8 requirements, using the employer's exact words.”
+2. Paste your CV: “Match each requirement to proof in my CV. Don't invent anything. Mark gaps.”
+3. Rewrite only the matched bullets using their keywords, where it's true.
+4. For each gap: learn it, explain it in your cover letter, or apply anyway.
+
+Many employers scan CVs for the job's own words. Now yours has them, without lying.
+
+Send this to someone who's job hunting.
+
+#jobsearch #CVtips #AItips",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,43,Use a fictional CV and a real-looking but invented job post (no real company). Remove personal data. Keep the 'Don't invent anything' line visible for 2+ seconds.,04-reels/week-2.md#D08-R2,planned
+33,9,2026-10-20,Tue,09:30,D09-I1,image,Automate This,AU — Automation & n8n,Cheat sheet,7 things that can start an automation (triggers),Saves; teach buyers to spot triggers,7 things that can start an automation,Most automations start from one of seven trigger types; spotting the trigger is half the design.,A reference list of common triggers with everyday examples.,Save it.,save,"Seven icon tiles in a grid, each a trigger type.","Every automation starts with a trigger. These 7 cover most real-world workflows:
+
+1. A new message (Messenger, WhatsApp, email)
+2. A form is submitted
+3. A new row appears in a Google Sheet
+4. A time (every day at 9 AM, every Monday)
+5. A file lands in a folder
+6. A payment or order is created
+7. A webhook: another app tells yours that something happened
+
+Find the trigger, and half the automation is designed.
+
+Save this.
+
+#automation #n8n #nocode",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Cheat-sheet grid template. Webhook tile links visually to the doorbell icon used in D04-R1 for series consistency.,05-image-posts/week-2.md#D09-I1,planned
+34,9,2026-10-20,Tue,13:30,D09-R1,reel,Steal This Prompt,PA — Practical AI,Talking head + screen split,Make AI disagree with you,Saves + comments,AI agrees with you too easily. Try this.,AI tends to agree with the user; asking it to argue against your plan surfaces risks you missed.,The 'strongest reasons it could fail' prompt + the follow-up 'what would make it work'.,Save it before your next big decision.,save,Chat showing 'Great idea!' → flipped prompt → list of failure reasons with two highlighted.,"AI tends to agree with you. Ask “Is my plan good?” and you'll usually hear yes.
+
+Flip it:
+“Give me the 3 strongest reasons this plan could fail. Be specific to my situation: [details].”
+
+Then:
+“What would make this plan work?”
+
+I tried it on a price increase (Tk 1,200 → 1,500) and got two risks I hadn't considered.
+
+You still decide. AI just pressure-tests the idea.
+
+Save this for your next big decision.
+
+#AItips #decisionmaking #smallbusiness",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,32,Run the prompt live on a real or realistic decision. Only say 'two of these I hadn't thought about' if true; otherwise change the line to 'Look at number two' and highlight that one.,04-reels/week-2.md#D09-R1,planned
+35,9,2026-10-20,Tue,18:30,D09-I2,image,AI Myth Check,LIT — AI literacy & safety,Checklist,"Use AI to prepare, not to decide: 4 areas",Trust + shares,"Use AI to prepare, not to decide, these 4","In health, money transfers, legal papers and people decisions, AI should prepare you, not decide for you.","A clear boundary for high-stakes AI use, with what AI is still good for in each.",Send it to someone who asks AI about everything.,share,"Four quadrants with icons (heart, money, document, people) and a 'prepare ✓ decide ✗' tag.","AI is useful in serious areas, as long as you use it to prepare, not to decide.
+
+Health: prepare questions for your doctor. Don't replace the doctor.
+Money transfers: never act on an AI instruction or a voice you can't verify.
+Legal papers: understand the terms, then ask a lawyer before signing.
+Hiring and firing: let it organise information, not judge people.
+
+AI is great at drafts and questions. You own the decision.
+
+Send this to someone who asks AI about everything.
+
+#AIliteracy #AIsafety #AItips",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,"Quadrant template. Calm colours. This is a trust post, not a scare post.",05-image-posts/week-2.md#D09-I2,planned
+36,9,2026-10-20,Tue,21:00,D09-R2,reel,Automate This,AU — Automation & n8n,Screen demo + face cam,Build: new lead → Google Sheet → phone alert in n8n,Proof of skill; Messenger leads from small businesses,"New lead? Sheet and phone alert, in seconds.","A 5-node n8n workflow captures form leads, cleans them, blocks duplicates, logs them to Sheets and alerts the owner on Telegram.","Shows a complete, practical build and the reasoning behind each node (cleaning, duplicate check).",Message 'AUTOMATE' to get it set up.,message,Phone buzz with a lead alert → full canvas → node-by-node zoom with before/after data → stopwatch.,"Every new lead → Google Sheet → phone alert, in seconds. Built in n8n with 5 nodes:
+
+1. Webhook: the form sends the lead the moment it's submitted
+2. Clean: trim spaces, fix the phone format, add the date
+3. Check: is this phone number already in the sheet? Then don't add it twice
+4. Add a new row to Google Sheets
+5. Send a Telegram alert with name, phone and request
+
+Nobody copy-pastes anything, and you can reply first. The first reply often wins the customer.
+
+Want this set up for your forms? Message me “AUTOMATE”.
+
+#n8n #automation #leadgeneration",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,51,Build a clean demo workflow (Webhook → Edit Fields → Google Sheets lookup → IF → Google Sheets append → Telegram). Use fake lead data and a masked phone number. Run it live for the stopwatch shot. Hide credentials and webhook URL.,04-reels/week-2.md#D09-R2,planned
+37,10,2026-10-21,Wed,09:30,D10-I1,image,Steal This Prompt,PA — Practical AI,Prompt card,Learn anything faster: ask for 3 levels of explanation,Saves among students and self-learners,Learn anything faster: ask for 3 levels,"Asking for child, student and expert levels shows exactly where your understanding stops.",A copy-paste learning prompt + how to use the result.,Save it.,save,Three stacked steps (small → medium → large) with a 'stop here' marker.,"The fastest way I know to learn a new topic with AI:
+
+“Explain [topic] at 3 levels:
+1. To a 10-year-old, in 3 sentences
+2. To a university student, with one example
+3. To an expert: what do beginners usually get wrong?”
+
+Read level 1. Then level 2. The moment it gets hard is exactly where you should study.
+
+Level 3 is the bonus: it shows the mistakes before you make them.
+
+Save this.
+
+#studytips #AItips #learning",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Prompt-card template with step graphic. [topic] in accent colour.,05-image-posts/week-2.md#D10-I1,planned
+38,10,2026-10-21,Wed,13:30,D10-R1,reel,AI Myth Check,LIT — AI literacy & safety,POV skit + talking head,Voice-clone scam calls: the family code word,Shares to family groups; trust,Your brother calls. It's not your brother.,"AI can clone voices from short clips; a family code word, calling back on a saved number, and treating urgency as a red flag stop the scam.",Three concrete steps backed by an FBI public warning.,Send to your family group.,share,"Short dramatized call (unknown number, panicked voice), then Asif breaks the fourth wall with three steps; ends on the phone ringing again.","Your brother calls asking for money. It might not be him.
+
+Scammers can now copy a voice from short clips posted online. The FBI warned about this and recommends a simple defence:
+
+1. Agree on a secret family word or phrase, today, not during an emergency
+2. Hang up and call back on the number you have saved
+3. Treat urgency as a red flag. Real family can wait 2 minutes while you check.
+
+Never send money based on a voice alone.
+
+Send this to your family group tonight.
+
+#scamalert #AIsafety #voicecloning","Criminals Use Generative Artificial Intelligence to Facilitate Financial Fraud (PSA I-120324-PSA) (FBI / IC3, 2024-12-03) https://www.ic3.gov/PSA/2024/PSA241203",Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,39,Do NOT clone anyone's real voice for the skit. Use an actor or Asif's own voice with a phone filter. Mark the skit visually as a dramatization (small 'reenactment' label).,04-reels/week-2.md#D10-R1,planned
+39,10,2026-10-21,Wed,18:30,D10-I2,image,Work With Me,SVC — Work with me (n8n services),Process steps,How I build your automation in 5 steps,Reduce buyer uncertainty; Messenger leads,How I build your automation in 5 steps,"A clear, low-risk process: call → map → build with fake data → go live with alerts → handover.","Shows buyers what happens after they message, and that their logins stay theirs.",Message 'AUTOMATE' to start step 1.,message,Horizontal 5-step timeline with icons; step 2 'you approve' highlighted.,"What happens after you message me “AUTOMATE”:
+
+1. A 20-minute call: what you repeat, which apps you use, what goes wrong today
+2. I map it on one page: trigger → steps → result. You approve before I build anything.
+3. I build and test it with fake data, never on real customers first
+4. It goes live with error alerts, so problems don't hide
+5. Handover: a short written guide + a screen video. Logins and accounts stay in your name.
+
+No jargon, no surprises. Message “AUTOMATE” to start with step 1.
+
+#n8n #automation #smallbusiness",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,"Confirm this matches your real process before posting (call length, handover format). If you deliver through RAM Studio, you may add its verified inclusions (e.g. 30 days technical support), but only those listed in the RAM Studio fact base.",05-image-posts/week-2.md#D10-I2,planned
+40,10,2026-10-21,Wed,21:00,D10-R2,reel,Steal This Prompt,WF — Workflows & productivity,Before/after split screen,"Meeting notes → action table (owner, deadline, MISSING)",Saves among professionals,Meetings end. Nobody knows who does what.,Paste a transcript or notes; ask for action/owner/deadline + open questions; force 'MISSING' instead of guesses.,A prompt that turns notes into accountable actions and an automatic follow-up list.,Save it for your next meeting.,save,"Closing laptop → split screen: left 'before' table with a guessed owner, right 'after' table with red MISSING cells → follow-up message.","Meetings end and nobody knows who does what. Fix it in one prompt:
+
+“From these notes, make a table: Action | Owner | Deadline. Then list open questions. Use only what's in the notes. If an owner or deadline is missing, write MISSING. Don't guess.”
+
+The MISSING cells are your follow-up message, already written.
+
+If you record calls, ask everyone first. It's polite, and in many places it's the law.
+
+Save this for your next meeting.
+
+#productivity #meetings #AItips",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,38,"Use invented meeting notes. Show the 'before' table (with a guessed owner) generated without the MISSING line, then the corrected version.",04-reels/week-2.md#D10-R2,planned
+41,11,2026-10-22,Thu,09:30,D11-I1,image,Automate This,AU — Automation & n8n,Flow diagram,Simple automation: Google Form → Sheet → personal confirmation email,Saves; first buildable workflow for beginners,A simple automation you can build this weekend,Form submissions can trigger a personal confirmation email automatically via Sheets + n8n.,"A beginner-friendly flow with real use cases (registrations, orders, admissions, applications).",Save it for the weekend.,save,Left-to-right flow: Form → Sheet → n8n → Email → happy applicant.,"A simple automation you can build this weekend:
+
+Google Form → Google Sheet → personal confirmation email
+
+1. Someone submits your form
+2. Google saves the answer in a Sheet (this part is built in)
+3. n8n notices the new row
+4. It sends a personal email: their name, what they chose, what happens next
+
+Every person gets a reply in minutes, not days. Use it for registrations, orders, admissions or job applications.
+
+Save this for the weekend.
+
+#n8n #GoogleSheets #automation",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Flow-diagram template. Use generic icons for Form/Sheet/Email (no Google logos).,05-image-posts/week-2.md#D11-I1,planned
+42,11,2026-10-22,Thu,13:30,D11-R1,reel,What It Means For You,NEWS — Current developments,Phone-in-hand demo,Gemini Gems become skills in November: what to do now,Timeliness; saves among Gemini users,Use Gemini Gems? They're changing in November.,"Skills (launched 30 Sep 2026) replace Gems for personal accounts from November; migration is automatic, and skills add slash access, files and stacking.","What changes, what happens to your Gems, and how to make your first skill in one sentence.",Comment the skill you'd build first.,question,"Over-the-shoulder phone shots in the Gemini app: '/' menu, 'create a skill' request, file attach, two skills stacked; Asif to camera between steps.","If you use Gemini Gems: they're becoming “skills”.
+
+• Skills launched in Gemini on 30 Sep 2026
+• From November 2026, Gems on personal Google accounts are turned into skills automatically (work/school accounts later)
+• A skill = a saved instruction. Type / and pick it.
+• Easiest way to make one: ask Gemini, “Create a skill that writes replies in my style.”
+• Skills can include files (price list, PDF, images), and you can combine two in one chat
+• Gemini can use a skill on its own when your request matches
+
+Make your first one this week. Which skill would you build first?
+
+#GeminiAI #AItips #productivity","Let skills in Gemini tackle your most repetitive tasks (Google Blog (+ Gemini Apps Help 'About the transition from Gems to skills'), 2026-09-30) https://blog.google/products-and-platforms/products/gemini/automate-tasks-with-skills/ ; About the transition from Gems to skills (Gemini Apps Help, 2026) https://support.google.com/gemini/answer/18560919?hl=en",Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,47,Re-check the Gems transition date on the help page the day before posting. Record on a personal Google account. Don't show personal chats.,04-reels/week-2.md#D11-R1,planned
+43,11,2026-10-22,Thu,18:30,D11-I2,image,Steal This Prompt,WF — Workflows & productivity,Framework card,Learn any skill with AI: the weekly loop,Saves; habit content,Learn any skill with AI: the weekly loop,"A weekly plan → learn → quiz → practise → review → repeat loop, run with simple prompts.",Seven-day structure with the exact prompt for each stage.,Save it and start Monday.,save,Circular loop diagram with day labels around it.,"A simple weekly loop to learn any skill with AI (design, Excel, English, n8n):
+
+Monday: “Make a 4-week plan to learn [skill], 30 minutes a day.”
+Tue–Thu: learn, then “Quiz me on today's topic. 5 questions.”
+Friday: “Give me a small real task to practise.”
+Saturday: paste your result: “Review it like a strict teacher.”
+Sunday: “What should I repeat next week?”
+
+AI plans and checks. The practice is still yours.
+
+Save this and start on Monday.
+
+#learning #AItips #selfimprovement",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,"Loop-diagram template. Make sure prompts are ≥44 px; if crowded, shorten day labels to MON/TUE–THU etc.",05-image-posts/week-2.md#D11-I2,planned
+44,11,2026-10-22,Thu,21:00,D11-R2,reel,Automate This,AU — Automation & n8n,Talking head + screen split,"Why automations break, and the alert that saves you",Authority; differentiates Asif from 'quick bot' sellers,Your automation will break. Here's when.,"Expired logins, changed data and silent failures break automations; an n8n error workflow alerts you immediately.",Three failure modes + how to set an error workflow in n8n.,Follow for more automation lessons.,follow,Canvas nodes turning red for each failure; renamed column; calendar of silent days; Error Trigger → phone alert.,"Every automation breaks eventually. Usually for one of 3 reasons:
+
+1. A login expires (password changed, token ran out)
+2. The data changes (someone renames a sheet column, a form adds a question)
+3. It fails quietly, and nobody notices for a week. This is the worst one.
+
+The fix in n8n: an error workflow. Create a workflow that starts with the Error Trigger node and sends you a message (Telegram, email, chat). Then select it under Workflow Settings → Error workflow for each workflow you care about.
+
+No alert = you find out from an angry customer.
+
+Follow for more automation lessons.
+
+#n8n #automation #nocode","Error Trigger node / Error handling (n8n Docs, current) https://docs.n8n.io/flow-logic/error-handling/",Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,45,Demo on a test workflow: rename a column live to trigger the failure. Show the Error Trigger workflow and a real alert. Hide chat IDs and tokens.,04-reels/week-2.md#D11-R2,planned
+45,12,2026-10-23,Fri,09:30,D12-I1,image,AI Myth Check,LIT — AI literacy & safety,Myth vs fact,Myth: 'Act as an expert' makes AI smarter,Correct a popular prompting myth; saves,Myth: “Act as an expert” makes AI smarter,"A role changes tone, not knowledge; facts, goal, example and format do the heavy lifting.",Weak vs strong prompt comparison showing what actually improves answers.,Save it.,save,Costume illustration (a hat labelled 'expert') crossed out vs a toolbox labelled 'context'.,"“Act as an expert marketer…” is one of the most copied prompt openers online. It mostly changes the tone, not the quality.
+
+What actually improves answers:
+• your facts (product, price, buyer)
+• your goal (what should the reader do?)
+• an example of what good looks like
+• a format (3 options, under 40 words)
+
+Weak: “Act as a marketing expert. Write my ad.”
+Strong: “My product is…, price…, buyer…, offer… Write 3 ads under 40 words.”
+
+Context beats costume. Save this.
+
+#AItips #PromptTips #ChatGPT",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,"Myth-vs-fact template with the 'costume vs toolbox' doodle. Keep the claim modest: roles affect tone/focus, they don't add facts.",05-image-posts/week-2.md#D12-I1,planned
+46,12,2026-10-23,Fri,13:30,D12-R1,reel,Before → After,PA — Practical AI,Before/after split screen,"Better product photos with AI, without lying to customers",Saves + shares among F-commerce sellers,"Better product photos with AI, without lying.","Ask AI to change only background and light, keep the product identical, verify details, and post one untouched photo too.","An edit prompt that protects product accuracy + a 3-point check (label, colour, edges).",Save the prompt.,save,Split: phone photo of a mug on a messy table → clean studio-style shot; zoomed comparison of the label.,"Better product photos with AI, without misleading customers.
+
+Prompt (works in ChatGPT or Gemini image editing):
+“Keep the product exactly the same: shape, colour, label, size and texture. Only replace the background with a plain light-grey studio background and soft natural shadow. Fix the lighting to neutral daylight.”
+
+Then check 3 things at full zoom: label text, colour, edges. AI sometimes changes small details. If the product changed, don't use it.
+
+And post one untouched photo too. Clean, but honest.
+
+Save this for your next product.
+
+#fcommerce #productphotography #AItips","Introducing ChatGPT Images 2.5 (OpenAI, 2026-09-08) https://openai.com/index/introducing-chatgpt-images-2-5/",Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,42,"Use a real product you own (mug, bag). Generate the edit live and show the genuine result, including any detail it got wrong. That honesty is the point of the Reel. Don't fabricate a perfect result.",04-reels/week-2.md#D12-R1,planned
+47,12,2026-10-23,Fri,18:30,D12-I2,image,What It Means For You,NEWS — Current developments,News card,Why creators put links in the comments now (Facebook link limit test),Useful platform insight for page owners; shares,Why creators put links in the comments now,Meta is testing a 2-link-posts-per-month limit for Pages without Meta Verified; links in comments aren't limited.,"What the test is, who it affects, and three practical workarounds.",Send it to someone who runs a Facebook page.,share,"A post mock with a link icon locked, arrow to a comment with the link.","Noticed creators saying “link in the comments”? Here's why.
+
+Meta has been testing a limit on link posts: Pages and professional profiles without Meta Verified can share links in only 2 posts per month. Links in comments aren't limited.
+
+What I'd do if you run a page:
+• lead with value in the post itself
+• put the link in the first comment
+• or use “Message me” and send links in Messenger
+
+It's a test, so not every Page has it. Check your own posting screen.
+
+Send this to someone who runs a Facebook page.
+
+#FacebookTips #socialmedia #pagemanagement","What Facebook's New Link Rules Mean for Your 2026 Strategy (Social Media Examiner (test first confirmed to TechCrunch, Dec 2025), 2026) https://www.socialmediaexaminer.com/what-facebooks-new-link-rules-mean-for-your-2026-strategy/","Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,"Re-check the test's status the day before posting. If Meta has ended or widened it, rewrite line 1 accordingly.",05-image-posts/week-2.md#D12-I2,planned
+48,12,2026-10-23,Fri,21:00,D12-R2,reel,Explain It Simply,AU — Automation & n8n,Diagram explainer + talking head,What is an API? Think of a shop counter,Authority; loop for rewatches,An API is a shop counter. Here's why.,An API is a counter with a fixed menu: your app asks for menu items with its key and gets a reply; off-menu requests get errors.,"Explains API, endpoints and API keys with a local analogy, plus why keys must stay secret.",Follow for the next 'Explain It Simply'.,follow,Illustrated shop counter with a menu board; two app icons exchanging a request and a reply; key card.,"What is an API? Think of a shop counter.
+
+You don't walk into the warehouse. You ask at the counter, and only for what's on the menu.
+
+Apps work the same way: your app asks Google Sheets' “counter” to add a row. Sheets checks your card (your API key) and does it. Ask for something that's not on the menu → error.
+
+That's also why you never share an API key. It's your card.
+
+Follow for the next Explain It Simply.
+
+#API #automation #n8n",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,30,Explain It Simply motion template; same palette as D04-R1 for series consistency. Last frame identical to the first.,04-reels/week-2.md#D12-R2,planned
+49,13,2026-10-24,Sat,09:30,D13-I1,image,Automate This,AU — Automation & n8n,Checklist,Test your automation before customers do: 6 checks,Authority + saves among builders and buyers,Test your automation before customers do,Six tests catch most automation failures before they reach customers.,"A practical testing checklist (fake data, edge cases, duplicates, broken login, output check, owner).",Save it before your next launch.,save,Checklist with six checkbox rows and small icons.,"Before any automation touches a real customer, I run these 6 tests:
+
+☐ Fake data first, never real customers
+☐ Weird cases: empty fields, Bangla names, emoji, very long text
+☐ Run it twice: does it create duplicates?
+☐ Break a login on purpose: does an alert arrive?
+☐ Check the output where people actually see it (the sheet, the email, the chat)
+☐ Write down who fixes it when it breaks
+
+Most problems show up in test 2 and test 3.
+
+Save this before your next launch.
+
+#automation #n8n #testing",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,"Checklist template. 'Most problems show up in test 2 and 3' is Asif's experience-based opinion. Keep it only if true for you, otherwise delete that line.",05-image-posts/week-2.md#D13-I1,planned
+50,13,2026-10-24,Sat,13:30,D13-R1,reel,Steal This Prompt,PA — Practical AI,Talking head + screen split,"Make AI your tutor, not your answer key",Shares among students and parents,AI can do your homework. That's the problem.,"Ask AI to give one hint at a time and ask you the next step, so you build understanding instead of copying answers.",A tutor prompt that works in any AI tool + why it matters (no AI in exams).,Send it to a student who copies AI answers.,share,Student POV: full AI solution → tutor prompt → back-and-forth chat with hints.,"AI can do your homework. That's the problem. In the exam hall, there's no AI.
+
+Change the deal with one prompt:
+“Be my tutor. Don't give me the answer. Give me one hint at a time, then ask me what I think the next step is. If I'm wrong, explain why.”
+
+Works for maths, physics, accounting, coding. Any subject, any AI app.
+
+Slower, yes. But the answer ends up in your head.
+
+Send this to a student who copies AI answers.
+
+#students #studytips #AItips",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,36,Use a simple algebra problem (e.g. 3x + 5 = 20). Record a real tutoring exchange; keep only the three clearest turns.,04-reels/week-2.md#D13-R1,planned
+51,13,2026-10-24,Sat,18:30,D13-I2,image,Steal This Prompt,PA — Practical AI,Framework card,The 5-part formula for AI image prompts,Saves among creators and sellers,The 5-part formula for AI image prompts,"Subject, setting, light, style and shape make image prompts predictable.",A fill-in formula with a worked example and the right aspect ratio for Facebook.,Save it.,save,Five coloured blocks forming one prompt sentence; small example image placeholder.,"Random AI images come from random prompts. Use 5 parts:
+
+1. Subject: what exactly? “a brown leather wallet”
+2. Setting: where? “on a wooden desk by a window”
+3. Light: “soft morning light”
+4. Style: “clean product photo” or “flat illustration”
+5. Shape: “4:5 portrait” (best for Facebook feed)
+
+Put together: “A brown leather wallet on a wooden desk by a window, soft morning light, clean product photo, 4:5 portrait.”
+
+Change one part at a time to learn what each does.
+
+Save this.
+
+#AIart #AItips #contentcreation",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,"If you add an example image, generate it yourself and keep it non-photorealistic or clearly a product mock. If photorealistic, label 'AI-generated' on the image.",05-image-posts/week-2.md#D13-I2,planned
+52,13,2026-10-24,Sat,21:00,D13-R2,reel,Build Log,SVC — Work with me (n8n services),Screen demo + face cam,Build log: Telegram → Google Drive backups that never duplicate,Proof of reliability engineering; Messenger leads,Backups that never duplicate a file. Here's how.,"Two n8n workflows move files from Telegram to Drive, verify size + fingerprint, skip duplicates and resume after crashes.","Shows reliability concepts (verification, duplicate check, resume point) in plain words, which signals professional quality.",Message 'AUTOMATE' and say where your files live.,message,Telegram channel scroll (blurred) → Drive folders filling → canvas zooms on verify and duplicate nodes.,"A backup system that never uploads the same file twice. Here's what I built in n8n:
+
+Our team shares design files in a Telegram channel. Hundreds of them. Two workflows move them into Google Drive:
+
+① New files, every 5 minutes: download → upload to the right Drive folder → compare size + digital fingerprint (MD5). Match = saved correctly. No match = try again.
+Before every upload: “Have I done this one already?” If yes, skip.
+It remembers where it stopped, so a crash doesn't restart everything.
+
+② Old files: a second workflow works through the archive, oldest first.
+
+Need files backed up like this? Message me “AUTOMATE” and tell me where your files live now.
+
+#n8n #GoogleDrive #automation",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,51,"Film Asif's real 'TG→Drive ①/②' workflows. Blur channel name, file names, client names and folder names. Never show the setup/credentials workflow or API keys.",04-reels/week-2.md#D13-R2,planned
+53,14,2026-10-25,Sun,09:30,D14-I1,image,Steal This Prompt,WF — Workflows & productivity,Prompt card,Prepare for any meeting in 3 prompts,Saves among professionals and freelancers,Prepare for any meeting in 3 prompts,"Three prompts (decisions needed, likely questions, your 3 points) prepare you in minutes.",A short meeting-prep sequence.,Save it.,save,Three numbered prompt chips with a small calendar icon.,"5 minutes before a meeting, run these 3 prompts:
+
+1. “Here's the agenda and last meeting's notes: [paste]. What decisions are needed today?”
+2. “What will the other side probably ask? Give me short answers.”
+3. “Write my 3 key points in under 60 words.”
+
+Then write them on one page and close the chat. You'll sound prepared because you are.
+
+Only paste what you're allowed to share.
+
+Save this.
+
+#productivity #meetings #AItips",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Prompt-card template.,05-image-posts/week-2.md#D14-I1,planned
+54,14,2026-10-25,Sun,13:30,D14-R1,reel,AI Myth Check,LIT — AI literacy & safety,Green screen + diagram,Your AI might be living in the past (training cutoff),Trust + shares; prevents a common mistake,Your AI might be living in the past.,Models learn from data up to a cutoff; without web search they can state old information as current.,"Two checks for time-sensitive questions: is search on, and are sources dated?",Follow for more AI Myth Checks.,follow,Timeline with a 'cutoff' line; right side greyed; search toggle and dated sources.,"Your AI might be living in the past.
+
+Every AI model learns from data up to a cutoff date. After that, it knows nothing unless it searches the web, and without search it can describe old prices, laws or “the latest version” as if they're current.
+
+For anything time-sensitive, check 2 things:
+1. Is web search on?
+2. Does the answer show sources with dates?
+
+No dates, no trust.
+
+Follow for more AI Myth Checks.
+
+#AIliteracy #ChatGPT #AItips",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,30,Generate a real outdated answer by asking a model with search off about a recent product; show it honestly. Don't single out one brand as 'bad'.,04-reels/week-2.md#D14-R1,planned
+55,14,2026-10-25,Sun,18:30,D14-I2,image,Explain It Simply,AU — Automation & n8n,Glossary card,"What's inside an AI agent: brain, instructions, memory, tools",Authority; prepares buyers for agent projects,What's inside an AI agent (4 parts),An agent = model + instructions + memory + tools; fewer tools mean fewer mistakes.,Plain-language anatomy that helps buyers scope agent projects.,Save it.,save,"Robot outline split into four labelled zones (head, notebook, chat bubble, toolbox).","“AI agent” sounds complicated. Inside, it's 4 parts:
+
+🧠 Brain: the AI model that reads and decides
+📋 Instructions: the rules, written once (tone, limits, when to hand over to a human)
+🗂 Memory: what it remembers about this customer or task
+🧰 Tools: what it's allowed to do (read a sheet, send a message, book a slot)
+
+The rule I build by: fewer tools = fewer mistakes. Give an agent only what it needs for the job.
+
+Save this.
+
+#AIagents #n8n #automation",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,"Glossary/diagram hybrid. The four parts mirror n8n's AI Agent node (model, system message, memory, tools); you can show a small n8n reference in the caption reply if asked.",05-image-posts/week-2.md#D14-I2,planned
+56,14,2026-10-25,Sun,21:00,D14-R2,reel,Steal This Prompt,WF — Workflows & productivity,Before/after split screen,"Freelance proposals: let AI read the job post, you write the opener",Saves + shares among freelancers,Clients read two lines. Then decide.,Use AI to analyse the client's worries and words; write a 2-line opener yourself (their worry + your proof); let AI cut generic lines.,A proposal method that avoids AI-sounding openers + three prompts.,Send it to a freelancer friend.,share,"Split screen: left = generic 'Dear Sir' proposal (crossed out), right = job-post analysis → typed two-line opener → AI edit suggestions; final full-width better proposal.","Clients read the first two lines of your proposal, then decide.
+
+Use AI to read the job post, not to write your proposal:
+1. “What is this client worried about? Which words do they repeat? What's the real problem behind the task?”
+2. Write your opener yourself. Line 1: name their worry. Line 2: proof you've solved it before.
+3. “Is anything in my proposal generic? Cut it. Keep it under 120 words.”
+4. End with one smart question about their project.
+
+Skip “Dear Sir, I am an expert.” Every proposal says that.
+
+Send this to a freelancer friend.
+
+#freelancing #Upwork #AItips",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,43,Use an invented job post (no real client). Write the opener live so viewers see a human writing it. Don't show any real platform account details.,04-reels/week-2.md#D14-R2,planned
+57,15,2026-10-26,Mon,09:30,D15-I1,image,Steal This Prompt,PA — Practical AI,Prompt card,"Don't ask for a summary, ask for decisions",Saves; practical document reading,Don't ask for a summary. Ask for decisions.,"Asking AI for decisions, deadlines, amounts and consequences turns any document into an action list.",A 4-question document prompt that beats 'summarise this'.,Save it for the next long document.,save,Long document icon → four question chips → checklist.,"“Summarise this” gives you a shorter document. You still don't know what to do.
+
+Ask this instead:
+“Read this document: [paste].
+1. What decisions does it ask me to make?
+2. What are the deadlines and amounts?
+3. What happens if I do nothing?
+4. What should I ask before agreeing?”
+
+Works for school notices, bank letters, client briefs and policy updates.
+
+Save this for the next long document.
+
+#AItips #productivity #ChatGPT",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Prompt-card template.,05-image-posts/week-3.md#D15-I1,planned
+58,15,2026-10-26,Mon,13:30,D15-R1,reel,Steal This Prompt,PA — Practical AI,Prop demo + screen inserts,Can't decide? Make AI build a weighted scorecard,Saves; practical decision tool,Can't decide between two options? Score them.,"Give AI your priorities with weights and the real specs; get a scored table, then ask what would flip the result.","A decision method for laptops, phones, couriers or job offers that keeps you in control.",Save it for your next decision.,save,"Asif at a table with two real laptop boxes (props) → cut-in screen inserts: weights bar chart, scoring table with totals, 'what would flip it' answer → Asif picks up the winner.","Stuck between two options? Make AI build a weighted scorecard.
+
+1. Your priorities, with weights: “Battery 40%, price 30%, weight 20%, ports 10%.”
+2. Paste the real specs from the shop pages. Don't trust AI's memory for specs or prices.
+3. “Score each option 1–10 on each priority, explain why, and give a weighted total.”
+4. The smart question: “What would have to change for the other option to win?”
+
+You still choose, but now you know exactly what you're trading.
+
+Works for phones, laptops, courier services and job offers. Save it.
+
+#AItips #decisionmaking #productivity",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,41,Use two real laptop listings (no brand logos needed on screen; blur if necessary). Use the actual totals AI returns; the 7.6 vs 6.9 in the script is a placeholder. Update the VO and on-screen text to match your real run.,04-reels/week-3.md#D15-R1,planned
+59,15,2026-10-26,Mon,18:30,D15-I2,image,Automate This,AU — Automation & n8n,Framework card,Is it worth automating? The 1-minute math,Saves; quantifies value for buyers,Is it worth automating? Do the 1-minute math,"Minutes × frequency × 52 shows yearly time cost; compare with setup and running cost, plus mistake costs.",A simple formula with a worked example (15 min × 10/week = 130 hours/year).,Save it and calculate one task today.,save,Calculator-style card with the formula and a worked example.,"Is a task worth automating? 1 minute of maths:
+
+minutes per task × times per week × 52 = minutes per year
+
+Example: 15 minutes × 10 times a week × 52 = 7,800 minutes = 130 hours a year.
+
+Now compare that with the setup time and the monthly running cost. Then add what mistakes cost you: a lost order, a late reply, a wrong price.
+
+If the yearly number scares you, it's worth a conversation.
+
+Save this and calculate one task today.
+
+#automation #productivity #smallbusiness",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,"The example is illustrative and labelled 'Example'. Keep the maths exactly as written (15 × 10 × 52 = 7,800 min = 130 h).",05-image-posts/week-3.md#D15-I2,planned
+60,15,2026-10-26,Mon,21:00,D15-R2,reel,Automate This,AU — Automation & n8n,Screen demo + face cam,"Human-in-the-loop: AI drafts, you tap Approve",Trust in AI automation; buyer education,Don't let AI send messages alone. Do this.,"An n8n workflow drafts replies with AI, then waits for a human Approve/Decline on Telegram before sending; n8n agents can also require approval before using tools.",A safe pattern for adding AI to customer communication.,Follow for more builds.,follow,"Phone showing a Telegram approval message with buttons → canvas with Gmail trigger, AI node and 'send and wait' node → both branches.","Don't let AI send messages to customers on its own. Add a human tap.
+
+This n8n workflow:
+1. A customer email arrives
+2. AI drafts a reply
+3. The workflow pauses and sends me the draft on Telegram with Approve / Decline buttons
+4. Approve → it sends. Decline → nothing goes out.
+
+It's called human-in-the-loop. Newer n8n versions also let an AI agent ask for approval before it uses a tool.
+
+Use it for anything that touches money, customers or your reputation. After a few weeks you'll see which replies are safe to automate fully.
+
+Follow for more builds.
+
+#n8n #AIautomation #humanintheloop","Release notes 2.x (n8n Docs, 2026) https://docs.n8n.io/changelog/release-notes-2.x",Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,45,Build on a demo Gmail account. Use the Telegram 'send message and wait for response' approval pattern. Show the agent tool-approval option only if your n8n version has it (2.6+); confirm before filming.,04-reels/week-3.md#D15-R2,planned
+61,16,2026-10-27,Tue,09:30,D16-I1,image,Work With Me,SVC — Work with me (n8n services),FAQ card,Will automation cost me every month? Honest answer,Remove a buying objection; Messenger leads,“Will automation cost me every month?” Honest answer,"Running cost has four parts (hosting, AI usage, paid apps, maintenance); some setups run very cheaply.",A transparent cost breakdown and a promise of an estimate before building.,Message 'AUTOMATE' for an estimate.,message,Receipt-style card listing four cost lines.,"The question I get most: “Will this cost me every month?”
+
+Honest answer: it depends on 4 things.
+1. Where it runs: an n8n Cloud plan, or your own server (self-hosted)
+2. AI usage: if the workflow uses AI, you pay the AI provider per use. At low volume it's usually small.
+3. Paid apps: some tools you connect need their own subscription
+4. Maintenance: apps change, and occasionally something needs a fix
+
+No AI and self-hosted? Running costs can be very low.
+
+I give an estimate before building anything. Message me “AUTOMATE”.
+
+#n8n #automation #smallbusiness","Choose your n8n (n8n Docs, current) https://docs.n8n.io/choose-n8n/","Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Don't add prices to the image (they change and vary by country). Give real numbers only in private quotes.,05-image-posts/week-3.md#D16-I1,planned
+62,16,2026-10-27,Tue,13:30,D16-R1,reel,What It Means For You,NEWS — Current developments,Green screen + talking head,The Facebook survey 'How well does this video match your interests?' explained,Relatable platform insight; shares among creators,Seen this question under a Facebook Reel?,"Since Jan 2026 Facebook uses random 1–5 interest surveys to train Reels ranking; honest answers shape your feed, and creators should stay on-topic.","Explains a mysterious prompt users see, with advice for viewers and creators.",Follow if AI and automation is your interest.,follow,Drawn mock of the survey card; Meta engineering article capture; before/after precision stat card.,"Seen “How well does this video match your interests?” under a Facebook Reel? Here's what it does.
+
+Meta's engineers explained it in January 2026: Facebook randomly shows this 1–5 survey to some viewers and uses the answers to train how Reels are ranked. Their old interest guesses (based on likes and watch time) were right only 48% of the time; with the survey model, 63%.
+
+For viewers: answer honestly, and use “Not interested” when a Reel misses.
+For creators: stay on your topic. Clickbait brings the wrong viewers, and they'll rate you low.
+
+That's why this page only talks AI and automation. Follow if that's your interest.
+
+#FacebookReels #socialmedia #contentcreator","Adapting the Facebook Reels RecSys AI Model Based on User Feedback (Engineering at Meta, 2026-01-14) https://engineering.fb.com/2026/01/14/ml-applications/adapting-the-facebook-reels-recsys-ai-model-based-on-user-feedback/",Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,41,Draw the survey mock yourself; don't screenshot someone else's Reel. Capture the engineering article from your own screen for ≤3 s.,04-reels/week-3.md#D16-R1,planned
+63,16,2026-10-27,Tue,18:30,D16-I2,image,Hidden Button,HF — Hidden features & tools,Hidden feature card,Windows shortcut: Alt + Space opens Gemini,Shares among office workers and students,Windows shortcut: Alt + Space opens Gemini,The Gemini app for Windows (Sept 2026) opens over any app with Alt + Space.,A quick-access habit + what to use it for.,Send it to a colleague who works on Windows.,share,Large keyboard keys 'Alt' + 'Space' with a small chat window popping up.,"Windows users: Gemini now has a desktop app, and Alt + Space opens it over any app.
+
+• Install the Gemini app for Windows (released Sept 2026)
+• Press Alt + Space from Word, Excel, your browser, anything
+• Ask a quick question, summarise a document, draft a reply
+• Connect Gmail and Drive to search your own files
+
+No more switching tabs to ask a quick question.
+
+Send this to a colleague who works on Windows.
+
+#GeminiAI #Windows #productivity","The Gemini desktop app is now available for Windows (Google Workspace Updates, 2026-09) https://workspaceupdates.googleblog.com/2026/09/the-gemini-desktop-app-is-now-available-for-Windows.html","Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Draw the keys; no Google logo. Check whether Alt + Space conflicts with the Windows window menu on your test PC and mention the settings fix in a comment if needed.,05-image-posts/week-3.md#D16-I2,planned
+64,16,2026-10-27,Tue,21:00,D16-R2,reel,Steal This Prompt,PA — Practical AI,Numbered list + talking head,"The 4-part prompt: goal, context, example, format",Saves; core prompting framework,Good prompts have four parts. Yours has one.,"Most prompts contain only the task; adding goal, context, example and format produces dramatically better results.",A memorable framework (G-C-E-F) demonstrated on a real promo post.,Save it.,save,"Four letter blocks G, C, E, F fill one by one; before/after split at the end.","Most prompts are just a task: “Write a post about my discount.” Good prompts have 4 parts:
+
+G: Goal: what's it for and who reads it? “Get mothers in Dhaka to order before Friday.”
+C: Context: facts it can't guess. Product, price, delivery, offer end date.
+E: Example: paste a post that worked before.
+F: Format: “3 options, under 50 words, max one emoji.”
+
+You don't need all 4 every time. Add the ones you're missing.
+
+Save this for your next prompt.
+
+#AItips #PromptTips #ChatGPT",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,43,List template with 4 letter blocks. Generate both outputs live. Use a fictional shop and discount.,04-reels/week-3.md#D16-R2,planned
+65,17,2026-10-28,Wed,09:30,D17-I1,image,Before → After,AU — Automation & n8n,Before/after timeline,"A Facebook seller's day, before and after 3 automations",Make automation tangible for F-commerce owners,"A Facebook seller's day, before and after 3 automations","Three automations (order capture, FAQ replies, nightly sales summary) change a seller's whole day.",Concrete before/after picture of automation benefits in the audience's own context.,Share with a seller who's always on their phone.,share,"Two vertical timelines: grey 'before' with stress icons, green 'after' with calm icons.","An example day for a Facebook seller, before and after 3 automations:
+
+Before
+9 AM: copy orders from Messenger into a notebook
+1 PM: answer “price?” again and again
+10 PM: add up today's sales by hand
+
+After
+Orders land in a Google Sheet automatically
+Common questions get instant replies, so you answer only the real ones
+10 PM: a sales summary arrives on your phone
+
+Same business. Different evenings.
+
+Share this with a seller who's always on their phone.
+
+#fcommerce #automation #smallbusiness",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,"Label it as an example day. Use neutral icons, not a real seller's page.",05-image-posts/week-3.md#D17-I1,planned
+66,17,2026-10-28,Wed,13:30,D17-R1,reel,Steal This Prompt,PA — Practical AI,Phone-in-hand demo,Practise a job interview out loud with AI voice mode,Saves + shares among job seekers and students,"Practise your job interview with AI, out loud.","Use voice mode with the job post to run a one-question-at-a-time mock interview, then ask for targeted feedback.",A realistic practice method + the most useful feedback request.,Send it to someone with an interview coming up.,share,Phone propped like a video call; Asif answering out loud; feedback text on screen.,"Practise your job interview with AI, out loud. Typing answers is easy; saying them is where people freeze.
+
+1. Paste the job post into your AI app
+2. Turn on voice mode and say: “Interview me for this job. One question at a time. Wait for my answer.”
+3. Answer out loud, with no pausing to google
+4. After 5 questions: “Tell me what was vague, and rewrite my weakest answer.”
+5. When you're ready: “Be a tough interviewer.”
+
+The most useful feedback: give one real example with a result, not adjectives.
+
+Send this to someone with an interview coming up.
+
+#jobinterview #careertips #AItips",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,40,Record a real practice session for a realistic role (e.g. junior graphic designer). Keep 2–3 short Q&A moments only.,04-reels/week-3.md#D17-R1,planned
+67,17,2026-10-28,Wed,18:30,D17-I2,image,Steal This Prompt,PA — Practical AI,Prompt card,Turn messy order chats into a clean table,Saves among F-commerce sellers,Turn messy order chats into a clean table,Paste raw order messages and get a structured table with MISSING flags and a follow-up list.,A copy-paste prompt that structures orders for Google Sheets.,Save it for your next order rush.,save,Messy chat bubbles on the left → neat table on the right.,"Orders scattered across 30 Messenger chats? Paste them into AI:
+
+“Here are today's order messages: [paste].
+Make a table: Name | Phone | Item | Size | Qty | Address | Payment.
+If anything is missing, write MISSING.
+Then list who I need to message back and what to ask them.”
+
+Copy the table into Google Sheets. The MISSING list is your follow-up job.
+
+Remove anything you don't need before pasting; customer data is private.
+
+Save this for your next order rush.
+
+#fcommerce #AItips #GoogleSheets",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Prompt-card template with a table preview. Use invented names in the preview.,05-image-posts/week-3.md#D17-I2,planned
+68,17,2026-10-28,Wed,21:00,D17-R2,reel,Automate This,AU — Automation & n8n,Screen demo + face cam,"Add a row, and the invoice makes itself (n8n)",Proof of skill for freelancers and shops; Messenger leads,Add a row. The invoice makes itself.,"A sheet row marked 'Ready' triggers n8n to fill a template, create a numbered PDF, email the client and mark the row invoiced; totals come from the sheet, not AI.",A complete invoicing automation with the important rule that money maths isn't left to AI.,Message 'AUTOMATE' with what you invoice for.,message,Sheet row status → template filling → PDF 'INV-0042' → email arrives → row updated.,"Add a row to a sheet → the invoice makes itself. Here's the n8n version:
+
+1. A row's status changes to “Ready”
+2. n8n fills my invoice template: client, items, totals, due date
+3. It creates a PDF with the next invoice number
+4. Emails it to the client with a short message
+5. Marks the row “Invoiced” with date and number, so nobody invoices twice
+
+One rule: totals come from the sheet's formulas, not from AI. Money maths should never be guessed.
+
+Want this for your business? Message me “AUTOMATE” and tell me what you invoice for.
+
+#n8n #invoicing #freelancing",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,49,Build a demo (Google Sheets trigger → Google Docs template or HTML template → PDF → Gmail → Sheets update). Fake client data. Hide credentials.,04-reels/week-3.md#D17-R2,planned
+69,18,2026-10-29,Thu,09:30,D18-I1,image,AI Myth Check,LIT — AI literacy & safety,Checklist,Check an AI claim in 60 seconds,Trust + shares in groups,Check an AI claim in 60 seconds,"A 5-step quick check (exact claim, two known sources, dates, agreement, don't repeat if only AI says it).",A fast verification habit for AI answers and viral claims.,Send it to a group where people forward everything.,share,Stopwatch at 60 s with five numbered steps around it.,"Before you repeat something an AI told you, give it 60 seconds:
+
+1. Copy the exact claim, one sentence
+2. Search it and open 2 sources you already know
+3. Check the date on each
+4. Do they agree? Good.
+5. Only the AI says it? Don't repeat it.
+
+Especially before forwarding it to a family or office group.
+
+Send this to a group where people forward everything.
+
+#factcheck #AIliteracy #AItips",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Checklist template with stopwatch.,05-image-posts/week-3.md#D18-I1,planned
+70,18,2026-10-29,Thu,13:30,D18-R1,reel,Automate This,AU — Automation & n8n,Phone-in-hand demo + canvas inserts,AI news in one email a day: an n8n digest,Proof of skill + useful idea for any industry,"AI news, in one email a day.","An n8n workflow reads trusted RSS feeds each morning, filters the last 24 hours, removes repeats, and has AI write two lines per story with source links.","Shows how to cut information overload, and that the idea works for any industry.",Message 'AUTOMATE' for an industry digest.,message,"Result first: Asif in the morning with tea, opening the 7:00 AM digest on his phone → short canvas inserts (schedule → RSS → filter → AI → email) → back to the phone tapping a source link.","I read AI news in one email a day. An n8n workflow writes it at 7 AM:
+
+1. Reads the RSS feeds of official blogs I trust (RSS = a simple public feed most blogs offer)
+2. Keeps only the last 24 hours, removes repeats
+3. AI writes 2 lines per story + why it matters
+4. Every line keeps the original link, and I click before I share anything
+
+Ten sites become one email. Works for any industry, competitor blogs or job posts.
+
+Want a digest for your field? Message me “AUTOMATE” and tell me which sites you'd follow.
+
+#n8n #automation #AInews",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,50,"Use official blog RSS feeds (e.g. Google, OpenAI, n8n blogs). Don't republish their articles; the digest is private and links out. Show the email briefly.",04-reels/week-3.md#D18-R1,planned
+71,18,2026-10-29,Thu,18:30,D18-I2,image,Steal This Prompt,WF — Workflows & productivity,Flow diagram,"1 video → 5 posts, without sounding like a robot",Saves among creators and small businesses,"1 video → 5 posts, without sounding like a robot","Repurpose your own video by extracting ideas with timestamps, drafting with AI, and rewriting hooks yourself.",A 5-step repurposing workflow that respects originality rules.,Save it.,save,One video icon branching into five post icons.,"One good video can become 5 posts, without sounding like AI wrote them:
+
+1. Get the transcript of your own video
+2. “List the 5 most useful ideas, in my words, with timestamps.”
+3. For each idea: one image post + one short caption
+4. Rewrite every hook yourself. AI drafts, you decide.
+5. Spread them across the week
+
+Repurpose your own content, not other people's. Facebook now reduces reach for reposted content.
+
+Save this.
+
+#contentcreation #AItips #socialmedia","Rewarding Original Creators on Facebook (Meta Newsroom, 2026-03) https://about.fb.com/news/2026/03/rewarding-original-creators-on-facebook/","Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Flow-fan template.,05-image-posts/week-3.md#D18-I2,planned
+72,18,2026-10-29,Thu,21:00,D18-R2,reel,Work With Me,SVC — Work with me (n8n services),Numbered list + talking head,5 questions to ask before hiring an automation freelancer,Trust-building service post; Messenger leads,Hiring someone to automate? Ask these five first.,"Ownership, failure handling, test data, monthly cost and handover separate professionals from risky builds.","A buyer's checklist that protects business owners, and positions Asif as transparent.",Message 'AUTOMATE' and ask all five.,message,Numbered question cards; a red-flag card; Asif inviting the questions.,"Hiring someone to automate your business? Ask these 5 questions first:
+
+1. Whose accounts will it run on? (Should be yours. If they leave, you keep it.)
+2. What happens when it fails, and who gets the alert?
+3. Can I see it work with test data before it goes live?
+4. What will it cost every month to run (server, AI, apps)?
+5. Do I get a written guide, so someone else can fix it later?
+
+Red flag: anyone promising “100% automated, no human ever”.
+
+I'm happy to answer all five before any project. Message me “AUTOMATE”.
+
+#n8n #automation #smallbusiness",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,48,Talking-head list. Only keep 'I'm happy to answer all five' if your process really covers each (see D10-I2).,04-reels/week-3.md#D18-R2,planned
+73,19,2026-10-30,Fri,09:30,D19-I1,image,Automate This,AU — Automation & n8n,Comparison table,"Zapier, Make or n8n? Choose by need, not hype",Answer a common buyer question honestly; saves,"Zapier, Make or n8n? Choose by need, not hype","Each tool fits a different need: Zapier for the simplest start, Make for visual multi-step flows, n8n for control, AI agents and self-hosting.","A fair, non-salesy comparison with a 'pick this if' rule.",Save it.,save,Three-column comparison with neutral icons (no logos).,"Zapier, Make or n8n? Don't pick by hype. Pick by need.
+
+Zapier: the easiest start and the most ready-made app connections.
+Make: visual flows for multi-step jobs.
+n8n: visual, with code when you need it. Run it in the cloud or on your own server.
+
+Pick Zapier if you want it simple, today.
+Pick Make if you think visually and need branches.
+Pick n8n if you want control, AI agents, or your own server.
+
+I build in n8n for those reasons, but all three are good tools. Pricing changes often, so check each tool's current pricing page.
+
+Save this.
+
+#n8n #Zapier #automation","Choose your n8n (n8n Docs, current) https://docs.n8n.io/choose-n8n/","Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Tool names as plain text only (no logos). Keep it fair. Don't add prices.,05-image-posts/week-3.md#D19-I1,planned
+74,19,2026-10-30,Fri,13:30,D19-R1,reel,Steal This Prompt,PA — Practical AI,Prop demo + screen inserts,"Before you sign anything, ask AI these 4 questions",Saves; practical protection,"Before you sign, ask AI four questions.","Redact personal data, then ask about payments/dates, one-sided rules, exit terms and unusual clauses with exact quotes.",A 4-question contract reading method + clear 'not legal advice' boundary.,Save the four questions.,save,Long agreement on paper → marker redaction → AI answers with highlighted clauses.,"Before you sign an agreement (rent, job, freelance, app terms), ask AI 4 questions:
+
+First, remove your ID numbers, signatures and account details.
+
+1. “List every amount I pay, and every date.”
+2. “What can they do that I can't?” (finds one-sided rules)
+3. “How do I get out, and what does it cost me?”
+4. “What's unusual compared with similar agreements? Quote the exact clause.”
+
+Always read the quoted clause yourself, not just the summary.
+
+Not legal advice. For big contracts, take these answers to a lawyer. You'll ask better questions and pay for less time.
+
+Save these questions.
+
+#AItips #contracts #ChatGPT",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,45,Use a sample agreement template (public-domain or self-written). Never show a real person's contract.,04-reels/week-3.md#D19-R1,planned
+75,19,2026-10-30,Fri,18:30,D19-I2,image,Steal This Prompt,PA — Practical AI,Before/after card,Rambling AI answers? Add the reader and a limit,Saves; quick prompting win,Rambling AI answers? Add these 2 things,Naming the reader and setting a hard limit fixes most rambling answers.,Two simple constraints with examples and a before/after.,Save it.,save,Long scroll of text (before) vs five neat lines (after).,"AI answers too long and too general? Add 2 things to your prompt:
+
+1. The reader: “for a busy shop owner”, “for my 12-year-old”, “for my manager”
+2. A hard limit: “under 80 words”, “5 bullets”, “one paragraph”
+
+Before: 400 words about everything.
+After: 5 lines you can actually use.
+
+Save this.
+
+#AItips #ChatGPT #productivity",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Before/after template.,05-image-posts/week-3.md#D19-I2,planned
+76,19,2026-10-30,Fri,21:00,D19-R2,reel,AI Myth Check,LIT — AI literacy & safety,Green screen + talking head,AI detectors flag real human writing,"Shares among teachers, students and employers",AI detectors flagged real student essays as AI.,"Studies and OpenAI's own experience show AI-text detectors are unreliable, especially for non-native English writers; a score is not proof.",Evidence-based warning + a fairer alternative (ask about drafts and process).,Send it to a teacher.,share,Asif on green screen over the Patterns paper and the 2023 TechCrunch headline; simple stat cards.,"AI detectors labelled real student essays as AI-written.
+
+• Stanford researchers ran 91 essays by non-native English writers through 7 popular detectors. More than half were wrongly flagged as AI. (Patterns, 2023)
+• OpenAI shut down its own detector in July 2023 for “low accuracy”. It caught 26% of AI text and flagged 9% of human text as AI.
+
+Why: simple, clear writing looks “predictable”, which is what detectors measure.
+
+Teachers and employers: a detector score is not proof. Ask about drafts, notes, or have a short conversation about the work.
+
+Send this to a teacher you know.
+
+#AIliteracy #education #students","GPT detectors are biased against non-native English writers (Patterns (Cell Press), Liang et al., 2023-07) https://www.cell.com/patterns/fulltext/S2666-3899(23)00130-7 ; OpenAI scuttles AI-written text detector over 'low rate of accuracy' (TechCrunch, 2023-07-25) https://techcrunch.com/2023/07/25/openai-scuttles-ai-written-text-detector-over-low-rate-of-accuracy/",Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,42,Capture source pages from your own screen for ≤3 s each. Don't name or show any specific commercial detector product.,04-reels/week-3.md#D19-R2,planned
+77,20,2026-10-31,Sat,09:30,D20-I1,image,Hidden Button,HF — Hidden features & tools,Hidden feature card,ChatGPT Library: pull files from your cloud drive with @,Saves; timely feature awareness,ChatGPT can now pull files from your cloud drive,"Since Sept 2026, ChatGPT's Library connects Google Drive, Dropbox, Box and SharePoint; add files with @ or 'Add from Library'.",How to use it + a privacy reminder.,Save it.,save,"Chat input with '@' and a dropdown of file icons from four cloud services (drawn, no logos).","ChatGPT can now pull files straight from your cloud storage.
+
+Since 10 Sept 2026, ChatGPT's Library connects Box, Dropbox and SharePoint, alongside Google Drive. Once connected:
+• type @ in a chat to add a file, or use “Add from Library”
+• ask: “Compare these two quotes” or “Summarise the changes in v2”, no downloading needed
+
+Only connect accounts you're comfortable sharing, and check what's available on your plan.
+
+Save this.
+
+#ChatGPT #productivity #AItips","ChatGPT — Release Notes (OpenAI Help Center, 2026-09) https://help.openai.com/en/articles/6825453-chatgpt-release-notes","Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Re-check the release note and plan availability the day before posting. Draw UI; no third-party logos.,05-image-posts/week-3.md#D20-I1,planned
+78,20,2026-10-31,Sat,13:30,D20-R1,reel,Automate This,AU — Automation & n8n,Phone-in-hand demo + canvas inserts,"Snap a receipt, get a spreadsheet row (Telegram bot + n8n)",Proof of skill; relatable use case,Snap a receipt. Get a spreadsheet row.,"A Telegram bot built in n8n reads receipt photos with AI, validates numbers, asks when unsure, logs to Sheets and confirms.",Shows AI + automation with a safety check (ask instead of guess).,Message 'AUTOMATE' for team expense tracking.,message,"Mostly phone-in-hand: snapping a real receipt, sending it to the bot, getting the confirmation; brief canvas and sheet inserts between.","Snap a receipt → get a spreadsheet row. A Telegram bot built in n8n:
+
+1. Send the bot a photo of a receipt
+2. An AI model reads the shop, date, total and picks a category
+3. A check: is the total a real number, is the date valid?
+4. If anything is unclear, the bot asks you instead of guessing
+5. It adds a row to Google Sheets and replies: “Saved: Tk 850, Groceries. Correct?”
+
+Month end, the totals are already there.
+
+Want this for your team's expenses? Message me “AUTOMATE”.
+
+#n8n #Telegram #automation",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,48,Build a demo bot (Telegram Trigger → download file → AI vision model → IF → Google Sheets → Telegram reply). Use your own receipts with personal data covered. The vision step must receive the actual image file (not just a file ID). Test this before filming.,04-reels/week-3.md#D20-R1,planned
+79,20,2026-10-31,Sat,18:30,D20-I2,image,Work With Me,SVC — Work with me (n8n services),Checklist,Before you automate: is your business ready?,Qualify leads; reduce failed projects,Before you automate: is your business ready?,"Readiness = clear steps, digital data, weekly repetition, a definition of done, and an owner.",A readiness checklist that helps owners prepare (and helps Asif get better leads).,Message 'AUTOMATE' when you tick most boxes.,message,Clipboard checklist with five boxes.,"Before you pay anyone to automate, check that your business is ready:
+
+☐ You can explain the task step by step
+☐ The data lives somewhere digital (a sheet, an inbox, a form), not only in a notebook
+☐ The task repeats every week
+☐ You know what “done” looks like
+☐ Someone will own it after launch
+
+Missing some? Fix those first. It'll save you money.
+Tick most of them? Message me “AUTOMATE”.
+
+#automation #smallbusiness #n8n",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Checklist template.,05-image-posts/week-3.md#D20-I2,planned
+80,20,2026-10-31,Sat,21:00,D20-R2,reel,Work With Me,SVC — Work with me (n8n services),Diagram explainer + talking head,A website chat that only answers from your documents (RAG explained),Sell the website assistant service; educate on RAG,A website chat that only uses your documents.,"A retrieval-based assistant searches your files, answers only from matching passages, shows sources and hands over when the answer isn't there.",Explains RAG simply and why it beats a generic chatbot for business.,Message 'AUTOMATE' and send your FAQ.,message,Website chat widget → document icons → highlighted paragraphs → answer with source tag → human fallback.,"A website chat that answers only from your documents, not from the internet or its imagination.
+
+How it works:
+1. Searches your files first: price list, delivery policy, FAQs
+2. Picks the few paragraphs that match the question
+3. Answers using only those, and can show the source
+4. Not in your documents? It says so and offers a human
+
+The technical name is RAG (retrieval-augmented generation): find, then answer. Update your price list and the answers update too, with no retraining.
+
+Want one for your website or page? Message me “AUTOMATE” and send your FAQ.
+
+#AIchatbot #n8n #smallbusiness",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,46,"Demo with a fictional shop's documents. If showing your 'Website AI Agent' workflow, confirm it actually retrieves document text (not just file names) before claiming 'answers from your documents'. Build a dedicated demo if needed.",04-reels/week-3.md#D20-R2,planned
+81,21,2026-11-01,Sun,09:30,D21-I1,image,Steal This Prompt,PA — Practical AI,Prompt card,The 'don't use these words' line for AI writing,Saves; makes AI writing sound human,Add this line to every AI writing prompt,Banning the most common AI-cliché words and asking for a 'texting a colleague' tone makes AI drafts sound human.,A ready-made ban list + replacement instruction.,Save it.,save,Words in a 'banned' style (struck-through chips) + one green instruction chip.,"The fastest way to make AI writing sound less like AI: ban its favourite words.
+
+Add this to your prompt:
+“Don't use these words: delve, unlock, elevate, leverage, seamless, game-changer, robust, cutting-edge, tapestry, ‘in today's fast-paced world’. Write like a person texting a colleague.”
+
+Readers spot these words in a second, and stop trusting the rest.
+
+Save this.
+
+#AIwriting #copywriting #AItips",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,This post intentionally lists banned words (allow_banned). Strike-through chips make it clear they are examples to avoid.,05-image-posts/week-3.md#D21-I1,planned
+82,21,2026-11-01,Sun,13:30,D21-R1,reel,Hidden Button,HF — Hidden features & tools,Talking head + screen split,Meta AI can dub your Reels into Bengali in your own voice,Shares among creators; reach for this page in Bengali,"Your Reel, in Bengali, in your voice.","Meta AI translates, dubs and lip-syncs Reels into Bengali and other languages for free; creators can review or turn it off.","How to find it, when to use lip sync, and why it doubles a Reel's potential audience.",Send it to a creator friend.,share,Split: Asif speaking English vs same clip labelled 'Bengali dub'; own screen capture of the composer option.,"Your Reels can now speak Bengali in your own voice.
+
+Meta AI can translate, dub and optionally lip-sync Reels. Bengali is supported, along with Hindi, Tamil, Telugu, Marathi, Kannada, Spanish, Portuguese and English.
+
+• When you post a Reel, look for the Meta AI translation option
+• Turn on lip sync if your face is on screen
+• Review the dubbed version before keeping it on
+• It's free, and you can switch it off anytime
+
+One English Reel can now reach people who scroll in Bengali (and the other way round).
+
+Send this to a creator friend.
+
+#FacebookReels #contentcreator #MetaAI","Instagram Empowers Creators to Go Global with Local Voice Translations and Fonts (Meta Newsroom (expansion also reported by Business Standard, 2026-01-16), 2025-11) https://about.fb.com/news/2025/11/instagram-empowers-creators-to-go-global-with-local-voice-translations-and-fonts/",Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,42,"First confirm the option appears for your Page. If it doesn't, change beat 5 to 'It's rolling out; look for it when you post' and don't show a UI you don't have. Turn it on for this Reel itself so the Bengali version demonstrates the feature.",04-reels/week-3.md#D21-R1,planned
+83,21,2026-11-01,Sun,18:30,D21-I2,image,Automate This,AU — Automation & n8n,Checklist,Make your Google Sheet automation-ready: 5 rules,Saves; prepares buyers' data,Make your Google Sheet automation-ready,"Clean structure (one header row, one record per row, stable column names, consistent formats, an ID column) prevents automation failures.",Five rules anyone can apply to their sheet today.,Save it before you share a sheet with anyone who automates.,save,"Clean spreadsheet mock with numbered callouts on the header row, an ID column and date format.","Automations read your Google Sheet like a machine. Make it easy:
+
+1. One header row. No merged cells.
+2. One row = one record (one order, one customer, one lead)
+3. Never rename a column without telling whoever built the automation
+4. Dates in one format (2026-10-31), phone numbers stored as text so the leading 0 stays
+5. Add an ID column so nothing gets counted twice
+
+A clean sheet is half the automation.
+
+Save this before you share a sheet with anyone who automates.
+
+#GoogleSheets #automation #n8n",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Spreadsheet-mock template. Use fictional data; Bangladeshi phone format shown as text with leading 0.,05-image-posts/week-3.md#D21-I2,planned
+84,21,2026-11-01,Sun,21:00,D21-R2,reel,AI Myth Check,LIT — AI literacy & safety,Green screen + talking head,"Is this viral photo real? Check the source, not the hands",Shares; protects the audience from AI fakes,Stop checking the hands. Check the source.,"AI images now get details right; tracing the image's origin, trusted outlets, dates and AI labels is more reliable.","A 4-step check using Google Lens + the rule 'can't trace it, don't share it'.",Send it to the group that shares everything.,share,Asif on green screen in front of a labelled AI-generated example image → Lens search results → calendar → 'AI info' label mock.,"Stop zooming in on the hands. New AI images get them right. Check the source instead:
+
+1. Long-press the image → search with Google Lens → look for the earliest result
+2. Is any trusted news outlet showing the same thing?
+3. Check the date. Many “new” fakes are real photos from years ago.
+4. Look for an “AI info” label. Meta adds it when it detects AI signals or the poster discloses it.
+
+No label doesn't prove it's real. Can't trace it? Don't share it.
+
+Send this to the group that shares everything.
+
+#factcheck #AIliteracy #deepfake","Our Approach to Labeling AI-Generated Content and Manipulated Media (Meta Newsroom, 2024-04-05) https://about.fb.com/news/2024/04/metas-approach-to-labeling-ai-generated-content-and-manipulated-media/",Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,42,Generate your own example image and keep an 'AI-generated example' label on it the whole time. Never use a real viral fake (it spreads it further).,04-reels/week-3.md#D21-R2,planned
+85,22,2026-11-02,Mon,09:30,D22-I1,image,Steal This Prompt,WF — Workflows & productivity,Flow diagram,Research any topic in 20 minutes with AI,Saves among students and professionals,Research any topic in 20 minutes with AI,Four 5-minute steps (questions → searched sources → notebook → disagreements) give trustworthy research fast.,"A timed research workflow that ends with sources, not just an answer.",Save it.,save,"A clock face split into four 5-minute segments, each with a step.","Research any topic in 20 minutes with AI, and finish with sources, not just an answer:
+
+0–5 min: “Give me the 5 key questions someone should answer about [topic].”
+5–10 min: search each question with web search ON. Save the sources that look reliable.
+10–15 min: add those sources to a Gemini Notebook and ask questions across them.
+15–20 min: “What do these sources disagree on? What's missing?”
+
+The last question is where real understanding starts.
+
+Save this.
+
+#research #AItips #studytips","NotebookLM is now Gemini Notebook (Google Blog / Workspace Updates, 2026-07-16) https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/","Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Clock-quarter template.,05-image-posts/week-4.md#D22-I1,planned
+86,22,2026-11-02,Mon,13:30,D22-R1,reel,Hidden Button,HF — Hidden features & tools,Phone-in-hand demo,"Sketch a layout, get a finished flyer (ChatGPT Images 2.5)",Shares among sellers and creators,Draw a messy box. Get a finished flyer.,"ChatGPT Images 2.5's Sketch tool lets you draw the layout first, then fill it with your product, price and offer.","A faster way to get a layout you want, plus the habit of checking every word and price.",Save it for your next flyer.,save,Finger drawing rough boxes on a phone → finished flyer; sketch and result side by side.,"Stop describing layouts to AI. Draw them.
+
+ChatGPT Images 2.5 (released 8 Sep 2026) added Sketch: draw directly in ChatGPT as a reference for your image.
+
+1. Draw rough boxes: photo here, title there, price in the corner
+2. Type what goes in each: product, price, offer, colours
+3. It follows your layout instead of inventing one
+4. Check every word and price before posting
+
+There are also templates for flyers and product photos.
+
+Save this for your next flyer.
+
+#ChatGPT #AIdesign #smallbusiness","Introducing ChatGPT Images 2.5 (OpenAI, 2026-09-08) https://openai.com/index/introducing-chatgpt-images-2-5/",Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,38,"Confirm Sketch is available on your account/plan before filming. If not, swap this slot for the Templates feature only. Use a fictional product and price; keep the flyer non-photorealistic or label it.",04-reels/week-4.md#D22-R1,planned
+87,22,2026-11-02,Mon,18:30,D22-I2,image,AI Myth Check,LIT — AI literacy & safety,Checklist,Posting AI images or voice? When to label them,Protect page owners from policy problems; trust,Posting AI images or voice? When to label them,"Meta requires disclosure for photorealistic AI video and realistic audio, and may auto-label; labelling realistic AI images is a good habit; faking real people is never OK.",Clear do/don't rules for AI media on Facebook.,Save it.,save,Must / Should / Never three-tier card with a small 'AI info' tag icon.,"Using AI images, video or voice on your page? Here's when to label it.
+
+Must: Meta requires you to use its AI disclosure option when you post photorealistic video or realistic-sounding audio that was made or changed with AI.
+Automatic: Meta may add an “AI info” label when it detects industry AI signals.
+Good habit: write “AI-generated” on any realistic AI image, even if it's not strictly required.
+Never: make a real person appear to say or do something they didn't.
+
+Labels don't hurt honest pages. Getting caught faking does.
+
+Save this.
+
+#AIlabel #FacebookTips #AIliteracy","Our Approach to Labeling AI-Generated Content and Manipulated Media (Meta Newsroom, 2024-04-05) https://about.fb.com/news/2024/04/metas-approach-to-labeling-ai-generated-content-and-manipulated-media/","Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Three-tier template. Re-check Meta's labelling page the day before posting.,05-image-posts/week-4.md#D22-I2,planned
+88,22,2026-11-02,Mon,21:00,D22-R2,reel,Build Log,SVC — Work with me (n8n services),Screen demo + face cam,A WhatsApp assistant that remembers your customers,Proof for the WhatsApp service; Messenger leads,A WhatsApp assistant that remembers your customers.,"A production n8n workflow on the official WhatsApp API loads each customer's record and last 5 conversation summaries, detects language and intent, replies in their language and saves memory.","Shows memory + language handling, which are what make an assistant feel like good service.",Message 'AUTOMATE' with what customers ask on WhatsApp.,message,Test WhatsApp chat where the assistant remembers a previous request → canvas sections zoomed by name → Bangla reply.,"A WhatsApp assistant that remembers your customers. One of my production n8n workflows:
+
+1. Messages arrive through WhatsApp's official Business API
+2. It finds the customer (or creates a record) and loads their last 5 conversation summaries
+3. AI detects the language and the intent: order, complaint, question
+4. It replies in the customer's own language. Bangla in, Bangla out.
+5. After each chat it saves a short summary, so next time it remembers
+
+Customers don't have to repeat themselves. You can also route complaints straight to a person.
+
+Want one for your business? Message me “AUTOMATE” and tell me what customers ask you on WhatsApp.
+
+#WhatsAppBusiness #n8n #AIautomation",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,51,"Film the 'Production WhatsApp AI Client Manager' workflow zoomed to section notes and node names. Use a test number and test conversations only. Don't claim it reads images or searches documents (current version doesn't). Never show tokens, phone_number_id or database details.",04-reels/week-4.md#D22-R2,planned
+89,23,2026-11-03,Tue,09:30,D23-I1,image,Automate This,AU — Automation & n8n,Checklist,Your automation's keys are passwords: 5 security rules,Authority; protects DIY builders and buyers,Your automation's keys are passwords. Treat them that way.,"API keys, tokens and webhook URLs must be stored in credentials, never shown, minimally scoped, revoked if leaked, and verified on incoming webhooks.",Five concrete security rules for anyone building or buying automations.,Send it to someone who builds automations.,share,Key icon with a padlock; five rule rows with shield icons.,"API keys, access tokens and webhook URLs are passwords. 5 rules I follow:
+
+1. Store them in n8n Credentials, never typed into a Set or Code node
+2. Never post a screenshot or video where a token or webhook URL is visible
+3. Give each app only the access it needs, nothing extra
+4. Leaked a key? Revoke it and create a new one today, not “later”
+5. Check that incoming webhooks really come from the sender (signature checks)
+
+Most automation “hacks” aren't clever. Someone just found a key.
+
+Send this to someone who builds automations.
+
+#n8n #cybersecurity #automation",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,"Security checklist template. This post reflects the filming rule for this whole plan: no tokens or webhook URLs on screen, ever.",05-image-posts/week-4.md#D23-I1,planned
+90,23,2026-11-03,Tue,13:30,D23-R1,reel,Automate This,AU — Automation & n8n,Talking head + paper drawing,Map the 'what if' path before you build,Authority; shows professional process,Most automations break on the ‘what if’.,"Draw the happy path, then list the what-ifs (missing address, out of stock, duplicate, voice note) and give each a rule: ask, wait or alert a person.",A 10-minute paper exercise that prevents most real-world failures.,Save it before you build anything.,save,Overhead shot of Asif drawing boxes and branches on paper; each what-if becomes a branch with a rule tag.,"Most automations don't break on the normal case. They break on the “what if”.
+
+Before building, draw the happy path (order → sheet → confirmation). Then ask:
+• What if the address is missing?
+• What if the item is out of stock?
+• What if they order twice by mistake?
+• What if they send a voice note in Bangla?
+
+For each one, pick a rule: ask the customer, wait, or alert a person.
+
+Ten minutes on paper saves days of fixing later. It's the first thing I do with every client.
+
+Save this before you build anything.
+
+#automation #n8n #processdesign",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,42,Overhead phone rig. Use a thick marker so lines read on mobile. Keep 'first thing I do with every client' only if true.,04-reels/week-4.md#D23-R1,planned
+91,23,2026-11-03,Tue,18:30,D23-I2,image,Steal This Prompt,PA — Practical AI,Prompt card,"Before you launch anything, ask AI what you missed","Saves among sellers, freelancers and organisers","Before you launch anything, ask AI this","A 4-question review prompt catches gaps, confusion, risks and complexity before launch.",Copy-paste pre-launch checklist prompt.,Save it.,save,Rocket icon with a magnifier; four question chips.,"Before you launch an offer, an event, a website or a job post, ask AI to find what you missed:
+
+“Here's my plan: [paste].
+1. What did I forget?
+2. What will confuse a first-time customer?
+3. What could go wrong in week one?
+4. Which part is too complicated? Make it simpler.”
+
+Question 2 is the one that saves money. You can't see your own plan like a stranger does.
+
+Save this.
+
+#AItips #smallbusiness #planning",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Prompt-card template.,05-image-posts/week-4.md#D23-I2,planned
+92,23,2026-11-03,Tue,21:00,D23-R2,reel,Steal This Prompt,WF — Workflows & productivity,Talking head + screen split,Same questions every day? Build your FAQ from your own chats,Saves among page owners; bridge to the assistant service,Same questions every day? Answer them once.,"Turn 30 anonymised customer chats into a grouped question list, write the true answers yourself, and let AI format an FAQ plus saved replies.",A one-hour process that speeds up replies and prepares data for an AI assistant later.,Save it for the weekend.,save,Vertical split: Asif talking on top; bottom half shows the inbox full of 'price?' → redaction → grouped question list with counts → FAQ doc → saved replies.,"Answering the same questions every day? Answer them once:
+
+1. Copy ~30 recent customer chats. Remove names and phone numbers first.
+2. Ask AI: “List the questions customers ask most, grouped, with how often each comes up.”
+3. Write the true answers yourself. AI doesn't know your prices or delivery areas.
+4. “Turn this into a clear FAQ, plus a one-line version of each answer for quick replies.”
+5. Save the one-liners as saved replies in Meta Business Suite.
+
+Bonus: that FAQ is exactly what an AI assistant needs if you automate replies later.
+
+Save this for the weekend.
+
+#fcommerce #customerservice #AItips",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,44,Use fictional chats. Capture Meta Business Suite saved replies from your own account.,04-reels/week-4.md#D23-R2,planned
+93,24,2026-11-04,Wed,09:30,D24-I1,image,Steal This Prompt,PA — Practical AI,Prompt card,Not sure what to charge? Ask AI for 3 pricing tiers,Saves among freelancers and service businesses,Not sure what to charge? Ask AI for 3 tiers,"Give AI your service, customers, costs and time; get basic/standard/premium packages with inclusions; validate against real competitors.",A packaging prompt + the reminder that the market sets prices.,Save it.,save,"Three price-tier cards (small, medium, large) with blank price tags.","Not sure what to charge? Let AI draft your packages, then check them against reality.
+
+“I offer [service] to [customers] in [city].
+My costs: [list]. Time per job: [X hours].
+Suggest 3 packages: basic, standard, premium.
+For each: what's included, what's NOT included, and a price range.”
+
+The “not included” line is gold. It stops scope creep before it starts.
+
+Then check real competitor prices yourself. AI suggests; the market decides.
+
+Save this.
+
+#freelancing #pricing #AItips",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Prompt-card template with tier graphic.,05-image-posts/week-4.md#D24-I1,planned
+94,24,2026-11-04,Wed,13:30,D24-R1,reel,Hidden Button,HF — Hidden features & tools,Phone-in-hand demo,Stuck in an app? Share your screen with Gemini Live,Shares; practical help + account safety,Stuck in an app? Show AI your screen.,Gemini Live screen sharing guides you through any app live; demo: turning on Facebook two-factor login; close private content first.,A free way to get step-by-step help in any app + a security win.,Send it to the person who always asks you for tech help.,share,Phone screen recording with Gemini guiding through Facebook security settings; privacy warning card.,"Stuck in an app's settings? Show AI your screen.
+
+In Gemini Live, tap share screen and ask out loud. I asked: “Help me turn on two-factor login on Facebook.” It walked me through it step by step while I tapped, and now my account is safer.
+
+Before you share:
+• it sees your whole screen
+• close private chats and turn off notifications first
+
+Free on Android and iPhone. Works with any app.
+
+Send this to the person who always asks you for tech help.
+
+#GeminiAI #techtips #accountsecurity","Gemini gets more personal, proactive and powerful (I/O 2025) (Google Blog (+ Gemini Apps Help 'Talk naturally with Gemini Live'), 2025-05-20) https://blog.google/products/gemini/gemini-app-updates-io-2025/",Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,37,Record the real session. Only keep 'done in two minutes' if accurate. Blur any account names or codes. Don't show backup codes or login codes.,04-reels/week-4.md#D24-R1,planned
+95,24,2026-11-04,Wed,18:30,D24-I2,image,AI Myth Check,LIT — AI literacy & safety,Checklist,3 rules that beat almost every AI scam,Shares; protection,3 rules that beat almost every AI scam,"Second-channel verification, treating urgency as a red flag, and never sharing OTPs/PINs defeat voice, video and text scams.",Three memorable rules that work regardless of the scam's technology.,Send it to someone who'd panic first and check later.,share,Three large numbered shields.,"AI scams keep changing: cloned voices, fake video calls, perfect-English messages. The defence doesn't change. 3 rules:
+
+1. Verify on a second channel: hang up, call back on the number you saved
+2. Urgency is the trick: real people can wait 5 minutes while you check
+3. Never share OTPs or PINs: banks and mobile-money services don't ask for them
+
+Send this to someone who'd panic first and check later.
+
+#scamalert #AIsafety #cybersecurity","Criminals Use Generative Artificial Intelligence to Facilitate Financial Fraud (PSA I-120324-PSA) (FBI / IC3, 2024-12-03) https://www.ic3.gov/PSA/2024/PSA241203","Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Shield template. Complements D10-R1 (voice clone) without repeating its story.,05-image-posts/week-4.md#D24-I2,planned
+96,24,2026-11-04,Wed,21:00,D24-R2,reel,Work With Me,SVC — Work with me (n8n services),Screen demo + face cam,"Fill a sheet, posts publish themselves (approved-only auto-publisher)",Sell the content auto-publishing service,Fill a sheet. Posts publish themselves.,"An n8n publisher checks a content sheet every 15 minutes, publishes only 'Approved' rows to your Page, writes back the result and alerts on failure.","Shows a safe, human-approved publishing system teams can run from a spreadsheet.",Message 'AUTOMATE' and say where you post.,message,Content calendar sheet → schedule + filter nodes → post appears on a test Page → row updates.,"Fill a spreadsheet, and the posts publish themselves:
+
+• Each row = one post: date, time, caption, image link, status
+• Every 15 minutes, n8n checks what's due
+• Only rows marked “Approved” go out. Nothing posts without a human yes.
+• It publishes to your Facebook Page (and other platforms if you want)
+• It writes back “Posted” with the time and link. If anything fails, you get an alert.
+• AI can draft captions in the sheet, but you approve them
+
+Your team works in a spreadsheet they already know.
+
+Want this for your pages? Message me “AUTOMATE” and tell me where you post.
+
+#n8n #socialmediamanagement #automation",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,49,"Demo on a test Page. Confirm your 'AI Social Media Content Creation and Auto Publisher' workflow behaves this way before filming, or build a clean demo. This 30-day plan's own CSV can be the demo sheet.",04-reels/week-4.md#D24-R2,planned
+97,25,2026-11-05,Thu,09:30,D25-I1,image,Hidden Button,LIT — AI literacy & safety,Hidden feature card,Don't want your chats used for AI training? Check these settings,Privacy trust; saves,Don't want your chats used for AI training? Check this,ChatGPT's 'Improve the model for everyone' and Gemini's 'Keep Activity' settings control whether chats help train models.,Where to find both settings and the trade-offs.,Save it.,save,Two toggle switches labelled with each app's setting name (drawn).,"Want to keep your chats out of AI training? Two settings to check:
+
+ChatGPT: Settings → Data controls → “Improve the model for everyone”
+Gemini: “Keep Activity” (the new name for Gemini Apps Activity)
+
+Turning these off can change how history works. Read the note on screen before you switch.
+Using a work account? Your company's admin settings may already decide this.
+
+Setting names change; search each app's help page for “data controls”.
+
+Save this.
+
+#privacy #ChatGPT #GeminiAI","Data controls in ChatGPT (OpenAI Help Center, current) https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt ; Gemini app personalizes responses based on past chats, plus new privacy controls (Google Blog (+ Gemini Apps Help 'Manage & delete your activity'), 2025-08) https://blog.google/products/gemini/temporary-chats-privacy-controls/","Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Verify both setting names in the live apps the day before posting. Draw toggles; no logos.,05-image-posts/week-4.md#D25-I1,planned
+98,25,2026-11-05,Thu,13:30,D25-R1,reel,AI Myth Check,LIT — AI literacy & safety,Prop explainer + talking head,Why long AI chats get worse (and the clean-desk fix),Saves; practical understanding of context limits,Long AI chats get worse. Here's why.,"AI reads chats in tokens within a limit; as a chat grows, early instructions get buried or dropped; summarise and restart.",A simple mental model (a desk) + a restart-with-summary technique.,Save it.,save,Real desk + real paper: Asif stacks printed 'messages' on a small desk until the first sheets slide off; then writes a summary card and moves it to a clean desk. Short screen inserts for the prompt.,"Long AI chats get worse, and it's not your imagination.
+
+AI reads your chat in small pieces called tokens, and every chat has a limit. Think of a desk: every message adds paper. When it's full, older papers get buried or fall off, and often the first instructions you gave are the ones it forgets.
+
+Fix:
+1. “Summarise the goal, the decisions so far and my preferences in 10 bullets.”
+2. Start a new chat and paste the summary.
+3. Rules you always want → save them as custom instructions (or a skill).
+
+Save this.
+
+#AItips #ChatGPT #AIliteracy",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,37,Desk-and-paper motion template. Keep the claim general (no exact token limits; they differ by model).,04-reels/week-4.md#D25-R1,planned
+99,25,2026-11-05,Thu,18:30,D25-I2,image,Steal This Prompt,WF — Workflows & productivity,Prompt card,Turn 50 unread emails into a 5-minute to-do list,Saves among office workers,Turn 50 unread emails into a 5-minute to-do list,"Sort emails into reply today / this week / read / ignore with one-line suggested replies, then reply yourself.",An inbox triage prompt that works with pasted text or an AI app's Gmail connection.,Save it.,save,Overflowing inbox icon → four labelled trays.,"50 unread emails? Turn them into a to-do list in 5 minutes:
+
+1. Paste the subjects and first lines (or use your AI app's Gmail connection)
+2. “Sort these into: reply today / reply this week / just read / ignore.”
+3. “For ‘reply today’, suggest a one-line reply for each.”
+4. Then you reply. Not the AI.
+
+Remove private or confidential emails before pasting anything.
+
+Save this.
+
+#productivity #email #AItips",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Prompt-card template with tray illustration.,05-image-posts/week-4.md#D25-I2,planned
+100,25,2026-11-05,Thu,21:00,D25-R2,reel,Explain It Simply,AU — Automation & n8n,Diagram explainer + talking head,MCP explained: a USB port for AI (and why n8n now has one),Authority on current AI-automation tech,MCP is a USB port for AI.,"MCP is a standard plug that lets AI assistants use apps' tools; n8n's MCP server lets an AI assistant build and edit workflows, in every edition.","Plain explanation of a trending term + a concrete use (AI builds, human checks).",Follow for more Explain It Simply.,follow,USB cable in hand → tangle of old cables → neat hub diagram → screen recording of an assistant creating an n8n workflow.,"MCP is a USB port for AI.
+
+Before USB, every device needed its own cable. AI tools had the same problem: every app needed a custom connection. MCP (Model Context Protocol) is one standard plug, so any app that “speaks MCP” can give an AI assistant its tools.
+
+Why I care: n8n now has a built-in MCP server. My AI assistant can create and edit n8n workflows directly, in every edition, including the free self-hosted one. I still review every node before it runs. AI builds, I check.
+
+Follow for more Explain It Simply.
+
+#MCP #n8n #AIagents","n8n's MCP server can now build workflows! (n8n Blog, 2026) https://blog.n8n.io/n8n-mcp-server/ ; Release notes 2.x (n8n Docs, 2026) https://docs.n8n.io/changelog/release-notes-2.x",Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,46,Record a real session where an AI assistant creates a small demo workflow through n8n's MCP server. Hide instance URL and tokens. Requires n8n 2.14+ (recommended 2.18.4+).,04-reels/week-4.md#D25-R2,planned
+101,26,2026-11-06,Fri,09:30,D26-I1,image,Steal This Prompt,PA — Practical AI,Prompt card,"Stuck on an error? Paste this, not just the error",Saves; universal troubleshooting,"Stuck on an error? Paste this, not just the error",Error text + what you did + what you expected + what you tried gets a far better fix than the error alone.,A troubleshooting prompt template that works for any software.,Save it.,save,Red error dialog icon + four-part template card.,"Pasting only the error message gets you a list of 10 random fixes. Paste this instead:
+
+“Here's the error: [exact text or screenshot].
+What I was doing: [steps].
+What I expected: [result].
+What I already tried: [list].
+Explain the cause in simple words, then give me ONE fix to try first.”
+
+“One fix first” is the key. You test, report back, and it narrows down.
+
+Works for Excel, WordPress, phones, printers and n8n.
+
+Save this.
+
+#techtips #AItips #troubleshooting",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Prompt-card template.,05-image-posts/week-4.md#D26-I1,planned
+102,26,2026-11-06,Fri,13:30,D26-R1,reel,Steal This Prompt,WF — Workflows & productivity,Talking head + screen split,The 10-minute Friday review with AI,Habit content; saves,Ten minutes every Friday. Your week gets clearer.,"Paste done/not done/calendar, ask four questions (finished, slipping, stop, top 3), then choose one repeated task to automate, delegate or delete.",A weekly review ritual that ties back to the page's first post (automate/delegate/delete).,Save the prompt.,save,Friday evening tea + laptop; AI answers to four questions; callback to the Day 1 decision tree.,"10 minutes every Friday makes next week clearer.
+
+Paste: what you finished, what you didn't, and next week's calendar. Then ask:
+1. “What did I actually finish?”
+2. “What keeps slipping, and why?”
+3. “What should I stop doing?”
+4. “What are my top 3 for next week?”
+
+Then pick one repeated task and decide: automate, delegate or delete.
+
+(Mine kept slipping on invoices. So I automated them.)
+
+Save this.
+
+#productivity #weeklyreview #AItips",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,40,Use your real 'what keeps slipping' answer; replace 'invoices' with yours if different (and adjust the caption line).,04-reels/week-4.md#D26-R1,planned
+103,26,2026-11-06,Fri,18:30,D26-I2,image,Work With Me,SVC — Work with me (n8n services),Checklist,5 mistakes I see in DIY automations,Authority + lead generation from DIY builders,5 mistakes I see in DIY automations,"No alerts, testing on customers, giant workflows, no duplicate checks and unsupervised AI money decisions cause most DIY failures.",A practical audit list for anyone who built their own automation.,Message 'AUTOMATE' if you want a second pair of eyes.,message,Five red warning rows with small illustrations.,"Built your own automation? Check for these 5 mistakes:
+
+1. No error alert: it fails quietly for days
+2. Testing on real customers instead of fake data
+3. One giant workflow doing ten jobs, so it's hard to fix
+4. No duplicate check, so orders or rows get counted twice
+5. AI allowed to change prices or send refunds without a human
+
+Fix these first and most problems disappear.
+
+Want a second pair of eyes on your workflow? Message me “AUTOMATE”.
+
+#n8n #automation #nocode",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Warning-list template. 'Mistakes I see' should reflect Asif's real experience; edit any item you haven't seen.,05-image-posts/week-4.md#D26-I2,planned
+104,26,2026-11-06,Fri,21:00,D26-R2,reel,Work With Me,SVC — Work with me (n8n services),Talking head + b-roll,What I need from you to automate your business (just 4 things),Lower the barrier to enquiring; Messenger leads,Automating your business? I need four things.,"A voice-note description, a screen recording, app names (not passwords) and 3–5 examples including a weird one are enough to start.",Makes the first step concrete and easy; reassures non-technical owners.,Message 'AUTOMATE' and send the voice note first.,message,"Talking head with four icons appearing (voice note, phone recording, app icons, example cards).","Want to automate part of your business? You need less than you think. I need 4 things:
+
+1. The task in your own words (a voice note is fine)
+2. A screen recording of you doing it once (your phone is enough)
+3. Which apps are involved: names only, no passwords yet
+4. 3–5 real examples, including one weird one, with private details removed
+
+The weird one matters most. That's where automations break.
+
+You don't need to know anything technical. That's my job.
+
+Message me “AUTOMATE” and send the voice note first.
+
+#n8n #automation #smallbusiness",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,45,Talking head with icon pop-ups. Make sure your AUTOMATE keyword reply asks for exactly these four things.,04-reels/week-4.md#D26-R2,planned
+105,27,2026-11-07,Sat,09:30,D27-I1,image,Automate This,AU — Automation & n8n,Flow diagram,Client onboarding on autopilot (for freelancers and agencies),Saves; service idea for freelancers/agencies,Client onboarding on autopilot,"An onboarding form triggers a Drive folder, welcome email, kickoff slot and a phone summary.","A concrete workflow that makes every client start the same, professional way.",Save it.,save,"Form → four parallel outcomes (folder, email, calendar, phone).","Freelancers and agencies: automate the first hour of every project.
+
+When a new client fills your onboarding form:
+1. A project folder is created in Google Drive
+2. A welcome email goes out with next steps
+3. A kickoff call slot is offered from your calendar
+4. You get a summary of their answers on your phone
+
+Every client gets the same professional start, even in your busiest week.
+
+Save this.
+
+#freelancing #automation #n8n",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Fan-out flow template.,05-image-posts/week-4.md#D27-I1,planned
+106,27,2026-11-07,Sat,13:30,D27-R1,reel,Automate This,AU — Automation & n8n,Screen demo + face cam,Appointment reminders that customers can confirm with one reply,"Proof for service businesses (salons, clinics, tutors); leads",Customers forget appointments. Let a workflow remind them.,"Each morning n8n checks tomorrow's bookings and sends reminders with confirm/reschedule options (WhatsApp templates where required), logs replies and alerts staff.","A practical, policy-aware reminder system with confirmation tracking.",Message 'AUTOMATE' and tell me what you book.,message,Reminder message on phone → schedule + calendar nodes → reply branches → calendar with freed slot.,"Customers forget appointments. Let a workflow remind them.
+
+For salons, clinics, tutors and consultants:
+1. Every morning, n8n checks tomorrow's bookings in your calendar
+2. Sends each customer a reminder: time + “Reply 1 to confirm, 2 to reschedule”
+3. Reply 1 → marked confirmed. Reply 2 → your staff get an alert.
+4. No reply by evening → one gentle second reminder
+
+On WhatsApp, reminders you send first must use a Meta-approved message template, so plan for that.
+
+You find out about cancellations sooner, so you can fill the slot.
+
+Want this for your bookings? Message me “AUTOMATE”.
+
+#n8n #appointments #smallbusiness","WhatsApp Business Messaging Policy / message template rules (WhatsApp Business (Meta); Infobip docs, current) https://business.whatsapp.com/policy",Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,46,Demo with a test calendar and test numbers (email or Telegram is fine for the demo; mention WhatsApp templates on screen).,04-reels/week-4.md#D27-R1,planned
+107,27,2026-11-07,Sat,18:30,D27-I2,image,Steal This Prompt,WF — Workflows & productivity,Framework card,A Facebook caption structure that actually gets read,Saves among page owners and creators,A Facebook caption structure that gets read,"Hook under ~110 characters, a useful middle, one clear ask; AI can draft hook options.",A caption framework + a hook-writing prompt tied to Facebook's 'See more' cut-off.,Save it.,save,Phone mock of a caption with the 'See more' cut-off line marked.,"Most people only read the first line of a Facebook caption. Structure it like this:
+
+Line 1: the hook. What they get, under ~110 characters (mobile shows about 125 before “See more”).
+Middle: the useful part: steps, a prompt or the key fact.
+Last: one clear ask: save, send or message. Not all three.
+
+AI helps with the hardest part:
+“Write 3 hooks under 110 characters for this post: [paste]. No questions, no emoji at the start.”
+
+Save this.
+
+#FacebookTips #copywriting #contentcreator","Facebook Character Limit 2026 (charcount.tools (third-party measurement), 2026) https://charcount.tools/platforms/facebook-character-limit","Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Phone-mock template; it's the same structure this page uses.,05-image-posts/week-4.md#D27-I2,planned
+108,27,2026-11-07,Sat,21:00,D27-R2,reel,What It Means For You,NEWS — Current developments,Green screen + talking head,Facebook's originality rules: why reposted clips lose reach,Shares among creators; explains this page's approach,Reposting viral clips? Facebook is cutting your reach.,"Meta's 2026 rules: original = you filmed it or you add new info on screen; reactions, stitching, narration and minor edits are unoriginal and lose reach and monetization.","Clear rules creators need, plus how to use references the right way.",Send it to a creator who reposts.,share,Asif over Meta's newsroom post (own capture); green 'original' card vs red 'not original' card; simple 2× chart.,"Reposting viral clips? Facebook is cutting their reach, and it explained the rules in March 2026:
+
+Original: you filmed it, or you're on screen adding something genuinely new (information, analysis, your own test).
+Not original: reaction faces, stitching clips together, or narrating what's already on screen.
+Adding a border, a caption or changing the speed doesn't make someone else's video yours.
+
+Accounts that keep reposting can lose monetization and get reduced distribution. Meanwhile, Meta says views and watch time on original Reels roughly doubled in the second half of 2025.
+
+Use other content as a reference, not as your content.
+
+Send this to a creator who reposts.
+
+#FacebookReels #contentcreator #originalcontent","Rewarding Original Creators on Facebook (Meta Newsroom, 2026-03) https://about.fb.com/news/2026/03/rewarding-original-creators-on-facebook/ ; Following YouTube, Meta announces crackdown on unoriginal Facebook content (TechCrunch, 2025-07-14) https://techcrunch.com/2025/07/14/following-youtube-meta-announces-crackdown-on-unoriginal-facebook-content",Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,46,Capture Meta's newsroom post from your own screen for ≤3 s. Don't show any specific creator's reposted video.,04-reels/week-4.md#D27-R2,planned
+109,28,2026-11-08,Sun,09:30,D28-I1,image,Steal This Prompt,PA — Practical AI,Prompt card,3 time-saving AI prompts for teachers and tutors,Shares in teacher/tutor communities,3 time-saving AI prompts for teachers and tutors,"Lesson plans, practice sets and kind feedback can be drafted quickly with three structured prompts.",Three copy-paste prompts + the 'check before class' rule.,Send it to a teacher or tutor.,share,Chalkboard-style card with three prompt chips.,"Teachers and tutors: 3 prompts that save real time.
+
+Lesson plan: “Plan a 40-minute class on [topic] for [class/grade]. Include one activity and 3 questions to check understanding.”
+Practice set: “Make 10 questions on [topic], from easy to hard. Put the answers in a separate list.”
+Feedback: “Here's a student's answer: [paste]. Give 2 specific strengths and 1 next step, in a kind tone.”
+
+Always check facts and answers before using them in class.
+
+Send this to a teacher or tutor you know.
+
+#teachers #education #AItips",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Chalkboard variant of the prompt-card template. Remove student names before using real answers.,05-image-posts/week-4.md#D28-I1,planned
+110,28,2026-11-08,Sun,13:30,D28-R1,reel,Before → After,PA — Practical AI,Before/after split screen,Make AI grade its own answer against your checklist,Saves; quality-control habit,Make AI grade its own answer.,"Write a short checklist of what 'good' means; ask AI to grade its draft pass/fail per rule, then rewrite to pass all.",A reusable quality check that catches missing details automatically.,Save it.,save,Draft → checklist → grading table with two red rows → rewritten draft with all green.,"Make AI grade its own answer:
+
+1. Write a short checklist of what “good” means. For a product description: price, delivery time, size, under 80 words, no exaggerated claims.
+2. “Grade your answer against this checklist. Pass or fail for each rule.”
+3. “Rewrite it so every rule passes.”
+
+The checklist is the secret. Write it once and reuse it for every product, email or post.
+
+Save this.
+
+#AItips #ChatGPT #productivity",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,36,"Record the real run; if the first draft fails different rules, update the VO in beat 5 to match.",04-reels/week-4.md#D28-R1,planned
+111,28,2026-11-08,Sun,18:30,D28-I2,image,Automate This,AU — Automation & n8n,Stack card,A simple automation stack for a 1-person business,Saves; shows how cheap a start can be,A simple automation stack for a 1-person business,"Forms, Sheets, Telegram alerts, Gmail, n8n and pay-per-use AI cover most needs for a solo business.",A low-cost starter stack with honest cost notes.,Save it.,save,"Stacked layers like a cake: forms, data, alerts, email, glue, AI.","You don't need expensive software to automate a one-person business. A simple stack:
+
+• Forms: Google Forms (free)
+• Data: Google Sheets (free)
+• Alerts: a Telegram bot (free)
+• Email: Gmail
+• The glue: n8n, self-hosted (free licence, you pay for a small server) or n8n Cloud
+• AI: pay-per-use, only where it actually adds value
+
+Start with one workflow. Add the next one when the first has run quietly for a month.
+
+Save this.
+
+#n8n #smallbusiness #automation","Choose your n8n (n8n Docs, current) https://docs.n8n.io/choose-n8n/","Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Layer-cake template. No logos.,05-image-posts/week-4.md#D28-I2,planned
+112,28,2026-11-08,Sun,21:00,D28-R2,reel,Work With Me,SVC — Work with me (n8n services),Numbered list + talking head,The first automation I'd build for 4 types of business,Help viewers self-identify; Messenger leads,Your business type? Here's your first automation.,Shop: orders to sheet + confirmation; café: nightly sales + low stock; property agent: instant lead reply; coaching centre: fee reminders + payment log.,A concrete starting point for four common business types.,Message 'AUTOMATE' with what you do.,message,Four business tiles that flip to show their first automation.,"The first automation I'd build, by business type:
+
+🛍 Online shop: Messenger orders straight into a Google Sheet + an automatic confirmation
+☕ Restaurant or café: tonight's sales and low-stock items sent to your phone
+🏠 Property agent: every new lead gets a reply in seconds, and you get a call task
+📚 Coaching centre: fee reminders to parents (with their consent) + a payment log that updates itself
+
+Start with one: the one that annoys you most.
+
+Don't see your business? Message me “AUTOMATE” with what you do, and I'll tell you your first automation.
+
+#n8n #automation #smallbusiness",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,46,Four-tile flip template. Reminders to parents by WhatsApp need approved templates (see D27-R1); mention consent.,04-reels/week-4.md#D28-R2,planned
+113,29,2026-11-09,Mon,09:30,D29-I1,image,Steal This Prompt,WF — Workflows & productivity,Prompt card,Ask your sales sheet these 4 questions with AI,Saves among sellers and managers,Ask your sales sheet these 4 questions with AI,"Top products, best days, lapsed customers and hidden patterns turn a sales sheet into decisions.",Four analysis prompts + privacy and verification rules.,Save it for month-end.,save,Spreadsheet icon with a magnifier and four question bubbles.,"Your sales sheet already knows things you don't. Upload a copy (without phone numbers) and ask:
+
+1. “Which 5 products sold most this month, and which dropped?”
+2. “Which day of the week brings the most orders?”
+3. “Which customers ordered before but not in the last 60 days?”
+4. “What's one pattern I'm missing?”
+
+Question 3 is a ready-made list for a “we miss you” offer.
+
+Double-check any number before you make a decision on it.
+
+Save this for month-end.
+
+#smallbusiness #data #AItips",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Prompt-card template.,05-image-posts/week-4.md#D29-I1,planned
+114,29,2026-11-09,Mon,13:30,D29-R1,reel,Explain It Simply,WF — Workflows & productivity,Numbered list + talking head,Pick the right AI tool for the job: a 5-card map,Saves; reduces frustration; bridges to automation,Not every AI task belongs in a chatbot.,"Chat for drafting, search-on for recent facts, notebooks for your documents, camera/voice for real-world things, automation for recurring jobs.",A clear map that matches tasks to tool types.,Save the map.,save,Five cards dealt one at a time with icons; final contrast card 'Chat answers once / Automation keeps working'.,"Not every AI task belongs in a chatbot. Quick map:
+
+• Drafting, rewriting, brainstorming → a normal AI chat
+• Today's prices, news, anything recent → chat with web search ON, then check the sources
+• Questions about your own documents → a notebook tool like Gemini Notebook
+• A real object or screen → voice + camera (Gemini Live)
+• Anything that must happen every day without you → automation (n8n)
+
+Chat answers once. Automation keeps working.
+
+Save this map. Which one do you use least?
+
+#AItips #productivity #automation","NotebookLM is now Gemini Notebook (Google Blog / Workspace Updates, 2026-07-16) https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/ ; Gemini gets more personal, proactive and powerful (I/O 2025) (Google Blog (+ Gemini Apps Help 'Talk naturally with Gemini Live'), 2025-05-20) https://blog.google/products/gemini/gemini-app-updates-io-2025/",Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,44,"Five physical cards (printed) make this feel handmade. Icons only, no logos.",04-reels/week-4.md#D29-R1,planned
+115,29,2026-11-09,Mon,18:30,D29-I2,image,Work With Me,SVC — Work with me (n8n services),Checklist,What you should get when an automation is handed over,Trust; sets buyer expectations,What you should get when an automation is handed over,"A proper handover includes a map, a video, ownership of accounts, alerts, a troubleshooting list and a shown test.",A buyer checklist for any automation project.,Save it before you hire anyone.,save,Gift-box-style card with six checklist items.,"Hiring someone to build an automation? At handover, you should get:
+
+☐ A one-page map: trigger → steps → result
+☐ A short screen video of it working
+☐ All accounts and logins in YOUR name
+☐ Error alerts going to someone on your team
+☐ A “if this breaks, check this first” list
+☐ A test with realistic data, shown to you
+
+Ask for this from anyone you hire, including me.
+
+Save this before you hire anyone.
+
+#automation #n8n #smallbusiness",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Checklist template. Keep 'including me' only if your handover covers every item.,05-image-posts/week-4.md#D29-I2,planned
+116,29,2026-11-09,Mon,21:00,D29-R2,reel,Automate This,AU — Automation & n8n,Diagram explainer + talking head,Auto-reply to comments in Messenger: the rules you must know,Authority; prevents policy mistakes; leads,Auto-DM commenters? Know the rules first.,A Page can send one private reply per comment within 7 days; a reply opens a 24-hour window; comment-bait is demoted.,Platform rules for comment-to-Messenger automation and how to make the one message count.,Message 'AUTOMATE' for compliant comment replies.,message,Comment 'Price?' → private reply in Messenger; three rule cards; red 'comment-bait' card; n8n canvas.,"Want to automatically DM people who comment “price?” on your posts? Know Meta's rules first:
+
+1. One private reply per comment
+2. It must be sent within 7 days of the comment
+3. If they reply, a 24-hour window opens and you can keep chatting
+
+So make the first message count: the price, a link, and one question back.
+
+And don't ask people to comment just to boost reach. Facebook demotes engagement bait.
+
+I build comment replies in n8n with the official Messenger API, inside these rules. Want it for your page? Message me “AUTOMATE”.
+
+#MessengerAutomation #n8n #FacebookTips","Messenger Platform and IG Messaging API policy (Meta for Developers, current) https://developers.facebook.com/documentation/business-messaging/messenger-platform/policy ; Fighting Engagement Bait on Facebook (Meta Newsroom, 2017-12) https://about.fb.com/news/2017/12/news-feed-fyi-fighting-engagement-bait-on-facebook/",Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,45,Re-check the Messenger Platform policy page before posting (rules can change). Demo on a test Page.,04-reels/week-4.md#D29-R2,planned
+117,30,2026-11-10,Tue,09:30,D30-I1,image,Automate This,AU — Automation & n8n,Quiz card,Quiz: which 2 of these tasks should you automate?,Engagement through a genuine quiz; reinforce the month's lessons,Quiz: which 2 of these should you automate?,"Rule-based, repetitive tasks (price replies, form copying) should be automated; judgment and relationship tasks shouldn't.",A self-test that consolidates the 'rules vs judgment' lesson.,Check the answers in the caption. How many did you get right?,question,Four lettered quiz cards in a 2×2 grid.,"Quiz: which 2 of these should you automate?
+
+A. Replying to “price?” messages
+B. Choosing which supplier to trust
+C. Copying form entries into a sheet
+D. Apologising to an upset long-time client
+
+Answers:
+✅ A: same question, same answer, every time
+✅ C: pure copy-paste, so a machine does it better
+❌ B: needs your judgment
+❌ D: AI can help you draft it, but you should write and send it yourself
+
+Rules → automate. Judgment and relationships → you.
+
+How many did you get right?
+
+#automation #smallbusiness #n8n",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Quiz template. Answers only in the caption so the image stays clean.,05-image-posts/week-4.md#D30-I1,planned
+118,30,2026-11-10,Tue,13:30,D30-R1,reel,Explain It Simply,AU — Automation & n8n,Prop explainer + talking head,What is JSON? A tiffin box with labels,Authority; loop for rewatches; series finale,JSON is a tiffin box with labels.,"JSON stores data as labelled compartments (keys and values, including lists); automations pass these boxes between steps; missing or renamed labels break workflows.",Demystifies the data format behind every automation with a local analogy.,Follow for more Explain It Simply.,follow,Real multi-compartment tiffin box with sticky labels; JSON text overlay mirroring the compartments; n8n data panel.,"What is JSON? A tiffin box with labels.
+
+Each compartment has a label and something inside:
+name → Rahim
+phone → 01XXXXXXXXX
+items → [shirt, cap, belt] (one compartment can hold a list)
+
+Every automation passes “boxes” like this from one step to the next. When a workflow breaks, it's often because a label is missing or was renamed (remember the renamed sheet column?).
+
+Follow for more Explain It Simply.
+
+#JSON #n8n #automation",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,30,Use a real tiffin box and sticky notes. Keep first and last framing identical for the loop.,04-reels/week-4.md#D30-R1,planned
+119,30,2026-11-10,Tue,18:30,D30-I2,image,Work With Me,SVC — Work with me (n8n services),Before/after card,How to describe a task so it can be automated,Better-quality enquiries; Messenger leads,How to describe a task so it can be automated,"An automation-ready description has a trigger, steps, what-ifs and a result.",A vague vs ready example that teaches people to brief any automation builder.,Message 'AUTOMATE' with your 'ready' version.,message,Grey 'vague' speech bubble vs green 'ready' speech bubble with labelled parts.,"“Handle my orders automatically” can't be built. This can:
+
+“When a Messenger order arrives, add the name, item, size and address to my sheet. If the address is missing, ask once. Then send a confirmation in Bangla.”
+
+A ready description has 4 parts: trigger + steps + what-ifs + result.
+
+Write yours like this and any automation builder can quote it in minutes, including me. Message me “AUTOMATE” with your ready version.
+
+#automation #n8n #smallbusiness",,"Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image",,Speech-bubble before/after template.,05-image-posts/week-4.md#D30-I2,planned
+120,30,2026-11-10,Tue,21:00,D30-R2,reel,Work With Me,SVC — Work with me (n8n services),Talking head + montage,What do you repeat every day? The open offer,Month-end conversion; invite messages,What do you repeat every single day?,"After a month of examples, invite viewers to send one repetitive task by voice note; Asif replies personally with an honest verdict, which is sometimes 'don't automate'.","A low-pressure, honest offer with a clear next step.",Message 'AUTOMATE' with a voice note describing the task.,message,Close-up talking head; quick montage of earlier Reels' own footage; Messenger icon.,"What do you repeat every single day? Copying orders, answering the same questions, building the same report?
+
+This month I showed you how many of those can run without you. Now I want to hear yours.
+
+Message me “AUTOMATE” and describe the task in one voice note. I'll reply myself, ask 3 questions, and tell you honestly if it's worth automating.
+
+Sometimes the answer is no. A saved reply or a template is enough. That's fine too.
+
+#n8n #automation #AIautomation",,Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350,36,Montage uses only this page's own footage from the month. Pin this Reel to the top of the Page for the following week.,04-reels/week-4.md#D30-R2,planned

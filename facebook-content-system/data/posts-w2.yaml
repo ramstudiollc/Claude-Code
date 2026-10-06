@@ -1,0 +1,1584 @@
+# Week 2 — Days 8–14 · Real workflows, first builds, safety
+
+# ───────────────────────── DAY 8
+- id: D08-I1
+  type: image
+  series: Before → After
+  pillar: PA
+  format: Before/after table
+  topic: "Say this, not that: 4 prompt upgrades"
+  objective: "Saves; show prompting as a concrete skill"
+  hook: "Say this, not that: 4 prompt upgrades"
+  main_idea: "Weak prompts lack audience, limits and the user's own material; adding them improves answers a lot."
+  value: "Four side-by-side rewrites for everyday tasks (caption, CV, explanation, weekly plan)."
+  cta: "Save it."
+  cta_type: save
+  visual_concept: "Two-column table: greyed weak prompts left, bold strong prompts right."
+  design:
+    headline: "Say this, not that: 4 prompt upgrades"
+    body:
+      - "“Write a caption” → “3 captions for [product], for mothers in Dhaka, under 40 words”"
+      - "“Fix my CV” → “Rewrite these 3 bullets with results. Don't invent numbers.”"
+      - "“Explain AI agents” → “Explain AI agents to a shop owner in 5 lines”"
+      - "“Plan my week” → “Here are my 12 tasks and 3 deadlines. Plan Mon–Fri.”"
+    footer: "Better prompts add: audience, limit, your material."
+    layout: "Light background. Column headers 'Instead of' (grey) and 'Say' (accent). Four rows, left text grey 40%, right text dark 60%, arrow between. Footer band at bottom."
+  caption: |
+    Same task, better prompt. 4 upgrades:
+
+    Instead of “Write a caption” → “Write 3 captions for [product], for mothers in Dhaka, under 40 words.”
+    Instead of “Fix my CV” → “Rewrite these 3 bullets to show results. Don't invent numbers.”
+    Instead of “Explain AI agents” → “Explain AI agents to a shop owner in 5 lines.”
+    Instead of “Plan my week” → “Here are my 12 tasks and 3 deadlines. Plan Monday to Friday.”
+
+    What changed each time: who it's for, a limit, and your own material.
+
+    Save this.
+  hashtags: [AItips, ChatGPT, PromptTips]
+  sources: []
+  production_notes: "Before/after table template. Keep [product] in accent colour as a fill-in."
+
+- id: D08-R1
+  type: reel
+  series: Explain It Simply
+  pillar: AU
+  format: Diagram explainer + talking head
+  topic: "Chatbot vs automation vs AI agent: the actual difference"
+  objective: "Authority; helps buyers ask for the right thing"
+  hook: "Chatbot, automation, agent: not the same thing."
+  main_idea: "Chatbot talks; automation follows fixed steps; agent chooses its own steps with tools. Use the simplest that works and add human approval for money."
+  value: "One shared example ('Where's my order?') across all three, plus a decision rule."
+  cta: "Follow for more Explain It Simply."
+  cta_type: follow
+  visual_concept: "Three columns, one per type, each answering the same customer bubble; straight arrow vs branching arrows."
+  runtime: 46
+  retention:
+    hook: "Calls out a confusion most people have but won't admit, with three familiar buzzwords in one line."
+    curiosity: "Viewers want to know which of the three they actually need."
+    visual_progression: "The same question flows through three different diagrams: chat bubble, straight line, branching tree."
+    usefulness: "Ends with a 3-line decision rule (fixed rules, changing questions, money)."
+    payoff: "The 'simplest one that works' rule cuts through the hype."
+  script:
+    - t: "0-3"
+      vo: "Chatbot, automation, agent: not the same thing."
+      ost: "Chatbot ≠ Automation ≠ Agent"
+      vis: "Asif with three labelled icons appearing beside him."
+    - t: "3-7"
+      vo: "Same customer question for all three: “Where's my order?”"
+      ost: "“Where's my order?”"
+      vis: "Messenger bubble drops into each of three columns."
+    - t: "7-13"
+      vo: "A chatbot just talks. It answers from what it was told, but it can't check anything."
+      ost: "Chatbot: talks, can't check"
+      vis: "Column 1: reply 'Orders usually take 3–5 days.'"
+    - t: "13-18.5"
+      vo: "An automation follows fixed steps. Status changes, it sends an update. Every time."
+      ost: "Automation: fixed path"
+      vis: "Column 2: straight arrow 'status = shipped' → message."
+    - t: "18.5-22"
+      vo: "An agent chooses the path. It reads the question,"
+      ost: "Agent: picks its own steps"
+      vis: "Column 3: agent icon reads the bubble; branches appear."
+    - t: "22-25"
+      vo: "checks the order sheet and courier, then replies."
+      ost: "sheet → courier → reply"
+      vis: "Agent icon picks 'Sheet' then 'Courier' tools; reply bubble."
+    - t: "25-29.5"
+      vo: "So which one do you need? Use the simplest one that works."
+      ost: "Use the simplest that works"
+      vis: "Asif to camera."
+    - t: "29.5-34"
+      vo: "Fixed rules? Automation. Cheaper and more predictable."
+      ost: "Fixed rules → automation"
+      vis: "Column 2 glows."
+    - t: "34-38.5"
+      vo: "Questions that change every time? An agent, with limits."
+      ost: "Changing questions → agent"
+      vis: "Column 3 glows with a fence icon."
+    - t: "38.5-43"
+      vo: "Anything involving money? Add a human approval step."
+      ost: "Money → a human approves"
+      vis: "Approval checkmark node added."
+    - t: "43-46"
+      vo: "Follow for more Explain It Simply."
+      ost: "Explain It Simply"
+      vis: "End card with series tag."
+  caption: |
+    Chatbot, automation, AI agent: the difference in one example.
+
+    Customer asks: “Where's my order?”
+    • Chatbot: talks. Answers from what it was told, but can't check anything.
+    • Automation: fixed steps. When the order status changes, it sends an update. Same path every time.
+    • AI agent: chooses its own steps. Reads the question, checks your order sheet, then the courier, then replies.
+
+    Which do you need? The simplest one that works.
+    Fixed rules → automation. Changing questions → agent with limits. Money involved → add a human approval.
+
+    Follow for more Explain It Simply.
+  hashtags: [AIagents, automation, n8n]
+  sources: []
+  production_notes: "Three-column motion template. Keep each column's icon style identical so the only difference is the path shape."
+
+- id: D08-I2
+  type: image
+  series: Hidden Button
+  pillar: HF
+  format: Hidden feature card
+  topic: "See and delete what ChatGPT remembers about you"
+  objective: "Saves + privacy trust"
+  hook: "See what ChatGPT remembers about you"
+  main_idea: "ChatGPT's memory is visible and editable; most users never check it."
+  value: "Where to find memory, how to delete items, how to turn off chat-history reference."
+  cta: "Save it, then check your list today."
+  cta_type: save
+  visual_concept: "Drawn settings path (breadcrumb style) + a list with a delete icon."
+  design:
+    headline: "See what ChatGPT remembers about you"
+    body:
+      - "Go to Settings → Personalization → Memory."
+      - "Open the saved list. Delete anything wrong or too personal."
+      - "Turn off 'reference chat history' if you don't want past chats used."
+      - "Or say in chat: “Forget that I…”, then check the list."
+    footer: "Menu names can change between app versions. Look for Memory under Personalization."
+    layout: "Light background. Breadcrumb path drawn as three rounded chips with arrows at the top. Below, a mock list of three memory items with trash icons. Instructions as numbered rows. Footer small."
+  caption: |
+    ChatGPT may remember things about you across chats. You can see exactly what, and delete it.
+
+    1. Settings → Personalization → Memory
+    2. Open the saved list and delete anything wrong or too personal
+    3. Turn off “reference chat history” if you don't want old chats used
+    4. Or just say: “Forget that I…”, then check the list to confirm
+
+    Menu names change between app versions; look for Memory under Personalization.
+
+    Save this, then check your list today. Most people are surprised.
+  hashtags: [ChatGPT, privacy, AItips]
+  sources: [openai_memory]
+  production_notes: "Verify the current menu path in both the mobile and web app the day before posting; update the breadcrumb if it changed. Draw the UI; don't screenshot it with real memories visible."
+
+- id: D08-R2
+  type: reel
+  series: Steal This Prompt
+  pillar: WF
+  format: Talking head + screen split
+  topic: "Tailor your CV to a job post without lying"
+  objective: "Saves + shares among job seekers"
+  hook: "One CV for every job? Here's the fix."
+  main_idea: "Extract the job's requirements, match each to real evidence, rewrite matched bullets in the employer's words, and handle gaps honestly."
+  value: "A 4-step method + the 'don't invent anything, mark gaps' guardrail."
+  cta: "Send to a friend who's job hunting."
+  cta_type: share
+  visual_concept: "Vertical split: Asif on the top half holding a printed CV, the screen on the bottom half: job post → requirement list → match table (green/red rows) → before/after bullet."
+  runtime: 43
+  retention:
+    hook: "Most job seekers send one CV everywhere, so the hook lands on a common habit."
+    problem_solution: "Clear 4-step fix shown on screen, one step every ~6 seconds."
+    visual_progression: "The match table fills with green and red rows, a visible map of strengths and gaps."
+    usefulness: "Prompts are copy-paste and work in any AI tool; honest guardrail included."
+    save_share: "Highly forwardable to friends applying for jobs."
+  script:
+    - t: "0-3"
+      vo: "One CV for every job? Here's the fix."
+      ost: "Same CV for every job?"
+      vis: "Asif holding a printed CV."
+    - t: "3-8.5"
+      vo: "Step one: paste the job post. Ask for the top eight requirements, in their words."
+      ost: "1 · Top 8 requirements"
+      vis: "Screen: job post pasted → list of 8."
+    - t: "8.5-14.5"
+      vo: "Step two: paste your CV. Ask it to match each requirement to proof in your CV."
+      ost: "2 · Match each one to proof"
+      vis: "Table forms: requirement | evidence | gap."
+    - t: "14.5-19"
+      vo: "And add this line: “Don't invent anything. Mark gaps.”"
+      ost: "“Don't invent. Mark gaps.”"
+      vis: "The line highlighted in yellow."
+    - t: "19-24"
+      vo: "Now you see it clearly. Six matches, two gaps."
+      ost: "6 matches · 2 gaps"
+      vis: "Table: six green rows, two red rows."
+    - t: "24-29.5"
+      vo: "Step three: rewrite your matched bullets using their keywords, only where it's true."
+      ost: "3 · Their words, your truth"
+      vis: "Before/after of one CV bullet."
+    - t: "29.5-35"
+      vo: "Step four: the gaps. Learn it, explain it in the cover letter, or apply anyway."
+      ost: "4 · Gaps: learn · explain · accept"
+      vis: "Three option cards."
+    - t: "35-40.5"
+      vo: "Many employers scan for the job's own words. Now your CV has them, honestly."
+      ost: "Their keywords · honestly"
+      vis: "Matching keywords glow in both documents."
+    - t: "40.5-43"
+      vo: "Send this to someone job hunting."
+      ost: "Send to a job hunter"
+      vis: "End card."
+  caption: |
+    One CV for every job is why you're not getting calls. Tailor it in 10 minutes, honestly:
+
+    1. Paste the job post: “List the top 8 requirements, using the employer's exact words.”
+    2. Paste your CV: “Match each requirement to proof in my CV. Don't invent anything. Mark gaps.”
+    3. Rewrite only the matched bullets using their keywords, where it's true.
+    4. For each gap: learn it, explain it in your cover letter, or apply anyway.
+
+    Many employers scan CVs for the job's own words. Now yours has them, without lying.
+
+    Send this to someone who's job hunting.
+  hashtags: [jobsearch, CVtips, AItips]
+  sources: []
+  production_notes: "Use a fictional CV and a real-looking but invented job post (no real company). Remove personal data. Keep the 'Don't invent anything' line visible for 2+ seconds."
+
+# ───────────────────────── DAY 9
+- id: D09-I1
+  type: image
+  series: Automate This
+  pillar: AU
+  format: Cheat sheet
+  topic: "7 things that can start an automation (triggers)"
+  objective: "Saves; teach buyers to spot triggers"
+  hook: "7 things that can start an automation"
+  main_idea: "Most automations start from one of seven trigger types; spotting the trigger is half the design."
+  value: "A reference list of common triggers with everyday examples."
+  cta: "Save it."
+  cta_type: save
+  visual_concept: "Seven icon tiles in a grid, each a trigger type."
+  design:
+    headline: "7 things that can start an automation"
+    body:
+      - "A new message: Messenger, WhatsApp, email"
+      - "A form is submitted"
+      - "A new row in a Google Sheet"
+      - "A time: every day at 9 AM"
+      - "A file lands in a folder"
+      - "A payment or order is created"
+      - "A webhook: another app 'rings the bell'"
+    footer: "Find the trigger, and half the automation is designed."
+    layout: "Dark background. Headline top. 7 tiles in a 2-column grid (last tile centred), each with a lightning icon + label. Footer at bottom."
+  caption: |
+    Every automation starts with a trigger. These 7 cover most real-world workflows:
+
+    1. A new message (Messenger, WhatsApp, email)
+    2. A form is submitted
+    3. A new row appears in a Google Sheet
+    4. A time (every day at 9 AM, every Monday)
+    5. A file lands in a folder
+    6. A payment or order is created
+    7. A webhook: another app tells yours that something happened
+
+    Find the trigger, and half the automation is designed.
+
+    Save this.
+  hashtags: [automation, n8n, nocode]
+  sources: []
+  production_notes: "Cheat-sheet grid template. Webhook tile links visually to the doorbell icon used in D04-R1 for series consistency."
+
+- id: D09-R1
+  type: reel
+  series: Steal This Prompt
+  pillar: PA
+  format: Talking head + screen split
+  topic: "Make AI disagree with you"
+  objective: "Saves + comments"
+  hook: "AI agrees with you too easily. Try this."
+  main_idea: "AI tends to agree with the user; asking it to argue against your plan surfaces risks you missed."
+  value: "The 'strongest reasons it could fail' prompt + the follow-up 'what would make it work'."
+  cta: "Save it before your next big decision."
+  cta_type: save
+  visual_concept: "Chat showing 'Great idea!' → flipped prompt → list of failure reasons with two highlighted."
+  runtime: 32
+  retention:
+    hook: "Names a quiet flaw people have noticed (AI always says 'great idea') and promises a fix."
+    novelty: "Using AI as a critic instead of a cheerleader is new to most viewers."
+    relatability: "A price increase decision is something every seller faces."
+    payoff: "Two real risks the creator hadn't considered appear on screen."
+    usefulness: "Two short prompts that work in any AI tool, useful before any decision."
+  script:
+    - t: "0-3"
+      vo: "AI agrees with you too easily. Try this."
+      ost: "AI agrees too easily"
+      vis: "Asif; chat screen with 'Great idea!' response."
+    - t: "3-7.5"
+      vo: "Ask “Is my plan good?” and it usually says yes."
+      ost: "“Great idea!” 🙄"
+      vis: "Highlight 'Great idea!' in yellow."
+    - t: "7.5-11"
+      vo: "So flip the question. Make it argue against you."
+      ost: "Make it argue"
+      vis: "Asif flips his hand; whoosh."
+    - t: "11-16"
+      vo: "“Give me the three strongest reasons this plan could fail.”"
+      ost: "“3 strongest reasons it fails”"
+      vis: "Prompt typed in large text."
+    - t: "16-21"
+      vo: "My plan: raise my price to 1,500 taka. Here's what came back."
+      ost: "Plan: Tk 1,200 → 1,500"
+      vis: "Screen: AI answer appears as a list."
+    - t: "21-25.5"
+      vo: "Two of these I hadn't thought about. That's the point."
+      ost: "Risks I missed"
+      vis: "Two items highlighted."
+    - t: "25.5-29"
+      vo: "Then ask: “What would make this plan work?”"
+      ost: "“What would make it work?”"
+      vis: "Second prompt typed."
+    - t: "29-32"
+      vo: "You decide. AI just tests the idea."
+      ost: "You decide"
+      vis: "Asif to camera; end."
+  caption: |
+    AI tends to agree with you. Ask “Is my plan good?” and you'll usually hear yes.
+
+    Flip it:
+    “Give me the 3 strongest reasons this plan could fail. Be specific to my situation: [details].”
+
+    Then:
+    “What would make this plan work?”
+
+    I tried it on a price increase (Tk 1,200 → 1,500) and got two risks I hadn't considered.
+
+    You still decide. AI just pressure-tests the idea.
+
+    Save this for your next big decision.
+  hashtags: [AItips, decisionmaking, smallbusiness]
+  sources: []
+  production_notes: "Run the prompt live on a real or realistic decision. Only say 'two of these I hadn't thought about' if true; otherwise change the line to 'Look at number two' and highlight that one."
+
+- id: D09-I2
+  type: image
+  series: AI Myth Check
+  pillar: LIT
+  format: Checklist
+  topic: "Use AI to prepare, not to decide: 4 areas"
+  objective: "Trust + shares"
+  hook: "Use AI to prepare, not to decide, these 4"
+  main_idea: "In health, money transfers, legal papers and people decisions, AI should prepare you, not decide for you."
+  value: "A clear boundary for high-stakes AI use, with what AI is still good for in each."
+  cta: "Send it to someone who asks AI about everything."
+  cta_type: share
+  visual_concept: "Four quadrants with icons (heart, money, document, people) and a 'prepare ✓ decide ✗' tag."
+  design:
+    headline: "Use AI to prepare, not to decide, these 4"
+    body:
+      - "Health: use it to prepare questions for your doctor."
+      - "Money transfers: never act on an AI or a voice you can't verify."
+      - "Legal papers: use it to understand terms, then ask a lawyer."
+      - "Hiring and firing: it can sort information, not judge people."
+    footer: "AI is great at drafts and questions. You own the decision."
+    layout: "2×2 grid of quadrants, each with an icon, label and one line. A small tag 'Prepare ✓ / Decide ✗' in each corner. Footer band at bottom."
+  caption: |
+    AI is useful in serious areas, as long as you use it to prepare, not to decide.
+
+    Health: prepare questions for your doctor. Don't replace the doctor.
+    Money transfers: never act on an AI instruction or a voice you can't verify.
+    Legal papers: understand the terms, then ask a lawyer before signing.
+    Hiring and firing: let it organise information, not judge people.
+
+    AI is great at drafts and questions. You own the decision.
+
+    Send this to someone who asks AI about everything.
+  hashtags: [AIliteracy, AIsafety, AItips]
+  sources: []
+  production_notes: "Quadrant template. Calm colours. This is a trust post, not a scare post."
+
+- id: D09-R2
+  type: reel
+  series: Automate This
+  pillar: AU
+  format: Screen demo + face cam
+  topic: "Build: new lead → Google Sheet → phone alert in n8n"
+  objective: "Proof of skill; Messenger leads from small businesses"
+  hook: "New lead? Sheet and phone alert, in seconds."
+  main_idea: "A 5-node n8n workflow captures form leads, cleans them, blocks duplicates, logs them to Sheets and alerts the owner on Telegram."
+  value: "Shows a complete, practical build and the reasoning behind each node (cleaning, duplicate check)."
+  cta: "Message 'AUTOMATE' to get it set up."
+  cta_type: message
+  visual_concept: "Phone buzz with a lead alert → full canvas → node-by-node zoom with before/after data → stopwatch."
+  runtime: 51
+  retention:
+    hook: "Opens on the end result (a phone alert) so viewers see the payoff before the build."
+    visual_progression: "Five nodes light up one after another, each with visible data changes."
+    usefulness: "Explains the cleaning and duplicate check most DIY builds miss."
+    relatability: "Missed and slow-to-answer leads are a common small-business pain."
+    payoff: "Form-to-phone in seconds, shown with a stopwatch overlay."
+    novelty: "Seeing a real n8n canvas explained in plain words is rare in this audience's feed."
+  script:
+    - t: "0-3"
+      vo: "New lead? Sheet and phone alert, in seconds."
+      ost: "Lead → Sheet → Phone"
+      vis: "Phone buzzes: Telegram alert 'New lead: Rahim · wants a logo · 01XXXXXXXXX'."
+    - t: "3-7"
+      vo: "Here's the whole workflow in n8n. Five boxes."
+      ost: "5 nodes"
+      vis: "Full demo canvas, slow zoom out."
+    - t: "7-12"
+      vo: "One: the form sends the lead here the moment someone submits it."
+      ost: "1 · Form → webhook"
+      vis: "Form submit on the left; Webhook node lights."
+    - t: "12-17.5"
+      vo: "Two: clean it up. Trim spaces, fix the phone format, add the date."
+      ost: "2 · Clean the data"
+      vis: "Edit Fields node: before/after values side by side."
+    - t: "17.5-23"
+      vo: "Three: check the sheet. Same phone number already there? Don't add it twice."
+      ost: "3 · Already in the sheet?"
+      vis: "Lookup node; duplicate branch highlighted."
+    - t: "23-27.5"
+      vo: "Four: add a new row to Google Sheets."
+      ost: "4 · Add to Google Sheets"
+      vis: "Sheet: new row slides in."
+    - t: "27.5-32.5"
+      vo: "Five: send me a Telegram message with name, phone and what they want."
+      ost: "5 · Alert on my phone"
+      vis: "Telegram node → phone notification."
+    - t: "32.5-38"
+      vo: "Form to phone in a few seconds. Nobody copy-pastes anything."
+      ost: "Seconds · zero copy-paste"
+      vis: "Stopwatch overlay on a real run."
+    - t: "38-43"
+      vo: "Why it matters: the first business to reply often gets the customer."
+      ost: "Reply first"
+      vis: "Asif to camera."
+    - t: "43-48"
+      vo: "Want this for your forms? Message me AUTOMATE."
+      ost: "Message: AUTOMATE"
+      vis: "Messenger icon animation."
+    - t: "48-51"
+      vo: "Follow to see more builds."
+      ost: "More builds → follow"
+      vis: "End card."
+  caption: |
+    Every new lead → Google Sheet → phone alert, in seconds. Built in n8n with 5 nodes:
+
+    1. Webhook: the form sends the lead the moment it's submitted
+    2. Clean: trim spaces, fix the phone format, add the date
+    3. Check: is this phone number already in the sheet? Then don't add it twice
+    4. Add a new row to Google Sheets
+    5. Send a Telegram alert with name, phone and request
+
+    Nobody copy-pastes anything, and you can reply first. The first reply often wins the customer.
+
+    Want this set up for your forms? Message me “AUTOMATE”.
+  hashtags: [n8n, automation, leadgeneration]
+  sources: []
+  production_notes: "Build a clean demo workflow (Webhook → Edit Fields → Google Sheets lookup → IF → Google Sheets append → Telegram). Use fake lead data and a masked phone number. Run it live for the stopwatch shot. Hide credentials and webhook URL."
+
+# ───────────────────────── DAY 10
+- id: D10-I1
+  type: image
+  series: Steal This Prompt
+  pillar: PA
+  format: Prompt card
+  topic: "Learn anything faster: ask for 3 levels of explanation"
+  objective: "Saves among students and self-learners"
+  hook: "Learn anything faster: ask for 3 levels"
+  main_idea: "Asking for child, student and expert levels shows exactly where your understanding stops."
+  value: "A copy-paste learning prompt + how to use the result."
+  cta: "Save it."
+  cta_type: save
+  visual_concept: "Three stacked steps (small → medium → large) with a 'stop here' marker."
+  design:
+    headline: "Learn anything faster: ask for 3 levels"
+    body:
+      - "“Explain [topic] at 3 levels:"
+      - "1. To a 10-year-old, in 3 sentences"
+      - "2. To a university student, with one example"
+      - "3. To an expert: what do beginners get wrong?”"
+      - "Read level 1 first. Stop where it gets hard. That's your study point."
+    footer: "Works for taxes, physics, marketing or n8n."
+    layout: "Light background. Prompt in a quote block (top 55%). Below: three ascending step blocks labelled 1/2/3 with a flag 'stop here = study here'. Footer bottom."
+  caption: |
+    The fastest way I know to learn a new topic with AI:
+
+    “Explain [topic] at 3 levels:
+    1. To a 10-year-old, in 3 sentences
+    2. To a university student, with one example
+    3. To an expert: what do beginners usually get wrong?”
+
+    Read level 1. Then level 2. The moment it gets hard is exactly where you should study.
+
+    Level 3 is the bonus: it shows the mistakes before you make them.
+
+    Save this.
+  hashtags: [studytips, AItips, learning]
+  sources: []
+  production_notes: "Prompt-card template with step graphic. [topic] in accent colour."
+
+- id: D10-R1
+  type: reel
+  series: AI Myth Check
+  pillar: LIT
+  format: POV skit + talking head
+  topic: "Voice-clone scam calls: the family code word"
+  objective: "Shares to family groups; trust"
+  hook: "Your brother calls. It's not your brother."
+  main_idea: "AI can clone voices from short clips; a family code word, calling back on a saved number, and treating urgency as a red flag stop the scam."
+  value: "Three concrete steps backed by an FBI public warning."
+  cta: "Send to your family group."
+  cta_type: share
+  visual_concept: "Short dramatized call (unknown number, panicked voice), then Asif breaks the fourth wall with three steps; ends on the phone ringing again."
+  loop: "Ends 'Because next time, it might not be him' over a ringing phone, which flows into the opening 'Your brother calls…'"
+  runtime: 39
+  retention:
+    hook: "A personal, slightly scary twist in five words; viewers instantly imagine their own sibling."
+    relatability: "Emergency money requests from family over the phone are common across Bangladesh."
+    curiosity: "How could it not be him? The answer (voice cloning) comes at second 8."
+    usefulness: "Three steps anyone can do tonight, no tech needed."
+    save_share: "Designed to be forwarded to family WhatsApp/Messenger groups."
+    rewatch: "The ringing phone at the end loops into the opening scene."
+  script:
+    - t: "0-3"
+      vo: "Your brother calls. It's not your brother."
+      ost: "It's not your brother."
+      vis: "Phone ringing on a table: 'Unknown number'. Asif picks up."
+    - t: "3-8"
+      vo: "“It's me. I had an accident. Send money to this number, now.”"
+      ost: "“Send money. Now.”"
+      vis: "Dramatized: muffled, panicked voice (actor or Asif's own voice processed). Asif looks worried."
+    - t: "8-12.5"
+      vo: "Scammers can now copy a voice using short clips from your videos."
+      ost: "AI copies voices from short clips"
+      vis: "Asif turns to camera; waveform 'clone' animation."
+    - t: "12.5-16.5"
+      vo: "The FBI warned about exactly this. Its advice is simple."
+      ost: "FBI warning · Dec 2024"
+      vis: "Text card citing the PSA (no logo)."
+    - t: "16.5-21.5"
+      vo: "One: agree on a secret family word. Today. Not during the emergency."
+      ost: "1 · A secret family word"
+      vis: "Family chat mock: 'Our code word is…' (word blurred)."
+    - t: "21.5-26"
+      vo: "Two: hang up and call back on the number you saved."
+      ost: "2 · Hang up. Call back."
+      vis: "Phone contacts → saved number."
+    - t: "26-31"
+      vo: "Three: urgency is the trick. Real family can wait two minutes."
+      ost: "3 · Urgency = red flag"
+      vis: "Red flag icon."
+    - t: "31-36"
+      vo: "Set your word tonight. Send this to your family group."
+      ost: "Send to your family group"
+      vis: "Asif to camera."
+    - t: "36-39"
+      vo: "Because next time, it might not be him."
+      ost: ""
+      vis: "Phone rings again on the table, same shot as frame 1 (loop)."
+  caption: |
+    Your brother calls asking for money. It might not be him.
+
+    Scammers can now copy a voice from short clips posted online. The FBI warned about this and recommends a simple defence:
+
+    1. Agree on a secret family word or phrase, today, not during an emergency
+    2. Hang up and call back on the number you have saved
+    3. Treat urgency as a red flag. Real family can wait 2 minutes while you check.
+
+    Never send money based on a voice alone.
+
+    Send this to your family group tonight.
+  hashtags: [scamalert, AIsafety, voicecloning]
+  sources: [fbi_genai_fraud]
+  production_notes: "Do NOT clone anyone's real voice for the skit. Use an actor or Asif's own voice with a phone filter. Mark the skit visually as a dramatization (small 'reenactment' label)."
+
+- id: D10-I2
+  type: image
+  series: Work With Me
+  pillar: SVC
+  format: Process steps
+  topic: "How I build your automation in 5 steps"
+  objective: "Reduce buyer uncertainty; Messenger leads"
+  hook: "How I build your automation in 5 steps"
+  main_idea: "A clear, low-risk process: call → map → build with fake data → go live with alerts → handover."
+  value: "Shows buyers what happens after they message, and that their logins stay theirs."
+  cta: "Message 'AUTOMATE' to start step 1."
+  cta_type: message
+  visual_concept: "Horizontal 5-step timeline with icons; step 2 'you approve' highlighted."
+  design:
+    headline: "How I build your automation in 5 steps"
+    body:
+      - "1. A 20-minute call: what you repeat, which apps, what goes wrong."
+      - "2. Map: I draw trigger → steps → result. You approve it."
+      - "3. Build and test with fake data first."
+      - "4. Go live, with alerts if anything fails."
+      - "5. Handover: a short guide + video. Logins stay in your name."
+    footer: "Message “AUTOMATE” to start with step 1."
+    layout: "Dark background. Vertical timeline with 5 numbered circles connected by a line; step 2 and 5 have small accent badges ('you approve', 'yours'). Footer as CTA bar."
+  caption: |
+    What happens after you message me “AUTOMATE”:
+
+    1. A 20-minute call: what you repeat, which apps you use, what goes wrong today
+    2. I map it on one page: trigger → steps → result. You approve before I build anything.
+    3. I build and test it with fake data, never on real customers first
+    4. It goes live with error alerts, so problems don't hide
+    5. Handover: a short written guide + a screen video. Logins and accounts stay in your name.
+
+    No jargon, no surprises. Message “AUTOMATE” to start with step 1.
+  hashtags: [n8n, automation, smallbusiness]
+  sources: []
+  production_notes: "Confirm this matches your real process before posting (call length, handover format). If you deliver through RAM Studio, you may add its verified inclusions (e.g. 30 days technical support), but only those listed in the RAM Studio fact base."
+
+- id: D10-R2
+  type: reel
+  series: Steal This Prompt
+  pillar: WF
+  format: Before/after split screen
+  topic: "Meeting notes → action table (owner, deadline, MISSING)"
+  objective: "Saves among professionals"
+  hook: "Meetings end. Nobody knows who does what."
+  main_idea: "Paste a transcript or notes; ask for action/owner/deadline + open questions; force 'MISSING' instead of guesses."
+  value: "A prompt that turns notes into accountable actions and an automatic follow-up list."
+  cta: "Save it for your next meeting."
+  cta_type: save
+  visual_concept: "Closing laptop → split screen: left 'before' table with a guessed owner, right 'after' table with red MISSING cells → follow-up message."
+  runtime: 38
+  retention:
+    hook: "A universal workplace frustration stated in seven words."
+    relatability: "Everyone has left a meeting unsure who owns what."
+    novelty: "The 'write MISSING' rule is an unusual, specific trick most people haven't seen."
+    payoff: "MISSING cells become a ready-made follow-up message."
+    save_share: "Prompt in the caption; teams share it internally."
+  script:
+    - t: "0-3"
+      vo: "Meetings end. Nobody knows who does what."
+      ost: "Who does what?"
+      vis: "Asif closes a laptop after a call; confused look."
+    - t: "3-7.5"
+      vo: "Fix: paste the transcript or your rough notes into AI."
+      ost: "Paste transcript or notes"
+      vis: "Screen: notes pasted."
+    - t: "7.5-13"
+      vo: "Ask for a table: action, owner, deadline. Plus a list of open questions."
+      ost: "action · owner · deadline"
+      vis: "Table appears."
+    - t: "13-18"
+      vo: "Add this line, the most important one: “If it's missing, write MISSING.”"
+      ost: "“Missing? Write MISSING.”"
+      vis: "Line typed and highlighted."
+    - t: "18-23"
+      vo: "Without it, AI guesses an owner or invents a date. That causes fights."
+      ost: "No guessed owners"
+      vis: "Red highlight on a guessed name in a 'before' table."
+    - t: "23-28"
+      vo: "Now three tasks say MISSING. That's your follow-up message, done."
+      ost: "3 × MISSING = follow-up"
+      vis: "MISSING cells pulse red; follow-up message drafted."
+    - t: "28-33.5"
+      vo: "Recording a call? Ask everyone first. It's polite, and in many places, the law."
+      ost: "Ask before recording"
+      vis: "Asif to camera."
+    - t: "33.5-38"
+      vo: "The prompt is in the caption. Save it for your next meeting."
+      ost: "Prompt ↓"
+      vis: "End card."
+  caption: |
+    Meetings end and nobody knows who does what. Fix it in one prompt:
+
+    “From these notes, make a table: Action | Owner | Deadline. Then list open questions. Use only what's in the notes. If an owner or deadline is missing, write MISSING. Don't guess.”
+
+    The MISSING cells are your follow-up message, already written.
+
+    If you record calls, ask everyone first. It's polite, and in many places it's the law.
+
+    Save this for your next meeting.
+  hashtags: [productivity, meetings, AItips]
+  sources: []
+  production_notes: "Use invented meeting notes. Show the 'before' table (with a guessed owner) generated without the MISSING line, then the corrected version."
+
+# ───────────────────────── DAY 11
+- id: D11-I1
+  type: image
+  series: Automate This
+  pillar: AU
+  format: Flow diagram
+  topic: "Simple automation: Google Form → Sheet → personal confirmation email"
+  objective: "Saves; first buildable workflow for beginners"
+  hook: "A simple automation you can build this weekend"
+  main_idea: "Form submissions can trigger a personal confirmation email automatically via Sheets + n8n."
+  value: "A beginner-friendly flow with real use cases (registrations, orders, admissions, applications)."
+  cta: "Save it for the weekend."
+  cta_type: save
+  visual_concept: "Left-to-right flow: Form → Sheet → n8n → Email → happy applicant."
+  design:
+    headline: "A simple automation you can build this weekend"
+    subhead: "Google Form → Sheet → personal confirmation email"
+    body:
+      - "Trigger: someone submits your Google Form"
+      - "Step 1: the answer lands in Google Sheets (built in)"
+      - "Step 2: n8n notices the new row"
+      - "Step 3: it emails them: their name, their choice, next steps"
+      - "Result: every person gets a reply in minutes, not days"
+    footer: "Use it for registrations, orders, admissions or job applications."
+    layout: "Light background. Headline + subhead. A horizontal 4-node flow at mid-height (Form, Sheet, n8n, Email icons) with numbered labels underneath. Footer bottom."
+  caption: |
+    A simple automation you can build this weekend:
+
+    Google Form → Google Sheet → personal confirmation email
+
+    1. Someone submits your form
+    2. Google saves the answer in a Sheet (this part is built in)
+    3. n8n notices the new row
+    4. It sends a personal email: their name, what they chose, what happens next
+
+    Every person gets a reply in minutes, not days. Use it for registrations, orders, admissions or job applications.
+
+    Save this for the weekend.
+  hashtags: [n8n, GoogleSheets, automation]
+  sources: []
+  production_notes: "Flow-diagram template. Use generic icons for Form/Sheet/Email (no Google logos)."
+
+- id: D11-R1
+  type: reel
+  series: What It Means For You
+  pillar: NEWS
+  format: Phone-in-hand demo
+  topic: "Gemini Gems become skills in November: what to do now"
+  objective: "Timeliness; saves among Gemini users"
+  hook: "Use Gemini Gems? They're changing in November."
+  main_idea: "Skills (launched 30 Sep 2026) replace Gems for personal accounts from November; migration is automatic, and skills add slash access, files and stacking."
+  value: "What changes, what happens to your Gems, and how to make your first skill in one sentence."
+  cta: "Comment the skill you'd build first."
+  cta_type: question
+  visual_concept: "Over-the-shoulder phone shots in the Gemini app: '/' menu, 'create a skill' request, file attach, two skills stacked; Asif to camera between steps."
+  runtime: 47
+  retention:
+    hook: "A direct, dated warning to existing users ('changing in November') creates urgency without hype."
+    usefulness: "Shows exactly how to create, use and stack a skill."
+    novelty: "Skills launched a week before posting; few creators have explained them simply."
+    payoff: "Reassurance (auto-migration) plus a concrete next step."
+    visual_progression: "Moves through five app screens: help page, slash menu, creation, file attach, stacked skills."
+  script:
+    - t: "0-3"
+      vo: "Use Gemini Gems? They're changing in November."
+      ost: "Gems → Skills · Nov 2026"
+      vis: "Asif holding phone with Gemini open."
+    - t: "3-7.5"
+      vo: "Google is turning Gems into skills for personal accounts."
+      ost: "Personal accounts: November"
+      vis: "Own screen capture of the Gemini help page (date highlighted)."
+    - t: "7.5-12"
+      vo: "Good news: they move automatically. You don't lose anything."
+      ost: "Moved automatically"
+      vis: "Check mark animation."
+    - t: "12-17"
+      vo: "A skill is a saved instruction. Type slash, pick it, done."
+      ost: "Type / → pick a skill"
+      vis: "Screen: typing '/' shows a skills list."
+    - t: "17-22.5"
+      vo: "Easiest way: just ask. “Create a skill that writes replies in my style.”"
+      ost: "Just ask Gemini to make it"
+      vis: "Request typed; skill appears."
+    - t: "22.5-28"
+      vo: "You can attach files to a skill. Your price list, your brand guide, a PDF."
+      ost: "Attach: price list · PDF"
+      vis: "File attach screen."
+    - t: "28-33"
+      vo: "And you can stack two skills. My writing style, plus my brand rules."
+      ost: "Stack skills"
+      vis: "Two skill chips in one prompt."
+    - t: "33-38"
+      vo: "Gemini can also use a skill by itself when your request matches it."
+      ost: "Used automatically when relevant"
+      vis: "Example prompt triggers a skill badge."
+    - t: "38-43"
+      vo: "Make your first one this week, before the switch."
+      ost: "Make one this week"
+      vis: "Asif to camera."
+    - t: "43-47"
+      vo: "Comment the skill you'd build first."
+      ost: "Your first skill? ↓"
+      vis: "End card."
+  caption: |
+    If you use Gemini Gems: they're becoming “skills”.
+
+    • Skills launched in Gemini on 30 Sep 2026
+    • From November 2026, Gems on personal Google accounts are turned into skills automatically (work/school accounts later)
+    • A skill = a saved instruction. Type / and pick it.
+    • Easiest way to make one: ask Gemini, “Create a skill that writes replies in my style.”
+    • Skills can include files (price list, PDF, images), and you can combine two in one chat
+    • Gemini can use a skill on its own when your request matches
+
+    Make your first one this week. Which skill would you build first?
+  hashtags: [GeminiAI, AItips, productivity]
+  sources: [google_gemini_skills, google_gems_transition]
+  production_notes: "Re-check the Gems transition date on the help page the day before posting. Record on a personal Google account. Don't show personal chats."
+
+- id: D11-I2
+  type: image
+  series: Steal This Prompt
+  pillar: WF
+  format: Framework card
+  topic: "Learn any skill with AI: the weekly loop"
+  objective: "Saves; habit content"
+  hook: "Learn any skill with AI: the weekly loop"
+  main_idea: "A weekly plan → learn → quiz → practise → review → repeat loop, run with simple prompts."
+  value: "Seven-day structure with the exact prompt for each stage."
+  cta: "Save it and start Monday."
+  cta_type: save
+  visual_concept: "Circular loop diagram with day labels around it."
+  design:
+    headline: "Learn any skill with AI: the weekly loop"
+    body:
+      - "MON: “Make a 4-week plan to learn [skill]. 30 minutes a day.”"
+      - "TUE–THU: learn, then “Quiz me on today's topic. 5 questions.”"
+      - "FRI: “Give me a small real task to practise.”"
+      - "SAT: share your result: “Review it like a strict teacher.”"
+      - "SUN: “What should I repeat next week?”"
+    footer: "AI plans and checks. The practice is still yours."
+    layout: "Light background. Circular loop arrow with five day-segments around it; each segment holds its prompt line. Headline above, footer below."
+  caption: |
+    A simple weekly loop to learn any skill with AI (design, Excel, English, n8n):
+
+    Monday: “Make a 4-week plan to learn [skill], 30 minutes a day.”
+    Tue–Thu: learn, then “Quiz me on today's topic. 5 questions.”
+    Friday: “Give me a small real task to practise.”
+    Saturday: paste your result: “Review it like a strict teacher.”
+    Sunday: “What should I repeat next week?”
+
+    AI plans and checks. The practice is still yours.
+
+    Save this and start on Monday.
+  hashtags: [learning, AItips, selfimprovement]
+  sources: []
+  production_notes: "Loop-diagram template. Make sure prompts are ≥44 px; if crowded, shorten day labels to MON/TUE–THU etc."
+
+- id: D11-R2
+  type: reel
+  series: Automate This
+  pillar: AU
+  format: Talking head + screen split
+  topic: "Why automations break, and the alert that saves you"
+  objective: "Authority; differentiates Asif from 'quick bot' sellers"
+  hook: "Your automation will break. Here's when."
+  main_idea: "Expired logins, changed data and silent failures break automations; an n8n error workflow alerts you immediately."
+  value: "Three failure modes + how to set an error workflow in n8n."
+  cta: "Follow for more automation lessons."
+  cta_type: follow
+  visual_concept: "Canvas nodes turning red for each failure; renamed column; calendar of silent days; Error Trigger → phone alert."
+  runtime: 45
+  retention:
+    hook: "An honest, contrarian statement from someone who sells automation, which is unexpected and builds trust."
+    curiosity: "Viewers want to know the three moments it breaks, especially 'the worst one'."
+    relatability: "Renaming a sheet column is something every team does without thinking."
+    problem_solution: "Each failure is followed by the n8n fix (error workflow) shown on screen."
+    payoff: "A real alert message arrives on the phone with workflow, step and error."
+  script:
+    - t: "0-2.5"
+      vo: "Your automation will break. Here's when."
+      ost: "It WILL break. When?"
+      vis: "Asif; behind him a canvas node flashes red."
+    - t: "2.5-7"
+      vo: "One: a login expires. A password changes, or a token runs out."
+      ost: "1 · Logins expire"
+      vis: "Key icon cracks."
+    - t: "7-12.5"
+      vo: "Two: the data changes. Someone renames a column in the sheet."
+      ost: "2 · A column gets renamed"
+      vis: "Sheet header 'Phone' edited to 'Mobile No.'; node turns red."
+    - t: "12.5-17"
+      vo: "Your workflow still looks for “Phone”. It finds nothing."
+      ost: "Looks for 'Phone' → nothing"
+      vis: "Empty output panel."
+    - t: "17-22"
+      vo: "Three, the worst one: it fails quietly, and nobody notices for a week."
+      ost: "3 · It fails quietly"
+      vis: "Calendar days flip; unread orders pile up."
+    - t: "22-27.5"
+      vo: "The fix in n8n: an error workflow. It starts the moment a workflow fails."
+      ost: "Fix: an error workflow"
+      vis: "Error Trigger node on canvas."
+    - t: "27.5-33"
+      vo: "It sends me a message: which workflow, which step, what went wrong."
+      ost: "Which workflow · step · why"
+      vis: "Telegram alert on phone."
+    - t: "33-38"
+      vo: "Set it once in workflow settings. It covers every workflow you link to it."
+      ost: "Set once in Settings"
+      vis: "Workflow Settings → 'Error workflow' dropdown."
+    - t: "38-42"
+      vo: "No alert means you find out from an angry customer."
+      ost: "No alert = angry customer"
+      vis: "Asif to camera."
+    - t: "42-45"
+      vo: "Follow for more automation lessons."
+      ost: "Follow"
+      vis: "End card."
+  caption: |
+    Every automation breaks eventually. Usually for one of 3 reasons:
+
+    1. A login expires (password changed, token ran out)
+    2. The data changes (someone renames a sheet column, a form adds a question)
+    3. It fails quietly, and nobody notices for a week. This is the worst one.
+
+    The fix in n8n: an error workflow. Create a workflow that starts with the Error Trigger node and sends you a message (Telegram, email, chat). Then select it under Workflow Settings → Error workflow for each workflow you care about.
+
+    No alert = you find out from an angry customer.
+
+    Follow for more automation lessons.
+  hashtags: [n8n, automation, nocode]
+  sources: [n8n_error_trigger]
+  production_notes: "Demo on a test workflow: rename a column live to trigger the failure. Show the Error Trigger workflow and a real alert. Hide chat IDs and tokens."
+
+# ───────────────────────── DAY 12
+- id: D12-I1
+  type: image
+  series: AI Myth Check
+  pillar: LIT
+  format: Myth vs fact
+  topic: "Myth: 'Act as an expert' makes AI smarter"
+  objective: "Correct a popular prompting myth; saves"
+  hook: "Myth: “Act as an expert” makes AI smarter"
+  main_idea: "A role changes tone, not knowledge; facts, goal, example and format do the heavy lifting."
+  value: "Weak vs strong prompt comparison showing what actually improves answers."
+  cta: "Save it."
+  cta_type: save
+  visual_concept: "Costume illustration (a hat labelled 'expert') crossed out vs a toolbox labelled 'context'."
+  design:
+    headline: "Myth: “Act as an expert” makes AI smarter"
+    body:
+      - "FACT: A role sets the tone. It doesn't add knowledge."
+      - "What helps: your facts, your goal, an example, a format."
+      - "Weak: “Act as a marketing expert. Write my ad.”"
+      - "Strong: “Product, price, buyer and offer are… Write 3 ads under 40 words.”"
+    footer: "Context beats costume."
+    layout: "Top: MYTH tag + headline with the quoted phrase struck through. Middle: FACT rows. Bottom: weak (grey) vs strong (accent) prompt blocks side by side. Footer as a short bold line."
+  caption: |
+    “Act as an expert marketer…” is one of the most copied prompt openers online. It mostly changes the tone, not the quality.
+
+    What actually improves answers:
+    • your facts (product, price, buyer)
+    • your goal (what should the reader do?)
+    • an example of what good looks like
+    • a format (3 options, under 40 words)
+
+    Weak: “Act as a marketing expert. Write my ad.”
+    Strong: “My product is…, price…, buyer…, offer… Write 3 ads under 40 words.”
+
+    Context beats costume. Save this.
+  hashtags: [AItips, PromptTips, ChatGPT]
+  sources: []
+  production_notes: "Myth-vs-fact template with the 'costume vs toolbox' doodle. Keep the claim modest: roles affect tone/focus, they don't add facts."
+
+- id: D12-R1
+  type: reel
+  series: Before → After
+  pillar: PA
+  format: Before/after split screen
+  topic: "Better product photos with AI, without lying to customers"
+  objective: "Saves + shares among F-commerce sellers"
+  hook: "Better product photos with AI, without lying."
+  main_idea: "Ask AI to change only background and light, keep the product identical, verify details, and post one untouched photo too."
+  value: "An edit prompt that protects product accuracy + a 3-point check (label, colour, edges)."
+  cta: "Save the prompt."
+  cta_type: save
+  visual_concept: "Split: phone photo of a mug on a messy table → clean studio-style shot; zoomed comparison of the label."
+  runtime: 42
+  retention:
+    hook: "Combines a want (better photos) with a worry (misleading customers) in one line."
+    relatability: "Most Facebook sellers shoot products on phones in home light."
+    visual_progression: "Clear before → after reveal, then a zoomed side-by-side check."
+    payoff: "A clean, sellable photo that still shows the real product."
+    usefulness: "Exact prompt + a 3-point verification habit."
+    save_share: "Sellers forward this to partners and staff who post products."
+  script:
+    - t: "0-3"
+      vo: "Better product photos with AI, without lying."
+      ost: "Better photos. No lying."
+      vis: "Split screen: messy phone photo of a mug (left) → clean studio shot (right)."
+    - t: "3-7"
+      vo: "Here's a normal phone photo. Messy table, yellow light."
+      ost: "Before: messy + yellow"
+      vis: "Zoom on the before photo."
+    - t: "7-12.5"
+      vo: "I upload it and say: keep the product exactly the same. Shape, colour, label, size."
+      ost: "Keep the product EXACTLY the same"
+      vis: "Screen: prompt typed in ChatGPT or Gemini image editing."
+    - t: "12.5-17"
+      vo: "Only change the background and the light."
+      ost: "Change only: background + light"
+      vis: "Prompt continues."
+    - t: "17-21.5"
+      vo: "Here's the result. Now the most important step."
+      ost: "After"
+      vis: "Result reveal with a soft flash."
+    - t: "21.5-27"
+      vo: "Zoom in. Compare the label, the colour, the edges. AI sometimes changes small details."
+      ost: "Check: label · colour · edges"
+      vis: "Side-by-side zoom on the label; any changed detail circled."
+    - t: "27-32"
+      vo: "If the product changed, don't use it. Customers notice."
+      ost: "Product changed? Don't post it"
+      vis: "Red X over a version with an altered label."
+    - t: "32-37"
+      vo: "And post one untouched photo too. Clean, but honest."
+      ost: "Post 1 real photo too"
+      vis: "Post mock: edited photo + original photo side by side."
+    - t: "37-42"
+      vo: "The prompt is in the caption. Save it for your next product."
+      ost: "Prompt ↓"
+      vis: "End card."
+  caption: |
+    Better product photos with AI, without misleading customers.
+
+    Prompt (works in ChatGPT or Gemini image editing):
+    “Keep the product exactly the same: shape, colour, label, size and texture. Only replace the background with a plain light-grey studio background and soft natural shadow. Fix the lighting to neutral daylight.”
+
+    Then check 3 things at full zoom: label text, colour, edges. AI sometimes changes small details. If the product changed, don't use it.
+
+    And post one untouched photo too. Clean, but honest.
+
+    Save this for your next product.
+  hashtags: [fcommerce, productphotography, AItips]
+  sources: [openai_images25]
+  production_notes: "Use a real product you own (mug, bag). Generate the edit live and show the genuine result, including any detail it got wrong. That honesty is the point of the Reel. Don't fabricate a perfect result."
+
+- id: D12-I2
+  type: image
+  series: What It Means For You
+  pillar: NEWS
+  format: News card
+  topic: "Why creators put links in the comments now (Facebook link limit test)"
+  objective: "Useful platform insight for page owners; shares"
+  hook: "Why creators put links in the comments now"
+  main_idea: "Meta is testing a 2-link-posts-per-month limit for Pages without Meta Verified; links in comments aren't limited."
+  value: "What the test is, who it affects, and three practical workarounds."
+  cta: "Send it to someone who runs a Facebook page."
+  cta_type: share
+  visual_concept: "A post mock with a link icon locked, arrow to a comment with the link."
+  design:
+    headline: "Why creators put links in the comments now"
+    body:
+      - "Meta is testing a limit: 2 posts with links per month for Pages."
+      - "It applies to Pages and professional profiles without Meta Verified."
+      - "Links in comments aren't limited."
+      - "What to do: value first, link in the first comment, or “Message me”."
+    footer: "It's a test. Not every Page has it yet. Check your own posting screen."
+    layout: "Light background. Left: simple post mock with a padlocked link icon. Right: arrow to a comment bubble with a link. Rows below. Footer small."
+  caption: |
+    Noticed creators saying “link in the comments”? Here's why.
+
+    Meta has been testing a limit on link posts: Pages and professional profiles without Meta Verified can share links in only 2 posts per month. Links in comments aren't limited.
+
+    What I'd do if you run a page:
+    • lead with value in the post itself
+    • put the link in the first comment
+    • or use “Message me” and send links in Messenger
+
+    It's a test, so not every Page has it. Check your own posting screen.
+
+    Send this to someone who runs a Facebook page.
+  hashtags: [FacebookTips, socialmedia, pagemanagement]
+  sources: [meta_link_limit]
+  production_notes: "Re-check the test's status the day before posting. If Meta has ended or widened it, rewrite line 1 accordingly."
+
+- id: D12-R2
+  type: reel
+  series: Explain It Simply
+  pillar: AU
+  format: Diagram explainer + talking head
+  topic: "What is an API? Think of a shop counter"
+  objective: "Authority; loop for rewatches"
+  hook: "An API is a shop counter. Here's why."
+  main_idea: "An API is a counter with a fixed menu: your app asks for menu items with its key and gets a reply; off-menu requests get errors."
+  value: "Explains API, endpoints and API keys with a local analogy, plus why keys must stay secret."
+  cta: "Follow for the next 'Explain It Simply'."
+  cta_type: follow
+  visual_concept: "Illustrated shop counter with a menu board; two app icons exchanging a request and a reply; key card."
+  loop: "Ends '…picture' over the counter; the opening line completes it: 'An API is a shop counter.'"
+  runtime: 30
+  retention:
+    hook: "An unexpected comparison between tech jargon and a familiar shop."
+    curiosity: "Viewers wait to see how a counter maps to software."
+    novelty: "A fresh analogy instead of the overused 'waiter' explanation."
+    rewatch: "The ending loops into the opening line."
+    usefulness: "Teaches the practical rule 'never share your API key'."
+  script:
+    - t: "0-3"
+      vo: "An API is a shop counter. Here's why."
+      ost: "API = shop counter"
+      vis: "Asif next to an illustrated shop counter."
+    - t: "3-7"
+      vo: "You don't walk into the warehouse. You ask at the counter."
+      ost: "Don't enter the warehouse"
+      vis: "Closed warehouse door; customer at the counter window."
+    - t: "7-11"
+      vo: "And you can only ask for what's on the menu."
+      ost: "Only what's on the menu"
+      vis: "Menu board lights up."
+    - t: "11-15.5"
+      vo: "Apps work the same. Your app asks Google Sheets: add this row."
+      ost: "App → “add this row”"
+      vis: "Two app icons; request arrow travels."
+    - t: "15.5-19.5"
+      vo: "Sheets checks your card, your API key, and does it."
+      ost: "API key = your member card"
+      vis: "Key card scan; green light."
+    - t: "19.5-24"
+      vo: "Ask for something not on the menu, and you get an error."
+      ost: "Not on the menu → error"
+      vis: "Red error code bubble."
+    - t: "24-27"
+      vo: "So never share your key. It's your card."
+      ost: "Never share your key"
+      vis: "Padlock on the key card."
+    - t: "27-30"
+      vo: "Next time someone says API, picture…"
+      ost: ""
+      vis: "Back to the counter shot from frame 1 (loop)."
+  caption: |
+    What is an API? Think of a shop counter.
+
+    You don't walk into the warehouse. You ask at the counter, and only for what's on the menu.
+
+    Apps work the same way: your app asks Google Sheets' “counter” to add a row. Sheets checks your card (your API key) and does it. Ask for something that's not on the menu → error.
+
+    That's also why you never share an API key. It's your card.
+
+    Follow for the next Explain It Simply.
+  hashtags: [API, automation, n8n]
+  sources: []
+  production_notes: "Explain It Simply motion template; same palette as D04-R1 for series consistency. Last frame identical to the first."
+
+# ───────────────────────── DAY 13
+- id: D13-I1
+  type: image
+  series: Automate This
+  pillar: AU
+  format: Checklist
+  topic: "Test your automation before customers do: 6 checks"
+  objective: "Authority + saves among builders and buyers"
+  hook: "Test your automation before customers do"
+  main_idea: "Six tests catch most automation failures before they reach customers."
+  value: "A practical testing checklist (fake data, edge cases, duplicates, broken login, output check, owner)."
+  cta: "Save it before your next launch."
+  cta_type: save
+  visual_concept: "Checklist with six checkbox rows and small icons."
+  design:
+    headline: "Test your automation before customers do"
+    body:
+      - "Run it with fake data first. Never with real customers."
+      - "Try weird cases: empty field, Bangla name, emoji, very long text."
+      - "Run it twice. Does it create duplicates?"
+      - "Break a login on purpose. Do you get an alert?"
+      - "Check the output where people see it: sheet, email, chat."
+      - "Write down who fixes it when it breaks."
+    layout: "Dark background. Headline top. Six checkbox rows with icons (flask, warning, copy, key, eye, person). No footer; series tag top-left."
+  caption: |
+    Before any automation touches a real customer, I run these 6 tests:
+
+    ☐ Fake data first, never real customers
+    ☐ Weird cases: empty fields, Bangla names, emoji, very long text
+    ☐ Run it twice: does it create duplicates?
+    ☐ Break a login on purpose: does an alert arrive?
+    ☐ Check the output where people actually see it (the sheet, the email, the chat)
+    ☐ Write down who fixes it when it breaks
+
+    Most problems show up in test 2 and test 3.
+
+    Save this before your next launch.
+  hashtags: [automation, n8n, testing]
+  sources: []
+  production_notes: "Checklist template. 'Most problems show up in test 2 and 3' is Asif's experience-based opinion. Keep it only if true for you, otherwise delete that line."
+
+- id: D13-R1
+  type: reel
+  series: Steal This Prompt
+  pillar: PA
+  format: Talking head + screen split
+  topic: "Make AI your tutor, not your answer key"
+  objective: "Shares among students and parents"
+  hook: "AI can do your homework. That's the problem."
+  main_idea: "Ask AI to give one hint at a time and ask you the next step, so you build understanding instead of copying answers."
+  value: "A tutor prompt that works in any AI tool + why it matters (no AI in exams)."
+  cta: "Send it to a student who copies AI answers."
+  cta_type: share
+  visual_concept: "Student POV: full AI solution → tutor prompt → back-and-forth chat with hints."
+  runtime: 36
+  retention:
+    hook: "Flips the usual 'AI helps homework' message into a problem, which is surprising and slightly provocative."
+    relatability: "Students (and parents) recognise copying AI answers."
+    problem_solution: "Shows the problem (no learning) then the exact fix prompt."
+    usefulness: "One prompt, any subject, any AI tool."
+    save_share: "Parents and teachers will forward this to students."
+  script:
+    - t: "0-3"
+      vo: "AI can do your homework. That's the problem."
+      ost: "That's the problem."
+      vis: "Student POV: AI shows a full maths solution."
+    - t: "3-7"
+      vo: "You get the answer. Your brain gets nothing."
+      ost: "Answer ✓ · Learning ✗"
+      vis: "Asif to camera."
+    - t: "7-11.5"
+      vo: "In the exam hall, there's no AI. So change the deal."
+      ost: "No AI in the exam"
+      vis: "Illustration of an exam hall."
+    - t: "11.5-17.5"
+      vo: "Type: “Be my tutor. Don't give me the answer. Give me one hint at a time.”"
+      ost: "“One hint at a time.”"
+      vis: "Prompt typed."
+    - t: "17.5-21.5"
+      vo: "“Then ask what I think the next step is.”"
+      ost: "“Ask me the next step.”"
+      vis: "Prompt continues."
+    - t: "21.5-27.5"
+      vo: "Now it asks you. Stuck? It nudges. Wrong? It explains why."
+      ost: "Stuck → hint · Wrong → why"
+      vis: "Chat exchange: hint, student answer, correction."
+    - t: "27.5-32"
+      vo: "Slower, yes. But this time, the answer is in your head."
+      ost: "Answer in YOUR head"
+      vis: "Asif taps his head."
+    - t: "32-36"
+      vo: "Send this to a student who copies AI answers."
+      ost: "Send to a student"
+      vis: "End card."
+  caption: |
+    AI can do your homework. That's the problem. In the exam hall, there's no AI.
+
+    Change the deal with one prompt:
+    “Be my tutor. Don't give me the answer. Give me one hint at a time, then ask me what I think the next step is. If I'm wrong, explain why.”
+
+    Works for maths, physics, accounting, coding. Any subject, any AI app.
+
+    Slower, yes. But the answer ends up in your head.
+
+    Send this to a student who copies AI answers.
+  hashtags: [students, studytips, AItips]
+  sources: []
+  production_notes: "Use a simple algebra problem (e.g. 3x + 5 = 20). Record a real tutoring exchange; keep only the three clearest turns."
+
+- id: D13-I2
+  type: image
+  series: Steal This Prompt
+  pillar: PA
+  format: Framework card
+  topic: "The 5-part formula for AI image prompts"
+  objective: "Saves among creators and sellers"
+  hook: "The 5-part formula for AI image prompts"
+  main_idea: "Subject, setting, light, style and shape make image prompts predictable."
+  value: "A fill-in formula with a worked example and the right aspect ratio for Facebook."
+  cta: "Save it."
+  cta_type: save
+  visual_concept: "Five coloured blocks forming one prompt sentence; small example image placeholder."
+  design:
+    headline: "The 5-part formula for AI image prompts"
+    body:
+      - "1. Subject: “a brown leather wallet”"
+      - "2. Setting: “on a wooden desk by a window”"
+      - "3. Light: “soft morning light”"
+      - "4. Style: “clean product photo” or “flat illustration”"
+      - "5. Shape: “4:5 portrait” for Facebook"
+    footer: "Change one part at a time to see what it does."
+    layout: "Light background. Five horizontal colour-coded blocks (one per part) that visually join into a single sentence strip at the bottom. Footer below."
+  caption: |
+    Random AI images come from random prompts. Use 5 parts:
+
+    1. Subject: what exactly? “a brown leather wallet”
+    2. Setting: where? “on a wooden desk by a window”
+    3. Light: “soft morning light”
+    4. Style: “clean product photo” or “flat illustration”
+    5. Shape: “4:5 portrait” (best for Facebook feed)
+
+    Put together: “A brown leather wallet on a wooden desk by a window, soft morning light, clean product photo, 4:5 portrait.”
+
+    Change one part at a time to learn what each does.
+
+    Save this.
+  hashtags: [AIart, AItips, contentcreation]
+  sources: []
+  production_notes: "If you add an example image, generate it yourself and keep it non-photorealistic or clearly a product mock. If photorealistic, label 'AI-generated' on the image."
+
+- id: D13-R2
+  type: reel
+  series: Build Log
+  pillar: SVC
+  format: Screen demo + face cam
+  topic: "Build log: Telegram → Google Drive backups that never duplicate"
+  objective: "Proof of reliability engineering; Messenger leads"
+  hook: "Backups that never duplicate a file. Here's how."
+  main_idea: "Two n8n workflows move files from Telegram to Drive, verify size + fingerprint, skip duplicates and resume after crashes."
+  value: "Shows reliability concepts (verification, duplicate check, resume point) in plain words, which signals professional quality."
+  cta: "Message 'AUTOMATE' and say where your files live."
+  cta_type: message
+  visual_concept: "Telegram channel scroll (blurred) → Drive folders filling → canvas zooms on verify and duplicate nodes."
+  runtime: 51
+  retention:
+    hook: "A specific, slightly technical promise ('never duplicate') that signals real expertise."
+    relatability: "Teams that share files on Telegram and lose track of them recognise the problem."
+    visual_progression: "Drive folders fill while matching fingerprints animate side by side."
+    novelty: "Concepts like file fingerprints and crash-safe resume are new to most viewers but explained simply."
+    payoff: "Ends with the full system working: new files every 5 minutes, old files backfilled."
+    problem_solution: "Clear problem (hundreds of files in chat) → a reliable solution."
+  script:
+    - t: "0-3"
+      vo: "Backups that never duplicate a file. Here's how."
+      ost: "Telegram → Drive · no duplicates"
+      vis: "Google Drive folder filling with files; Telegram channel beside it (names blurred)."
+    - t: "3-7.5"
+      vo: "Our team sends design files to a Telegram channel. Hundreds of them."
+      ost: "Hundreds of files in Telegram"
+      vis: "Scroll through the channel (file names blurred)."
+    - t: "7.5-12"
+      vo: "I built two n8n workflows to copy them all into Google Drive."
+      ost: "2 workflows"
+      vis: "Both canvases side by side."
+    - t: "12-17"
+      vo: "The first checks for new files every five minutes."
+      ost: "① New files · every 5 min"
+      vis: "Schedule trigger node."
+    - t: "17-22.5"
+      vo: "It downloads, uploads to Drive, then compares size and a digital fingerprint."
+      ost: "Verify: size + fingerprint (MD5)"
+      vis: "Two matching hash strings animate side by side."
+    - t: "22.5-27.5"
+      vo: "Same fingerprint? Saved correctly. Different? It tries again."
+      ost: "Match ✓ · No match ↻"
+      vis: "Green tick / retry arrow animation."
+    - t: "27.5-33"
+      vo: "Before any upload it asks: have I done this one already? If yes, skip."
+      ost: "Done already? Skip."
+      vis: "Lookup step highlighted."
+    - t: "33-38.5"
+      vo: "It also remembers where it stopped, so a crash doesn't restart everything."
+      ost: "Crash-safe: remembers its place"
+      vis: "Bookmark icon on the message list."
+    - t: "38.5-43"
+      vo: "The second workflow slowly moves the old files, oldest first."
+      ost: "② Old files · oldest first"
+      vis: "Second canvas; counter climbing."
+    - t: "43-48"
+      vo: "Need your files backed up like this? Message me AUTOMATE."
+      ost: "Message: AUTOMATE"
+      vis: "Asif to camera."
+    - t: "48-51"
+      vo: "Tell me where your files live now."
+      ost: "Where are your files now?"
+      vis: "End card."
+  caption: |
+    A backup system that never uploads the same file twice. Here's what I built in n8n:
+
+    Our team shares design files in a Telegram channel. Hundreds of them. Two workflows move them into Google Drive:
+
+    ① New files, every 5 minutes: download → upload to the right Drive folder → compare size + digital fingerprint (MD5). Match = saved correctly. No match = try again.
+    Before every upload: “Have I done this one already?” If yes, skip.
+    It remembers where it stopped, so a crash doesn't restart everything.
+
+    ② Old files: a second workflow works through the archive, oldest first.
+
+    Need files backed up like this? Message me “AUTOMATE” and tell me where your files live now.
+  hashtags: [n8n, GoogleDrive, automation]
+  sources: []
+  production_notes: "Film Asif's real 'TG→Drive ①/②' workflows. Blur channel name, file names, client names and folder names. Never show the setup/credentials workflow or API keys."
+
+# ───────────────────────── DAY 14
+- id: D14-I1
+  type: image
+  series: Steal This Prompt
+  pillar: WF
+  format: Prompt card
+  topic: "Prepare for any meeting in 3 prompts"
+  objective: "Saves among professionals and freelancers"
+  hook: "Prepare for any meeting in 3 prompts"
+  main_idea: "Three prompts (decisions needed, likely questions, your 3 points) prepare you in minutes."
+  value: "A short meeting-prep sequence."
+  cta: "Save it."
+  cta_type: save
+  visual_concept: "Three numbered prompt chips with a small calendar icon."
+  design:
+    headline: "Prepare for any meeting in 3 prompts"
+    body:
+      - "1. “Here's the agenda and last notes. What decisions are needed?”"
+      - "2. “What will the other side probably ask? Give me short answers.”"
+      - "3. “Write my 3 key points in under 60 words.”"
+      - "Bring the page, not the chat."
+    footer: "Paste only what you're allowed to share."
+    layout: "Light background. Calendar icon top-right. Three numbered prompt chips. A short bold line under them. Footer small."
+  caption: |
+    5 minutes before a meeting, run these 3 prompts:
+
+    1. “Here's the agenda and last meeting's notes: [paste]. What decisions are needed today?”
+    2. “What will the other side probably ask? Give me short answers.”
+    3. “Write my 3 key points in under 60 words.”
+
+    Then write them on one page and close the chat. You'll sound prepared because you are.
+
+    Only paste what you're allowed to share.
+
+    Save this.
+  hashtags: [productivity, meetings, AItips]
+  sources: []
+  production_notes: "Prompt-card template."
+
+- id: D14-R1
+  type: reel
+  series: AI Myth Check
+  pillar: LIT
+  format: Green screen + diagram
+  topic: "Your AI might be living in the past (training cutoff)"
+  objective: "Trust + shares; prevents a common mistake"
+  hook: "Your AI might be living in the past."
+  main_idea: "Models learn from data up to a cutoff; without web search they can state old information as current."
+  value: "Two checks for time-sensitive questions: is search on, and are sources dated?"
+  cta: "Follow for more AI Myth Checks."
+  cta_type: follow
+  visual_concept: "Timeline with a 'cutoff' line; right side greyed; search toggle and dated sources."
+  loop: "Ends 'No dates? Then remember:' which flows into the opening 'Your AI might be living in the past.'"
+  runtime: 30
+  retention:
+    hook: "A short, slightly eerie line that makes viewers question answers they've already trusted."
+    novelty: "Many users don't know about training cutoffs."
+    visual_progression: "A timeline animation with the cutoff line makes an abstract idea visible."
+    usefulness: "Two quick checks viewers can apply to every time-sensitive answer."
+    rewatch: "The ending line flows straight into the hook."
+  script:
+    - t: "0-3"
+      vo: "Your AI might be living in the past."
+      ost: "Living in the past?"
+      vis: "Asif on green screen; behind him a chat answer stating an old 'latest version'."
+    - t: "3-8"
+      vo: "Every AI model learns from data up to a certain date. Its cutoff."
+      ost: "Training cutoff"
+      vis: "Timeline animation with a cutoff line."
+    - t: "8-12.5"
+      vo: "After that date, it knows nothing, unless it searches the web."
+      ost: "After cutoff: blank"
+      vis: "Right side of the timeline greys out."
+    - t: "12.5-17"
+      vo: "Without search, it can confidently describe old prices as current."
+      ost: "Old info, stated as current"
+      vis: "Example answer with an outdated price highlighted."
+    - t: "17-22"
+      vo: "So for news, prices, laws or ‘the latest’ anything, check two things."
+      ost: "news · prices · laws · latest"
+      vis: "Four icons."
+    - t: "22-26.5"
+      vo: "Is web search on? And does the answer show sources with dates?"
+      ost: "Search on? Dated sources?"
+      vis: "Search toggle; source links with dates highlighted."
+    - t: "26.5-30"
+      vo: "No dates? Then remember:"
+      ost: ""
+      vis: "Back to frame 1 composition (loop)."
+  caption: |
+    Your AI might be living in the past.
+
+    Every AI model learns from data up to a cutoff date. After that, it knows nothing unless it searches the web, and without search it can describe old prices, laws or “the latest version” as if they're current.
+
+    For anything time-sensitive, check 2 things:
+    1. Is web search on?
+    2. Does the answer show sources with dates?
+
+    No dates, no trust.
+
+    Follow for more AI Myth Checks.
+  hashtags: [AIliteracy, ChatGPT, AItips]
+  sources: []
+  production_notes: "Generate a real outdated answer by asking a model with search off about a recent product; show it honestly. Don't single out one brand as 'bad'."
+
+- id: D14-I2
+  type: image
+  series: Explain It Simply
+  pillar: AU
+  format: Glossary card
+  topic: "What's inside an AI agent: brain, instructions, memory, tools"
+  objective: "Authority; prepares buyers for agent projects"
+  hook: "What's inside an AI agent (4 parts)"
+  main_idea: "An agent = model + instructions + memory + tools; fewer tools mean fewer mistakes."
+  value: "Plain-language anatomy that helps buyers scope agent projects."
+  cta: "Save it."
+  cta_type: save
+  visual_concept: "Robot outline split into four labelled zones (head, notebook, chat bubble, toolbox)."
+  design:
+    headline: "What's inside an AI agent (4 parts)"
+    body:
+      - "Brain: the AI model that reads and decides."
+      - "Instructions: the rules, written once (tone, limits, when to ask a human)."
+      - "Memory: what it remembers about this customer or task."
+      - "Tools: what it may do. Read a sheet, send a message, book a slot."
+    footer: "Fewer tools = fewer mistakes. Give an agent only what it needs."
+    layout: "Dark background. Simple line-art agent figure in the centre with four callout lines to labelled boxes (brain/head, instructions/clipboard, memory/notebook, tools/toolbox). Footer bottom."
+  caption: |
+    “AI agent” sounds complicated. Inside, it's 4 parts:
+
+    🧠 Brain: the AI model that reads and decides
+    📋 Instructions: the rules, written once (tone, limits, when to hand over to a human)
+    🗂 Memory: what it remembers about this customer or task
+    🧰 Tools: what it's allowed to do (read a sheet, send a message, book a slot)
+
+    The rule I build by: fewer tools = fewer mistakes. Give an agent only what it needs for the job.
+
+    Save this.
+  hashtags: [AIagents, n8n, automation]
+  sources: []
+  production_notes: "Glossary/diagram hybrid. The four parts mirror n8n's AI Agent node (model, system message, memory, tools); you can show a small n8n reference in the caption reply if asked."
+
+- id: D14-R2
+  type: reel
+  series: Steal This Prompt
+  pillar: WF
+  format: Before/after split screen
+  topic: "Freelance proposals: let AI read the job post, you write the opener"
+  objective: "Saves + shares among freelancers"
+  hook: "Clients read two lines. Then decide."
+  main_idea: "Use AI to analyse the client's worries and words; write a 2-line opener yourself (their worry + your proof); let AI cut generic lines."
+  value: "A proposal method that avoids AI-sounding openers + three prompts."
+  cta: "Send it to a freelancer friend."
+  cta_type: share
+  visual_concept: "Split screen: left = generic 'Dear Sir' proposal (crossed out), right = job-post analysis → typed two-line opener → AI edit suggestions; final full-width better proposal."
+  runtime: 43
+  retention:
+    hook: "A hard truth in five words that every freelancer feels."
+    relatability: "'Dear Sir, I am an expert' is a recognisable cliché for this audience."
+    usefulness: "Three prompts that work on any job platform."
+    problem_solution: "Shows the bad opener, the analysis and the better opener in sequence."
+    save_share: "Freelancers share proposal tips in their groups."
+  script:
+    - t: "0-2.5"
+      vo: "Clients read two lines. Then decide."
+      ost: "2 lines. Then decide."
+      vis: "Asif; a list of proposal previews behind him."
+    - t: "2.5-7"
+      vo: "Most proposals start with “Dear sir, I am an expert.” Skipped."
+      ost: "“Dear Sir, I am expert…” ✗"
+      vis: "Generic opener struck through."
+    - t: "7-12.5"
+      vo: "Use AI to read the job post first, not to write your proposal."
+      ost: "AI reads. You write."
+      vis: "Job post pasted into AI."
+    - t: "12.5-18"
+      vo: "Ask: “What is this client worried about? Which words do they repeat?”"
+      ost: "Their worry · their words"
+      vis: "AI answer listing worries and repeated words."
+    - t: "18-23"
+      vo: "Here: they're worried about deadlines and past freelancers disappearing."
+      ost: "Worry: deadlines · ghosting"
+      vis: "Two lines highlighted."
+    - t: "23-29"
+      vo: "So my first line names that worry. My second line shows proof I've solved it before."
+      ost: "Line 1: their worry · Line 2: proof"
+      vis: "Typing the two-line opener."
+    - t: "29-34"
+      vo: "Then AI checks it: “Is anything here generic? Cut it.”"
+      ost: "“Cut anything generic.”"
+      vis: "AI suggestions with two cuts."
+    - t: "34-39"
+      vo: "End with one smart question about their project. It starts a conversation."
+      ost: "End with 1 smart question"
+      vis: "Final proposal shown."
+    - t: "39-43"
+      vo: "Prompts are in the caption. Send this to a freelancer friend."
+      ost: "Send to a freelancer"
+      vis: "End card."
+  caption: |
+    Clients read the first two lines of your proposal, then decide.
+
+    Use AI to read the job post, not to write your proposal:
+    1. “What is this client worried about? Which words do they repeat? What's the real problem behind the task?”
+    2. Write your opener yourself. Line 1: name their worry. Line 2: proof you've solved it before.
+    3. “Is anything in my proposal generic? Cut it. Keep it under 120 words.”
+    4. End with one smart question about their project.
+
+    Skip “Dear Sir, I am an expert.” Every proposal says that.
+
+    Send this to a freelancer friend.
+  hashtags: [freelancing, Upwork, AItips]
+  sources: []
+  production_notes: "Use an invented job post (no real client). Write the opener live so viewers see a human writing it. Don't show any real platform account details."

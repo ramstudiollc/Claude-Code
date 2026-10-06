@@ -1,0 +1,373 @@
+# Source register — every external fact used in a post points to a key here.
+# "checked" = date the claim was verified in this research pass (2026-10-06).
+# Re-check anything marked volatile: true within 48 hours of publishing.
+
+meta_all_videos_reels:
+  title: "Making it Easier to Create Videos on Facebook"
+  publisher: Meta Newsroom
+  date: 2025-06
+  url: https://about.fb.com/news/2025/06/making-it-easier-create-videos-facebook/
+  claim: All new Facebook videos are shared as Reels; Reels have no length or format restrictions; Video tab renamed Reels tab.
+  checked: 2026-10-06
+
+meta_safe_zone:
+  title: "About text overlays and the Safe Zone for ads in Stories and Reels"
+  publisher: Meta Business Help Center
+  date: current
+  url: https://www.facebook.com/business/help/980593475366490/
+  claim: Keep ~14% top, ~35% bottom and ~6% each side of a 9:16 asset free of text, logos and key elements.
+  checked: 2026-10-06
+
+meta_ads_guide_image:
+  title: "Image ad specs — Facebook Feed (Meta Ads Guide)"
+  publisher: Meta Ads Guide
+  date: current
+  url: https://www.facebook.com/business/ads-guide/update/image
+  claim: Feed images — 4:5 recommended at 1440×1800; JPG or PNG; up to 30 MB.
+  checked: 2026-10-06
+
+meta_ads_guide_reels:
+  title: "Specs for Reels placements (Meta Ads Guide)"
+  publisher: Meta Ads Guide
+  date: current
+  url: https://www.facebook.com/business/ads-guide/update/image/instagram-reels
+  claim: Reels placements — 9:16, recommended 1440×2560; same 14/35/6% safe zone.
+  checked: 2026-10-06
+
+meta_video_requirements:
+  title: "Facebook Video Requirements Chart"
+  publisher: Meta for Business
+  date: current
+  url: https://www.facebook.com/business/m/one-sheeters/video-requirements
+  claim: Official video requirement chart (MP4/MOV, H.264, aspect ratios per placement).
+  checked: 2026-10-06
+
+meta_reels_oct2025:
+  title: "Finding and Sharing Reels on Facebook Just Got Easier and More Fun"
+  publisher: Meta Newsroom (also TechCrunch, 2025-10-07)
+  date: 2025-10-07
+  url: https://about.fb.com/news/2025/10/finding-sharing-reels-facebook-just-got-easier-more-fun/
+  claim: 50% more same-day Reels in recommendations; friend bubbles; "Not interested" control; improved Save.
+  checked: 2026-10-06
+
+meta_utis:
+  title: "Adapting the Facebook Reels RecSys AI Model Based on User Feedback"
+  publisher: Engineering at Meta
+  date: 2026-01-14
+  url: https://engineering.fb.com/2026/01/14/ml-applications/adapting-the-facebook-reels-recsys-ai-model-based-on-user-feedback/
+  claim: Facebook randomly shows some viewers a 1–5 survey "How well does this video match your interests?" and trains ranking on the answers (User True Interest Survey).
+  checked: 2026-10-06
+
+meta_original_2026:
+  title: "Rewarding Original Creators on Facebook"
+  publisher: Meta Newsroom
+  date: 2026-03
+  url: https://about.fb.com/news/2026/03/rewarding-original-creators-on-facebook/
+  claim: Reels using third-party material count as original when a creator on screen adds new information or analysis; watching along, stitching clips or narrating what is already on screen is unoriginal and deprioritized; minor edits (borders, captions, speed changes) don't make a repost original.
+  checked: 2026-10-06
+
+meta_unoriginal_2025:
+  title: "Following YouTube, Meta announces crackdown on unoriginal Facebook content"
+  publisher: TechCrunch
+  date: 2025-07-14
+  url: https://techcrunch.com/2025/07/14/following-youtube-meta-announces-crackdown-on-unoriginal-facebook-content
+  claim: Accounts that repeatedly repost others' content lose monetization access and get reduced distribution.
+  checked: 2026-10-06
+
+meta_creator_guide:
+  title: "A creator's guide to growth: how to get your content seen on Facebook"
+  publisher: Meta for Creators
+  date: current
+  url: https://creators.facebook.com/how-to-get-your-content-seen-on-facebook/
+  claim: Start with Reels for discovery, pick a niche, use 7–14 day Insights trends, reply to comments. Professional Mode is available in Bangladesh.
+  checked: 2026-10-06
+
+meta_translation_bn:
+  title: "Instagram Empowers Creators to Go Global with Local Voice Translations and Fonts"
+  publisher: Meta Newsroom (expansion also reported by Business Standard, 2026-01-16)
+  date: 2025-11
+  url: https://about.fb.com/news/2025/11/instagram-empowers-creators-to-go-global-with-local-voice-translations-and-fonts/
+  claim: Meta AI can translate, dub and optionally lip-sync Reels into Bengali, Tamil, Telugu, Kannada and Marathi in addition to English, Hindi, Spanish and Portuguese, on Facebook and Instagram; free; creators can review or turn it off.
+  checked: 2026-10-06
+  volatile: true
+
+meta_link_limit:
+  title: "What Facebook's New Link Rules Mean for Your 2026 Strategy"
+  publisher: Social Media Examiner (test first confirmed to TechCrunch, Dec 2025)
+  date: 2026
+  url: https://www.socialmediaexaminer.com/what-facebooks-new-link-rules-mean-for-your-2026-strategy/
+  claim: Meta is testing a limit of 2 link posts per month for Pages and professional profiles without Meta Verified; links in comments are not limited.
+  checked: 2026-10-06
+  volatile: true
+
+meta_private_replies:
+  title: "Messenger Platform and IG Messaging API policy"
+  publisher: Meta for Developers
+  date: current
+  url: https://developers.facebook.com/documentation/business-messaging/messenger-platform/policy
+  claim: A Page may send one private reply to a comment within 7 days; if the person replies, the standard 24-hour messaging window opens.
+  checked: 2026-10-06
+
+meta_engagement_bait:
+  title: "Fighting Engagement Bait on Facebook"
+  publisher: Meta Newsroom
+  date: 2017-12
+  url: https://about.fb.com/news/2017/12/news-feed-fyi-fighting-engagement-bait-on-facebook/
+  claim: Posts that bait comments, reactions, shares, tags or votes are demoted; genuine requests for advice are not.
+  checked: 2026-10-06
+
+meta_ai_label:
+  title: "Our Approach to Labeling AI-Generated Content and Manipulated Media"
+  publisher: Meta Newsroom
+  date: 2024-04-05
+  url: https://about.fb.com/news/2024/04/metas-approach-to-labeling-ai-generated-content-and-manipulated-media/
+  claim: People must use the AI-disclosure tool when posting photorealistic video or realistic-sounding audio that was digitally created or altered; Meta adds "AI info" labels when it detects industry signals or when people disclose.
+  checked: 2026-10-06
+
+meta_ai_mode:
+  title: "Meta Launches AI Mode on Facebook to Reshape How Users Search"
+  publisher: The AI Insider (Meta AI Threads post, 2026-06-15)
+  date: 2026-06-17
+  url: https://theaiinsider.tech/2026/06/17/meta-launches-ai-mode-on-facebook-to-reshape-how-users-search-and-create-content/
+  claim: Facebook search has an AI Mode that answers questions using public posts, Groups and Reels. Country availability not confirmed for Bangladesh.
+  checked: 2026-10-06
+  volatile: true
+
+emplifi_reels:
+  title: "Facebook Reels: What Drives Views and Stops the Scroll"
+  publisher: Emplifi (reported by Social Media Today)
+  date: 2026-03
+  url: https://emplifi.io/resources/facebook-reels-data/
+  claim: Study of 10,110 brand Reels — human speech in the first 3 s lifted 10-second retention ~25% vs music; a person on screen ≥1 s in the first 3 s lifted it ~10%; vertical beat square/horizontal.
+  checked: 2026-10-06
+
+openai_dots:
+  title: "Introducing dots"
+  publisher: OpenAI (help article "Getting started with your dot"; TechCrunch 2026-09-29)
+  date: 2026-09-29
+  url: https://openai.com/index/introducing-dots/
+  claim: Dots are always-on agents in ChatGPT with their own cloud computer; you set a goal and limits; they report back for review; reachable in ChatGPT, Slack and Teams; rolling out to Pro (not EEA/CH/UK) and Business Premium; Enterprise beta off by default; created on desktop.
+  checked: 2026-10-06
+  volatile: true
+
+openai_images25:
+  title: "Introducing ChatGPT Images 2.5"
+  publisher: OpenAI
+  date: 2026-09-08
+  url: https://openai.com/index/introducing-chatgpt-images-2-5/
+  claim: Sharper detail, more precise edits, up to 50% lower latency vs Images 2.0; new Sketch (draw a reference) and Templates (flyers, product photos).
+  checked: 2026-10-06
+  volatile: true
+
+openai_release_notes:
+  title: "ChatGPT — Release Notes"
+  publisher: OpenAI Help Center
+  date: 2026-09
+  url: https://help.openai.com/en/articles/6825453-chatgpt-release-notes
+  claim: Library adds Box, Dropbox and SharePoint next to Google Drive with @mentions (2026-09-10); multiple accounts per plugin (2026-09-17); Meetings plugin (2026-09-29); temporary chat personalization choice (2026-08-27).
+  checked: 2026-10-06
+  volatile: true
+
+openai_temp_chat:
+  title: "Temporary chat in ChatGPT"
+  publisher: OpenAI Help Center
+  date: 2026-08
+  url: https://help.openai.com/en/articles/8914046-temporary-chat-in-chatgpt
+  claim: Temporary chats stay out of history unless saved and never create or update memories; you can choose Personalized or Unpersonalized before starting.
+  checked: 2026-10-06
+
+openai_memory:
+  title: "Memory in ChatGPT"
+  publisher: OpenAI Help Center
+  date: current
+  url: https://help.openai.com/en/articles/8590148-memory-in-chatgpt
+  claim: You can view, delete or turn off saved memories and chat-history reference in settings.
+  checked: 2026-10-06
+
+openai_data_controls:
+  title: "Data controls in ChatGPT"
+  publisher: OpenAI Help Center
+  date: current
+  url: https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt
+  claim: A model-improvement toggle in Data controls decides whether your chats can be used to train models.
+  checked: 2026-10-06
+
+openai_usage_study:
+  title: "How People Use ChatGPT (NBER Working Paper 34255)"
+  publisher: NBER / OpenAI
+  date: 2025-09
+  url: https://www.nber.org/papers/w34255
+  claim: Practical guidance, seeking information and writing are ~80% of conversations; most writing requests edit or translate the user's own text; non-work use >70%.
+  checked: 2026-10-06
+
+openai_classifier:
+  title: "OpenAI scuttles AI-written text detector over 'low rate of accuracy'"
+  publisher: TechCrunch
+  date: 2023-07-25
+  url: https://techcrunch.com/2023/07/25/openai-scuttles-ai-written-text-detector-over-low-rate-of-accuracy/
+  claim: OpenAI's own classifier caught 26% of AI text and flagged 9% of human text as AI before it was withdrawn.
+  checked: 2026-10-06
+
+liang_detectors:
+  title: "GPT detectors are biased against non-native English writers"
+  publisher: Patterns (Cell Press), Liang et al.
+  date: 2023-07
+  url: https://www.cell.com/patterns/fulltext/S2666-3899(23)00130-7
+  claim: Seven detectors labeled more than half of 91 TOEFL essays by non-native writers as AI-generated.
+  checked: 2026-10-06
+
+fbi_genai_fraud:
+  title: "Criminals Use Generative Artificial Intelligence to Facilitate Financial Fraud (PSA I-120324-PSA)"
+  publisher: FBI / IC3
+  date: 2024-12-03
+  url: https://www.ic3.gov/PSA/2024/PSA241203
+  claim: Criminals use AI voice cloning and AI text/images; FBI advises creating a secret word or phrase with family to verify identity.
+  checked: 2026-10-06
+
+google_gemini_skills:
+  title: "Let skills in Gemini tackle your most repetitive tasks"
+  publisher: Google Blog (+ Gemini Apps Help 'About the transition from Gems to skills')
+  date: 2026-09-30
+  url: https://blog.google/products-and-platforms/products/gemini/automate-tasks-with-skills/
+  claim: Skills are reusable instructions; type / to use; Gemini can create one from a chat; skills can include reference files and can be combined. Gems become skills from November 2026 for personal accounts (auto-migrated).
+  checked: 2026-10-06
+  volatile: true
+
+google_gems_transition:
+  title: "About the transition from Gems to skills"
+  publisher: Gemini Apps Help
+  date: 2026
+  url: https://support.google.com/gemini/answer/18560919?hl=en
+  claim: Gems are removed and auto-recreated as skills — November 2026 (personal), March 2027 (Workspace business), June 2027 (education).
+  checked: 2026-10-06
+  volatile: true
+
+google_gemini_windows:
+  title: "The Gemini desktop app is now available for Windows"
+  publisher: Google Workspace Updates
+  date: 2026-09
+  url: https://workspaceupdates.googleblog.com/2026/09/the-gemini-desktop-app-is-now-available-for-Windows.html
+  claim: Gemini app for Windows; press Alt + Space to open it over any app.
+  checked: 2026-10-06
+
+google_ai_sept2026:
+  title: "The latest AI news we announced in September 2026"
+  publisher: Google Blog
+  date: 2026-10
+  url: https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/
+  claim: Gemini 4 Argon (to trusted cyber defenders first), Gemini 3.8 Flash, Gemini 3.8 Live voice models, Gemini app on Windows, more Connected Apps.
+  checked: 2026-10-06
+  volatile: true
+
+google_gemini_live_free:
+  title: "Gemini gets more personal, proactive and powerful (I/O 2025)"
+  publisher: Google Blog (+ Gemini Apps Help 'Talk naturally with Gemini Live')
+  date: 2025-05-20
+  url: https://blog.google/products/gemini/gemini-app-updates-io-2025/
+  claim: Gemini Live with camera and screen sharing is free on Android and iOS.
+  checked: 2026-10-06
+
+google_notebook_rename:
+  title: "NotebookLM is now Gemini Notebook"
+  publisher: Google Blog / Workspace Updates
+  date: 2026-07-16
+  url: https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/
+  claim: Same product, new name; existing notebooks stay; notebooks sync with the Gemini app and Search; adds a code-running environment inside notebooks.
+  checked: 2026-10-06
+
+google_notebook_study:
+  title: "Sharpen your study routine with new Gemini Notebook tools"
+  publisher: Google Blog
+  date: 2026-09
+  url: https://blog.google/innovation-and-ai/products/gemini-notebook/new-study-tools-september-2026/
+  claim: Short Video Overviews (~60 s, 80+ languages), editable quizzes (short answer, multiple choice, fill-in-the-blank) and flashcards, lecture audio recorder, real-time voice.
+  checked: 2026-10-06
+
+google_notebook_youtube:
+  title: "NotebookLM adds audio and YouTube support"
+  publisher: Google Blog
+  date: 2024-09
+  url: https://blog.google/innovation-and-ai/products/notebooklm-audio-video-sources/
+  claim: Public YouTube URLs and audio files can be added as notebook sources.
+  checked: 2026-10-06
+
+n8n_release_2x:
+  title: "Release notes 2.x"
+  publisher: n8n Docs
+  date: 2026
+  url: https://docs.n8n.io/changelog/release-notes-2.x
+  claim: Human-in-the-loop approval for AI tool calls (2.6.0); MCP server can create and update workflows (2.14.0, all editions); MCP improvements in 2.22 and 2.29.
+  checked: 2026-10-06
+  volatile: true
+
+n8n_mcp_blog:
+  title: "n8n's MCP server can now build workflows!"
+  publisher: n8n Blog
+  date: 2026
+  url: https://blog.n8n.io/n8n-mcp-server/
+  claim: AI assistants connected through n8n's MCP server can build and edit workflows; built into every edition including self-hosted Community Edition.
+  checked: 2026-10-06
+
+n8n_error_trigger:
+  title: "Error Trigger node / Error handling"
+  publisher: n8n Docs
+  date: current
+  url: https://docs.n8n.io/flow-logic/error-handling/
+  claim: Set an error workflow (starting with Error Trigger) in Workflow Settings; it receives the failed execution's details so you can alert by email/chat.
+  checked: 2026-10-06
+
+n8n_choose:
+  title: "Choose your n8n"
+  publisher: n8n Docs
+  date: current
+  url: https://docs.n8n.io/choose-n8n/
+  claim: n8n can be used as n8n Cloud or self-hosted (Community Edition is free to self-host; you pay for your own server).
+  checked: 2026-10-06
+
+bd_facebook_users:
+  title: "Facebook users in Bangladesh"
+  publisher: NapoleonCat
+  date: 2026-09
+  url: https://stats.napoleoncat.com/facebook-users-in-bangladesh/
+  claim: ~72M Facebook users in Bangladesh (Sep 2026); 62.9% male; 18–24 the largest age group.
+  checked: 2026-10-06
+
+bd_fcommerce:
+  title: "Unlocking the future of business: The guide to F-commerce in Bangladesh"
+  publisher: DHL Bangladesh
+  date: 2025
+  url: https://www.dhl.com/discover/en-bd/e-commerce-advice/e-commerce-trends/guide-to-f-commerce-in-bangladesh
+  claim: Facebook Pages + Messenger are the primary storefront for a large share of Bangladeshi SMEs (seller estimates range 300k–500k+).
+  checked: 2026-10-06
+
+bd_post_times:
+  title: "Best time to post for a Bangladesh audience (industry estimates)"
+  publisher: Radaar / Sabujkundu / Brandtics (secondary sources)
+  date: 2025–2026
+  url: https://www.radaar.io/free-tools/best-times-to-post/asia-dhaka/
+  claim: Peak Facebook activity ~8:00–11:00 PM BST; secondary windows ~1:00–2:30 PM and 8:30–10:30 AM. Treat as a starting hypothesis; your Insights override it.
+  checked: 2026-10-06
+
+google_keep_activity:
+  title: "Gemini app personalizes responses based on past chats, plus new privacy controls"
+  publisher: Google Blog (+ Gemini Apps Help 'Manage & delete your activity')
+  date: 2025-08
+  url: https://blog.google/products/gemini/temporary-chats-privacy-controls/
+  claim: The 'Gemini Apps Activity' setting is renamed 'Keep Activity'; when on, a sample of future uploads helps improve Google services; it can be turned off, or Temporary Chats used.
+  checked: 2026-10-06
+
+whatsapp_templates:
+  title: "WhatsApp Business Messaging Policy / message template rules"
+  publisher: WhatsApp Business (Meta); Infobip docs
+  date: current
+  url: https://business.whatsapp.com/policy
+  claim: Business-initiated WhatsApp messages outside the 24-hour customer service window must use Meta-approved message templates.
+  checked: 2026-10-06
+
+fb_truncation:
+  title: "Facebook Character Limit 2026"
+  publisher: charcount.tools (third-party measurement)
+  date: 2026
+  url: https://charcount.tools/platforms/facebook-character-limit
+  claim: Mobile Facebook collapses long posts behind 'See more' at roughly 125 characters (actual cut depends on rendered height).
+  checked: 2026-10-06
