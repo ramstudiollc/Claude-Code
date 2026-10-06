@@ -16,17 +16,21 @@ Series: Explain It Simply · Pillar: Automation & n8n · Format: Diagram explain
 
 | | |
 |---|---|
+| **Human problem** | Hearing 'chatbot', 'automation' and 'AI agent' used for everything and not knowing which one you actually need. |
 | **Objective** | Authority; helps buyers ask for the right thing |
-| **Hook** | Chatbot, automation, agent: not the same thing. |
+| **Hook** | “Where's my order?” Three systems, three answers. |
+| **Open loop (what the viewer wants to know)** | Which system answers best, and which one do I need? |
 | **Main idea** | Chatbot talks; automation follows fixed steps; agent chooses its own steps with tools. Use the simplest that works and add human approval for money. |
 | **Key value** | One shared example ('Where's my order?') across all three, plus a decision rule. |
-| **CTA** | Follow for more Explain It Simply. |
+| **Payoff (where it's answered)** | 25–43 s: use the simplest that works: automation for fixed rules, an agent for changing questions, a human for money. |
+| **Takeaway (what did I just learn?)** | Use automation for fixed rules, an AI agent for changing questions, and human approval for anything involving money. |
+| **CTA** | Ask which one viewers thought they needed. |
 | **Visual concept** | Three columns, one per type, each answering the same customer bubble; straight arrow vs branching arrows. |
-| **Pace** | 104 spoken words in 46 s = 2.26 words/s |
+| **Pace** | 107 spoken words in 46 s = 2.33 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
-- `hook`: Calls out a confusion most people have but won't admit, with three familiar buzzwords in one line.
+- `hook`: Opens on a question every seller gets daily and promises three different answers, so it's concrete, not jargon.
 - `curiosity`: Viewers want to know which of the three they actually need.
 - `visual_progression`: The same question flows through three different diagrams: chat bubble, straight line, branching tree.
 - `usefulness`: Ends with a 3-line decision rule (fixed rules, changing questions, money).
@@ -36,8 +40,8 @@ Series: Explain It Simply · Pillar: Automation & n8n · Format: Diagram explain
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-3 | Chatbot, automation, agent: not the same thing. | Chatbot ≠ Automation ≠ Agent | Asif with three labelled icons appearing beside him. |
-| 3-7 | Same customer question for all three: “Where's my order?” | “Where's my order?” | Messenger bubble drops into each of three columns. |
+| 0-3 | “Where's my order?” Three systems, three answers. | Same question. 3 answers. | A customer bubble 'Where's my order?' drops in; three labelled columns appear beside Asif. |
+| 3-7 | A chatbot, an automation, and an AI agent. Watch the difference. | Chatbot · Automation · Agent | Messenger bubble drops into each of three columns. |
 | 7-13 | A chatbot just talks. It answers from what it was told, but it can't check anything. | Chatbot: talks, can't check | Column 1: reply 'Orders usually take 3–5 days.' |
 | 13-18.5 | An automation follows fixed steps. Status changes, it sends an update. Every time. | Automation: fixed path | Column 2: straight arrow 'status = shipped' → message. |
 | 18.5-22 | An agent chooses the path. It reads the question, | Agent: picks its own steps | Column 3: agent icon reads the bubble; branches appear. |
@@ -46,12 +50,12 @@ Series: Explain It Simply · Pillar: Automation & n8n · Format: Diagram explain
 | 29.5-34 | Fixed rules? Automation. Cheaper and more predictable. | Fixed rules → automation | Column 2 glows. |
 | 34-38.5 | Questions that change every time? An agent, with limits. | Changing questions → agent | Column 3 glows with a fence icon. |
 | 38.5-43 | Anything involving money? Add a human approval step. | Money → a human approves | Approval checkmark node added. |
-| 43-46 | Follow for more Explain It Simply. | Explain It Simply | End card with series tag. |
+| 43-46 | Start with the simple one. Upgrade later. | Start simple | End card with series tag. |
 
 **Caption**
 
 ```text
-Chatbot, automation, AI agent: the difference in one example.
+“Where's my order?” A chatbot, an automation and an AI agent answer it very differently.
 
 Customer asks: “Where's my order?”
 • Chatbot: talks. Answers from what it was told, but can't check anything.
@@ -61,7 +65,7 @@ Customer asks: “Where's my order?”
 Which do you need? The simplest one that works.
 Fixed rules → automation. Changing questions → agent with limits. Money involved → add a human approval.
 
-Follow for more Explain It Simply.
+Which one did you think you needed before watching?
 
 #AIagents #automation #n8n
 ```
@@ -71,23 +75,27 @@ Follow for more Explain It Simply.
 
 <a id="D08-R2"></a>
 
-### #032 · D08-R2 · Day 8 · Mon 19 Oct · 21:00 BST · REEL · 43 s
+### #032 · D08-R2 · Day 8 · Mon 19 Oct · 21:00 BST · REEL · 46 s
 **Tailor your CV to a job post without lying**  
 Series: Steal This Prompt · Pillar: Workflows & productivity · Format: Talking head + screen split
 
 | | |
 |---|---|
+| **Human problem** | Sending lots of job applications and hearing nothing back. |
 | **Objective** | Saves + shares among job seekers |
-| **Hook** | One CV for every job? Here's the fix. |
+| **Hook** | Thirty applications. Zero calls. Look at your CV. |
+| **Open loop (what the viewer wants to know)** | What's wrong with my CV, and how do I fix it without lying? |
 | **Main idea** | Extract the job's requirements, match each to real evidence, rewrite matched bullets in the employer's words, and handle gaps honestly. |
 | **Key value** | A 4-step method + the 'don't invent anything, mark gaps' guardrail. |
+| **Payoff (where it's answered)** | 22–38 s: the match table shows strengths and gaps; matched bullets are rewritten honestly in the employer's words. |
+| **Takeaway (what did I just learn?)** | Match your CV to each job's own requirements and words, honestly, instead of sending one CV everywhere. |
 | **CTA** | Send to a friend who's job hunting. |
 | **Visual concept** | Vertical split: Asif on the top half holding a printed CV, the screen on the bottom half: job post → requirement list → match table (green/red rows) → before/after bullet. |
-| **Pace** | 105 spoken words in 43 s = 2.44 words/s |
+| **Pace** | 110 spoken words in 46 s = 2.39 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
-- `hook`: Most job seekers send one CV everywhere, so the hook lands on a common habit.
+- `hook`: 'Thirty applications, zero calls' is a painful, specific feeling job seekers recognise instantly.
 - `problem_solution`: Clear 4-step fix shown on screen, one step every ~6 seconds.
 - `visual_progression`: The match table fills with green and red rows, a visible map of strengths and gaps.
 - `usefulness`: Prompts are copy-paste and work in any AI tool; honest guardrail included.
@@ -97,20 +105,21 @@ Series: Steal This Prompt · Pillar: Workflows & productivity · Format: Talking
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-3 | One CV for every job? Here's the fix. | Same CV for every job? | Asif holding a printed CV. |
-| 3-8.5 | Step one: paste the job post. Ask for the top eight requirements, in their words. | 1 · Top 8 requirements | Screen: job post pasted → list of 8. |
-| 8.5-14.5 | Step two: paste your CV. Ask it to match each requirement to proof in your CV. | 2 · Match each one to proof | Table forms: requirement \| evidence \| gap. |
-| 14.5-19 | And add this line: “Don't invent anything. Mark gaps.” | “Don't invent. Mark gaps.” | The line highlighted in yellow. |
-| 19-24 | Now you see it clearly. Six matches, two gaps. | 6 matches · 2 gaps | Table: six green rows, two red rows. |
-| 24-29.5 | Step three: rewrite your matched bullets using their keywords, only where it's true. | 3 · Their words, your truth | Before/after of one CV bullet. |
-| 29.5-35 | Step four: the gaps. Learn it, explain it in the cover letter, or apply anyway. | 4 · Gaps: learn · explain · accept | Three option cards. |
-| 35-40.5 | Many employers scan for the job's own words. Now your CV has them, honestly. | Their keywords · honestly | Matching keywords glow in both documents. |
-| 40.5-43 | Send this to someone job hunting. | Send to a job hunter | End card. |
+| 0-3 | Thirty applications. Zero calls. Look at your CV. | 30 applications · 0 calls | Asif holding a printed CV; inbox with no replies behind him. |
+| 3-6 | Usually it's one CV sent to every job. | Same CV, every job | The same CV copied onto a stack of different job posts. |
+| 6-11.5 | Step one: paste the job post. Ask for the top eight requirements. | 1 · Top 8 requirements | Screen half: job post pasted → list of 8. |
+| 11.5-17.5 | Step two: paste your CV. Ask it to match each requirement to proof in your CV. | 2 · Match each one to proof | Table forms: requirement \| evidence \| gap. |
+| 17.5-22 | And add this line: “Don't invent anything. Mark gaps.” | “Don't invent. Mark gaps.” | The line highlighted in yellow. |
+| 22-27 | Now you see it clearly. Six matches, two gaps. | 6 matches · 2 gaps | Table: six green rows, two red rows. |
+| 27-32.5 | Step three: rewrite your matched bullets using their keywords, only where it's true. | 3 · Their words, your truth | Before/after of one CV bullet. |
+| 32.5-38 | Step four: the gaps. Learn it, explain it in the cover letter, or apply anyway. | 4 · Gaps: learn · explain · accept | Three option cards. |
+| 38-43.5 | Many employers scan for the job's own words. Now your CV has them, honestly. | Their keywords · honestly | Matching keywords glow in both documents. |
+| 43.5-46 | Send this to someone job hunting. | Send to a job hunter | End card. |
 
 **Caption**
 
 ```text
-One CV for every job is why you're not getting calls. Tailor it in 10 minutes, honestly:
+Thirty applications, zero calls? Often it's one CV sent to every job. Tailor it in 10 minutes, honestly:
 
 1. Paste the job post: “List the top 8 requirements, using the employer's exact words.”
 2. Paste your CV: “Match each requirement to proof in my CV. Don't invent anything. Mark gaps.”
@@ -119,7 +128,7 @@ One CV for every job is why you're not getting calls. Tailor it in 10 minutes, h
 
 Many employers scan CVs for the job's own words. Now yours has them, without lying.
 
-Send this to someone who's job hunting.
+Job hunting, or know someone who is? Pass this on.
 
 #jobsearch #CVtips #AItips
 ```
@@ -135,17 +144,21 @@ Series: Steal This Prompt · Pillar: Practical AI · Format: Talking head + scre
 
 | | |
 |---|---|
+| **Human problem** | Making decisions with an AI that tends to agree with whatever you suggest. |
 | **Objective** | Saves + comments |
-| **Hook** | AI agrees with you too easily. Try this. |
+| **Hook** | AI loved my plan. That worried me. |
+| **Open loop (what the viewer wants to know)** | Why is agreement a problem, and how do you get honest pushback? |
 | **Main idea** | AI tends to agree with the user; asking it to argue against your plan surfaces risks you missed. |
 | **Key value** | The 'strongest reasons it could fail' prompt + the follow-up 'what would make it work'. |
-| **CTA** | Save it before your next big decision. |
+| **Payoff (where it's answered)** | 11–25.5 s: the flipped prompt surfaces risks the creator hadn't considered. |
+| **Takeaway (what did I just learn?)** | Ask AI for the strongest reasons your plan could fail, then ask what would make it work. |
+| **CTA** | Ask what decision viewers would run this on. |
 | **Visual concept** | Chat showing 'Great idea!' → flipped prompt → list of failure reasons with two highlighted. |
-| **Pace** | 75 spoken words in 32 s = 2.34 words/s |
+| **Pace** | 74 spoken words in 32 s = 2.31 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
-- `hook`: Names a quiet flaw people have noticed (AI always says 'great idea') and promises a fix.
+- `hook`: A personal twist (praise as a warning sign) that viewers don't expect.
 - `novelty`: Using AI as a critic instead of a cheerleader is new to most viewers.
 - `relatability`: A price increase decision is something every seller faces.
 - `payoff`: Two real risks the creator hadn't considered appear on screen.
@@ -155,7 +168,7 @@ Series: Steal This Prompt · Pillar: Practical AI · Format: Talking head + scre
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-3 | AI agrees with you too easily. Try this. | AI agrees too easily | Asif; chat screen with 'Great idea!' response. |
+| 0-3 | AI loved my plan. That worried me. | AI loved my plan. Uh-oh. | Asif; chat screen with 'Great idea!' response. |
 | 3-7.5 | Ask “Is my plan good?” and it usually says yes. | “Great idea!” 🙄 | Highlight 'Great idea!' in yellow. |
 | 7.5-11 | So flip the question. Make it argue against you. | Make it argue | Asif flips his hand; whoosh. |
 | 11-16 | “Give me the three strongest reasons this plan could fail.” | “3 strongest reasons it fails” | Prompt typed in large text. |
@@ -167,7 +180,7 @@ Series: Steal This Prompt · Pillar: Practical AI · Format: Talking head + scre
 **Caption**
 
 ```text
-AI tends to agree with you. Ask “Is my plan good?” and you'll usually hear yes.
+AI loved my plan. That worried me. Ask “Is my plan good?” and you'll usually hear yes.
 
 Flip it:
 “Give me the 3 strongest reasons this plan could fail. Be specific to my situation: [details].”
@@ -179,7 +192,7 @@ I tried it on a price increase (Tk 1,200 → 1,500) and got two risks I hadn't c
 
 You still decide. AI just pressure-tests the idea.
 
-Save this for your next big decision.
+What decision would you run this on?
 
 #AItips #decisionmaking #smallbusiness
 ```
@@ -195,29 +208,33 @@ Series: Automate This · Pillar: Automation & n8n · Format: Screen demo + face 
 
 | | |
 |---|---|
+| **Human problem** | Leads arrive at night or while you're busy, and you see them too late. |
 | **Objective** | Proof of skill; Messenger leads from small businesses |
-| **Hook** | New lead? Sheet and phone alert, in seconds. |
+| **Hook** | 11 PM lead. Seen two days later. |
+| **Open loop (what the viewer wants to know)** | How does an 11 PM lead reach me at 11 PM? |
 | **Main idea** | A 5-node n8n workflow captures form leads, cleans them, blocks duplicates, logs them to Sheets and alerts the owner on Telegram. |
 | **Key value** | Shows a complete, practical build and the reasoning behind each node (cleaning, duplicate check). |
-| **CTA** | Message 'AUTOMATE' to get it set up. |
+| **Payoff (where it's answered)** | 7–38 s: five nodes clean, de-duplicate, log and alert; the stopwatch shows seconds. |
+| **Takeaway (what did I just learn?)** | A five-node n8n workflow can log every form lead to a sheet and alert your phone within seconds. |
+| **CTA** | Soft service line in the caption only. |
 | **Visual concept** | Phone buzz with a lead alert → full canvas → node-by-node zoom with before/after data → stopwatch. |
-| **Pace** | 110 spoken words in 51 s = 2.16 words/s |
+| **Pace** | 113 spoken words in 51 s = 2.22 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
-- `hook`: Opens on the end result (a phone alert) so viewers see the payoff before the build.
+- `hook`: Opens on a missed lead, a loss every small business has felt, before showing any technology.
 - `visual_progression`: Five nodes light up one after another, each with visible data changes.
 - `usefulness`: Explains the cleaning and duplicate check most DIY builds miss.
 - `relatability`: Missed and slow-to-answer leads are a common small-business pain.
-- `payoff`: Form-to-phone in seconds, shown with a stopwatch overlay.
+- `payoff`: The ending answers the opening: the 11 PM lead is on your phone at 11 PM.
 - `novelty`: Seeing a real n8n canvas explained in plain words is rare in this audience's feed.
 
 **Script**
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-3 | New lead? Sheet and phone alert, in seconds. | Lead → Sheet → Phone | Phone buzzes: Telegram alert 'New lead: Rahim · wants a logo · 01XXXXXXXXX'. |
-| 3-7 | Here's the whole workflow in n8n. Five boxes. | 5 nodes | Full demo canvas, slow zoom out. |
+| 0-3 | 11 PM lead. Seen two days later. | 11 PM lead · seen 2 days later | Phone: form notification email at 23:04, opened two days later (dramatized). |
+| 3-7 | Here's the five-box fix I built in n8n. | The fix: 5 nodes | Full demo canvas, slow zoom out. |
 | 7-12 | One: the form sends the lead here the moment someone submits it. | 1 · Form → webhook | Form submit on the left; Webhook node lights. |
 | 12-17.5 | Two: clean it up. Trim spaces, fix the phone format, add the date. | 2 · Clean the data | Edit Fields node: before/after values side by side. |
 | 17.5-23 | Three: check the sheet. Same phone number already there? Don't add it twice. | 3 · Already in the sheet? | Lookup node; duplicate branch highlighted. |
@@ -225,13 +242,13 @@ Series: Automate This · Pillar: Automation & n8n · Format: Screen demo + face 
 | 27.5-32.5 | Five: send me a Telegram message with name, phone and what they want. | 5 · Alert on my phone | Telegram node → phone notification. |
 | 32.5-38 | Form to phone in a few seconds. Nobody copy-pastes anything. | Seconds · zero copy-paste | Stopwatch overlay on a real run. |
 | 38-43 | Why it matters: the first business to reply often gets the customer. | Reply first | Asif to camera. |
-| 43-48 | Want this for your forms? Message me AUTOMATE. | Message: AUTOMATE | Messenger icon animation. |
-| 48-51 | Follow to see more builds. | More builds → follow | End card. |
+| 43-48 | Next time, that 11 PM lead is on your phone at 11 PM. | 11 PM lead → your phone, 11 PM | Phone buzzes with the Telegram alert at 23:04. |
+| 48-51 | And you reply first. | Reply first | End card. |
 
 **Caption**
 
 ```text
-Every new lead → Google Sheet → phone alert, in seconds. Built in n8n with 5 nodes:
+A lead fills your form at 11 PM. You see it two days later. The fix took 5 n8n nodes:
 
 1. Webhook: the form sends the lead the moment it's submitted
 2. Clean: trim spaces, fix the phone format, add the date
@@ -241,7 +258,7 @@ Every new lead → Google Sheet → phone alert, in seconds. Built in n8n with 5
 
 Nobody copy-pastes anything, and you can reply first. The first reply often wins the customer.
 
-Want this set up for your forms? Message me “AUTOMATE”.
+Need something like this for your business? I build custom n8n automations.
 
 #n8n #automation #leadgeneration
 ```
@@ -257,10 +274,14 @@ Series: AI Myth Check · Pillar: AI literacy & safety · Format: POV skit + talk
 
 | | |
 |---|---|
+| **Human problem** | A panicked call from a 'family member' asking for money, in a voice that sounds real. |
 | **Objective** | Shares to family groups; trust |
 | **Hook** | Your brother calls. It's not your brother. |
+| **Open loop (what the viewer wants to know)** | How can it not be him? |
 | **Main idea** | AI can clone voices from short clips; a family code word, calling back on a saved number, and treating urgency as a red flag stop the scam. |
 | **Key value** | Three concrete steps backed by an FBI public warning. |
+| **Payoff (where it's answered)** | 8–31 s: voice cloning explained, then three steps that stop the scam. |
+| **Takeaway (what did I just learn?)** | Agree on a family code word and always call back on a saved number before sending money. |
 | **CTA** | Send to your family group. |
 | **Visual concept** | Short dramatized call (unknown number, panicked voice), then Asif breaks the fourth wall with three steps; ends on the phone ringing again. |
 | **Loop** | Ends 'Because next time, it might not be him' over a ringing phone, which flows into the opening 'Your brother calls…' |
@@ -320,13 +341,17 @@ Series: Steal This Prompt · Pillar: Workflows & productivity · Format: Before/
 
 | | |
 |---|---|
+| **Human problem** | Leaving meetings unsure who is doing what, then arguing about it later. |
 | **Objective** | Saves among professionals |
 | **Hook** | Meetings end. Nobody knows who does what. |
+| **Open loop (what the viewer wants to know)** | What's the one line that stops AI guessing? |
 | **Main idea** | Paste a transcript or notes; ask for action/owner/deadline + open questions; force 'MISSING' instead of guesses. |
 | **Key value** | A prompt that turns notes into accountable actions and an automatic follow-up list. |
+| **Payoff (where it's answered)** | 13–28 s: 'write MISSING' turns gaps into a ready follow-up list. |
+| **Takeaway (what did I just learn?)** | Ask AI to write MISSING instead of guessing owners or dates when it turns notes into tasks. |
 | **CTA** | Save it for your next meeting. |
 | **Visual concept** | Closing laptop → split screen: left 'before' table with a guessed owner, right 'after' table with red MISSING cells → follow-up message. |
-| **Pace** | 91 spoken words in 38 s = 2.39 words/s |
+| **Pace** | 87 spoken words in 38 s = 2.29 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
@@ -347,7 +372,7 @@ Series: Steal This Prompt · Pillar: Workflows & productivity · Format: Before/
 | 18-23 | Without it, AI guesses an owner or invents a date. That causes fights. | No guessed owners | Red highlight on a guessed name in a 'before' table. |
 | 23-28 | Now three tasks say MISSING. That's your follow-up message, done. | 3 × MISSING = follow-up | MISSING cells pulse red; follow-up message drafted. |
 | 28-33.5 | Recording a call? Ask everyone first. It's polite, and in many places, the law. | Ask before recording | Asif to camera. |
-| 33.5-38 | The prompt is in the caption. Save it for your next meeting. | Prompt ↓ | End card. |
+| 33.5-38 | Next meeting, try it. Count the MISSING cells. | Count the MISSING cells | End card. |
 
 **Caption**
 
@@ -360,7 +385,7 @@ The MISSING cells are your follow-up message, already written.
 
 If you record calls, ask everyone first. It's polite, and in many places it's the law.
 
-Save this for your next meeting.
+Try it after your next meeting and count the MISSING cells.
 
 #productivity #meetings #AItips
 ```
@@ -371,24 +396,28 @@ Save this for your next meeting.
 <a id="D11-R1"></a>
 
 ### #042 · D11-R1 · Day 11 · Thu 22 Oct · 13:30 BST · REEL · 47 s
-**Gemini Gems become skills in November: what to do now**  
-Series: What It Means For You · Pillar: Current developments · Format: Phone-in-hand demo
+**Stop retyping instructions: Gemini skills (and Gems switch on 17 November)**  
+Series: Hidden Button · Pillar: Hidden features & tools · Format: Phone-in-hand demo
 
 | | |
 |---|---|
+| **Human problem** | Re-typing the same long instructions into AI for every similar task. |
 | **Objective** | Timeliness; saves among Gemini users |
-| **Hook** | Use Gemini Gems? They're changing in November. |
+| **Hook** | Typing the same instructions into AI every time? |
+| **Open loop (what the viewer wants to know)** | How do I save instructions once, and what happens to my Gems? |
 | **Main idea** | Skills (launched 30 Sep 2026) replace Gems for personal accounts from November; migration is automatic, and skills add slash access, files and stacking. |
 | **Key value** | What changes, what happens to your Gems, and how to make your first skill in one sentence. |
+| **Payoff (where it's answered)** | 12–38 s: type a slash to use one, ask Gemini to create one, attach files, stack two. |
+| **Takeaway (what did I just learn?)** | Save repeated instructions as Gemini skills and call them with a slash; Gems move to skills from 17 November. |
 | **CTA** | Comment the skill you'd build first. |
 | **Visual concept** | Over-the-shoulder phone shots in the Gemini app: '/' menu, 'create a skill' request, file attach, two skills stacked; Asif to camera between steps. |
-| **Pace** | 105 spoken words in 47 s = 2.23 words/s |
+| **Pace** | 109 spoken words in 47 s = 2.32 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
-- `hook`: A direct, dated warning to existing users ('changing in November') creates urgency without hype.
+- `hook`: Starts from a daily annoyance (retyping instructions) rather than a product announcement.
 - `usefulness`: Shows exactly how to create, use and stack a skill.
-- `novelty`: Skills launched a week before posting; few creators have explained them simply.
+- `novelty`: Skills launched on 30 Sep 2026 and Gems switch on 17 Nov; few creators have explained them simply.
 - `payoff`: Reassurance (auto-migration) plus a concrete next step.
 - `visual_progression`: Moves through five app screens: help page, slash menu, creation, file attach, stacked skills.
 
@@ -396,8 +425,8 @@ Series: What It Means For You · Pillar: Current developments · Format: Phone-i
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-3 | Use Gemini Gems? They're changing in November. | Gems → Skills · Nov 2026 | Asif holding phone with Gemini open. |
-| 3-7.5 | Google is turning Gems into skills for personal accounts. | Personal accounts: November | Own screen capture of the Gemini help page (date highlighted). |
+| 0-3 | Typing the same instructions into AI every time? | Same instructions, every time? | Asif retyping a long instruction on his phone, sighing. |
+| 3-7.5 | Gemini skills save them once. And Gems become skills on November 17. | Skills · Gems switch 17 Nov | Own screen capture of the Gemini help page (date highlighted). |
 | 7.5-12 | Good news: they move automatically. You don't lose anything. | Moved automatically | Check mark animation. |
 | 12-17 | A skill is a saved instruction. Type slash, pick it, done. | Type / → pick a skill | Screen: typing '/' shows a skills list. |
 | 17-22.5 | Easiest way: just ask. “Create a skill that writes replies in my style.” | Just ask Gemini to make it | Request typed; skill appears. |
@@ -410,22 +439,23 @@ Series: What It Means For You · Pillar: Current developments · Format: Phone-i
 **Caption**
 
 ```text
-If you use Gemini Gems: they're becoming “skills”.
+Typing the same instructions into Gemini every time? Save them once as a skill.
 
-• Skills launched in Gemini on 30 Sep 2026
-• From November 2026, Gems on personal Google accounts are turned into skills automatically (work/school accounts later)
 • A skill = a saved instruction. Type / and pick it.
 • Easiest way to make one: ask Gemini, “Create a skill that writes replies in my style.”
-• Skills can include files (price list, PDF, images), and you can combine two in one chat
+• Skills can include files (price list, PDF, images), and you can stack two in one chat
 • Gemini can use a skill on its own when your request matches
 
-Make your first one this week. Which skill would you build first?
+If you use Gems: from 17 November 2026, Gems on personal Google accounts start turning into skills automatically (work and school accounts later).
+Note: skills need an 18+ account with Gemini's activity setting turned on.
+
+Which skill would you build first?
 
 #GeminiAI #AItips #productivity
 ```
 **Production notes:** Re-check the Gems transition date on the help page the day before posting. Record on a personal Google account. Don't show personal chats.
 
-**Sources:** [Let skills in Gemini tackle your most repetitive tasks](https://blog.google/products-and-platforms/products/gemini/automate-tasks-with-skills/) — Google Blog (+ Gemini Apps Help 'About the transition from Gems to skills'), 2026-09-30 ⚠️ re-check within 48 h of posting · [About the transition from Gems to skills](https://support.google.com/gemini/answer/18560919?hl=en) — Gemini Apps Help, 2026 ⚠️ re-check within 48 h of posting
+**Sources:** [Let skills in Gemini tackle your most repetitive tasks](https://blog.google/products-and-platforms/products/gemini/automate-tasks-with-skills/) — Google Blog (+ Gemini Apps Help 'About the transition from Gems to skills'), 2026-09-30 ⚠️ re-check within 48 h of posting · [About the transition from Gems to skills](https://support.google.com/gemini/answer/18560919?hl=en) — Gemini Apps Help, 2026 ⚠️ re-check within 48 h of posting · [Google Is Replacing Gemini Gems With Skills Nov 17](https://www.techrepublic.com/article/news-gemini-gems-skills-migration/) — TechRepublic (also 9to5Google, 2026-09-27 and 2026-09-30), 2026-09-30 ⚠️ re-check within 48 h of posting
 
 ---
 
@@ -437,17 +467,21 @@ Series: Automate This · Pillar: Automation & n8n · Format: Talking head + scre
 
 | | |
 |---|---|
+| **Human problem** | An automation silently stops working and you find out from an unhappy customer. |
 | **Objective** | Authority; differentiates Asif from 'quick bot' sellers |
-| **Hook** | Your automation will break. Here's when. |
+| **Hook** | I build automations. Every one will break. |
+| **Open loop (what the viewer wants to know)** | When does it break, and how do I find out first? |
 | **Main idea** | Expired logins, changed data and silent failures break automations; an n8n error workflow alerts you immediately. |
 | **Key value** | Three failure modes + how to set an error workflow in n8n. |
-| **CTA** | Follow for more automation lessons. |
+| **Payoff (where it's answered)** | 22–38 s: an n8n error workflow messages you the moment a linked workflow fails. |
+| **Takeaway (what did I just learn?)** | Set an n8n error workflow so any failure sends you an alert instead of staying silent. |
+| **CTA** | Ask n8n builders whether their workflows have an error workflow set. |
 | **Visual concept** | Canvas nodes turning red for each failure; renamed column; calendar of silent days; Error Trigger → phone alert. |
-| **Pace** | 106 spoken words in 45 s = 2.36 words/s |
+| **Pace** | 108 spoken words in 45 s = 2.4 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
-- `hook`: An honest, contrarian statement from someone who sells automation, which is unexpected and builds trust.
+- `hook`: An automation builder admitting everything breaks is unexpected and builds trust instantly.
 - `curiosity`: Viewers want to know the three moments it breaks, especially 'the worst one'.
 - `relatability`: Renaming a sheet column is something every team does without thinking.
 - `problem_solution`: Each failure is followed by the n8n fix (error workflow) shown on screen.
@@ -457,7 +491,7 @@ Series: Automate This · Pillar: Automation & n8n · Format: Talking head + scre
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-2.5 | Your automation will break. Here's when. | It WILL break. When? | Asif; behind him a canvas node flashes red. |
+| 0-2.5 | I build automations. Every one will break. | Every automation breaks | Asif; behind him a canvas node flashes red. |
 | 2.5-7 | One: a login expires. A password changes, or a token runs out. | 1 · Logins expire | Key icon cracks. |
 | 7-12.5 | Two: the data changes. Someone renames a column in the sheet. | 2 · A column gets renamed | Sheet header 'Phone' edited to 'Mobile No.'; node turns red. |
 | 12.5-17 | Your workflow still looks for “Phone”. It finds nothing. | Looks for 'Phone' → nothing | Empty output panel. |
@@ -466,12 +500,12 @@ Series: Automate This · Pillar: Automation & n8n · Format: Talking head + scre
 | 27.5-33 | It sends me a message: which workflow, which step, what went wrong. | Which workflow · step · why | Telegram alert on phone. |
 | 33-38 | Set it once in workflow settings. It covers every workflow you link to it. | Set once in Settings | Workflow Settings → 'Error workflow' dropdown. |
 | 38-42 | No alert means you find out from an angry customer. | No alert = angry customer | Asif to camera. |
-| 42-45 | Follow for more automation lessons. | Follow | End card. |
+| 42-45 | Test it: break one on purpose. | Test the alert | End card. |
 
 **Caption**
 
 ```text
-Every automation breaks eventually. Usually for one of 3 reasons:
+I build automations, and every one of them will break eventually. Usually for one of 3 reasons:
 
 1. A login expires (password changed, token ran out)
 2. The data changes (someone renames a sheet column, a form adds a question)
@@ -481,7 +515,7 @@ The fix in n8n: an error workflow. Create a workflow that starts with the Error 
 
 No alert = you find out from an angry customer.
 
-Follow for more automation lessons.
+If you build in n8n: does every workflow you care about have an error workflow set?
 
 #n8n #automation #nocode
 ```
@@ -499,17 +533,21 @@ Series: Before → After · Pillar: Practical AI · Format: Before/after split s
 
 | | |
 |---|---|
+| **Human problem** | Good products look cheap in phone photos taken at home. |
 | **Objective** | Saves + shares among F-commerce sellers |
-| **Hook** | Better product photos with AI, without lying. |
+| **Hook** | Looks great in hand. Cheap in photos? |
+| **Open loop (what the viewer wants to know)** | Can AI make it look better without changing the product? |
 | **Main idea** | Ask AI to change only background and light, keep the product identical, verify details, and post one untouched photo too. |
 | **Key value** | An edit prompt that protects product accuracy + a 3-point check (label, colour, edges). |
+| **Payoff (where it's answered)** | 17–37 s: a clean result, a zoomed check of label and colour, and one untouched photo posted too. |
+| **Takeaway (what did I just learn?)** | Ask AI to change only the background and light, then check the label, colour and edges at full zoom. |
 | **CTA** | Save the prompt. |
 | **Visual concept** | Split: phone photo of a mug on a messy table → clean studio-style shot; zoomed comparison of the label. |
-| **Pace** | 90 spoken words in 42 s = 2.14 words/s |
+| **Pace** | 85 spoken words in 42 s = 2.02 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
-- `hook`: Combines a want (better photos) with a worry (misleading customers) in one line.
+- `hook`: Every seller knows the gap between how a product looks in hand and in a phone photo.
 - `relatability`: Most Facebook sellers shoot products on phones in home light.
 - `visual_progression`: Clear before → after reveal, then a zoomed side-by-side check.
 - `payoff`: A clean, sellable photo that still shows the real product.
@@ -520,7 +558,7 @@ Series: Before → After · Pillar: Practical AI · Format: Before/after split s
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-3 | Better product photos with AI, without lying. | Better photos. No lying. | Split screen: messy phone photo of a mug (left) → clean studio shot (right). |
+| 0-3 | Looks great in hand. Cheap in photos? | Great in hand. Cheap in photos? | Split screen: messy phone photo of a mug (left) → clean studio shot (right). |
 | 3-7 | Here's a normal phone photo. Messy table, yellow light. | Before: messy + yellow | Zoom on the before photo. |
 | 7-12.5 | I upload it and say: keep the product exactly the same. Shape, colour, label, size. | Keep the product EXACTLY the same | Screen: prompt typed in ChatGPT or Gemini image editing. |
 | 12.5-17 | Only change the background and the light. | Change only: background + light | Prompt continues. |
@@ -528,12 +566,12 @@ Series: Before → After · Pillar: Practical AI · Format: Before/after split s
 | 21.5-27 | Zoom in. Compare the label, the colour, the edges. AI sometimes changes small details. | Check: label · colour · edges | Side-by-side zoom on the label; any changed detail circled. |
 | 27-32 | If the product changed, don't use it. Customers notice. | Product changed? Don't post it | Red X over a version with an altered label. |
 | 32-37 | And post one untouched photo too. Clean, but honest. | Post 1 real photo too | Post mock: edited photo + original photo side by side. |
-| 37-42 | The prompt is in the caption. Save it for your next product. | Prompt ↓ | End card. |
+| 37-42 | Clean photos, real product. That's the rule. | Clean photo · real product | End card. |
 
 **Caption**
 
 ```text
-Better product photos with AI, without misleading customers.
+Looks great in your hand, cheap in your photos? Fix it with AI, without misleading customers.
 
 Prompt (works in ChatGPT or Gemini image editing):
 “Keep the product exactly the same: shape, colour, label, size and texture. Only replace the background with a plain light-grey studio background and soft natural shadow. Fix the lighting to neutral daylight.”
@@ -542,7 +580,7 @@ Then check 3 things at full zoom: label text, colour, edges. AI sometimes change
 
 And post one untouched photo too. Clean, but honest.
 
-Save this for your next product.
+Try it on your next product, and post the untouched photo too.
 
 #fcommerce #productphotography #AItips
 ```
@@ -560,11 +598,15 @@ Series: Explain It Simply · Pillar: Automation & n8n · Format: Diagram explain
 
 | | |
 |---|---|
+| **Human problem** | Hearing 'API' constantly and not knowing what it means for the tools you use. |
 | **Objective** | Authority; loop for rewatches |
-| **Hook** | An API is a shop counter. Here's why. |
+| **Hook** | An API is just a shop counter. |
+| **Open loop (what the viewer wants to know)** | How is software like a shop counter? |
 | **Main idea** | An API is a counter with a fixed menu: your app asks for menu items with its key and gets a reply; off-menu requests get errors. |
 | **Key value** | Explains API, endpoints and API keys with a local analogy, plus why keys must stay secret. |
-| **CTA** | Follow for the next 'Explain It Simply'. |
+| **Payoff (where it's answered)** | 11–24 s: apps ask for 'menu items' with a key card; off-menu requests get errors. |
+| **Takeaway (what did I just learn?)** | An API is a fixed menu one app offers another, and the API key is the card that proves who's asking. |
+| **CTA** | Ask which tech word to explain next. |
 | **Visual concept** | Illustrated shop counter with a menu board; two app icons exchanging a request and a reply; key card. |
 | **Loop** | Ends '…picture' over the counter; the opening line completes it: 'An API is a shop counter.' |
 | **Pace** | 77 spoken words in 30 s = 2.57 words/s |
@@ -581,14 +623,14 @@ Series: Explain It Simply · Pillar: Automation & n8n · Format: Diagram explain
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-3 | An API is a shop counter. Here's why. | API = shop counter | Asif next to an illustrated shop counter. |
+| 0-3 | An API is just a shop counter. | API = shop counter | Asif next to an illustrated shop counter. |
 | 3-7 | You don't walk into the warehouse. You ask at the counter. | Don't enter the warehouse | Closed warehouse door; customer at the counter window. |
 | 7-11 | And you can only ask for what's on the menu. | Only what's on the menu | Menu board lights up. |
 | 11-15.5 | Apps work the same. Your app asks Google Sheets: add this row. | App → “add this row” | Two app icons; request arrow travels. |
 | 15.5-19.5 | Sheets checks your card, your API key, and does it. | API key = your member card | Key card scan; green light. |
 | 19.5-24 | Ask for something not on the menu, and you get an error. | Not on the menu → error | Red error code bubble. |
 | 24-27 | So never share your key. It's your card. | Never share your key | Padlock on the key card. |
-| 27-30 | Next time someone says API, picture… |  | Back to the counter shot from frame 1 (loop). |
+| 27-30 | Next time someone says API, just picture… |  | Back to the counter shot from frame 1 (loop). |
 
 **Caption**
 
@@ -601,7 +643,7 @@ Apps work the same way: your app asks Google Sheets' “counter” to add a row.
 
 That's also why you never share an API key. It's your card.
 
-Follow for the next Explain It Simply.
+Which tech word should I explain next?
 
 #API #automation #n8n
 ```
@@ -617,10 +659,14 @@ Series: Steal This Prompt · Pillar: Practical AI · Format: Talking head + scre
 
 | | |
 |---|---|
+| **Human problem** | Students copy AI answers, then freeze in exams where there is no AI. |
 | **Objective** | Shares among students and parents |
 | **Hook** | AI can do your homework. That's the problem. |
+| **Open loop (what the viewer wants to know)** | How do you use AI and still learn? |
 | **Main idea** | Ask AI to give one hint at a time and ask you the next step, so you build understanding instead of copying answers. |
 | **Key value** | A tutor prompt that works in any AI tool + why it matters (no AI in exams). |
+| **Payoff (where it's answered)** | 11.5–32 s: the hint-by-hint tutor prompt in action. |
+| **Takeaway (what did I just learn?)** | Ask AI for one hint at a time and make it ask you for the next step. |
 | **CTA** | Send it to a student who copies AI answers. |
 | **Visual concept** | Student POV: full AI solution → tutor prompt → back-and-forth chat with hints. |
 | **Pace** | 83 spoken words in 36 s = 2.31 words/s |
@@ -674,17 +720,21 @@ Series: Build Log · Pillar: Work with me (n8n services) · Format: Screen demo 
 
 | | |
 |---|---|
+| **Human problem** | Important files scattered in chat apps, hard to find and easy to lose. |
 | **Objective** | Proof of reliability engineering; Messenger leads |
-| **Hook** | Backups that never duplicate a file. Here's how. |
+| **Hook** | Hundreds of files, buried in one chat. |
+| **Open loop (what the viewer wants to know)** | How do you move hundreds of files without duplicates or gaps? |
 | **Main idea** | Two n8n workflows move files from Telegram to Drive, verify size + fingerprint, skip duplicates and resume after crashes. |
 | **Key value** | Shows reliability concepts (verification, duplicate check, resume point) in plain words, which signals professional quality. |
+| **Payoff (where it's answered)** | 17–38.5 s: fingerprint check, duplicate skip and resume-after-crash, explained simply. |
+| **Takeaway (what did I just learn?)** | A reliable file automation verifies every copy, skips duplicates and remembers where it stopped. |
 | **CTA** | Message 'AUTOMATE' and say where your files live. |
 | **Visual concept** | Telegram channel scroll (blurred) → Drive folders filling → canvas zooms on verify and duplicate nodes. |
-| **Pace** | 114 spoken words in 51 s = 2.24 words/s |
+| **Pace** | 112 spoken words in 51 s = 2.2 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
-- `hook`: A specific, slightly technical promise ('never duplicate') that signals real expertise.
+- `hook`: Starts from a familiar mess (files lost in a chat) before any technical detail.
 - `relatability`: Teams that share files on Telegram and lose track of them recognise the problem.
 - `visual_progression`: Drive folders fill while matching fingerprints animate side by side.
 - `novelty`: Concepts like file fingerprints and crash-safe resume are new to most viewers but explained simply.
@@ -695,8 +745,8 @@ Series: Build Log · Pillar: Work with me (n8n services) · Format: Screen demo 
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-3 | Backups that never duplicate a file. Here's how. | Telegram → Drive · no duplicates | Google Drive folder filling with files; Telegram channel beside it (names blurred). |
-| 3-7.5 | Our team sends design files to a Telegram channel. Hundreds of them. | Hundreds of files in Telegram | Scroll through the channel (file names blurred). |
+| 0-3 | Hundreds of files, buried in one chat. | Files buried in chat | Endless scroll of a Telegram channel full of files (names blurred). |
+| 3-7.5 | Our team sends design files to a Telegram channel every day. | More files every day | Scroll through the channel (file names blurred). |
 | 7.5-12 | I built two n8n workflows to copy them all into Google Drive. | 2 workflows | Both canvases side by side. |
 | 12-17 | The first checks for new files every five minutes. | ① New files · every 5 min | Schedule trigger node. |
 | 17-22.5 | It downloads, uploads to Drive, then compares size and a digital fingerprint. | Verify: size + fingerprint (MD5) | Two matching hash strings animate side by side. |
@@ -704,13 +754,13 @@ Series: Build Log · Pillar: Work with me (n8n services) · Format: Screen demo 
 | 27.5-33 | Before any upload it asks: have I done this one already? If yes, skip. | Done already? Skip. | Lookup step highlighted. |
 | 33-38.5 | It also remembers where it stopped, so a crash doesn't restart everything. | Crash-safe: remembers its place | Bookmark icon on the message list. |
 | 38.5-43 | The second workflow slowly moves the old files, oldest first. | ② Old files · oldest first | Second canvas; counter climbing. |
-| 43-48 | Need your files backed up like this? Message me AUTOMATE. | Message: AUTOMATE | Asif to camera. |
-| 48-51 | Tell me where your files live now. | Where are your files now? | End card. |
+| 43-48 | Files stuck somewhere like this? Send me a message. | Message me | Asif to camera. |
+| 48-51 | I'll tell you if it can be automated. | Can it be automated? | End card. |
 
 **Caption**
 
 ```text
-A backup system that never uploads the same file twice. Here's what I built in n8n:
+Important files buried in a Telegram chat? I built a backup in n8n that never copies the same file twice:
 
 Our team shares design files in a Telegram channel. Hundreds of them. Two workflows move them into Google Drive:
 
@@ -720,7 +770,7 @@ It remembers where it stopped, so a crash doesn't restart everything.
 
 ② Old files: a second workflow works through the archive, oldest first.
 
-Need files backed up like this? Message me “AUTOMATE” and tell me where your files live now.
+Files stuck somewhere like this? Send me a message with where they live now (Telegram, WhatsApp, email), and I'll tell you if it can be automated.
 
 #n8n #GoogleDrive #automation
 ```
@@ -736,39 +786,42 @@ Series: AI Myth Check · Pillar: AI literacy & safety · Format: Green screen + 
 
 | | |
 |---|---|
+| **Human problem** | Using an AI answer about prices, rules or 'the latest' that is quietly out of date. |
 | **Objective** | Trust + shares; prevents a common mistake |
-| **Hook** | Your AI might be living in the past. |
+| **Hook** | Today's price? AI might quote last year's. |
+| **Open loop (what the viewer wants to know)** | Why would AI give an old answer as if it's current? |
 | **Main idea** | Models learn from data up to a cutoff; without web search they can state old information as current. |
 | **Key value** | Two checks for time-sensitive questions: is search on, and are sources dated? |
-| **CTA** | Follow for more AI Myth Checks. |
+| **Payoff (where it's answered)** | 3–26.5 s: the training cutoff explained, then two checks (search on, dated sources). |
+| **Takeaway (what did I just learn?)** | For anything recent, turn on web search and only trust answers that show dated sources. |
+| **CTA** | Ask if viewers have caught AI giving outdated information. |
 | **Visual concept** | Timeline with a 'cutoff' line; right side greyed; search toggle and dated sources. |
-| **Loop** | Ends 'No dates? Then remember:' which flows into the opening 'Your AI might be living in the past.' |
-| **Pace** | 70 spoken words in 30 s = 2.33 words/s |
+| **Pace** | 74 spoken words in 30 s = 2.47 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
-- `hook`: A short, slightly eerie line that makes viewers question answers they've already trusted.
-- `novelty`: Many users don't know about training cutoffs.
-- `visual_progression`: A timeline animation with the cutoff line makes an abstract idea visible.
+- `hook`: A concrete, costly mistake (quoting an old price) that makes viewers question answers they already trusted.
+- `novelty`: Many users don't know AI models have a training cutoff.
+- `visual_progression`: A timeline animation with the cutoff line makes an invisible limit visible.
 - `usefulness`: Two quick checks viewers can apply to every time-sensitive answer.
-- `rewatch`: The ending line flows straight into the hook.
+- `payoff`: Ends with a simple rule viewers can remember: no dates, no trust.
 
 **Script**
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-3 | Your AI might be living in the past. | Living in the past? | Asif on green screen; behind him a chat answer stating an old 'latest version'. |
+| 0-3 | Today's price? AI might quote last year's. | Today's price? Last year's answer. | Asif on green screen; behind him a chat answer quoting an outdated price as 'current'. |
 | 3-8 | Every AI model learns from data up to a certain date. Its cutoff. | Training cutoff | Timeline animation with a cutoff line. |
 | 8-12.5 | After that date, it knows nothing, unless it searches the web. | After cutoff: blank | Right side of the timeline greys out. |
 | 12.5-17 | Without search, it can confidently describe old prices as current. | Old info, stated as current | Example answer with an outdated price highlighted. |
 | 17-22 | So for news, prices, laws or ‘the latest’ anything, check two things. | news · prices · laws · latest | Four icons. |
 | 22-26.5 | Is web search on? And does the answer show sources with dates? | Search on? Dated sources? | Search toggle; source links with dates highlighted. |
-| 26.5-30 | No dates? Then remember: |  | Back to frame 1 composition (loop). |
+| 26.5-30 | No dates, no trust. Check before you quote it. | No dates, no trust | Asif to camera; a dated source link highlighted. |
 
 **Caption**
 
 ```text
-Your AI might be living in the past.
+Ask AI for today's price and it might quote last year's.
 
 Every AI model learns from data up to a cutoff date. After that, it knows nothing unless it searches the web, and without search it can describe old prices, laws or “the latest version” as if they're current.
 
@@ -778,7 +831,7 @@ For anything time-sensitive, check 2 things:
 
 No dates, no trust.
 
-Follow for more AI Myth Checks.
+Have you caught AI giving you outdated information?
 
 #AIliteracy #ChatGPT #AItips
 ```
@@ -794,13 +847,17 @@ Series: Steal This Prompt · Pillar: Workflows & productivity · Format: Before/
 
 | | |
 |---|---|
+| **Human problem** | Sending proposals that get ignored because they open like everyone else's. |
 | **Objective** | Saves + shares among freelancers |
 | **Hook** | Clients read two lines. Then decide. |
+| **Open loop (what the viewer wants to know)** | What should the first two lines say instead? |
 | **Main idea** | Use AI to analyse the client's worries and words; write a 2-line opener yourself (their worry + your proof); let AI cut generic lines. |
 | **Key value** | A proposal method that avoids AI-sounding openers + three prompts. |
-| **CTA** | Send it to a freelancer friend. |
+| **Payoff (where it's answered)** | 18–34 s: the client's worry becomes line one; proof becomes line two. |
+| **Takeaway (what did I just learn?)** | Use AI to find the client's real worry, then open your proposal by naming it and showing proof. |
+| **CTA** | Ask for the worst proposal opener viewers have seen. |
 | **Visual concept** | Split screen: left = generic 'Dear Sir' proposal (crossed out), right = job-post analysis → typed two-line opener → AI edit suggestions; final full-width better proposal. |
-| **Pace** | 100 spoken words in 43 s = 2.33 words/s |
+| **Pace** | 95 spoken words in 43 s = 2.21 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
@@ -822,7 +879,7 @@ Series: Steal This Prompt · Pillar: Workflows & productivity · Format: Before/
 | 23-29 | So my first line names that worry. My second line shows proof I've solved it before. | Line 1: their worry · Line 2: proof | Typing the two-line opener. |
 | 29-34 | Then AI checks it: “Is anything here generic? Cut it.” | “Cut anything generic.” | AI suggestions with two cuts. |
 | 34-39 | End with one smart question about their project. It starts a conversation. | End with 1 smart question | Final proposal shown. |
-| 39-43 | Prompts are in the caption. Send this to a freelancer friend. | Send to a freelancer | End card. |
+| 39-43 | Two lines. Their worry, your proof. | Their worry · your proof | End card. |
 
 **Caption**
 
@@ -837,7 +894,7 @@ Use AI to read the job post, not to write your proposal:
 
 Skip “Dear Sir, I am an expert.” Every proposal says that.
 
-Send this to a freelancer friend.
+What's the worst proposal opener you've seen?
 
 #freelancing #Upwork #AItips
 ```

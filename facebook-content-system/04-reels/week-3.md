@@ -16,17 +16,21 @@ Series: Steal This Prompt · Pillar: Practical AI · Format: Prop demo + screen 
 
 | | |
 |---|---|
+| **Human problem** | Going back and forth between two options for days without deciding. |
 | **Objective** | Saves; practical decision tool |
-| **Hook** | Can't decide between two options? Score them. |
+| **Hook** | Stuck between two laptops for a week? |
+| **Open loop (what the viewer wants to know)** | Which one wins for my priorities, and why? |
 | **Main idea** | Give AI your priorities with weights and the real specs; get a scored table, then ask what would flip the result. |
 | **Key value** | A decision method for laptops, phones, couriers or job offers that keeps you in control. |
-| **CTA** | Save it for your next decision. |
+| **Payoff (where it's answered)** | 22.5–37.5 s: weighted totals show the winner and exactly what would flip it. |
+| **Takeaway (what did I just learn?)** | Give AI your priorities with weights and the real specs, then ask what would change the winner. |
+| **CTA** | Ask what viewers are stuck choosing between. |
 | **Visual concept** | Asif at a table with two real laptop boxes (props) → cut-in screen inserts: weights bar chart, scoring table with totals, 'what would flip it' answer → Asif picks up the winner. |
-| **Pace** | 93 spoken words in 41 s = 2.27 words/s |
+| **Pace** | 92 spoken words in 41 s = 2.24 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
-- `hook`: Almost everyone is stuck between two choices at some point; the solution is named immediately.
+- `hook`: A specific, relatable stall (a week stuck between two laptops) instead of a generic 'can't decide?'.
 - `visual_progression`: Weights chart, then a scoring table, then highlighted totals.
 - `usefulness`: Works for any comparison: phones, laptops, couriers, job offers.
 - `novelty`: The 'what would have to change for A to win?' question is an unusual, smart step.
@@ -36,7 +40,7 @@ Series: Steal This Prompt · Pillar: Practical AI · Format: Prop demo + screen 
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-3 | Can't decide between two options? Score them. | Stuck between two? | Asif holding two laptop boxes. |
+| 0-3 | Stuck between two laptops for a week? | Stuck between two? | Asif holding two laptop boxes. |
 | 3-7.5 | First, tell AI what matters to you, with weights. | 1 · Your priorities + weights | Screen: priorities typed. |
 | 7.5-12 | Battery forty percent, price thirty, weight twenty, ports ten. | 40 · 30 · 20 · 10 | Animated bar chart of the weights. |
 | 12-17.5 | Second, paste the real specs from the shop pages. Don't trust its memory for specs. | 2 · Paste the real specs | Specs from two product pages pasted. |
@@ -44,12 +48,12 @@ Series: Steal This Prompt · Pillar: Practical AI · Format: Prop demo + screen 
 | 22.5-27 | Laptop B wins, 7.6 to 6.9. Mostly because of battery. | B wins: 7.6 vs 6.9 | Totals highlighted; battery row glows. |
 | 27-32.5 | Fourth, the smart question: “What would have to change for A to win?” | 4 · What would flip it? | AI answer appears. |
 | 32.5-37.5 | Now you know the trade-off. You choose, clearly. | Clear trade-off | Asif to camera. |
-| 37.5-41 | Works for phones, couriers, job offers. Save it. | phones · couriers · job offers | End card. |
+| 37.5-41 | Works for phones, couriers, even job offers. | phones · couriers · job offers | End card. |
 
 **Caption**
 
 ```text
-Stuck between two options? Make AI build a weighted scorecard.
+Stuck between two laptops (or phones, or job offers) for a week? Make AI build a weighted scorecard.
 
 1. Your priorities, with weights: “Battery 40%, price 30%, weight 20%, ports 10%.”
 2. Paste the real specs from the shop pages. Don't trust AI's memory for specs or prices.
@@ -58,11 +62,11 @@ Stuck between two options? Make AI build a weighted scorecard.
 
 You still choose, but now you know exactly what you're trading.
 
-Works for phones, laptops, courier services and job offers. Save it.
+What are you stuck choosing between right now?
 
 #AItips #decisionmaking #productivity
 ```
-**Production notes:** Use two real laptop listings (no brand logos needed on screen; blur if necessary). Use the actual totals AI returns; the 7.6 vs 6.9 in the script is a placeholder. Update the VO and on-screen text to match your real run.
+**Production notes:** Use two real laptop listings (no brand logos needed on screen; blur if necessary). The 7.6 vs 6.9 totals are example values from a test run; if your recorded run gives different totals, say yours in beat 6 and on screen. The scoring method doesn't change.
 
 ---
 
@@ -74,17 +78,21 @@ Series: Automate This · Pillar: Automation & n8n · Format: Screen demo + face 
 
 | | |
 |---|---|
+| **Human problem** | Wanting AI to help with customer replies but fearing it will send something wrong. |
 | **Objective** | Trust in AI automation; buyer education |
-| **Hook** | Don't let AI send messages alone. Do this. |
+| **Hook** | One wrong AI reply can cost a customer. |
+| **Open loop (what the viewer wants to know)** | How do you let AI help without letting it send on its own? |
 | **Main idea** | An n8n workflow drafts replies with AI, then waits for a human Approve/Decline on Telegram before sending; n8n agents can also require approval before using tools. |
 | **Key value** | A safe pattern for adding AI to customer communication. |
-| **CTA** | Follow for more builds. |
+| **Payoff (where it's answered)** | 7.5–21.5 s: the workflow pauses and asks on Telegram; Approve sends, Decline stops. |
+| **Takeaway (what did I just learn?)** | Add a human Approve step so AI drafts customer replies but never sends them alone. |
+| **CTA** | Ask whether viewers would trust AI replies without a check. |
 | **Visual concept** | Phone showing a Telegram approval message with buttons → canvas with Gmail trigger, AI node and 'send and wait' node → both branches. |
 | **Pace** | 100 spoken words in 45 s = 2.22 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
-- `hook`: Speaks to a real fear (AI saying the wrong thing to customers) and promises control.
+- `hook`: Names the real fear behind AI customer service (one bad reply) before showing the solution.
 - `visual_progression`: Approve and Decline branches light up separately on the canvas.
 - `novelty`: Most viewers haven't seen AI automation that pauses for a human tap.
 - `usefulness`: Gives a clear rule for when to use approval: money, customers, reputation.
@@ -94,8 +102,8 @@ Series: Automate This · Pillar: Automation & n8n · Format: Screen demo + face 
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-3 | Don't let AI send messages alone. Do this. | AI drafts. You approve. | Phone: Telegram message with [Approve] [Decline] buttons. |
-| 3-7.5 | This workflow writes a reply to every customer email. | AI writes the reply | n8n canvas: Gmail trigger → AI node. |
+| 0-3 | One wrong AI reply can cost a customer. | One wrong reply = a lost customer | Phone: an AI-drafted reply with a wrong price highlighted red, then the Telegram [Approve] [Decline] message. |
+| 3-7.5 | This workflow drafts a reply to every customer email. | AI drafts the reply | n8n canvas: Gmail trigger → AI node. |
 | 7.5-12 | But before sending, it stops and asks me on Telegram. | Then it waits for me | 'Send and wait for response' node highlighted. |
 | 12-17 | I see the customer's message, the AI's reply, and two buttons. | Approve · Decline | Phone close-up of the approval message. |
 | 17-21.5 | Approve, and it sends. Decline, and nothing goes out. | ✓ sends · ✗ stops | Both branches animate on the canvas. |
@@ -103,12 +111,12 @@ Series: Automate This · Pillar: Automation & n8n · Format: Screen demo + face 
 | 27-32 | Use it for anything that touches money, customers or your reputation. | money · customers · reputation | Three icons. |
 | 32-37 | After a few weeks, you'll know which replies are safe to automate fully. | Then automate the safe ones | Asif to camera. |
 | 37-42 | That's how you add AI without the scary part. | AI, without the scary part | Asif smiles. |
-| 42-45 | Follow for more builds like this. | Follow | End card. |
+| 42-45 | That's AI with a safety catch. | AI + a safety catch | End card. |
 
 **Caption**
 
 ```text
-Don't let AI send messages to customers on its own. Add a human tap.
+One wrong AI reply can cost you a customer. So don't let AI send on its own. Add a human tap.
 
 This n8n workflow:
 1. A customer email arrives
@@ -120,7 +128,7 @@ It's called human-in-the-loop. Newer n8n versions also let an AI agent ask for a
 
 Use it for anything that touches money, customers or your reputation. After a few weeks you'll see which replies are safe to automate fully.
 
-Follow for more builds.
+Would you trust AI to reply to your customers without a check like this?
 
 #n8n #AIautomation #humanintheloop
 ```
@@ -138,10 +146,14 @@ Series: What It Means For You · Pillar: Current developments · Format: Green s
 
 | | |
 |---|---|
+| **Human problem** | Seeing a strange survey under Facebook Reels and not knowing what it does. |
 | **Objective** | Relatable platform insight; shares among creators |
 | **Hook** | Seen this question under a Facebook Reel? |
+| **Open loop (what the viewer wants to know)** | What does my answer actually change? |
 | **Main idea** | Since Jan 2026 Facebook uses random 1–5 interest surveys to train Reels ranking; honest answers shape your feed, and creators should stay on-topic. |
 | **Key value** | Explains a mysterious prompt users see, with advice for viewers and creators. |
+| **Payoff (where it's answered)** | 7.5–34.5 s: it trains the Reels ranking; viewers should answer honestly, creators should stay on topic. |
+| **Takeaway (what did I just learn?)** | Facebook's interest survey trains which Reels you see, so answer it honestly, and creators should stay on one topic. |
 | **CTA** | Follow if AI and automation is your interest. |
 | **Visual concept** | Drawn mock of the survey card; Meta engineering article capture; before/after precision stat card. |
 | **Pace** | 100 spoken words in 41 s = 2.44 words/s |
@@ -171,7 +183,7 @@ Series: What It Means For You · Pillar: Current developments · Format: Green s
 **Caption**
 
 ```text
-Seen “How well does this video match your interests?” under a Facebook Reel? Here's what it does.
+Seen “How well does this video match your interests?” under a Facebook Reel? This is what it does.
 
 Meta's engineers explained it in January 2026: Facebook randomly shows this 1–5 survey to some viewers and uses the answers to train how Reels are ranked. Their old interest guesses (based on likes and watch time) were right only 48% of the time; with the survey model, 63%.
 
@@ -192,17 +204,21 @@ That's why this page only talks AI and automation. Follow if that's your interes
 
 ### #064 · D16-R2 · Day 16 · Tue 27 Oct · 21:00 BST · REEL · 43 s
 **The 4-part prompt: goal, context, example, format**  
-Series: Steal This Prompt · Pillar: Practical AI · Format: Numbered list + talking head
+Series: Steal This Prompt · Pillar: Practical AI · Format: Text-led Reel
 
 | | |
 |---|---|
+| **Human problem** | Typing a one-line request and getting a bland result back. |
 | **Objective** | Saves; core prompting framework |
 | **Hook** | Good prompts have four parts. Yours has one. |
+| **Open loop (what the viewer wants to know)** | What are the other three parts? |
 | **Main idea** | Most prompts contain only the task; adding goal, context, example and format produces dramatically better results. |
 | **Key value** | A memorable framework (G-C-E-F) demonstrated on a real promo post. |
+| **Payoff (where it's answered)** | 31–40 s: the before/after shows what the four-part prompt produces. |
+| **Takeaway (what did I just learn?)** | Add a goal, context, an example and a format to a request to get much better AI results. |
 | **CTA** | Save it. |
-| **Visual concept** | Four letter blocks G, C, E, F fill one by one; before/after split at the end. |
-| **Pace** | 90 spoken words in 43 s = 2.09 words/s |
+| **Visual concept** | Text-led: kinetic typography on a plain background. Four letter blocks G, C, E, F fill one by one; short screen inserts for the before/after. Asif's voice from frame 1. |
+| **Pace** | 93 spoken words in 43 s = 2.16 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
@@ -216,10 +232,10 @@ Series: Steal This Prompt · Pillar: Practical AI · Format: Numbered list + tal
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-3 | Good prompts have four parts. Yours has one. | 4 parts. You use 1. | Asif; screen shows 'Write a post about my discount'. |
+| 0-3 | Good prompts have four parts. Yours has one. | 4 parts. You use 1. | Text-led: the prompt 'Write a post about my discount' types out on a plain background; Asif's voice only. |
 | 3-7 | “Write a post about my discount.” That's just the task. | Task only | Weak generic output appears. |
 | 7-12 | Part one, goal: what's it for, and who reads it? | G · Goal | Letter block G fills. |
-| 12-16 | “Get mothers in Dhaka to order before Friday.” | who + what action | Goal typed under G. |
+| 12-16 | “Get office workers in Gulshan to pre-order lunch by 11 AM.” | who + what action | Goal line types under G. |
 | 16-21 | Part two, context: the facts it can't guess. Price, product, delivery. | C · Context | Block C fills; facts typed. |
 | 21-26 | Part three, example: paste a post that worked before. | E · Example | Block E fills; example pasted. |
 | 26-31 | Part four, format: three options, under fifty words, one emoji max. | F · Format | Block F fills. |
@@ -232,14 +248,12 @@ Series: Steal This Prompt · Pillar: Practical AI · Format: Numbered list + tal
 ```text
 Most prompts are just a task: “Write a post about my discount.” Good prompts have 4 parts:
 
-G: Goal: what's it for and who reads it? “Get mothers in Dhaka to order before Friday.”
+G: Goal: what's it for and who reads it? “Get office workers in Gulshan to pre-order lunch by 11 AM.”
 C: Context: facts it can't guess. Product, price, delivery, offer end date.
 E: Example: paste a post that worked before.
 F: Format: “3 options, under 50 words, max one emoji.”
 
 You don't need all 4 every time. Add the ones you're missing.
-
-Save this for your next prompt.
 
 #AItips #PromptTips #ChatGPT
 ```
@@ -255,17 +269,21 @@ Series: Steal This Prompt · Pillar: Practical AI · Format: Phone-in-hand demo
 
 | | |
 |---|---|
+| **Human problem** | Knowing your answers but freezing when you have to say them out loud in an interview. |
 | **Objective** | Saves + shares among job seekers and students |
-| **Hook** | Practise your job interview with AI, out loud. |
+| **Hook** | Interview question. Your mind goes blank. |
+| **Open loop (what the viewer wants to know)** | How do you practise speaking, not just typing? |
 | **Main idea** | Use voice mode with the job post to run a one-question-at-a-time mock interview, then ask for targeted feedback. |
 | **Key value** | A realistic practice method + the most useful feedback request. |
-| **CTA** | Send it to someone with an interview coming up. |
+| **Payoff (where it's answered)** | 7–33 s: a voice-mode mock interview, then feedback on the vaguest answer. |
+| **Takeaway (what did I just learn?)** | Practise interviews out loud in AI voice mode, then ask for feedback on your weakest answer. |
+| **CTA** | None. 'Practise tonight' is the action. |
 | **Visual concept** | Phone propped like a video call; Asif answering out loud; feedback text on screen. |
-| **Pace** | 93 spoken words in 40 s = 2.33 words/s |
+| **Pace** | 91 spoken words in 40 s = 2.27 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
-- `hook`: Speaks to interview nerves, a strong emotional trigger, with a practical promise.
+- `hook`: Captures the exact moment people dread in interviews, so it's instantly personal.
 - `relatability`: Freezing when speaking (vs typing) is widely felt, especially in a second language.
 - `usefulness`: Exact voice prompt + feedback prompt anyone can use for free.
 - `visual_progression`: Shifts between Asif speaking, waveform, and on-screen feedback.
@@ -275,7 +293,7 @@ Series: Steal This Prompt · Pillar: Practical AI · Format: Phone-in-hand demo
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-3 | Practise your job interview with AI, out loud. | Interview practice · out loud | Phone propped on a desk like a video call; Asif sitting in front. |
+| 0-3 | Interview question. Your mind goes blank. | Mind goes blank? | Asif in interview posture; a typed question appears; quick freeze-frame zoom on his blank face. |
 | 3-7 | Typing answers is easy. Saying them is where people freeze. | Typing ≠ speaking | Asif to camera. |
 | 7-12.5 | Open voice mode and say: “Interview me for this job. One question at a time.” | “One question at a time.” | Phone screen: voice mode. |
 | 12.5-16.5 | Paste the job post first, so the questions are real. | Paste the job post first | Text paste. |
@@ -288,7 +306,9 @@ Series: Steal This Prompt · Pillar: Practical AI · Format: Phone-in-hand demo
 **Caption**
 
 ```text
-Practise your job interview with AI, out loud. Typing answers is easy; saying them is where people freeze.
+You know the answer. Then the interviewer asks, and your mind goes blank.
+
+Practise out loud with AI. Typing answers is easy; saying them is where people freeze.
 
 1. Paste the job post into your AI app
 2. Turn on voice mode and say: “Interview me for this job. One question at a time. Wait for my answer.”
@@ -298,7 +318,7 @@ Practise your job interview with AI, out loud. Typing answers is easy; saying th
 
 The most useful feedback: give one real example with a result, not adjectives.
 
-Send this to someone with an interview coming up.
+Interview this week? Practise tonight.
 
 #jobinterview #careertips #AItips
 ```
@@ -314,13 +334,17 @@ Series: Automate This · Pillar: Automation & n8n · Format: Screen demo + face 
 
 | | |
 |---|---|
+| **Human problem** | Freelancers and shops lose evenings making invoices by hand, and sometimes get them wrong. |
 | **Objective** | Proof of skill for freelancers and shops; Messenger leads |
 | **Hook** | Add a row. The invoice makes itself. |
+| **Open loop (what the viewer wants to know)** | How does one row become a sent invoice? |
 | **Main idea** | A sheet row marked 'Ready' triggers n8n to fill a template, create a numbered PDF, email the client and mark the row invoiced; totals come from the sheet, not AI. |
 | **Key value** | A complete invoicing automation with the important rule that money maths isn't left to AI. |
-| **CTA** | Message 'AUTOMATE' with what you invoice for. |
+| **Payoff (where it's answered)** | 7–31 s: template → numbered PDF → email → row marked 'Invoiced'. |
+| **Takeaway (what did I just learn?)** | A sheet row can trigger n8n to create, number, email and log an invoice, with totals taken from the sheet. |
+| **CTA** | Soft service line in the caption only. |
 | **Visual concept** | Sheet row status → template filling → PDF 'INV-0042' → email arrives → row updated. |
-| **Pace** | 117 spoken words in 49 s = 2.39 words/s |
+| **Pace** | 113 spoken words in 49 s = 2.31 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
@@ -343,13 +367,13 @@ Series: Automate This · Pillar: Automation & n8n · Format: Screen demo + face 
 | 26-31 | And writes back to the sheet: invoiced, date, number. No double invoices. | 5 · Mark as invoiced | Row updates to 'Invoiced'. |
 | 31-36.5 | The totals come from the sheet, not from AI. Money maths should never be guessed. | Totals from the sheet, not AI | Sheet formula highlighted. |
 | 36.5-42 | Set it up once, and every invoice looks the same and goes out on time. | Same look · on time | Stack of identical PDFs. |
-| 42-46 | Want this for your business? Message me AUTOMATE. | Message: AUTOMATE | Asif to camera. |
-| 46-49 | Tell me what you invoice for. | What do you invoice for? | End card. |
+| 42-46 | No more invoice night. | No more invoice night | Asif to camera. |
+| 46-49 | Just a row in a sheet. | Just a row | End card. |
 
 **Caption**
 
 ```text
-Add a row to a sheet → the invoice makes itself. Here's the n8n version:
+Add a row to a sheet → the invoice makes itself. The n8n version:
 
 1. A row's status changes to “Ready”
 2. n8n fills my invoice template: client, items, totals, due date
@@ -359,7 +383,7 @@ Add a row to a sheet → the invoice makes itself. Here's the n8n version:
 
 One rule: totals come from the sheet's formulas, not from AI. Money maths should never be guessed.
 
-Want this for your business? Message me “AUTOMATE” and tell me what you invoice for.
+I build these for freelancers and small businesses. If you want one, my inbox is open.
 
 #n8n #invoicing #freelancing
 ```
@@ -375,17 +399,21 @@ Series: Automate This · Pillar: Automation & n8n · Format: Phone-in-hand demo 
 
 | | |
 |---|---|
+| **Human problem** | Trying to keep up with AI news across many sites and losing your mornings to it. |
 | **Objective** | Proof of skill + useful idea for any industry |
-| **Hook** | AI news, in one email a day. |
+| **Hook** | Ten news tabs every morning? Not anymore. |
+| **Open loop (what the viewer wants to know)** | What replaced the ten tabs? |
 | **Main idea** | An n8n workflow reads trusted RSS feeds each morning, filters the last 24 hours, removes repeats, and has AI write two lines per story with source links. |
 | **Key value** | Shows how to cut information overload, and that the idea works for any industry. |
-| **CTA** | Message 'AUTOMATE' for an industry digest. |
+| **Payoff (where it's answered)** | 7.5–32 s: RSS → last 24 hours → a two-line AI summary with links, delivered at 7 AM. |
+| **Takeaway (what did I just learn?)** | An n8n workflow can read trusted RSS feeds every morning and email you a short summary with source links. |
+| **CTA** | Soft service line in the caption only. |
 | **Visual concept** | Result first: Asif in the morning with tea, opening the 7:00 AM digest on his phone → short canvas inserts (schedule → RSS → filter → AI → email) → back to the phone tapping a source link. |
-| **Pace** | 104 spoken words in 50 s = 2.08 words/s |
+| **Pace** | 102 spoken words in 50 s = 2.04 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
-- `hook`: Information overload is universal; one email a day is an attractive promise.
+- `hook`: Starts from a morning habit many people want to escape (ten tabs of news).
 - `usefulness`: Explains RSS simply and shows the full pattern.
 - `relatability`: Everyone feels behind on news in their field.
 - `visual_progression`: Canvas nodes light in order and the email fills with stories.
@@ -395,7 +423,7 @@ Series: Automate This · Pillar: Automation & n8n · Format: Phone-in-hand demo 
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-3 | AI news, in one email a day. | 1 email. Every morning. | Phone at 7:00 AM: digest email opens. |
+| 0-3 | Ten news tabs every morning? Not anymore. | 10 tabs → 1 email | Ten browser tabs of AI news close one by one; the phone shows a single 7:00 AM digest email. |
 | 3-7.5 | Here's the n8n workflow that writes it while I sleep. | Built in n8n | Canvas overview. |
 | 7.5-12 | Seven AM, it reads the official blogs I trust, through RSS. | 1 · 7 AM · read RSS feeds | Schedule + RSS nodes highlighted. |
 | 12-17 | RSS is a simple feed most blogs offer. No scraping needed. | RSS = a blog's public feed | RSS icon with a feed list. |
@@ -404,13 +432,13 @@ Series: Automate This · Pillar: Automation & n8n · Format: Phone-in-hand demo 
 | 27.5-32 | Every line keeps the original link. I click before I share. | Always keep the source link | Email with links highlighted. |
 | 32-37 | Scrolling ten sites becomes one email. | 10 sites → 1 email | Ten tabs collapse into one envelope. |
 | 37-42 | Works for any topic: your industry, competitors' blogs, job posts. | industry · competitors · jobs | Three icons. |
-| 42-47 | Want a digest for your industry? Message me AUTOMATE. | Message: AUTOMATE | Asif to camera. |
-| 47-50 | Tell me which sites you'd follow. | Which sites? | End card. |
+| 42-47 | My mornings start with one email now. | One email. Calm mornings. | Asif to camera. |
+| 47-50 | What would you put in yours? | Your topics? | End card. |
 
 **Caption**
 
 ```text
-I read AI news in one email a day. An n8n workflow writes it at 7 AM:
+Ten tabs of AI news every morning? I replaced them with one email that an n8n workflow writes at 7 AM:
 
 1. Reads the RSS feeds of official blogs I trust (RSS = a simple public feed most blogs offer)
 2. Keeps only the last 24 hours, removes repeats
@@ -419,7 +447,7 @@ I read AI news in one email a day. An n8n workflow writes it at 7 AM:
 
 Ten sites become one email. Works for any industry, competitor blogs or job posts.
 
-Want a digest for your field? Message me “AUTOMATE” and tell me which sites you'd follow.
+What would you put in yours? If you want one for your field, I can build it. Just send me the sites.
 
 #n8n #automation #AInews
 ```
@@ -435,17 +463,21 @@ Series: Work With Me · Pillar: Work with me (n8n services) · Format: Numbered 
 
 | | |
 |---|---|
+| **Human problem** | Paying someone to automate, then being stuck when they disappear or it breaks. |
 | **Objective** | Trust-building service post; Messenger leads |
-| **Hook** | Hiring someone to automate? Ask these five first. |
+| **Hook** | A freelancer builds your automation, then disappears. |
+| **Open loop (what the viewer wants to know)** | What do I ask before hiring so that doesn't happen to me? |
 | **Main idea** | Ownership, failure handling, test data, monthly cost and handover separate professionals from risky builds. |
 | **Key value** | A buyer's checklist that protects business owners, and positions Asif as transparent. |
+| **Payoff (where it's answered)** | 3–33 s: five questions to ask; 33–39 s: the red flag to walk away from. |
+| **Takeaway (what did I just learn?)** | Before hiring an automation builder, ask about account ownership, alerts, test data, running costs and a handover guide. |
 | **CTA** | Message 'AUTOMATE' and ask all five. |
 | **Visual concept** | Numbered question cards; a red-flag card; Asif inviting the questions. |
-| **Pace** | 106 spoken words in 48 s = 2.21 words/s |
+| **Pace** | 110 spoken words in 48 s = 2.29 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
-- `hook`: Speaks directly to buyers' fear of being cheated or locked in.
+- `hook`: A real fear for owners (the builder vanishes) is stated before any advice.
 - `usefulness`: Five concrete questions anyone can ask any freelancer.
 - `relatability`: Many owners have had a freelancer disappear with access to their accounts.
 - `visual_progression`: A new numbered card every ~5 s, then a red-flag reveal.
@@ -455,21 +487,21 @@ Series: Work With Me · Pillar: Work with me (n8n services) · Format: Numbered 
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-3 | Hiring someone to automate? Ask these five first. | 5 questions before you hire | Asif to camera. |
-| 3-8 | One: whose accounts will it run on? The answer should be yours. | 1 · Whose accounts? Yours. | Card 1. |
-| 8-13 | If they leave, you shouldn't lose your automation. | They leave ≠ you lose it | Card 1 detail. |
+| 0-3 | A freelancer builds your automation, then disappears. | Builder disappears. Now what? | An n8n canvas with a red error node; a chat with the builder shows 'last seen 3 weeks ago' (dramatized). |
+| 3-8 | Avoid that with five questions. One: whose accounts will it run on? | 1 · Whose accounts? | Card 1. |
+| 8-13 | It should be yours. If they leave, you keep it. | Yours. They leave, you keep it. | Card 1 detail. |
 | 13-18 | Two: what happens when it fails? Ask who gets the alert. | 2 · Who gets the alert? | Card 2. |
 | 18-23 | Three: can I see it work with test data before going live? | 3 · Test data first? | Card 3. |
 | 23-28 | Four: what will it cost every month to run? Server, AI, apps. | 4 · Monthly cost? | Card 4. |
 | 28-33 | Five: do I get a guide, so someone else can fix it later? | 5 · A handover guide? | Card 5. |
 | 33-39 | Red flag: anyone promising one hundred percent automation with no human ever. | Red flag: “100% automated” | Red flag animation. |
 | 39-43.5 | These are questions I'm happy to answer before every project. | Ask me these too | Asif to camera. |
-| 43.5-48 | Message me AUTOMATE, and ask me all five. | Message: AUTOMATE | End card. |
+| 43.5-48 | Have a task to automate? Message me. Ask me all five. | Message me · ask all five | End card. |
 
 **Caption**
 
 ```text
-Hiring someone to automate your business? Ask these 5 questions first:
+A freelancer builds your automation, then disappears. Avoid that. Ask these 5 questions before you hire anyone:
 
 1. Whose accounts will it run on? (Should be yours. If they leave, you keep it.)
 2. What happens when it fails, and who gets the alert?
@@ -479,7 +511,7 @@ Hiring someone to automate your business? Ask these 5 questions first:
 
 Red flag: anyone promising “100% automated, no human ever”.
 
-I'm happy to answer all five before any project. Message me “AUTOMATE”.
+I'm happy to answer all five before any project. Have a repetitive task you want to automate? Message me.
 
 #n8n #automation #smallbusiness
 ```
@@ -495,17 +527,21 @@ Series: Steal This Prompt · Pillar: Practical AI · Format: Prop demo + screen 
 
 | | |
 |---|---|
+| **Human problem** | Signing agreements you haven't fully read or understood. |
 | **Objective** | Saves; practical protection |
-| **Hook** | Before you sign, ask AI four questions. |
+| **Hook** | Signing something you haven't fully read? |
+| **Open loop (what the viewer wants to know)** | Which four questions? |
 | **Main idea** | Redact personal data, then ask about payments/dates, one-sided rules, exit terms and unusual clauses with exact quotes. |
 | **Key value** | A 4-question contract reading method + clear 'not legal advice' boundary. |
+| **Payoff (where it's answered)** | 7.5–28 s: payments, one-sided rules, exit costs and unusual clauses, each with the exact quote. |
+| **Takeaway (what did I just learn?)** | Before signing, ask AI about payments, one-sided rules, exit costs and unusual clauses, then read the quoted clause yourself. |
 | **CTA** | Save the four questions. |
 | **Visual concept** | Long agreement on paper → marker redaction → AI answers with highlighted clauses. |
-| **Pace** | 96 spoken words in 45 s = 2.13 words/s |
+| **Pace** | 97 spoken words in 45 s = 2.16 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
-- `hook`: 'Before you sign' triggers caution; everyone has signed something they didn't read.
+- `hook`: Most people have signed something they didn't fully read; the question makes them admit it to themselves.
 - `relatability`: Rental agreements, job contracts and app terms are everyday documents.
 - `usefulness`: Four specific questions + the redaction step.
 - `novelty`: 'What can they do that I can't?' is a sharp question most people never ask.
@@ -515,8 +551,8 @@ Series: Steal This Prompt · Pillar: Practical AI · Format: Prop demo + screen 
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-3 | Before you sign, ask AI four questions. | Before you sign… | Asif holding a long printed agreement. |
-| 3-7.5 | Upload the agreement. Remove your ID numbers and signatures first. | Remove ID numbers first | Marker redacting personal details. |
+| 0-3 | Signing something you haven't fully read? | Haven't read it all? | Asif holding a long printed agreement. |
+| 3-7.5 | Ask AI four questions first. Remove ID numbers before you upload. | 4 questions · remove IDs first | Marker redacting personal details. |
 | 7.5-12.5 | One: “List every amount I pay, and every date.” | 1 · Every amount + date | AI answer list. |
 | 12.5-17.5 | Two: “What can they do that I can't?” This finds one-sided rules. | 2 · What can they do that I can't? | One-sided clause highlighted. |
 | 17.5-22.5 | Three: “How do I get out, and what does it cost me?” | 3 · How do I exit? Cost? | Exit clause answer. |
@@ -524,12 +560,12 @@ Series: Steal This Prompt · Pillar: Practical AI · Format: Prop demo + screen 
 | 28-33 | The quote matters. You check the real words, not the AI's summary. | Check the real words | Clause and summary side by side. |
 | 33-38 | This isn't legal advice. For big contracts, take these answers to a lawyer. | Not legal advice | Asif to camera. |
 | 38-42 | You'll ask better questions, and pay for less time. | Better questions | Asif to camera. |
-| 42-45 | Save these four questions. | Save it | End card. |
+| 42-45 | Four questions. Before every signature. | Before every signature | End card. |
 
 **Caption**
 
 ```text
-Before you sign an agreement (rent, job, freelance, app terms), ask AI 4 questions:
+Signing something you haven't fully read? Rent, job, freelance, app terms: ask AI 4 questions first.
 
 First, remove your ID numbers, signatures and account details.
 
@@ -538,11 +574,11 @@ First, remove your ID numbers, signatures and account details.
 3. “How do I get out, and what does it cost me?”
 4. “What's unusual compared with similar agreements? Quote the exact clause.”
 
-Always read the quoted clause yourself, not just the summary.
+Always read the quoted clause yourself.
 
 Not legal advice. For big contracts, take these answers to a lawyer. You'll ask better questions and pay for less time.
 
-Save these questions.
+Keep these for the next agreement someone hands you.
 
 #AItips #contracts #ChatGPT
 ```
@@ -558,10 +594,14 @@ Series: AI Myth Check · Pillar: AI literacy & safety · Format: Green screen + 
 
 | | |
 |---|---|
+| **Human problem** | Students being accused of using AI because a detector flagged their honest work. |
 | **Objective** | Shares among teachers, students and employers |
 | **Hook** | AI detectors flagged real student essays as AI. |
+| **Open loop (what the viewer wants to know)** | Why would a detector flag real writing? |
 | **Main idea** | Studies and OpenAI's own experience show AI-text detectors are unreliable, especially for non-native English writers; a score is not proof. |
 | **Key value** | Evidence-based warning + a fairer alternative (ask about drafts and process). |
+| **Payoff (where it's answered)** | 22.5–37 s: simple writing looks 'predictable'; a score is not proof; ask about drafts instead. |
+| **Takeaway (what did I just learn?)** | AI-text detectors often flag real writing, especially by non-native English writers, so a score is not proof. |
 | **CTA** | Send it to a teacher. |
 | **Visual concept** | Asif on green screen over the Patterns paper and the 2023 TechCrunch headline; simple stat cards. |
 | **Pace** | 91 spoken words in 42 s = 2.17 words/s |
@@ -618,17 +658,21 @@ Series: Automate This · Pillar: Automation & n8n · Format: Phone-in-hand demo 
 
 | | |
 |---|---|
+| **Human problem** | Losing receipts and spending month-end piecing your expenses back together. |
 | **Objective** | Proof of skill; relatable use case |
-| **Hook** | Snap a receipt. Get a spreadsheet row. |
+| **Hook** | Month end. Receipts everywhere. Again. |
+| **Open loop (what the viewer wants to know)** | How does a photo become a correct spreadsheet row? |
 | **Main idea** | A Telegram bot built in n8n reads receipt photos with AI, validates numbers, asks when unsure, logs to Sheets and confirms. |
 | **Key value** | Shows AI + automation with a safety check (ask instead of guess). |
-| **CTA** | Message 'AUTOMATE' for team expense tracking. |
+| **Payoff (where it's answered)** | 11.5–41 s: AI reads it, checks the numbers, asks when unsure, logs it and confirms; month-end totals are ready. |
+| **Takeaway (what did I just learn?)** | A Telegram bot built in n8n can turn receipt photos into checked spreadsheet rows and ask you when it's unsure. |
+| **CTA** | Soft service line in the caption only. |
 | **Visual concept** | Mostly phone-in-hand: snapping a real receipt, sending it to the bot, getting the confirmation; brief canvas and sheet inserts between. |
-| **Pace** | 99 spoken words in 48 s = 2.06 words/s |
+| **Pace** | 98 spoken words in 48 s = 2.04 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
-- `hook`: A two-step promise with an instant visual (photo → row).
+- `hook`: Starts from the month-end receipt mess everyone recognises, then shows the photo-to-row fix.
 - `relatability`: Everyone loses receipts; small teams track expenses badly.
 - `visual_progression`: Photo, canvas, extracted fields, check, row, reply: six visual states.
 - `novelty`: A bot that asks when it can't read the total is a smart detail.
@@ -638,8 +682,8 @@ Series: Automate This · Pillar: Automation & n8n · Format: Phone-in-hand demo 
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-3 | Snap a receipt. Get a spreadsheet row. | Receipt → sheet row | Phone sends a receipt photo to a Telegram bot; a sheet row appears. |
-| 3-7 | This is a Telegram bot I built with n8n. | Telegram bot + n8n | Canvas overview. |
+| 0-3 | Month end. Receipts everywhere. Again. | Receipts everywhere. Again. | A messy pile of receipts on a desk; Asif picks one up and snaps it. |
+| 3-7 | So I send each one to a Telegram bot instead. | Snap → bot → sheet | Canvas overview. |
 | 7-11.5 | I send a photo. The workflow receives it instantly. | 1 · Photo arrives | Telegram trigger node. |
 | 11.5-17 | An AI model reads it: shop, date, total, and a category. | 2 · AI reads shop · date · total | Extracted fields shown as a simple card. |
 | 17-22 | Then a check: is the total a real number? Is the date valid? | 3 · Check the numbers | IF node with two conditions. |
@@ -647,13 +691,13 @@ Series: Automate This · Pillar: Automation & n8n · Format: Phone-in-hand demo 
 | 27-31.5 | Then it adds the row to my Google Sheet. | 4 · Add to the sheet | Row appears. |
 | 31.5-36 | And replies: “Saved, 850 taka, groceries. Correct?” | “Saved: Tk 850 · Groceries” | Bot reply on phone. |
 | 36-41 | Month end, the totals are already there. No pile of receipts. | Month end: done | Sheet summary with totals by category. |
-| 41-45 | Want this for your team's expenses? Message me AUTOMATE. | Message: AUTOMATE | Asif to camera. |
+| 41-45 | Which messy pile would you hand to a bot? | Your messy pile? | Asif to camera. |
 | 45-48 | Follow for more builds. | Follow | End card. |
 
 **Caption**
 
 ```text
-Snap a receipt → get a spreadsheet row. A Telegram bot built in n8n:
+Month end. Receipts everywhere. Again. So now I send each one to a Telegram bot built in n8n:
 
 1. Send the bot a photo of a receipt
 2. An AI model reads the shop, date, total and picks a category
@@ -663,7 +707,7 @@ Snap a receipt → get a spreadsheet row. A Telegram bot built in n8n:
 
 Month end, the totals are already there.
 
-Want this for your team's expenses? Message me “AUTOMATE”.
+This is the kind of thing I build for clients. Ask if you want one for your team.
 
 #n8n #Telegram #automation
 ```
@@ -679,17 +723,21 @@ Series: Work With Me · Pillar: Work with me (n8n services) · Format: Diagram e
 
 | | |
 |---|---|
+| **Human problem** | Website chatbots giving customers confident but wrong answers about your business. |
 | **Objective** | Sell the website assistant service; educate on RAG |
-| **Hook** | A website chat that only uses your documents. |
+| **Hook** | Most website chatbots guess. This one reads first. |
+| **Open loop (what the viewer wants to know)** | How does it know what to say about my business? |
 | **Main idea** | A retrieval-based assistant searches your files, answers only from matching passages, shows sources and hands over when the answer isn't there. |
 | **Key value** | Explains RAG simply and why it beats a generic chatbot for business. |
+| **Payoff (where it's answered)** | 7.5–27 s: search your files, pick matching parts, answer only from those, hand over if not found. |
+| **Takeaway (what did I just learn?)** | A retrieval-based assistant answers only from your documents and hands over to a person when the answer isn't there. |
 | **CTA** | Message 'AUTOMATE' and send your FAQ. |
 | **Visual concept** | Website chat widget → document icons → highlighted paragraphs → answer with source tag → human fallback. |
 | **Pace** | 100 spoken words in 46 s = 2.17 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
-- `hook`: Addresses the biggest worry about chatbots (making things up) by promising answers from your documents only.
+- `hook`: Contrasts a common annoyance (bots that guess) with a better approach in one line.
 - `problem_solution`: Shows a normal bot guessing, then the document-grounded approach.
 - `visual_progression`: Documents → highlighted passages → sourced answer → fallback, each step visible.
 - `novelty`: Explains 'RAG' in plain words, a term many have heard but few understand.
@@ -699,7 +747,7 @@ Series: Work With Me · Pillar: Work with me (n8n services) · Format: Diagram e
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-3 | A website chat that only uses your documents. | Answers from YOUR documents | Website chat widget answers 'Do you deliver to Chattogram?' |
+| 0-3 | Most website chatbots guess. This one reads first. | Guessing bot vs reading bot | Website chat widget answers 'Do you deliver to Chattogram?' |
 | 3-7.5 | Normal chatbots answer from the internet, or make things up. | Normal bots: guess | Example of a wrong generic answer. |
 | 7.5-12 | This one searches your files first. Price list, policies, FAQs. | 1 · Search your files | Document icons. |
 | 12-17 | It picks the few paragraphs that match the question. | 2 · Pick matching parts | Paragraphs highlight. |
@@ -713,7 +761,7 @@ Series: Work With Me · Pillar: Work with me (n8n services) · Format: Diagram e
 **Caption**
 
 ```text
-A website chat that answers only from your documents, not from the internet or its imagination.
+Most website chatbots guess. This one reads your documents first, and answers only from them.
 
 How it works:
 1. Searches your files first: price list, delivery policy, FAQs
@@ -739,11 +787,15 @@ Series: Hidden Button · Pillar: Hidden features & tools · Format: Talking head
 
 | | |
 |---|---|
+| **Human problem** | Creators choosing between an English and a Bangla audience for every Reel. |
 | **Objective** | Shares among creators; reach for this page in Bengali |
 | **Hook** | Your Reel, in Bengali, in your voice. |
+| **Open loop (what the viewer wants to know)** | Does the dub really sound like me? |
 | **Main idea** | Meta AI translates, dubs and lip-syncs Reels into Bengali and other languages for free; creators can review or turn it off. |
 | **Key value** | How to find it, when to use lip sync, and why it doubles a Reel's potential audience. |
-| **CTA** | Send it to a creator friend. |
+| **Payoff (where it's answered)** | 13–29 s: a tone-matched dub, lip sync, and how to turn it on and review it. |
+| **Takeaway (what did I just learn?)** | Meta AI can dub your Reels into Bengali in your own voice for free, so one Reel can reach two audiences. |
+| **CTA** | None. Ends with 'turn it on for your next Reel'. |
 | **Visual concept** | Split: Asif speaking English vs same clip labelled 'Bengali dub'; own screen capture of the composer option. |
 | **Pace** | 93 spoken words in 42 s = 2.21 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
@@ -783,7 +835,7 @@ Meta AI can translate, dub and optionally lip-sync Reels. Bengali is supported, 
 
 One English Reel can now reach people who scroll in Bengali (and the other way round).
 
-Send this to a creator friend.
+If you make Reels, turn it on for your next one.
 
 #FacebookReels #contentcreator #MetaAI
 ```
@@ -801,10 +853,14 @@ Series: AI Myth Check · Pillar: AI literacy & safety · Format: Green screen + 
 
 | | |
 |---|---|
+| **Human problem** | Seeing a shocking photo in a group chat and not knowing if it's real. |
 | **Objective** | Shares; protects the audience from AI fakes |
 | **Hook** | Stop checking the hands. Check the source. |
+| **Open loop (what the viewer wants to know)** | If not the hands, what should I check? |
 | **Main idea** | AI images now get details right; tracing the image's origin, trusted outlets, dates and AI labels is more reliable. |
 | **Key value** | A 4-step check using Google Lens + the rule 'can't trace it, don't share it'. |
+| **Payoff (where it's answered)** | 13–39 s: Lens search, trusted outlets, dates, AI labels, then 'can't trace it, don't share it'. |
+| **Takeaway (what did I just learn?)** | Trace where an image came from instead of zooming in on details, and don't share what you can't trace. |
 | **CTA** | Send it to the group that shares everything. |
 | **Visual concept** | Asif on green screen in front of a labelled AI-generated example image → Lens search results → calendar → 'AI info' label mock. |
 | **Pace** | 98 spoken words in 42 s = 2.33 words/s |

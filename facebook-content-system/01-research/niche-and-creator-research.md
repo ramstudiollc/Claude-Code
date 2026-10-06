@@ -80,7 +80,7 @@ Each block covers the questions from the brief: attention, watch-through, rewatc
 
 1. **Tool dumps:** "10 AI tools you need". Nothing is taught and nothing is remembered.
 2. **Hype hooks with no payoff:** "This AI will replace your job." It erodes trust, and Meta's interest survey punishes it.
-3. **Outdated features:** e.g. still calling it NotebookLM after the July 2026 rename to Gemini Notebook, or promoting Gems after Google announced they become Skills in November 2026.
+3. **Outdated features:** e.g. still calling it NotebookLM after the July 2026 rename to Gemini Notebook, or promoting Gems after Google announced they start turning into skills on 17 November 2026.
 4. **Narrating someone else's video.** This is now explicitly unoriginal on Facebook.
 5. **Walls of text on images:** 150 words at 30 px. Nobody reads it on a phone.
 6. **AI-sounding copy:** "unlock", "elevate", "game-changer", "in today's fast-paced world". Readers spot it instantly.

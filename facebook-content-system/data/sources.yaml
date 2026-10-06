@@ -146,7 +146,7 @@ openai_dots:
   publisher: OpenAI (help article "Getting started with your dot"; TechCrunch 2026-09-29)
   date: 2026-09-29
   url: https://openai.com/index/introducing-dots/
-  claim: Dots are always-on agents in ChatGPT with their own cloud computer; you set a goal and limits; they report back for review; reachable in ChatGPT, Slack and Teams; rolling out to Pro (not EEA/CH/UK) and Business Premium; Enterprise beta off by default; created on desktop.
+  claim: Dots are always-on agents in ChatGPT with their own cloud computer; you set a goal and limits; they report back for review; reachable in ChatGPT, Slack and Teams; rolling out to Pro (not EEA/CH/UK) and Business Premium; Free, Go and Plus don't get one; Enterprise beta off by default; created on desktop.
   checked: 2026-10-06
   volatile: true
 
@@ -238,7 +238,7 @@ google_gems_transition:
   publisher: Gemini Apps Help
   date: 2026
   url: https://support.google.com/gemini/answer/18560919?hl=en
-  claim: Gems are removed and auto-recreated as skills — November 2026 (personal), March 2027 (Workspace business), June 2027 (education).
+  claim: Gems are removed and auto-recreated as skills — from 17 November 2026 (personal), March 2027 (Workspace business), June 2027 (education). Skills need an 18+ account with Gemini's activity setting on.
   checked: 2026-10-06
   volatile: true
 
@@ -371,3 +371,21 @@ fb_truncation:
   url: https://charcount.tools/platforms/facebook-character-limit
   claim: Mobile Facebook collapses long posts behind 'See more' at roughly 125 characters (actual cut depends on rendered height).
   checked: 2026-10-06
+
+gems_nov17:
+  title: "Google Is Replacing Gemini Gems With Skills Nov 17"
+  publisher: TechRepublic (also 9to5Google, 2026-09-27 and 2026-09-30)
+  date: 2026-09-30
+  url: https://www.techrepublic.com/article/news-gemini-gems-skills-migration/
+  claim: Automatic Gem-to-skill migration starts 17 November 2026 for personal accounts; skills don't need a paid plan but require an 18+ account with Gemini's activity setting enabled.
+  checked: 2026-10-06
+  volatile: true
+
+meta_one:
+  title: "Introducing Meta One: A Subscription Service With More Features and AI to Create, Connect, and Stand Out"
+  publisher: Meta Newsroom
+  date: 2026-09
+  url: https://about.fb.com/news/2026/09/introducing-meta-one-subscription-service-more-features-ai/
+  claim: Meta One is Meta's new subscription home (plans from $14.99/month); paying businesses get clickable links in organic posts and Reels; Meta Verified continues alongside it.
+  checked: 2026-10-06
+  volatile: true

@@ -14,10 +14,12 @@ Series: Steal This Prompt · Pillar: Practical AI · Format: Prompt card
 
 | | |
 |---|---|
+| **Human problem** | Reading a long notice or letter and still not knowing what you're supposed to do. |
 | **Objective** | Saves; practical document reading |
 | **Hook** | Don't ask for a summary. Ask for decisions. |
 | **Main idea** | Asking AI for decisions, deadlines, amounts and consequences turns any document into an action list. |
 | **Key value** | A 4-question document prompt that beats 'summarise this'. |
+| **Takeaway (what did I just learn?)** | Ask AI for the decisions, deadlines and consequences in a document instead of a summary. |
 | **CTA** | Save it for the next long document. |
 | **Visual concept** | Long document icon → four question chips → checklist. |
 | **Words on image** | 55 |
@@ -49,7 +51,7 @@ Ask this instead:
 
 Works for school notices, bank letters, client briefs and policy updates.
 
-Save this for the next long document.
+Use it on the next bank letter, school notice or client brief that lands on you.
 
 #AItips #productivity #ChatGPT
 ```
@@ -65,11 +67,13 @@ Series: Automate This · Pillar: Automation & n8n · Format: Framework card
 
 | | |
 |---|---|
+| **Human problem** | A task feels like 'only a few minutes' until you see what it costs over a year. |
 | **Objective** | Saves; quantifies value for buyers |
 | **Hook** | Is it worth automating? Do the 1-minute math |
 | **Main idea** | Minutes × frequency × 52 shows yearly time cost; compare with setup and running cost, plus mistake costs. |
 | **Key value** | A simple formula with a worked example (15 min × 10/week = 130 hours/year). |
-| **CTA** | Save it and calculate one task today. |
+| **Takeaway (what did I just learn?)** | Minutes per task × times per week × 52 shows the yearly cost of doing it by hand. |
+| **CTA** | Ask what yearly number viewers got. |
 | **Visual concept** | Calculator-style card with the formula and a worked example. |
 | **Words on image** | 57 |
 | **Spec** | Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image |
@@ -98,7 +102,7 @@ Now compare that with the setup time and the monthly running cost. Then add what
 
 If the yearly number scares you, it's worth a conversation.
 
-Save this and calculate one task today.
+Calculate one task today. What number did you get?
 
 #automation #productivity #smallbusiness
 ```
@@ -114,10 +118,12 @@ Series: Work With Me · Pillar: Work with me (n8n services) · Format: FAQ card
 
 | | |
 |---|---|
+| **Human problem** | Worrying that automation will add another monthly bill you can't predict. |
 | **Objective** | Remove a buying objection; Messenger leads |
 | **Hook** | “Will automation cost me every month?” Honest answer |
 | **Main idea** | Running cost has four parts (hosting, AI usage, paid apps, maintenance); some setups run very cheaply. |
 | **Key value** | A transparent cost breakdown and a promise of an estimate before building. |
+| **Takeaway (what did I just learn?)** | Automation running costs come from hosting, AI usage, paid apps and maintenance, and can be very low. |
 | **CTA** | Message 'AUTOMATE' for an estimate. |
 | **Visual concept** | Receipt-style card listing four cost lines. |
 | **Words on image** | 72 |
@@ -148,7 +154,7 @@ Honest answer: it depends on 4 things.
 
 No AI and self-hosted? Running costs can be very low.
 
-I give an estimate before building anything. Message me “AUTOMATE”.
+Before I build anything, you get an estimate. Message me “AUTOMATE” if you want one.
 
 #n8n #automation #smallbusiness
 ```
@@ -166,11 +172,13 @@ Series: Hidden Button · Pillar: Hidden features & tools · Format: Hidden featu
 
 | | |
 |---|---|
+| **Human problem** | Switching tabs every time you want to ask AI something quick. |
 | **Objective** | Shares among office workers and students |
 | **Hook** | Windows shortcut: Alt + Space opens Gemini |
 | **Main idea** | The Gemini app for Windows (Sept 2026) opens over any app with Alt + Space. |
 | **Key value** | A quick-access habit + what to use it for. |
-| **CTA** | Send it to a colleague who works on Windows. |
+| **Takeaway (what did I just learn?)** | On Windows, the Gemini app opens over any app with Alt + Space. |
+| **CTA** | None. The shortcut is the value. |
 | **Visual concept** | Large keyboard keys 'Alt' + 'Space' with a small chat window popping up. |
 | **Words on image** | 54 |
 | **Spec** | Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image |
@@ -198,7 +206,7 @@ Windows users: Gemini now has a desktop app, and Alt + Space opens it over any a
 
 No more switching tabs to ask a quick question.
 
-Send this to a colleague who works on Windows.
+Works on any Windows PC with the Gemini app installed.
 
 #GeminiAI #Windows #productivity
 ```
@@ -216,11 +224,13 @@ Series: Before → After · Pillar: Automation & n8n · Format: Before/after tim
 
 | | |
 |---|---|
+| **Human problem** | Sellers spend the whole day and evening copying orders and answering the same questions. |
 | **Objective** | Make automation tangible for F-commerce owners |
 | **Hook** | A Facebook seller's day, before and after 3 automations |
 | **Main idea** | Three automations (order capture, FAQ replies, nightly sales summary) change a seller's whole day. |
 | **Key value** | Concrete before/after picture of automation benefits in the audience's own context. |
-| **CTA** | Share with a seller who's always on their phone. |
+| **Takeaway (what did I just learn?)** | Three automations (order capture, FAQ replies, a nightly summary) give a seller back their evenings. |
+| **CTA** | Ask which part of the 'before' day is theirs. |
 | **Visual concept** | Two vertical timelines: grey 'before' with stress icons, green 'after' with calm icons. |
 | **Words on image** | 63 |
 | **Spec** | Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image |
@@ -255,7 +265,7 @@ Common questions get instant replies, so you answer only the real ones
 
 Same business. Different evenings.
 
-Share this with a seller who's always on their phone.
+Which part of the “before” day is yours?
 
 #fcommerce #automation #smallbusiness
 ```
@@ -267,29 +277,31 @@ Share this with a seller who's always on their phone.
 
 ### #067 · D17-I2 · Day 17 · Wed 28 Oct · 18:30 BST · IMAGE
 **Turn messy order chats into a clean table**  
-Series: Steal This Prompt · Pillar: Practical AI · Format: Prompt card
+Series: Steal This Prompt · Pillar: Practical AI · Format: Before/after card
 
 | | |
 |---|---|
+| **Human problem** | Orders scattered across dozens of Messenger chats, with details missing. |
 | **Objective** | Saves among F-commerce sellers |
-| **Hook** | Turn messy order chats into a clean table |
+| **Hook** | 30 order chats → one clean table |
 | **Main idea** | Paste raw order messages and get a structured table with MISSING flags and a follow-up list. |
 | **Key value** | A copy-paste prompt that structures orders for Google Sheets. |
+| **Takeaway (what did I just learn?)** | Paste order chats into AI to get one table, with MISSING marking exactly what to ask customers. |
 | **CTA** | Save it for your next order rush. |
 | **Visual concept** | Messy chat bubbles on the left → neat table on the right. |
-| **Words on image** | 45 |
+| **Words on image** | 43 |
 | **Spec** | Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image |
 
 **On-image copy (use exactly)**
 
-- **Headline:** Turn messy order chats into a clean table
+- **Headline:** 30 order chats → one clean table
 - **Body:**
   - “Here are today's order messages: [paste].
   - Make a table: Name | Phone | Item | Size | Qty | Address | Payment.
   - If anything is missing, write MISSING.
   - Then list who I need to message back.”
 - **Footer:** Copy the table straight into Google Sheets.
-- **Layout:** Light background. Left 40%: stack of messy chat bubbles. Right 60%: prompt block. Small table preview at the bottom with one MISSING cell in red.
+- **Layout:** Light background. Left 40%: stack of messy chat bubbles (before). Arrow. Right 60%: a neat table preview with one red MISSING cell (after). Prompt block across the bottom.
 
 **Caption**
 
@@ -317,14 +329,16 @@ Save this for your next order rush.
 
 ### #069 · D18-I1 · Day 18 · Thu 29 Oct · 09:30 BST · IMAGE
 **Check an AI claim in 60 seconds**  
-Series: AI Myth Check · Pillar: AI literacy & safety · Format: Checklist
+Series: AI Myth Check · Pillar: AI literacy & safety · Format: Step-by-step card
 
 | | |
 |---|---|
+| **Human problem** | Forwarding something an AI said that turns out to be wrong. |
 | **Objective** | Trust + shares in groups |
 | **Hook** | Check an AI claim in 60 seconds |
 | **Main idea** | A 5-step quick check (exact claim, two known sources, dates, agreement, don't repeat if only AI says it). |
 | **Key value** | A fast verification habit for AI answers and viral claims. |
+| **Takeaway (what did I just learn?)** | Check an AI claim against two known, dated sources before you repeat it. |
 | **CTA** | Send it to a group where people forward everything. |
 | **Visual concept** | Stopwatch at 60 s with five numbered steps around it. |
 | **Words on image** | 55 |
@@ -371,10 +385,12 @@ Series: Steal This Prompt · Pillar: Workflows & productivity · Format: Flow di
 
 | | |
 |---|---|
+| **Human problem** | Making one good video and having nothing else to post for the week. |
 | **Objective** | Saves among creators and small businesses |
 | **Hook** | 1 video → 5 posts, without sounding like a robot |
 | **Main idea** | Repurpose your own video by extracting ideas with timestamps, drafting with AI, and rewriting hooks yourself. |
 | **Key value** | A 5-step repurposing workflow that respects originality rules. |
+| **Takeaway (what did I just learn?)** | Pull five ideas from your own video's transcript, draft with AI, and rewrite every hook yourself. |
 | **CTA** | Save it. |
 | **Visual concept** | One video icon branching into five post icons. |
 | **Words on image** | 63 |
@@ -403,9 +419,9 @@ One good video can become 5 posts, without sounding like AI wrote them:
 4. Rewrite every hook yourself. AI drafts, you decide.
 5. Spread them across the week
 
-Repurpose your own content, not other people's. Facebook now reduces reach for reposted content.
+Only repurpose your own content. Facebook now reduces reach for reposted content.
 
-Save this.
+Try it on your last video.
 
 #contentcreation #AItips #socialmedia
 ```
@@ -423,11 +439,13 @@ Series: Automate This · Pillar: Automation & n8n · Format: Comparison table
 
 | | |
 |---|---|
+| **Human problem** | Choosing an automation tool because of hype instead of what you actually need. |
 | **Objective** | Answer a common buyer question honestly; saves |
 | **Hook** | Zapier, Make or n8n? Choose by need, not hype |
 | **Main idea** | Each tool fits a different need: Zapier for the simplest start, Make for visual multi-step flows, n8n for control, AI agents and self-hosting. |
 | **Key value** | A fair, non-salesy comparison with a 'pick this if' rule. |
-| **CTA** | Save it. |
+| **Takeaway (what did I just learn?)** | Zapier suits simple quick starts, Make suits visual multi-step flows, and n8n suits control, AI agents and self-hosting. |
+| **CTA** | Ask which tool viewers use now and whether it fits. |
 | **Visual concept** | Three-column comparison with neutral icons (no logos). |
 | **Words on image** | 68 |
 | **Spec** | Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image |
@@ -460,7 +478,7 @@ Pick n8n if you want control, AI agents, or your own server.
 
 I build in n8n for those reasons, but all three are good tools. Pricing changes often, so check each tool's current pricing page.
 
-Save this.
+Which one are you using now, and is it the right fit?
 
 #n8n #Zapier #automation
 ```
@@ -478,10 +496,12 @@ Series: Steal This Prompt · Pillar: Practical AI · Format: Before/after card
 
 | | |
 |---|---|
+| **Human problem** | AI answers that are long, general and hard to use. |
 | **Objective** | Saves; quick prompting win |
 | **Hook** | Rambling AI answers? Add these 2 things |
 | **Main idea** | Naming the reader and setting a hard limit fixes most rambling answers. |
 | **Key value** | Two simple constraints with examples and a before/after. |
+| **Takeaway (what did I just learn?)** | Name the reader and set a hard length limit to stop rambling AI answers. |
 | **CTA** | Save it. |
 | **Visual concept** | Long scroll of text (before) vs five neat lines (after). |
 | **Words on image** | 51 |
@@ -507,9 +527,7 @@ AI answers too long and too general? Add 2 things to your prompt:
 2. A hard limit: “under 80 words”, “5 bullets”, “one paragraph”
 
 Before: 400 words about everything.
-After: 5 lines you can actually use.
-
-Save this.
+After: 5 lines you can actually use. Add both to your next prompt and compare.
 
 #AItips #ChatGPT #productivity
 ```
@@ -525,18 +543,20 @@ Series: Hidden Button · Pillar: Hidden features & tools · Format: Hidden featu
 
 | | |
 |---|---|
+| **Human problem** | Downloading files from Drive or Dropbox just to upload them into ChatGPT. |
 | **Objective** | Saves; timely feature awareness |
-| **Hook** | ChatGPT can now pull files from your cloud drive |
+| **Hook** | Stop downloading files just to show ChatGPT |
 | **Main idea** | Since Sept 2026, ChatGPT's Library connects Google Drive, Dropbox, Box and SharePoint; add files with @ or 'Add from Library'. |
 | **Key value** | How to use it + a privacy reminder. |
-| **CTA** | Save it. |
+| **Takeaway (what did I just learn?)** | ChatGPT's Library can pull files from Google Drive, Dropbox, Box and SharePoint with an @ mention. |
+| **CTA** | None. Ends with a privacy and plan check. |
 | **Visual concept** | Chat input with '@' and a dropdown of file icons from four cloud services (drawn, no logos). |
-| **Words on image** | 54 |
+| **Words on image** | 52 |
 | **Spec** | Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image |
 
 **On-image copy (use exactly)**
 
-- **Headline:** ChatGPT can now pull files from your cloud drive
+- **Headline:** Stop downloading files just to show ChatGPT
 - **Body:**
   - Library connects Google Drive, Dropbox, Box and SharePoint (Sept 2026).
   - Type @ in a chat to add a file, or use Add from Library.
@@ -548,15 +568,13 @@ Series: Hidden Button · Pillar: Hidden features & tools · Format: Hidden featu
 **Caption**
 
 ```text
-ChatGPT can now pull files straight from your cloud storage.
+Still downloading files just to upload them to ChatGPT? It can now pull them straight from your cloud storage.
 
 Since 10 Sept 2026, ChatGPT's Library connects Box, Dropbox and SharePoint, alongside Google Drive. Once connected:
 • type @ in a chat to add a file, or use “Add from Library”
 • ask: “Compare these two quotes” or “Summarise the changes in v2”, no downloading needed
 
 Only connect accounts you're comfortable sharing, and check what's available on your plan.
-
-Save this.
 
 #ChatGPT #productivity #AItips
 ```
@@ -574,13 +592,15 @@ Series: Work With Me · Pillar: Work with me (n8n services) · Format: Checklist
 
 | | |
 |---|---|
+| **Human problem** | Paying for automation before the business process is ready for it. |
 | **Objective** | Qualify leads; reduce failed projects |
 | **Hook** | Before you automate: is your business ready? |
 | **Main idea** | Readiness = clear steps, digital data, weekly repetition, a definition of done, and an owner. |
 | **Key value** | A readiness checklist that helps owners prepare (and helps Asif get better leads). |
-| **CTA** | Message 'AUTOMATE' when you tick most boxes. |
+| **Takeaway (what did I just learn?)** | Automation works when the task is clear, digital, weekly, has a defined end and has an owner. |
+| **CTA** | Ask how many boxes viewers ticked. |
 | **Visual concept** | Clipboard checklist with five boxes. |
-| **Words on image** | 50 |
+| **Words on image** | 47 |
 | **Spec** | Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image |
 
 **On-image copy (use exactly)**
@@ -592,8 +612,8 @@ Series: Work With Me · Pillar: Work with me (n8n services) · Format: Checklist
   - ☐ The task repeats every week.
   - ☐ You know what 'done' looks like.
   - ☐ Someone will own it after launch.
-- **Footer:** Missing some? Fix those first. Then message “AUTOMATE”.
-- **Layout:** Light background. Clipboard illustration with five checkbox rows. Footer as CTA bar.
+- **Footer:** Missing some? Fix those first.
+- **Layout:** Light background. Clipboard illustration with five checkbox rows. Footer as a short bold line under the clipboard.
 
 **Caption**
 
@@ -607,7 +627,7 @@ Before you pay anyone to automate, check that your business is ready:
 ☐ Someone will own it after launch
 
 Missing some? Fix those first. It'll save you money.
-Tick most of them? Message me “AUTOMATE”.
+How many boxes did you tick?
 
 #automation #smallbusiness #n8n
 ```
@@ -623,10 +643,12 @@ Series: Steal This Prompt · Pillar: Practical AI · Format: Prompt card
 
 | | |
 |---|---|
+| **Human problem** | AI drafts that readers instantly recognise as AI. |
 | **Objective** | Saves; makes AI writing sound human |
 | **Hook** | Add this line to every AI writing prompt |
 | **Main idea** | Banning the most common AI-cliché words and asking for a 'texting a colleague' tone makes AI drafts sound human. |
 | **Key value** | A ready-made ban list + replacement instruction. |
+| **Takeaway (what did I just learn?)** | Ban AI's favourite filler words in your prompt and ask it to write like a person texting a colleague. |
 | **CTA** | Save it. |
 | **Visual concept** | Words in a 'banned' style (struck-through chips) + one green instruction chip. |
 | **Words on image** | 41 |
@@ -654,8 +676,6 @@ Add this to your prompt:
 
 Readers spot these words in a second, and stop trusting the rest.
 
-Save this.
-
 #AIwriting #copywriting #AItips
 ```
 **Production notes:** This post intentionally lists banned words (allow_banned). Strike-through chips make it clear they are examples to avoid.
@@ -666,14 +686,16 @@ Save this.
 
 ### #083 · D21-I2 · Day 21 · Sun 01 Nov · 18:30 BST · IMAGE
 **Make your Google Sheet automation-ready: 5 rules**  
-Series: Automate This · Pillar: Automation & n8n · Format: Checklist
+Series: Automate This · Pillar: Automation & n8n · Format: Annotated spreadsheet
 
 | | |
 |---|---|
+| **Human problem** | Automations breaking because the spreadsheet behind them is messy. |
 | **Objective** | Saves; prepares buyers' data |
 | **Hook** | Make your Google Sheet automation-ready |
 | **Main idea** | Clean structure (one header row, one record per row, stable column names, consistent formats, an ID column) prevents automation failures. |
 | **Key value** | Five rules anyone can apply to their sheet today. |
+| **Takeaway (what did I just learn?)** | One header row, one record per row, stable column names, one date format and an ID column keep a sheet automation-ready. |
 | **CTA** | Save it before you share a sheet with anyone who automates. |
 | **Visual concept** | Clean spreadsheet mock with numbered callouts on the header row, an ID column and date format. |
 | **Words on image** | 55 |

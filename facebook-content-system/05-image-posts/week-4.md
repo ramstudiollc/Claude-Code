@@ -14,10 +14,12 @@ Series: Steal This Prompt · Pillar: Workflows & productivity · Format: Flow di
 
 | | |
 |---|---|
+| **Human problem** | Researching a topic for hours and ending up with 30 tabs instead of understanding. |
 | **Objective** | Saves among students and professionals |
 | **Hook** | Research any topic in 20 minutes with AI |
 | **Main idea** | Four 5-minute steps (questions → searched sources → notebook → disagreements) give trustworthy research fast. |
 | **Key value** | A timed research workflow that ends with sources, not just an answer. |
+| **Takeaway (what did I just learn?)** | Spend 20 minutes on key questions, searched sources, a notebook and the points where sources disagree. |
 | **CTA** | Save it. |
 | **Visual concept** | A clock face split into four 5-minute segments, each with a step. |
 | **Words on image** | 62 |
@@ -37,7 +39,7 @@ Series: Steal This Prompt · Pillar: Workflows & productivity · Format: Flow di
 **Caption**
 
 ```text
-Research any topic in 20 minutes with AI, and finish with sources, not just an answer:
+Research any topic in 20 minutes with AI, and finish with sources you trust:
 
 0–5 min: “Give me the 5 key questions someone should answer about [topic].”
 5–10 min: search each question with web search ON. Save the sources that look reliable.
@@ -45,8 +47,6 @@ Research any topic in 20 minutes with AI, and finish with sources, not just an a
 15–20 min: “What do these sources disagree on? What's missing?”
 
 The last question is where real understanding starts.
-
-Save this.
 
 #research #AItips #studytips
 ```
@@ -60,15 +60,17 @@ Save this.
 
 ### #087 · D22-I2 · Day 22 · Mon 02 Nov · 18:30 BST · IMAGE
 **Posting AI images or voice? When to label them**  
-Series: AI Myth Check · Pillar: AI literacy & safety · Format: Checklist
+Series: AI Myth Check · Pillar: AI literacy & safety · Format: Three-tier card
 
 | | |
 |---|---|
+| **Human problem** | Posting AI-made images or voice without knowing when Facebook expects a label. |
 | **Objective** | Protect page owners from policy problems; trust |
 | **Hook** | Posting AI images or voice? When to label them |
 | **Main idea** | Meta requires disclosure for photorealistic AI video and realistic audio, and may auto-label; labelling realistic AI images is a good habit; faking real people is never OK. |
 | **Key value** | Clear do/don't rules for AI media on Facebook. |
-| **CTA** | Save it. |
+| **Takeaway (what did I just learn?)** | Disclose photorealistic AI video and realistic audio, label realistic AI images anyway, and never fake real people. |
+| **CTA** | None. The closing line is the takeaway. |
 | **Visual concept** | Must / Should / Never three-tier card with a small 'AI info' tag icon. |
 | **Words on image** | 65 |
 | **Spec** | Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image |
@@ -88,7 +90,7 @@ Series: AI Myth Check · Pillar: AI literacy & safety · Format: Checklist
 **Caption**
 
 ```text
-Using AI images, video or voice on your page? Here's when to label it.
+Using AI images, video or voice on your page? When to label it, according to Meta's rules:
 
 Must: Meta requires you to use its AI disclosure option when you post photorealistic video or realistic-sounding audio that was made or changed with AI.
 Automatic: Meta may add an “AI info” label when it detects industry AI signals.
@@ -96,8 +98,6 @@ Good habit: write “AI-generated” on any realistic AI image, even if it's not
 Never: make a real person appear to say or do something they didn't.
 
 Labels don't hurt honest pages. Getting caught faking does.
-
-Save this.
 
 #AIlabel #FacebookTips #AIliteracy
 ```
@@ -111,16 +111,18 @@ Save this.
 
 ### #089 · D23-I1 · Day 23 · Tue 03 Nov · 09:30 BST · IMAGE
 **Your automation's keys are passwords: 5 security rules**  
-Series: Automate This · Pillar: Automation & n8n · Format: Checklist
+Series: Automate This · Pillar: Automation & n8n · Format: Do / Don't card
 
 | | |
 |---|---|
+| **Human problem** | Leaking a password or key in a screenshot or workflow without realising it. |
 | **Objective** | Authority; protects DIY builders and buyers |
 | **Hook** | Your automation's keys are passwords. Treat them that way. |
 | **Main idea** | API keys, tokens and webhook URLs must be stored in credentials, never shown, minimally scoped, revoked if leaked, and verified on incoming webhooks. |
 | **Key value** | Five concrete security rules for anyone building or buying automations. |
+| **Takeaway (what did I just learn?)** | Treat API keys, tokens and webhook URLs like passwords: store them in credentials and never show them. |
 | **CTA** | Send it to someone who builds automations. |
-| **Visual concept** | Key icon with a padlock; five rule rows with shield icons. |
+| **Visual concept** | Key-and-padlock illustration over a two-column Do / Don't card. |
 | **Words on image** | 58 |
 | **Spec** | Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image |
 
@@ -133,7 +135,7 @@ Series: Automate This · Pillar: Automation & n8n · Format: Checklist
   - Give each app only the access it needs.
   - Leaked a key? Revoke it and make a new one. Today.
   - Check incoming webhooks really come from the sender (signatures).
-- **Layout:** Dark background. Large key + padlock illustration top. Five rows with shield icons. Series tag top-left. No footer.
+- **Layout:** Dark background. Key + padlock illustration top. Two columns: green DO (store in credentials, minimal access, verify signatures) and red DON'T (show tokens on screen, wait to revoke a leaked key). Series tag top-left.
 
 **Caption**
 
@@ -164,10 +166,12 @@ Series: Steal This Prompt · Pillar: Practical AI · Format: Prompt card
 
 | | |
 |---|---|
+| **Human problem** | Launching something and only then noticing the obvious gap. |
 | **Objective** | Saves among sellers, freelancers and organisers |
 | **Hook** | Before you launch anything, ask AI this |
 | **Main idea** | A 4-question review prompt catches gaps, confusion, risks and complexity before launch. |
 | **Key value** | Copy-paste pre-launch checklist prompt. |
+| **Takeaway (what did I just learn?)** | Ask AI what you forgot, what will confuse a newcomer, what could go wrong and what's too complicated. |
 | **CTA** | Save it. |
 | **Visual concept** | Rocket icon with a magnifier; four question chips. |
 | **Words on image** | 49 |
@@ -198,8 +202,6 @@ Before you launch an offer, an event, a website or a job post, ask AI to find wh
 
 Question 2 is the one that saves money. You can't see your own plan like a stranger does.
 
-Save this.
-
 #AItips #smallbusiness #planning
 ```
 **Production notes:** Prompt-card template.
@@ -210,22 +212,24 @@ Save this.
 
 ### #093 · D24-I1 · Day 24 · Wed 04 Nov · 09:30 BST · IMAGE
 **Not sure what to charge? Ask AI for 3 pricing tiers**  
-Series: Steal This Prompt · Pillar: Practical AI · Format: Prompt card
+Series: Steal This Prompt · Pillar: Practical AI · Format: Package mock
 
 | | |
 |---|---|
+| **Human problem** | Not knowing what to charge and quoting a different price every time. |
 | **Objective** | Saves among freelancers and service businesses |
-| **Hook** | Not sure what to charge? Ask AI for 3 tiers |
+| **Hook** | Not sure what to charge? Build 3 packages |
 | **Main idea** | Give AI your service, customers, costs and time; get basic/standard/premium packages with inclusions; validate against real competitors. |
 | **Key value** | A packaging prompt + the reminder that the market sets prices. |
+| **Takeaway (what did I just learn?)** | Ask AI to draft three packages with clear 'not included' lines, then check real competitor prices. |
 | **CTA** | Save it. |
-| **Visual concept** | Three price-tier cards (small, medium, large) with blank price tags. |
-| **Words on image** | 52 |
+| **Visual concept** | Three package cards (Basic, Standard, Premium) like a real price page, with the prompt underneath. |
+| **Words on image** | 50 |
 | **Spec** | Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image |
 
 **On-image copy (use exactly)**
 
-- **Headline:** Not sure what to charge? Ask AI for 3 tiers
+- **Headline:** Not sure what to charge? Build 3 packages
 - **Body:**
   - “I offer [service] to [customers] in [city].
   - My costs: [list]. Time per job: [X hours].
@@ -233,7 +237,7 @@ Series: Steal This Prompt · Pillar: Practical AI · Format: Prompt card
   - For each: what's included, what's not, and a price range.”
   - Then check real competitor prices yourself.
 - **Footer:** AI suggests. The market decides.
-- **Layout:** Light background. Three ascending tier cards across the top with blank price tags. Prompt block below. Footer bottom.
+- **Layout:** Light background. Three package cards side by side (Basic / Standard / Premium) with blank price tags and 'included / not included' rows. The prompt block runs underneath. Footer bottom.
 
 **Caption**
 
@@ -249,8 +253,6 @@ The “not included” line is gold. It stops scope creep before it starts.
 
 Then check real competitor prices yourself. AI suggests; the market decides.
 
-Save this.
-
 #freelancing #pricing #AItips
 ```
 **Production notes:** Prompt-card template with tier graphic.
@@ -261,14 +263,16 @@ Save this.
 
 ### #095 · D24-I2 · Day 24 · Wed 04 Nov · 18:30 BST · IMAGE
 **3 rules that beat almost every AI scam**  
-Series: AI Myth Check · Pillar: AI literacy & safety · Format: Checklist
+Series: AI Myth Check · Pillar: AI literacy & safety · Format: Three-rule card
 
 | | |
 |---|---|
+| **Human problem** | AI-powered scams that sound and look more real every month. |
 | **Objective** | Shares; protection |
 | **Hook** | 3 rules that beat almost every AI scam |
 | **Main idea** | Second-channel verification, treating urgency as a red flag, and never sharing OTPs/PINs defeat voice, video and text scams. |
 | **Key value** | Three memorable rules that work regardless of the scam's technology. |
+| **Takeaway (what did I just learn?)** | Verify on a second channel, treat urgency as a red flag and never share OTPs or PINs. |
 | **CTA** | Send it to someone who'd panic first and check later. |
 | **Visual concept** | Three large numbered shields. |
 | **Words on image** | 62 |
@@ -312,13 +316,15 @@ Series: Hidden Button · Pillar: AI literacy & safety · Format: Hidden feature 
 
 | | |
 |---|---|
+| **Human problem** | Not knowing whether your AI chats are being used to train models. |
 | **Objective** | Privacy trust; saves |
 | **Hook** | Don't want your chats used for AI training? Check this |
 | **Main idea** | ChatGPT's 'Improve the model for everyone' and Gemini's 'Keep Activity' settings control whether chats help train models. |
 | **Key value** | Where to find both settings and the trade-offs. |
-| **CTA** | Save it. |
+| **Takeaway (what did I just learn?)** | Check ChatGPT's 'Improve the model for everyone' and Gemini's 'Keep Activity' settings, and know the trade-offs. |
+| **CTA** | None. Ends with where to find the settings. |
 | **Visual concept** | Two toggle switches labelled with each app's setting name (drawn). |
-| **Words on image** | 62 |
+| **Words on image** | 58 |
 | **Spec** | Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image |
 
 **On-image copy (use exactly)**
@@ -327,7 +333,7 @@ Series: Hidden Button · Pillar: AI literacy & safety · Format: Hidden feature 
 - **Body:**
   - ChatGPT: Settings → Data controls → “Improve the model for everyone”.
   - Gemini: “Keep Activity” (formerly Gemini Apps Activity) in your activity settings.
-  - Turning it off can change history features. Read the note on screen.
+  - Trade-off: Gemini skills need Keep Activity turned on.
   - Work account? Your company's settings may already decide this.
 - **Footer:** Setting names change. Search the app's help page for 'data controls'.
 - **Layout:** Light background. Two large drawn toggle switches side by side labelled 'ChatGPT' and 'Gemini' with setting names. Notes below. Footer small.
@@ -340,18 +346,16 @@ Want to keep your chats out of AI training? Two settings to check:
 ChatGPT: Settings → Data controls → “Improve the model for everyone”
 Gemini: “Keep Activity” (the new name for Gemini Apps Activity)
 
-Turning these off can change how history works. Read the note on screen before you switch.
+Turning these off can change how history works, and Gemini skills need Keep Activity on. Read the note on screen before you switch.
 Using a work account? Your company's admin settings may already decide this.
 
 Setting names change; search each app's help page for “data controls”.
-
-Save this.
 
 #privacy #ChatGPT #GeminiAI
 ```
 **Production notes:** Verify both setting names in the live apps the day before posting. Draw toggles; no logos.
 
-**Sources:** [Data controls in ChatGPT](https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt) — OpenAI Help Center, current · [Gemini app personalizes responses based on past chats, plus new privacy controls](https://blog.google/products/gemini/temporary-chats-privacy-controls/) — Google Blog (+ Gemini Apps Help 'Manage & delete your activity'), 2025-08
+**Sources:** [Data controls in ChatGPT](https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt) — OpenAI Help Center, current · [Gemini app personalizes responses based on past chats, plus new privacy controls](https://blog.google/products/gemini/temporary-chats-privacy-controls/) — Google Blog (+ Gemini Apps Help 'Manage & delete your activity'), 2025-08 · [Google Is Replacing Gemini Gems With Skills Nov 17](https://www.techrepublic.com/article/news-gemini-gems-skills-migration/) — TechRepublic (also 9to5Google, 2026-09-27 and 2026-09-30), 2026-09-30 ⚠️ re-check within 48 h of posting
 
 ---
 
@@ -359,16 +363,18 @@ Save this.
 
 ### #099 · D25-I2 · Day 25 · Thu 05 Nov · 18:30 BST · IMAGE
 **Turn 50 unread emails into a 5-minute to-do list**  
-Series: Steal This Prompt · Pillar: Workflows & productivity · Format: Prompt card
+Series: Steal This Prompt · Pillar: Workflows & productivity · Format: Sorting trays card
 
 | | |
 |---|---|
+| **Human problem** | An overflowing inbox that hides what actually needs a reply. |
 | **Objective** | Saves among office workers |
 | **Hook** | Turn 50 unread emails into a 5-minute to-do list |
 | **Main idea** | Sort emails into reply today / this week / read / ignore with one-line suggested replies, then reply yourself. |
 | **Key value** | An inbox triage prompt that works with pasted text or an AI app's Gmail connection. |
+| **Takeaway (what did I just learn?)** | Ask AI to sort emails into reply today, this week, read and ignore, then write the replies yourself. |
 | **CTA** | Save it. |
-| **Visual concept** | Overflowing inbox icon → four labelled trays. |
+| **Visual concept** | An overflowing inbox pouring into four labelled trays, with the two prompts on the trays. |
 | **Words on image** | 52 |
 | **Spec** | Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image |
 
@@ -381,7 +387,7 @@ Series: Steal This Prompt · Pillar: Workflows & productivity · Format: Prompt 
   - “For ‘reply today’, suggest a one-line reply for each.”
   - Then you reply. Not the AI.
 - **Footer:** Remove private or confidential emails before pasting.
-- **Layout:** Light background. Left: overflowing inbox icon. Right: four labelled trays. Prompt lines below. Footer small.
+- **Layout:** Light background. Overflowing inbox icon at the top pours into four labelled trays (Reply today / This week / Just read / Ignore). The two prompts sit on the trays. Footer small.
 
 **Caption**
 
@@ -394,8 +400,6 @@ Series: Steal This Prompt · Pillar: Workflows & productivity · Format: Prompt 
 4. Then you reply. Not the AI.
 
 Remove private or confidential emails before pasting anything.
-
-Save this.
 
 #productivity #email #AItips
 ```
@@ -411,10 +415,12 @@ Series: Steal This Prompt · Pillar: Practical AI · Format: Prompt card
 
 | | |
 |---|---|
+| **Human problem** | Pasting an error into AI and getting ten random fixes that don't work. |
 | **Objective** | Saves; universal troubleshooting |
 | **Hook** | Stuck on an error? Paste this, not just the error |
 | **Main idea** | Error text + what you did + what you expected + what you tried gets a far better fix than the error alone. |
 | **Key value** | A troubleshooting prompt template that works for any software. |
+| **Takeaway (what did I just learn?)** | Give AI the error, what you did, what you expected and what you tried, and ask for one fix first. |
 | **CTA** | Save it. |
 | **Visual concept** | Red error dialog icon + four-part template card. |
 | **Words on image** | 51 |
@@ -447,8 +453,6 @@ Explain the cause in simple words, then give me ONE fix to try first.”
 
 Works for Excel, WordPress, phones, printers and n8n.
 
-Save this.
-
 #techtips #AItips #troubleshooting
 ```
 **Production notes:** Prompt-card template.
@@ -463,13 +467,15 @@ Series: Work With Me · Pillar: Work with me (n8n services) · Format: Checklist
 
 | | |
 |---|---|
+| **Human problem** | DIY automations that quietly fail, duplicate data or let AI make risky changes. |
 | **Objective** | Authority + lead generation from DIY builders |
 | **Hook** | 5 mistakes I see in DIY automations |
 | **Main idea** | No alerts, testing on customers, giant workflows, no duplicate checks and unsupervised AI money decisions cause most DIY failures. |
 | **Key value** | A practical audit list for anyone who built their own automation. |
-| **CTA** | Message 'AUTOMATE' if you want a second pair of eyes. |
+| **Takeaway (what did I just learn?)** | Add error alerts, test with fake data, split big workflows, check for duplicates and keep humans on money decisions. |
+| **CTA** | Ask which mistake is in the viewer's workflow right now. |
 | **Visual concept** | Five red warning rows with small illustrations. |
-| **Words on image** | 55 |
+| **Words on image** | 49 |
 | **Spec** | Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image |
 
 **On-image copy (use exactly)**
@@ -481,8 +487,8 @@ Series: Work With Me · Pillar: Work with me (n8n services) · Format: Checklist
   - One giant workflow doing ten jobs. Hard to fix.
   - No duplicate check: orders counted twice.
   - AI allowed to change prices or send refunds alone.
-- **Footer:** Built it yourself? Fix these first. Want a second look? Message “AUTOMATE”.
-- **Layout:** Dark background. Five rows each with a red warning icon and a tiny illustration. Footer as CTA bar.
+- **Footer:** Built it yourself? Fix these first.
+- **Layout:** Dark background. Five rows each with a red warning icon and a tiny illustration. Footer as a short bold line at the bottom.
 
 **Caption**
 
@@ -497,7 +503,7 @@ Built your own automation? Check for these 5 mistakes:
 
 Fix these first and most problems disappear.
 
-Want a second pair of eyes on your workflow? Message me “AUTOMATE”.
+Which of these is in your workflow right now?
 
 #n8n #automation #nocode
 ```
@@ -513,10 +519,12 @@ Series: Automate This · Pillar: Automation & n8n · Format: Flow diagram
 
 | | |
 |---|---|
+| **Human problem** | Every new client starts a little differently, and something always gets forgotten. |
 | **Objective** | Saves; service idea for freelancers/agencies |
 | **Hook** | Client onboarding on autopilot |
 | **Main idea** | An onboarding form triggers a Drive folder, welcome email, kickoff slot and a phone summary. |
 | **Key value** | A concrete workflow that makes every client start the same, professional way. |
+| **Takeaway (what did I just learn?)** | One onboarding form can create the folder, send the welcome email, offer a call slot and alert you. |
 | **CTA** | Save it. |
 | **Visual concept** | Form → four parallel outcomes (folder, email, calendar, phone). |
 | **Words on image** | 65 |
@@ -548,8 +556,6 @@ When a new client fills your onboarding form:
 
 Every client gets the same professional start, even in your busiest week.
 
-Save this.
-
 #freelancing #automation #n8n
 ```
 **Production notes:** Fan-out flow template.
@@ -564,11 +570,13 @@ Series: Steal This Prompt · Pillar: Workflows & productivity · Format: Framewo
 
 | | |
 |---|---|
+| **Human problem** | Writing long captions that nobody reads past the first line. |
 | **Objective** | Saves among page owners and creators |
 | **Hook** | A Facebook caption structure that gets read |
 | **Main idea** | Hook under ~110 characters, a useful middle, one clear ask; AI can draft hook options. |
 | **Key value** | A caption framework + a hook-writing prompt tied to Facebook's 'See more' cut-off. |
-| **CTA** | Save it. |
+| **Takeaway (what did I just learn?)** | Put the hook in the first 110 characters, the useful part in the middle and one clear ask at the end. |
+| **CTA** | None. Ends by pointing out that this page uses the same structure. |
 | **Visual concept** | Phone mock of a caption with the 'See more' cut-off line marked. |
 | **Words on image** | 58 |
 | **Spec** | Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image |
@@ -596,7 +604,7 @@ Last: one clear ask: save, send or message. Not all three.
 AI helps with the hardest part:
 “Write 3 hooks under 110 characters for this post: [paste]. No questions, no emoji at the start.”
 
-Save this.
+This page uses exactly this structure.
 
 #FacebookTips #copywriting #contentcreator
 ```
@@ -614,11 +622,13 @@ Series: Steal This Prompt · Pillar: Practical AI · Format: Prompt card
 
 | | |
 |---|---|
+| **Human problem** | Teachers and tutors spending evenings on lesson plans, practice sets and feedback. |
 | **Objective** | Shares in teacher/tutor communities |
 | **Hook** | 3 time-saving AI prompts for teachers and tutors |
 | **Main idea** | Lesson plans, practice sets and kind feedback can be drafted quickly with three structured prompts. |
 | **Key value** | Three copy-paste prompts + the 'check before class' rule. |
-| **CTA** | Send it to a teacher or tutor. |
+| **Takeaway (what did I just learn?)** | Three structured prompts can draft lesson plans, graded practice sets and kind feedback for you to check. |
+| **CTA** | Ask which prompt would save teachers the most time. |
 | **Visual concept** | Chalkboard-style card with three prompt chips. |
 | **Words on image** | 60 |
 | **Spec** | Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image |
@@ -644,7 +654,7 @@ Feedback: “Here's a student's answer: [paste]. Give 2 specific strengths and 1
 
 Always check facts and answers before using them in class.
 
-Send this to a teacher or tutor you know.
+Teachers and tutors: which of these would save you the most time?
 
 #teachers #education #AItips
 ```
@@ -660,10 +670,12 @@ Series: Automate This · Pillar: Automation & n8n · Format: Stack card
 
 | | |
 |---|---|
+| **Human problem** | Thinking automation needs expensive software subscriptions. |
 | **Objective** | Saves; shows how cheap a start can be |
 | **Hook** | A simple automation stack for a 1-person business |
 | **Main idea** | Forms, Sheets, Telegram alerts, Gmail, n8n and pay-per-use AI cover most needs for a solo business. |
 | **Key value** | A low-cost starter stack with honest cost notes. |
+| **Takeaway (what did I just learn?)** | Forms, Sheets, a Telegram bot, Gmail, n8n and pay-per-use AI are enough to start automating a one-person business. |
 | **CTA** | Save it. |
 | **Visual concept** | Stacked layers like a cake: forms, data, alerts, email, glue, AI. |
 | **Words on image** | 57 |
@@ -696,8 +708,6 @@ You don't need expensive software to automate a one-person business. A simple st
 
 Start with one workflow. Add the next one when the first has run quietly for a month.
 
-Save this.
-
 #n8n #smallbusiness #automation
 ```
 **Production notes:** Layer-cake template. No logos.
@@ -710,16 +720,18 @@ Save this.
 
 ### #113 · D29-I1 · Day 29 · Mon 09 Nov · 09:30 BST · IMAGE
 **Ask your sales sheet these 4 questions with AI**  
-Series: Steal This Prompt · Pillar: Workflows & productivity · Format: Prompt card
+Series: Steal This Prompt · Pillar: Workflows & productivity · Format: Annotated example
 
 | | |
 |---|---|
+| **Human problem** | Having months of sales data and never looking at what it says. |
 | **Objective** | Saves among sellers and managers |
 | **Hook** | Ask your sales sheet these 4 questions with AI |
 | **Main idea** | Top products, best days, lapsed customers and hidden patterns turn a sales sheet into decisions. |
 | **Key value** | Four analysis prompts + privacy and verification rules. |
+| **Takeaway (what did I just learn?)** | Ask AI four questions about your sales sheet to find top products, best days, lapsed customers and patterns. |
 | **CTA** | Save it for month-end. |
-| **Visual concept** | Spreadsheet icon with a magnifier and four question bubbles. |
+| **Visual concept** | A small sales sheet with four numbered callouts pointing at the answers each question finds. |
 | **Words on image** | 53 |
 | **Spec** | Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image |
 
@@ -732,7 +744,7 @@ Series: Steal This Prompt · Pillar: Workflows & productivity · Format: Prompt 
   - “Which customers ordered before but not in 60 days?”
   - “What's one pattern I'm missing?”
 - **Footer:** Upload a copy without phone numbers. Check any number that matters.
-- **Layout:** Light background. Spreadsheet illustration with a magnifier on the left; four question bubbles on the right. Footer bottom.
+- **Layout:** Light background. Mini spreadsheet (fictional data) in the top half with four numbered callout bubbles; the four questions below, matched by number. Footer bottom.
 
 **Caption**
 
@@ -746,9 +758,7 @@ Your sales sheet already knows things you don't. Upload a copy (without phone nu
 
 Question 3 is a ready-made list for a “we miss you” offer.
 
-Double-check any number before you make a decision on it.
-
-Save this for month-end.
+Double-check any number before you make a decision on it. Try it at month-end.
 
 #smallbusiness #data #AItips
 ```
@@ -764,10 +774,12 @@ Series: Work With Me · Pillar: Work with me (n8n services) · Format: Checklist
 
 | | |
 |---|---|
+| **Human problem** | Receiving an automation you can't understand, fix or even log into. |
 | **Objective** | Trust; sets buyer expectations |
 | **Hook** | What you should get when an automation is handed over |
 | **Main idea** | A proper handover includes a map, a video, ownership of accounts, alerts, a troubleshooting list and a shown test. |
 | **Key value** | A buyer checklist for any automation project. |
+| **Takeaway (what did I just learn?)** | A proper handover includes a map, a video, accounts in your name, alerts, a fix-first list and a shown test. |
 | **CTA** | Save it before you hire anyone. |
 | **Visual concept** | Gift-box-style card with six checklist items. |
 | **Words on image** | 63 |
@@ -816,20 +828,22 @@ Series: Automate This · Pillar: Automation & n8n · Format: Quiz card
 
 | | |
 |---|---|
+| **Human problem** | Not knowing which tasks to automate and which to keep doing yourself. |
 | **Objective** | Engagement through a genuine quiz; reinforce the month's lessons |
 | **Hook** | Quiz: which 2 of these should you automate? |
 | **Main idea** | Rule-based, repetitive tasks (price replies, form copying) should be automated; judgment and relationship tasks shouldn't. |
 | **Key value** | A self-test that consolidates the 'rules vs judgment' lesson. |
-| **CTA** | Check the answers in the caption. How many did you get right? |
+| **Takeaway (what did I just learn?)** | Automate tasks that follow rules; keep tasks that need judgment or relationships. |
+| **CTA** | Ask how many answers viewers got right (no vote-bait: answers are in the caption). |
 | **Visual concept** | Four lettered quiz cards in a 2×2 grid. |
-| **Words on image** | 37 |
+| **Words on image** | 40 |
 | **Spec** | Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image |
 
 **On-image copy (use exactly)**
 
 - **Headline:** Quiz: which 2 of these should you automate?
 - **Body:**
-  - A. Replying to “price?” messages
+  - A. Sending the same delivery-charge reply all day
   - B. Choosing which supplier to trust
   - C. Copying form entries into a sheet
   - D. Apologising to an upset long-time client
@@ -841,7 +855,7 @@ Series: Automate This · Pillar: Automation & n8n · Format: Quiz card
 ```text
 Quiz: which 2 of these should you automate?
 
-A. Replying to “price?” messages
+A. Sending the same delivery-charge reply all day
 B. Choosing which supplier to trust
 C. Copying form entries into a sheet
 D. Apologising to an upset long-time client
@@ -870,11 +884,13 @@ Series: Work With Me · Pillar: Work with me (n8n services) · Format: Before/af
 
 | | |
 |---|---|
+| **Human problem** | Asking for automation help with a vague description and getting vague answers back. |
 | **Objective** | Better-quality enquiries; Messenger leads |
 | **Hook** | How to describe a task so it can be automated |
 | **Main idea** | An automation-ready description has a trigger, steps, what-ifs and a result. |
 | **Key value** | A vague vs ready example that teaches people to brief any automation builder. |
-| **CTA** | Message 'AUTOMATE' with your 'ready' version. |
+| **Takeaway (what did I just learn?)** | Describe a task with its trigger, steps, what-ifs and result so anyone can quote or build it. |
+| **CTA** | Invite viewers to write their task in this format in the comments; Asif replies. |
 | **Visual concept** | Grey 'vague' speech bubble vs green 'ready' speech bubble with labelled parts. |
 | **Words on image** | 55 |
 | **Spec** | Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image |
@@ -888,7 +904,7 @@ Series: Work With Me · Pillar: Work with me (n8n services) · Format: Before/af
   - If the address is missing, ask once.
   - Then send a confirmation in Bangla.”
   - Ready = trigger + steps + what-ifs + result.
-- **Footer:** Send me your ready version: message “AUTOMATE”.
+- **Footer:** Write yours in the comments. I'll reply.
 - **Layout:** Light background. Top: grey 'Vague' bubble. Below: larger green 'Ready' bubble with small labels pointing to trigger, steps, what-if, result. Formula line. Footer CTA bar.
 
 **Caption**
@@ -900,7 +916,7 @@ Series: Work With Me · Pillar: Work with me (n8n services) · Format: Before/af
 
 A ready description has 4 parts: trigger + steps + what-ifs + result.
 
-Write yours like this and any automation builder can quote it in minutes, including me. Message me “AUTOMATE” with your ready version.
+Write yours like this and any automation builder can quote it in minutes. Try it: write your task in this format in the comments, and I'll reply to every one.
 
 #automation #n8n #smallbusiness
 ```

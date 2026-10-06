@@ -65,7 +65,8 @@ function card(p){
   let h = `<details id="${p.id}"><summary><span class="pill ${p.type}">${isR?"REEL "+p.runtime+"s":"IMAGE"}</span>
   <span class="meta">#${String(p.post_no).padStart(3,"0")} · ${p.id} · ${p.time} BST</span><span class="topic">${esc(p.topic)}</span>
   <span class="meta">${p.pillar} · ${esc(p.series)}</span></summary><div class="body"><dl>`;
-  [["Objective","objective"],["Hook","hook"],["Main idea","main_idea"],["Key value","value"],["CTA","cta"],["Visual concept","visual_concept"],["Format","format"]]
+  [["Human problem","human_problem"],["Objective","objective"],["Hook","hook"],["Open loop","open_loop"],["Main idea","main_idea"],["Key value","value"],["Payoff","payoff"],["Takeaway","takeaway"],["CTA","cta"],["Visual concept","visual_concept"],["Format","format"]]
+    .filter(([l,k]) => p[k])
     .forEach(([l,k]) => h += `<dt>${l}</dt><dd>${esc(p[k])}</dd>`);
   if (p.loop) h += `<dt>Loop</dt><dd>${esc(p.loop)}</dd>`;
   if (isR) h += `<dt>Pace</dt><dd>${p.wps} words/sec</dd>`;

@@ -1,6 +1,6 @@
 # 30-Day Facebook Content System: Practical AI + n8n Automation
 
-For the Facebook page **Asif** (facebook.com/Asif.myself.page). **120 production-ready posts** over 30 days: **60 Reels + 60 images**, 2 of each every day, from **Mon 12 Oct to Tue 10 Nov 2026**. Built on research verified 6 Oct 2026.
+For the Facebook page **Asif** (facebook.com/Asif.myself.page). **120 production-ready posts** over 30 days: **60 Reels + 60 images**, 2 of each every day, from **Mon 12 Oct to Tue 10 Nov 2026**. Built on research verified 6 Oct 2026, then refined in a final human-first remediation pass (see `07-qc/manual-qc.md` §5).
 
 ## Start here
 
@@ -17,10 +17,11 @@ For the Facebook page **Asif** (facebook.com/Asif.myself.page). **120 production
 
 ## The plan in numbers
 
-- **Pillars:** Automation & n8n 31 · Practical AI 26 · Service ("work with me") 16 · Workflows 15 · AI literacy & safety 15 · Hidden features 10 · News 7
-- **Reels:** 28–51 s (median 42 s), average spoken pace 2.28 words/s, ≥ 5 documented retention drivers each, 7 loop Reels, every Reel filmed by you (Meta's 2026 originality rules)
-- **Images:** 4:5, 1440×1800, ≤ 75 words, one idea each
-- **CTAs:** save 59 · share 24 · message "AUTOMATE" 21 · follow 12 · genuine question 4. No engagement bait, no links in post bodies.
+- **Pillars:** Automation & n8n 31 · Practical AI 26 · Service ("work with me") 16 · Workflows 15 · AI literacy & safety 15 · Hidden features 11 · News 6
+- **Human-first:** every post records the real problem it solves and a one-sentence takeaway; every Reel records its open loop and where it pays off
+- **Reels:** 30–51 s (median 43 s), average spoken pace 2.27 words/s, ≥ 5 documented retention drivers each, 5 loop Reels (kept only where they help), 16 Reel formats with no format 3 days running, every Reel filmed by you (Meta's 2026 originality rules)
+- **Images:** 4:5, 1440×1800, ≤ 75 words, one idea each, 31 layout formats (no format 3 days running)
+- **CTAs:** save 42 · genuine question 27 · share 16 · none 12 · hard service CTA 12 (max 1/day, service posts only) · soft service line 6 · follow 5. 14 of 30 days carry no service CTA. No engagement bait, no links in post bodies.
 - **Posting times (BST):** 09:30 image · 13:30 Reel · 18:30 image · 21:00 Reel
 
 ## Folder map
@@ -33,7 +34,7 @@ For the Facebook page **Asif** (facebook.com/Asif.myself.page). **120 production
 05-image-posts/  week-1.md … week-4.md                                 (generated)
 06-production/   workflow.md · design-system.md · sourcing-and-licensing.md · image-fields.csv
 07-qc/           qc-report.md (generated) · manual-qc.md
-data/            posts-w1…w4.yaml  ← the single source of truth · sources.yaml (45 dated sources)
+data/            posts-w1…w4.yaml  ← the single source of truth · sources.yaml (47 dated sources)
 tools/           build.py (generate + QC) · export_image_fields.py · viewer_template.html
 viewer.html      (generated)
 ```

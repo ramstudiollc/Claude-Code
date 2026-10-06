@@ -32,7 +32,7 @@ Contrast: body text vs background ≥ 4.5:1 (ink on paper and white on ink both 
 - **Footer:** 32–36 px, muted, bottom margin 90 px.
 - **Page handle** (small, bottom-right, 28 px): your page name. It gives credit when the image gets shared without the caption.
 
-### The 13 image templates
+### The image templates (31 format labels on these layout families; no format runs 3 days in a row)
 
 | Template | Used by (format field) | Layout rule |
 |---|---|---|
@@ -49,6 +49,12 @@ Contrast: body text vs background ≥ 4.5:1 (ink on paper and white on ink both 
 | Hidden-feature card | Hidden feature card | **Drawn** UI mock (simplified), not a screenshot |
 | Service/CTA | Service menu, Process steps, FAQ card | Full-width accent CTA bar at the bottom with Messenger icon |
 | Quiz / stack | Quiz card, Stack card | 2×2 grid / layered bands |
+| Chat mock | Before/after chat mock | Phone frame; customer bubble, red-outlined weak reply, green-outlined good reply |
+| Staircase / timeline | Staircase card, Timeline card | Ascending steps or a 5:00 → 0:00 countdown with stops |
+| Package mock | Package mock | Three price-page cards with included / not-included rows |
+| Sorting trays | Sorting trays card | Inbox pouring into four labelled trays |
+| Annotated example | Annotated example, Annotated spreadsheet | Mini sheet with numbered callouts matched to the text |
+| Do / don't, tiers, rules | Do / Don't card, Three-tier card, Three-rule card, Quadrant card, Step-by-step card | Two columns, three bands, three shields, 2×2 quadrants or numbered steps around a stopwatch |
 
 ## 3. Reel layout (1080 × 1920, 9:16)
 
@@ -80,6 +86,7 @@ y 1250  ├───────────────────────
 3. **Numbered list cards** (D05-R1, D07-R1, D16-R2, D18-R2, D28-R2, D29-R1): card slides in every 4–5 s with a large numeral.
 4. **Canvas walk-through** (Build Log / Automate This demos): face-cam + node-by-node zoom + phone result shot.
 5. **Before/after split** (D03-R1, D07-R2, D10-R2, D12-R1, D14-R2, D28-R1): vertical or horizontal split; the "after" side gets circled features.
+6. **Text-led** (D16-R2, D29-R1): kinetic typography on a plain background, Asif's voice from frame 1, a short face shot near the end. It gives sound-off viewers and the visual rhythm of the week a break from talking heads.
 
 ## 4. Covers (Reel thumbnails)
 

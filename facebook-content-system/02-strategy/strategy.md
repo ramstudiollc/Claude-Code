@@ -26,10 +26,10 @@ Audience priority: (1) F-commerce and small-business owners, the n8n buyers; (2)
 |---|---|---|---|
 | PA | **Practical AI**: prompting and everyday use | 26 (22%) | Reach + saves; builds "this guy knows" |
 | AU | **Automation & n8n**: concepts, workflows, builds | 31 (26%) | Authority; educates future buyers |
-| HF | **Hidden features & tool discoveries** | 10 (8%) | Novelty; shares |
+| HF | **Hidden features & tool discoveries** | 11 (9%) | Novelty; shares |
 | WF | **Workflows & productivity systems** | 15 (12%) | Saves; relatability |
 | LIT | **AI literacy**: myths, mistakes, safety | 15 (12%) | Trust; shares to family and friends |
-| NEWS | **Current developments → what it means for you** | 7 (6%) | Timeliness; capped because news ages |
+| NEWS | **Current developments → what it means for you** | 6 (5%) | Timeliness; capped because news ages |
 | SVC | **Work with me**: n8n services, proof, process | 16 (13%) | Conversion via Messenger |
 
 *(Final counts are computed and printed by `tools/build.py`; see `07-qc/qc-report.md`.)*
@@ -67,16 +67,21 @@ Use a consistent **series tag** in the top-left corner of images and in the firs
 6. **Banned words** (checked automatically): unlock, elevate, leverage, seamless, robust, game-changer/game-changing, revolutionize, supercharge, delve, cutting-edge, innovative, world-class, "in today's fast-paced world", harness, unleash, skyrocket, next level, mind-blowing, insane.
 7. **No invented numbers.** Every statistic comes from `data/sources.yaml`. Any example number is labelled as an example ("say you spend 20 minutes a day…").
 8. **No photorealistic AI people.** Use real footage of Asif, real screens and designed graphics. Any AI-made realistic media gets Meta's AI-disclosure toggle.
+9. **No pet phrases.** No caption ending or closing Reel line is used more than twice (checked automatically). Use "X, not Y" contrasts and "Here's…" openers sparingly; they are the fastest giveaway of machine-written copy.
 
 ## 7. CTA policy
 
-| Content type | Allowed CTA | Example |
+| Content type | Allowed CTA | Example from the plan |
 |---|---|---|
-| Reference (prompts, checklists, frameworks) | Save | "Save this for the next time AI gives you a vague answer." |
-| Relatable / safety | Share to a specific person | "Send this to the person in your family who answers every unknown call." |
-| Opinion / experience | A genuine question | "Which task would you automate first: orders, replies, or reports?" |
-| Series content | Follow for the series | "Follow for the next 'Explain It Simply'." Max 1 in 5 posts. |
-| Automation / service | Message keyword | "Message me 'AUTOMATE' and tell me the task. I'll tell you if it can be automated." |
+| Reference (prompts, checklists, frameworks) | Save, phrased for the moment of use | "Use it on the next bank letter, school notice or client brief that lands on you." (D15-I1) |
+| Relatable / safety | Share to a specific person | "Send this to your family group tonight." (D10-R1) |
+| Experience / opinion | A question about the viewer's own life | "What keeps slipping for you every week?" (D26-R1) |
+| Series content | Follow, sparingly (5 posts) | "Follow for the next Explain It Simply." (D04-R1) |
+| Strong standalone value | **No CTA** (12 posts) | The takeaway is the last line (D12-I1: "Context beats costume.") |
+| Build demos (AU) | **Soft service line**, caption only (6 posts) | "Need something like this for your business? I build custom n8n automations." (D09-R2) |
+| Service posts (SVC) | **Hard service CTA**, max 1 per day (12 posts) | "Have a repetitive task you want to automate? Message me." (D18-R2) |
+
+**Service balance (checked automatically):** hard "message me" CTAs only on SVC posts, at most one per day and 14 in total (the plan uses 12, on Days 3, 7, 10, 13, 16, 18, 20, 22, 24, 26, 28, 30). Soft one-line mentions only on build demos (6). **14 of 30 days carry no service CTA at all**, so the page reads as a teacher who also builds, not as an ad.
 
 **Never:** comment-bait ("comment YES"), tag-bait, share-bait, fake scarcity, links in the post body (Meta's link-limit test). Put links in the first comment if one is truly needed.
 
@@ -84,30 +89,43 @@ Use a consistent **series tag** in the top-left corner of images and in the firs
 
 ## 8. Retention playbook (applied to every Reel)
 
-**The 10 retention drivers.** Every Reel lists ≥ 5 in its script block, each with a reason:
-`hook` · `curiosity` (an information gap) · `usefulness` (immediately usable) · `relatability` · `novelty` · `problem_solution` · `visual_progression` · `payoff` · `rewatch` · `save_share`
+**Human-first arc (every post):** human problem → consequence → curiosity → useful solution → demonstration → result. Each post records its `human_problem` and a one-sentence `takeaway` (≤ 25 words, the answer to "what did I just learn?"). Each Reel also records its `open_loop` (the question the viewer is holding) and its `payoff` (where in the script that question is answered, with timestamps checked against the runtime).
 
-**Hook formulas used (rotated; no formula more than ~8 times):**
-1. *Mistake → fix:* "Your AI answers are generic because you answer first."
-2. *Contrast:* "Same prompt. Two answers. One line made the difference."
-3. *Hidden thing:* "There's a button on your phone that…"
-4. *Direct problem:* "If customers message you at 2 AM, watch this."
-5. *Myth:* "AI detectors don't work. Here's the proof."
-6. *Number with a payoff:* "Five signs a task should never be done by hand again."
-7. *POV:* "POV: it's 9 AM and you're copy-pasting the same order list. Again."
-8. *Simple question:* "What actually is a webhook? Think of a doorbell."
+**Scroll-stop test (applied to all 60 Reels in the final pass):**
+| Moment | Question | How the plan answers it |
+|---|---|---|
+| 1 s | Would I stop? | A recognisable situation on screen (a 2:07 AM message, a blinking router, a pile of receipts) |
+| 3 s | Do I know why this matters to me? | The hook names the viewer's problem or a surprising consequence |
+| 5–8 s | Am I curious enough to stay? | An open loop: the fix, the "why" or the "who can use it" is held back |
+| Middle | Is it moving? | A visible change each beat (node lights, card slides, before → after) |
+| End | Was it worth it? | The payoff answers the opening question, often by calling back to the first frame |
+| After | Save, share, comment? | One natural action, or none when the takeaway speaks for itself |
+
+**Retention drivers.** Every Reel still documents ≥ 5 genuine reasons to keep watching (`hook` · `curiosity` · `usefulness` · `relatability` · `novelty` · `problem_solution` · `visual_progression` · `payoff` · `rewatch` · `save_share`), but they describe what the Reel actually does. They are not tricks bolted on.
+
+**Hook patterns used (rotated; checked for generic openers):**
+1. *A specific moment:* "Two AM: “Price?” You reply at ten." (D03-R2)
+2. *Personal surprise:* "AI gave me a source. It doesn't exist." (D02-R2)
+3. *Consequence:* "One wrong AI reply can cost a customer." (D15-R2)
+4. *Recognition question:* "Router blinking red? Don't type it. Show it." (D02-R1)
+5. *Honest contradiction:* "I build automations. Every one will break." (D11-R2)
+6. *Shared memory → new idea:* "Remember when every phone needed a different charger?" (D25-R2)
+7. *Demonstration promise:* "Draw a messy box. Get a finished flyer." (D22-R1)
+8. *Local analogy:* "JSON is a tiffin box with labels." (D30-R1)
+
+Banned openers (checked automatically): "Today I…", "Here are…", "Did you know…", "AI is changing…", hooks ending in "Watch/Try/Do this", and more than one hook ending in "Here's why/how".
 
 **Pacing rules (checked automatically):**
 - Spoken pace ≤ 2.8 words/second per beat, ≤ 2.6 on average (≈ 155 wpm, comfortable for second-language listeners).
 - On-screen text ≤ 10 words per beat; key words only, never full sentences of narration.
 - First visual change within 2 s; no static shot longer than 4 s.
-- The hook is spoken **and** on screen in the first 2.5 s, with the face visible.
+- The hook is spoken **and** on screen within the first 3 s, with a face or a recognisable situation visible.
 
-**Loop playbook (used in 7 Reels, marked `loop:`; all are short concept Reels):**
-- **Sentence loop:** the last line ends mid-thought and the first line completes it ("…and that's why you should never let AI answer first." → "Your AI answers are generic because you answer first").
+**Loop playbook (kept in 5 Reels where it genuinely helps: D01-R1, D10-R1, D12-R2, D30-R1, D30-R2):**
+- **Sentence loop:** the last line ends mid-thought and the first line completes it ("Skip it, and…" → "your AI stays generic until you add this.").
 - **Visual loop:** the last frame matches the first (same framing, same object) so the replay feels continuous.
 - **Question loop:** the end asks the question the opening answers.
-- Loops are used on short concept Reels (20–40 s). Never on long demos, where they feel like a trick.
+- Loops are used on short concept Reels (20–40 s). Never on long demos, where they feel like a trick. Two earlier loops (D04-R1, D14-R1) were removed because a clear payoff line served the viewer better.
 
 ## 9. The n8n service funnel
 

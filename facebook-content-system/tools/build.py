@@ -41,7 +41,8 @@ DRIVERS = {
     "hook", "curiosity", "usefulness", "relatability", "novelty",
     "problem_solution", "visual_progression", "payoff", "rewatch", "save_share",
 }
-CTA_TYPES = {"save", "share", "question", "follow", "message", "none"}
+CTA_TYPES = {"save", "share", "question", "follow", "message", "soft", "none"}
+# message = hard service CTA (SVC posts only, max 1/day); soft = one low-key service line in the caption (AU/SVC builds)
 SPEC = {
     "reel": "Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · "
             "burned-in captions y1050–1250 · cover title inside centre 1080×1350",
@@ -52,13 +53,20 @@ BANNED = [
     "robust", "game-changer", "game changer", "game-changing", "revolutionize", "revolutionise", "revolutionary",
     "supercharge", "delve", "cutting-edge", "innovative", "world-class", "fast-paced world", "harness",
     "unleash", "skyrocket", "next level", "next-level", "mind-blowing", "insane",
+    "you won't believe", "this changes everything", "unlock your potential", "in today's world",
 ]
+GENERIC_HOOK = [r"^today,? i", r"^here are\b", r"^did you know", r"ai is changing", r"\b(watch|try|do) this\.?$",
+                r"^in this video", r"^hey guys", r"^hi everyone"]
 BAIT = [
     r"\bcomment (?:\"?yes|\"?1\b|below if)", r"\btype (?:\"?yes|1\b)", r"\btag (?:a|3|three|your) friends?\b",
     r"\bshare if\b", r"\blike if\b", r"\breact with\b", r"\bvote (?:with|by)\b",
 ]
-REQUIRED = ["id", "type", "series", "pillar", "format", "topic", "objective", "hook", "main_idea", "value",
-            "cta", "cta_type", "visual_concept", "production_notes", "caption", "hashtags"]
+REQUIRED = ["id", "type", "series", "pillar", "format", "topic", "human_problem", "objective", "hook", "main_idea",
+            "takeaway", "value", "cta", "cta_type", "visual_concept", "production_notes", "caption", "hashtags"]
+REQUIRED_REEL = ["open_loop", "payoff"]
+MAX_HARD_CTA = 14      # hard "message me" service CTAs across 120 posts
+MAX_SOFT_CTA = 8
+MAX_PROMPT_CARDS = 8
 WORD = re.compile(r"[A-Za-z0-9][A-Za-z0-9'’+\-./%×]*")
 
 # Pacing limits (see 02-strategy/strategy.md §8)
@@ -144,10 +152,12 @@ def qc(posts, sources):
 
     for p in posts:
         pid = p["id"]
-        for k in REQUIRED:
+        for k in REQUIRED + (REQUIRED_REEL if p.get("type") == "reel" else []):
             v = p.get(k)
             if v in (None, "", []):
                 E(f"{pid}: missing {k}")
+        if len(words(p.get("takeaway"))) > 25:
+            E(f"{pid}: takeaway {len(words(p.get('takeaway')))} words (>25, not one clear idea)")
         if p.get("pillar") not in PILLARS: E(f"{pid}: unknown pillar {p.get('pillar')}")
         if p.get("cta_type") not in CTA_TYPES: E(f"{pid}: bad cta_type {p.get('cta_type')}")
         for s in p.get("sources", []) or []:
@@ -175,6 +185,9 @@ def qc(posts, sources):
                 E(f"{pid}: engagement-bait pattern {rx}")
 
         if p["type"] == "reel":
+            for rx in GENERIC_HOOK:
+                if re.search(rx, str(p.get("hook", "")).strip().lower()):
+                    E(f"{pid}: generic hook pattern {rx}: '{p['hook']}'")
             ret = p.get("retention", {}) or {}
             bad = set(ret) - DRIVERS
             if bad: E(f"{pid}: unknown retention drivers {bad}")
@@ -230,6 +243,47 @@ def qc(posts, sources):
             if tw > 75: E(f"{pid}: {tw} words on image > 75")
             if len(d.get("body", [])) > 8: W(f"{pid}: {len(d['body'])} body lines (>8)")
 
+    # ---- human-first / repetition rules (remediation pass) ----
+    for p in reels:
+        for a, b in re.findall(r"(\d+(?:\.\d+)?)\s*[–-]\s*(\d+(?:\.\d+)?)\s*s", str(p.get("payoff", ""))):
+            if float(b) > float(p["runtime"]) + 0.01:
+                E(f"{p['id']}: payoff references {a}–{b} s but runtime is {p['runtime']} s")
+    stop_t = set("the a an to of and or for in on with your you is it this that so can".split())
+    tk = {p["id"]: {w.lower() for w in words(p["takeaway"])} - stop_t for p in posts}
+    for a, b in itertools.combinations(posts, 2):
+        x, y = tk[a["id"]], tk[b["id"]]
+        if x and y and len(x & y) / len(x | y) >= 0.5:
+            W(f"Similar takeaways: {a['id']} ~ {b['id']}")
+    hooks = [str(p["hook"]) for p in reels]
+    tail = [h for h in hooks if re.search(r"here's (why|how|when|the fix)\.?$", h.lower())]
+    if len(tail) > 1: E(f"{len(tail)} hooks end with \"Here's why/how\" (max 1): {tail}")
+    first2 = Counter(" ".join(h.lower().split()[:2]) for h in hooks)
+    for k, v in first2.items():
+        if v > 2: W(f"{v} Reel hooks start with '{k}'")
+    hard = [p for p in posts if p["cta_type"] == "message"]
+    soft = [p for p in posts if p["cta_type"] == "soft"]
+    for p in hard:
+        if p["pillar"] != "SVC": E(f"{p['id']}: hard service CTA on a non-service post ({p['pillar']})")
+    if len(hard) > MAX_HARD_CTA: E(f"{len(hard)} hard service CTAs (max {MAX_HARD_CTA})")
+    if len(soft) > MAX_SOFT_CTA: E(f"{len(soft)} soft service CTAs (max {MAX_SOFT_CTA})")
+    for p in soft:
+        if p["pillar"] not in ("AU", "SVC"): E(f"{p['id']}: soft service CTA outside AU/SVC")
+    for d, n in Counter(p["day"] for p in hard).items():
+        if n > 1: E(f"Day {d}: {n} hard service CTAs (max 1 per day)")
+    def norm(x): return re.sub(r"[^a-z0-9 ]", "", x.lower()).strip()
+    ends = Counter(norm([l for l in p["caption"].strip().split("\n") if l.strip()][-1]) for p in posts)
+    for k, v in ends.items():
+        if v > 2: E(f"Caption ending repeated {v}×: '{k}'")
+    last_vo = Counter(norm(p["script"][-1]["vo"]) for p in reels)
+    for k, v in last_vo.items():
+        if v > 2: E(f"Final Reel line repeated {v}×: '{k}'")
+    msg_mentions = sum(len(re.findall(r"message me", p["caption"].lower())) for p in posts)
+    if msg_mentions > MAX_HARD_CTA + MAX_SOFT_CTA: E(f"'message me' appears {msg_mentions}× in captions")
+    pc = sum(p["format"] == "Prompt card" for p in imgs)
+    if pc > MAX_PROMPT_CARDS: E(f"{pc} images use the Prompt card format (max {MAX_PROMPT_CARDS})")
+    loops = [p["id"] for p in reels if p.get("loop")]
+    if len(loops) > 6: W(f"{len(loops)} loop Reels (keep loops only where they help)")
+
     # weekday words in a topic must match the posting day (e.g. "Friday review" posts on a Friday)
     for p in posts:
         for wd in ("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"):
@@ -278,6 +332,15 @@ def qc(posts, sources):
             streak = streak + 1 if f in by_day_fmt.get(d, []) else 0
             if streak == 3:
                 E(f"Reel format '{f}' runs 3 days in a row ending Day {d}")
+    img_fmt = defaultdict(list)
+    for p in imgs:
+        img_fmt[p["day"]].append(p["format"])
+    for f in {x for v in img_fmt.values() for x in v}:
+        streak = 0
+        for d in range(1, 31):
+            streak = streak + 1 if f in img_fmt.get(d, []) else 0
+            if streak == 3:
+                E(f"Image format '{f}' runs 3 days in a row ending Day {d}")
     return errors, warnings
 
 
@@ -303,8 +366,10 @@ def render_reel(p, sources):
     L.append(f"Series: {p['series']} · Pillar: {PILLARS[p['pillar']]} · Format: {p['format']}")
     L.append("")
     L.append("| | |\n|---|---|")
-    for k, lab in [("objective", "Objective"), ("hook", "Hook"), ("main_idea", "Main idea"), ("value", "Key value"),
-                   ("cta", "CTA"), ("visual_concept", "Visual concept")]:
+    for k, lab in [("human_problem", "Human problem"), ("objective", "Objective"), ("hook", "Hook"),
+                   ("open_loop", "Open loop (what the viewer wants to know)"), ("main_idea", "Main idea"),
+                   ("value", "Key value"), ("payoff", "Payoff (where it's answered)"),
+                   ("takeaway", "Takeaway (what did I just learn?)"), ("cta", "CTA"), ("visual_concept", "Visual concept")]:
         L.append(f"| **{lab}** | {md_escape(p[k])} |")
     if p.get("loop"):
         L.append(f"| **Loop** | {md_escape(p['loop'])} |")
@@ -342,7 +407,8 @@ def render_image(p, sources):
     L.append(f"Series: {p['series']} · Pillar: {PILLARS[p['pillar']]} · Format: {p['format']}")
     L.append("")
     L.append("| | |\n|---|---|")
-    for k, lab in [("objective", "Objective"), ("hook", "Hook"), ("main_idea", "Main idea"), ("value", "Key value"),
+    for k, lab in [("human_problem", "Human problem"), ("objective", "Objective"), ("hook", "Hook"),
+                   ("main_idea", "Main idea"), ("value", "Key value"), ("takeaway", "Takeaway (what did I just learn?)"),
                    ("cta", "CTA"), ("visual_concept", "Visual concept")]:
         L.append(f"| **{lab}** | {md_escape(p[k])} |")
     L.append(f"| **Words on image** | {p.get('_img_words', '?')} |")
@@ -394,7 +460,8 @@ def write_docs(posts, sources, start):
 
 
 CSV_COLS = ["post_no", "day", "date", "weekday", "time_bst", "id", "type", "series", "pillar", "format", "topic",
-            "objective", "hook", "main_idea", "key_value", "cta", "cta_type", "visual_concept", "caption",
+            "human_problem", "objective", "hook", "open_loop", "main_idea", "key_value", "payoff", "takeaway",
+            "cta", "cta_type", "visual_concept", "caption",
             "sources", "spec", "runtime_s", "production_notes", "script_or_copy_file", "status"]
 
 
@@ -404,7 +471,9 @@ def row(p, sources):
         "post_no": p["post_no"], "day": p["day"], "date": p["date"].isoformat(), "weekday": f"{p['date']:%a}",
         "time_bst": p["time"], "id": p["id"], "type": p["type"], "series": p["series"],
         "pillar": f"{p['pillar']} — {PILLARS[p['pillar']]}", "format": p["format"], "topic": p["topic"],
-        "objective": p["objective"], "hook": p["hook"], "main_idea": p["main_idea"], "key_value": p["value"],
+        "human_problem": p["human_problem"], "objective": p["objective"], "hook": p["hook"],
+        "open_loop": p.get("open_loop", ""), "main_idea": p["main_idea"], "key_value": p["value"],
+        "payoff": p.get("payoff", ""), "takeaway": p["takeaway"],
         "cta": p["cta"], "cta_type": p["cta_type"], "visual_concept": p["visual_concept"],
         "caption": caption_full(p),
         "sources": " ; ".join(f"{sources[k]['title']} ({sources[k]['publisher']}, {sources[k]['date']}) {sources[k]['url']}"
@@ -453,7 +522,7 @@ def write_calendar(posts, sources, start):
     ws.append(CSV_COLS)
     for r in rows:
         ws.append([r[c] for c in CSV_COLS])
-    widths = {"topic": 40, "hook": 45, "main_idea": 45, "key_value": 50, "cta": 35, "visual_concept": 45,
+    widths = {"human_problem": 40, "open_loop": 35, "payoff": 40, "takeaway": 45, "topic": 40, "hook": 45, "main_idea": 45, "key_value": 50, "cta": 35, "visual_concept": 45,
               "caption": 60, "sources": 50, "spec": 40, "production_notes": 50, "objective": 30, "format": 28,
               "series": 20, "pillar": 26, "script_or_copy_file": 30}
     hdr_fill = PatternFill("solid", fgColor="1F2937")
@@ -528,11 +597,26 @@ def write_qc(posts, sources, errors, warnings):
     vol = sorted({(p["day"], p["id"], k) for p in posts for k in p.get("sources", []) or [] if sources[k].get("volatile")})
     L += ["## Pre-flight list (volatile facts, re-check ≤ 48 h before posting)", "", "| Day | Post | Source |", "|---|---|---|"]
     L += [f"| {d} | {i} | [{sources[k]['title']}]({sources[k]['url']}) |" for d, i, k in vol] + [""]
+    L += ["## Human-first audit", "",
+          f"All {len(posts)} posts state a human problem and a one-sentence takeaway; all {len(reels)} Reels state their open loop and where it pays off.", "",
+          "| Service CTAs | Count | Days |", "|---|---|---|",
+          f"| Hard (\"message me\", SVC only, max 1/day) | {sum(p['cta_type']=='message' for p in posts)} | "
+          + ", ".join(str(p['day']) for p in posts if p['cta_type']=='message') + " |",
+          f"| Soft (one caption line on build demos) | {sum(p['cta_type']=='soft' for p in posts)} | "
+          + ", ".join(str(p['day']) for p in posts if p['cta_type']=='soft') + " |", "",
+          f"Days with no service CTA at all: {sum(1 for d in range(1,31) if not any(p['day']==d and p['cta_type'] in ('message','soft') for p in posts))} of 30.", "",
+          f"Loop Reels (kept only where the loop helps): {', '.join(p['id'] for p in reels if p.get('loop')) or 'none'}", "",
+          "### All 60 Reel hooks (first 3 seconds)", "", "| Post | Hook | Takeaway |", "|---|---|---|"]
+    L += [f"| {p['id']} | {md_escape(p['hook'])} | {md_escape(p['takeaway'])} |" for p in reels] + [""]
     L += ["## Hard checks run", "",
           "Counts (60/60/120) · 2 Reels + 2 images every day · unique IDs · required fields · ≥5 substantiated retention drivers per Reel · "
           f"contiguous script timing that matches runtime · hook lands in first ≤{FIRST_BEAT_MAX:.0f} s · spoken pace ≤{MAX_WPS_BEAT} w/s per beat and ≤{MAX_WPS_AVG} average · "
           f"on-screen text ≤{MAX_OST_WORDS} words per beat · headline ≤10 words · ≤75 words per image · caption first line ≤125 chars · "
           "2–4 hashtags · no links in captions · banned AI-cliché words · engagement-bait patterns · source keys exist · NEWS posts sourced · "
+          "human problem + takeaway on every post (takeaway ≤ 25 words) · open loop + payoff on every Reel (payoff timing inside runtime) · "
+          "no generic hook openers ('today I', 'here are', 'did you know', 'watch/try/do this') · ≤1 hook ending 'here's why/how' · "
+          "hard service CTAs only on SVC posts, ≤1/day, ≤14 total · soft service lines ≤8 · no caption ending or final Reel line used >2× · "
+          "≤8 prompt-card images · no image format on 3+ consecutive days · "
           "two Reels per day from different pillars and different formats · weekday words in topics match the posting day · no Reel format on 3+ consecutive days · ≤2 service posts per day.", ""]
     L += ["## Errors", ""] + ([f"- ❌ {e}" for e in errors] or ["None."]) + [""]
     L += ["## Warnings (reviewed manually — see manual-qc.md)", ""] + ([f"- ⚠️ {w}" for w in warnings] or ["None."]) + [""]

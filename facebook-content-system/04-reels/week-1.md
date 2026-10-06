@@ -16,10 +16,14 @@ Series: Steal This Prompt · Pillar: Practical AI · Format: Talking head + scre
 
 | | |
 |---|---|
+| **Human problem** | You ask AI for help and get a bland, generic answer you can't actually use. |
 | **Objective** | Reach + saves; first impression of 'one useful idea per Reel' |
 | **Hook** | Your AI stays generic until you add this. |
+| **Open loop (what the viewer wants to know)** | What is the one line? It is held back until second 9. |
 | **Main idea** | Generic answers come from the AI guessing missing details; one line makes it ask instead of guess. |
 | **Key value** | Copy-paste line: 'Before you answer, ask me 5 questions…' that works in ChatGPT, Gemini or Claude. |
+| **Payoff (where it's answered)** | 13–28 s: the AI asks five questions about your situation, and the second answer is visibly specific. |
+| **Takeaway (what did I just learn?)** | Ask AI to question you before it answers, so it works from your facts instead of guesses. |
 | **CTA** | Save the line (it's in the caption). |
 | **Visual concept** | Close-up talking head, cut to screen recording; side-by-side generic vs specific answer; final frame matches first frame for the loop. |
 | **Loop** | Last line 'Skip it, and…' runs straight into the opening 'your AI stays generic until you add this.' |
@@ -60,7 +64,7 @@ Why it works: the AI stops guessing your audience, budget and tone, and builds o
 
 Use it for posts, emails, plans and CVs. Anything where details matter.
 
-Save this for the next time an answer feels generic.
+Keep this line somewhere you'll find it. You'll use it every week.
 
 #AItips #ChatGPT #productivity
 ```
@@ -76,17 +80,21 @@ Series: Explain It Simply · Pillar: Automation & n8n · Format: Diagram explain
 
 | | |
 |---|---|
+| **Human problem** | Doing the same small task every day and assuming automation is too technical for you. |
 | **Objective** | Authority + mental model that later service posts build on |
-| **Hook** | Every automation has just three parts. |
+| **Hook** | The task you repeat daily? It's three boxes. |
+| **Open loop (what the viewer wants to know)** | What are the three boxes, and does my task fit them? |
 | **Main idea** | Any automation = trigger (something happens) → steps (what should happen) → result (someone gets something). |
 | **Key value** | A mental model that helps viewers spot automatable tasks in their own day. |
+| **Payoff (where it's answered)** | 24.5–38 s: the full trigger → steps → result picture, plus a one-line test for your own tasks. |
+| **Takeaway (what did I just learn?)** | If a task starts the same way, follows the same steps and ends the same way, it can be automated. |
 | **CTA** | Comment a task you repeat daily; Asif replies with its trigger, steps and result. |
 | **Visual concept** | Three empty boxes that fill one by one with icons; at the end the same three nodes appear as a real n8n canvas behind the diagram. |
-| **Pace** | 99 spoken words in 42 s = 2.36 words/s |
+| **Pace** | 101 spoken words in 42 s = 2.4 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
-- `hook`: A simple, confident promise ('just three parts') that makes a scary topic feel easy.
+- `hook`: Turns the viewer's own daily task into something simple (three boxes) within 3 seconds.
 - `visual_progression`: Boxes light up one by one, so the viewer watches the diagram complete.
 - `relatability`: Examples are a customer Messenger message, a form and a 9 AM routine, all from normal work.
 - `payoff`: The finished diagram morphs into a real n8n workflow, linking the idea to the tool.
@@ -96,8 +104,8 @@ Series: Explain It Simply · Pillar: Automation & n8n · Format: Diagram explain
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-2.5 | Every automation has just three parts. | 3 parts. That's it. | Asif holds up three fingers; three empty boxes animate in beside him. |
-| 2.5-5.5 | Part one: the trigger. Something happens. | 1 · TRIGGER | Box 1 lights up with a Messenger 'new message' icon. |
+| 0-3 | The task you repeat daily? It's three boxes. | Your daily task = 3 boxes | Asif holds up three fingers; three empty boxes animate in beside him. |
+| 3-5.5 | Box one: the trigger. Something happens. | 1 · TRIGGER | Box 1 lights up with a Messenger 'new message' icon. |
 | 5.5-9.5 | A customer messages. A form is filled. It's 9 AM. | message · form · 9 AM | Three trigger icons cycle inside box 1. |
 | 9.5-12.5 | Part two: the steps. What should happen next? | 2 · STEPS | Box 2 lights; arrow draws from box 1. |
 | 12.5-17 | Save the order in a sheet. Check the stock. Write a reply. | save · check · reply | Sheets, box and chat-bubble icons drop into box 2 in sync with each verb. |
@@ -111,7 +119,7 @@ Series: Explain It Simply · Pillar: Automation & n8n · Format: Diagram explain
 **Caption**
 
 ```text
-Every automation has just three parts: trigger, steps, result.
+The task you repeat every day is probably just three boxes: trigger, steps, result.
 
 1) Trigger: something happens (a message, a form, 9 AM).
 2) Steps: what should happen next (save, check, write).
@@ -135,17 +143,21 @@ Series: Hidden Button · Pillar: Hidden features & tools · Format: Phone-in-han
 
 | | |
 |---|---|
+| **Human problem** | A device or paper you don't understand, and no idea what words to type into a search. |
 | **Objective** | Reach + shares (feels like a discovery) |
-| **Hook** | Stop typing problems. Show them to AI. |
+| **Hook** | Router blinking red? Don't type it. Show it. |
+| **Open loop (what the viewer wants to know)** | Can AI really read the router and know the fix? |
 | **Main idea** | Gemini Live's camera mode lets you show a real-world problem and talk through it; free on Android and iPhone. |
 | **Key value** | Where to tap, four everyday uses, and the one safety rule (never show passwords, cards or ID numbers). |
+| **Payoff (where it's answered)** | 15–20 s: it reads the label, names the model and gives the first fix step. |
+| **Takeaway (what did I just learn?)** | Use Gemini Live's free camera mode to show AI a real problem instead of describing it. |
 | **CTA** | Save it for the next thing that confuses you. |
 | **Visual concept** | Over-the-shoulder phone shots of real objects (router, bill, form, error screen) with the live AI response. |
-| **Pace** | 93 spoken words in 38 s = 2.45 words/s |
+| **Pace** | 94 spoken words in 38 s = 2.47 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
-- `hook`: 'Stop typing' challenges a habit everyone has; the first frame already shows the phone pointed at a blinking router.
+- `hook`: Starts from a specific household moment (a blinking router) and flips the habit of typing problems.
 - `novelty`: Many viewers have never turned on the camera inside an AI chat; it feels like a hidden feature.
 - `visual_progression`: Four different real objects in 12 seconds keep the visuals changing.
 - `relatability`: Router lights, confusing bills, English forms and error screens are daily pains in most homes.
@@ -156,8 +168,8 @@ Series: Hidden Button · Pillar: Hidden features & tools · Format: Phone-in-han
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-2.5 | Stop typing problems. Show them to AI. | Don't type it. Show it. | Asif holds phone toward a Wi-Fi router with a red blinking light. |
-| 2.5-6.5 | Open Gemini, tap Live, turn on the camera. | Gemini → Live → camera | Screen capture with tap circles; zoom on the Live and camera icons. |
+| 0-3 | Router blinking red? Don't type it. Show it. | Don't type it. Show it. | Asif holds phone toward a Wi-Fi router with a red blinking light. |
+| 3-6.5 | Open Gemini, tap Live, turn on the camera. | Gemini → Live → camera | Screen capture with tap circles; zoom on the Live and camera icons. |
 | 6.5-9.5 | It's free on Android and iPhone. | Free · Android + iPhone | Badge overlay; cut back to camera view. |
 | 9.5-15 | Now just ask, like you'd ask a friend: “Why is this red light blinking?” | “Why is this light blinking?” | POV camera view of the router; Asif's voice. |
 | 15-20 | It reads the label, finds the model, and walks you through a fix. | reads → finds → explains | Real response on screen; highlight the model name and the first step. |
@@ -170,7 +182,7 @@ Series: Hidden Button · Pillar: Hidden features & tools · Format: Phone-in-han
 **Caption**
 
 ```text
-Stop typing problems. Show them to AI.
+Router blinking red? Don't type it. Show it to AI.
 
 Gemini Live has a camera mode: open Gemini → tap Live → turn on the camera, then ask out loud.
 It's free on Android and iPhone.
@@ -184,7 +196,7 @@ I use it for:
 One rule: never show passwords, bank cards or ID numbers on camera.
 And double-check any fix before you change settings. AI can be wrong.
 
-Save this for the next thing that confuses you.
+Keep this for the next thing in your house that blinks, beeps or confuses you.
 
 #GeminiAI #AItips #techtips
 ```
@@ -202,18 +214,22 @@ Series: AI Myth Check · Pillar: AI literacy & safety · Format: Green screen + 
 
 | | |
 |---|---|
+| **Human problem** | Trusting a confident AI answer and repeating something that turns out to be fake. |
 | **Objective** | Trust + shares; teaches safe use |
-| **Hook** | AI doesn't lie. It does something stranger. |
+| **Hook** | AI gave me a source. It doesn't exist. |
+| **Open loop (what the viewer wants to know)** | Why would AI invent a source that doesn't exist? |
 | **Main idea** | AI predicts likely words, so it can produce realistic-looking fake sources; grounding + asking for exact quotes catches it. |
 | **Key value** | Simple explanation of hallucination, the five hot-spot types, and the 'quote the exact line' check. |
+| **Payoff (where it's answered)** | 3–16 s: it predicts what a source looks like; 25–35 s: the quote-the-line check catches it. |
+| **Takeaway (what did I just learn?)** | AI predicts likely words, so ask it to quote the exact line behind every claim. |
 | **CTA** | Follow for more AI Myth Checks. |
 | **Visual concept** | Asif over a green-screen of a chat containing a fake citation; animated 'next-word' probability bars; 'NOT FOUND' stamp. |
 | **Pace** | 89 spoken words in 40 s = 2.23 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
-- `hook`: 'AI doesn't lie' contradicts what viewers expect, and 'something stranger' opens a gap they want closed.
-- `curiosity`: Viewers wait to learn what the 'stranger' thing is; it is revealed at second 7.
+- `hook`: A personal, specific failure (a source that doesn't exist) that every AI user fears and wants explained.
+- `curiosity`: Viewers want to know why a tool would invent something; the reason arrives at second 3.
 - `visual_progression`: A fake citation assembles piece by piece, then gets stamped NOT FOUND.
 - `usefulness`: Ends with a concrete check prompt viewers can use today.
 - `novelty`: Most people think AI 'searches' facts; learning it predicts words reframes every answer they've seen.
@@ -223,8 +239,8 @@ Series: AI Myth Check · Pillar: AI literacy & safety · Format: Green screen + 
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-3 | AI doesn't lie. It does something stranger. | AI doesn't lie. It's stranger. | Asif on green screen; behind him a chat answer with a book citation circled in red. |
-| 3-7 | At its core, it predicts the next most likely word. | predicts the next word | Animation: a sentence builds word by word with small probability bars. |
+| 0-3 | AI gave me a source. It doesn't exist. | A source that doesn't exist | Asif holding his phone: an AI answer with a neat book citation; quick cut to an empty search result. |
+| 3-7 | It wasn't lying. It predicts the next likely word. | It predicts the next word | Animation: a sentence builds word by word with small probability bars. |
 | 7-12.5 | Ask for a source it doesn't have, and it predicts what a source looks like. | predicts what a source LOOKS like | A citation assembles: author → title → year → page. |
 | 12.5-16 | Real-looking author. Real-looking title. Doesn't exist. | looks real ≠ is real | Search result page → 'NOT FOUND' stamp. |
 | 16-20 | That's a hallucination. Confident, fluent, and wrong. | Hallucination = confident + wrong | Label slides in; Asif points at it. |
@@ -236,7 +252,7 @@ Series: AI Myth Check · Pillar: AI literacy & safety · Format: Green screen + 
 **Caption**
 
 ```text
-AI doesn't lie. It predicts.
+AI gave me a perfect-looking source. It doesn't exist.
 
 Language models generate the most likely next words. Ask for a source they don't have, and they can generate something that looks like a source: real-looking author, real-looking title, doesn't exist. That's a hallucination.
 
@@ -263,10 +279,14 @@ Series: Before → After · Pillar: Practical AI · Format: Before/after split s
 
 | | |
 |---|---|
+| **Human problem** | AI-written posts and emails that sound nothing like you. |
 | **Objective** | Saves; practical writing win |
-| **Hook** | Stop describing the style you want. Paste it. |
+| **Hook** | Sounds nothing like you? Stop describing your style. |
+| **Open loop (what the viewer wants to know)** | If describing your style doesn't work, what does? |
 | **Main idea** | Adjectives like 'friendly but professional' are guesses; 2–3 real examples make AI match your style. |
 | **Key value** | A reusable 'same style as these' prompt + the warning that AI copies mistakes too. |
+| **Payoff (where it's answered)** | 10.5–24 s: pasting 2–3 of your own posts gives a draft with your length, words and sign-off. |
+| **Takeaway (what did I just learn?)** | Paste examples of your own writing instead of describing the style you want. |
 | **CTA** | Save it for your next caption or email. |
 | **Visual concept** | Split screen: left = adjective prompt + stiff output; right = pasted examples + matching output with features circled. |
 | **Pace** | 86 spoken words in 35 s = 2.46 words/s |
@@ -283,7 +303,7 @@ Series: Before → After · Pillar: Practical AI · Format: Before/after split s
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-3 | Stop describing the style you want. Paste it. | Don't describe. Paste. | Asif to camera; screen splits into two halves. |
+| 0-3 | Sounds nothing like you? Stop describing your style. | AI doesn't sound like you? | Asif to camera; screen splits into two halves. |
 | 3-7 | Most people type: “Make it friendly but professional, short, with energy.” | “friendly but professional…” | Left half: adjective prompt typed; output appears. |
 | 7-10.5 | AI reads those words a hundred different ways. | adjectives = guesses | Left output: stiff phrases highlighted in yellow. |
 | 10.5-15 | Instead, paste two or three things you already wrote and liked. | Paste 2–3 of YOUR examples | Right half: two old posts pasted in. |
@@ -296,7 +316,7 @@ Series: Before → After · Pillar: Practical AI · Format: Before/after split s
 **Caption**
 
 ```text
-Stop describing the style you want. Paste it.
+AI never sounds like you? Stop describing your style. Paste it.
 
 “Friendly but professional” can mean 100 things to AI. Your own examples mean one thing.
 
@@ -315,59 +335,64 @@ Save this for your next caption or email.
 
 <a id="D03-R2"></a>
 
-### #012 · D03-R2 · Day 3 · Wed 14 Oct · 21:00 BST · REEL · 49 s
+### #012 · D03-R2 · Day 3 · Wed 14 Oct · 21:00 BST · REEL · 51 s
 **The Messenger assistant I built in n8n (and the check most DIY bots skip)**  
 Series: Build Log · Pillar: Work with me (n8n services) · Format: Screen demo + face cam
 
 | | |
 |---|---|
+| **Human problem** | Customers message late at night, you reply hours later, and the sale goes to someone faster. |
 | **Objective** | First proof of skill; Messenger leads |
-| **Hook** | Customers message you at 2 AM? Watch this. |
+| **Hook** | Two AM: “Price?” You reply at ten. |
+| **Open loop (what the viewer wants to know)** | How do you answer at 2 AM without staying awake? |
 | **Main idea** | A 4-step n8n Messenger assistant: verify it's really Meta → ignore echoes → AI reply with per-customer memory → send in seconds. |
 | **Key value** | Shows what a safe auto-reply looks like, and what it should never do (payments, stock promises). |
+| **Payoff (where it's answered)** | 9–33.5 s: the four-step assistant; the last shot shows the 2:07 AM question answered at 2:07. |
+| **Takeaway (what did I just learn?)** | A safe Messenger assistant checks requests, remembers each customer and replies in seconds, while people handle orders and payments. |
 | **CTA** | Message 'AUTOMATE' with your top customer questions. |
 | **Visual concept** | Phone notification at 2:07 AM → Asif face-cam over his real n8n canvas, zooming node by node; phone shows the reply arriving. |
-| **Pace** | 123 spoken words in 49 s = 2.51 words/s |
+| **Pace** | 128 spoken words in 51 s = 2.51 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
-- `hook`: Speaks directly to page owners who lose sales to slow replies; the 2 AM notification is instantly relatable.
-- `relatability`: Late-night 'Is this available? Delivery charge?' messages are a daily reality for F-commerce sellers.
-- `visual_progression`: The camera zooms node by node through a real canvas, so viewers see the build advance step by step.
-- `novelty`: The signature check is something most viewers have never heard of, which sets this build apart from 'simple bots'.
-- `payoff`: Ends with the reply landing on the phone within seconds.
-- `problem_solution`: Clear problem (slow replies) → clear system → honest limits.
+- `hook`: A two-line story every seller has lived: the question at 2 AM and the late reply.
+- `relatability`: Late-night 'price? delivery charge?' messages are a daily reality for Facebook sellers.
+- `problem_solution`: The lost sale is shown first, then the system that prevents it, then its honest limits.
+- `visual_progression`: The camera moves node by node through a real canvas, so the build visibly advances.
+- `novelty`: The signature check is something most viewers have never heard of, and it separates this from 'simple bots'.
+- `payoff`: The final shot answers the opening: the 2:07 AM message is replied to at 2:07.
 
 **Script**
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-3 | Customers message you at 2 AM? Watch this. | 2 AM message? | Phone lock screen 02:07: Messenger notification 'Is this still available? Delivery charge?' |
-| 3-6.5 | This is a Messenger assistant I built in n8n. | Built in n8n | Asif face-cam bubble bottom-left over the full n8n canvas (zoomed to node names only). |
-| 6.5-12 | Step one: a message arrives, and it checks the message really came from Meta. | 1 · Is it really from Meta? | Zoom on 'Verify Signature' → 'Signature OK?' nodes. |
-| 12-16 | A lot of DIY bots skip this. It stops fake requests. | Most DIY bots skip this | Simple animation: a fake request bounces off a shield. |
-| 16-21 | Step two: it ignores its own replies, so it never talks to itself. | 2 · Ignore its own echoes | Zoom on 'Is Message?' node. |
-| 21-26.5 | Step three: an AI agent writes a short reply and remembers this customer's chat. | 3 · Short reply + memory per customer | Zoom on 'AI Agent' with 'Simple Memory' attached. |
-| 26.5-31 | Step four: the reply goes back through Messenger. Seconds, not hours. | 4 · Reply in seconds | Phone: reply bubble appears in the chat. |
-| 31-36 | What it shouldn't do: confirm payments or promise stock it can't see. | Not for: payments · stock promises | Asif full screen, serious tone. |
-| 36-41.5 | For orders, I connect it to your sheet and hand the chat to a human. | Orders → your sheet → a human | Diagram add-on: Sheets icon + person icon appended to the flow. |
-| 41.5-46 | Want this for your page? Message me the word AUTOMATE. | Message: AUTOMATE | Asif to camera; Messenger icon animates. |
-| 46-49 | Tell me what customers ask most. | Send your top questions | End card with page name. |
+| 0-2.5 | Two AM: “Price?” You reply at ten. | 2 AM: “Price?” · You: 10 AM | Phone lock screen 02:07: Messenger 'Price? Delivery charge?'; clock jumps to 10:04 as a reply is typed. |
+| 2.5-5.5 | By then, they may have bought elsewhere. | Sale gone | Reply shows 'Seen', no answer back (dramatized example). |
+| 5.5-9 | So I built a Messenger assistant in n8n. | My fix: built in n8n | Asif face-cam bubble bottom-left over the n8n canvas (node names only). |
+| 9-14.5 | Step one: a message arrives, and it checks the message really came from Meta. | 1 · Is it really from Meta? | Zoom on 'Verify Signature' → 'Signature OK?' nodes. |
+| 14.5-18.5 | A lot of DIY bots skip this. It stops fake requests. | Most DIY bots skip this | Simple animation: a fake request bounces off a shield. |
+| 18.5-23.5 | Step two: it ignores its own replies, so it never talks to itself. | 2 · Ignore its own echoes | Zoom on 'Is Message?' node. |
+| 23.5-29 | Step three: an AI agent writes a short reply and remembers this customer's chat. | 3 · Short reply + memory per customer | Zoom on 'AI Agent' with 'Simple Memory' attached. |
+| 29-33.5 | Step four: the reply goes back through Messenger. Seconds, not hours. | 4 · Reply in seconds | Phone: reply bubble appears in the chat. |
+| 33.5-38.5 | What it shouldn't do: confirm payments or promise stock it can't see. | Not for: payments · stock promises | Asif full screen, serious tone. |
+| 38.5-44 | For orders, I connect it to your sheet and hand the chat to a human. | Orders → your sheet → a human | Diagram add-on: Sheets icon + person icon appended to the flow. |
+| 44-48.5 | Need this for your page? Message me the word AUTOMATE. | Message: AUTOMATE | Asif to camera; Messenger icon animates. |
+| 48.5-51 | And keep the two AM customers. | Keep the 2 AM customers | Phone: the 02:07 question answered at 02:07. |
 
 **Caption**
 
 ```text
-Customers message your page at 2 AM. Here's the Messenger assistant I built in n8n.
+2 AM: “Price?” You reply at 10 AM. By then, they may have bought somewhere else.
 
-How it works:
-1. Checks the message really came from Meta (signature check, which many DIY bots skip)
-2. Ignores its own replies so it never loops
+So I built a Messenger assistant in n8n:
+1. It checks the message really came from Meta (a signature check many DIY bots skip)
+2. It ignores its own replies so it never loops
 3. An AI agent writes a short reply and remembers each customer's conversation
-4. Sends the reply in seconds
+4. The reply goes out in seconds
 
 What it should NOT do: confirm payments or promise stock it can't see. For orders, I connect it to your Google Sheet and hand the chat to a person.
 
-Want one for your page? Message me “AUTOMATE” with the 3 questions customers ask you most.
+Need one for your page? Message me “AUTOMATE” and send the 3 questions customers ask you most.
 
 #n8n #MessengerAutomation #AIautomation
 ```
@@ -377,50 +402,54 @@ Want one for your page? Message me “AUTOMATE” with the 3 questions customers
 
 <a id="D04-R1"></a>
 
-### #014 · D04-R1 · Day 4 · Thu 15 Oct · 13:30 BST · REEL · 28 s
-**What is a webhook? Think of a doorbell**  
+### #014 · D04-R1 · Day 4 · Thu 15 Oct · 13:30 BST · REEL · 32 s
+**Why some bots reply instantly: the webhook (a doorbell)**  
 Series: Explain It Simply · Pillar: Automation & n8n · Format: Diagram explainer + talking head
 
 | | |
 |---|---|
+| **Human problem** | Wondering why some automated replies feel live while others lag for minutes. |
 | **Objective** | Authority; loop for rewatches |
-| **Hook** | What is a webhook? Think of a doorbell. |
+| **Hook** | Some bots reply instantly. Others take minutes. Why? |
+| **Open loop (what the viewer wants to know)** | What makes the fast bot fast? (answered at 3 s, explained by 24 s) |
 | **Main idea** | Polling = checking the door every 5 minutes; a webhook = a doorbell that rings your automation the moment something happens. |
 | **Key value** | A clear analogy for a term that blocks many beginners, tied to Messenger replies. |
+| **Payoff (where it's answered)** | 28–32 s: the fast bot isn't smarter; it just has a doorbell, a webhook. |
+| **Takeaway (what did I just learn?)** | A webhook lets an app tell your automation the moment something happens, instead of checking again and again. |
 | **CTA** | Follow for the next 'Explain It Simply'. |
 | **Visual concept** | Door animation: a person walking to the door repeatedly (polling) vs a doorbell ringing (webhook); Messenger → bell → n8n node. |
-| **Loop** | Ends on '…just picture' over the door image; the opening line completes it: 'a doorbell.' |
-| **Pace** | 70 spoken words in 28 s = 2.5 words/s |
+| **Pace** | 78 spoken words in 32 s = 2.44 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
-- `hook`: Asks the exact question beginners have and answers with a familiar object in the same breath.
-- `curiosity`: 'Think of a doorbell' makes viewers wait to see how a doorbell explains software.
-- `visual_progression`: Clock-spinning polling animation, then a bell ring, then the real Messenger → n8n flow.
-- `rewatch`: The final 'just picture…' loops into 'a doorbell', so the replay feels continuous.
-- `usefulness`: Viewers learn why live replies need webhooks, which they'll recognise in every automation tool.
+- `hook`: Starts from something viewers have noticed (instant vs slow bots) and asks why.
+- `curiosity`: The answer word 'webhook' arrives at second 3, but what it means only becomes clear by second 24.
+- `visual_progression`: Split phones, then a door animation, then the real Messenger → n8n flow.
+- `payoff`: The ending answers the opening question in one memorable line: not smarter, just a doorbell.
+- `usefulness`: Viewers learn why live replies need webhooks, a term they will see in every automation tool.
 
 **Script**
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-3 | What is a webhook? Think of a doorbell. | Webhook = doorbell | Asif beside an animated front door. |
-| 3-7 | Without a doorbell, you'd check the door every five minutes. | No bell: check every 5 min | Animated person walks to the door again and again; clock spins. |
-| 7-11 | That's called polling. It's slow, and it wastes your time. | = polling (slow) | Person slumps; 'polling' label. |
-| 11-15 | With a doorbell, the visitor tells you the moment they arrive. | Bell: they tell YOU | Ding animation; door opens instantly. |
-| 15-20 | A webhook is that bell. When a customer messages, Messenger rings your automation. | Messenger → rings → n8n | Messenger icon → bell → n8n Webhook node lights up. |
-| 20-24 | Instantly. No checking, no delay. That's why replies feel live. | Instant | Millisecond counter ticks; reply bubble appears. |
-| 24-28 | So next time someone says webhook, just picture… |  | Cut back to the door frame identical to frame 1 (loop). |
+| 0-3 | Some bots reply instantly. Others take minutes. Why? | Instant vs 5 minutes. Why? | Split screen: two phones get the same message; left replies at once, right shows a spinner. |
+| 3-7 | The fast ones use a webhook. Think of a doorbell. | Webhook = doorbell | Asif beside an animated front door. |
+| 7-11 | Without a doorbell, you'd check the door every five minutes. | No bell: check every 5 min | Animated person walks to the door again and again; clock spins. |
+| 11-15 | That's called polling. It's slow, and it wastes your time. | = polling (slow) | Person slumps; 'polling' label. |
+| 15-19 | With a doorbell, the visitor tells you the moment they arrive. | Bell: they tell YOU | Ding animation; door opens instantly. |
+| 19-24 | A webhook is that bell. When a customer messages, Messenger rings your automation. | Messenger → rings → n8n | Messenger icon → bell → n8n Webhook node lights up. |
+| 24-28 | Instantly. No checking, no delay. | Instant | Millisecond counter ticks; reply bubble appears. |
+| 28-32 | So the fast bot isn't smarter. It just has a doorbell. | Not smarter. Just a doorbell. | Back to the split phones; a small doorbell icon appears on the fast one. |
 
 **Caption**
 
 ```text
-What is a webhook? Think of a doorbell.
+Why do some bots reply instantly while others take minutes? A doorbell.
 
 Without a bell, you'd walk to the door every 5 minutes to check. That's “polling”: slow and wasteful.
 With a bell, the visitor tells you the moment they arrive.
 
-A webhook is that bell for software: when a customer messages your page, Messenger “rings” your automation instantly. That's why automated replies can feel live.
+A webhook is that bell for software. When a customer messages your page, Messenger “rings” your automation instantly. The fast bot isn't smarter. It just has a doorbell.
 
 Follow for the next Explain It Simply.
 
@@ -438,41 +467,45 @@ Series: What It Means For You · Pillar: Current developments · Format: Green s
 
 | | |
 |---|---|
+| **Human problem** | AI only helps while you're chatting, so ongoing work stops the moment you close the app. |
 | **Objective** | Timeliness + authority on agents |
-| **Hook** | ChatGPT's new dots keep working after you leave. |
+| **Hook** | ChatGPT now keeps working after you close it. |
+| **Open loop (what the viewer wants to know)** | Can I use it? (answered at 27 s) |
 | **Main idea** | Dots are always-on ChatGPT agents with their own cloud computer that pursue a goal and report back; Pro/Business Premium only for now. |
 | **Key value** | What it is, how it works, who can use it, and a sensible way to start (low-risk jobs). |
+| **Payoff (where it's answered)** | 27–36 s: only Pro and Business Premium for now; 36–41 s: start it on low-risk jobs. |
+| **Takeaway (what did I just learn?)** | Dots are always-on ChatGPT agents for Pro and Business Premium users, so start them on low-risk jobs. |
 | **CTA** | Follow for updates when it reaches more plans. |
 | **Visual concept** | Asif over a self-captured screenshot of the official announcement; simple goal → dot → report diagram; plan badges. |
-| **Pace** | 109 spoken words in 45 s = 2.42 words/s |
+| **Pace** | 110 spoken words in 45 s = 2.44 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
-- `hook`: 'Keeps working after you leave' is a new idea for most chatbot users, with a clear 'what?' reaction.
+- `hook`: 'Keeps working after you close it' is a new idea for most chatbot users and gets an instant 'how?'.
 - `novelty`: Launched one week ago (29 Sep 2026); most viewers haven't seen a plain explanation yet.
 - `usefulness`: Answers the practical questions people actually have: what is it, who gets it, how to start safely.
-- `curiosity`: 'Who gets it?' is held until second 27, so viewers stay to see if they can use it.
+- `curiosity`: 'Not for everyone, yet' at second 3 makes viewers wait to see if they can use it.
 - `payoff`: Ends with a clear personal take (start with low-risk jobs) instead of hype.
 
 **Script**
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-3 | ChatGPT's new dots keep working after you leave. | AI that works while you're away | Asif on green screen over the official 'Introducing dots' page (own screen capture). |
-| 3-7 | Launched September 29. Here's what they are, in plain words. | Launched 29 Sep 2026 | Date highlighted on the page. |
+| 0-3 | ChatGPT now keeps working after you close it. | Works after you close the app | Asif on green screen over the official 'Introducing dots' page (own screen capture). |
+| 3-7 | They're called dots. Launched September 29. Not for everyone, yet. | ‘Dots’ · 29 Sep 2026 | Date highlighted on the page. |
 | 7-12.5 | A dot is an always-on agent. You give it a goal, not a single question. | A goal, not a question | Diagram: 'Goal' card slides into a dot icon. |
 | 12.5-17.5 | It has its own cloud computer, so it can keep going between chats. | Own cloud computer | Cloud + laptop icon; progress bar keeps moving while the chat window closes. |
 | 17.5-23 | You set what it can do alone, and it brings results back for review. | You set limits · it reports back | Checklist of permissions; a 'Review' card returns. |
 | 23-27 | You can reach it in ChatGPT, Slack or Teams. | ChatGPT · Slack · Teams | Three neutral app icons. |
 | 27-32 | Who gets it? For now, only ChatGPT Pro and Business Premium. | Pro + Business Premium only | Plan badges; Free/Plus greyed out. |
-| 32-36 | Free and Plus users don't have it yet. | Not on Free or Plus (yet) | Asif shrugs. |
+| 32-36 | Free, Go and Plus users don't have it yet. | Not on Free, Go or Plus (yet) | Asif shrugs. |
 | 36-41 | My take: start with low-risk jobs. Not your money or inbox. | Start low-risk | Asif to camera, serious. |
 | 41-45 | Follow, and I'll tell you when it reaches more plans. | Follow for updates | End card. |
 
 **Caption**
 
 ```text
-ChatGPT's new “dots” keep working after you close the app.
+ChatGPT can now keep working after you close the app, but not for everyone yet.
 
 What they are (launched 29 Sep 2026):
 • An always-on agent: you give it a goal, not a single question
@@ -480,9 +513,9 @@ What they are (launched 29 Sep 2026):
 • You decide what it can do on its own; it brings results back for review
 • Reachable in ChatGPT, Slack and Teams
 
-Who can use it: ChatGPT Pro (outside the EEA, Switzerland and the UK) and Business Premium. Enterprise can try a beta if an admin turns it on. Not on Free or Plus yet.
+Who can use it: ChatGPT Pro (outside the EEA, Switzerland and the UK) and Business Premium. Enterprise can try a beta if an admin turns it on. Not on Free, Go or Plus yet.
 
-My take: give a new agent low-risk jobs first. Not your money, not your inbox.
+My take: give a new agent low-risk jobs first. Keep your money and your inbox out of it for now.
 
 Follow and I'll post when it reaches more plans.
 
@@ -502,39 +535,43 @@ Series: AI Myth Check · Pillar: AI literacy & safety · Format: Numbered list +
 
 | | |
 |---|---|
+| **Human problem** | Pasting private or sensitive data into AI chats without thinking about where it goes. |
 | **Objective** | Shares (safety) + trust |
-| **Hook** | Never paste these five things into AI. |
+| **Hook** | You've probably pasted one of these into AI. |
+| **Open loop (what the viewer wants to know)** | Which of the five have I already done? |
 | **Main idea** | Five categories of data don't belong in AI chats; placeholders keep the help without the risk. |
 | **Key value** | A clear 'never paste' list + the placeholder technique. |
-| **CTA** | Send it to your team. |
+| **Payoff (where it's answered)** | 25–31 s: placeholders let you get the same help without sharing the data. |
+| **Takeaway (what did I just learn?)** | Replace private details with placeholders before you paste anything into AI. |
+| **CTA** | Ask viewers which one they've pasted before. |
 | **Visual concept** | Numbered cards slide in beside Asif; final screen recording shows names swapped for [CLIENT] placeholders. |
 | **Pace** | 85 spoken words in 37 s = 2.3 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
-- `hook`: A warning framed as a list creates instant 'am I doing this?' tension.
+- `hook`: 'You've probably done this' makes every viewer check themselves against the list.
 - `relatability`: Mobile-banking PINs, NID numbers and customer phone lists are everyday data for this audience.
 - `visual_progression`: A new numbered card every 4–5 seconds keeps the screen changing.
 - `usefulness`: The placeholder trick lets people keep using AI on real work safely.
-- `save_share`: Built to be forwarded to teams and family. Safety content gets shared.
+- `save_share`: Teams forward it; the honest question invites comments without bait.
 
 **Script**
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-3 | Never paste these five things into AI. | Never paste these 5 | Asif to camera; hand covers a phone screen. |
+| 0-3 | You've probably pasted one of these into AI. | Pasted one of these? | Asif to camera; hand covers a phone screen. |
 | 3-7 | One: passwords and OTP codes. No tool ever needs them. | 1 · Passwords & OTPs | Card 1 slides in. |
 | 7-11 | Two: card numbers and mobile banking PINs. | 2 · Card numbers & PINs | Card 2 slides in. |
 | 11-15 | Three: your NID or passport number, or anyone else's. | 3 · NID & passport numbers | Card 3 slides in. |
 | 15-20 | Four: customer phone lists or client files, without their permission. | 4 · Other people's data | Card 4 slides in. |
 | 20-25 | Five: anything under an NDA, or a contract you promised to keep private. | 5 · Anything under NDA | Card 5 slides in. |
 | 25-31 | Need help with a real document? Swap details for placeholders: client A, amount X. | Use [CLIENT] · [AMOUNT] | Screen recording: names and amounts replaced by [CLIENT], [AMOUNT]. |
-| 31-37 | You still get the help. They never get the data. Send this to your team. | Send to your team | Asif to camera; end card. |
+| 31-37 | You still get the help, without the risk. Which one have you pasted before? | Which one have you pasted? | Asif to camera; end card. |
 
 **Caption**
 
 ```text
-Never paste these 5 things into any AI chat:
+You've probably pasted at least one of these into an AI chat:
 
 1. Passwords and OTP codes
 2. Card numbers and mobile-banking PINs
@@ -544,7 +581,7 @@ Never paste these 5 things into any AI chat:
 
 Need help with a real document? Replace the details with placeholders: [CLIENT], [AMOUNT], [PHONE]. You still get the help; the AI never sees the data.
 
-Send this to your team.
+Be honest: which one have you pasted before? (No judgement.)
 
 #AIsafety #privacy #AItips
 ```
@@ -560,10 +597,14 @@ Series: Steal This Prompt · Pillar: Practical AI · Format: Screen demo + face 
 
 | | |
 |---|---|
+| **Human problem** | Needing a total from a spreadsheet but not knowing the formula. |
 | **Objective** | Saves + practical win for office workers and sellers |
 | **Hook** | Can't write Excel formulas? Describe them instead. |
+| **Open loop (what the viewer wants to know)** | What's the part most people skip? (held until 17.5 s) |
 | **Main idea** | Describe the goal, columns and rows; get a formula with an explanation; always test on rows you can check by hand. |
 | **Key value** | Prompt template + the testing habit that makes AI formulas trustworthy. |
+| **Payoff (where it's answered)** | 21–31 s: the 3-row test proves the formula before it touches 500 rows. |
+| **Takeaway (what did I just learn?)** | Describe the result you need and test the AI's formula on rows you can check by hand. |
 | **CTA** | Save it for your next spreadsheet. |
 | **Visual concept** | Google Sheet order list; AI prompt and answer; 3 highlighted rows with hand math overlay; green tick. |
 | **Pace** | 109 spoken words in 44 s = 2.48 words/s |
@@ -603,7 +644,7 @@ Then the step most people skip: test it on 3 rows where you already know the ans
 
 Works for Excel too. Just say “Excel” instead.
 
-Save this for your next spreadsheet.
+The 3-row test is the habit worth keeping. It works for any formula.
 
 #GoogleSheets #Excel #AItips
 ```
@@ -619,17 +660,21 @@ Series: Before → After · Pillar: Workflows & productivity · Format: Phone-in
 
 | | |
 |---|---|
+| **Human problem** | Too many tasks in your head to even decide where to begin. |
 | **Objective** | Relatability + saves |
-| **Hook** | Talk messy. Get a clean plan. |
+| **Hook** | Head too full to start? Talk it out. |
+| **Open loop (what the viewer wants to know)** | Can a messy ramble really turn into a plan? |
 | **Main idea** | Speaking a 2-minute messy brain-dump into voice mode, then asking for a grouped plan, beats typing. |
 | **Key value** | The brain-dump method + the exact 'turn this into a plan' prompt. |
+| **Payoff (where it's answered)** | 17–27 s: a grouped plan appears, including a task mentioned only once in passing. |
+| **Takeaway (what did I just learn?)** | Talk through everything in voice mode, then ask AI to turn it into a grouped plan with next steps. |
 | **CTA** | Save the prompt from the caption. |
 | **Visual concept** | Asif walking and talking into the phone; waveform; messy transcript turns into a neat grouped plan. |
-| **Pace** | 80 spoken words in 36 s = 2.22 words/s |
+| **Pace** | 77 spoken words in 36 s = 2.14 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
-- `hook`: Five words, a clear before/after promise, and Asif already talking into his phone.
+- `hook`: Names the overwhelm of a full head and offers a low-effort start: just talk.
 - `relatability`: A full head and scattered tasks is a feeling everyone knows.
 - `visual_progression`: Messy transcript visibly reorganises into grouped tasks.
 - `payoff`: A task mentioned once in passing shows up in the right group: proof it works.
@@ -639,8 +684,8 @@ Series: Before → After · Pillar: Workflows & productivity · Format: Phone-in
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-2.5 | Talk messy. Get a clean plan. | Talk messy → clean plan | Asif walking, phone near mouth. |
-| 2.5-8 | When my head is full, I don't type. I open voice mode and just talk. | Voice mode. Just talk. | Screen: tapping the voice/mic icon in an AI app. |
+| 0-3 | Head too full to start? Talk it out. | Too much in your head? | Asif walking, phone near mouth. |
+| 3-8 | I don't type. I open voice mode and just talk. | Voice mode. Just talk. | Screen: tapping the voice/mic icon in an AI app. |
 | 8-13 | Two minutes. Half sentences, worries, random tasks. Bangla, English, both. | 2 minutes · any language | Speed-ramped talking; waveform overlay. |
 | 13-17 | Then one sentence: “Turn this into a plan.” | “Turn this into a plan.” | Large text on screen. |
 | 17-22.5 | Add: “Group by project, give each task a next step, flag anything urgent.” | group · next step · urgent | Screen: structured plan appears. |
@@ -651,7 +696,7 @@ Series: Before → After · Pillar: Workflows & productivity · Format: Phone-in
 **Caption**
 
 ```text
-When my head is full, I don't type. I talk.
+Head too full to even start? Don't type. Talk.
 
 1. Open voice mode in your AI app (ChatGPT, Gemini, Claude all have one)
 2. Talk for 2 minutes: half-sentences, worries, random tasks. Bangla, English, both.
@@ -659,7 +704,7 @@ When my head is full, I don't type. I talk.
 
 Faster than typing, and nothing you mentioned gets lost.
 
-Save this and try it tonight.
+Try it tonight when your head is full.
 
 #productivity #AItips #voiceAI
 ```
@@ -675,10 +720,14 @@ Series: Hidden Button · Pillar: Hidden features & tools · Format: Screen demo 
 
 | | |
 |---|---|
+| **Human problem** | Watching long lectures and forgetting almost everything by exam time. |
 | **Objective** | Saves + shares among students |
-| **Hook** | Long lecture, remember nothing? Try this. |
+| **Hook** | Watched a two-hour lecture. Remember nothing? |
+| **Open loop (what the viewer wants to know)** | How do you turn a video into something you'll actually remember? |
 | **Main idea** | Add a YouTube lecture + notes to Gemini Notebook, generate a quiz, test yourself first, then make flashcards from mistakes. |
 | **Key value** | A study workflow built on retrieval practice using a free tool. |
+| **Payoff (where it's answered)** | 17–37 s: quiz first, then explanations with the exact lecture line, then flashcards from your mistakes. |
+| **Takeaway (what did I just learn?)** | Turn a lecture into a quiz with Gemini Notebook and study only what you got wrong. |
 | **CTA** | Send it to a classmate with exams coming. |
 | **Visual concept** | Laptop with a lecture → Gemini Notebook screens: add source, quiz, citation, flashcards. |
 | **Pace** | 103 spoken words in 44 s = 2.34 words/s |
@@ -696,7 +745,7 @@ Series: Hidden Button · Pillar: Hidden features & tools · Format: Screen demo 
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-3 | Long lecture, remember nothing? Try this. | Watched it. Forgot it? | Over-the-shoulder: YouTube lecture playing on a laptop. |
+| 0-3 | Watched a two-hour lecture. Remember nothing? | Watched it. Forgot it? | Over-the-shoulder: YouTube lecture playing on a laptop. |
 | 3-7.5 | Open Gemini Notebook. It used to be called NotebookLM. | Gemini Notebook (ex-NotebookLM) | Screen: Gemini Notebook home. |
 | 7.5-12 | Create a notebook and paste the YouTube link as a source. | Add source → YouTube link | Screen recording: pasting the link. |
 | 12-17 | Add your class slides or notes too. It answers from these sources. | Answers from YOUR sources | Sources panel fills. |
@@ -710,7 +759,7 @@ Series: Hidden Button · Pillar: Hidden features & tools · Format: Screen demo 
 **Caption**
 
 ```text
-Watched a long lecture and remember nothing? Do this:
+Watched a two-hour lecture and remember nothing? Do this:
 
 1. Open Gemini Notebook (the new name of NotebookLM)
 2. Create a notebook → add the YouTube link as a source, plus your slides or notes
@@ -721,7 +770,7 @@ Watched a long lecture and remember nothing? Do this:
 
 Testing yourself beats re-reading. Free to start.
 
-Send this to a friend with exams coming.
+Exams coming? Share it with your study group.
 
 #studytips #GeminiNotebook #students
 ```
@@ -733,23 +782,27 @@ Send this to a friend with exams coming.
 
 <a id="D07-R1"></a>
 
-### #026 · D07-R1 · Day 7 · Sun 18 Oct · 13:30 BST · REEL · 40 s
+### #026 · D07-R1 · Day 7 · Sun 18 Oct · 13:30 BST · REEL · 43 s
 **5 signs a task should be automated**  
 Series: Automate This · Pillar: Automation & n8n · Format: Numbered list + talking head
 
 | | |
 |---|---|
+| **Human problem** | Spending part of every day copying information from one app to another. |
 | **Objective** | Educate buyers to self-identify; comments |
-| **Hook** | Five signs a task needs automating. |
+| **Hook** | Copy-pasting daily? That's a machine's job. |
+| **Open loop (what the viewer wants to know)** | Does my task pass the five signs? |
 | **Main idea** | Same steps, copy-paste, frequency, costly mistakes and someone waiting = automate; judgment-heavy = keep human. |
 | **Key value** | A self-scoring checklist (3+ signs = strong candidate) and the honest exception. |
+| **Payoff (where it's answered)** | 28–38 s: three or more signs means automate; needs judgment means keep it human. |
+| **Takeaway (what did I just learn?)** | A task with fixed steps, copy-paste, high frequency, costly mistakes or someone waiting is worth automating. |
 | **CTA** | Comment which task scored highest. |
 | **Visual concept** | Counter graphic 1–5 with icons; tally at the end; 'keep it human' card. |
-| **Pace** | 91 spoken words in 40 s = 2.27 words/s |
+| **Pace** | 95 spoken words in 43 s = 2.21 words/s |
 | **Spec** | Reel 9:16 · 1080×1920 · H.264 MP4 · 30 fps · AAC 48 kHz · safe box x65–1015 / y270–1250 · burned-in captions y1050–1250 · cover title inside centre 1080×1350 |
 
 **Why people keep watching (retention drivers)**
-- `hook`: A numbered promise sets clear expectations; viewers count along.
+- `hook`: Calls out a daily chore viewers do and reframes it as a machine's job, which is mildly provocative and relatable.
 - `relatability`: Copy-pasting from Messenger to a sheet and waiting customers are daily realities for sellers.
 - `usefulness`: Viewers can score their own tasks right away (3+ = automate).
 - `visual_progression`: A new numbered icon every ~4.5 s; tally animation at the end.
@@ -759,20 +812,21 @@ Series: Automate This · Pillar: Automation & n8n · Format: Numbered list + tal
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-2.5 | Five signs a task needs automating. | 5 signs → automate it | Asif counting on fingers. |
-| 2.5-7 | One: the steps are the same every time. Same apps, same order. | 1 · Same steps | Icon 1 with repeating arrows. |
-| 7-11.5 | Two: you copy-paste between apps. Messenger to sheet, sheet to email. | 2 · Copy-paste between apps | Animated cursor copy-pasting between two windows. |
-| 11.5-15.5 | Three: it happens every day or every week. | 3 · Daily or weekly | Calendar pages flip. |
-| 15.5-20.5 | Four: a small mistake costs you. A wrong price, a missed order. | 4 · Mistakes cost money | Red alert icon. |
-| 20.5-25 | Five: someone is waiting. A customer, a boss, a delivery man. | 5 · Someone is waiting | Clock ticking icon. |
-| 25-30.5 | Three or more signs? That task is a strong candidate. | 3+ signs = automate | Tally marks animate 1-2-3. |
-| 30.5-35 | But if it needs your judgment every single time, keep it human. | Needs judgment? Keep it human. | Asif to camera. |
-| 35-40 | Which task scored highest for you? Tell me below. | Your task? ↓ | End card. |
+| 0-3 | Copy-pasting daily? That's a machine's job. | Copy-paste daily = machine's job | Asif copy-pasting between two windows, then stops and looks at camera. |
+| 3-5.5 | Five signs to check. | 5 signs | Counter graphic appears. |
+| 5.5-10 | One: the steps are the same every time. Same apps, same order. | 1 · Same steps | Icon 1 with repeating arrows. |
+| 10-14.5 | Two: you copy-paste between apps. Messenger to sheet, sheet to email. | 2 · Copy-paste between apps | Animated cursor copy-pasting between two windows. |
+| 14.5-18.5 | Three: it happens every day or every week. | 3 · Daily or weekly | Calendar pages flip. |
+| 18.5-23.5 | Four: a small mistake costs you. A wrong price, a missed order. | 4 · Mistakes cost money | Red alert icon. |
+| 23.5-28 | Five: someone is waiting. A customer, a boss, a delivery man. | 5 · Someone is waiting | Clock ticking icon. |
+| 28-33.5 | Three or more signs? That task is a strong candidate. | 3+ signs = automate | Tally marks animate 1-2-3. |
+| 33.5-38 | But if it needs your judgment every single time, keep it human. | Needs judgment? Keep it human. | Asif to camera. |
+| 38-43 | Which task scored highest for you? Tell me below. | Your task? ↓ | End card. |
 
 **Caption**
 
 ```text
-5 signs a task should be automated:
+Copy-pasting the same thing every day? That's a machine's job. 5 signs a task should be automated:
 
 1. The steps are the same every time
 2. You copy-paste between apps (Messenger → sheet → email)
@@ -781,7 +835,7 @@ Series: Automate This · Pillar: Automation & n8n · Format: Numbered list + tal
 5. Someone is waiting (customer, boss, delivery)
 
 3 or more? Strong candidate.
-Needs your judgment every time? Keep it human. Automation is for rules, not decisions.
+Needs your judgment every time? Keep it human. Automation handles rules; decisions stay with you.
 
 Which task scored highest for you?
 
@@ -799,10 +853,14 @@ Series: Before → After · Pillar: Practical AI · Format: Before/after split s
 
 | | |
 |---|---|
+| **Human problem** | Sending AI-written emails that sound stiff and fake to the people reading them. |
 | **Objective** | Saves + relatability for professionals |
-| **Hook** | Your AI emails sound like AI. Here's why. |
+| **Hook** | People can tell your email came from AI. |
+| **Open loop (what the viewer wants to know)** | What gives it away, and how do you fix it? |
 | **Main idea** | AI fills space with safe, long, polite filler; notes + your own sample + hard limits fix it. |
 | **Key value** | Three rules + read-aloud test + prompt in caption. |
+| **Payoff (where it's answered)** | 26–36.5 s: a half-length rewrite that sounds human, plus the read-aloud test. |
+| **Takeaway (what did I just learn?)** | Give AI your notes, one real email you wrote and a word limit, then read the result aloud. |
 | **CTA** | Save the prompt. |
 | **Visual concept** | Generic email with filler highlighted in yellow → rewritten short email; split before/after. |
 | **Pace** | 99 spoken words in 40 s = 2.48 words/s |
@@ -819,7 +877,7 @@ Series: Before → After · Pillar: Practical AI · Format: Before/after split s
 
 | Time (s) | Voiceover | On-screen text | Visual / edit |
 |---|---|---|---|
-| 0-3 | Your AI emails sound like AI. Here's why. | Sounds like AI? | Asif reads a long generic email, winces. |
+| 0-3 | People can tell your email came from AI. | They can tell. | Asif reads a long generic email, winces. |
 | 3-7.5 | “I hope this email finds you well.” Nobody talks like that. | “I hope this finds you well…” | Phrase highlighted in yellow. |
 | 7.5-12 | AI fills empty space with polite, safe, long sentences. | polite · safe · long | More filler phrases highlight one by one. |
 | 12-17 | Fix it with three rules. One: give it your rough notes, not a topic. | 1 · Your notes, not a topic | Bullet notes typed. |
@@ -832,7 +890,7 @@ Series: Before → After · Pillar: Practical AI · Format: Before/after split s
 **Caption**
 
 ```text
-Your AI emails sound like AI because AI fills empty space with safe, polite, long sentences.
+People can tell when an email came from AI. It fills empty space with safe, polite, long sentences.
 
 Fix it with 3 rules:
 1. Give it your rough notes, not a topic
@@ -842,9 +900,7 @@ Fix it with 3 rules:
 Prompt:
 “Write an email from these notes: [notes]. Match the style of this email I wrote: [paste]. Under 100 words. No ‘I hope this finds you well’. Plain, direct, friendly.”
 
-Then read it out loud. If you wouldn't say it, delete it.
-
-Save this.
+Then read it out loud. If you wouldn't say it, delete it. The prompt works for every email, so keep it handy.
 
 #emailtips #AItips #productivity
 ```

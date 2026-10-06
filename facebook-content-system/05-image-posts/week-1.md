@@ -14,10 +14,12 @@ Series: Automate This · Pillar: Automation & n8n · Format: Decision tree
 
 | | |
 |---|---|
+| **Human problem** | A to-do list full of repetitive tasks, and no idea which ones are worth automating. |
 | **Objective** | Saves + set the page's practical tone on Day 1 |
 | **Hook** | Automate it, delegate it, or delete it? |
 | **Main idea** | Before automating a task, check if it should exist and if its steps are fixed. |
 | **Key value** | A 3-question filter that stops people from automating broken or pointless processes. |
+| **Takeaway (what did I just learn?)** | Before automating a task, check that it should exist and that its steps are fixed. |
 | **CTA** | Save it and run your own to-do list through it. |
 | **Visual concept** | Clean vertical decision tree with three diamond questions and colour-coded exits. |
 | **Words on image** | 64 |
@@ -46,7 +48,7 @@ The 3-question filter I'd use before building any workflow:
 
 Automating a messy process just makes the mess faster.
 
-Save this and run your to-do list through it this week.
+Run your to-do list through it this week. You might delete a task before you automate one.
 
 #automation #productivity #n8n
 ```
@@ -62,18 +64,20 @@ Series: AI Myth Check · Pillar: AI literacy & safety · Format: Glossary card
 
 | | |
 |---|---|
+| **Human problem** | AI news and tutorials full of words nobody explains. |
 | **Objective** | Shares to beginners; establish plain-language voice |
-| **Hook** | 5 AI words, explained in plain English |
+| **Hook** | AI news confusing? Learn these 5 words first |
 | **Main idea** | Most AI news is confusing because of five words; plain definitions fix that. |
 | **Key value** | Plain definitions of model, prompt, context, hallucination and agent. |
+| **Takeaway (what did I just learn?)** | Model, prompt, context, hallucination and agent are the five words that make most AI news understandable. |
 | **CTA** | Send it to someone who just started using AI. |
 | **Visual concept** | Dictionary-style card: five bold terms in the accent colour, one-line definitions. |
-| **Words on image** | 68 |
+| **Words on image** | 69 |
 | **Spec** | Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image |
 
 **On-image copy (use exactly)**
 
-- **Headline:** 5 AI words, explained in plain English
+- **Headline:** AI news confusing? Learn these 5 words first
 - **Body:**
   - Model: the AI 'brain' (GPT, Gemini, Claude) that writes the answer.
   - Prompt: what you type or say to it.
@@ -86,15 +90,15 @@ Series: AI Myth Check · Pillar: AI literacy & safety · Format: Glossary card
 **Caption**
 
 ```text
-Most AI news is hard to follow because of 5 words. Here they are in plain English.
+AI news confusing? Most of it depends on 5 words. Here they are in plain English.
 
 Model: the AI 'brain' that writes the answer (GPT, Gemini, Claude are model families).
 Prompt: what you type or say.
 Context: everything the AI can see in this moment: your messages, files and instructions. More useful context, better answers.
 Hallucination: a confident answer that's wrong.
-Agent: AI that can do things (search, send, update a sheet), not just talk.
+Agent: AI that can do things (search, send, update a sheet) instead of only replying.
 
-Send this to someone who just started using AI.
+Know someone who just started using AI? This one's for them.
 
 #AItips #ArtificialIntelligence #learnAI
 ```
@@ -110,10 +114,12 @@ Series: Steal This Prompt · Pillar: Practical AI · Format: Prompt card
 
 | | |
 |---|---|
+| **Human problem** | Getting a weak AI answer and wasting time starting a new chat. |
 | **Objective** | Saves |
 | **Hook** | Bad AI answer? Don't start over. Send one of these. |
 | **Main idea** | The second message fixes most bad answers; match the problem to a follow-up. |
 | **Key value** | Six problem → follow-up pairs people can copy. |
+| **Takeaway (what did I just learn?)** | Fix a bad AI answer with one targeted follow-up instead of starting over. |
 | **CTA** | Save it for the next disappointing answer. |
 | **Visual concept** | Two-column 'symptom → fix' card; symptoms in muted text, fixes as copyable quote chips. |
 | **Words on image** | 63 |
@@ -144,7 +150,7 @@ Not sure it's true → “Which parts are you unsure about?”
 Messy → “Make a table: step, owner, deadline.”
 Missed the point → “My goal is [X]. What would you change?”
 
-Save this for the next answer that disappoints you.
+Next time an answer disappoints you, send one of these before you give up on the chat.
 
 #AItips #ChatGPT #PromptTips
 ```
@@ -160,11 +166,13 @@ Series: What It Means For You · Pillar: Current developments · Format: News ca
 
 | | |
 |---|---|
+| **Human problem** | So much AI news that you can't tell which updates actually affect you. |
 | **Objective** | Timeliness + shares; positions the page as current |
 | **Hook** | 5 AI updates from September that actually matter |
 | **Main idea** | Only five of September's AI updates change what normal users can do; here they are with who can use them. |
 | **Key value** | Plain-language summary of five verified updates, each with availability. |
-| **CTA** | Save it; follow for the next monthly 'what matters' card. |
+| **Takeaway (what did I just learn?)** | Only a few September updates change what normal users can do, and some are paid-only. |
+| **CTA** | Ask which update viewers will try first (genuine question). |
 | **Visual concept** | Numbered news list with small product logos replaced by neutral icons (no third-party logos); 'Checked 6 Oct 2026' stamp. |
 | **Words on image** | 62 |
 | **Spec** | Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image |
@@ -188,7 +196,7 @@ Lots of AI news in September. These 5 actually change what you can do:
 
 1. Gemini Notebook (the tool formerly called NotebookLM) can now make ~60-second video summaries in 80+ languages, plus quizzes and flashcards from your notes.
 2. ChatGPT Images 2.5 (8 Sep): draw a rough sketch, and it turns it into a finished image. Also faster.
-3. Gemini skills (30 Sep): save an instruction once, use it with “/”. Gems turn into skills from November.
+3. Gemini skills (30 Sep): save an instruction once, use it with “/”. Gems start turning into skills on 17 November.
 4. Gemini app for Windows: Alt + Space opens it over any app.
 5. OpenAI dots (29 Sep): always-on agents. Only ChatGPT Pro and Business Premium for now.
 
@@ -198,7 +206,7 @@ Which one will you try first?
 ```
 **Production notes:** News template. Do NOT use third-party logos on the image (trademark); neutral icons only. Re-check all five items the day before posting (volatile).
 
-**Sources:** [Sharpen your study routine with new Gemini Notebook tools](https://blog.google/innovation-and-ai/products/gemini-notebook/new-study-tools-september-2026/) — Google Blog, 2026-09 · [Introducing ChatGPT Images 2.5](https://openai.com/index/introducing-chatgpt-images-2-5/) — OpenAI, 2026-09-08 ⚠️ re-check within 48 h of posting · [Let skills in Gemini tackle your most repetitive tasks](https://blog.google/products-and-platforms/products/gemini/automate-tasks-with-skills/) — Google Blog (+ Gemini Apps Help 'About the transition from Gems to skills'), 2026-09-30 ⚠️ re-check within 48 h of posting · [The Gemini desktop app is now available for Windows](https://workspaceupdates.googleblog.com/2026/09/the-gemini-desktop-app-is-now-available-for-Windows.html) — Google Workspace Updates, 2026-09 · [Introducing dots](https://openai.com/index/introducing-dots/) — OpenAI (help article "Getting started with your dot"; TechCrunch 2026-09-29), 2026-09-29 ⚠️ re-check within 48 h of posting
+**Sources:** [Sharpen your study routine with new Gemini Notebook tools](https://blog.google/innovation-and-ai/products/gemini-notebook/new-study-tools-september-2026/) — Google Blog, 2026-09 · [Introducing ChatGPT Images 2.5](https://openai.com/index/introducing-chatgpt-images-2-5/) — OpenAI, 2026-09-08 ⚠️ re-check within 48 h of posting · [Let skills in Gemini tackle your most repetitive tasks](https://blog.google/products-and-platforms/products/gemini/automate-tasks-with-skills/) — Google Blog (+ Gemini Apps Help 'About the transition from Gems to skills'), 2026-09-30 ⚠️ re-check within 48 h of posting · [Google Is Replacing Gemini Gems With Skills Nov 17](https://www.techrepublic.com/article/news-gemini-gems-skills-migration/) — TechRepublic (also 9to5Google, 2026-09-27 and 2026-09-30), 2026-09-30 ⚠️ re-check within 48 h of posting · [The Gemini desktop app is now available for Windows](https://workspaceupdates.googleblog.com/2026/09/the-gemini-desktop-app-is-now-available-for-Windows.html) — Google Workspace Updates, 2026-09 · [Introducing dots](https://openai.com/index/introducing-dots/) — OpenAI (help article "Getting started with your dot"; TechCrunch 2026-09-29), 2026-09-29 ⚠️ re-check within 48 h of posting
 
 ---
 
@@ -210,10 +218,12 @@ Series: Explain It Simply · Pillar: Automation & n8n · Format: Glossary card
 
 | | |
 |---|---|
+| **Human problem** | Opening n8n for the first time and understanding nothing on the screen. |
 | **Objective** | Educate future automation buyers; saves |
 | **Hook** | Learn n8n in 4 words |
 | **Main idea** | Four terms explain almost every n8n screen. |
 | **Key value** | Plain definitions of trigger, node, credential and execution, including the security habit of keeping logins in credentials. |
+| **Takeaway (what did I just learn?)** | Trigger, node, credential and execution explain most of what you see in n8n. |
 | **CTA** | Save it before you open n8n for the first time. |
 | **Visual concept** | Four tiles shaped like n8n nodes connected by a line, each holding one term and definition. |
 | **Words on image** | 57 |
@@ -256,18 +266,20 @@ Series: Hidden Button · Pillar: Hidden features & tools · Format: Hidden featu
 
 | | |
 |---|---|
+| **Human problem** | Wanting to ask AI something without it staying in your history or changing what it remembers. |
 | **Objective** | Saves + privacy awareness |
-| **Hook** | ChatGPT's Temporary Chat: when to use it |
+| **Hook** | Don't want this chat saved? Use Temporary Chat |
 | **Main idea** | Temporary Chat keeps a conversation out of history and memory; useful for one-offs, tests and screen-sharing. |
 | **Key value** | Four concrete uses + the Aug 2026 personalization option + the limit (still not a place for secrets). |
-| **CTA** | Save it. |
+| **Takeaway (what did I just learn?)** | Temporary Chat keeps a conversation out of ChatGPT's history and memory, but it is not for secrets. |
+| **CTA** | None. The privacy reminder is the closing line. |
 | **Visual concept** | Simple UI-style mock of a chat window with a dotted 'temporary' outline (drawn, not a screenshot), four use cases beside it. |
-| **Words on image** | 59 |
+| **Words on image** | 60 |
 | **Spec** | Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image |
 
 **On-image copy (use exactly)**
 
-- **Headline:** ChatGPT's Temporary Chat: when to use it
+- **Headline:** Don't want this chat saved? Use Temporary Chat
 - **Body:**
   - One-off questions you don't want in your history.
   - Testing a prompt without changing ChatGPT's memory of you.
@@ -280,7 +292,7 @@ Series: Hidden Button · Pillar: Hidden features & tools · Format: Hidden featu
 **Caption**
 
 ```text
-ChatGPT has a Temporary Chat mode, and most people never use it.
+Don't want a ChatGPT conversation saved? There's a mode for that, and most people never use it.
 
 Look for the Temporary chat option at the top of a new chat.
 
@@ -293,8 +305,6 @@ Since 27 Aug 2026 you can choose before starting: personalized (uses your existi
 Either way, it doesn't create new memories.
 
 Temporary doesn't mean secret. Still no passwords or ID numbers.
-
-Save this.
 
 #ChatGPT #privacy #AItips
 ```
@@ -312,10 +322,12 @@ Series: AI Myth Check · Pillar: AI literacy & safety · Format: Checklist
 
 | | |
 |---|---|
+| **Human problem** | Not knowing which parts of an AI answer you can safely trust. |
 | **Objective** | Saves + trust |
 | **Hook** | Check these 5 things in every AI answer |
 | **Main idea** | AI errors cluster in five predictable places; check those and use the rest as a draft. |
 | **Key value** | A 5-item verification checklist. |
+| **Takeaway (what did I just learn?)** | AI mistakes cluster in numbers, dates, names and quotes, links, and laws, so check those first. |
 | **CTA** | Save it next to your AI app. |
 | **Visual concept** | Checklist with five warning icons and a 'how to check' hint per line. |
 | **Words on image** | 52 |
@@ -362,10 +374,12 @@ Series: Steal This Prompt · Pillar: Practical AI · Format: Prompt card
 
 | | |
 |---|---|
+| **Human problem** | Thinking clearly in Bangla but struggling to write professional English. |
 | **Objective** | Shares in Bangladesh; relatability |
 | **Hook** | Think in Bangla. Get it in English. |
 | **Main idea** | AI works as translator and editor; four lines cover the common bilingual needs. |
 | **Key value** | Four copy-paste lines for Bangla↔English writing, editing and client messages. |
+| **Takeaway (what did I just learn?)** | Write in Bangla and let AI produce clear English, then learn from the changes it shows you. |
 | **CTA** | Send it to a friend who writes to foreign clients. |
 | **Visual concept** | Prompt card with a small 'বাংলা → English' tag; four quote chips. |
 | **Words on image** | 66 |
@@ -412,10 +426,12 @@ Series: What It Means For You · Pillar: Current developments · Format: News ca
 
 | | |
 |---|---|
+| **Human problem** | Following an older tutorial and not finding the tool it mentions. |
 | **Objective** | Prevent confusion; shares among students |
-| **Hook** | NotebookLM has a new name: Gemini Notebook |
+| **Hook** | Looking for NotebookLM? It's now Gemini Notebook |
 | **Main idea** | Same tool, new name since 16 July 2026, plus new study features; tutorials saying NotebookLM refer to it. |
 | **Key value** | What changed, what didn't, what's new, so viewers aren't confused by old tutorials. |
+| **Takeaway (what did I just learn?)** | NotebookLM was renamed Gemini Notebook in July 2026: same tool, same notebooks. |
 | **CTA** | Send it to a classmate. |
 | **Visual concept** | 'Old name → New name' header with a strike-through, then 5 short facts. |
 | **Words on image** | 65 |
@@ -423,7 +439,7 @@ Series: What It Means For You · Pillar: Current developments · Format: News ca
 
 **On-image copy (use exactly)**
 
-- **Headline:** NotebookLM has a new name: Gemini Notebook
+- **Headline:** Looking for NotebookLM? It's now Gemini Notebook
 - **Body:**
   - Renamed on 16 July 2026. Same tool, same notebooks, nothing to move.
   - Free to start (with limits). Add PDFs, notes, websites or YouTube links.
@@ -436,7 +452,7 @@ Series: What It Means For You · Pillar: Current developments · Format: News ca
 **Caption**
 
 ```text
-If you used NotebookLM, it now has a new name: Gemini Notebook.
+Looking for NotebookLM? It has a new name: Gemini Notebook.
 
 Renamed on 16 July 2026. Same product, same notebooks, nothing to move.
 
@@ -446,7 +462,7 @@ New in September: ~60-second video summaries in 80+ languages, plus quizzes and 
 
 If an older tutorial says “NotebookLM”, it's talking about this tool.
 
-Send this to a classmate.
+Send this to the classmate who still calls it NotebookLM.
 
 #GeminiNotebook #NotebookLM #studytips
 ```
@@ -464,10 +480,12 @@ Series: Steal This Prompt · Pillar: Workflows & productivity · Format: Framewo
 
 | | |
 |---|---|
+| **Human problem** | Starting busy days without knowing what matters most. |
 | **Objective** | Saves; habit-forming |
 | **Hook** | A 10-minute AI routine for busy days |
 | **Main idea** | Four prompts around your real task list turn AI into a daily planning partner. |
 | **Key value** | Three morning prompts (prioritise, break down, risks) + one evening prompt (carry over). |
+| **Takeaway (what did I just learn?)** | Four short prompts around your real task list help you prioritise in the morning and carry work over at night. |
 | **CTA** | Save it and try it tomorrow morning. |
 | **Visual concept** | Sun/moon split card: morning section with 3 prompts, evening section with 1. |
 | **Words on image** | 63 |
@@ -501,7 +519,7 @@ Evening
 
 Paste your real list. Vague list, vague advice.
 
-Save this and try it tomorrow morning.
+Try it tomorrow morning with your real list.
 
 #productivity #AItips #planning
 ```
@@ -517,11 +535,13 @@ Series: AI Myth Check · Pillar: Automation & n8n · Format: Myth vs fact
 
 | | |
 |---|---|
+| **Human problem** | Believing automation is only for programmers. |
 | **Objective** | Lower the barrier; educate future buyers |
 | **Hook** | Myth: you need to code to automate |
 | **Main idea** | Visual tools make automation about process thinking, not code; AI now writes the small code bits. |
 | **Key value** | Reframes the real skill (thinking in steps) and what you actually need. |
-| **CTA** | Save it. |
+| **Takeaway (what did I just learn?)** | If you can write a process down step by step, you can learn to automate it with visual tools. |
+| **CTA** | None. The closing line is the takeaway. |
 | **Visual concept** | Myth (crossed out) vs Fact panels; small node-graph illustration. |
 | **Words on image** | 66 |
 | **Spec** | Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image |
@@ -562,48 +582,45 @@ If you can write the steps down, you can learn to automate them.
 <a id="D06-I2"></a>
 
 ### #023 · D06-I2 · Day 6 · Sat 17 Oct · 18:30 BST · IMAGE
-**Prompt: reply to an angry customer calmly**  
-Series: Steal This Prompt · Pillar: Practical AI · Format: Prompt card
+**Angry customer? Compare a defensive reply with a calm one**  
+Series: Steal This Prompt · Pillar: Practical AI · Format: Before/after chat mock
 
 | | |
 |---|---|
+| **Human problem** | An angry customer message arrives and the first reply that comes to mind is defensive. |
 | **Objective** | Saves for sellers and support staff |
-| **Hook** | Steal this: reply to an angry customer |
+| **Hook** | Angry customer? Compare these two replies |
 | **Main idea** | A structured prompt produces a calm, human reply with options instead of excuses. |
 | **Key value** | A copy-paste complaint-reply prompt with four rules. |
+| **Takeaway (what did I just learn?)** | A calm reply says sorry once, repeats the problem and offers two clear options. |
 | **CTA** | Save it for your next difficult message. |
-| **Visual concept** | Prompt card with an angry chat bubble icon turning into a calm one. |
-| **Words on image** | 49 |
+| **Visual concept** | Phone chat mock: customer complaint, a red-outlined defensive reply, a green-outlined calm reply, and the prompt strip. |
+| **Words on image** | 68 |
 | **Spec** | Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image |
 
 **On-image copy (use exactly)**
 
-- **Headline:** Steal this: reply to an angry customer
+- **Headline:** Angry customer? Compare these two replies
 - **Body:**
-  - “Here's a customer message: [paste].”
-  - “Write a reply that:
-  - – says sorry once, without excuses
-  - – repeats their problem in one line
-  - – offers 2 clear options with times
-  - – sounds like a calm human, under 80 words.”
+  - Customer: “3 days late and no update. Very bad service.”
+  - ✗ “Sorry for the inconvenience. Delays happen due to courier issues.”
+  - ✓ “You're right, 3 days with no update isn't OK. I'm sorry. I can resend today or refund now. Which do you prefer?”
+  - Prompt: “Reply: sorry once, repeat their problem, 2 options, under 80 words.”
 - **Footer:** Check names, prices and promises before you send.
-- **Layout:** Light background. Small illustration top-right: red chat bubble → green chat bubble. Prompt text in a large quote block with left accent border. Footer bottom.
+- **Layout:** Phone chat mock: grey customer bubble on top; red-outlined defensive reply; green-outlined calm reply; prompt strip at the bottom. Footer below the phone.
 
 **Caption**
 
 ```text
-Angry customer message? Don't reply while you're angry too. Use this:
+Angry customer message? The first reply that comes to mind is usually defensive.
 
-“Here's a customer message: [paste].
-Write a reply that:
-– says sorry once, without excuses
-– repeats their problem in one line so they know I understood
-– offers 2 clear options with times (e.g. replacement by Thursday or refund today)
-– sounds like a calm human, under 80 words.”
+✗ “Sorry for the inconvenience. Delays happen due to courier issues.”
+✓ “You're right, 3 days with no update isn't OK. I'm sorry. I can resend today or refund now. Which do you prefer?”
 
-Then check every name, price and promise before sending. You're responsible for what it says.
+The second one says sorry once, shows you understood, and gives a choice. AI can draft it for you:
+“Here's a customer message: [paste]. Write a reply that says sorry once without excuses, repeats their problem in one line, offers 2 clear options with times, and sounds like a calm human. Under 80 words.”
 
-Save this for the next difficult message.
+Check every name, price and promise before sending. Keep the prompt for the next difficult message.
 
 #customerservice #AItips #smallbusiness
 ```
@@ -619,10 +636,12 @@ Series: Work With Me · Pillar: Work with me (n8n services) · Format: Service m
 
 | | |
 |---|---|
+| **Human problem** | Owners know they lose time to repetitive work but can't picture what automating it would look like. |
 | **Objective** | First explicit offer; Messenger leads |
 | **Hook** | What I build with n8n |
 | **Main idea** | A menu of real workflow types Asif has built and runs, so buyers can recognise their need. |
 | **Key value** | Concrete outcomes, not jargon; a clear next step. |
+| **Takeaway (what did I just learn?)** | Six real workflow types show what n8n automation looks like in a small business. |
 | **CTA** | Message 'AUTOMATE' with the task you repeat most. |
 | **Visual concept** | Menu-style card with six icon rows and a Messenger CTA bar. |
 | **Words on image** | 65 |
@@ -645,7 +664,7 @@ Series: Work With Me · Pillar: Work with me (n8n services) · Format: Service m
 **Caption**
 
 ```text
-People ask what I actually build. Here's the menu. All of these are workflows I've built and run in n8n:
+People ask what I actually build. This is the menu. All of these are workflows I've built and run in n8n:
 
 • Messenger & WhatsApp assistants that reply in seconds
 • Leads from forms or comments → Google Sheets + instant alert
@@ -654,7 +673,7 @@ People ask what I actually build. Here's the menu. All of these are workflows I'
 • Website AI assistant and calendar booking helper
 • Form and application intake → email or chat alerts
 
-Not sure if your task fits? Message me “AUTOMATE” and tell me the task you repeat most. I'll tell you honestly if it's worth automating.
+Not sure if your task fits? Send me a message describing it, and I'll tell you whether it's really worth automating.
 
 #n8n #automation #AIautomation
 ```
@@ -670,18 +689,20 @@ Series: Hidden Button · Pillar: Hidden features & tools · Format: Hidden featu
 
 | | |
 |---|---|
+| **Human problem** | Retyping phone numbers and text from photos by hand. |
 | **Objective** | Shares; broad utility |
-| **Hook** | 3 Google Lens tricks most people miss |
+| **Hook** | Still typing text from photos? 3 Lens tricks |
 | **Main idea** | Lens can copy text from images, translate in place and search what you see. |
 | **Key value** | Three practical uses with where to find Lens. |
+| **Takeaway (what did I just learn?)** | Google Lens can copy text from photos, translate signs in place and search what you see. |
 | **CTA** | Send it to someone who still types text from photos by hand. |
 | **Visual concept** | Three phone-shaped panels with icons for copy, translate and search. |
-| **Words on image** | 60 |
+| **Words on image** | 61 |
 | **Spec** | Feed image 4:5 · 1440×1800 PNG (sRGB) · text ≥90 px from edges · headline ≥88 px, body ≥44 px · ≤75 words on image |
 
 **On-image copy (use exactly)**
 
-- **Headline:** 3 Google Lens tricks most people miss
+- **Headline:** Still typing text from photos? 3 Lens tricks
 - **Body:**
   - Copy text from any photo or screenshot: tap Text, select, copy.
   - Translate a sign, menu or label: tap Translate, the words change on the image.
@@ -692,7 +713,7 @@ Series: Hidden Button · Pillar: Hidden features & tools · Format: Hidden featu
 **Caption**
 
 ```text
-3 Google Lens tricks most people miss:
+Still typing phone numbers from photos by hand? 3 Google Lens tricks most people miss:
 
 1. Copy text from any photo or screenshot: open it in Lens → Text → select → copy. No more typing phone numbers from pictures.
 2. Translate in place: point at a sign, menu or label → Translate. The words change on the image.

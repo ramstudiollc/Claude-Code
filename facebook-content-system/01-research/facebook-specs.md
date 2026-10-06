@@ -42,7 +42,7 @@ These specs apply to every asset in this plan. The rules in the "Use this" colum
 | Body | Short lines. Steps or the copy-paste prompt go here. 300–900 characters is typical. | People save posts that hold the full method. |
 | Keywords | Write captions in **plain words people would search for** ("automate Messenger replies", "n8n Google Sheets"). | Discovery now depends more on topic understanding and search, including Facebook's AI Mode search, than on hashtags. |
 | Hashtags | **2–4**, at the end: one niche tag + one or two topic tags. | Hashtags still index but barely affect distribution. Hashtag blocks look spammy. |
-| Links | **No links in the post body.** Use "Message me" (Messenger) or put a link in the first comment. | Meta is testing a limit of 2 link posts/month for Pages without Meta Verified. Links in comments aren't limited. |
+| Links | **No links in the post body.** Use "Message me" (Messenger) or put a link in the first comment. | Meta is testing a limit of 2 link posts/month for Pages without a paid Meta plan (Meta Verified, or Meta One, launched Sept 2026). Links in comments aren't limited. |
 | Engagement asks | Ask real questions. **Never** "comment YES", "tag a friend", "share if you agree". | Meta demotes comment, share, tag and vote bait. |
 
 ## 4. Distribution facts that shape the plan
@@ -77,6 +77,6 @@ These are starting hypotheses from industry estimates. After 14 days, check Insi
 - Meta Newsroom — [Labeling AI-Generated Content (5 Apr 2024)](https://about.fb.com/news/2024/04/metas-approach-to-labeling-ai-generated-content-and-manipulated-media/)
 - Meta Newsroom — [Fighting Engagement Bait (Dec 2017)](https://about.fb.com/news/2017/12/news-feed-fyi-fighting-engagement-bait-on-facebook/)
 - Meta for Developers — [Messenger Platform policy (private replies)](https://developers.facebook.com/documentation/business-messaging/messenger-platform/policy)
-- Social Media Examiner — [Facebook's new link rules (2026)](https://www.socialmediaexaminer.com/what-facebooks-new-link-rules-mean-for-your-2026-strategy/)
+- Social Media Examiner — [Facebook's new link rules (2026)](https://www.socialmediaexaminer.com/what-facebooks-new-link-rules-mean-for-your-2026-strategy/) · Meta Newsroom — [Introducing Meta One (Sept 2026)](https://about.fb.com/news/2026/09/introducing-meta-one-subscription-service-more-features-ai/)
 - Emplifi — [Facebook Reels: What Drives Views and Stops the Scroll (2026)](https://emplifi.io/resources/facebook-reels-data/)
 - Third-party cross-checks (2026 editions): [Outfy size guide](https://www.outfy.com/blog/facebook-image-video-size-guide/), [SocialRails Reels size](https://socialrails.com/sizes/facebook/reels), [charcount.tools truncation](https://charcount.tools/platforms/facebook-character-limit), [Lilach Bullock on hashtags](https://www.lilachbullock.com/best-hashtags-for-facebook-reels/)

@@ -8,9 +8,11 @@
   pillar: AU
   format: Decision tree
   topic: "Automate, delegate or delete? A 3-question filter"
+  human_problem: "A to-do list full of repetitive tasks, and no idea which ones are worth automating."
   objective: "Saves + set the page's practical tone on Day 1"
   hook: "Automate it, delegate it, or delete it?"
   main_idea: "Before automating a task, check if it should exist and if its steps are fixed."
+  takeaway: "Before automating a task, check that it should exist and that its steps are fixed."
   value: "A 3-question filter that stops people from automating broken or pointless processes."
   cta: "Save it and run your own to-do list through it."
   cta_type: save
@@ -34,7 +36,7 @@
 
     Automating a messy process just makes the mess faster.
 
-    Save this and run your to-do list through it this week.
+    Run your to-do list through it this week. You might delete a task before you automate one.
   hashtags: [automation, productivity, n8n]
   sources: []
   production_notes: "Build in the 'Decision tree' template (design-system.md). Q3 'No' exit = grey 'keep a checklist'. Keep arrows thick (8 px) so the flow reads at thumbnail size."
@@ -45,10 +47,14 @@
   pillar: PA
   format: Talking head + screen split
   topic: "Reverse prompting: make AI ask you questions first"
+  human_problem: "You ask AI for help and get a bland, generic answer you can't actually use."
   objective: "Reach + saves; first impression of 'one useful idea per Reel'"
   hook: "Your AI stays generic until you add this."
+  open_loop: "What is the one line? It is held back until second 9."
   main_idea: "Generic answers come from the AI guessing missing details; one line makes it ask instead of guess."
+  takeaway: "Ask AI to question you before it answers, so it works from your facts instead of guesses."
   value: "Copy-paste line: 'Before you answer, ask me 5 questions…' that works in ChatGPT, Gemini or Claude."
+  payoff: "13–28 s: the AI asks five questions about your situation, and the second answer is visibly specific."
   cta: "Save the line (it's in the caption)."
   cta_type: save
   visual_concept: "Close-up talking head, cut to screen recording; side-by-side generic vs specific answer; final frame matches first frame for the loop."
@@ -108,7 +114,7 @@
 
     Use it for posts, emails, plans and CVs. Anything where details matter.
 
-    Save this for the next time an answer feels generic.
+    Keep this line somewhere you'll find it. You'll use it every week.
   hashtags: [AItips, ChatGPT, productivity]
   sources: []
   production_notes: "Tool-agnostic: record in ChatGPT or Gemini. Use REAL outputs for the bakery example (record both versions on the day). Lock camera position so frame 1 and the last frame match exactly. Burned-in captions on."
@@ -119,15 +125,17 @@
   pillar: LIT
   format: Glossary card
   topic: "5 AI words explained in plain English"
+  human_problem: "AI news and tutorials full of words nobody explains."
   objective: "Shares to beginners; establish plain-language voice"
-  hook: "5 AI words, explained in plain English"
+  hook: "AI news confusing? Learn these 5 words first"
   main_idea: "Most AI news is confusing because of five words; plain definitions fix that."
+  takeaway: "Model, prompt, context, hallucination and agent are the five words that make most AI news understandable."
   value: "Plain definitions of model, prompt, context, hallucination and agent."
   cta: "Send it to someone who just started using AI."
   cta_type: share
   visual_concept: "Dictionary-style card: five bold terms in the accent colour, one-line definitions."
   design:
-    headline: "5 AI words, explained in plain English"
+    headline: "AI news confusing? Learn these 5 words first"
     body:
       - "Model: the AI 'brain' (GPT, Gemini, Claude) that writes the answer."
       - "Prompt: what you type or say to it."
@@ -137,15 +145,15 @@
     footer: "Know these 5 and most AI news makes sense."
     layout: "Light background. Headline top. Five rows: term in bold accent colour (left, 30% width), definition (right, 70%). Thin divider lines. Footer bottom-left; series tag top-left."
   caption: |
-    Most AI news is hard to follow because of 5 words. Here they are in plain English.
+    AI news confusing? Most of it depends on 5 words. Here they are in plain English.
 
     Model: the AI 'brain' that writes the answer (GPT, Gemini, Claude are model families).
     Prompt: what you type or say.
     Context: everything the AI can see in this moment: your messages, files and instructions. More useful context, better answers.
     Hallucination: a confident answer that's wrong.
-    Agent: AI that can do things (search, send, update a sheet), not just talk.
+    Agent: AI that can do things (search, send, update a sheet) instead of only replying.
 
-    Send this to someone who just started using AI.
+    Know someone who just started using AI? This one's for them.
   hashtags: [AItips, ArtificialIntelligence, learnAI]
   sources: []
   production_notes: "Glossary template. Keep definitions on one line each at 44 px minimum; if a line wraps, it's still fine at 2 lines but no more."
@@ -156,27 +164,31 @@
   pillar: AU
   format: Diagram explainer + talking head
   topic: "Every automation is 3 parts: trigger, steps, result"
+  human_problem: "Doing the same small task every day and assuming automation is too technical for you."
   objective: "Authority + mental model that later service posts build on"
-  hook: "Every automation has just three parts."
+  hook: "The task you repeat daily? It's three boxes."
+  open_loop: "What are the three boxes, and does my task fit them?"
   main_idea: "Any automation = trigger (something happens) → steps (what should happen) → result (someone gets something)."
+  takeaway: "If a task starts the same way, follows the same steps and ends the same way, it can be automated."
   value: "A mental model that helps viewers spot automatable tasks in their own day."
+  payoff: "24.5–38 s: the full trigger → steps → result picture, plus a one-line test for your own tasks."
   cta: "Comment a task you repeat daily; Asif replies with its trigger, steps and result."
   cta_type: question
   visual_concept: "Three empty boxes that fill one by one with icons; at the end the same three nodes appear as a real n8n canvas behind the diagram."
   runtime: 42
   retention:
-    hook: "A simple, confident promise ('just three parts') that makes a scary topic feel easy."
+    hook: "Turns the viewer's own daily task into something simple (three boxes) within 3 seconds."
     visual_progression: "Boxes light up one by one, so the viewer watches the diagram complete."
     relatability: "Examples are a customer Messenger message, a form and a 9 AM routine, all from normal work."
     payoff: "The finished diagram morphs into a real n8n workflow, linking the idea to the tool."
     usefulness: "Viewers leave with a test ('same start, same steps, same end?') they can apply to their own tasks."
   script:
-    - t: "0-2.5"
-      vo: "Every automation has just three parts."
-      ost: "3 parts. That's it."
+    - t: "0-3"
+      vo: "The task you repeat daily? It's three boxes."
+      ost: "Your daily task = 3 boxes"
       vis: "Asif holds up three fingers; three empty boxes animate in beside him."
-    - t: "2.5-5.5"
-      vo: "Part one: the trigger. Something happens."
+    - t: "3-5.5"
+      vo: "Box one: the trigger. Something happens."
       ost: "1 · TRIGGER"
       vis: "Box 1 lights up with a Messenger 'new message' icon."
     - t: "5.5-9.5"
@@ -216,7 +228,7 @@
       ost: "Your task ↓ I'll map it"
       vis: "Asif points to comments; end frame."
   caption: |
-    Every automation has just three parts: trigger, steps, result.
+    The task you repeat every day is probably just three boxes: trigger, steps, result.
 
     1) Trigger: something happens (a message, a form, 9 AM).
     2) Steps: what should happen next (save, check, write).
@@ -236,9 +248,11 @@
   pillar: PA
   format: Prompt card
   topic: "Prompt rescue: 6 follow-ups when the first answer is bad"
+  human_problem: "Getting a weak AI answer and wasting time starting a new chat."
   objective: "Saves"
   hook: "Bad AI answer? Don't start over. Send one of these."
   main_idea: "The second message fixes most bad answers; match the problem to a follow-up."
+  takeaway: "Fix a bad AI answer with one targeted follow-up instead of starting over."
   value: "Six problem → follow-up pairs people can copy."
   cta: "Save it for the next disappointing answer."
   cta_type: save
@@ -264,7 +278,7 @@
     Messy → “Make a table: step, owner, deadline.”
     Missed the point → “My goal is [X]. What would you change?”
 
-    Save this for the next answer that disappoints you.
+    Next time an answer disappoints you, send one of these before you give up on the chat.
   hashtags: [AItips, ChatGPT, PromptTips]
   sources: []
   production_notes: "Prompt-card template. Quote chips must be copyable from the caption (they are). Square brackets in accent colour to show 'fill this in'."
@@ -275,27 +289,31 @@
   pillar: HF
   format: Phone-in-hand demo
   topic: "Point your camera at a problem with Gemini Live"
+  human_problem: "A device or paper you don't understand, and no idea what words to type into a search."
   objective: "Reach + shares (feels like a discovery)"
-  hook: "Stop typing problems. Show them to AI."
+  hook: "Router blinking red? Don't type it. Show it."
+  open_loop: "Can AI really read the router and know the fix?"
   main_idea: "Gemini Live's camera mode lets you show a real-world problem and talk through it; free on Android and iPhone."
+  takeaway: "Use Gemini Live's free camera mode to show AI a real problem instead of describing it."
   value: "Where to tap, four everyday uses, and the one safety rule (never show passwords, cards or ID numbers)."
+  payoff: "15–20 s: it reads the label, names the model and gives the first fix step."
   cta: "Save it for the next thing that confuses you."
   cta_type: save
   visual_concept: "Over-the-shoulder phone shots of real objects (router, bill, form, error screen) with the live AI response."
   runtime: 38
   retention:
-    hook: "'Stop typing' challenges a habit everyone has; the first frame already shows the phone pointed at a blinking router."
+    hook: "Starts from a specific household moment (a blinking router) and flips the habit of typing problems."
     novelty: "Many viewers have never turned on the camera inside an AI chat; it feels like a hidden feature."
     visual_progression: "Four different real objects in 12 seconds keep the visuals changing."
     relatability: "Router lights, confusing bills, English forms and error screens are daily pains in most homes."
     usefulness: "Exact taps (Gemini → Live → camera) and it's free, so viewers can try it immediately."
     save_share: "Easy to send to parents or friends who struggle with tech."
   script:
-    - t: "0-2.5"
-      vo: "Stop typing problems. Show them to AI."
+    - t: "0-3"
+      vo: "Router blinking red? Don't type it. Show it."
       ost: "Don't type it. Show it."
       vis: "Asif holds phone toward a Wi-Fi router with a red blinking light."
-    - t: "2.5-6.5"
+    - t: "3-6.5"
       vo: "Open Gemini, tap Live, turn on the camera."
       ost: "Gemini → Live → camera"
       vis: "Screen capture with tap circles; zoom on the Live and camera icons."
@@ -332,7 +350,7 @@
       ost: "Save for later"
       vis: "Asif to camera, phone in hand."
   caption: |
-    Stop typing problems. Show them to AI.
+    Router blinking red? Don't type it. Show it to AI.
 
     Gemini Live has a camera mode: open Gemini → tap Live → turn on the camera, then ask out loud.
     It's free on Android and iPhone.
@@ -346,7 +364,7 @@
     One rule: never show passwords, bank cards or ID numbers on camera.
     And double-check any fix before you change settings. AI can be wrong.
 
-    Save this for the next thing that confuses you.
+    Keep this for the next thing in your house that blinks, beeps or confuses you.
   hashtags: [GeminiAI, AItips, techtips]
   sources: [google_gemini_live_free]
   production_notes: "Record the router demo for real and keep the actual answer. If Gemini gets it wrong, re-shoot with a clearer label view; never fake the response. Blur account numbers on the bill. Record vertical at 1080×1920 with phone screen capture + a second angle."
@@ -357,12 +375,14 @@
   pillar: NEWS
   format: News card
   topic: "5 AI updates from September 2026 that actually matter"
+  human_problem: "So much AI news that you can't tell which updates actually affect you."
   objective: "Timeliness + shares; positions the page as current"
   hook: "5 AI updates from September that actually matter"
   main_idea: "Only five of September's AI updates change what normal users can do; here they are with who can use them."
+  takeaway: "Only a few September updates change what normal users can do, and some are paid-only."
   value: "Plain-language summary of five verified updates, each with availability."
-  cta: "Save it; follow for the next monthly 'what matters' card."
-  cta_type: follow
+  cta: "Ask which update viewers will try first (genuine question)."
+  cta_type: question
   visual_concept: "Numbered news list with small product logos replaced by neutral icons (no third-party logos); 'Checked 6 Oct 2026' stamp."
   design:
     headline: "5 AI updates from September that actually matter"
@@ -379,13 +399,13 @@
 
     1. Gemini Notebook (the tool formerly called NotebookLM) can now make ~60-second video summaries in 80+ languages, plus quizzes and flashcards from your notes.
     2. ChatGPT Images 2.5 (8 Sep): draw a rough sketch, and it turns it into a finished image. Also faster.
-    3. Gemini skills (30 Sep): save an instruction once, use it with “/”. Gems turn into skills from November.
+    3. Gemini skills (30 Sep): save an instruction once, use it with “/”. Gems start turning into skills on 17 November.
     4. Gemini app for Windows: Alt + Space opens it over any app.
     5. OpenAI dots (29 Sep): always-on agents. Only ChatGPT Pro and Business Premium for now.
 
     Which one will you try first?
   hashtags: [AInews, ChatGPT, GeminiAI]
-  sources: [google_notebook_study, openai_images25, google_gemini_skills, google_gemini_windows, openai_dots]
+  sources: [google_notebook_study, openai_images25, google_gemini_skills, gems_nov17, google_gemini_windows, openai_dots]
   production_notes: "News template. Do NOT use third-party logos on the image (trademark); neutral icons only. Re-check all five items the day before posting (volatile)."
 
 - id: D02-R2
@@ -394,29 +414,33 @@
   pillar: LIT
   format: Green screen + diagram
   topic: "Why AI makes things up (and the one prompt that catches it)"
+  human_problem: "Trusting a confident AI answer and repeating something that turns out to be fake."
   objective: "Trust + shares; teaches safe use"
-  hook: "AI doesn't lie. It does something stranger."
+  hook: "AI gave me a source. It doesn't exist."
+  open_loop: "Why would AI invent a source that doesn't exist?"
   main_idea: "AI predicts likely words, so it can produce realistic-looking fake sources; grounding + asking for exact quotes catches it."
+  takeaway: "AI predicts likely words, so ask it to quote the exact line behind every claim."
   value: "Simple explanation of hallucination, the five hot-spot types, and the 'quote the exact line' check."
+  payoff: "3–16 s: it predicts what a source looks like; 25–35 s: the quote-the-line check catches it."
   cta: "Follow for more AI Myth Checks."
   cta_type: follow
   visual_concept: "Asif over a green-screen of a chat containing a fake citation; animated 'next-word' probability bars; 'NOT FOUND' stamp."
   runtime: 40
   retention:
-    hook: "'AI doesn't lie' contradicts what viewers expect, and 'something stranger' opens a gap they want closed."
-    curiosity: "Viewers wait to learn what the 'stranger' thing is; it is revealed at second 7."
+    hook: "A personal, specific failure (a source that doesn't exist) that every AI user fears and wants explained."
+    curiosity: "Viewers want to know why a tool would invent something; the reason arrives at second 3."
     visual_progression: "A fake citation assembles piece by piece, then gets stamped NOT FOUND."
     usefulness: "Ends with a concrete check prompt viewers can use today."
     novelty: "Most people think AI 'searches' facts; learning it predicts words reframes every answer they've seen."
     save_share: "Strong 'send to a friend who trusts ChatGPT blindly' energy."
   script:
     - t: "0-3"
-      vo: "AI doesn't lie. It does something stranger."
-      ost: "AI doesn't lie. It's stranger."
-      vis: "Asif on green screen; behind him a chat answer with a book citation circled in red."
+      vo: "AI gave me a source. It doesn't exist."
+      ost: "A source that doesn't exist"
+      vis: "Asif holding his phone: an AI answer with a neat book citation; quick cut to an empty search result."
     - t: "3-7"
-      vo: "At its core, it predicts the next most likely word."
-      ost: "predicts the next word"
+      vo: "It wasn't lying. It predicts the next likely word."
+      ost: "It predicts the next word"
       vis: "Animation: a sentence builds word by word with small probability bars."
     - t: "7-12.5"
       vo: "Ask for a source it doesn't have, and it predicts what a source looks like."
@@ -447,7 +471,7 @@
       ost: "No quote = no trust"
       vis: "Asif to camera; series tag 'AI Myth Check'."
   caption: |
-    AI doesn't lie. It predicts.
+    AI gave me a perfect-looking source. It doesn't exist.
 
     Language models generate the most likely next words. Ask for a source they don't have, and they can generate something that looks like a source: real-looking author, real-looking title, doesn't exist. That's a hallucination.
 
@@ -470,9 +494,11 @@
   pillar: AU
   format: Glossary card
   topic: "Learn n8n in 4 words: trigger, node, credential, execution"
+  human_problem: "Opening n8n for the first time and understanding nothing on the screen."
   objective: "Educate future automation buyers; saves"
   hook: "Learn n8n in 4 words"
   main_idea: "Four terms explain almost every n8n screen."
+  takeaway: "Trigger, node, credential and execution explain most of what you see in n8n."
   value: "Plain definitions of trigger, node, credential and execution, including the security habit of keeping logins in credentials."
   cta: "Save it before you open n8n for the first time."
   cta_type: save
@@ -505,10 +531,14 @@
   pillar: PA
   format: Before/after split screen
   topic: "Show, don't describe: paste examples to get your style"
+  human_problem: "AI-written posts and emails that sound nothing like you."
   objective: "Saves; practical writing win"
-  hook: "Stop describing the style you want. Paste it."
+  hook: "Sounds nothing like you? Stop describing your style."
+  open_loop: "If describing your style doesn't work, what does?"
   main_idea: "Adjectives like 'friendly but professional' are guesses; 2–3 real examples make AI match your style."
+  takeaway: "Paste examples of your own writing instead of describing the style you want."
   value: "A reusable 'same style as these' prompt + the warning that AI copies mistakes too."
+  payoff: "10.5–24 s: pasting 2–3 of your own posts gives a draft with your length, words and sign-off."
   cta: "Save it for your next caption or email."
   cta_type: save
   visual_concept: "Split screen: left = adjective prompt + stiff output; right = pasted examples + matching output with features circled."
@@ -521,8 +551,8 @@
     usefulness: "Works for emails, captions, product descriptions and reports, with the prompt in the caption."
   script:
     - t: "0-3"
-      vo: "Stop describing the style you want. Paste it."
-      ost: "Don't describe. Paste."
+      vo: "Sounds nothing like you? Stop describing your style."
+      ost: "AI doesn't sound like you?"
       vis: "Asif to camera; screen splits into two halves."
     - t: "3-7"
       vo: "Most people type: “Make it friendly but professional, short, with energy.”"
@@ -557,7 +587,7 @@
       ost: "It copies mistakes too"
       vis: "Small smile; end frame."
   caption: |
-    Stop describing the style you want. Paste it.
+    AI never sounds like you? Stop describing your style. Paste it.
 
     “Friendly but professional” can mean 100 things to AI. Your own examples mean one thing.
 
@@ -577,15 +607,17 @@
   pillar: HF
   format: Hidden feature card
   topic: "ChatGPT Temporary Chat: when to use it"
+  human_problem: "Wanting to ask AI something without it staying in your history or changing what it remembers."
   objective: "Saves + privacy awareness"
-  hook: "ChatGPT's Temporary Chat: when to use it"
+  hook: "Don't want this chat saved? Use Temporary Chat"
   main_idea: "Temporary Chat keeps a conversation out of history and memory; useful for one-offs, tests and screen-sharing."
+  takeaway: "Temporary Chat keeps a conversation out of ChatGPT's history and memory, but it is not for secrets."
   value: "Four concrete uses + the Aug 2026 personalization option + the limit (still not a place for secrets)."
-  cta: "Save it."
-  cta_type: save
+  cta: "None. The privacy reminder is the closing line."
+  cta_type: none
   visual_concept: "Simple UI-style mock of a chat window with a dotted 'temporary' outline (drawn, not a screenshot), four use cases beside it."
   design:
-    headline: "ChatGPT's Temporary Chat: when to use it"
+    headline: "Don't want this chat saved? Use Temporary Chat"
     body:
       - "One-off questions you don't want in your history."
       - "Testing a prompt without changing ChatGPT's memory of you."
@@ -595,7 +627,7 @@
     footer: "Source: OpenAI Help Center, checked Oct 2026"
     layout: "Light background. Left 40%: drawn chat-window icon with dashed border labelled 'Temporary'. Right 60%: five short rows with check icons (last row with a caution icon). Footer small, bottom."
   caption: |
-    ChatGPT has a Temporary Chat mode, and most people never use it.
+    Don't want a ChatGPT conversation saved? There's a mode for that, and most people never use it.
 
     Look for the Temporary chat option at the top of a new chat.
 
@@ -608,8 +640,6 @@
     Either way, it doesn't create new memories.
 
     Temporary doesn't mean secret. Still no passwords or ID numbers.
-
-    Save this.
   hashtags: [ChatGPT, privacy, AItips]
   sources: [openai_temp_chat, openai_release_notes]
   production_notes: "Draw the UI as a simplified icon; don't screenshot. Re-check the toggle's location in the current ChatGPT app before posting (UI moves often)."
@@ -620,78 +650,86 @@
   pillar: SVC
   format: Screen demo + face cam
   topic: "The Messenger assistant I built in n8n (and the check most DIY bots skip)"
+  human_problem: "Customers message late at night, you reply hours later, and the sale goes to someone faster."
   objective: "First proof of skill; Messenger leads"
-  hook: "Customers message you at 2 AM? Watch this."
+  hook: "Two AM: “Price?” You reply at ten."
+  open_loop: "How do you answer at 2 AM without staying awake?"
   main_idea: "A 4-step n8n Messenger assistant: verify it's really Meta → ignore echoes → AI reply with per-customer memory → send in seconds."
+  takeaway: "A safe Messenger assistant checks requests, remembers each customer and replies in seconds, while people handle orders and payments."
   value: "Shows what a safe auto-reply looks like, and what it should never do (payments, stock promises)."
+  payoff: "9–33.5 s: the four-step assistant; the last shot shows the 2:07 AM question answered at 2:07."
   cta: "Message 'AUTOMATE' with your top customer questions."
   cta_type: message
   visual_concept: "Phone notification at 2:07 AM → Asif face-cam over his real n8n canvas, zooming node by node; phone shows the reply arriving."
-  runtime: 49
+  runtime: 51
   retention:
-    hook: "Speaks directly to page owners who lose sales to slow replies; the 2 AM notification is instantly relatable."
-    relatability: "Late-night 'Is this available? Delivery charge?' messages are a daily reality for F-commerce sellers."
-    visual_progression: "The camera zooms node by node through a real canvas, so viewers see the build advance step by step."
-    novelty: "The signature check is something most viewers have never heard of, which sets this build apart from 'simple bots'."
-    payoff: "Ends with the reply landing on the phone within seconds."
-    problem_solution: "Clear problem (slow replies) → clear system → honest limits."
+    hook: "A two-line story every seller has lived: the question at 2 AM and the late reply."
+    relatability: "Late-night 'price? delivery charge?' messages are a daily reality for Facebook sellers."
+    problem_solution: "The lost sale is shown first, then the system that prevents it, then its honest limits."
+    visual_progression: "The camera moves node by node through a real canvas, so the build visibly advances."
+    novelty: "The signature check is something most viewers have never heard of, and it separates this from 'simple bots'."
+    payoff: "The final shot answers the opening: the 2:07 AM message is replied to at 2:07."
   script:
-    - t: "0-3"
-      vo: "Customers message you at 2 AM? Watch this."
-      ost: "2 AM message?"
-      vis: "Phone lock screen 02:07: Messenger notification 'Is this still available? Delivery charge?'"
-    - t: "3-6.5"
-      vo: "This is a Messenger assistant I built in n8n."
-      ost: "Built in n8n"
-      vis: "Asif face-cam bubble bottom-left over the full n8n canvas (zoomed to node names only)."
-    - t: "6.5-12"
+    - t: "0-2.5"
+      vo: "Two AM: “Price?” You reply at ten."
+      ost: "2 AM: “Price?” · You: 10 AM"
+      vis: "Phone lock screen 02:07: Messenger 'Price? Delivery charge?'; clock jumps to 10:04 as a reply is typed."
+    - t: "2.5-5.5"
+      vo: "By then, they may have bought elsewhere."
+      ost: "Sale gone"
+      vis: "Reply shows 'Seen', no answer back (dramatized example)."
+    - t: "5.5-9"
+      vo: "So I built a Messenger assistant in n8n."
+      ost: "My fix: built in n8n"
+      vis: "Asif face-cam bubble bottom-left over the n8n canvas (node names only)."
+    - t: "9-14.5"
       vo: "Step one: a message arrives, and it checks the message really came from Meta."
       ost: "1 · Is it really from Meta?"
       vis: "Zoom on 'Verify Signature' → 'Signature OK?' nodes."
-    - t: "12-16"
+    - t: "14.5-18.5"
       vo: "A lot of DIY bots skip this. It stops fake requests."
       ost: "Most DIY bots skip this"
       vis: "Simple animation: a fake request bounces off a shield."
-    - t: "16-21"
+    - t: "18.5-23.5"
       vo: "Step two: it ignores its own replies, so it never talks to itself."
       ost: "2 · Ignore its own echoes"
       vis: "Zoom on 'Is Message?' node."
-    - t: "21-26.5"
+    - t: "23.5-29"
       vo: "Step three: an AI agent writes a short reply and remembers this customer's chat."
       ost: "3 · Short reply + memory per customer"
       vis: "Zoom on 'AI Agent' with 'Simple Memory' attached."
-    - t: "26.5-31"
+    - t: "29-33.5"
       vo: "Step four: the reply goes back through Messenger. Seconds, not hours."
       ost: "4 · Reply in seconds"
       vis: "Phone: reply bubble appears in the chat."
-    - t: "31-36"
+    - t: "33.5-38.5"
       vo: "What it shouldn't do: confirm payments or promise stock it can't see."
       ost: "Not for: payments · stock promises"
       vis: "Asif full screen, serious tone."
-    - t: "36-41.5"
+    - t: "38.5-44"
       vo: "For orders, I connect it to your sheet and hand the chat to a human."
       ost: "Orders → your sheet → a human"
       vis: "Diagram add-on: Sheets icon + person icon appended to the flow."
-    - t: "41.5-46"
-      vo: "Want this for your page? Message me the word AUTOMATE."
+    - t: "44-48.5"
+      vo: "Need this for your page? Message me the word AUTOMATE."
       ost: "Message: AUTOMATE"
       vis: "Asif to camera; Messenger icon animates."
-    - t: "46-49"
-      vo: "Tell me what customers ask most."
-      ost: "Send your top questions"
-      vis: "End card with page name."
+    - t: "48.5-51"
+      vo: "And keep the two AM customers."
+      ost: "Keep the 2 AM customers"
+      vis: "Phone: the 02:07 question answered at 02:07."
   caption: |
-    Customers message your page at 2 AM. Here's the Messenger assistant I built in n8n.
+    2 AM: “Price?” You reply at 10 AM. By then, they may have bought somewhere else.
 
-    How it works:
-    1. Checks the message really came from Meta (signature check, which many DIY bots skip)
-    2. Ignores its own replies so it never loops
+    So I built a Messenger assistant in n8n:
+    1. It checks the message really came from Meta (a signature check many DIY bots skip)
+    2. It ignores its own replies so it never loops
     3. An AI agent writes a short reply and remembers each customer's conversation
-    4. Sends the reply in seconds
+    4. The reply goes out in seconds
 
     What it should NOT do: confirm payments or promise stock it can't see. For orders, I connect it to your Google Sheet and hand the chat to a person.
 
-    Want one for your page? Message me “AUTOMATE” with the 3 questions customers ask you most.
+    Need one for your page? Message me “AUTOMATE” and send the 3 questions customers ask you most.
   hashtags: [n8n, MessengerAutomation, AIautomation]
   sources: []
   production_notes: "Film Asif's real 'Facebook Messenger AI Auto Reply' workflow, zoomed so only node names show. NEVER show the Config node (it holds the page token and app secret) or any webhook URL. Use a test Page/test account for the 2 AM chat. Confirm you're happy to offer the 'order sheet + human handoff' add-on before posting."
@@ -703,9 +741,11 @@
   pillar: LIT
   format: Checklist
   topic: "5 hot spots where AI answers go wrong"
+  human_problem: "Not knowing which parts of an AI answer you can safely trust."
   objective: "Saves + trust"
   hook: "Check these 5 things in every AI answer"
   main_idea: "AI errors cluster in five predictable places; check those and use the rest as a draft."
+  takeaway: "AI mistakes cluster in numbers, dates, names and quotes, links, and laws, so check those first."
   value: "A 5-item verification checklist."
   cta: "Save it next to your AI app."
   cta_type: save
@@ -741,58 +781,65 @@
   series: Explain It Simply
   pillar: AU
   format: Diagram explainer + talking head
-  topic: "What is a webhook? Think of a doorbell"
+  topic: "Why some bots reply instantly: the webhook (a doorbell)"
+  human_problem: "Wondering why some automated replies feel live while others lag for minutes."
   objective: "Authority; loop for rewatches"
-  hook: "What is a webhook? Think of a doorbell."
+  hook: "Some bots reply instantly. Others take minutes. Why?"
+  open_loop: "What makes the fast bot fast? (answered at 3 s, explained by 24 s)"
   main_idea: "Polling = checking the door every 5 minutes; a webhook = a doorbell that rings your automation the moment something happens."
+  takeaway: "A webhook lets an app tell your automation the moment something happens, instead of checking again and again."
   value: "A clear analogy for a term that blocks many beginners, tied to Messenger replies."
+  payoff: "28–32 s: the fast bot isn't smarter; it just has a doorbell, a webhook."
   cta: "Follow for the next 'Explain It Simply'."
   cta_type: follow
   visual_concept: "Door animation: a person walking to the door repeatedly (polling) vs a doorbell ringing (webhook); Messenger → bell → n8n node."
-  loop: "Ends on '…just picture' over the door image; the opening line completes it: 'a doorbell.'"
-  runtime: 28
+  runtime: 32
   retention:
-    hook: "Asks the exact question beginners have and answers with a familiar object in the same breath."
-    curiosity: "'Think of a doorbell' makes viewers wait to see how a doorbell explains software."
-    visual_progression: "Clock-spinning polling animation, then a bell ring, then the real Messenger → n8n flow."
-    rewatch: "The final 'just picture…' loops into 'a doorbell', so the replay feels continuous."
-    usefulness: "Viewers learn why live replies need webhooks, which they'll recognise in every automation tool."
+    hook: "Starts from something viewers have noticed (instant vs slow bots) and asks why."
+    curiosity: "The answer word 'webhook' arrives at second 3, but what it means only becomes clear by second 24."
+    visual_progression: "Split phones, then a door animation, then the real Messenger → n8n flow."
+    payoff: "The ending answers the opening question in one memorable line: not smarter, just a doorbell."
+    usefulness: "Viewers learn why live replies need webhooks, a term they will see in every automation tool."
   script:
     - t: "0-3"
-      vo: "What is a webhook? Think of a doorbell."
+      vo: "Some bots reply instantly. Others take minutes. Why?"
+      ost: "Instant vs 5 minutes. Why?"
+      vis: "Split screen: two phones get the same message; left replies at once, right shows a spinner."
+    - t: "3-7"
+      vo: "The fast ones use a webhook. Think of a doorbell."
       ost: "Webhook = doorbell"
       vis: "Asif beside an animated front door."
-    - t: "3-7"
+    - t: "7-11"
       vo: "Without a doorbell, you'd check the door every five minutes."
       ost: "No bell: check every 5 min"
       vis: "Animated person walks to the door again and again; clock spins."
-    - t: "7-11"
+    - t: "11-15"
       vo: "That's called polling. It's slow, and it wastes your time."
       ost: "= polling (slow)"
       vis: "Person slumps; 'polling' label."
-    - t: "11-15"
+    - t: "15-19"
       vo: "With a doorbell, the visitor tells you the moment they arrive."
       ost: "Bell: they tell YOU"
       vis: "Ding animation; door opens instantly."
-    - t: "15-20"
+    - t: "19-24"
       vo: "A webhook is that bell. When a customer messages, Messenger rings your automation."
       ost: "Messenger → rings → n8n"
       vis: "Messenger icon → bell → n8n Webhook node lights up."
-    - t: "20-24"
-      vo: "Instantly. No checking, no delay. That's why replies feel live."
+    - t: "24-28"
+      vo: "Instantly. No checking, no delay."
       ost: "Instant"
       vis: "Millisecond counter ticks; reply bubble appears."
-    - t: "24-28"
-      vo: "So next time someone says webhook, just picture…"
-      ost: ""
-      vis: "Cut back to the door frame identical to frame 1 (loop)."
+    - t: "28-32"
+      vo: "So the fast bot isn't smarter. It just has a doorbell."
+      ost: "Not smarter. Just a doorbell."
+      vis: "Back to the split phones; a small doorbell icon appears on the fast one."
   caption: |
-    What is a webhook? Think of a doorbell.
+    Why do some bots reply instantly while others take minutes? A doorbell.
 
     Without a bell, you'd walk to the door every 5 minutes to check. That's “polling”: slow and wasteful.
     With a bell, the visitor tells you the moment they arrive.
 
-    A webhook is that bell for software: when a customer messages your page, Messenger “rings” your automation instantly. That's why automated replies can feel live.
+    A webhook is that bell for software. When a customer messages your page, Messenger “rings” your automation instantly. The fast bot isn't smarter. It just has a doorbell.
 
     Follow for the next Explain It Simply.
   hashtags: [n8n, automation, webhook]
@@ -805,9 +852,11 @@
   pillar: PA
   format: Prompt card
   topic: "Think in Bangla, get it in English: 4 bilingual prompt lines"
+  human_problem: "Thinking clearly in Bangla but struggling to write professional English."
   objective: "Shares in Bangladesh; relatability"
   hook: "Think in Bangla. Get it in English."
   main_idea: "AI works as translator and editor; four lines cover the common bilingual needs."
+  takeaway: "Write in Bangla and let AI produce clear English, then learn from the changes it shows you."
   value: "Four copy-paste lines for Bangla↔English writing, editing and client messages."
   cta: "Send it to a friend who writes to foreign clients."
   cta_type: share
@@ -844,28 +893,32 @@
   pillar: NEWS
   format: Green screen + talking head
   topic: "OpenAI's 'dots': always-on agents explained"
+  human_problem: "AI only helps while you're chatting, so ongoing work stops the moment you close the app."
   objective: "Timeliness + authority on agents"
-  hook: "ChatGPT's new dots keep working after you leave."
+  hook: "ChatGPT now keeps working after you close it."
+  open_loop: "Can I use it? (answered at 27 s)"
   main_idea: "Dots are always-on ChatGPT agents with their own cloud computer that pursue a goal and report back; Pro/Business Premium only for now."
+  takeaway: "Dots are always-on ChatGPT agents for Pro and Business Premium users, so start them on low-risk jobs."
   value: "What it is, how it works, who can use it, and a sensible way to start (low-risk jobs)."
+  payoff: "27–36 s: only Pro and Business Premium for now; 36–41 s: start it on low-risk jobs."
   cta: "Follow for updates when it reaches more plans."
   cta_type: follow
   visual_concept: "Asif over a self-captured screenshot of the official announcement; simple goal → dot → report diagram; plan badges."
   runtime: 45
   retention:
-    hook: "'Keeps working after you leave' is a new idea for most chatbot users, with a clear 'what?' reaction."
+    hook: "'Keeps working after you close it' is a new idea for most chatbot users and gets an instant 'how?'."
     novelty: "Launched one week ago (29 Sep 2026); most viewers haven't seen a plain explanation yet."
     usefulness: "Answers the practical questions people actually have: what is it, who gets it, how to start safely."
-    curiosity: "'Who gets it?' is held until second 27, so viewers stay to see if they can use it."
+    curiosity: "'Not for everyone, yet' at second 3 makes viewers wait to see if they can use it."
     payoff: "Ends with a clear personal take (start with low-risk jobs) instead of hype."
   script:
     - t: "0-3"
-      vo: "ChatGPT's new dots keep working after you leave."
-      ost: "AI that works while you're away"
+      vo: "ChatGPT now keeps working after you close it."
+      ost: "Works after you close the app"
       vis: "Asif on green screen over the official 'Introducing dots' page (own screen capture)."
     - t: "3-7"
-      vo: "Launched September 29. Here's what they are, in plain words."
-      ost: "Launched 29 Sep 2026"
+      vo: "They're called dots. Launched September 29. Not for everyone, yet."
+      ost: "‘Dots’ · 29 Sep 2026"
       vis: "Date highlighted on the page."
     - t: "7-12.5"
       vo: "A dot is an always-on agent. You give it a goal, not a single question."
@@ -888,8 +941,8 @@
       ost: "Pro + Business Premium only"
       vis: "Plan badges; Free/Plus greyed out."
     - t: "32-36"
-      vo: "Free and Plus users don't have it yet."
-      ost: "Not on Free or Plus (yet)"
+      vo: "Free, Go and Plus users don't have it yet."
+      ost: "Not on Free, Go or Plus (yet)"
       vis: "Asif shrugs."
     - t: "36-41"
       vo: "My take: start with low-risk jobs. Not your money or inbox."
@@ -900,7 +953,7 @@
       ost: "Follow for updates"
       vis: "End card."
   caption: |
-    ChatGPT's new “dots” keep working after you close the app.
+    ChatGPT can now keep working after you close the app, but not for everyone yet.
 
     What they are (launched 29 Sep 2026):
     • An always-on agent: you give it a goal, not a single question
@@ -908,9 +961,9 @@
     • You decide what it can do on its own; it brings results back for review
     • Reachable in ChatGPT, Slack and Teams
 
-    Who can use it: ChatGPT Pro (outside the EEA, Switzerland and the UK) and Business Premium. Enterprise can try a beta if an admin turns it on. Not on Free or Plus yet.
+    Who can use it: ChatGPT Pro (outside the EEA, Switzerland and the UK) and Business Premium. Enterprise can try a beta if an admin turns it on. Not on Free, Go or Plus yet.
 
-    My take: give a new agent low-risk jobs first. Not your money, not your inbox.
+    My take: give a new agent low-risk jobs first. Keep your money and your inbox out of it for now.
 
     Follow and I'll post when it reaches more plans.
   hashtags: [ChatGPT, AIagents, AInews]
@@ -924,15 +977,17 @@
   pillar: NEWS
   format: News card
   topic: "NotebookLM is now Gemini Notebook: what changed"
+  human_problem: "Following an older tutorial and not finding the tool it mentions."
   objective: "Prevent confusion; shares among students"
-  hook: "NotebookLM has a new name: Gemini Notebook"
+  hook: "Looking for NotebookLM? It's now Gemini Notebook"
   main_idea: "Same tool, new name since 16 July 2026, plus new study features; tutorials saying NotebookLM refer to it."
+  takeaway: "NotebookLM was renamed Gemini Notebook in July 2026: same tool, same notebooks."
   value: "What changed, what didn't, what's new, so viewers aren't confused by old tutorials."
   cta: "Send it to a classmate."
   cta_type: share
   visual_concept: "'Old name → New name' header with a strike-through, then 5 short facts."
   design:
-    headline: "NotebookLM has a new name: Gemini Notebook"
+    headline: "Looking for NotebookLM? It's now Gemini Notebook"
     body:
       - "Renamed on 16 July 2026. Same tool, same notebooks, nothing to move."
       - "Free to start (with limits). Add PDFs, notes, websites or YouTube links."
@@ -942,7 +997,7 @@
     footer: "If a tutorial says 'NotebookLM', it means this."
     layout: "Light background. Top: 'NotebookLM' in grey with strike-through → 'Gemini Notebook' in accent. Five rows with small icons. Footer bottom."
   caption: |
-    If you used NotebookLM, it now has a new name: Gemini Notebook.
+    Looking for NotebookLM? It has a new name: Gemini Notebook.
 
     Renamed on 16 July 2026. Same product, same notebooks, nothing to move.
 
@@ -952,7 +1007,7 @@
 
     If an older tutorial says “NotebookLM”, it's talking about this tool.
 
-    Send this to a classmate.
+    Send this to the classmate who still calls it NotebookLM.
   hashtags: [GeminiNotebook, NotebookLM, studytips]
   sources: [google_notebook_rename, google_notebook_study, google_notebook_youtube]
   production_notes: "Use the product name as text only; no Google logos. Verify 'free to start' on the current pricing page the day before posting."
@@ -963,24 +1018,28 @@
   pillar: LIT
   format: Numbered list + talking head
   topic: "5 things you should never paste into AI"
+  human_problem: "Pasting private or sensitive data into AI chats without thinking about where it goes."
   objective: "Shares (safety) + trust"
-  hook: "Never paste these five things into AI."
+  hook: "You've probably pasted one of these into AI."
+  open_loop: "Which of the five have I already done?"
   main_idea: "Five categories of data don't belong in AI chats; placeholders keep the help without the risk."
+  takeaway: "Replace private details with placeholders before you paste anything into AI."
   value: "A clear 'never paste' list + the placeholder technique."
-  cta: "Send it to your team."
-  cta_type: share
+  payoff: "25–31 s: placeholders let you get the same help without sharing the data."
+  cta: "Ask viewers which one they've pasted before."
+  cta_type: question
   visual_concept: "Numbered cards slide in beside Asif; final screen recording shows names swapped for [CLIENT] placeholders."
   runtime: 37
   retention:
-    hook: "A warning framed as a list creates instant 'am I doing this?' tension."
+    hook: "'You've probably done this' makes every viewer check themselves against the list."
     relatability: "Mobile-banking PINs, NID numbers and customer phone lists are everyday data for this audience."
     visual_progression: "A new numbered card every 4–5 seconds keeps the screen changing."
     usefulness: "The placeholder trick lets people keep using AI on real work safely."
-    save_share: "Built to be forwarded to teams and family. Safety content gets shared."
+    save_share: "Teams forward it; the honest question invites comments without bait."
   script:
     - t: "0-3"
-      vo: "Never paste these five things into AI."
-      ost: "Never paste these 5"
+      vo: "You've probably pasted one of these into AI."
+      ost: "Pasted one of these?"
       vis: "Asif to camera; hand covers a phone screen."
     - t: "3-7"
       vo: "One: passwords and OTP codes. No tool ever needs them."
@@ -1007,11 +1066,11 @@
       ost: "Use [CLIENT] · [AMOUNT]"
       vis: "Screen recording: names and amounts replaced by [CLIENT], [AMOUNT]."
     - t: "31-37"
-      vo: "You still get the help. They never get the data. Send this to your team."
-      ost: "Send to your team"
+      vo: "You still get the help, without the risk. Which one have you pasted before?"
+      ost: "Which one have you pasted?"
       vis: "Asif to camera; end card."
   caption: |
-    Never paste these 5 things into any AI chat:
+    You've probably pasted at least one of these into an AI chat:
 
     1. Passwords and OTP codes
     2. Card numbers and mobile-banking PINs
@@ -1021,7 +1080,7 @@
 
     Need help with a real document? Replace the details with placeholders: [CLIENT], [AMOUNT], [PHONE]. You still get the help; the AI never sees the data.
 
-    Send this to your team.
+    Be honest: which one have you pasted before? (No judgement.)
   hashtags: [AIsafety, privacy, AItips]
   sources: []
   production_notes: "Use a fake document for the placeholder demo. Don't show any real customer data, even blurred."
@@ -1032,9 +1091,11 @@
   pillar: WF
   format: Framework card
   topic: "A 10-minute daily AI routine: 3 morning prompts, 1 evening prompt"
+  human_problem: "Starting busy days without knowing what matters most."
   objective: "Saves; habit-forming"
   hook: "A 10-minute AI routine for busy days"
   main_idea: "Four prompts around your real task list turn AI into a daily planning partner."
+  takeaway: "Four short prompts around your real task list help you prioritise in the morning and carry work over at night."
   value: "Three morning prompts (prioritise, break down, risks) + one evening prompt (carry over)."
   cta: "Save it and try it tomorrow morning."
   cta_type: save
@@ -1063,7 +1124,7 @@
 
     Paste your real list. Vague list, vague advice.
 
-    Save this and try it tomorrow morning.
+    Try it tomorrow morning with your real list.
   hashtags: [productivity, AItips, planning]
   sources: []
   production_notes: "Framework template. MORNING/EVENING labels as small caps, not counted as separate ideas."
@@ -1074,10 +1135,14 @@
   pillar: PA
   format: Screen demo + face cam
   topic: "Spreadsheet formulas from plain English, plus the 3-row test"
+  human_problem: "Needing a total from a spreadsheet but not knowing the formula."
   objective: "Saves + practical win for office workers and sellers"
   hook: "Can't write Excel formulas? Describe them instead."
+  open_loop: "What's the part most people skip? (held until 17.5 s)"
   main_idea: "Describe the goal, columns and rows; get a formula with an explanation; always test on rows you can check by hand."
+  takeaway: "Describe the result you need and test the AI's formula on rows you can check by hand."
   value: "Prompt template + the testing habit that makes AI formulas trustworthy."
+  payoff: "21–31 s: the 3-row test proves the formula before it touches 500 rows."
   cta: "Save it for your next spreadsheet."
   cta_type: save
   visual_concept: "Google Sheet order list; AI prompt and answer; 3 highlighted rows with hand math overlay; green tick."
@@ -1139,7 +1204,7 @@
 
     Works for Excel too. Just say “Excel” instead.
 
-    Save this for your next spreadsheet.
+    The 3-row test is the habit worth keeping. It works for any formula.
   hashtags: [GoogleSheets, Excel, AItips]
   sources: []
   production_notes: "Build a demo sheet with fake orders. Make a separate 3-row test tab where the known total is 4,500 (1,200 + 2,000 + 1,300, all Delivered, all October). Record the real AI answer; if the formula differs from SUMIFS, show what you actually got."
@@ -1151,12 +1216,14 @@
   pillar: AU
   format: Myth vs fact
   topic: "Myth: you need to code to automate"
+  human_problem: "Believing automation is only for programmers."
   objective: "Lower the barrier; educate future buyers"
   hook: "Myth: you need to code to automate"
   main_idea: "Visual tools make automation about process thinking, not code; AI now writes the small code bits."
+  takeaway: "If you can write a process down step by step, you can learn to automate it with visual tools."
   value: "Reframes the real skill (thinking in steps) and what you actually need."
-  cta: "Save it."
-  cta_type: save
+  cta: "None. The closing line is the takeaway."
+  cta_type: none
   visual_concept: "Myth (crossed out) vs Fact panels; small node-graph illustration."
   design:
     headline: "Myth: you need to code to automate"
@@ -1190,27 +1257,31 @@
   pillar: WF
   format: Phone-in-hand demo
   topic: "Brain-dump by voice, get a clean plan"
+  human_problem: "Too many tasks in your head to even decide where to begin."
   objective: "Relatability + saves"
-  hook: "Talk messy. Get a clean plan."
+  hook: "Head too full to start? Talk it out."
+  open_loop: "Can a messy ramble really turn into a plan?"
   main_idea: "Speaking a 2-minute messy brain-dump into voice mode, then asking for a grouped plan, beats typing."
+  takeaway: "Talk through everything in voice mode, then ask AI to turn it into a grouped plan with next steps."
   value: "The brain-dump method + the exact 'turn this into a plan' prompt."
+  payoff: "17–27 s: a grouped plan appears, including a task mentioned only once in passing."
   cta: "Save the prompt from the caption."
   cta_type: save
   visual_concept: "Asif walking and talking into the phone; waveform; messy transcript turns into a neat grouped plan."
   runtime: 36
   retention:
-    hook: "Five words, a clear before/after promise, and Asif already talking into his phone."
+    hook: "Names the overwhelm of a full head and offers a low-effort start: just talk."
     relatability: "A full head and scattered tasks is a feeling everyone knows."
     visual_progression: "Messy transcript visibly reorganises into grouped tasks."
     payoff: "A task mentioned once in passing shows up in the right group: proof it works."
     usefulness: "Free voice mode in common AI apps plus a one-line prompt; works in Bangla or English."
   script:
-    - t: "0-2.5"
-      vo: "Talk messy. Get a clean plan."
-      ost: "Talk messy → clean plan"
+    - t: "0-3"
+      vo: "Head too full to start? Talk it out."
+      ost: "Too much in your head?"
       vis: "Asif walking, phone near mouth."
-    - t: "2.5-8"
-      vo: "When my head is full, I don't type. I open voice mode and just talk."
+    - t: "3-8"
+      vo: "I don't type. I open voice mode and just talk."
       ost: "Voice mode. Just talk."
       vis: "Screen: tapping the voice/mic icon in an AI app."
     - t: "8-13"
@@ -1238,7 +1309,7 @@
       ost: "Prompt ↓"
       vis: "End card."
   caption: |
-    When my head is full, I don't type. I talk.
+    Head too full to even start? Don't type. Talk.
 
     1. Open voice mode in your AI app (ChatGPT, Gemini, Claude all have one)
     2. Talk for 2 minutes: half-sentences, worries, random tasks. Bangla, English, both.
@@ -1246,7 +1317,7 @@
 
     Faster than typing, and nothing you mentioned gets lost.
 
-    Save this and try it tonight.
+    Try it tonight when your head is full.
   hashtags: [productivity, AItips, voiceAI]
   sources: []
   production_notes: "Record a genuine brain-dump (real tasks, nothing private). Show the actual transcript. Speed-ramp 2 minutes down to ~5 s."
@@ -1255,39 +1326,36 @@
   type: image
   series: Steal This Prompt
   pillar: PA
-  format: Prompt card
-  topic: "Prompt: reply to an angry customer calmly"
+  format: "Before/after chat mock"
+  topic: "Angry customer? Compare a defensive reply with a calm one"
+  human_problem: "An angry customer message arrives and the first reply that comes to mind is defensive."
   objective: "Saves for sellers and support staff"
-  hook: "Steal this: reply to an angry customer"
+  hook: "Angry customer? Compare these two replies"
   main_idea: "A structured prompt produces a calm, human reply with options instead of excuses."
+  takeaway: "A calm reply says sorry once, repeats the problem and offers two clear options."
   value: "A copy-paste complaint-reply prompt with four rules."
   cta: "Save it for your next difficult message."
   cta_type: save
-  visual_concept: "Prompt card with an angry chat bubble icon turning into a calm one."
+  visual_concept: "Phone chat mock: customer complaint, a red-outlined defensive reply, a green-outlined calm reply, and the prompt strip."
   design:
-    headline: "Steal this: reply to an angry customer"
+    headline: "Angry customer? Compare these two replies"
     body:
-      - "“Here's a customer message: [paste].”"
-      - "“Write a reply that:"
-      - "– says sorry once, without excuses"
-      - "– repeats their problem in one line"
-      - "– offers 2 clear options with times"
-      - "– sounds like a calm human, under 80 words.”"
+      - "Customer: “3 days late and no update. Very bad service.”"
+      - "✗ “Sorry for the inconvenience. Delays happen due to courier issues.”"
+      - "✓ “You're right, 3 days with no update isn't OK. I'm sorry. I can resend today or refund now. Which do you prefer?”"
+      - "Prompt: “Reply: sorry once, repeat their problem, 2 options, under 80 words.”"
     footer: "Check names, prices and promises before you send."
-    layout: "Light background. Small illustration top-right: red chat bubble → green chat bubble. Prompt text in a large quote block with left accent border. Footer bottom."
+    layout: "Phone chat mock: grey customer bubble on top; red-outlined defensive reply; green-outlined calm reply; prompt strip at the bottom. Footer below the phone."
   caption: |
-    Angry customer message? Don't reply while you're angry too. Use this:
+    Angry customer message? The first reply that comes to mind is usually defensive.
 
-    “Here's a customer message: [paste].
-    Write a reply that:
-    – says sorry once, without excuses
-    – repeats their problem in one line so they know I understood
-    – offers 2 clear options with times (e.g. replacement by Thursday or refund today)
-    – sounds like a calm human, under 80 words.”
+    ✗ “Sorry for the inconvenience. Delays happen due to courier issues.”
+    ✓ “You're right, 3 days with no update isn't OK. I'm sorry. I can resend today or refund now. Which do you prefer?”
 
-    Then check every name, price and promise before sending. You're responsible for what it says.
+    The second one says sorry once, shows you understood, and gives a choice. AI can draft it for you:
+    “Here's a customer message: [paste]. Write a reply that says sorry once without excuses, repeats their problem in one line, offers 2 clear options with times, and sounds like a calm human. Under 80 words.”
 
-    Save this for the next difficult message.
+    Check every name, price and promise before sending. Keep the prompt for the next difficult message.
   hashtags: [customerservice, AItips, smallbusiness]
   sources: []
   production_notes: "Prompt-card template. Keep the dash bullets inside the quote block so it reads as one prompt."
@@ -1298,10 +1366,14 @@
   pillar: HF
   format: Screen demo + face cam
   topic: "Turn a YouTube lecture into a quiz with Gemini Notebook"
+  human_problem: "Watching long lectures and forgetting almost everything by exam time."
   objective: "Saves + shares among students"
-  hook: "Long lecture, remember nothing? Try this."
+  hook: "Watched a two-hour lecture. Remember nothing?"
+  open_loop: "How do you turn a video into something you'll actually remember?"
   main_idea: "Add a YouTube lecture + notes to Gemini Notebook, generate a quiz, test yourself first, then make flashcards from mistakes."
+  takeaway: "Turn a lecture into a quiz with Gemini Notebook and study only what you got wrong."
   value: "A study workflow built on retrieval practice using a free tool."
+  payoff: "17–37 s: quiz first, then explanations with the exact lecture line, then flashcards from your mistakes."
   cta: "Send it to a classmate with exams coming."
   cta_type: share
   visual_concept: "Laptop with a lecture → Gemini Notebook screens: add source, quiz, citation, flashcards."
@@ -1315,7 +1387,7 @@
     save_share: "Students forward study hacks to classmates."
   script:
     - t: "0-3"
-      vo: "Long lecture, remember nothing? Try this."
+      vo: "Watched a two-hour lecture. Remember nothing?"
       ost: "Watched it. Forgot it?"
       vis: "Over-the-shoulder: YouTube lecture playing on a laptop."
     - t: "3-7.5"
@@ -1355,7 +1427,7 @@
       ost: "Send to a classmate"
       vis: "End card."
   caption: |
-    Watched a long lecture and remember nothing? Do this:
+    Watched a two-hour lecture and remember nothing? Do this:
 
     1. Open Gemini Notebook (the new name of NotebookLM)
     2. Create a notebook → add the YouTube link as a source, plus your slides or notes
@@ -1366,7 +1438,7 @@
 
     Testing yourself beats re-reading. Free to start.
 
-    Send this to a friend with exams coming.
+    Exams coming? Share it with your study group.
   hashtags: [studytips, GeminiNotebook, students]
   sources: [google_notebook_rename, google_notebook_study, google_notebook_youtube]
   production_notes: "Use a public lecture you have the right to show briefly on screen (e.g. an openly licensed university lecture, or record your own 5-minute 'lecture'). Keep the third-party video on screen ≤ 3 s; focus on the Gemini Notebook UI. Verify quiz formats in the live UI before filming."
@@ -1378,9 +1450,11 @@
   pillar: SVC
   format: Service menu
   topic: "What I build with n8n (service menu)"
+  human_problem: "Owners know they lose time to repetitive work but can't picture what automating it would look like."
   objective: "First explicit offer; Messenger leads"
   hook: "What I build with n8n"
   main_idea: "A menu of real workflow types Asif has built and runs, so buyers can recognise their need."
+  takeaway: "Six real workflow types show what n8n automation looks like in a small business."
   value: "Concrete outcomes, not jargon; a clear next step."
   cta: "Message 'AUTOMATE' with the task you repeat most."
   cta_type: message
@@ -1398,7 +1472,7 @@
     footer: "Message me “AUTOMATE” with the task you repeat most."
     layout: "Dark background, menu style. Headline + subhead. Six rows each with a simple line icon (chat, sheet, calendar-post, cloud, globe, inbox). Bottom: full-width accent bar with Messenger icon + footer CTA."
   caption: |
-    People ask what I actually build. Here's the menu. All of these are workflows I've built and run in n8n:
+    People ask what I actually build. This is the menu. All of these are workflows I've built and run in n8n:
 
     • Messenger & WhatsApp assistants that reply in seconds
     • Leads from forms or comments → Google Sheets + instant alert
@@ -1407,7 +1481,7 @@
     • Website AI assistant and calendar booking helper
     • Form and application intake → email or chat alerts
 
-    Not sure if your task fits? Message me “AUTOMATE” and tell me the task you repeat most. I'll tell you honestly if it's worth automating.
+    Not sure if your task fits? Send me a message describing it, and I'll tell you whether it's really worth automating.
   hashtags: [n8n, automation, AIautomation]
   sources: []
   production_notes: "Every line maps to a real workflow in Asif's n8n (see 01-research/page-audit.md §3). Remove any line you don't want to sell. Set up the AUTOMATE keyword reply in Meta Business Suite before this goes live."
@@ -1418,59 +1492,67 @@
   pillar: AU
   format: Numbered list + talking head
   topic: "5 signs a task should be automated"
+  human_problem: "Spending part of every day copying information from one app to another."
   objective: "Educate buyers to self-identify; comments"
-  hook: "Five signs a task needs automating."
+  hook: "Copy-pasting daily? That's a machine's job."
+  open_loop: "Does my task pass the five signs?"
   main_idea: "Same steps, copy-paste, frequency, costly mistakes and someone waiting = automate; judgment-heavy = keep human."
+  takeaway: "A task with fixed steps, copy-paste, high frequency, costly mistakes or someone waiting is worth automating."
   value: "A self-scoring checklist (3+ signs = strong candidate) and the honest exception."
+  payoff: "28–38 s: three or more signs means automate; needs judgment means keep it human."
   cta: "Comment which task scored highest."
   cta_type: question
   visual_concept: "Counter graphic 1–5 with icons; tally at the end; 'keep it human' card."
-  runtime: 40
+  runtime: 43
   retention:
-    hook: "A numbered promise sets clear expectations; viewers count along."
+    hook: "Calls out a daily chore viewers do and reframes it as a machine's job, which is mildly provocative and relatable."
     relatability: "Copy-pasting from Messenger to a sheet and waiting customers are daily realities for sellers."
     usefulness: "Viewers can score their own tasks right away (3+ = automate)."
     visual_progression: "A new numbered icon every ~4.5 s; tally animation at the end."
     payoff: "The 'keep it human' exception adds an honest twist that builds trust."
   script:
-    - t: "0-2.5"
-      vo: "Five signs a task needs automating."
-      ost: "5 signs → automate it"
-      vis: "Asif counting on fingers."
-    - t: "2.5-7"
+    - t: "0-3"
+      vo: "Copy-pasting daily? That's a machine's job."
+      ost: "Copy-paste daily = machine's job"
+      vis: "Asif copy-pasting between two windows, then stops and looks at camera."
+    - t: "3-5.5"
+      vo: "Five signs to check."
+      ost: "5 signs"
+      vis: "Counter graphic appears."
+    - t: "5.5-10"
       vo: "One: the steps are the same every time. Same apps, same order."
       ost: "1 · Same steps"
       vis: "Icon 1 with repeating arrows."
-    - t: "7-11.5"
+    - t: "10-14.5"
       vo: "Two: you copy-paste between apps. Messenger to sheet, sheet to email."
       ost: "2 · Copy-paste between apps"
       vis: "Animated cursor copy-pasting between two windows."
-    - t: "11.5-15.5"
+    - t: "14.5-18.5"
       vo: "Three: it happens every day or every week."
       ost: "3 · Daily or weekly"
       vis: "Calendar pages flip."
-    - t: "15.5-20.5"
+    - t: "18.5-23.5"
       vo: "Four: a small mistake costs you. A wrong price, a missed order."
       ost: "4 · Mistakes cost money"
       vis: "Red alert icon."
-    - t: "20.5-25"
+    - t: "23.5-28"
       vo: "Five: someone is waiting. A customer, a boss, a delivery man."
       ost: "5 · Someone is waiting"
       vis: "Clock ticking icon."
-    - t: "25-30.5"
+    - t: "28-33.5"
       vo: "Three or more signs? That task is a strong candidate."
       ost: "3+ signs = automate"
       vis: "Tally marks animate 1-2-3."
-    - t: "30.5-35"
+    - t: "33.5-38"
       vo: "But if it needs your judgment every single time, keep it human."
       ost: "Needs judgment? Keep it human."
       vis: "Asif to camera."
-    - t: "35-40"
+    - t: "38-43"
       vo: "Which task scored highest for you? Tell me below."
       ost: "Your task? ↓"
       vis: "End card."
   caption: |
-    5 signs a task should be automated:
+    Copy-pasting the same thing every day? That's a machine's job. 5 signs a task should be automated:
 
     1. The steps are the same every time
     2. You copy-paste between apps (Messenger → sheet → email)
@@ -1479,7 +1561,7 @@
     5. Someone is waiting (customer, boss, delivery)
 
     3 or more? Strong candidate.
-    Needs your judgment every time? Keep it human. Automation is for rules, not decisions.
+    Needs your judgment every time? Keep it human. Automation handles rules; decisions stay with you.
 
     Which task scored highest for you?
   hashtags: [automation, smallbusiness, n8n]
@@ -1492,15 +1574,17 @@
   pillar: HF
   format: Hidden feature card
   topic: "3 Google Lens tricks most people miss"
+  human_problem: "Retyping phone numbers and text from photos by hand."
   objective: "Shares; broad utility"
-  hook: "3 Google Lens tricks most people miss"
+  hook: "Still typing text from photos? 3 Lens tricks"
   main_idea: "Lens can copy text from images, translate in place and search what you see."
+  takeaway: "Google Lens can copy text from photos, translate signs in place and search what you see."
   value: "Three practical uses with where to find Lens."
   cta: "Send it to someone who still types text from photos by hand."
   cta_type: share
   visual_concept: "Three phone-shaped panels with icons for copy, translate and search."
   design:
-    headline: "3 Google Lens tricks most people miss"
+    headline: "Still typing text from photos? 3 Lens tricks"
     body:
       - "Copy text from any photo or screenshot: tap Text, select, copy."
       - "Translate a sign, menu or label: tap Translate, the words change on the image."
@@ -1508,7 +1592,7 @@
     footer: "Find Lens in the Google app, Google Photos, or your camera on many Android phones."
     layout: "Light background. Headline top. Three tall phone-outline panels side by side, each with a big icon (T, 文→A, magnifier) and the tip underneath. Footer bottom."
   caption: |
-    3 Google Lens tricks most people miss:
+    Still typing phone numbers from photos by hand? 3 Google Lens tricks most people miss:
 
     1. Copy text from any photo or screenshot: open it in Lens → Text → select → copy. No more typing phone numbers from pictures.
     2. Translate in place: point at a sign, menu or label → Translate. The words change on the image.
@@ -1527,10 +1611,14 @@
   pillar: PA
   format: Before/after split screen
   topic: "Write emails that don't sound like AI"
+  human_problem: "Sending AI-written emails that sound stiff and fake to the people reading them."
   objective: "Saves + relatability for professionals"
-  hook: "Your AI emails sound like AI. Here's why."
+  hook: "People can tell your email came from AI."
+  open_loop: "What gives it away, and how do you fix it?"
   main_idea: "AI fills space with safe, long, polite filler; notes + your own sample + hard limits fix it."
+  takeaway: "Give AI your notes, one real email you wrote and a word limit, then read the result aloud."
   value: "Three rules + read-aloud test + prompt in caption."
+  payoff: "26–36.5 s: a half-length rewrite that sounds human, plus the read-aloud test."
   cta: "Save the prompt."
   cta_type: save
   visual_concept: "Generic email with filler highlighted in yellow → rewritten short email; split before/after."
@@ -1543,8 +1631,8 @@
     save_share: "The prompt in the caption is reusable for every email."
   script:
     - t: "0-3"
-      vo: "Your AI emails sound like AI. Here's why."
-      ost: "Sounds like AI?"
+      vo: "People can tell your email came from AI."
+      ost: "They can tell."
       vis: "Asif reads a long generic email, winces."
     - t: "3-7.5"
       vo: "“I hope this email finds you well.” Nobody talks like that."
@@ -1579,7 +1667,7 @@
       ost: "Prompt ↓ Save it"
       vis: "End card."
   caption: |
-    Your AI emails sound like AI because AI fills empty space with safe, polite, long sentences.
+    People can tell when an email came from AI. It fills empty space with safe, polite, long sentences.
 
     Fix it with 3 rules:
     1. Give it your rough notes, not a topic
@@ -1589,9 +1677,7 @@
     Prompt:
     “Write an email from these notes: [notes]. Match the style of this email I wrote: [paste]. Under 100 words. No ‘I hope this finds you well’. Plain, direct, friendly.”
 
-    Then read it out loud. If you wouldn't say it, delete it.
-
-    Save this.
+    Then read it out loud. If you wouldn't say it, delete it. The prompt works for every email, so keep it handy.
   hashtags: [emailtips, AItips, productivity]
   sources: []
   production_notes: "Use a realistic but fictional email (supplier delay). Generate the 'before' with a bare prompt and the 'after' with the caption prompt, live."
