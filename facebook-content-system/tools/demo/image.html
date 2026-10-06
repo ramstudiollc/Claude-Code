@@ -1,0 +1,143 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- Demo image renderer (1440x1800). render_images.mjs injects window.__POST
+     (one image post from data/*.yaml) and calls build(). Text comes from the
+     post's design fields; the layout follows 06-production/design-system.md. -->
+<style>
+:root{--ink:#111418;--paper:#F6F5F1;--accent:#10B981;--accent-ink:#06291F;--warn:#F59E0B;--stop:#EF4444;--muted:#6B7280;
+  --line-l:#D9D8D2;--line-d:#2A2F36;--card:#1A1F26;--soft:#9CA3AF}
+html,body{margin:0;width:1440px;height:1800px;overflow:hidden;font-family:Inter,'DejaVu Sans',sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+#c{position:absolute;inset:0;padding:90px}
+.dark{background:var(--ink);color:#F3F4F6} .light{background:var(--paper);color:var(--ink)}
+.tag{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:800;font-size:40px;letter-spacing:.06em;
+  padding:12px 28px;border-radius:999px;text-transform:uppercase;line-height:1}
+h1{margin:40px 0 0;font-weight:800;font-size:100px;line-height:1.04;letter-spacing:-.025em}
+.sub{margin-top:26px;font-size:48px;font-weight:500;line-height:1.25}
+.foot{position:absolute;left:90px;right:380px;bottom:90px;font-size:34px;font-weight:500;line-height:1.3;color:var(--muted)}
+.handle{position:absolute;right:90px;bottom:90px;font-size:28px;font-weight:700;color:var(--muted)}
+.dark .foot,.dark .handle{color:#9CA3AF}
+svg.i{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round}
+.a{color:var(--accent)}
+
+/* decision tree */
+.q{position:absolute;left:90px;width:820px;height:170px;display:flex;align-items:center;gap:40px}
+.dia{width:150px;height:150px;flex:none;position:relative}
+.dia::before{content:'';position:absolute;inset:22px;transform:rotate(45deg);border:8px solid var(--accent);border-radius:16px;background:#0f2a22}
+.dia span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:58px;color:#fff}
+.qt{font-size:48px;font-weight:700;line-height:1.18}
+.out{position:absolute;left:1010px;width:340px;height:124px;border-radius:24px;display:flex;flex-direction:column;justify-content:center;padding:0 24px}
+.out b{font-size:40px;font-weight:900;letter-spacing:.02em;line-height:1} .out span{font-size:28px;font-weight:600;margin-top:8px;line-height:1.1}
+.no{position:absolute;left:900px;width:100px;height:56px;color:var(--soft)}
+.nol{position:absolute;left:916px;font-size:30px;font-weight:800;color:var(--soft)}
+.yes{position:absolute;left:157px;width:36px;color:var(--accent)}
+.yesl{position:absolute;left:205px;font-size:30px;font-weight:800;color:var(--accent)}
+.auto{position:absolute;left:90px;height:130px;width:620px;border-radius:999px;background:var(--accent);color:var(--accent-ink);display:flex;
+  align-items:center;justify-content:center;gap:20px;font-size:60px;font-weight:900;letter-spacing:.02em}
+
+/* chat mock */
+.phone{position:absolute;left:250px;width:940px;top:416px;height:990px;border-radius:72px;background:#101317;padding:20px;box-shadow:0 40px 80px rgba(17,20,24,.25)}
+.scr{width:100%;height:100%;border-radius:54px;background:#fff;overflow:hidden;position:relative}
+.bar{height:104px;border-bottom:2px solid #ECEBE6;display:flex;align-items:center;gap:22px;padding:0 40px;font-size:34px;font-weight:700}
+.av{width:66px;height:66px;border-radius:50%;background:#D9D8D2;display:flex;align-items:center;justify-content:center;color:#6B7280}
+.msgs{padding:24px 36px;display:flex;flex-direction:column;gap:12px}
+.bub{max-width:790px;border-radius:34px;padding:20px 30px;font-size:44px;line-height:1.28;font-weight:500}
+.in{align-self:flex-start;background:#ECEBE6;border-bottom-left-radius:10px}
+.lab{font-size:30px;font-weight:800;letter-spacing:.04em;display:flex;align-items:center;gap:10px;align-self:flex-end;margin-top:6px}
+.outb{align-self:flex-end;background:#fff;border:5px solid;border-bottom-right-radius:10px}
+.prompt{position:absolute;left:90px;right:90px;top:1436px;border-radius:26px;background:var(--ink);color:#fff;padding:28px 36px;border-left:14px solid var(--accent)}
+.prompt b{display:block;font-size:30px;letter-spacing:.08em;color:var(--accent);margin-bottom:8px}
+.prompt div{font-size:44px;font-weight:600;line-height:1.25}
+
+/* timeline */
+.colh{position:absolute;top:548px;height:70px;display:flex;align-items:center;gap:14px;font-size:38px;font-weight:900;letter-spacing:.06em}
+.time{position:absolute;left:90px;width:150px;font-size:40px;font-weight:800;display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.cell{position:absolute;height:252px;border-radius:28px;padding:30px 30px;font-size:44px;line-height:1.24;font-weight:600;display:flex;gap:18px}
+.cell .ic{flex:none;width:48px;height:48px;border-radius:16px;display:flex;align-items:center;justify-content:center;margin-top:2px}
+.bef{left:250px;width:510px;background:#E9E8E3;color:#4B5563;border:3px solid #D9D8D2}
+.aft{left:800px;width:550px;background:#E3F6EE;color:var(--ink);border:3px solid var(--accent)}
+.spine{position:absolute;left:778px;width:0;border-left:4px dashed #C9C8C1}
+.punch{position:absolute;left:90px;right:90px;top:1530px;text-align:center;font-size:64px;font-weight:800;letter-spacing:-.01em}
+</style></head>
+<body><div id="c"></div>
+<script>
+const P = window.__POST, D = P.design, c = document.querySelector('#c');
+const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+const ICON = {
+  check: '<path d="M10 25l9 9 19-20"/>', x: '<path d="M13 13l22 22M35 13 13 35"/>',
+  arrowR: '<path d="M4 28h80M66 12l18 16-18 16"/>', arrowD: '<path d="M18 4v70M4 58l14 16 14-16"/>',
+  clock: '<circle cx="24" cy="24" r="19"/><path d="M24 13v11l7 5"/>', user: '<circle cx="24" cy="17" r="8"/><path d="M8 42c2-9 8-13 16-13s14 4 16 13"/>',
+  bolt: '<path d="M27 4 9 28h14l-3 16 19-25H25z"/>', warn: '<path d="M24 5 45 42H3z"/><path d="M24 19v11M24 36v.5"/>',
+};
+const svg = (n, w, h, sw, vb = '0 0 48 48') => `<svg class="i" width="${w}" height="${h}" viewBox="${vb}" style="stroke-width:${sw}">${ICON[n]}</svg>`;
+function head(theme, opts = {}) {
+  document.body.className = theme;
+  c.innerHTML = `<span class="tag">${esc(P.series)}</span><h1 style="${opts.h1 || ''}">${opts.headline || esc(D.headline)}</h1>` +
+    (D.subhead ? `<div class="sub" style="color:${theme === 'dark' ? '#C9CDD3' : '#4B5563'}">${esc(D.subhead)}</div>` : '') +
+    (opts.foot !== false ? `<div class="foot">${esc(D.footer)}</div>` : '') + `<div class="handle">@Asif.myself.page</div>`;
+}
+const add = html => c.insertAdjacentHTML('beforeend', html);
+
+const T = {};
+// ------------------------------------------------ Decision tree (D01-I1)
+T['Decision tree'] = () => {
+  head('dark', { headline: esc(D.headline).replace(/^(Automate it)/, '<span class="a">$1</span>') });
+  // body rows: "1. Question? No → OUTCOME it."
+  const rows = D.body.map(r => { const m = r.match(/^\d\.\s*(.+?\?)\s*(Yes|No)\s*→\s*(.+)$/); return { q: m[1], ans: m[2], out: m[3] }; });
+  const exits = [
+    { b: 'DELETE IT', s: 'it shouldn\'t exist', bg: 'var(--stop)', fg: '#fff' },
+    { b: 'A PERSON', s: 'does it (steps vary)', bg: 'var(--warn)', fg: '#1f1400' },
+    { b: 'CHECKLIST', s: 'too rare to build', bg: '#3A414B', fg: '#fff' },
+  ];
+  const y0 = 600, step = 270;
+  rows.forEach((r, k) => {
+    const y = y0 + k * step;
+    add(`<div class="q" style="top:${y}px"><div class="dia"><span>${k + 1}</span></div><div class="qt">${esc(r.q)}</div></div>`);
+    add(`<div class="nol" style="top:${y + 36}px">No</div><div class="no" style="top:${y + 74}px">${svg('arrowR', 100, 56, 8, '0 0 88 56')}</div>`);
+    const e = exits[k];
+    add(`<div class="out" style="top:${y + 26}px;background:${e.bg};color:${e.fg}"><b>${e.b}</b><span>${e.s}</span></div>`);
+    add(`<div class="yes" style="top:${y + 166}px">${svg('arrowD', 36, 100, 8, '0 0 36 80')}</div><div class="yesl" style="top:${y + 190}px">Yes</div>`);
+  });
+  add(`<div class="auto" style="top:${y0 + 3 * step - 4}px">${svg('bolt', 62, 62, 4.5)}AUTOMATE IT</div>`);
+};
+
+// ------------------------------------------------ Chat mock (D06-I2)
+T['Before/after chat mock'] = () => {
+  head('light', { foot: true });
+  const strip = s => s.replace(/^[✗✓]\s*/, '').replace(/^Customer:\s*/, '').replace(/^Prompt:\s*/, '').replace(/^“|”$/g, '');
+  const [cust, bad, good, prompt] = D.body.map(strip);
+  add(`<div class="phone"><div class="scr">
+    <div class="bar"><div class="av">${svg('user', 40, 40, 3.5)}</div>Customer · Messenger<span style="margin-left:auto;font-size:28px;color:#9CA3AF;font-weight:600">now</span></div>
+    <div class="msgs">
+      <div class="bub in">${esc(cust)}</div>
+      <div class="lab" style="color:var(--stop)">${svg('x', 34, 34, 6)} DEFENSIVE</div>
+      <div class="bub outb" style="border-color:var(--stop);color:#4B5563">${esc(bad)}</div>
+      <div class="lab" style="color:#059669">${svg('check', 34, 34, 6)} CALM</div>
+      <div class="bub outb" style="border-color:var(--accent);background:#F0FBF6">${esc(good)}</div>
+    </div></div></div>`);
+  add(`<div class="prompt"><b>STEAL THIS PROMPT</b><div>${esc(prompt)}</div></div>`);
+  const f = c.querySelector('.foot'); f.style.right = '380px';
+};
+
+// ------------------------------------------------ Before/after timeline (D17-I1)
+T['Before/after timeline'] = () => {
+  head('light', { foot: false, h1: 'font-size:92px', headline: esc(D.headline).replace(/(after 3 automations)/, '<span style="color:#059669">$1</span>') });
+  const before = D.body.slice(0, 3).map(s => s.replace(/^BEFORE · /, '')), after = D.body.slice(3).map(s => s.replace(/^AFTER · /, ''));
+  const split = s => { const m = s.match(/^(\d{1,2} [AP]M):\s*(.+)$/); return m ? [m[1], m[2]] : [null, s]; };
+  const times = before.map(s => split(s)[0]), cap = s => s[0].toUpperCase() + s.slice(1);
+  add(`<div class="colh" style="left:250px;color:#6B7280">${svg('warn', 40, 40, 4)} BEFORE</div>
+       <div class="colh" style="left:800px;color:#059669">${svg('bolt', 40, 40, 4)} AFTER</div>`);
+  add(`<div class="spine" style="top:640px;height:820px"></div>`);
+  times.forEach((tm, k) => {
+    const y = 650 + k * 278;
+    const aft = split(after[k])[1];
+    add(`<div class="time" style="top:${y + 20}px"><span style="color:#6B7280">${svg('clock', 44, 44, 4)}</span>${tm}</div>`);
+    add(`<div class="cell bef" style="top:${y}px"><span class="ic" style="background:#D9D8D2;color:#6B7280">${svg('x', 30, 30, 5)}</span><span>${esc(cap(split(before[k])[1]))}</span></div>`);
+    add(`<div class="cell aft" style="top:${y}px"><span class="ic" style="background:var(--accent);color:var(--accent-ink)">${svg('check', 32, 32, 5.5)}</span><span>${esc(cap(aft))}</span></div>`);
+  });
+  add(`<div class="punch">${esc(D.footer).replace(/(Different evenings\.)/, '<span style="color:#059669">$1</span>')}</div>`);
+  add(`<div class="foot" style="font-size:30px">Example day for a Facebook seller.</div>`);
+};
+
+window.build = () => { (T[P.format] || (() => { throw new Error('no template for ' + P.format); }))(); };
+</script></body></html>

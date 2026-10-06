@@ -8,7 +8,7 @@ The goal: one person (Asif), optionally helped by an editor/designer, ships 4 po
 |---|---|---|
 | **Folder structure** | Google Drive: `FB-30day/01-aroll`, `02-screen`, `03-edits`, `04-images`, `05-evidence`, `06-exports`. One sub-folder per post ID (e.g. `D05-R2`). | Every asset findable by ID |
 | **File naming** | `D05-R2_sheets-formula_v1.mp4`, `D05-I1_gemini-notebook_v2.png` | Matches calendar IDs |
-| **Templates** | Build the 13 image templates and 5 motion templates in `design-system.md` once (Canva or Figma) | Each new post becomes "fill the template" |
+| **Templates** | Build the 19 image templates and 6 motion templates in `design-system.md` once (Canva or Figma). `08-demos/` has a finished example of 3 of each | Each new post becomes "fill the template" |
 | **Caption preset** | One saved caption style in your editor (CapCut or similar): font, size, box, position y 1050–1250 | Identical captions on all 60 Reels |
 | **Demo data** | A demo Google Sheet (fake orders, fake leads), a test Facebook Page, a test Gmail, a Telegram test bot, a WhatsApp test number | Never film real customers |
 | **n8n demo project** | A separate n8n project/folder "DEMO" with copies of workflows, no production credentials | Safe to show on screen |

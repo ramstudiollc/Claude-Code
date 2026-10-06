@@ -79,7 +79,7 @@ y 1250  ├───────────────────────
 - **Colour:** OST in white with an ink box (70% opacity), key word in accent.
 - **Sound:** voice first. Music from Meta Sound Collection at −22 dB. A soft click SFX on each list item, nothing louder.
 
-### The 5 motion templates
+### The 6 motion templates
 
 1. **Three boxes** (D01-R2): trigger / steps / result boxes that fill.
 2. **Explain It Simply** (D04-R1, D08-R1, D12-R2, D25-R2, D30-R1): object → analogy → real tool → loop back to the object.

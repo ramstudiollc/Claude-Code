@@ -107,9 +107,9 @@ Series: Explain It Simply · Pillar: Automation & n8n · Format: Diagram explain
 | 0-3 | The task you repeat daily? It's three boxes. | Your daily task = 3 boxes | Asif holds up three fingers; three empty boxes animate in beside him. |
 | 3-5.5 | Box one: the trigger. Something happens. | 1 · TRIGGER | Box 1 lights up with a Messenger 'new message' icon. |
 | 5.5-9.5 | A customer messages. A form is filled. It's 9 AM. | message · form · 9 AM | Three trigger icons cycle inside box 1. |
-| 9.5-12.5 | Part two: the steps. What should happen next? | 2 · STEPS | Box 2 lights; arrow draws from box 1. |
+| 9.5-12.5 | Box two: the steps. What should happen next? | 2 · STEPS | Box 2 lights; arrow draws from box 1. |
 | 12.5-17 | Save the order in a sheet. Check the stock. Write a reply. | save · check · reply | Sheets, box and chat-bubble icons drop into box 2 in sync with each verb. |
-| 17-20 | Part three: the result. Someone gets something. | 3 · RESULT | Box 3 lights; arrow draws from box 2. |
+| 17-20 | Box three: the result. Someone gets something. | 3 · RESULT | Box 3 lights; arrow draws from box 2. |
 | 20-24.5 | The customer gets a reply. You get an alert with the order. | customer ✓ · you ✓ | Two phones ping inside box 3. |
 | 24.5-29 | That's it. Trigger, steps, result. Tools like n8n connect the three. | Trigger → Steps → Result | Diagram glows; a real n8n canvas with the same three nodes fades in behind it. |
 | 29-34 | Look at your day. Same start, same steps, same end? | Same start + steps + end? | Back to Asif, slow push-in. |

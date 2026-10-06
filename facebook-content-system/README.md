@@ -14,6 +14,7 @@ For the Facebook page **Asif** (facebook.com/Asif.myself.page). **120 production
 | Understand the why | `02-strategy/strategy.md` |
 | Check the specs | `01-research/facebook-specs.md` |
 | Know what to confirm before posting | `07-qc/manual-qc.md` §3 |
+| See 3 demo Reels and 3 demo images | `08-demos/` (README explains what is real and what is a stand-in) |
 
 ## The plan in numbers
 
@@ -34,8 +35,10 @@ For the Facebook page **Asif** (facebook.com/Asif.myself.page). **120 production
 05-image-posts/  week-1.md … week-4.md                                 (generated)
 06-production/   workflow.md · design-system.md · sourcing-and-licensing.md · image-fields.csv
 07-qc/           qc-report.md (generated) · manual-qc.md
+08-demos/        3 demo Reels (MP4) + 3 demo images (PNG) + README
 data/            posts-w1…w4.yaml  ← the single source of truth · sources.yaml (47 dated sources)
 tools/           build.py (generate + QC) · export_image_fields.py · viewer_template.html
+                 demo/  (voice-over, Reel and image renderers for 08-demos)
 viewer.html      (generated)
 ```
 
@@ -52,7 +55,7 @@ Edit posts only in `data/posts-*.yaml`. The calendar, scripts, image copy, viewe
 
 ## Before Day 1 (checklist)
 
-1. Read `07-qc/manual-qc.md` §3 and confirm or edit the 11 personal statements.
+1. Read `07-qc/manual-qc.md` §3 and confirm or edit the 15 personal statements.
 2. Set up the **AUTOMATE** keyword reply in Meta Business Suite (strategy §7).
 3. Build the templates (`06-production/design-system.md`) and the demo data/accounts (`workflow.md` §0).
 4. Run the Week 1 pre-flight on volatile facts (`07-qc/qc-report.md` → Pre-flight list).
