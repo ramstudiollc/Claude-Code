@@ -29,3 +29,6 @@ Thumbs.db
 # audit output: keep the reports, not the bulky media (they stay on the machine that ran the audit)
 audit/*/video/
 audit/*/shots/
+
+# portable preview copy (npm run portable)
+preview-portable/

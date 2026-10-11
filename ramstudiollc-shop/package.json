@@ -16,7 +16,8 @@
     "sync:gumroad:dry": "node scripts/sync-gumroad.mjs --dry-run",
     "audit": "node tools/audit/audit.mjs",
     "qc": "node tools/audit/qc.mjs",
-    "import:store": "node scripts/import-gumroad-store.mjs"
+    "import:store": "node scripts/import-gumroad-store.mjs",
+    "portable": "node scripts/make-portable.mjs"
   },
   "dependencies": {
     "astro": "^7.3.8"
