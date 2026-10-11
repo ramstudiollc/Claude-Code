@@ -97,6 +97,10 @@ video {
   display: block;
   max-width: 100%;
 }
+/* width/height attributes reserve space, but let CSS (aspect-ratio, width) decide the drawn height */
+img {
+  height: auto;
+}
 a {
   color: inherit;
 }
