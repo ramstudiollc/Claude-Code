@@ -1,0 +1,227 @@
+---
+// Filterable product grid. Every card is rendered at build time (good for SEO);
+// the small script below only shows/hides and re-orders them.
+import ProductCard from './ProductCard.astro';
+import { categories } from '../data/categories';
+import type { Product } from '../lib/catalog';
+
+interface Props {
+  items: Product[];
+  /** Hide the category filter (used on category pages). */
+  fixedCategory?: boolean;
+}
+const { items, fixedCategory = false } = Astro.props;
+const formats = [...new Set(items.flatMap((p) => p.formats))].sort();
+const cats = categories.filter((c) => items.some((p) => p.category === c.slug));
+---
+
+<div class="browser" data-browser>
+  <aside class="filters" aria-label="Filters">
+    <div class="group">
+      <label for="f-q" class="glabel">Search</label>
+      <input id="f-q" type="search" placeholder="Bottle, pouch, t-shirt…" data-f="q" autocomplete="off" />
+    </div>
+
+    {!fixedCategory && cats.length > 1 && (
+      <fieldset class="group">
+        <legend class="glabel">Category</legend>
+        <label class="opt"><input type="radio" name="cat" value="" data-f="cat" checked /> All</label>
+        {cats.map((c) => (
+          <label class="opt"><input type="radio" name="cat" value={c.slug} data-f="cat" /> {c.name}</label>
+        ))}
+      </fieldset>
+    )}
+
+    <fieldset class="group">
+      <legend class="glabel">Price</legend>
+      <label class="opt"><input type="radio" name="price" value="" data-f="price" checked /> Any</label>
+      <label class="opt"><input type="radio" name="price" value="free" data-f="price" /> Free</label>
+      <label class="opt"><input type="radio" name="price" value="paid" data-f="price" /> Paid</label>
+    </fieldset>
+
+    <fieldset class="group">
+      <legend class="glabel">Type</legend>
+      <label class="opt"><input type="radio" name="type" value="" data-f="type" checked /> Everything</label>
+      <label class="opt"><input type="radio" name="type" value="single" data-f="type" /> Single mockups</label>
+      <label class="opt"><input type="radio" name="type" value="bundle" data-f="type" /> Bundles</label>
+    </fieldset>
+
+    {formats.length > 1 && (
+      <fieldset class="group">
+        <legend class="glabel">Format</legend>
+        {formats.map((f) => (
+          <label class="opt"><input type="checkbox" value={f.toLowerCase()} data-f="fmt" /> {f}</label>
+        ))}
+      </fieldset>
+    )}
+  </aside>
+
+  <div class="results">
+    <div class="toolbar">
+      <p class="count" aria-live="polite"><span data-count>{items.length}</span> mockups</p>
+      <label class="sort">
+        <span class="visually-hidden">Sort by</span>
+        <select data-f="sort">
+          <option value="new">Newest first</option>
+          <option value="price-asc">Price: low to high</option>
+          <option value="price-desc">Price: high to low</option>
+          <option value="az">Name: A–Z</option>
+        </select>
+      </label>
+    </div>
+    <div class="grid" data-grid>
+      {items.map((p) => <ProductCard product={p} />)}
+    </div>
+    <p class="empty" data-empty hidden>No mockups match these filters. Clear the search or pick another category.</p>
+  </div>
+</div>
+
+<script>
+  const root = document.querySelector<HTMLElement>('[data-browser]');
+  if (root) {
+    const grid = root.querySelector<HTMLElement>('[data-grid]')!;
+    const cards = Array.from(grid.querySelectorAll<HTMLElement>('[data-card]'));
+    const countEl = root.querySelector('[data-count]')!;
+    const emptyEl = root.querySelector<HTMLElement>('[data-empty]')!;
+    const q = root.querySelector<HTMLInputElement>('[data-f="q"]')!;
+    const sort = root.querySelector<HTMLSelectElement>('[data-f="sort"]')!;
+
+    const params = new URLSearchParams(location.search);
+    if (params.get('q')) q.value = params.get('q')!;
+    const preCat = params.get('category');
+    if (preCat) {
+      const r = root.querySelector<HTMLInputElement>(`[data-f="cat"][value="${CSS.escape(preCat)}"]`);
+      if (r) r.checked = true;
+    }
+
+    const checked = (name: string) =>
+      root.querySelector<HTMLInputElement>(`[data-f="${name}"]:checked`)?.value ?? '';
+
+    function apply() {
+      const term = q.value.trim().toLowerCase();
+      const cat = checked('cat');
+      const price = checked('price');
+      const type = checked('type');
+      const fmts = Array.from(root!.querySelectorAll<HTMLInputElement>('[data-f="fmt"]:checked')).map((i) => i.value);
+
+      let shown = 0;
+      for (const c of cards) {
+        const d = c.dataset;
+        const ok =
+          (!term || term.split(/\s+/).every((t) => d.search!.includes(t))) &&
+          (!cat || d.category === cat) &&
+          (!price || (price === 'free' ? d.free === '1' : d.free === '0')) &&
+          (!type || d.type === type) &&
+          (fmts.length === 0 || fmts.some((f) => d.formats!.split(',').includes(f)));
+        c.hidden = !ok;
+        if (ok) shown++;
+      }
+      countEl.textContent = String(shown);
+      emptyEl.hidden = shown !== 0;
+
+      const by = sort.value;
+      const sorted = [...cards].sort((a, b) => {
+        const A = a.dataset, B = b.dataset;
+        if (by === 'price-asc') return Number(A.price) - Number(B.price);
+        if (by === 'price-desc') return Number(B.price) - Number(A.price);
+        if (by === 'az') return A.search!.localeCompare(B.search!);
+        return (B.date ?? '').localeCompare(A.date ?? '');
+      });
+      grid.append(...sorted);
+    }
+
+    root.addEventListener('input', apply);
+    root.addEventListener('change', apply);
+    apply();
+  }
+</script>
+
+<style>
+  .browser {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+  .filters {
+    position: sticky;
+    top: 92px;
+    display: grid;
+    gap: 24px;
+  }
+  .group {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 8px;
+  }
+  .glabel {
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ink-3);
+    padding: 0;
+    margin-bottom: 4px;
+  }
+  .opt {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.93rem;
+    cursor: pointer;
+  }
+  .opt input {
+    accent-color: var(--accent);
+    width: 16px;
+    height: 16px;
+  }
+  input[type='search'],
+  select {
+    width: 100%;
+    height: 42px;
+    border-radius: var(--radius-s);
+    border: 1px solid var(--line);
+    background: var(--surface);
+    padding: 0 12px;
+    font: inherit;
+    font-size: 0.92rem;
+  }
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  .count {
+    font-weight: 700;
+  }
+  .sort select {
+    width: auto;
+    padding-right: 28px;
+  }
+  .empty {
+    padding: 48px 0;
+    color: var(--ink-2);
+  }
+  [hidden] {
+    display: none !important;
+  }
+
+  @media (max-width: 860px) {
+    .browser {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+    .filters {
+      position: static;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 16px;
+    }
+    .filters .group:first-child {
+      grid-column: 1 / -1;
+    }
+  }
+</style>

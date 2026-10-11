@@ -1,0 +1,5 @@
+{
+  "_readme": {
+    "title": "Keys are product slugs. Any field set here wins over what Gumroad sends — use it for featured flags, specs, features, category or extra images. Delete this _readme entry if you like; it is ignored because no product has this slug."
+  }
+}

@@ -1,0 +1,110 @@
+---
+import Base from '../layouts/Base.astro';
+import AgencyBand from '../components/AgencyBand.astro';
+
+// Facts below come from the RAM Studio master dataset. Do not add numbers that are not there.
+const facts = [
+  { n: '2021', l: 'Studio founded' },
+  { n: '8,293+', l: 'Assets published across 7 marketplaces' },
+  { n: '504', l: 'Products on Creative Fabrica' },
+];
+---
+
+<Base
+  title="About RAM Studio — The Studio Behind the Mockups"
+  description="RAM Studio LLC is a packaging, branding and 3D design studio founded in 2021. The same team designs the mockups sold on ramstudiollc.shop."
+>
+  <section class="section">
+    <div class="wrap">
+      <div class="intro">
+        <p class="eyebrow">About</p>
+        <h1>Mockups made by a packaging design studio</h1>
+        <p class="lede">
+          RAM Studio LLC designs packaging, labels, brand systems and 3D product renders for clients. The mockups in this shop
+          come from the same desks: real dielines, real materials, real lighting.
+        </p>
+      </div>
+
+      <dl class="facts">
+        {facts.map((f) => (
+          <div>
+            <dt>{f.l}</dt>
+            <dd>{f.n}</dd>
+          </div>
+        ))}
+      </dl>
+
+      <div class="cols">
+        <div>
+          <h2>Where we are</h2>
+          <p>
+            RAM Studio LLC is a Wyoming company, registered at 30 N Gould St, Sheridan, WY 82801. The design studio works from
+            Lalbagh, Dhaka.
+          </p>
+        </div>
+        <div>
+          <h2>Tools we build with</h2>
+          <p>Adobe Photoshop for every mockup file. Autodesk Maya, Blender, Luxion KeyShot and Redshift for 3D scenes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <AgencyBand />
+</Base>
+
+<style>
+  .intro {
+    max-width: 62ch;
+  }
+  .intro h1 {
+    font-size: clamp(2.2rem, 4.6vw, 3.4rem);
+  }
+  .lede {
+    margin-top: 16px;
+    font-size: 1.12rem;
+    color: var(--ink-2);
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: 16px;
+    margin: 48px 0 0;
+  }
+  .facts div {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 24px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 6px;
+  }
+  .facts dd {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+  .facts dt {
+    color: var(--ink-2);
+    font-size: 0.92rem;
+  }
+  .cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 56px;
+  }
+  .cols h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  .cols p {
+    color: var(--ink-2);
+  }
+  @media (max-width: 760px) {
+    .cols {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

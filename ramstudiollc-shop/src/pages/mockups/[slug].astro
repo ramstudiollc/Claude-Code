@@ -1,0 +1,338 @@
+---
+import Base from '../../layouts/Base.astro';
+import BuyButton from '../../components/BuyButton.astro';
+import MockupArt from '../../components/MockupArt.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import { site, isSet } from '../../config/site';
+import { categoryBySlug } from '../../data/categories';
+import { products, related, bundleItems, priceLabel, isFree, type Product } from '../../lib/catalog';
+
+export function getStaticPaths() {
+  return products.map((product) => ({ params: { slug: product.slug }, props: { product } }));
+}
+
+interface Props {
+  product: Product;
+}
+const { product: p } = Astro.props;
+const cat = categoryBySlug(p.category);
+const free = isFree(p);
+const inside = p.type === 'bundle' ? bundleItems(p) : [];
+const more = related(p);
+const plainSummary = p.summary ?? `${p.title} — ${cat?.name ?? 'mockup'} in ${p.formats.join(', ') || 'PSD'} format.`;
+
+const specs = [
+  ...(p.formats.length ? [{ label: 'Format', value: p.formats.join(', ') }] : []),
+  ...(p.specs ?? []),
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: p.title,
+  description: plainSummary,
+  category: cat?.name,
+  brand: { '@type': 'Brand', name: site.name },
+  ...(p.images.length ? { image: p.images } : {}),
+  ...(isSet(p.gumroadUrl)
+    ? {
+        offers: {
+          '@type': 'Offer',
+          url: p.gumroadUrl,
+          price: p.price.toFixed(2),
+          priceCurrency: p.currency || 'USD',
+          availability: 'https://schema.org/InStock',
+        },
+      }
+    : {}),
+};
+---
+
+<Base
+  title={`${p.title} — ${free ? 'Free ' : ''}PSD Mockup`}
+  description={`${plainSummary} ${free ? 'Free download' : `${priceLabel(p)}`} via Gumroad.`}
+  image={p.images[0]}
+  noindex={p.sample}
+>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="/mockups/">Mockups</a>
+      <span aria-hidden="true">/</span>
+      {cat && <a href={`/category/${cat.slug}/`}>{cat.name}</a>}
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">{p.title}</span>
+    </nav>
+
+    <section class="product">
+      <div class="gallery">
+        {p.images.length > 0 ? (
+          <>
+            <img class="main" src={p.images[0]} alt={`${p.title}: main preview`} width="1200" height="900" data-main />
+            {p.images.length > 1 && (
+              <div class="thumbs">
+                {p.images.map((src, i) => (
+                  <button type="button" data-thumb={src} aria-label={`Show preview ${i + 1}`}>
+                    <img src={src} alt="" loading="lazy" width="200" height="150" />
+                  </button>
+                ))}
+              </div>
+            )}
+          </>
+        ) : (
+          <div class="main art"><MockupArt kind={p.art ?? 'box'} label={`${p.title} illustration`} /></div>
+        )}
+      </div>
+
+      <div class="info">
+        <div class="tags">
+          {cat && <a class="pill" href={`/category/${cat.slug}/`}>{cat.name}</a>}
+          {p.type === 'bundle' && <span class="pill pill-ink">Bundle · {inside.length} items</span>}
+          {free && <span class="pill pill-accent">Free</span>}
+          {p.sample && <span class="pill">Sample entry</span>}
+        </div>
+        <h1>{p.title}</h1>
+        {p.summary && <p class="summary">{p.summary}</p>}
+
+        <div class="buybox">
+          <p class="price">{priceLabel(p)}{p.payWhatYouWant && !free && <span> · pay what you want</span>}</p>
+          <BuyButton product={p} block />
+          {p.allAccess && !free && (
+            <p class="note">
+              Also included in the <a href="/all-access/">All-Access Pass</a>.
+            </p>
+          )}
+          <p class="secure">Secure checkout and instant download through Gumroad.</p>
+        </div>
+
+        {specs.length > 0 && (
+          <dl class="specs">
+            {specs.map((s) => (
+              <div>
+                <dt>{s.label}</dt>
+                <dd>{s.value}</dd>
+              </div>
+            ))}
+          </dl>
+        )}
+
+        {p.features && p.features.length > 0 && (
+          <div class="block">
+            <h2>What you can edit</h2>
+            <ul class="ticks">
+              {p.features.map((f) => <li>{f}</li>)}
+            </ul>
+          </div>
+        )}
+
+        <div class="block">
+          <h2>License</h2>
+          <p class="muted">
+            Use it in personal and client work, including commercial projects. Do not resell or share the source file.{' '}
+            <a href="/license/">Read the full license</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    {p.description && (
+      <section class="section desc">
+        <h2>About this mockup</h2>
+        <div class="prose" set:html={p.description} />
+      </section>
+    )}
+
+    {inside.length > 0 && (
+      <section class="section desc">
+        <h2>Inside this bundle</h2>
+        <div class="grid">
+          {inside.map((x) => <ProductCard product={x} />)}
+        </div>
+      </section>
+    )}
+
+    {more.length > 0 && (
+      <section class="section desc">
+        <div class="section-head">
+          <h2>You may also need</h2>
+          {cat && <a class="link-arrow" href={`/category/${cat.slug}/`}>More {cat.name.toLowerCase()} →</a>}
+        </div>
+        <div class="grid">
+          {more.map((x) => <ProductCard product={x} />)}
+        </div>
+      </section>
+    )}
+  </div>
+</Base>
+
+<script>
+  const main = document.querySelector<HTMLImageElement>('[data-main]');
+  document.querySelectorAll<HTMLButtonElement>('[data-thumb]').forEach((b) =>
+    b.addEventListener('click', () => {
+      if (main) main.src = b.dataset.thumb!;
+    }),
+  );
+</script>
+
+<style>
+  .crumbs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: var(--ink-3);
+    padding-top: 28px;
+  }
+  .crumbs a {
+    text-decoration: none;
+  }
+  .crumbs a:hover {
+    color: var(--ink);
+  }
+  .product {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    gap: clamp(28px, 5vw, 64px);
+    padding-top: 24px;
+    align-items: start;
+  }
+  .gallery {
+    position: sticky;
+    top: 92px;
+  }
+  .main {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: var(--radius-l);
+    overflow: hidden;
+    background: var(--surface-2);
+  }
+  .thumbs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+    gap: 10px;
+    margin-top: 12px;
+  }
+  .thumbs button {
+    padding: 0;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-s);
+    overflow: hidden;
+    cursor: pointer;
+    background: none;
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .tags a {
+    text-decoration: none;
+  }
+  .info h1 {
+    font-size: clamp(1.9rem, 3.6vw, 2.8rem);
+  }
+  .summary {
+    font-size: 1.1rem;
+    color: var(--ink-2);
+    margin-top: 12px;
+  }
+  .buybox {
+    margin-top: 28px;
+    padding: 22px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    display: grid;
+    gap: 12px;
+  }
+  .price {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+  .price span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--ink-3);
+  }
+  .note,
+  .secure {
+    font-size: 0.87rem;
+    color: var(--ink-2);
+  }
+  .note a {
+    color: var(--accent);
+    font-weight: 700;
+  }
+  .secure {
+    color: var(--ink-3);
+  }
+  .specs {
+    margin: 24px 0 0;
+    display: grid;
+    border-top: 1px solid var(--line);
+  }
+  .specs div {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 0.93rem;
+  }
+  .specs dt {
+    color: var(--ink-3);
+  }
+  .specs dd {
+    margin: 0;
+    font-weight: 700;
+    text-align: right;
+  }
+  .block {
+    margin-top: 28px;
+  }
+  .block h2,
+  .desc h2 {
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+  }
+  .desc h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  .desc .section-head h2 {
+    margin-bottom: 0;
+  }
+  .block .muted a {
+    color: var(--ink);
+    font-weight: 700;
+  }
+  .ticks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 8px;
+  }
+  .ticks li::before {
+    content: '✓';
+    color: var(--ok);
+    font-weight: 800;
+    margin-right: 10px;
+  }
+  .desc {
+    padding-bottom: 0;
+  }
+  @media (max-width: 860px) {
+    .product {
+      grid-template-columns: 1fr;
+    }
+    .gallery {
+      position: static;
+    }
+  }
+</style>

@@ -1,0 +1,60 @@
+---
+import Base from '../../layouts/Base.astro';
+import ProductBrowser from '../../components/ProductBrowser.astro';
+import { categories, type Category } from '../../data/categories';
+import { inCategory } from '../../lib/catalog';
+
+export function getStaticPaths() {
+  return categories.map((category) => ({ params: { slug: category.slug }, props: { category } }));
+}
+
+interface Props {
+  category: Category;
+}
+const { category } = Astro.props;
+const items = inCategory(category.slug);
+---
+
+<Base
+  title={`${category.name} Mockups (PSD) · RAM Studio`}
+  description={`${category.name} mockups for Photoshop: ${category.blurb.toLowerCase()}. Smart-object PSD files by RAM Studio, sold through Gumroad.`}
+>
+  <section class="section page">
+    <div class="wrap">
+      <header class="head">
+        <p class="eyebrow"><a href="/mockups/">All mockups</a> / Category</p>
+        <h1>{category.name} mockups</h1>
+        <p class="muted">{category.blurb}. {items.length} {items.length === 1 ? 'file' : 'files'} in this category.</p>
+      </header>
+      {items.length > 0 ? (
+        <ProductBrowser items={items} fixedCategory />
+      ) : (
+        <p class="muted empty">
+          No {category.name.toLowerCase()} mockups are listed yet. <a href="/mockups/">See all mockups</a>.
+        </p>
+      )}
+    </div>
+  </section>
+</Base>
+
+<style>
+  .page {
+    padding-top: clamp(32px, 5vw, 56px);
+  }
+  .head {
+    margin-bottom: 36px;
+  }
+  .head h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+  .head p.muted {
+    margin-top: 10px;
+  }
+  .eyebrow a {
+    text-decoration: none;
+  }
+  .empty a {
+    color: var(--accent);
+    font-weight: 700;
+  }
+</style>

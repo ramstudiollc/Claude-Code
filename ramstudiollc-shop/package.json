@@ -1,0 +1,21 @@
+{
+  "name": "ramstudiollc-shop",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "ramstudiollc.shop — storefront for RAM Studio mockups. Checkout happens on Gumroad.",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "sync:gumroad": "node scripts/sync-gumroad.mjs",
+    "sync:gumroad:dry": "node scripts/sync-gumroad.mjs --dry-run"
+  },
+  "dependencies": {
+    "astro": "^7.3.8"
+  }
+}

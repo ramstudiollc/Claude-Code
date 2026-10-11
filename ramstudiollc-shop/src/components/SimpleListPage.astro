@@ -1,0 +1,53 @@
+---
+// Shared shell for short listing pages (freebies, bundles).
+import Base from '../layouts/Base.astro';
+import ProductCard from './ProductCard.astro';
+import type { Product } from '../lib/catalog';
+
+interface Props {
+  title: string;
+  description: string;
+  heading: string;
+  intro: string;
+  items: Product[];
+  emptyText: string;
+}
+const { title, description, heading, intro, items, emptyText } = Astro.props;
+---
+
+<Base title={title} description={description}>
+  <section class="section page">
+    <div class="wrap">
+      <header class="head">
+        <h1>{heading}</h1>
+        <p class="muted">{intro}</p>
+      </header>
+      {items.length > 0 ? (
+        <div class="grid">{items.map((p) => <ProductCard product={p} />)}</div>
+      ) : (
+        <p class="muted">{emptyText} <a href="/mockups/">Browse all mockups</a>.</p>
+      )}
+      <slot />
+    </div>
+  </section>
+</Base>
+
+<style>
+  .page {
+    padding-top: clamp(32px, 5vw, 56px);
+  }
+  .head {
+    margin-bottom: 36px;
+    max-width: 60ch;
+  }
+  .head h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+  .head p {
+    margin-top: 10px;
+  }
+  a {
+    color: var(--accent);
+    font-weight: 700;
+  }
+</style>

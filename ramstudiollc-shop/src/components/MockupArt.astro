@@ -1,0 +1,155 @@
+---
+// Flat illustration used on cards until a product has real preview images.
+import type { ArtKind } from '../data/categories';
+
+interface Props {
+  kind: ArtKind;
+  label?: string;
+}
+const { kind, label } = Astro.props;
+
+const tints: Record<ArtKind, string> = {
+  box: 'var(--tint-1)',
+  pouch: 'var(--tint-4)',
+  bottle: 'var(--tint-2)',
+  can: 'var(--tint-5)',
+  tin: 'var(--tint-3)',
+  cards: 'var(--tint-1)',
+  flyer: 'var(--tint-3)',
+  tshirt: 'var(--tint-2)',
+  mug: 'var(--tint-4)',
+  device: 'var(--tint-5)',
+  billboard: 'var(--tint-2)',
+  bag: 'var(--tint-4)',
+};
+---
+
+<div class="art" style={`--bg:${tints[kind]}`} role={label ? 'img' : undefined} aria-label={label} aria-hidden={label ? undefined : 'true'}>
+  <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="100" cy="172" rx="58" ry="7" fill="#141414" opacity="0.10"></ellipse>
+    {kind === 'box' && (
+      <g>
+        <path d="M58 70 100 52l42 18v76l-42 18-42-18z" fill="#fff" />
+        <path d="M100 88v76l42-18V70z" fill="#d9d4c8" />
+        <path d="M58 70 100 52l42 18-42 18z" fill="#f4f1ea" />
+        <path d="M68 96l24 10v26l-24-10z" fill="var(--accent)" />
+      </g>
+    )}
+    {kind === 'pouch' && (
+      <g>
+        <path d="M66 44h68l-2 8 6 112c0 4-3 6-7 6H69c-4 0-7-2-7-6l6-112z" fill="#c8a57a" />
+        <path d="M100 44h34l-2 8 6 112c0 4-3 6-7 6h-31z" fill="#b48f63" />
+        <rect x="66" y="56" width="68" height="4" fill="#8f6e46" opacity=".5" />
+        <rect x="76" y="92" width="48" height="40" rx="4" fill="#fff" />
+        <rect x="84" y="102" width="32" height="5" rx="2" fill="#141414" />
+        <rect x="84" y="112" width="22" height="4" rx="2" fill="var(--accent)" />
+      </g>
+    )}
+    {kind === 'bottle' && (
+      <g>
+        <rect x="90" y="36" width="20" height="10" rx="2" fill="#141414" />
+        <path d="M94 46h12v14c0 4 18 8 18 22v76c0 6-4 10-10 10H86c-6 0-10-4-10-10V82c0-14 18-18 18-22z" fill="#a8622a" />
+        <path d="M100 46h6v14c0 4 18 8 18 22v76c0 6-4 10-10 10h-14z" fill="#8c4f1f" />
+        <rect x="80" y="102" width="40" height="44" rx="3" fill="#f6efe4" />
+        <rect x="88" y="114" width="24" height="5" rx="2" fill="#141414" />
+        <rect x="88" y="124" width="16" height="4" rx="2" fill="var(--accent)" />
+      </g>
+    )}
+    {kind === 'can' && (
+      <g>
+        <path d="M74 52c0-6 52-6 52 0v112c0 6-52 6-52 0z" fill="#fff" />
+        <path d="M100 47c13 0 26 2 26 5v112c0 3-13 5-26 5z" fill="#dfe4ea" />
+        <ellipse cx="100" cy="52" rx="26" ry="5" fill="#c9ced6" />
+        <rect x="74" y="84" width="52" height="46" fill="var(--accent)" />
+        <rect x="100" y="84" width="26" height="46" fill="#c43a20" />
+        <rect x="84" y="100" width="20" height="5" rx="2" fill="#fff" />
+      </g>
+    )}
+    {kind === 'tin' && (
+      <g>
+        <rect x="62" y="58" width="76" height="16" rx="3" fill="#2e2e2e" />
+        <rect x="64" y="72" width="72" height="94" rx="3" fill="#3c3c3c" />
+        <rect x="100" y="72" width="36" height="94" fill="#2a2a2a" />
+        <rect x="74" y="98" width="52" height="40" rx="3" fill="#e7d9b8" />
+        <rect x="82" y="110" width="36" height="5" rx="2" fill="#141414" />
+        <rect x="82" y="120" width="20" height="4" rx="2" fill="var(--accent)" />
+      </g>
+    )}
+    {kind === 'cards' && (
+      <g>
+        <rect x="46" y="86" width="96" height="58" rx="4" fill="#d9d4c8" transform="rotate(-8 94 115)" />
+        <rect x="58" y="80" width="96" height="58" rx="4" fill="#fff" transform="rotate(4 106 109)" />
+        <rect x="70" y="98" width="14" height="14" rx="3" fill="var(--accent)" transform="rotate(4 106 109)" />
+        <rect x="92" y="100" width="44" height="5" rx="2" fill="#141414" transform="rotate(4 106 109)" />
+        <rect x="92" y="110" width="30" height="4" rx="2" fill="#85837c" transform="rotate(4 106 109)" />
+      </g>
+    )}
+    {kind === 'flyer' && (
+      <g>
+        <path d="M52 64l78-14 18 104-78 14z" fill="#fff" />
+        <path d="M60 72l62-11 7 40-62 11z" fill="var(--accent)" />
+        <path d="M70 124l50-9 1 6-50 9zM72 136l36-6 1 5-36 6z" fill="#141414" />
+      </g>
+    )}
+    {kind === 'tshirt' && (
+      <g>
+        <path d="M78 44c6 8 38 8 44 0l30 16-12 26-14-6v84H74V80l-14 6-12-26z" fill="#fff" />
+        <path d="M100 52c10 0 20-3 22-8l30 16-12 26-14-6v84h-26z" fill="#e6e3dc" />
+        <path d="M86 46c4 6 24 6 28 0" stroke="#d1ccc1" stroke-width="3" />
+        <circle cx="100" cy="100" r="14" fill="var(--accent)" />
+      </g>
+    )}
+    {kind === 'mug' && (
+      <g>
+        <path d="M128 86h10a16 16 0 0 1 0 32h-10" stroke="#e9e6df" stroke-width="10" />
+        <path d="M64 70h66v84c0 7-6 12-12 12H76c-7 0-12-5-12-12z" fill="#fff" />
+        <path d="M100 70h30v84c0 7-6 12-12 12h-18z" fill="#e6e3dc" />
+        <ellipse cx="97" cy="70" rx="33" ry="6" fill="#f2efe8" />
+        <rect x="78" y="100" width="36" height="32" rx="4" fill="var(--accent)" />
+      </g>
+    )}
+    {kind === 'device' && (
+      <g>
+        <rect x="70" y="40" width="60" height="122" rx="12" fill="#141414" />
+        <rect x="75" y="47" width="50" height="108" rx="8" fill="#f5f3ee" />
+        <rect x="83" y="60" width="34" height="34" rx="6" fill="var(--accent)" />
+        <rect x="83" y="102" width="34" height="5" rx="2" fill="#141414" />
+        <rect x="83" y="112" width="24" height="4" rx="2" fill="#85837c" />
+        <rect x="92" y="43" width="16" height="3" rx="1.5" fill="#2e2e2e" />
+      </g>
+    )}
+    {kind === 'billboard' && (
+      <g>
+        <rect x="96" y="112" width="8" height="58" fill="#5a5a55" />
+        <rect x="36" y="52" width="128" height="66" rx="3" fill="#2e2e2e" />
+        <rect x="41" y="57" width="118" height="56" fill="#fff" />
+        <rect x="41" y="57" width="52" height="56" fill="var(--accent)" />
+        <rect x="102" y="74" width="44" height="6" rx="2" fill="#141414" />
+        <rect x="102" y="86" width="30" height="5" rx="2" fill="#85837c" />
+      </g>
+    )}
+    {kind === 'bag' && (
+      <g>
+        <path d="M84 70c0-22 32-22 32 0" stroke="#7a5b3a" stroke-width="4" />
+        <path d="M62 70h76l6 96H56z" fill="#c8a57a" />
+        <path d="M100 70h38l6 96h-44z" fill="#b48f63" />
+        <rect x="76" y="106" width="48" height="30" rx="3" fill="#fff" />
+        <rect x="84" y="116" width="32" height="5" rx="2" fill="#141414" />
+      </g>
+    )}
+  </svg>
+</div>
+
+<style>
+  .art {
+    background: var(--bg);
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .art svg {
+    width: 72%;
+    height: auto;
+  }
+</style>

@@ -1,0 +1,10 @@
+{
+  "name": "ramstudiollc-shop",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  "postCreateCommand": "cd ramstudiollc-shop && npm install",
+  "forwardPorts": [4321],
+  "portsAttributes": { "4321": { "label": "Shop (npm run dev)", "onAutoForward": "openBrowser" } },
+  "customizations": {
+    "vscode": { "extensions": ["astro-build.astro-vscode"] }
+  }
+}

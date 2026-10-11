@@ -1,0 +1,278 @@
+/* ------------------------------------------------------------------
+   Design tokens. Change brand colours here — every component reads them.
+   ------------------------------------------------------------------ */
+:root {
+  --paper: #f5f3ee;
+  --surface: #ffffff;
+  --surface-2: #ebe8e0;
+  --ink: #141414;
+  --ink-2: #4a4a46;
+  --ink-3: #85837c;
+  --line: #dcd8ce;
+  --accent: #e8492b;
+  --accent-ink: #ffffff;
+  --accent-soft: #fbe3dc;
+  --ok: #1f7a4d;
+
+  /* Card backdrops — one per illustration family */
+  --tint-1: #e9e3d6;
+  --tint-2: #dfe6e1;
+  --tint-3: #e3e1ea;
+  --tint-4: #efe0d8;
+  --tint-5: #dde4ea;
+
+  --radius-s: 8px;
+  --radius: 14px;
+  --radius-l: 22px;
+  --shadow: 0 1px 2px rgb(20 20 20 / 0.05), 0 8px 24px rgb(20 20 20 / 0.06);
+
+  --font: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  --wrap: 1240px;
+  --gutter: clamp(16px, 4vw, 40px);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(2.3rem, 5.4vw, 4.2rem);
+  font-weight: 800;
+}
+h2 {
+  font-size: clamp(1.6rem, 3vw, 2.25rem);
+  font-weight: 800;
+}
+h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.wrap {
+  max-width: var(--wrap);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.section {
+  padding-block: clamp(48px, 8vw, 96px);
+}
+
+.section-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+.section-head p {
+  color: var(--ink-2);
+  margin-top: 8px;
+  max-width: 52ch;
+}
+
+.eyebrow {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.muted {
+  color: var(--ink-2);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 46px;
+  padding: 0 20px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+  white-space: nowrap;
+}
+.btn:hover {
+  transform: translateY(-1px);
+}
+.btn-primary {
+  background: var(--ink);
+  color: var(--paper);
+}
+.btn-primary:hover {
+  background: #000;
+}
+.btn-accent {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+.btn-ghost {
+  background: transparent;
+  border-color: var(--line);
+  color: var(--ink);
+}
+.btn-ghost:hover {
+  border-color: var(--ink);
+}
+.btn-block {
+  width: 100%;
+}
+.btn[aria-disabled='true'] {
+  background: var(--surface-2);
+  color: var(--ink-3);
+  cursor: not-allowed;
+  transform: none;
+}
+
+.link-arrow {
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 2px;
+}
+.link-arrow:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* Pills and badges */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  color: var(--ink-2);
+}
+.pill-accent {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+.pill-ink {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+}
+
+/* Product grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+  gap: 22px;
+}
+
+/* Notice bar for sample data / drafts */
+.notice {
+  background: #fff6d6;
+  border: 1px solid #ecd889;
+  color: #5a4a00;
+  border-radius: var(--radius-s);
+  padding: 12px 16px;
+  font-size: 0.9rem;
+}
+.notice code {
+  font-family: var(--mono);
+  font-size: 0.85em;
+  background: rgb(0 0 0 / 0.06);
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* Long-form text (license, product descriptions) */
+.prose {
+  max-width: 70ch;
+}
+.prose > * + * {
+  margin-top: 1em;
+}
+.prose h2 {
+  font-size: 1.4rem;
+  margin-top: 2em;
+}
+.prose h3 {
+  margin-top: 1.6em;
+}
+.prose ul,
+.prose ol {
+  padding-left: 1.2em;
+}
+.prose li + li {
+  margin-top: 0.35em;
+}
+.prose a {
+  color: var(--accent);
+}

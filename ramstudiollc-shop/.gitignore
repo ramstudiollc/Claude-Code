@@ -1,0 +1,27 @@
+# build output
+dist/
+.astro/
+
+# dependencies
+node_modules/
+
+# environment — never commit your Gumroad token
+.env
+.env.*
+!.env.example
+
+# logs
+npm-debug.log*
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# large source files live outside git (see docs/03-WORKFLOW.md)
+*.psd
+*.psb
+*.zip

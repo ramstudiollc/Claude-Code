@@ -1,0 +1,31 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="Page not found · RAM Studio" noindex>
+  <section class="section">
+    <div class="wrap">
+      <h1>This page is not here</h1>
+      <p class="muted">The mockup may have moved or been renamed.</p>
+      <p class="actions">
+        <a class="btn btn-primary" href="/mockups/">Browse all mockups</a>
+        <a class="btn btn-ghost" href="/">Go to the home page</a>
+      </p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+  .muted {
+    margin-top: 10px;
+  }
+  .actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+  }
+</style>

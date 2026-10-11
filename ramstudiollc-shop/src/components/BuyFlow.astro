@@ -1,0 +1,76 @@
+---
+// "How buying works" — explains the Gumroad hand-off so the redirect never surprises anyone.
+const steps = [
+  {
+    n: '1',
+    title: 'Pick a mockup here',
+    body: 'Filter by category or file format, check the preview and specs, then press Buy.',
+  },
+  {
+    n: '2',
+    title: 'Pay on Gumroad',
+    body: 'Checkout opens on Gumroad, our payment partner. Pay by card or PayPal. Gumroad issues the receipt.',
+  },
+  {
+    n: '3',
+    title: 'Download instantly',
+    body: 'The download link arrives by email and stays in your Gumroad Library, so you can download again later.',
+  },
+];
+---
+
+<section class="section flow">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2>How buying works</h2>
+        <p>You browse on ramstudiollc.shop. Payment and downloads run through Gumroad.</p>
+      </div>
+    </div>
+    <ol class="steps">
+      {steps.map((s) => (
+        <li>
+          <span class="n">{s.n}</span>
+          <h3>{s.title}</h3>
+          <p>{s.body}</p>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>
+
+<style>
+  .flow {
+    padding-top: 0;
+  }
+  .steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    gap: 16px;
+  }
+  li {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 24px;
+  }
+  .n {
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 800;
+    margin-bottom: 16px;
+  }
+  p {
+    color: var(--ink-2);
+    margin-top: 8px;
+    font-size: 0.95rem;
+  }
+</style>

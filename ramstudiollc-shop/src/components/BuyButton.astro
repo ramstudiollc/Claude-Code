@@ -1,0 +1,28 @@
+---
+// The one place that decides where "Buy" goes.
+// Real Gumroad link → go there. No link yet → a disabled button, never href="#".
+import { site, isSet } from '../config/site';
+import { priceLabel, isFree, type Product } from '../lib/catalog';
+
+interface Props {
+  product: Product;
+  block?: boolean;
+  variant?: 'primary' | 'accent';
+}
+const { product, block = false, variant = 'accent' } = Astro.props;
+
+const free = isFree(product);
+const label = free ? 'Get it free on Gumroad' : `Buy on Gumroad · ${priceLabel(product)}`;
+const href = isSet(product.gumroadUrl) ? product.gumroadUrl : '';
+const overlay = site.checkout === 'overlay';
+const cls = ['btn', `btn-${variant}`, block && 'btn-block', overlay && 'gumroad-button'].filter(Boolean).join(' ');
+---
+
+{href ? (
+  <a class={cls} href={href} rel="noopener" data-buy={product.slug}>
+    {label}
+    <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 3h8v8M13 3 3 13" stroke="currentColor" stroke-width="2" fill="none" /></svg>
+  </a>
+) : (
+  <span class:list={['btn', block && 'btn-block']} aria-disabled="true">Coming soon to Gumroad</span>
+)}

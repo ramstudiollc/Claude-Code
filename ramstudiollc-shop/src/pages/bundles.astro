@@ -1,0 +1,13 @@
+---
+import SimpleListPage from '../components/SimpleListPage.astro';
+import { bundles } from '../lib/catalog';
+---
+
+<SimpleListPage
+  title="Mockup Bundles — Save on PSD Sets · RAM Studio"
+  description="RAM Studio mockup bundles: related PSD mockups grouped in one download for less than buying each file. Checkout and download on Gumroad."
+  heading="Mockup bundles"
+  intro="Related mockups grouped in one download, priced lower than buying each file on its own."
+  items={bundles}
+  emptyText="No bundles are listed yet."
+/>

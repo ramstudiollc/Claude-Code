@@ -1,0 +1,153 @@
+---
+import { nav, site, isSet } from '../config/site';
+const path = Astro.url.pathname;
+const allAccessReady = isSet(site.allAccess.url);
+---
+
+<header class="header">
+  <div class="wrap bar">
+    <a href="/" class="logo" aria-label={`${site.name} shop — home`}>
+      <span class="mark" aria-hidden="true">R</span>
+      <span class="word">ramstudiollc<span>.shop</span></span>
+    </a>
+
+    <input type="checkbox" id="menu-toggle" class="visually-hidden" />
+    <label for="menu-toggle" class="menu-btn" aria-label="Open menu">
+      <span></span><span></span>
+    </label>
+
+    <nav class="nav" aria-label="Main">
+      {nav.map((item) => (
+        <a href={item.href} aria-current={path.startsWith(item.href) ? 'page' : undefined}>
+          {item.label}
+        </a>
+      ))}
+      <form action="/mockups/" method="get" class="search" role="search">
+        <label for="q" class="visually-hidden">Search mockups</label>
+        <input id="q" name="q" type="search" placeholder="Search mockups" autocomplete="off" />
+      </form>
+      {allAccessReady && (
+        <a href="/all-access/" class="btn btn-primary cta">Get All-Access</a>
+      )}
+    </nav>
+  </div>
+</header>
+
+<style>
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: color-mix(in srgb, var(--paper) 88%, transparent);
+    backdrop-filter: saturate(1.4) blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    min-height: 68px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+  .mark {
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    background: var(--ink);
+    color: var(--paper);
+    font-size: 1.05rem;
+  }
+  .word span {
+    color: var(--accent);
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+  }
+  .nav > a:not(.btn) {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--ink-2);
+  }
+  .nav > a:not(.btn):hover,
+  .nav > a[aria-current='page'] {
+    color: var(--ink);
+  }
+  .search input {
+    width: 190px;
+    height: 40px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    padding: 0 16px;
+    font: inherit;
+    font-size: 0.9rem;
+  }
+  .search input:focus {
+    outline: none;
+    border-color: var(--ink);
+  }
+  .cta {
+    min-height: 40px;
+    font-size: 0.88rem;
+  }
+  .menu-btn {
+    display: none;
+  }
+
+  @media (max-width: 920px) {
+    .menu-btn {
+      display: grid;
+      gap: 6px;
+      width: 44px;
+      height: 44px;
+      place-content: center;
+      cursor: pointer;
+    }
+    .menu-btn span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--ink);
+    }
+    .nav {
+      display: none;
+      position: absolute;
+      top: 68px;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 4px;
+      padding: 12px var(--gutter) 20px;
+      background: var(--paper);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav > a:not(.btn) {
+      padding: 10px 0;
+      font-size: 1.05rem;
+    }
+    .search input {
+      width: 100%;
+      margin-top: 8px;
+    }
+    #menu-toggle:checked ~ .nav {
+      display: flex;
+    }
+    #menu-toggle:focus-visible + .menu-btn {
+      outline: 2px solid var(--accent);
+    }
+  }
+</style>

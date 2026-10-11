@@ -1,0 +1,35 @@
+---
+import Base from '../../layouts/Base.astro';
+import ProductBrowser from '../../components/ProductBrowser.astro';
+import { products } from '../../lib/catalog';
+---
+
+<Base
+  title="All Mockups — PSD Packaging, Print & Branding · RAM Studio"
+  description="Browse every RAM Studio mockup: packaging, bottles, cans, branding, print, apparel and devices. Filter by category, format and price, then buy on Gumroad."
+>
+  <section class="section page">
+    <div class="wrap">
+      <header class="head">
+        <h1>All mockups</h1>
+        <p class="muted">{products.length} Photoshop mockups. Filter, preview, then buy securely on Gumroad.</p>
+      </header>
+      <ProductBrowser items={products} />
+    </div>
+  </section>
+</Base>
+
+<style>
+  .page {
+    padding-top: clamp(32px, 5vw, 56px);
+  }
+  .head {
+    margin-bottom: 36px;
+  }
+  .head h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+  .head p {
+    margin-top: 10px;
+  }
+</style>
