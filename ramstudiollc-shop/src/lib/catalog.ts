@@ -22,6 +22,12 @@ export type Product = {
   formats: string[];
   specs?: Spec[];
   features?: string[];
+  /** "Perfect for" list from the Gumroad description. */
+  useCases?: string[];
+  /** Gumroad star rating shown on the store card. */
+  rating?: { value: number; count: number } | null;
+  /** Gumroad product id / sku. */
+  gumroadId?: string | null;
   /** Image URLs. The first one is the cover. */
   images: string[];
   /** Illustration shown when there is no image yet. */
