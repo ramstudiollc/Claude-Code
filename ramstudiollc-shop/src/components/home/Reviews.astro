@@ -25,7 +25,7 @@ const rated = products.filter((p) => p.rating && p.rating.count > 0).sort((a, b)
       <article class="summary card" data-reveal>
         <IconTile name="star" tone="sun" size="lg" />
         <p class="score"><span class="grad">{stats.rating}</span><small>/5</small></p>
-        <p class="stars">{[1, 2, 3, 4, 5].map(() => <Icon name="star" size={18} />)}</p>
+        <p class="stars" aria-hidden="true">{[1, 2, 3, 4, 5].map(() => <Icon name="star" size={18} />)}</p>
         <p class="muted">{stats.reviews} verified ratings on Gumroad</p>
       </article>
       {rated.map((p, i) => {
@@ -33,7 +33,7 @@ const rated = products.filter((p) => p.rating && p.rating.count > 0).sort((a, b)
         return (
           <a class="rev card" href={`/mockups/${p.slug}/`} data-reveal style={`--i:${(i + 1) % 6}`}>
             <div class="top">
-              <p class="stars">{[1, 2, 3, 4, 5].map(() => <Icon name="star" size={16} />)}</p>
+              <p class="stars" aria-hidden="true">{[1, 2, 3, 4, 5].map(() => <Icon name="star" size={16} />)}</p>
               <span class="badge">{cat?.short}</span>
             </div>
             <p class="quote">

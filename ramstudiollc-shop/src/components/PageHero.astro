@@ -8,12 +8,14 @@ interface Props {
   title: string | string[];
   sub?: string;
   align?: 'center' | 'left';
+  /** 'sm' for utility pages (contact, FAQ, licence). */
+  size?: 'lg' | 'sm';
 }
-const { eyebrow, icon = 'spark', title, sub, align = 'center' } = Astro.props;
+const { eyebrow, icon = 'spark', title, sub, align = 'center', size = 'lg' } = Astro.props;
 const [soft, strong] = Array.isArray(title) ? title : [null, title];
 ---
 
-<section class:list={['page-hero', align]}>
+<section class:list={['page-hero', align, `size-${size}`]}>
   <div class="glow" aria-hidden="true"></div>
   <div class="dots" aria-hidden="true"></div>
   <div class="wrap">
@@ -66,5 +68,8 @@ const [soft, strong] = Array.isArray(title) ? title : [null, title];
   }
   .left .lead {
     margin-top: 22px;
+  }
+  .size-sm .h1 {
+    font-size: clamp(40px, 4vw, 56px);
   }
 </style>

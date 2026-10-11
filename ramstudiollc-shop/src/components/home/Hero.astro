@@ -41,7 +41,7 @@ const cols = [0, 1, 2, 3, 4].map((c) => pool.filter((_, i) => i % 5 === c).slice
     </div>
     {stats.reviews > 0 && (
       <p class="trust intro" style="--d:5">
-        <span class="stars">{[1, 2, 3, 4, 5].map(() => <Icon name="star" size={15} />)}</span>
+        <span class="stars" aria-hidden="true">{[1, 2, 3, 4, 5].map(() => <Icon name="star" size={15} />)}</span>
         <span>{stats.rating} from {stats.reviews} Gumroad reviews</span>
         <span class="sep"></span>
         <span>{fill('{products} mockups · {free} free')}</span>

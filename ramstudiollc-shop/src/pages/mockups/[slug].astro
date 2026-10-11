@@ -89,7 +89,7 @@ const jsonLd = {
           </div>
           <h1 class="title">{p.title}</h1>
           {p.rating && p.rating.count > 0 && (
-            <p class="rating"><span class="stars">{[1, 2, 3, 4, 5].map(() => <Icon name="star" size={16} />)}</span> {p.rating.value.toFixed(1)} · {p.rating.count} Gumroad {p.rating.count === 1 ? 'review' : 'reviews'}</p>
+            <p class="rating"><span class="stars" aria-hidden="true">{[1, 2, 3, 4, 5].map(() => <Icon name="star" size={16} />)}</span> {p.rating.value.toFixed(1)} · {p.rating.count} Gumroad {p.rating.count === 1 ? 'review' : 'reviews'}</p>
           )}
           <p class="summary muted">{summary}</p>
           <div class="price-row">
@@ -128,7 +128,7 @@ const jsonLd = {
 
     {inside.length > 0 && (
       <section class="section-tight">
-        <h2 class="h2 sec-title" data-reveal>Inside this bundle</h2>
+        <h2 class="h2 sec-sm sec-title" data-reveal>Inside this bundle</h2>
         <div class="grid-cards" data-stagger>{inside.map((x) => <ProductCard product={x} />)}</div>
       </section>
     )}
@@ -136,7 +136,7 @@ const jsonLd = {
     {more.length > 0 && (
       <section class="section-tight">
         <div class="head">
-          <h2 class="h2" data-reveal>{copy.sections.related}</h2>
+          <h2 class="h2 sec-sm" data-reveal>{copy.sections.related}</h2>
           {cat && <a class="link" href={`/category/${cat.slug}/`} data-reveal>All {cat.name.toLowerCase()} →</a>}
         </div>
         <div class="grid-cards" data-stagger>{more.map((x) => <ProductCard product={x} />)}</div>
@@ -388,6 +388,9 @@ const jsonLd = {
   }
   .sec-title {
     margin-bottom: 32px;
+  }
+  .sec-sm {
+    font-size: clamp(28px, 2.6vw, 38px);
   }
   @media (max-width: 889px) {
     .stack {
