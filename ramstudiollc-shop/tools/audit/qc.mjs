@@ -93,7 +93,8 @@ for (const t of refTemplates.filter((t) => !covered.includes(t))) gap(2, 'pages'
 // ---------- B. flow ----------
 const d = (p) => p.viewports.desktop;
 const sum = (p, k) => d(p).sections.reduce((s, x) => s + (x.counts?.[k] || 0), 0);
-const maxCols = (v) => Math.max(1, ...v.sections.map((s) => s.repeated?.columns || 1));
+// Sideways-scrolling rows (carousels, chip rails) are not grid columns.
+const maxCols = (v) => Math.max(1, ...v.sections.map((s) => (s.repeated && !s.repeated.scrollsX ? s.repeated.columns : 1)));
 const flowChecks = [];
 const check = (ok, area, msg) => {
   flowChecks.push(ok ? 1 : 0);
@@ -148,7 +149,7 @@ const scoreResponsive = respScores.length ? avg(respScores) : 1;
 // ---------- D. type system ----------
 const sysOf = (r) => {
   const T = d(r).typography;
-  const body = [...T.typeScale].sort((a, b) => b.count - a.count)[0]?.size || 16;
+  const body = [...T.typeScale].filter((t) => t.size <= 24).sort((a, b) => b.area - a.area)[0]?.size || 16;
   const top = T.typeScale[0]?.size || body;
   const steps = T.typeScale.filter((t) => t.count >= 2).length;
   const mob = r.viewports.mobile?.typeScale?.[0]?.size;

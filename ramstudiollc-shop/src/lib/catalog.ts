@@ -129,7 +129,9 @@ export function priceLabel(p: Pick<Product, 'price' | 'currency' | 'payWhatYouWa
   return p.payWhatYouWant ? `${amount}+` : amount;
 }
 
+// "New" means newer than most of the shop: recent AND not on the same day as the oldest items.
+const oldestDate = products.map((p) => p.releasedAt ?? '').filter(Boolean).sort()[0] ?? '';
 export function isNew(p: Product, days = 30): boolean {
-  if (!p.releasedAt) return false;
+  if (!p.releasedAt || p.releasedAt === oldestDate) return false;
   return Date.now() - new Date(p.releasedAt).getTime() < days * 86_400_000;
 }

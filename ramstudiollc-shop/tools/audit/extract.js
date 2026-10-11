@@ -188,6 +188,7 @@ export function extractPage(opts = {}) {
     let best = null;
     const nodes = [container, ...container.querySelectorAll('*')].slice(0, 4000);
     for (const n of nodes) {
+      if (n.closest('[aria-hidden="true"]')) continue; // decorative layer, not page layout
       const kids = [...n.children].filter(isVisible);
       if (kids.length < 3) continue;
       const sig = new Map();
@@ -363,7 +364,7 @@ export function extractPage(opts = {}) {
     else {
       tally(linksExternal, u.href.slice(0, 200));
       tally(extDomains, u.hostname);
-      if (/gumroad\.com|gum\.co/.test(u.hostname)) gumroad.push({ href: u.href, text: short(a.innerText, 60), classes: typeof a.className === 'string' ? a.className.slice(0, 80) : '' });
+      if (/gumroad\.com|gum\.co/.test(u.hostname) || /^\/l\/[\w-]+/.test(u.pathname) || a.hasAttribute('data-buy')) gumroad.push({ href: u.href, text: short(a.innerText, 60), classes: typeof a.className === 'string' ? a.className.slice(0, 80) : '' });
     }
   }
   const images = [...document.querySelectorAll('img')].map((img) => ({

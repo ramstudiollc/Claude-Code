@@ -150,13 +150,13 @@ const active = (href: string) => path === href || (href !== '/' && path.startsWi
     padding-top: 12px;
   }
   .tone-dark {
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     top: 40px;
+    transition: top var(--t) var(--ease);
   }
   .tone-dark.is-scrolled {
-    position: fixed;
     top: 0;
   }
   .bar {
@@ -211,7 +211,7 @@ const active = (href: string) => path === href || (href !== '/' && path.startsWi
     padding: 0 14px;
     border-radius: var(--r-pill);
     text-decoration: none;
-    font-size: 15.5px;
+    font-size: 15px;
     font-weight: 500;
     transition: background var(--t-fast) var(--ease);
   }
@@ -360,7 +360,7 @@ const active = (href: string) => path === href || (href !== '/' && path.startsWi
     letter-spacing: -0.03em;
   }
   .m-sub {
-    font-size: 17px;
+    font-size: 16px;
     color: rgb(255 255 255 / 0.8);
   }
   .m-sub span,
