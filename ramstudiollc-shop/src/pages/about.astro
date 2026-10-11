@@ -1,50 +1,38 @@
 ---
 import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
 import AgencyBand from '../components/AgencyBand.astro';
+import { site, isSet } from '../config/site';
+import { stats } from '../lib/catalog';
 
-// Facts below come from the RAM Studio master dataset. Do not add numbers that are not there.
+// Facts from the RAM Studio master dataset. Do not add numbers that are not there.
 const facts = [
   { n: '2021', l: 'Studio founded' },
   { n: '8,293+', l: 'Assets published across 7 marketplaces' },
   { n: '504', l: 'Products on Creative Fabrica' },
+  { n: String(stats.products), l: 'Mockups in this shop today' },
 ];
 ---
 
-<Base
-  title="About RAM Studio — The Studio Behind the Mockups"
-  description="RAM Studio LLC is a packaging, branding and 3D design studio founded in 2021. The same team designs the mockups sold on ramstudiollc.shop."
->
-  <section class="section">
+<Base title="About RAM Studio — The Studio Behind the Mockups" description="RAM Studio LLC is a packaging, branding and 3D design studio founded in 2021. The same team makes the mockups sold on ramstudiollc.shop.">
+  <PageHero align="left" eyebrow="About" title="Mockups made by a packaging studio" sub="RAM Studio LLC designs packaging, labels, brand systems and 3D product renders for clients. The mockups in this shop come from the same desks." />
+  <section class="section-tight">
     <div class="wrap">
-      <div class="intro">
-        <p class="eyebrow">About</p>
-        <h1>Mockups made by a packaging design studio</h1>
-        <p class="lede">
-          RAM Studio LLC designs packaging, labels, brand systems and 3D product renders for clients. The mockups in this shop
-          come from the same desks: real dielines, real materials, real lighting.
-        </p>
-      </div>
-
-      <dl class="facts">
-        {facts.map((f) => (
-          <div>
-            <dt>{f.l}</dt>
-            <dd>{f.n}</dd>
-          </div>
-        ))}
+      <dl class="facts" data-stagger>
+        {facts.map((f) => <div class="panel"><dt>{f.l}</dt><dd>{f.n}</dd></div>)}
       </dl>
-
       <div class="cols">
-        <div>
-          <h2>Where we are</h2>
-          <p>
-            RAM Studio LLC is a Wyoming company, registered at 30 N Gould St, Sheridan, WY 82801. The design studio works from
-            Lalbagh, Dhaka.
-          </p>
+        <div data-reveal>
+          <h2 class="h3">Where we are</h2>
+          <p class="muted">RAM Studio LLC is a Wyoming company, registered at 30 N Gould St, Sheridan, WY 82801. The design studio works from Lalbagh, Dhaka.</p>
         </div>
-        <div>
-          <h2>Tools we build with</h2>
-          <p>Adobe Photoshop for every mockup file. Autodesk Maya, Blender, Luxion KeyShot and Redshift for 3D scenes.</p>
+        <div data-reveal style="--i:1">
+          <h2 class="h3">Tools we use</h2>
+          <p class="muted">Adobe Photoshop for every mockup file. Autodesk Maya, Blender, Luxion KeyShot and Redshift for 3D scenes.</p>
+        </div>
+        <div data-reveal style="--i:2">
+          <h2 class="h3">Find us elsewhere</h2>
+          <p class="links">{site.marketplaces.filter((m) => isSet(m.url)).map((m) => <a class="chip" href={m.url} rel="noopener">{m.label}</a>)}</p>
         </div>
       </div>
     </div>
@@ -53,56 +41,49 @@ const facts = [
 </Base>
 
 <style>
-  .intro {
-    max-width: 62ch;
-  }
-  .intro h1 {
-    font-size: clamp(2.2rem, 4.6vw, 3.4rem);
-  }
-  .lede {
-    margin-top: 16px;
-    font-size: 1.12rem;
-    color: var(--ink-2);
-  }
   .facts {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 16px;
-    margin: 48px 0 0;
+    margin: 0;
   }
   .facts div {
-    background: var(--surface);
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
-    padding: 24px;
+    padding: 28px;
     display: flex;
     flex-direction: column-reverse;
     gap: 6px;
   }
   .facts dd {
     margin: 0;
-    font-size: 2.2rem;
-    font-weight: 800;
-    letter-spacing: -0.02em;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(40px, 4vw, 56px);
+    letter-spacing: -0.05em;
   }
   .facts dt {
-    color: var(--ink-2);
-    font-size: 0.92rem;
+    color: var(--ink-500);
+    font-size: 15px;
   }
   .cols {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 40px;
-    margin-top: 56px;
+    margin-top: 64px;
   }
   .cols h2 {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
-  .cols p {
-    color: var(--ink-2);
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
   }
-  @media (max-width: 760px) {
+  @media (max-width: 1199px) {
+    .facts {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (max-width: 889px) {
     .cols {
       grid-template-columns: 1fr;
     }

@@ -1,0 +1,53 @@
+---
+// Light page header used by library, category and info pages: soft blue glow, eyebrow, H1, sub.
+import { fill } from '../lib/catalog';
+interface Props {
+  eyebrow?: string;
+  title: string;
+  sub?: string;
+  align?: 'center' | 'left';
+}
+const { eyebrow, title, sub, align = 'center' } = Astro.props;
+---
+
+<section class:list={['page-hero', align]}>
+  <div class="glow" aria-hidden="true"></div>
+  <div class="wrap">
+    {eyebrow && <p class="eyebrow" data-reveal>{fill(eyebrow)}</p>}
+    <h1 class="h1" data-reveal>{fill(title)}</h1>
+    {sub && <p class="lead" data-reveal>{fill(sub)}</p>}
+    <slot />
+  </div>
+</section>
+
+<style>
+  .page-hero {
+    position: relative;
+    padding: clamp(72px, 10vw, 140px) 0 clamp(32px, 4vw, 48px);
+    overflow: hidden;
+    isolation: isolate;
+  }
+  .glow {
+    position: absolute;
+    inset: -40% 10% auto;
+    height: 120%;
+    z-index: -1;
+    background: radial-gradient(40% 40% at 50% 50%, rgb(47 128 255 / 0.18), transparent 70%), radial-gradient(30% 30% at 70% 60%, rgb(91 59 255 / 0.12), transparent 70%);
+  }
+  .center {
+    text-align: center;
+  }
+  .center .h1 {
+    max-width: 14em;
+    margin-inline: auto;
+  }
+  .center .lead {
+    margin: 20px auto 0;
+  }
+  .left .lead {
+    margin-top: 20px;
+  }
+  .page-hero :global(.eyebrow) {
+    justify-content: center;
+  }
+</style>

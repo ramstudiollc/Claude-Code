@@ -1,13 +1,8 @@
 ---
 import SimpleListPage from '../components/SimpleListPage.astro';
+import { pages } from '../data/content';
 import { bundles } from '../lib/catalog';
+const c = pages.bundles;
 ---
 
-<SimpleListPage
-  title="Mockup Bundles — Save on PSD Sets · RAM Studio"
-  description="RAM Studio mockup bundles: related PSD mockups grouped in one download for less than buying each file. Checkout and download on Gumroad."
-  heading="Mockup bundles"
-  intro="Related mockups grouped in one download, priced lower than buying each file on its own."
-  items={bundles}
-  emptyText="No bundles are listed yet."
-/>
+<SimpleListPage seo={c.seo} eyebrow={c.eyebrow} title={c.title} sub={c.sub} items={bundles} emptyText="Bundles are on the way. Each category gets one once it has six sets." />

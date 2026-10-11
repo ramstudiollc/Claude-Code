@@ -189,6 +189,17 @@ async function saveImages(slug, urls) {
   return saved;
 }
 
+// With --no-images, reuse WebP files saved by an earlier run; fall back to Gumroad links.
+async function localImages(slug, urls) {
+  const dir = path.join(root, 'public/images/products', slug);
+  if (existsSync(dir)) {
+    const { readdir } = await import('node:fs/promises');
+    const files = (await readdir(dir)).filter((f) => f.endsWith('.webp')).sort();
+    if (files.length) return files.map((f) => `/images/products/${slug}/${f}`);
+  }
+  return urls.slice(0, MAX_IMAGES);
+}
+
 // ---------------------------------------------------------------------------
 
 console.log(`Reading ${storeUrl} …`);
@@ -213,7 +224,7 @@ for (const [i, card] of cards.entries()) {
   const slug = slugify(d.name);
   const coverFirst = [d.cover, ...d.images].filter(Boolean);
   const imageUrls = [...new Set(coverFirst)];
-  const images = downloadImages ? await saveImages(slug, imageUrls) : imageUrls.slice(0, MAX_IMAGES);
+  const images = downloadImages ? await saveImages(slug, imageUrls) : await localImages(slug, imageUrls);
   const prev = prevByUrl.get(card.href);
   products.push({
     slug,
@@ -226,7 +237,7 @@ for (const [i, card] of cards.entries()) {
     currency: d.currency,
     payWhatYouWant: /\+$/.test(d.priceText.trim()),
     formats: formatsFrom([], d.name, description),
-    specs: specsFrom(text),
+    specs: specsFrom(`${features.join(' . ')} . ${text}`),
     features: features.slice(0, 8),
     useCases: useCases.slice(0, 8),
     images,

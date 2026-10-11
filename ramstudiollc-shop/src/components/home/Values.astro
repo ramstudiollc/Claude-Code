@@ -1,0 +1,65 @@
+---
+import Icon from '../Icon.astro';
+import { home } from '../../data/content';
+import { products } from '../../lib/catalog';
+const v = home.values;
+const shots = products.filter((p) => p.images.length > 2).slice(0, 3).map((p) => p.images[2]);
+---
+
+<section class="section values-section">
+  <div class="wrap">
+    <div class="panel inner">
+      <div class="head">
+        <div>
+          <p class="eyebrow" data-reveal>{v.eyebrow}</p>
+          <h2 class="h2" data-reveal>{v.title}</h2>
+        </div>
+      </div>
+      <div class="grid-cards" data-stagger>
+        {v.items.map((item, i) => (
+          <article class="val">
+            {shots[i] && <div class="shot"><img src={shots[i]} alt="" loading="lazy" width="800" height="533" /></div>}
+            <span class="ico"><Icon name={item.icon} size={22} /></span>
+            <h3 class="h3">{item.title}</h3>
+            <p class="muted">{item.text}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .inner {
+    padding: clamp(28px, 5vw, 64px);
+  }
+  .val {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .shot {
+    aspect-ratio: 4 / 3;
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    margin-bottom: 12px;
+  }
+  .shot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1s var(--ease-out);
+  }
+  .val:hover .shot img {
+    transform: scale(1.05);
+  }
+  .ico {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    background: var(--navy-900);
+    color: #fff;
+  }
+</style>

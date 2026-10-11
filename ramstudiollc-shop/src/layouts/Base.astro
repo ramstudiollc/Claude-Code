@@ -10,11 +10,13 @@ interface Props {
   description?: string;
   image?: string;
   noindex?: boolean;
+  /** 'dark' when the page opens with a dark hero (white header). */
+  headerTone?: 'dark' | 'light';
 }
-const { title, description = site.description, image, noindex = false } = Astro.props;
+const { title, description = site.description, image, noindex = false, headerTone = 'light' } = Astro.props;
 const fullTitle = title.includes('RAM Studio') ? title : `${title} · RAM Studio`;
 const canonical = new URL(Astro.url.pathname, site.domain).href;
-const ogImage = image ? new URL(image, site.domain).href : undefined;
+const ogImage = new URL(image ?? site.logo.icon, site.domain).href;
 ---
 
 <!doctype html>
@@ -26,52 +28,90 @@ const ogImage = image ? new URL(image, site.domain).href : undefined;
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     {noindex && <meta name="robots" content="noindex" />}
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-
+    <link rel="icon" href={site.logo.icon} type="image/png" />
+    <meta name="theme-color" content="#03041c" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={site.shopName} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    {ogImage && <meta property="og:image" content={ogImage} />}
-    <meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
-
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script is:inline>document.documentElement.classList.add('js');</script>
     {site.checkout === 'overlay' && <script is:inline src="https://gumroad.com/js/gumroad.js"></script>}
     <slot name="head" />
   </head>
   <body>
     {usingSampleCatalog && (
-      <div class="sample-bar">
-        <div class="wrap">
-          Sample catalogue — these are demo products. Run <code>npm run sync:gumroad</code> to load your real Gumroad products.
-        </div>
-      </div>
+      <div class="sample-bar">Sample catalogue — run <code>npm run import:store</code> to load the real Gumroad products.</div>
     )}
-    <Header />
+    <Header tone={headerTone} />
     <main id="main">
       <slot />
     </main>
     <Footer />
+
+    <script>
+      // 1. Reveal on scroll: [data-reveal] fades and rises 40px into place once it enters the screen.
+      //    Children of [data-stagger] get an increasing delay.
+      document.querySelectorAll<HTMLElement>('[data-stagger]').forEach((group) => {
+        [...group.children].forEach((child, i) => {
+          const el = child as HTMLElement;
+          if (!el.hasAttribute('data-reveal')) el.setAttribute('data-reveal', '');
+          el.style.setProperty('--i', String(i % 8));
+        });
+      });
+      const io = new IntersectionObserver(
+        (entries) => {
+          for (const e of entries) {
+            if (e.isIntersecting) {
+              e.target.classList.add('is-in');
+              io.unobserve(e.target);
+            }
+          }
+        },
+        { rootMargin: '0px 0px -8% 0px', threshold: 0.08 },
+      );
+      document.querySelectorAll('[data-reveal]').forEach((el) => io.observe(el));
+
+      // 2. Scroll-linked motion: [data-speed="0.2"] moves at a different pace from the page.
+      const movers = [...document.querySelectorAll<HTMLElement>('[data-speed]')];
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (movers.length && !reduce) {
+        let ticking = false;
+        const update = () => {
+          const vh = window.innerHeight;
+          for (const el of movers) {
+            const r = el.parentElement!.getBoundingClientRect();
+            if (r.bottom < -200 || r.top > vh + 200) continue;
+            const progress = (vh - r.top) / (vh + r.height); // 0 → 1 while the block crosses the screen
+            const speed = parseFloat(el.dataset.speed || '0');
+            const axis = el.dataset.axis === 'x' ? 'X' : 'Y';
+            el.style.transform = `translate${axis}(${(progress - 0.5) * speed * 100}%)`;
+          }
+          ticking = false;
+        };
+        window.addEventListener('scroll', () => {
+          if (!ticking) {
+            ticking = true;
+            requestAnimationFrame(update);
+          }
+        }, { passive: true });
+        update();
+      }
+    </script>
   </body>
 </html>
 
 <style>
   .sample-bar {
-    background: #fff6d6;
-    border-bottom: 1px solid #ecd889;
-    color: #5a4a00;
-    font-size: 0.82rem;
-    padding: 8px 0;
+    background: #fff8d6;
+    color: #574700;
+    font-size: 13px;
     text-align: center;
-  }
-  .sample-bar code {
-    font-family: var(--mono);
-    background: rgb(0 0 0 / 0.06);
-    padding: 1px 5px;
-    border-radius: 4px;
+    padding: 8px var(--gutter);
   }
 </style>

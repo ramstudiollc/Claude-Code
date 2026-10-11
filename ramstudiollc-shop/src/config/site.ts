@@ -1,62 +1,69 @@
-// Single place to edit store-wide settings.
-// Anything left as an empty string is treated as "not set up yet":
+// Store-wide settings. Empty strings mean "not set up yet":
 // the matching button or section is hidden instead of linking nowhere.
 
 export const site = {
   name: 'RAM Studio',
+  legalName: 'RAM Studio LLC',
   shopName: 'ramstudiollc.shop',
   domain: 'https://ramstudiollc.shop',
-  tagline: "Let's Get to the Solution",
   description:
-    'Photoshop mockups for packaging, branding, print and products, made by RAM Studio. Browse here, buy securely on Gumroad.',
+    'Photoshop mockups for packaging, branding, apparel and devices by RAM Studio. Smart-object PSD files. Browse here, download on Gumroad.',
 
-  // Your Gumroad profile, e.g. "https://ramstudio.gumroad.com".
-  // Used for the "All products on Gumroad" link and as the fallback store link.
-  gumroadStore: '',
+  logo: { light: '/brand/logo-white.png', dark: '/brand/logo-black.png', icon: '/brand/favicon-192.png' },
 
-  // "redirect": Buy opens the Gumroad product page (simplest, works everywhere).
-  // "overlay":  Buy opens Gumroad's checkout pop-up on top of this site (loads gumroad.js).
+  // Your Gumroad store. Used for "All products on Gumroad" and the importer default.
+  gumroadStore: 'https://shop.ramstudiollc.com',
+
+  // "redirect": Buy opens the Gumroad product page. "overlay": Gumroad checkout opens on top of this site.
   checkout: 'redirect' as 'redirect' | 'overlay',
 
-  // All-Access Pass = a Gumroad *membership* product that unlocks every file.
-  // Leave url empty until the membership exists on Gumroad.
+  // Thin bar at the very top. Leave text empty to hide it.
+  announcement: {
+    text: 'New free mockups every month — subscribe on Gumroad',
+    href: 'https://shop.ramstudiollc.com/subscribe',
+  },
+
+  // All-Access Pass = a Gumroad membership. Leave url empty until it exists.
   allAccess: {
     url: '',
-    yearlyPrice: '', // e.g. "$79 / year"
-    lifetimePrice: '', // e.g. "$249 once" — optional second tier
+    yearlyPrice: '',
+    lifetimePrice: '',
     lifetimeUrl: '',
   },
 
-  // Newsletter. Leave empty to hide the sign-up block.
-  // Simplest option: your Gumroad profile URL — buyers press "Subscribe" there.
-  newsletterUrl: '',
+  // Gumroad's own subscribe page — buyers get new-release emails from Gumroad.
+  newsletterUrl: 'https://shop.ramstudiollc.com/subscribe',
 
-  // The agency site, for custom work.
   agency: {
     name: 'RAM Studio LLC',
     url: 'https://ramstudiollc.com',
     email: 'hello@ramstudiollc.com',
   },
 
-  // Add only accounts you control. Empty entries are skipped.
   social: [
-    { label: 'Behance', url: '' },
-    { label: 'Dribbble', url: '' },
-    { label: 'Instagram', url: '' },
-    { label: 'Pinterest', url: '' },
+    { label: 'Behance', url: 'https://www.behance.net/ramstudiollc' },
+    { label: 'Dribbble', url: 'https://dribbble.com/Ram-Studio' },
+    { label: 'Instagram', url: 'https://www.instagram.com/ramstudio3d/' },
+    { label: 'Pinterest', url: 'https://www.pinterest.com/ramstudiollc/' },
+    { label: 'Facebook', url: 'https://www.facebook.com/RamStudio3D/' },
   ],
 
-  // Set to true once the licence text has been reviewed (see docs/02-PLAN.md).
+  // Other stores that carry RAM Studio mockups (shown on About and in the footer).
+  marketplaces: [
+    { label: 'Creative Market', url: 'https://creativemarket.com/ram_studio' },
+    { label: 'Creative Market — Shop 2', url: 'https://creativemarket.com/RamStudio2' },
+    { label: 'Envato Elements', url: 'https://elements.envato.com/user/ram-studio/graphic-templates' },
+  ],
+
+  // Set to true once the licence text has been reviewed.
   licenseReviewed: false,
 };
 
 export const nav = [
-  { label: 'Mockups', href: '/mockups/' },
-  { label: 'Bundles', href: '/bundles/' },
+  { label: 'Mockups', href: '/mockups/', menu: 'categories' as const },
+  { label: 'Gallery', href: '/gallery/' },
   { label: 'Freebies', href: '/freebies/' },
   { label: 'All-Access', href: '/all-access/' },
-  { label: 'License', href: '/license/' },
 ];
 
-export const isSet = (v: string | undefined | null): v is string =>
-  typeof v === 'string' && v.trim().length > 0;
+export const isSet = (v: string | undefined | null): v is string => typeof v === 'string' && v.trim().length > 0;

@@ -1,38 +1,26 @@
-// Shop categories. A product joins a category through its `category` field,
-// or — when synced from Gumroad — through a tag such as "cat:packaging".
-// `art` picks the illustration used on cards that have no image yet.
+// Shop categories (see docs/06-CATALOGUE-PLAN.md). A category is shown only when it has products.
+// `icon` names an icon in src/components/Icon.astro.
+
+export type ArtKind = 'box' | 'pouch' | 'bottle' | 'can' | 'tin' | 'cards' | 'flyer' | 'tshirt' | 'mug' | 'device' | 'billboard' | 'bag';
 
 export type Category = {
   slug: string;
   name: string;
+  short: string;
   blurb: string;
+  icon: string;
   art: ArtKind;
+  niches: string[];
 };
 
-export type ArtKind =
-  | 'box'
-  | 'pouch'
-  | 'bottle'
-  | 'can'
-  | 'tin'
-  | 'cards'
-  | 'flyer'
-  | 'tshirt'
-  | 'mug'
-  | 'device'
-  | 'billboard'
-  | 'bag';
-
 export const categories: Category[] = [
-  { slug: 'packaging', name: 'Packaging', blurb: 'Boxes, pouches, sachets and tins', art: 'box' },
-  { slug: 'bottles-jars', name: 'Bottles & Jars', blurb: 'Cosmetic, beverage and pharma containers', art: 'bottle' },
-  { slug: 'cans-drinks', name: 'Cans & Drinks', blurb: 'Aluminium cans, cups and cartons', art: 'can' },
-  { slug: 'branding', name: 'Branding & Stationery', blurb: 'Business cards, letterheads, logo scenes', art: 'cards' },
-  { slug: 'print', name: 'Print & Publishing', blurb: 'Flyers, posters, books and magazines', art: 'flyer' },
-  { slug: 'apparel', name: 'Apparel', blurb: 'T-shirts, hoodies, caps and tote bags', art: 'tshirt' },
-  { slug: 'lifestyle', name: 'Mugs & Lifestyle', blurb: 'Mugs, tumblers and everyday objects', art: 'mug' },
-  { slug: 'devices', name: 'Devices & Tech', blurb: 'Phones, USB drives, software boxes', art: 'device' },
-  { slug: 'outdoor', name: 'Signage & Outdoor', blurb: 'Billboards, shop signs and banners', art: 'billboard' },
+  { slug: 'packaging', name: 'Packaging', short: 'Packaging', blurb: 'Boxes, pouches, tubes and bags', icon: 'box', art: 'box', niches: ['Boxes', 'Pouches & bags', 'Tubes & tubs', 'Luxury & cosmetic'] },
+  { slug: 'branding', name: 'Branding & Stationery', short: 'Branding', blurb: 'Folders, business cards and identity kits', icon: 'cards', art: 'cards', niches: ['Business cards', 'Folders & paper', 'Identity kits'] },
+  { slug: 'apparel', name: 'Apparel & Workwear', short: 'Apparel', blurb: 'Caps, T-shirts and safety workwear', icon: 'shirt', art: 'tshirt', niches: ['T-shirts', 'Caps', 'Workwear & PPE'] },
+  { slug: 'devices', name: 'Devices', short: 'Devices', blurb: 'Laptops, desktops and phones', icon: 'device', art: 'device', niches: ['Laptop & long-scroll', 'Desktop', 'iPhone'] },
+  { slug: 'food-beverage', name: 'Food & Beverage', short: 'Food & Drink', blurb: 'Bakery, coffee and snack packaging', icon: 'cup', art: 'can', niches: ['Bakery', 'Coffee', 'Snacks'] },
+  { slug: 'outdoor', name: 'Advertising & Events', short: 'Advertising', blurb: 'Banners, backdrops and booths', icon: 'flag', art: 'billboard', niches: ['Banners', 'Booths', 'Billboards'] },
+  { slug: 'lifestyle', name: 'Fitness & Lifestyle', short: 'Lifestyle', blurb: 'Gym gear and everyday objects', icon: 'spark', art: 'mug', niches: ['Gym', 'Home', 'Gifts'] },
 ];
 
 export const categoryBySlug = (slug: string) => categories.find((c) => c.slug === slug);

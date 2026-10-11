@@ -1,0 +1,64 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Button from '../components/Button.astro';
+import Icon from '../components/Icon.astro';
+import { pages } from '../data/content';
+import { site, isSet } from '../config/site';
+const c = pages.contact;
+const ways = [
+  { icon: 'mail', title: 'Email', text: 'Downloads, licences, custom work.', label: site.agency.email, href: `mailto:${site.agency.email}` },
+  { icon: 'cart', title: 'Gumroad store', text: 'Every product, receipts and your library.', label: 'Open the store', href: site.gumroadStore },
+  { icon: 'spark', title: 'Custom projects', text: 'Packaging, labels and 3D renders made for your brand.', label: 'Visit ramstudiollc.com', href: site.agency.url },
+].filter((w) => isSet(w.href));
+---
+
+<Base title={c.seo.title} description={c.seo.description}>
+  <PageHero eyebrow={c.eyebrow} title={c.title} sub={c.sub} />
+  <section class="section-tight">
+    <div class="wrap">
+      <div class="grid-cards" data-stagger>
+        {ways.map((w) => (
+          <article class="way panel">
+            <span class="ico"><Icon name={w.icon} size={22} /></span>
+            <h2 class="h3">{w.title}</h2>
+            <p class="muted">{w.text}</p>
+            <Button href={w.href} variant="ghost" external={!w.href.startsWith('mailto:')}>{w.label}</Button>
+          </article>
+        ))}
+      </div>
+      <div class="social" data-reveal>
+        {site.social.filter((s) => isSet(s.url)).map((s) => <a class="chip" href={s.url} rel="noopener">{s.label}</a>)}
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .way {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 32px;
+  }
+  .way p {
+    flex: 1;
+  }
+  .ico {
+    display: grid;
+    place-items: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    background: var(--navy-900);
+    color: #fff;
+  }
+  .social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+  }
+</style>

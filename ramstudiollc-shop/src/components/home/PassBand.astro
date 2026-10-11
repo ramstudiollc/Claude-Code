@@ -1,0 +1,102 @@
+---
+import Button from '../Button.astro';
+import Icon from '../Icon.astro';
+import { home } from '../../data/content';
+import { site, isSet } from '../../config/site';
+import { stats } from '../../lib/catalog';
+const p = home.pass;
+const ready = isSet(site.allAccess.url);
+const perks = [`Every mockup in the shop — ${stats.products} today`, 'Every new release while active', 'Same commercial licence', 'Download any time from Gumroad'];
+---
+
+<section class="section">
+  <div class="wrap">
+    <div class="band dark-band grain on-dark">
+      <div class="copy">
+        <p class="eyebrow" data-reveal>{p.eyebrow}</p>
+        <h2 class="h2" data-reveal>{p.title}</h2>
+        <p class="lead" data-reveal>{p.sub}</p>
+        {!ready && <p class="soon" data-reveal><span class="dot"></span>{p.soon}</p>}
+      </div>
+      <div class="card" data-reveal>
+        {isSet(site.allAccess.yearlyPrice) && <p class="price">{site.allAccess.yearlyPrice}</p>}
+        <ul>
+          {perks.map((k) => <li><Icon name="check" size={18} /> {k}</li>)}
+        </ul>
+        <Button href={ready ? site.allAccess.url : p.cta.href} variant={ready ? 'blue' : 'light'} block>{ready ? 'Join on Gumroad' : p.cta.label}</Button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .band {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    align-items: center;
+    border-radius: 40px;
+    padding: clamp(32px, 6vw, 80px);
+  }
+  .lead {
+    margin-top: 18px;
+  }
+  .soon {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 24px;
+    font-size: 15px;
+    color: #c9d3f0;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--sun);
+    box-shadow: 0 0 0 0 rgb(255 235 83 / 0.6);
+    animation: ping 2s ease-out infinite;
+  }
+  @keyframes ping {
+    to {
+      box-shadow: 0 0 0 12px rgb(255 235 83 / 0);
+    }
+  }
+  .card {
+    padding: 28px;
+    border-radius: var(--r-lg);
+    background: var(--glass-dark);
+    border: 1px solid var(--line-dark);
+    backdrop-filter: blur(16px);
+    display: grid;
+    gap: 20px;
+  }
+  .price {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 44px;
+    letter-spacing: -0.04em;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 12px;
+  }
+  li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  li :global(svg) {
+    color: #8db8ff;
+    flex: none;
+  }
+  @media (max-width: 889px) {
+    .band {
+      grid-template-columns: 1fr;
+      border-radius: 28px;
+    }
+  }
+</style>

@@ -82,7 +82,30 @@ export const productBySlug = (slug: string) => products.find((p) => p.slug === s
 
 export const inCategory = (slug: string) => products.filter((p) => p.category === slug);
 
-export const categoriesWithCounts = categories.map((c) => ({ ...c, count: inCategory(c.slug).length }));
+export const categoriesWithCounts = categories.map((c) => ({
+  ...c,
+  count: inCategory(c.slug).length,
+  cover: inCategory(c.slug).find((p) => p.images.length)?.images[0],
+}));
+/** Categories that have at least one product — the only ones shown in menus and filters. */
+export const activeCategories = categoriesWithCounts.filter((c) => c.count > 0);
+
+const reviewed = products.filter((p) => p.rating && p.rating.count > 0);
+const reviewCount = reviewed.reduce((s, p) => s + (p.rating?.count ?? 0), 0);
+export const stats = {
+  products: products.length,
+  free: freebies.length,
+  images: products.reduce((s, p) => s + p.images.length, 0),
+  categories: activeCategories.length,
+  reviews: reviewCount,
+  rating: reviewCount ? (reviewed.reduce((s, p) => s + (p.rating!.value * p.rating!.count), 0) / reviewCount).toFixed(1) : '',
+};
+
+/** Replace {products}, {free}, {images}, {reviews}, {rating}, {categories} with live numbers. */
+export const fill = (text: string) => text.replace(/\{(\w+)\}/g, (m, k) => (k in stats ? String(stats[k as keyof typeof stats]) : m));
+
+/** Every preview image with the product it belongs to (gallery wall). */
+export const allImages = products.flatMap((p) => p.images.map((src, i) => ({ src, i, product: p })));
 
 export const allFormats = [...new Set(products.flatMap((p) => p.formats))].sort();
 

@@ -1,147 +1,109 @@
 ---
 import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Button from '../components/Button.astro';
+import Icon from '../components/Icon.astro';
+import FaqList from '../components/FaqList.astro';
+import { pages, home } from '../data/content';
 import { site, isSet } from '../config/site';
-import { products } from '../lib/catalog';
-
-const yearlyReady = isSet(site.allAccess.url);
-const lifetimeReady = isSet(site.allAccess.lifetimeUrl);
-const included = products.filter((p) => p.allAccess).length;
-
-const benefits = [
-  `Every mockup in the shop — ${included} files today`,
-  'Every new release while your membership is active',
-  'The same commercial licence as single purchases',
-  'Download from your Gumroad Library at any time',
-];
+import { stats } from '../lib/catalog';
+const c = pages.allAccess;
+const yearly = isSet(site.allAccess.url);
+const lifetime = isSet(site.allAccess.lifetimeUrl);
+const perks = [`Every mockup in the shop — ${stats.products} today`, 'Every new release while the pass is active', 'The same commercial licence as single files', 'Download any time from your Gumroad Library', 'Email support from the studio'];
 ---
 
-<Base
-  title="All-Access Pass — Every RAM Studio Mockup"
-  description="One Gumroad membership unlocks every RAM Studio PSD mockup plus every new release while it is active. Commercial licence included."
->
-  <section class="section page">
+<Base title={c.seo.title} description={c.seo.description}>
+  <PageHero eyebrow={c.eyebrow} title={c.title} sub={c.sub} />
+  <section class="section-tight">
     <div class="wrap">
-      <header class="head">
-        <p class="eyebrow">All-Access Pass</p>
-        <h1>Every mockup, one membership</h1>
-        <p class="lede">
-          Pay once on Gumroad and download the full RAM Studio library, plus everything released while your pass is active.
-        </p>
-      </header>
-
-      <div class="plans">
+      <div class="plans panel" data-reveal>
         <article class="plan">
-          <h2>Yearly pass</h2>
-          {isSet(site.allAccess.yearlyPrice) && <p class="price">{site.allAccess.yearlyPrice}</p>}
-          <ul>
-            {benefits.map((b) => <li>{b}</li>)}
-          </ul>
-          {yearlyReady ? (
-            <a class="btn btn-accent btn-block" href={site.allAccess.url} rel="noopener">Join on Gumroad</a>
-          ) : (
-            <span class="btn btn-block" aria-disabled="true">Launching soon</span>
-          )}
+          <h2 class="h3">Yearly pass</h2>
+          <p class="muted">For studios and freelancers who mock up every week.</p>
+          {isSet(site.allAccess.yearlyPrice) ? <p class="price">{site.allAccess.yearlyPrice}</p> : <p class="soon"><span class="dot"></span>{home.pass.soon}</p>}
+          <ul>{perks.map((k) => <li><Icon name="check" size={18} /> {k}</li>)}</ul>
+          {yearly ? <Button href={site.allAccess.url} variant="blue" block>Join on Gumroad</Button> : <Button block>Launching soon</Button>}
         </article>
-
-        {lifetimeReady && (
-          <article class="plan dark">
-            <h2>Lifetime pass</h2>
-            {isSet(site.allAccess.lifetimePrice) && <p class="price">{site.allAccess.lifetimePrice}</p>}
-            <ul>
-              <li>Everything in the yearly pass</li>
-              <li>Pay once, no renewals</li>
-              <li>All future releases included</li>
-            </ul>
-            <a class="btn btn-accent btn-block" href={site.allAccess.lifetimeUrl} rel="noopener">Get lifetime access</a>
-          </article>
-        )}
+        <article class="plan dark-band grain on-dark">
+          <h2 class="h3">Lifetime pass</h2>
+          <p class="muted">Pay once. Every current and future mockup.</p>
+          {isSet(site.allAccess.lifetimePrice) ? <p class="price">{site.allAccess.lifetimePrice}</p> : <p class="soon"><span class="dot"></span>{home.pass.soon}</p>}
+          <ul>{['Everything in the yearly pass', 'No renewals', 'All future releases'].map((k) => <li><Icon name="check" size={18} /> {k}</li>)}</ul>
+          {lifetime ? <Button href={site.allAccess.lifetimeUrl} variant="light" block>Get lifetime access</Button> : <Button block>Launching soon</Button>}
+        </article>
       </div>
-
-      <div class="qa">
-        <h2>Questions about the pass</h2>
-        <h3>How do I get the files?</h3>
-        <p>After checkout, Gumroad emails you a link. Every file in the pass is also listed in your Gumroad Library.</p>
-        <h3>Can I cancel?</h3>
-        <p>Yes. Cancel from your Gumroad account. Files you already downloaded stay yours under the licence.</p>
-        <h3>Do I need the pass to use free mockups?</h3>
-        <p>No. <a href="/freebies/">Free mockups</a> are free for everyone.</p>
-      </div>
+      <p class="until small muted" data-reveal>Until the pass launches, every mockup is sold one by one on Gumroad — and {stats.free} are free.</p>
+      <div class="center" data-reveal><Button href="/freebies/" variant="ghost">Get free mockups now</Button></div>
     </div>
   </section>
+  <FaqList />
 </Base>
 
 <style>
-  .page {
-    padding-top: clamp(32px, 5vw, 56px);
-  }
-  .head {
-    max-width: 60ch;
-    margin-bottom: 40px;
-  }
-  .head h1 {
-    font-size: clamp(2.2rem, 4.6vw, 3.4rem);
-  }
-  .lede {
-    margin-top: 14px;
-    font-size: 1.12rem;
-    color: var(--ink-2);
-  }
   .plans {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 400px));
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
   }
   .plan {
-    background: var(--surface);
-    border: 1px solid var(--line);
-    border-radius: var(--radius-l);
-    padding: 28px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 18px;
-    align-content: start;
-  }
-  .plan.dark {
-    background: var(--ink);
-    color: var(--paper);
-    border-color: var(--ink);
-  }
-  .plan h2 {
-    font-size: 1.3rem;
+    padding: clamp(24px, 4vw, 44px);
+    border-radius: var(--r-lg);
   }
   .price {
-    font-size: 2.2rem;
-    font-weight: 800;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 56px;
+    letter-spacing: -0.05em;
   }
-  .plan ul {
+  .soon {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: 600;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--sun);
+  }
+  ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: grid;
+    gap: 12px;
+    flex: 1;
+  }
+  li {
+    display: flex;
     gap: 10px;
+    align-items: center;
   }
-  .plan li::before {
-    content: '✓';
-    color: var(--accent);
-    font-weight: 800;
-    margin-right: 10px;
+  li :global(svg) {
+    color: var(--blue-500);
+    flex: none;
   }
-  .qa {
-    margin-top: 64px;
-    max-width: 64ch;
+  .on-dark li :global(svg) {
+    color: #8db8ff;
   }
-  .qa h2 {
-    font-size: 1.5rem;
-    margin-bottom: 8px;
+  .until {
+    text-align: center;
+    margin-top: 28px;
   }
-  .qa h3 {
-    margin-top: 22px;
+  .center {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
   }
-  .qa p {
-    margin-top: 6px;
-    color: var(--ink-2);
-  }
-  .qa a {
-    color: var(--accent);
-    font-weight: 700;
+  @media (max-width: 889px) {
+    .plans {
+      grid-template-columns: 1fr;
+    }
   }
 </style>

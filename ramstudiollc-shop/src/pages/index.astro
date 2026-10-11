@@ -1,272 +1,33 @@
 ---
 import Base from '../layouts/Base.astro';
-import ProductCard from '../components/ProductCard.astro';
-import MockupArt from '../components/MockupArt.astro';
+import Hero from '../components/home/Hero.astro';
+import CategoryRail from '../components/home/CategoryRail.astro';
+import Values from '../components/home/Values.astro';
+import ProductSection from '../components/home/ProductSection.astro';
+import FreebiesCarousel from '../components/home/FreebiesCarousel.astro';
+import GalleryWall from '../components/home/GalleryWall.astro';
 import BuyFlow from '../components/BuyFlow.astro';
+import Proof from '../components/home/Proof.astro';
+import PassBand from '../components/home/PassBand.astro';
 import AgencyBand from '../components/AgencyBand.astro';
-import { site, isSet } from '../config/site';
-import { products, bundles, freebies, categoriesWithCounts, isFree } from '../lib/catalog';
+import FaqList from '../components/FaqList.astro';
+import { home } from '../data/content';
+import { products } from '../lib/catalog';
 
-const latest = products.filter((p) => p.type === 'single' && !isFree(p)).slice(0, 8);
-const topBundles = bundles.slice(0, 3);
-const topFree = freebies.slice(0, 4);
-const total = products.length;
+// Featured first, then newest; six cards fill two rows of three.
+const latest = [...products.filter((p) => p.featured), ...products.filter((p) => !p.featured)].slice(0, 6);
 ---
 
-<Base
-  title="Photoshop Mockups for Packaging & Branding · RAM Studio"
-  description="Smart-object PSD mockups for packaging, bottles, cans, print, apparel and branding, made by RAM Studio. Browse the library here and buy securely on Gumroad."
->
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div class="copy">
-        <p class="eyebrow">Photoshop mockups by RAM Studio</p>
-        <h1>Mockups for packaging, print and&nbsp;products</h1>
-        <p class="lede">
-          Smart-object PSD files made by a packaging design studio. Drop in your artwork, export, and present a finished product.
-        </p>
-        <div class="actions">
-          <a href="/mockups/" class="btn btn-primary">Browse {total} mockups</a>
-          {freebies.length > 0 && <a href="/freebies/" class="btn btn-ghost">Download free mockups</a>}
-        </div>
-        <ul class="facts">
-          <li><strong>PSD</strong> with smart objects</li>
-          <li><strong>Commercial use</strong> licence</li>
-          <li><strong>Instant download</strong> via Gumroad</li>
-        </ul>
-      </div>
-      <div class="collage" aria-hidden="true">
-        <div class="tile t1"><MockupArt kind="pouch" /></div>
-        <div class="tile t2"><MockupArt kind="bottle" /></div>
-        <div class="tile t3"><MockupArt kind="can" /></div>
-        <div class="tile t4"><MockupArt kind="box" /></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section cats-section">
-    <div class="wrap">
-      <div class="section-head">
-        <div>
-          <h2>Shop by category</h2>
-          <p>Every mockup sits in one category, so you find the right object in two clicks.</p>
-        </div>
-      </div>
-      <div class="cats">
-        {categoriesWithCounts.map((c) => (
-          <a class="cat" href={`/category/${c.slug}/`}>
-            <div class="cat-art"><MockupArt kind={c.art} /></div>
-            <div>
-              <h3>{c.name}</h3>
-              <p>{c.count} {c.count === 1 ? 'mockup' : 'mockups'}</p>
-            </div>
-          </a>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section class="section tight">
-    <div class="wrap">
-      <div class="section-head">
-        <div>
-          <h2>New releases</h2>
-          <p>The latest scenes from the studio.</p>
-        </div>
-        <a href="/mockups/" class="link-arrow">View all mockups →</a>
-      </div>
-      <div class="grid">
-        {latest.map((p) => <ProductCard product={p} />)}
-      </div>
-    </div>
-  </section>
-
-  {topBundles.length > 0 && (
-    <section class="section tight">
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <h2>Bundles</h2>
-            <p>Related mockups in one download, for less than buying them one by one.</p>
-          </div>
-          <a href="/bundles/" class="link-arrow">All bundles →</a>
-        </div>
-        <div class="grid">
-          {topBundles.map((p) => <ProductCard product={p} />)}
-        </div>
-      </div>
-    </section>
-  )}
-
+<Base title={home.seo.title} description={home.seo.description} headerTone="dark">
+  <Hero />
+  <CategoryRail />
+  <ProductSection eyebrow={home.latest.eyebrow} title={home.latest.title} sub={home.latest.sub} cta={home.latest.cta} items={latest} />
+  <Values />
+  <FreebiesCarousel />
+  <GalleryWall />
   <BuyFlow />
-
-  <section class="section">
-    <div class="wrap">
-      <div class="pass">
-        <div>
-          <p class="eyebrow">All-Access Pass</p>
-          <h2>Every mockup in the shop, one membership</h2>
-          <p class="muted">
-            One Gumroad membership unlocks the full library and every new release while it is active.
-          </p>
-        </div>
-        <div class="pass-cta">
-          {isSet(site.allAccess.yearlyPrice) && <p class="pass-price">{site.allAccess.yearlyPrice}</p>}
-          <a href="/all-access/" class="btn btn-accent">See what the pass includes</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  {topFree.length > 0 && (
-    <section class="section tight">
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <h2>Free mockups</h2>
-            <p>Try the quality before you buy. Free for personal and commercial work.</p>
-          </div>
-          <a href="/freebies/" class="link-arrow">All freebies →</a>
-        </div>
-        <div class="grid">
-          {topFree.map((p) => <ProductCard product={p} />)}
-        </div>
-      </div>
-    </section>
-  )}
-
+  <Proof />
+  <PassBand />
   <AgencyBand />
+  <FaqList />
 </Base>
-
-<style>
-  .hero {
-    padding-block: clamp(40px, 7vw, 88px) clamp(24px, 4vw, 48px);
-  }
-  .hero-grid {
-    display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    gap: clamp(32px, 5vw, 72px);
-    align-items: center;
-  }
-  .lede {
-    font-size: 1.15rem;
-    color: var(--ink-2);
-    margin-top: 20px;
-    max-width: 46ch;
-  }
-  .actions {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-    margin-top: 28px;
-  }
-  .facts {
-    list-style: none;
-    padding: 0;
-    margin: 32px 0 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px 24px;
-    color: var(--ink-2);
-    font-size: 0.9rem;
-  }
-  .facts li::before {
-    content: '';
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--accent);
-    margin-right: 8px;
-  }
-  .facts strong {
-    color: var(--ink);
-  }
-  .collage {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
-  }
-  .tile {
-    border-radius: var(--radius-l);
-    overflow: hidden;
-    aspect-ratio: 1;
-  }
-
-  .cats-section {
-    padding-top: clamp(32px, 5vw, 56px);
-  }
-  .cats {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
-    gap: 14px;
-  }
-  .cat {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    padding: 10px;
-    border-radius: var(--radius);
-    background: var(--surface);
-    border: 1px solid var(--line);
-    text-decoration: none;
-    transition: border-color 0.15s ease, transform 0.15s ease;
-  }
-  .cat:hover {
-    border-color: var(--ink);
-    transform: translateY(-2px);
-  }
-  .cat-art {
-    width: 64px;
-    height: 64px;
-    flex: none;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  .cat p {
-    font-size: 0.82rem;
-    color: var(--ink-3);
-  }
-
-  .tight {
-    padding-top: 0;
-  }
-
-  .pass {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 32px;
-    flex-wrap: wrap;
-    background: var(--ink);
-    color: var(--paper);
-    border-radius: var(--radius-l);
-    padding: clamp(28px, 5vw, 56px);
-  }
-  .pass h2 {
-    max-width: 22ch;
-  }
-  .pass .muted {
-    color: #b9b6ad;
-    margin-top: 12px;
-    max-width: 48ch;
-  }
-  .pass-cta {
-    display: grid;
-    gap: 12px;
-    justify-items: start;
-  }
-  .pass-price {
-    font-size: 1.8rem;
-    font-weight: 800;
-  }
-
-  @media (max-width: 860px) {
-    .hero-grid {
-      grid-template-columns: 1fr;
-    }
-    .collage {
-      max-width: 420px;
-    }
-  }
-</style>

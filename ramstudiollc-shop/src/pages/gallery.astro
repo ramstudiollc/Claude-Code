@@ -1,0 +1,71 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import { pages } from '../data/content';
+import { allImages } from '../lib/catalog';
+const c = pages.gallery;
+---
+
+<Base title={c.seo.title} description={c.seo.description}>
+  <PageHero eyebrow={c.eyebrow} title={c.title} sub={c.sub} />
+  <section class="section-tight">
+    <div class="wrap">
+      <div class="masonry">
+        {allImages.map((img, n) => (
+          <a href={`/mockups/${img.product.slug}/`} class="tile" data-reveal style={`--i:${n % 6}`}>
+            <img src={img.src} alt={`${img.product.title}, scene ${img.i + 1}`} loading={n < 6 ? 'eager' : 'lazy'} width="800" height="533" />
+            <span class="cap">{img.product.title}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .masonry {
+    columns: 3 320px;
+    column-gap: 18px;
+  }
+  .tile {
+    position: relative;
+    display: block;
+    margin-bottom: 18px;
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    break-inside: avoid;
+    box-shadow: var(--shadow-soft);
+  }
+  .tile img {
+    width: 100%;
+    height: auto;
+    transition: transform 1s var(--ease-out);
+  }
+  .tile:hover img {
+    transform: scale(1.05);
+  }
+  .cap {
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    padding: 8px 12px;
+    border-radius: var(--r-pill);
+    background: rgb(3 4 28 / 0.6);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity var(--t) var(--ease), transform var(--t) var(--ease);
+  }
+  .tile:hover .cap,
+  .tile:focus-visible .cap {
+    opacity: 1;
+    transform: none;
+  }
+</style>

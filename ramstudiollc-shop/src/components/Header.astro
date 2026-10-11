@@ -1,153 +1,372 @@
 ---
+import Icon from './Icon.astro';
+import Button from './Button.astro';
 import { nav, site, isSet } from '../config/site';
+import { activeCategories, stats } from '../lib/catalog';
+
+interface Props {
+  /** 'dark' = header sits on a dark hero (white logo); 'light' = on the light page. */
+  tone?: 'dark' | 'light';
+}
+const { tone = 'light' } = Astro.props;
 const path = Astro.url.pathname;
-const allAccessReady = isSet(site.allAccess.url);
+const active = (href: string) => path === href || (href !== '/' && path.startsWith(href));
 ---
 
-<header class="header">
+{isSet(site.announcement.text) && (
+  <div class="announce">
+    <div class="wrap announce-in">
+      {isSet(site.announcement.href) ? (
+        <a href={site.announcement.href} rel="noopener">{site.announcement.text} <Icon name="arrow-up" size={14} /></a>
+      ) : (
+        <span>{site.announcement.text}</span>
+      )}
+    </div>
+  </div>
+)}
+
+<header class:list={['header', `tone-${tone}`]} data-header>
   <div class="wrap bar">
     <a href="/" class="logo" aria-label={`${site.name} shop — home`}>
-      <span class="mark" aria-hidden="true">R</span>
-      <span class="word">ramstudiollc<span>.shop</span></span>
+      <img src={site.logo.light} alt="" width="150" height="27" class="logo-light" />
+      <img src={site.logo.dark} alt="" width="150" height="27" class="logo-dark" />
+      <span class="shop-tag">Shop</span>
     </a>
 
-    <input type="checkbox" id="menu-toggle" class="visually-hidden" />
-    <label for="menu-toggle" class="menu-btn" aria-label="Open menu">
-      <span></span><span></span>
-    </label>
-
     <nav class="nav" aria-label="Main">
-      {nav.map((item) => (
-        <a href={item.href} aria-current={path.startsWith(item.href) ? 'page' : undefined}>
-          {item.label}
-        </a>
-      ))}
-      <form action="/mockups/" method="get" class="search" role="search">
-        <label for="q" class="visually-hidden">Search mockups</label>
-        <input id="q" name="q" type="search" placeholder="Search mockups" autocomplete="off" />
-      </form>
-      {allAccessReady && (
-        <a href="/all-access/" class="btn btn-primary cta">Get All-Access</a>
+      {nav.map((item) =>
+        item.menu === 'categories' ? (
+          <div class="has-menu">
+            <a href={item.href} class="nav-link" aria-current={active(item.href) ? 'page' : undefined}>
+              {item.label} <Icon name="chevron" size={16} />
+            </a>
+            <div class="menu" role="group" aria-label="Categories">
+              <div class="menu-in">
+                {activeCategories.map((c) => (
+                  <a href={`/category/${c.slug}/`} class="menu-item">
+                    <span class="menu-ico"><Icon name={c.icon} size={20} /></span>
+                    <span>
+                      <strong>{c.name}</strong>
+                      <small>{c.count} {c.count === 1 ? 'mockup' : 'mockups'}</small>
+                    </span>
+                  </a>
+                ))}
+                <a href="/mockups/" class="menu-item menu-all">
+                  <span class="menu-ico"><Icon name="grid" size={20} /></span>
+                  <span>
+                    <strong>All mockups</strong>
+                    <small>{stats.products} in the shop</small>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        ) : (
+          <a href={item.href} class="nav-link" aria-current={active(item.href) ? 'page' : undefined}>{item.label}</a>
+        ),
       )}
     </nav>
+
+    <div class="actions">
+      <a href="/mockups/#search" class="icon-btn search-btn" aria-label="Search mockups"><Icon name="search" /></a>
+      <Button href="/freebies/" variant="blue" size="sm" class="cta">Free mockups</Button>
+      <button class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-open>
+        <Icon name="menu" />
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile" id="mobile-menu" hidden data-menu>
+    <div class="wrap mobile-in">
+      <button class="icon-btn close" type="button" aria-label="Close menu" data-menu-close><Icon name="close" /></button>
+      <a href="/mockups/" class="m-link">All mockups <span>{stats.products}</span></a>
+      {activeCategories.map((c) => (
+        <a href={`/category/${c.slug}/`} class="m-sub">{c.name} <span>{c.count}</span></a>
+      ))}
+      {nav.filter((n) => !n.menu).map((n) => <a href={n.href} class="m-link">{n.label}</a>)}
+      <Button href="/freebies/" variant="blue" block>Get free mockups</Button>
+    </div>
   </div>
 </header>
 
+<script>
+  const header = document.querySelector<HTMLElement>('[data-header]');
+  const panel = document.querySelector<HTMLElement>('[data-menu]');
+  const openBtn = document.querySelector<HTMLButtonElement>('[data-menu-open]');
+  const closeBtn = document.querySelector<HTMLButtonElement>('[data-menu-close]');
+  const onScroll = () => header?.classList.toggle('is-scrolled', window.scrollY > 24);
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+  const setMenu = (open: boolean) => {
+    if (!panel || !openBtn) return;
+    panel.hidden = !open;
+    openBtn.setAttribute('aria-expanded', String(open));
+    document.documentElement.classList.toggle('menu-open', open);
+    if (open) closeBtn?.focus();
+  };
+  openBtn?.addEventListener('click', () => setMenu(true));
+  closeBtn?.addEventListener('click', () => setMenu(false));
+  document.addEventListener('keydown', (e) => e.key === 'Escape' && setMenu(false));
+</script>
+
 <style>
+  .announce {
+    background: var(--navy-950);
+    color: #dfe6ff;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+  }
+  .announce-in {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .announce a {
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+    text-decoration: none;
+  }
+  .announce a:hover {
+    color: #fff;
+  }
+
   .header {
     position: sticky;
     top: 0;
-    z-index: 20;
-    background: color-mix(in srgb, var(--paper) 88%, transparent);
-    backdrop-filter: saturate(1.4) blur(10px);
-    border-bottom: 1px solid var(--line);
+    z-index: 50;
+    transition: background var(--t) var(--ease), box-shadow var(--t) var(--ease), color var(--t);
+  }
+  .tone-dark {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40px;
+    color: #fff;
+  }
+  .tone-dark.is-scrolled {
+    position: fixed;
+    top: 0;
+  }
+  .is-scrolled {
+    background: rgb(255 255 255 / 0.82);
+    backdrop-filter: saturate(1.4) blur(14px);
+    box-shadow: 0 1px 0 var(--line);
+    color: var(--navy-900);
+  }
+  .tone-light {
+    background: rgb(244 246 251 / 0.85);
+    backdrop-filter: saturate(1.4) blur(14px);
   }
   .bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 24px;
-    min-height: 68px;
+    height: 84px;
+    transition: height var(--t) var(--ease);
+  }
+  .is-scrolled .bar {
+    height: 68px;
   }
   .logo {
     display: flex;
     align-items: center;
     gap: 10px;
     text-decoration: none;
-    font-weight: 800;
-    letter-spacing: -0.02em;
   }
-  .mark {
-    display: grid;
-    place-items: center;
-    width: 34px;
-    height: 34px;
-    border-radius: 10px;
-    background: var(--ink);
-    color: var(--paper);
-    font-size: 1.05rem;
+  .logo img {
+    height: 27px;
+    width: auto;
   }
-  .word span {
-    color: var(--accent);
+  .logo-light {
+    display: none;
+  }
+  .tone-dark:not(.is-scrolled) .logo-light {
+    display: block;
+  }
+  .tone-dark:not(.is-scrolled) .logo-dark {
+    display: none;
+  }
+  .shop-tag {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    border-radius: var(--r-pill);
+    background: var(--blue-500);
+    color: #fff;
   }
   .nav {
     display: flex;
     align-items: center;
-    gap: 22px;
+    gap: 4px;
   }
-  .nav > a:not(.btn) {
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95rem;
-    color: var(--ink-2);
-  }
-  .nav > a:not(.btn):hover,
-  .nav > a[aria-current='page'] {
-    color: var(--ink);
-  }
-  .search input {
-    width: 190px;
+  .nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
     height: 40px;
-    border-radius: 999px;
-    border: 1px solid var(--line);
-    background: var(--surface);
     padding: 0 16px;
-    font: inherit;
-    font-size: 0.9rem;
+    border-radius: var(--r-pill);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background var(--t-fast) var(--ease);
   }
-  .search input:focus {
-    outline: none;
-    border-color: var(--ink);
+  .nav-link:hover,
+  .nav-link[aria-current='page'] {
+    background: rgb(20 26 46 / 0.07);
   }
-  .cta {
-    min-height: 40px;
-    font-size: 0.88rem;
+  .tone-dark:not(.is-scrolled) .nav-link:hover,
+  .tone-dark:not(.is-scrolled) .nav-link[aria-current='page'] {
+    background: rgb(255 255 255 / 0.12);
+  }
+  .has-menu {
+    position: relative;
+  }
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    padding-top: 12px;
+    transform: translate(-50%, 8px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--t-fast) var(--ease), transform var(--t) var(--ease), visibility var(--t-fast);
+  }
+  .has-menu:hover .menu,
+  .has-menu:focus-within .menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+  }
+  .menu-in {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+    gap: 4px;
+    padding: 10px;
+    border-radius: var(--r-lg);
+    background: #fff;
+    color: var(--navy-900);
+    box-shadow: var(--shadow-panel), 0 0 0 1px var(--line);
+  }
+  .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border-radius: var(--r-md);
+    text-decoration: none;
+    transition: background var(--t-fast);
+  }
+  .menu-item:hover {
+    background: var(--page);
+  }
+  .menu-item strong {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .menu-item small {
+    font-size: 13px;
+    color: var(--ink-500);
+  }
+  .menu-ico {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: var(--page);
+    color: var(--blue-500);
+    flex: none;
+  }
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .tone-dark:not(.is-scrolled) .icon-btn {
+    background: var(--glass-dark);
+    border-color: var(--line-dark);
+    color: #fff;
   }
   .menu-btn {
     display: none;
   }
 
-  @media (max-width: 920px) {
-    .menu-btn {
-      display: grid;
-      gap: 6px;
-      width: 44px;
-      height: 44px;
-      place-content: center;
-      cursor: pointer;
-    }
-    .menu-btn span {
-      display: block;
-      width: 22px;
-      height: 2px;
-      background: var(--ink);
-    }
-    .nav {
+  .mobile {
+    position: fixed;
+    inset: 0;
+    z-index: 60;
+    background: var(--navy-950);
+    color: #fff;
+    overflow-y: auto;
+  }
+  .mobile-in {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-top: 84px;
+    padding-bottom: 40px;
+  }
+  .close {
+    position: absolute;
+    top: 18px;
+    right: var(--gutter);
+    background: var(--glass-dark) !important;
+    color: #fff !important;
+    border-color: var(--line-dark) !important;
+  }
+  .m-link,
+  .m-sub {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    text-decoration: none;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line-dark);
+  }
+  .m-link {
+    font-family: var(--font-display);
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.03em;
+  }
+  .m-sub {
+    padding-left: 16px;
+    font-size: 17px;
+    color: #c9cfe3;
+  }
+  .m-link span,
+  .m-sub span {
+    font-family: var(--font-text);
+    font-size: 14px;
+    color: #8db8ff;
+  }
+  .mobile :global(.btn) {
+    margin-top: 24px;
+  }
+  :global(html.menu-open) {
+    overflow: hidden;
+  }
+
+  @media (max-width: 889px) {
+    .nav,
+    .cta,
+    .search-btn {
       display: none;
-      position: absolute;
-      top: 68px;
-      left: 0;
-      right: 0;
-      flex-direction: column;
-      align-items: stretch;
-      gap: 4px;
-      padding: 12px var(--gutter) 20px;
-      background: var(--paper);
-      border-bottom: 1px solid var(--line);
     }
-    .nav > a:not(.btn) {
-      padding: 10px 0;
-      font-size: 1.05rem;
+    .menu-btn {
+      display: inline-grid;
     }
-    .search input {
-      width: 100%;
-      margin-top: 8px;
-    }
-    #menu-toggle:checked ~ .nav {
-      display: flex;
-    }
-    #menu-toggle:focus-visible + .menu-btn {
-      outline: 2px solid var(--accent);
+    .bar {
+      height: 68px;
     }
   }
 </style>

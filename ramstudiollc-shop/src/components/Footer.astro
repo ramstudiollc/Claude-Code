@@ -1,131 +1,176 @@
 ---
+import Icon from './Icon.astro';
+import Button from './Button.astro';
 import { site, isSet } from '../config/site';
-import { categories } from '../data/categories';
-const socials = site.social.filter((s) => isSet(s.url));
+import { activeCategories, stats } from '../lib/catalog';
 const year = new Date().getFullYear();
 ---
 
-<footer class="footer">
-  <div class="wrap cols">
-    <div class="brand">
-      <a href="/" class="logo">ramstudiollc<span>.shop</span></a>
-      <p>Mockups made by {site.agency.name}. Browse here — checkout, payment and downloads are handled by Gumroad.</p>
-      <p class="contact"><a href={`mailto:${site.agency.email}`}>{site.agency.email}</a></p>
+<footer class="footer dark-band grain on-dark">
+  <div class="wrap">
+    <div class="top">
+      <div class="brand" data-reveal>
+        <a href="/" aria-label="Home"><img src={site.logo.light} alt={site.legalName} width="180" height="33" /></a>
+        <p class="muted">
+          {stats.products} Photoshop mockups by a packaging design studio. Browse here — checkout and downloads run on Gumroad.
+        </p>
+        <a class="mail" href={`mailto:${site.agency.email}`}><Icon name="mail" size={18} /> {site.agency.email}</a>
+      </div>
+
+      <nav aria-label="Categories" data-reveal style="--i:1">
+        <h2 class="col-title">Mockups</h2>
+        <ul>
+          {activeCategories.map((c) => <li><a href={`/category/${c.slug}/`}>{c.name}</a></li>)}
+          <li><a href="/freebies/">Free mockups</a></li>
+          <li><a href="/gallery/">Gallery</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Help" data-reveal style="--i:2">
+        <h2 class="col-title">Help</h2>
+        <ul>
+          <li><a href="/faq/">FAQ</a></li>
+          <li><a href="/license/">License</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href={site.agency.url} rel="noopener">Custom design work</a></li>
+        </ul>
+      </nav>
+
+      {isSet(site.newsletterUrl) && (
+        <div class="news" data-reveal style="--i:3">
+          <h2 class="col-title">New releases by email</h2>
+          <p class="muted small">Free mockups and new sets, sent by Gumroad when they go live. Unsubscribe any time.</p>
+          <Button href={site.newsletterUrl} variant="light" size="sm">Subscribe on Gumroad</Button>
+        </div>
+      )}
     </div>
 
-    <nav aria-label="Categories">
-      <h3>Categories</h3>
-      <ul>
-        {categories.map((c) => <li><a href={`/category/${c.slug}/`}>{c.name}</a></li>)}
-      </ul>
-    </nav>
+    <div class="stores" data-reveal>
+      <span class="small muted">Also on</span>
+      {site.marketplaces.filter((m) => isSet(m.url)).map((m) => <a href={m.url} rel="noopener" class="chip-dark">{m.label}</a>)}
+      {isSet(site.gumroadStore) && <a href={site.gumroadStore} rel="noopener" class="chip-dark">Gumroad store</a>}
+    </div>
 
-    <nav aria-label="Shop">
-      <h3>Shop</h3>
-      <ul>
-        <li><a href="/mockups/">All mockups</a></li>
-        <li><a href="/bundles/">Bundles</a></li>
-        <li><a href="/freebies/">Freebies</a></li>
-        <li><a href="/all-access/">All-Access Pass</a></li>
-        {isSet(site.gumroadStore) && <li><a href={site.gumroadStore} rel="noopener">Our Gumroad store</a></li>}
-      </ul>
-    </nav>
-
-    <nav aria-label="Help">
-      <h3>Help</h3>
-      <ul>
-        <li><a href="/license/">License</a></li>
-        <li><a href="/faq/">FAQ</a></li>
-        <li><a href="/about/">About RAM Studio</a></li>
-        <li><a href={site.agency.url} rel="noopener">Custom design work</a></li>
-      </ul>
-    </nav>
-  </div>
-
-  <div class="wrap base">
-    <p>© {year} {site.agency.name}. All mockups are original work of RAM Studio.</p>
-    {socials.length > 0 && (
+    <div class="base">
+      <p>© {year} {site.legalName}. All mockups are original work of RAM Studio.</p>
       <ul class="social">
-        {socials.map((s) => <li><a href={s.url} rel="noopener">{s.label}</a></li>)}
+        {site.social.filter((s) => isSet(s.url)).map((s) => <li><a href={s.url} rel="noopener">{s.label}</a></li>)}
       </ul>
-    )}
+    </div>
   </div>
 </footer>
 
 <style>
   .footer {
-    background: var(--ink);
-    color: #cfccc4;
-    margin-top: 40px;
-    padding-top: 64px;
+    border-radius: 40px 40px 0 0;
+    margin-top: var(--section);
+    padding-top: clamp(56px, 7vw, 96px);
   }
-  .cols {
+  .top {
     display: grid;
-    grid-template-columns: 1.6fr repeat(3, 1fr);
+    grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
     gap: 40px;
   }
-  .logo {
-    color: #fff;
-    font-weight: 800;
-    font-size: 1.2rem;
-    text-decoration: none;
-  }
-  .logo span {
-    color: var(--accent);
+  .brand img {
+    height: 33px;
+    width: auto;
   }
   .brand p {
-    margin-top: 14px;
-    max-width: 36ch;
-    font-size: 0.92rem;
+    margin-top: 20px;
+    max-width: 34ch;
+    font-size: 15px;
   }
-  .contact a {
-    color: #fff;
+  .mail {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+    text-decoration: none;
+    font-weight: 600;
   }
-  h3 {
-    color: #fff;
-    font-size: 0.85rem;
+  .mail:hover {
+    color: #8db8ff;
+  }
+  .col-title {
+    font-family: var(--font-text);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin-bottom: 14px;
+    color: #8db8ff;
+    margin-bottom: 18px;
   }
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: grid;
-    gap: 8px;
-    font-size: 0.92rem;
+    gap: 10px;
   }
-  nav a {
+  nav a,
+  .social a {
     text-decoration: none;
+    color: #d4d9ea;
+    font-size: 15px;
+    transition: color var(--t-fast);
   }
   nav a:hover,
   .social a:hover {
     color: #fff;
+  }
+  .news p {
+    margin-bottom: 18px;
+  }
+  .stores {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-top: 56px;
+  }
+  .chip-dark {
+    display: inline-flex;
+    align-items: center;
+    height: 36px;
+    padding: 0 14px;
+    border-radius: var(--r-pill);
+    border: 1px solid var(--line-dark);
+    background: var(--glass-dark);
+    font-size: 14px;
+    text-decoration: none;
+    transition: background var(--t-fast);
+  }
+  .chip-dark:hover {
+    background: rgb(255 255 255 / 0.16);
   }
   .base {
     display: flex;
     justify-content: space-between;
     gap: 16px;
     flex-wrap: wrap;
-    border-top: 1px solid #2c2c2a;
-    margin-top: 48px;
-    padding-block: 24px;
-    font-size: 0.82rem;
+    margin-top: 32px;
+    padding-block: 28px;
+    border-top: 1px solid var(--line-dark);
+    font-size: 13px;
+    color: #9aa1bb;
   }
   .social {
     display: flex;
-    gap: 18px;
+    flex-wrap: wrap;
+    gap: 20px;
   }
-  .social a {
-    text-decoration: none;
-  }
-  @media (max-width: 820px) {
-    .cols {
+  @media (max-width: 1199px) {
+    .top {
       grid-template-columns: 1fr 1fr;
     }
-    .brand {
-      grid-column: 1 / -1;
+  }
+  @media (max-width: 889px) {
+    .top {
+      grid-template-columns: 1fr;
+    }
+    .footer {
+      border-radius: 28px 28px 0 0;
     }
   }
 </style>

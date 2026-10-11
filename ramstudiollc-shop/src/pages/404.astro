@@ -1,31 +1,24 @@
 ---
 import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Button from '../components/Button.astro';
 ---
 
 <Base title="Page not found · RAM Studio" noindex>
-  <section class="section">
-    <div class="wrap">
-      <h1>This page is not here</h1>
-      <p class="muted">The mockup may have moved or been renamed.</p>
-      <p class="actions">
-        <a class="btn btn-primary" href="/mockups/">Browse all mockups</a>
-        <a class="btn btn-ghost" href="/">Go to the home page</a>
-      </p>
+  <PageHero eyebrow="404" title="This page is not here" sub="The mockup may have moved or been renamed.">
+    <div class="actions">
+      <Button href="/mockups/">Browse all mockups</Button>
+      <Button href="/" variant="ghost">Go to the home page</Button>
     </div>
-  </section>
+  </PageHero>
 </Base>
 
 <style>
-  h1 {
-    font-size: clamp(2rem, 4vw, 3rem);
-  }
-  .muted {
-    margin-top: 10px;
-  }
   .actions {
     display: flex;
+    justify-content: center;
     gap: 12px;
     flex-wrap: wrap;
-    margin-top: 28px;
+    margin-top: 32px;
   }
 </style>

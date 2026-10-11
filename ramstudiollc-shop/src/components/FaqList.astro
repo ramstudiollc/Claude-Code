@@ -1,0 +1,134 @@
+---
+import Icon from './Icon.astro';
+import Button from './Button.astro';
+import { faq } from '../data/content';
+import { site } from '../config/site';
+
+interface Props {
+  /** Render the H2 heading block (home); the FAQ page provides its own H1. */
+  withHead?: boolean;
+}
+const { withHead = true } = Astro.props;
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faq.items.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+---
+
+<section class="section faq">
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <div class="wrap narrow">
+    {withHead && (
+      <div class="head center">
+        <p class="eyebrow" data-reveal>{faq.eyebrow}</p>
+        <h2 class="h2" data-reveal>{faq.title}</h2>
+        <p class="lead" data-reveal>{faq.sub}</p>
+      </div>
+    )}
+    <div class="list" data-stagger>
+      {faq.items.map((f) => (
+        <details class="row">
+          <summary>
+            <span class="ico"><Icon name={f.icon} size={20} /></span>
+            <h3>{f.q}</h3>
+            <span class="chev"><Icon name="chevron" size={20} /></span>
+          </summary>
+          <p class="answer muted">{f.a}</p>
+        </details>
+      ))}
+      <div class="row contact">
+        <div>
+          <h3>{faq.contact.title}</h3>
+          <p class="muted small">{faq.contact.text}</p>
+        </div>
+        <Button href={`mailto:${site.agency.email}`} icon="mail" external={false}>{faq.contact.label}</Button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .narrow {
+    max-width: calc(980px + 2 * var(--gutter));
+  }
+  .list {
+    display: grid;
+    gap: 12px;
+  }
+  .row {
+    background: var(--surface);
+    border-radius: var(--r-lg);
+    box-shadow: var(--shadow-soft);
+    transition: box-shadow var(--t) var(--ease);
+  }
+  .row:hover {
+    box-shadow: var(--shadow-panel);
+  }
+  summary {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 24px;
+    cursor: pointer;
+    list-style: none;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  .ico {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    flex: none;
+    border-radius: 12px;
+    background: #e7f0ff;
+    color: var(--blue-500);
+  }
+  h3 {
+    flex: 1;
+    font-family: var(--font-text);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  .chev {
+    display: grid;
+    place-items: center;
+    transition: transform var(--t) var(--ease);
+  }
+  details[open] .chev {
+    transform: rotate(180deg);
+  }
+  .answer {
+    padding: 0 24px 22px 80px;
+    max-width: 70ch;
+    animation: open var(--t) var(--ease);
+  }
+  @keyframes open {
+    from {
+      opacity: 0;
+      transform: translateY(-6px);
+    }
+  }
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 22px 24px;
+    flex-wrap: wrap;
+  }
+  .contact h3 {
+    flex: none;
+  }
+  @media (max-width: 889px) {
+    .answer {
+      padding-left: 24px;
+    }
+    h3 {
+      font-size: 16px;
+    }
+  }
+</style>

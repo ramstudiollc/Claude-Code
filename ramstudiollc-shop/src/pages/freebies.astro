@@ -1,13 +1,8 @@
 ---
 import SimpleListPage from '../components/SimpleListPage.astro';
+import { pages } from '../data/content';
 import { freebies } from '../lib/catalog';
+const c = pages.freebies;
 ---
 
-<SimpleListPage
-  title="Free PSD Mockups — Packaging & Branding · RAM Studio"
-  description="Free Photoshop mockups from RAM Studio for packaging, print and branding. Download through Gumroad and use them in personal and commercial work."
-  heading="Free mockups"
-  intro="Full-quality PSD files at no cost. Enter $0 on Gumroad (or tip if you like) and the download starts right away."
-  items={freebies}
-  emptyText="No free mockups are listed yet."
-/>
+<SimpleListPage seo={c.seo} eyebrow={c.eyebrow} title={c.title} sub={c.sub} items={freebies} emptyText="No free mockups are listed yet." />
