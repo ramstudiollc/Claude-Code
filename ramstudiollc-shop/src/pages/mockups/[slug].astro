@@ -84,8 +84,8 @@ const jsonLd = {
         <div class="buy-in panel" data-reveal>
           <div class="tags">
             {cat && <a class="badge" href={`/category/${cat.slug}/`}>{cat.short}</a>}
-            {free && <span class="badge badge-blue">Free</span>}
-            {inside.length > 0 && <span class="badge badge-dark">Bundle · {inside.length}</span>}
+            {free && <span class="badge badge-free">Free</span>}
+            {inside.length > 0 && <span class="badge badge-ink">Bundle · {inside.length}</span>}
           </div>
           <h1 class="title">{p.title}</h1>
           {p.rating && p.rating.count > 0 && (
@@ -93,7 +93,7 @@ const jsonLd = {
           )}
           <p class="summary muted">{summary}</p>
           <div class="price-row">
-            <span class="price">{priceLabel(p)}</span>
+            {free ? <span class="price">Free</span> : <span class="money price"><span class="cur">$</span><span class="num">{p.price}</span></span>}
             {p.payWhatYouWant && <span class="small muted">{free ? 'pay what you want' : 'or more'}</span>}
           </div>
           <BuyButton product={p} block />
@@ -168,13 +168,13 @@ const jsonLd = {
     gap: 8px;
     padding: 40px 0 28px;
     font-size: 14px;
-    color: var(--ink-500);
+    color: var(--muted);
   }
   .crumbs a {
     text-decoration: none;
   }
   .crumbs a:hover {
-    color: var(--blue-500);
+    color: var(--blue);
   }
   .layout {
     display: grid;
@@ -189,7 +189,7 @@ const jsonLd = {
     overflow: hidden;
     background: var(--surface-2);
     aspect-ratio: 3 / 2;
-    box-shadow: var(--shadow-panel);
+    box-shadow: var(--shadow-xl);
   }
   .main img {
     width: 100%;
@@ -228,7 +228,7 @@ const jsonLd = {
     transform: translateY(-3px);
   }
   .thumb[aria-pressed='true'] {
-    border-color: var(--blue-500);
+    border-color: var(--blue);
   }
   .thumb img {
     width: 100%;
@@ -240,12 +240,12 @@ const jsonLd = {
   }
   .block-title,
   .group-title {
-    font-family: var(--font-text);
+    font-family: var(--mono);
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--blue-500);
+    color: var(--blue);
     margin-bottom: 16px;
   }
   .stack {
@@ -278,9 +278,9 @@ const jsonLd = {
     text-decoration: none;
   }
   .title {
-    font-family: var(--font-display);
+    font-family: var(--font);
     font-size: clamp(30px, 3vw, 43px);
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: -0.035em;
     line-height: 1.02;
   }
@@ -293,7 +293,7 @@ const jsonLd = {
   }
   .stars {
     display: inline-flex;
-    color: #ffb400;
+    color: var(--sun);
   }
   .summary {
     font-size: 16px;
@@ -304,9 +304,9 @@ const jsonLd = {
     gap: 10px;
   }
   .price {
-    font-family: var(--font-display);
+    font-family: var(--font);
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: -0.04em;
   }
   .note,
@@ -319,8 +319,8 @@ const jsonLd = {
   .note {
     padding: 12px 14px;
     border-radius: var(--r-md);
-    background: #e7f0ff;
-    color: var(--blue-600);
+    background: #eef3ff;
+    color: var(--blue-deep);
   }
   .note :global(svg),
   .secure :global(svg),
@@ -345,7 +345,7 @@ const jsonLd = {
     gap: 8px;
   }
   .ticks :global(svg) {
-    color: var(--blue-500);
+    color: var(--blue);
     flex: none;
     margin-top: 3px;
   }
@@ -365,7 +365,7 @@ const jsonLd = {
     border-bottom: 0;
   }
   .specs dt {
-    color: var(--ink-500);
+    color: var(--muted);
   }
   .specs dd {
     margin: 0;

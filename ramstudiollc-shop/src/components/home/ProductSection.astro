@@ -1,31 +1,29 @@
 ---
 import Button from '../Button.astro';
+import Heading from '../Heading.astro';
 import ProductCard from '../ProductCard.astro';
-import { fill, type Product } from '../../lib/catalog';
+import type { Product } from '../../lib/catalog';
 
 interface Props {
   eyebrow: string;
-  title: string;
+  title: string | string[];
   sub?: string;
   cta?: { label: string; href: string };
   items: Product[];
+  icon?: string;
 }
-const { eyebrow, title, sub, cta, items } = Astro.props;
+const { eyebrow, title, sub, cta, items, icon = 'spark' } = Astro.props;
 ---
 
 {items.length > 0 && (
   <section class="section">
     <div class="wrap">
       <div class="head">
-        <div>
-          <p class="eyebrow" data-reveal>{eyebrow}</p>
-          <h2 class="h2" data-reveal>{title}</h2>
-          {sub && <p class="lead" data-reveal>{fill(sub)}</p>}
-        </div>
-        {cta && <div data-reveal><Button href={cta.href} variant="ghost">{cta.label}</Button></div>}
+        <Heading eyebrow={eyebrow} icon={icon} title={title} sub={sub} />
+        {cta && <div data-reveal><Button href={cta.href} variant="ghost" icon="grid">{cta.label}</Button></div>}
       </div>
       <div class="grid-cards" data-stagger>
-        {items.map((p) => <ProductCard product={p} />)}
+        {items.map((p, i) => <ProductCard product={p} eager={i < 3} />)}
       </div>
     </div>
   </section>

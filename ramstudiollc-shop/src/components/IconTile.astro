@@ -1,0 +1,108 @@
+---
+// Glossy, raised icon tile: gradient body, top highlight, inner shade, coloured drop shadow,
+// and a white glyph with its own soft shadow. Gives depth instead of a flat line icon.
+import Icon from './Icon.astro';
+
+interface Props {
+  name: string;
+  tone?: 'blue' | 'violet' | 'orange' | 'mint' | 'pink' | 'ink' | 'sun';
+  size?: 'sm' | 'md' | 'lg';
+  class?: string;
+}
+const { name, tone = 'blue', size = 'md', class: cls } = Astro.props;
+const glyph = { sm: 16, md: 22, lg: 30 }[size];
+---
+
+<span class:list={['itile', `t-${tone}`, `s-${size}`, cls]} aria-hidden="true">
+  <span class="shine"></span>
+  <Icon name={name} size={glyph} />
+</span>
+
+<style>
+  .itile {
+    --a: #7db4ff;
+    --b: #2f80ff;
+    --c: #1a4fd1;
+    --glow: rgb(47 128 255 / 0.45);
+    position: relative;
+    display: inline-grid;
+    place-items: center;
+    flex: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 15px;
+    color: #fff;
+    background: radial-gradient(120% 120% at 25% 15%, var(--a) 0%, var(--b) 52%, var(--c) 100%);
+    box-shadow:
+      inset 0 1.5px 0 rgb(255 255 255 / 0.55),
+      inset 0 -4px 8px rgb(0 0 0 / 0.18),
+      inset 0 0 0 1px rgb(255 255 255 / 0.12),
+      0 10px 20px -8px var(--glow),
+      0 2px 4px rgb(18 22 48 / 0.12);
+    isolation: isolate;
+  }
+  .itile :global(svg) {
+    stroke-width: 2;
+    filter: drop-shadow(0 1.5px 1.5px rgb(0 0 0 / 0.25));
+  }
+  .shine {
+    position: absolute;
+    inset: 2px 4px auto;
+    height: 46%;
+    border-radius: 12px 12px 40% 40%;
+    background: linear-gradient(180deg, rgb(255 255 255 / 0.45), rgb(255 255 255 / 0));
+    z-index: -1;
+  }
+  .s-sm {
+    width: 34px;
+    height: 34px;
+    border-radius: 11px;
+  }
+  .s-sm .shine {
+    border-radius: 9px 9px 40% 40%;
+  }
+  .s-lg {
+    width: 68px;
+    height: 68px;
+    border-radius: 22px;
+  }
+  .s-lg .shine {
+    border-radius: 18px 18px 40% 40%;
+  }
+  .t-violet {
+    --a: #b3a8ff;
+    --b: #6a5cff;
+    --c: #4330d6;
+    --glow: rgb(106 92 255 / 0.45);
+  }
+  .t-orange {
+    --a: #ffc48a;
+    --b: #ff7a2c;
+    --c: #e0420f;
+    --glow: rgb(255 106 44 / 0.45);
+  }
+  .t-mint {
+    --a: #8ef0d3;
+    --b: #19c39b;
+    --c: #0b8f70;
+    --glow: rgb(25 195 155 / 0.45);
+  }
+  .t-pink {
+    --a: #ffb0cf;
+    --b: #ff5c9a;
+    --c: #d6286a;
+    --glow: rgb(255 92 154 / 0.45);
+  }
+  .t-sun {
+    --a: #ffe9a3;
+    --b: #ffc83a;
+    --c: #e59a00;
+    --glow: rgb(255 200 58 / 0.5);
+  }
+  .t-ink {
+    --a: #4b5066;
+    --b: #1d2030;
+    --c: #07080f;
+    --glow: rgb(11 13 23 / 0.45);
+  }
+</style>

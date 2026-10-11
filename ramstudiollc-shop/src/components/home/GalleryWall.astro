@@ -1,11 +1,11 @@
 ---
+// Big live number of preview scenes over a wall of image columns that move with scroll.
 import Button from '../Button.astro';
 import { home } from '../../data/content';
 import { allImages, fill } from '../../lib/catalog';
 const w = home.wall;
-// Five columns of real preview images; neighbouring columns travel in opposite directions on scroll.
-const cols = [0, 1, 2, 3, 4].map((c) => allImages.filter((_, i) => i % 5 === c).slice(0, 7));
-const speeds = [0.5, -0.35, 0.65, -0.45, 0.4];
+const cols = [0, 1, 2, 3, 4, 5].map((c) => allImages.filter((_, i) => i % 6 === c).slice(0, 7));
+const speeds = [0.55, -0.4, 0.75, -0.6, 0.45, -0.5];
 ---
 
 {allImages.length > 0 && (
@@ -20,10 +20,9 @@ const speeds = [0.5, -0.35, 0.65, -0.45, 0.4];
       ))}
     </div>
     <div class="center">
-      <p class="eyebrow" data-reveal>{w.eyebrow}</p>
-      <p class="count" data-reveal="zoom">{fill(w.count)}</p>
-      <p class="label" data-reveal>{w.label}</p>
-      <div data-reveal><Button href={w.cta.href}>{w.cta.label}</Button></div>
+      <p class="count" data-reveal="zoom"><span data-countup={fill(w.count)}>{fill(w.count)}</span></p>
+      <h2 class="h2" data-reveal><span class="tone">{w.title[0]}</span>{w.title[1]}</h2>
+      <div data-reveal><Button href={w.cta.href} icon="image">{w.cta.label}</Button></div>
     </div>
   </section>
 )}
@@ -31,69 +30,60 @@ const speeds = [0.5, -0.35, 0.65, -0.45, 0.4];
 <style>
   .wall {
     position: relative;
-    height: clamp(640px, 95vh, 980px);
+    height: clamp(680px, 100vh, 1000px);
     overflow: hidden;
-    margin-block: var(--section);
   }
   .cols {
     position: absolute;
-    inset: -10% -6%;
+    inset: -14% -8%;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 18px;
-    transform: rotate(-6deg);
-    mask-image: radial-gradient(70% 60% at 50% 50%, transparent 18%, #000 62%);
-    -webkit-mask-image: radial-gradient(70% 60% at 50% 50%, transparent 18%, #000 62%);
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    transform: rotate(-7deg) scale(1.05);
   }
   .track {
     display: grid;
-    gap: 18px;
+    gap: 20px;
     will-change: transform;
   }
   .track img {
     width: 100%;
     aspect-ratio: 3 / 2;
     object-fit: cover;
-    border-radius: 18px;
-    box-shadow: var(--shadow-soft);
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
   }
-  .center::before {
+  .wall::after {
     content: '';
     position: absolute;
-    inset: 12% 18%;
-    z-index: -1;
-    background: radial-gradient(closest-side, var(--page) 55%, rgb(244 246 251 / 0.85) 75%, transparent);
+    inset: 0;
+    background: radial-gradient(42% 46% at 50% 50%, var(--page) 38%, rgb(244 245 248 / 0.9) 58%, rgb(244 245 248 / 0) 100%), linear-gradient(var(--page), transparent 18%, transparent 82%, var(--page));
+    pointer-events: none;
   }
   .center {
     position: relative;
     z-index: 1;
-    isolation: isolate;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 18px;
     text-align: center;
     padding-inline: var(--gutter);
   }
   .count {
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: clamp(110px, 17vw, 240px);
-    line-height: 0.82;
-    letter-spacing: -0.06em;
-    background: linear-gradient(180deg, var(--navy-900), var(--blue-500));
+    font-size: clamp(120px, 18vw, 260px);
+    font-weight: 500;
+    line-height: 0.8;
+    letter-spacing: -0.07em;
+    background: var(--aurora);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
-  .label {
-    font-family: var(--font-display);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: -0.03em;
-    font-size: clamp(22px, 2.6vw, 36px);
-    margin: 12px 0 28px;
+  .center .h2 {
+    margin-bottom: 14px;
   }
   @media (max-width: 889px) {
     .cols {

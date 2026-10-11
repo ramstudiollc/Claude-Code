@@ -1,66 +1,78 @@
 ---
 // Cross-sell to the agency. Prices are the published "from" prices on ramstudiollc.com.
 import Button from './Button.astro';
+import Heading from './Heading.astro';
+import IconTile from './IconTile.astro';
 import { home } from '../data/content';
 const a = home.agency;
+const icons = [
+  { name: 'image', tone: 'blue' },
+  { name: 'box', tone: 'orange' },
+  { name: 'spark', tone: 'violet' },
+] as const;
 ---
 
 <section class="section">
-  <div class="wrap grid">
-    <div>
-      <p class="eyebrow" data-reveal>{a.eyebrow}</p>
-      <h2 class="h2" data-reveal>{a.title}</h2>
-      <p class="lead" data-reveal>{a.sub}</p>
-    </div>
-    <div class="panel side" data-reveal>
-      <ul>
-        {a.offers.map((o) => (
-          <li>
-            <span>{o.name}</span>
-            <strong>{o.price}</strong>
-          </li>
-        ))}
-      </ul>
-      <Button href={a.cta.href} block>{a.cta.label}</Button>
+  <div class="wrap">
+    <div class="band panel">
+      <Heading eyebrow={a.eyebrow} icon="spark" title={a.title} sub={a.sub} />
+      <div class="side" data-reveal>
+        <ul>
+          {a.offers.map((o, i) => (
+            <li>
+              <IconTile name={icons[i % 3].name} tone={icons[i % 3].tone} size="sm" />
+              <span>{o.name}</span>
+              <strong>{o.price}</strong>
+            </li>
+          ))}
+        </ul>
+        <Button href={a.cta.href} block>{a.cta.label}</Button>
+      </div>
     </div>
   </div>
 </section>
 
 <style>
-  .grid {
+  .band {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-columns: 1.15fr 0.85fr;
     gap: clamp(28px, 5vw, 72px);
     align-items: center;
-  }
-  .lead {
-    margin-top: 18px;
+    padding: clamp(28px, 5vw, 64px);
+    background: radial-gradient(60% 80% at 100% 0%, #fff1e6, transparent 60%), radial-gradient(60% 80% at 0% 100%, #eef0ff, transparent 60%), #fff;
   }
   .side {
-    padding: 28px;
     display: grid;
-    gap: 22px;
+    gap: 20px;
   }
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: grid;
+    gap: 10px;
   }
   li {
     display: flex;
-    justify-content: space-between;
-    gap: 12px;
-    padding: 16px 0;
-    border-bottom: 1px solid var(--line);
+    align-items: center;
+    gap: 14px;
+    padding: 12px 18px 12px 12px;
+    border-radius: 18px;
+    background: rgb(255 255 255 / 0.8);
+    box-shadow: 0 0 0 1px var(--line);
+    color: var(--ink);
   }
-  li:last-child {
-    border-bottom: 0;
+  li span {
+    flex: 1;
   }
-  strong {
+  li strong {
+    font-weight: 500;
+    font-family: var(--mono);
+    font-size: 14px;
     white-space: nowrap;
   }
   @media (max-width: 889px) {
-    .grid {
+    .band {
       grid-template-columns: 1fr;
     }
   }

@@ -21,14 +21,14 @@ const perks = [`Every mockup in the shop — ${stats.products} today`, 'Every ne
         <article class="plan">
           <h2 class="h3">Yearly pass</h2>
           <p class="muted">For studios and freelancers who mock up every week.</p>
-          {isSet(site.allAccess.yearlyPrice) ? <p class="price">{site.allAccess.yearlyPrice}</p> : <p class="soon"><span class="dot"></span>{home.pass.soon}</p>}
+          {isSet(site.allAccess.yearlyPrice) ? <p class="price">{site.allAccess.yearlyPrice}</p> : <p class="soon"><span class="dot"></span>{home.pricing.soon}</p>}
           <ul>{perks.map((k) => <li><Icon name="check" size={18} /> {k}</li>)}</ul>
           {yearly ? <Button href={site.allAccess.url} variant="blue" block>Join on Gumroad</Button> : <Button block>Launching soon</Button>}
         </article>
-        <article class="plan dark-band grain on-dark">
+        <article class="plan night on-dark">
           <h2 class="h3">Lifetime pass</h2>
           <p class="muted">Pay once. Every current and future mockup.</p>
-          {isSet(site.allAccess.lifetimePrice) ? <p class="price">{site.allAccess.lifetimePrice}</p> : <p class="soon"><span class="dot"></span>{home.pass.soon}</p>}
+          {isSet(site.allAccess.lifetimePrice) ? <p class="price">{site.allAccess.lifetimePrice}</p> : <p class="soon"><span class="dot"></span>{home.pricing.soon}</p>}
           <ul>{['Everything in the yearly pass', 'No renewals', 'All future releases'].map((k) => <li><Icon name="check" size={18} /> {k}</li>)}</ul>
           {lifetime ? <Button href={site.allAccess.lifetimeUrl} variant="light" block>Get lifetime access</Button> : <Button block>Launching soon</Button>}
         </article>
@@ -55,7 +55,7 @@ const perks = [`Every mockup in the shop — ${stats.products} today`, 'Every ne
     border-radius: var(--r-lg);
   }
   .price {
-    font-family: var(--font-display);
+    font-family: var(--font);
     font-weight: 700;
     font-size: 56px;
     letter-spacing: -0.05em;
@@ -86,7 +86,7 @@ const perks = [`Every mockup in the shop — ${stats.products} today`, 'Every ne
     align-items: center;
   }
   li :global(svg) {
-    color: var(--blue-500);
+    color: var(--blue);
     flex: none;
   }
   .on-dark li :global(svg) {

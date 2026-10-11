@@ -1,0 +1,214 @@
+---
+// Plans built from real catalogue data: free samples, single sets (lowest real price), All-Access (when live).
+import Heading from '../Heading.astro';
+import Button from '../Button.astro';
+import Icon from '../Icon.astro';
+import Orb from '../Orb.astro';
+import { home } from '../../data/content';
+import { site, isSet } from '../../config/site';
+import { products, freebies, stats } from '../../lib/catalog';
+const pr = home.pricing;
+const paid = products.filter((p) => p.price > 0);
+const from = paid.length ? Math.min(...paid.map((p) => p.price)) : null;
+const passReady = isSet(site.allAccess.url);
+
+const plans = [
+  {
+    name: 'Free samples',
+    tag: 'Try first',
+    orb: 'cool' as const,
+    price: '0',
+    per: '',
+    note: `${freebies.length} PSD files, $0 on Gumroad`,
+    items: ['2–4 scenes per mockup', 'Smart-object layers', '300 DPI print size', 'Commercial licence'],
+    cta: { label: 'Get free mockups', href: '/freebies/', variant: 'ghost' as const, icon: 'gift' },
+    show: freebies.length > 0,
+  },
+  {
+    name: 'Full sets',
+    tag: 'Most chosen',
+    orb: 'aurora' as const,
+    price: from ? String(from) : '',
+    per: 'from',
+    note: 'One-time payment per set',
+    items: ['Every scene and angle of the product', 'Smart objects, shadows, backgrounds', 'Free updates in your Gumroad library', 'Commercial licence'],
+    cta: { label: 'Browse full sets', href: '/mockups/', variant: 'dark' as const, icon: 'grid' },
+    show: from !== null,
+    featured: true,
+  },
+  {
+    name: 'All-Access Pass',
+    tag: passReady ? 'Best value' : 'Coming soon',
+    orb: 'warm' as const,
+    price: site.allAccess.yearlyPrice.replace(/[^0-9.]/g, ''),
+    per: '/year',
+    note: passReady ? 'Every mockup, every new release' : pr.soon,
+    items: [`All ${stats.products} mockups today`, 'Every new release while active', 'One licence for everything', 'Priority email support'],
+    cta: passReady ? { label: 'Join on Gumroad', href: site.allAccess.url, variant: 'blue' as const, icon: 'arrow' } : { label: 'See what is included', href: '/all-access/', variant: 'ghost' as const, icon: 'arrow' },
+    show: true,
+  },
+].filter((p) => p.show);
+---
+
+<section class="section pricing">
+  <div class="wrap">
+    <Heading eyebrow={pr.eyebrow} icon="card" title={pr.title} sub={pr.sub} align="center" />
+    <div class="plans panel" data-reveal style={`--n:${plans.length}`}>
+      {plans.map((p) => (
+        <article class:list={['plan', p.featured && 'featured']}>
+          <div class="top">
+            <div>
+              <h3 class="h3">{p.name}</h3>
+              <span class="badge">{p.tag}</span>
+            </div>
+            <Orb variant={p.orb} size={52} />
+          </div>
+          {p.price ? (
+            <p class="money price">
+              {p.per === 'from' && <span class="per pre">from</span>}
+              <span class="cur">$</span>
+              <span class="num">{p.price}</span>
+              {p.per && p.per !== 'from' && <span class="per">{p.per}</span>}
+            </p>
+          ) : (
+            <p class="soon"><span class="dot"></span>Price announced at launch</p>
+          )}
+          <p class="note muted small">{p.note}</p>
+          <p class="incl mono">What's included</p>
+          <ul>
+            {p.items.map((it) => (
+              <li><span class="tick"><Icon name="check" size={13} /></span>{it}</li>
+            ))}
+          </ul>
+          <Button href={p.cta.href} variant={p.cta.variant} icon={p.cta.icon} block>{p.cta.label}</Button>
+        </article>
+      ))}
+    </div>
+    <p class="pay mono" data-reveal>
+      <Icon name="check" size={14} /> {pr.payNote}
+    </p>
+  </div>
+</section>
+
+<style>
+  .pricing :global(.heading) {
+    margin-bottom: clamp(40px, 5vw, 64px);
+  }
+  .plans {
+    display: grid;
+    grid-template-columns: repeat(var(--n), minmax(0, 1fr));
+    padding: 12px;
+    gap: 12px;
+  }
+  .plan {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: clamp(24px, 3vw, 36px);
+    border-radius: 30px;
+  }
+  .plan + .plan {
+    box-shadow: -12px 0 0 -11px var(--line);
+  }
+  .featured {
+    background: radial-gradient(90% 60% at 100% 0%, #fff0e4, transparent 60%), radial-gradient(90% 70% at 0% 100%, #eee9ff, transparent 60%), var(--page);
+    box-shadow: inset 0 0 0 1px var(--line) !important;
+  }
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .top .badge {
+    margin-top: 10px;
+  }
+  .price {
+    font-size: clamp(54px, 5vw, 72px);
+    margin-top: 12px;
+  }
+  .per.pre {
+    align-self: flex-start;
+    margin: 0.5em 0.35em 0 0;
+  }
+  .soon {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 72px;
+    margin-top: 12px;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--aurora);
+    animation: ping 2s ease-out infinite;
+  }
+  @keyframes ping {
+    0% {
+      box-shadow: 0 0 0 0 rgb(255 92 154 / 0.6);
+    }
+    100% {
+      box-shadow: 0 0 0 12px rgb(255 92 154 / 0);
+    }
+  }
+  .incl {
+    margin-top: 10px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  ul {
+    list-style: none;
+    margin: 0 0 10px;
+    padding: 0;
+    display: grid;
+    gap: 12px;
+    flex: 1;
+    font-size: 15.5px;
+    color: var(--ink-2);
+  }
+  li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .tick {
+    display: grid;
+    place-items: center;
+    width: 22px;
+    height: 22px;
+    flex: none;
+    border-radius: 50%;
+    background: var(--page);
+    color: var(--ink);
+    box-shadow: inset 0 0 0 1px var(--line);
+  }
+  .featured .tick {
+    background: var(--ink);
+    color: #fff;
+  }
+  .pay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 28px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  @media (max-width: 1199px) {
+    .plans {
+      grid-template-columns: 1fr;
+    }
+    .plan + .plan {
+      box-shadow: 0 -12px 0 -11px var(--line);
+    }
+  }
+</style>

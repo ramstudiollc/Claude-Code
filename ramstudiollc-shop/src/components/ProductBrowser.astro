@@ -2,6 +2,7 @@
 // Library: search field + category chips + sort over a two-column grid of large cards.
 // Every card is rendered at build time (good for search engines); the script only filters and re-orders.
 import Icon from './Icon.astro';
+import IconTile from './IconTile.astro';
 import ProductCard from './ProductCard.astro';
 import { library } from '../data/content';
 import { activeCategories, type Product } from '../lib/catalog';
@@ -22,20 +23,20 @@ const { items, current } = Astro.props;
       <input type="search" placeholder={library.searchPlaceholder} data-q autocomplete="off" />
     </label>
     <nav class="chips" aria-label="Categories">
-      <a class="chip" href="/mockups/" aria-current={!current ? 'page' : undefined}><Icon name="grid" size={16} /> All</a>
+      <a class="chip" href="/mockups/" aria-current={!current ? 'page' : undefined}><IconTile name="grid" tone="ink" size="sm" /> All</a>
       {activeCategories.map((c) => (
         <a class="chip" href={`/category/${c.slug}/`} aria-current={current === c.slug ? 'page' : undefined}>
-          <Icon name={c.icon} size={16} /> {c.short} <span class="count">{c.count}</span>
+          <IconTile name={c.icon} tone={c.tone} size="sm" /> {c.short} <span class="count">{c.count}</span>
         </a>
       ))}
-      <a class="chip" href="/freebies/"><Icon name="gift" size={16} /> Free</a>
+      <a class="chip" href="/freebies/"><IconTile name="gift" tone="pink" size="sm" /> Free</a>
     </nav>
   </div>
 
   <div class="bar">
     <p class="count-line" aria-live="polite"><strong data-count>{items.length}</strong> mockups</p>
     <div class="right">
-      <button class="chip" type="button" data-free aria-pressed="false"><Icon name="gift" size={16} /> Free only</button>
+      <button class="chip plain" type="button" data-free aria-pressed="false"><Icon name="gift" size={16} /> Free only</button>
       <label class="sort">
         <span class="visually-hidden">Sort</span>
         <select data-sort>
@@ -114,16 +115,16 @@ const { items, current } = Astro.props;
     align-items: center;
     gap: 12px;
     width: min(100%, 600px);
-    height: 58px;
-    padding: 0 22px;
+    height: 60px;
+    padding: 0 24px;
     border-radius: var(--r-pill);
     background: var(--surface);
-    box-shadow: var(--shadow-soft), 0 0 0 1px var(--line);
-    color: var(--ink-500);
+    box-shadow: var(--shadow-md), 0 0 0 1px var(--line);
+    color: var(--muted);
     transition: box-shadow var(--t-fast);
   }
   .search:focus-within {
-    box-shadow: var(--shadow-soft), 0 0 0 2px var(--blue-500);
+    box-shadow: var(--shadow-md), 0 0 0 2px var(--blue);
   }
   .search input {
     flex: 1;
@@ -133,7 +134,7 @@ const { items, current } = Astro.props;
     background: none;
     font: inherit;
     font-size: 17px;
-    color: var(--navy-900);
+    color: var(--ink);
   }
   .chips {
     display: flex;

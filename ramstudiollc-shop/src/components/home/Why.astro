@@ -1,0 +1,78 @@
+---
+import Heading from '../Heading.astro';
+import IconTile from '../IconTile.astro';
+import { home } from '../../data/content';
+import { products } from '../../lib/catalog';
+const w = home.why;
+// Two strong product photos: prefer featured products, take a scene that is not the cover.
+const picks = [...products.filter((p) => p.featured), ...products].filter((p) => p.images.length > 1);
+const shots = [picks[0]?.images[1], picks.find((p) => p !== picks[0] && p.category !== picks[0].category)?.images[0]].filter(Boolean);
+---
+
+<section class="sheet why">
+  <div class="wrap section">
+    <Heading eyebrow={w.eyebrow} icon="spark" title={w.title} sub={w.sub} />
+    <div class="cards" data-stagger>
+      {w.items.map((it, i) => (
+        <article class="feat">
+          {shots[i] && (
+            <div class="img">
+              <img src={shots[i]} alt="" loading="lazy" width="1600" height="1067" />
+            </div>
+          )}
+          <div class="txt">
+            <IconTile name={it.icon} tone={it.tone as 'orange' | 'blue'} />
+            <div>
+              <h3 class="h3">{it.title}</h3>
+              <p class="muted">{it.text}</p>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .why :global(.heading) {
+    margin-bottom: clamp(40px, 5vw, 72px);
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  .img {
+    aspect-ratio: 4 / 4.4;
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    background: var(--surface-2);
+  }
+  .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.4s var(--ease-out);
+  }
+  .feat:hover .img img {
+    transform: scale(1.05);
+  }
+  .txt {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    margin-top: 24px;
+  }
+  .txt p {
+    margin-top: 6px;
+    max-width: 30em;
+  }
+  @media (max-width: 889px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+    .img {
+      aspect-ratio: 4 / 3;
+    }
+  }
+</style>

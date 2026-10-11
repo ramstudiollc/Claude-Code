@@ -29,7 +29,7 @@ const ogImage = new URL(image ?? site.logo.icon, site.domain).href;
     <link rel="canonical" href={canonical} />
     {noindex && <meta name="robots" content="noindex" />}
     <link rel="icon" href={site.logo.icon} type="image/png" />
-    <meta name="theme-color" content="#03041c" />
+    <meta name="theme-color" content="#07080f" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={site.shopName} />
     <meta property="og:title" content={fullTitle} />
@@ -39,7 +39,7 @@ const ogImage = new URL(image ?? site.logo.icon, site.domain).href;
     <meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
     <script is:inline>document.documentElement.classList.add('js');</script>
     {site.checkout === 'overlay' && <script is:inline src="https://gumroad.com/js/gumroad.js"></script>}
     <slot name="head" />
@@ -76,6 +76,26 @@ const ogImage = new URL(image ?? site.logo.icon, site.domain).href;
         { rootMargin: '0px 0px -8% 0px', threshold: 0.08 },
       );
       document.querySelectorAll('[data-reveal]').forEach((el) => io.observe(el));
+
+      // 1b. Count-up: [data-countup="68"] counts from 0 when it appears.
+      const counters = new IntersectionObserver((entries) => {
+        for (const e of entries) {
+          if (!e.isIntersecting) continue;
+          const el = e.target as HTMLElement;
+          const target = parseFloat(el.dataset.countup || '0');
+          const decimals = (el.dataset.countup || '').split('.')[1]?.length ?? 0;
+          const t0 = performance.now();
+          const tick = (t: number) => {
+            const k = Math.min(1, (t - t0) / 1400);
+            const eased = 1 - Math.pow(1 - k, 4);
+            el.textContent = (target * eased).toFixed(decimals);
+            if (k < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+          counters.unobserve(el);
+        }
+      }, { threshold: 0.4 });
+      document.querySelectorAll('[data-countup]').forEach((el) => counters.observe(el));
 
       // 2. Scroll-linked motion: [data-speed="0.2"] moves at a different pace from the page.
       const movers = [...document.querySelectorAll<HTMLElement>('[data-speed]')];

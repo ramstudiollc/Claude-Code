@@ -1,0 +1,12 @@
+---
+// Section label: small icon + mono uppercase text in the RAM aurora gradient.
+import Icon from './Icon.astro';
+import { fill } from '../lib/catalog';
+interface Props {
+  text: string;
+  icon?: string;
+}
+const { text, icon = 'spark' } = Astro.props;
+---
+
+<p class="eyebrow" data-reveal><Icon name={icon} size={16} /><span class="txt">{fill(text)}</span></p>

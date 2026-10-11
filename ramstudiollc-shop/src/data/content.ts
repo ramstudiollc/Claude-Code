@@ -9,71 +9,60 @@ export const home = {
       'Smart-object Photoshop mockups by RAM Studio: packaging, branding, apparel and device scenes at 300 DPI. Free samples and full sets on Gumroad.',
   },
   hero: {
-    eyebrow: 'Mockup shop by RAM Studio',
-    lines: ['Packaging', 'mockups', 'that sell'],
-    pillAfterLine: 0, // a round product image sits after this line of the headline
-    sub: 'Smart-object PSD scenes made by a packaging design studio. Drop in your artwork, export, and show a finished product.',
-    primary: { label: 'Browse {products} mockups', href: '/mockups/' },
-    secondary: { label: 'Get free mockups', href: '/freebies/' },
-    chips: ['300 DPI', 'Smart objects', 'Commercial use'],
+    eyebrow: 'Mockups from a packaging studio',
+    title: ['Mockups that make', 'your design look real.'],
+    sub: 'Smart-object PSD scenes for boxes, bags, apparel and screens. Drop in your artwork, export, and show a finished product.',
+    primary: { label: 'Get free mockups', href: '/freebies/' },
+    secondary: { label: 'Browse library', href: '/mockups/' },
   },
-  categories: {
-    eyebrow: 'Shop by category',
-    title: 'Find the right object fast',
-    sub: 'Every mockup sits in one category. Pick one and filter the rest.',
-  },
-  values: {
+  why: {
     eyebrow: 'Why our files',
-    title: 'Made by people who design real packaging',
+    title: ['Designed by people', 'who ship real packaging.'],
+    sub: 'Every scene is built by the RAM Studio team that designs packaging for brands — real materials, real light, real folds.',
     items: [
-      { icon: 'layers', title: 'Smart objects', text: 'Double-click the layer, paste your design, save. Labels, lids and sides update in place.' },
-      { icon: 'size', title: 'Print-size files', text: 'Scenes up to 6000 × 4000 px at 300 DPI — sharp on screen, in decks and in print.' },
-      { icon: 'license', title: 'Commercial use', text: 'Use the renders in client work, shop listings and ads. One licence, no extra fees.' },
+      { icon: 'layers', tone: 'orange', title: 'Built for real products', text: 'Correct proportions, true-to-life materials and lighting that matches a photo shoot.' },
+      { icon: 'size', tone: 'blue', title: 'Edit in seconds', text: 'Smart objects, separate shadows and editable backgrounds. Paste, save, export.' },
     ],
+  },
+  features: {
+    eyebrow: 'Inside every file',
+    title: ['Small details,', 'big difference.'],
+    sub: 'What you get in each PSD, free or paid.',
+    layers: ['Your design · Smart Object', 'Highlights', 'Shadows', 'Background colour'],
+    smart: { title: 'Smart-object layers', text: 'Double-click, paste your artwork, save. Every side and label updates.' },
+    print: { title: 'Print-size files', text: 'Scenes up to 6000 × 4000 px at 300 DPI.' },
+    license: { title: 'Commercial licence', text: 'Use the renders in client work, listings and ads.' },
+    free: { title: '{free} free samples', text: 'Full-quality PSDs for $0. Try before you buy.' },
+    gumroad: { title: 'Instant delivery', text: 'Gumroad emails the files and keeps them in your library.' },
+    monthly: { title: 'New sets every month', text: 'Subscribe on Gumroad and hear about new releases first.' },
+  },
+  wall: {
+    count: '{images}',
+    title: ['preview scenes', 'and growing.'],
+    cta: { label: 'Open the gallery', href: '/gallery/' },
   },
   latest: {
     eyebrow: 'New in',
-    title: 'Latest releases',
-    sub: 'Fresh scenes from the studio. Free samples come with a full paid set.',
-    cta: { label: 'See all mockups', href: '/mockups/' },
+    title: ['Fresh from', 'the studio.'],
+    sub: 'The newest mockups. Every free sample comes from a larger paid set.',
+    cta: { label: 'View all mockups', href: '/mockups/' },
   },
-  freebies: {
-    eyebrow: 'Free downloads',
-    title: 'Start with a free mockup',
-    sub: '{free} free PSD samples. Enter $0 on Gumroad and the download starts.',
-    cta: { label: 'All free mockups', href: '/freebies/' },
+  reviews: {
+    eyebrow: 'Verified on Gumroad',
+    title: ['Rated {rating} out of 5', 'by real buyers.'],
+    sub: 'Average of {reviews} verified ratings on our Gumroad store.',
   },
-  wall: {
-    eyebrow: 'Preview scenes',
-    count: '{images}',
-    label: 'preview scenes and growing',
-    cta: { label: 'Open the gallery', href: '/gallery/' },
-  },
-  flow: {
-    eyebrow: 'How buying works',
-    title: 'Browse here. Download from Gumroad.',
-    steps: [
-      { icon: 'search', title: 'Pick a mockup', text: 'Filter by category, check the previews and the file details, then press the button.' },
-      { icon: 'card', title: 'Pay on Gumroad', text: 'Checkout opens on Gumroad. Pay by card or PayPal — or enter $0 for free files.' },
-      { icon: 'download', title: 'Download now', text: 'The files arrive by email and stay in your Gumroad Library for later.' },
-    ],
-  },
-  proof: {
-    eyebrow: 'Verified reviews',
-    title: 'Rated {rating} out of 5',
-    sub: 'Average of {reviews} verified buyer reviews on Gumroad.',
-  },
-  pass: {
-    eyebrow: 'All-Access Pass',
-    title: 'Every mockup, one membership',
-    sub: 'One Gumroad membership will unlock the full library and every new release.',
+  pricing: {
+    eyebrow: 'Plans & pricing',
+    title: ['Start free,', 'pay only for what you need.'],
+    sub: 'Download free samples, buy full sets one by one, or wait for the All-Access Pass.',
+    payNote: 'Payments are handled securely by Gumroad · card · PayPal',
     soon: 'Launching when the library passes 40 paid sets.',
-    cta: { label: 'See what is included', href: '/all-access/' },
   },
   agency: {
     eyebrow: 'Need something custom?',
-    title: 'Packaging and 3D made for your brand',
-    sub: 'The studio behind this shop designs packaging, labels and 3D product renders for clients. Every project includes 100% commercial rights.',
+    title: ['Your product,', 'mocked up by our studio.'],
+    sub: 'The team behind this shop designs packaging, labels and 3D product renders for brands. Every project includes 100% commercial rights.',
     offers: [
       { name: 'Custom e-commerce mockup', price: 'from $100' },
       { name: 'Packaging & label design', price: 'from $250' },
@@ -84,8 +73,8 @@ export const home = {
 };
 
 export const faq = {
-  eyebrow: 'Help',
-  title: 'Questions and answers',
+  eyebrow: 'We are here to help',
+  title: ['Questions', 'and answers.'],
   sub: 'Short answers about downloads, licences and Gumroad.',
   items: [
     { icon: 'cart', q: 'Why does checkout open on Gumroad?', a: 'Gumroad is our payment and delivery partner. It takes the card or PayPal payment, sends the receipt and hosts the download. This site shows the catalogue.' },

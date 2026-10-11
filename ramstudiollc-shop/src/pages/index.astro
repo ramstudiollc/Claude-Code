@@ -1,14 +1,13 @@
 ---
 import Base from '../layouts/Base.astro';
 import Hero from '../components/home/Hero.astro';
+import Why from '../components/home/Why.astro';
 import CategoryRail from '../components/home/CategoryRail.astro';
-import Values from '../components/home/Values.astro';
+import Features from '../components/home/Features.astro';
 import ProductSection from '../components/home/ProductSection.astro';
-import FreebiesCarousel from '../components/home/FreebiesCarousel.astro';
 import GalleryWall from '../components/home/GalleryWall.astro';
-import BuyFlow from '../components/BuyFlow.astro';
-import Proof from '../components/home/Proof.astro';
-import PassBand from '../components/home/PassBand.astro';
+import Reviews from '../components/home/Reviews.astro';
+import Pricing from '../components/home/Pricing.astro';
 import AgencyBand from '../components/AgencyBand.astro';
 import FaqList from '../components/FaqList.astro';
 import { home } from '../data/content';
@@ -20,14 +19,13 @@ const latest = [...products.filter((p) => p.featured), ...products.filter((p) =>
 
 <Base title={home.seo.title} description={home.seo.description} headerTone="dark">
   <Hero />
+  <Why />
   <CategoryRail />
-  <ProductSection eyebrow={home.latest.eyebrow} title={home.latest.title} sub={home.latest.sub} cta={home.latest.cta} items={latest} />
-  <Values />
-  <FreebiesCarousel />
+  <Features />
+  <ProductSection eyebrow={home.latest.eyebrow} icon="spark" title={home.latest.title} sub={home.latest.sub} cta={home.latest.cta} items={latest} />
   <GalleryWall />
-  <BuyFlow />
-  <Proof />
-  <PassBand />
-  <AgencyBand />
+  <Reviews />
+  <Pricing />
   <FaqList />
+  <AgencyBand />
 </Base>

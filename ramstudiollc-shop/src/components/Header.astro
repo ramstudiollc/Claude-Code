@@ -1,11 +1,12 @@
 ---
 import Icon from './Icon.astro';
+import IconTile from './IconTile.astro';
 import Button from './Button.astro';
 import { nav, site, isSet } from '../config/site';
 import { activeCategories, stats } from '../lib/catalog';
 
 interface Props {
-  /** 'dark' = header sits on a dark hero (white logo); 'light' = on the light page. */
+  /** 'dark' = page opens on a dark hero: header starts transparent with white text. */
   tone?: 'dark' | 'light';
 }
 const { tone = 'light' } = Astro.props;
@@ -15,76 +16,78 @@ const active = (href: string) => path === href || (href !== '/' && path.startsWi
 
 {isSet(site.announcement.text) && (
   <div class="announce">
-    <div class="wrap announce-in">
-      {isSet(site.announcement.href) ? (
-        <a href={site.announcement.href} rel="noopener">{site.announcement.text} <Icon name="arrow-up" size={14} /></a>
-      ) : (
-        <span>{site.announcement.text}</span>
-      )}
-    </div>
+    {isSet(site.announcement.href) ? (
+      <a href={site.announcement.href} rel="noopener"><span class="dot"></span>{site.announcement.text}<Icon name="arrow-up" size={13} /></a>
+    ) : (
+      <span><span class="dot"></span>{site.announcement.text}</span>
+    )}
   </div>
 )}
 
 <header class:list={['header', `tone-${tone}`]} data-header>
-  <div class="wrap bar">
-    <a href="/" class="logo" aria-label={`${site.name} shop — home`}>
-      <img src={site.logo.light} alt="" width="150" height="27" class="logo-light" />
-      <img src={site.logo.dark} alt="" width="150" height="27" class="logo-dark" />
-      <span class="shop-tag">Shop</span>
-    </a>
+  <div class="wrap">
+    <div class="bar">
+      <a href="/" class="logo" aria-label={`${site.name} shop — home`}>
+        <img src={site.logo.light} alt="" width="150" height="27" class="logo-light" />
+        <img src={site.logo.dark} alt="" width="150" height="27" class="logo-dark" />
+      </a>
+      <span class="divider" aria-hidden="true"></span>
 
-    <nav class="nav" aria-label="Main">
-      {nav.map((item) =>
-        item.menu === 'categories' ? (
-          <div class="has-menu">
-            <a href={item.href} class="nav-link" aria-current={active(item.href) ? 'page' : undefined}>
-              {item.label} <Icon name="chevron" size={16} />
-            </a>
-            <div class="menu" role="group" aria-label="Categories">
-              <div class="menu-in">
-                {activeCategories.map((c) => (
-                  <a href={`/category/${c.slug}/`} class="menu-item">
-                    <span class="menu-ico"><Icon name={c.icon} size={20} /></span>
-                    <span>
-                      <strong>{c.name}</strong>
-                      <small>{c.count} {c.count === 1 ? 'mockup' : 'mockups'}</small>
-                    </span>
+      <nav class="nav" aria-label="Main">
+        {nav.map((item) =>
+          item.menu === 'categories' ? (
+            <div class="has-menu">
+              <a href={item.href} class="nav-link" aria-current={active(item.href) ? 'page' : undefined}>
+                {item.label} <Icon name="chevron" size={15} />
+              </a>
+              <div class="menu" role="group" aria-label="Categories">
+                <div class="menu-in">
+                  <div class="menu-grid">
+                    {activeCategories.map((c) => (
+                      <a href={`/category/${c.slug}/`} class="menu-item">
+                        <IconTile name={c.icon} tone={c.tone} size="sm" />
+                        <span>
+                          <strong>{c.name}</strong>
+                          <small>{c.count} {c.count === 1 ? 'mockup' : 'mockups'}</small>
+                        </span>
+                      </a>
+                    ))}
+                  </div>
+                  <a href="/mockups/" class="menu-foot">
+                    <span>Browse all {stats.products} mockups</span>
+                    <Icon name="arrow" size={16} />
                   </a>
-                ))}
-                <a href="/mockups/" class="menu-item menu-all">
-                  <span class="menu-ico"><Icon name="grid" size={20} /></span>
-                  <span>
-                    <strong>All mockups</strong>
-                    <small>{stats.products} in the shop</small>
-                  </span>
-                </a>
+                </div>
               </div>
             </div>
-          </div>
-        ) : (
-          <a href={item.href} class="nav-link" aria-current={active(item.href) ? 'page' : undefined}>{item.label}</a>
-        ),
-      )}
-    </nav>
+          ) : (
+            <a href={item.href} class="nav-link" aria-current={active(item.href) ? 'page' : undefined}>{item.label}</a>
+          ),
+        )}
+      </nav>
 
-    <div class="actions">
-      <a href="/mockups/#search" class="icon-btn search-btn" aria-label="Search mockups"><Icon name="search" /></a>
-      <Button href="/freebies/" variant="blue" size="sm" class="cta">Free mockups</Button>
-      <button class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-open>
-        <Icon name="menu" />
-      </button>
+      <div class="actions">
+        <a href="/mockups/#search" class="icon-btn plain search-btn" aria-label="Search mockups"><Icon name="search" /></a>
+        <Button href="/freebies/" size="sm" class="cta" icon="gift">Free mockups</Button>
+        <button class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-open>
+          <Icon name="menu" />
+        </button>
+      </div>
     </div>
   </div>
 
   <div class="mobile" id="mobile-menu" hidden data-menu>
     <div class="wrap mobile-in">
-      <button class="icon-btn close" type="button" aria-label="Close menu" data-menu-close><Icon name="close" /></button>
+      <div class="m-top">
+        <img src={site.logo.light} alt={site.legalName} width="140" height="25" />
+        <button class="icon-btn close" type="button" aria-label="Close menu" data-menu-close><Icon name="close" /></button>
+      </div>
       <a href="/mockups/" class="m-link">All mockups <span>{stats.products}</span></a>
       {activeCategories.map((c) => (
-        <a href={`/category/${c.slug}/`} class="m-sub">{c.name} <span>{c.count}</span></a>
+        <a href={`/category/${c.slug}/`} class="m-sub"><IconTile name={c.icon} tone={c.tone} size="sm" /> {c.name} <span>{c.count}</span></a>
       ))}
       {nav.filter((n) => !n.menu).map((n) => <a href={n.href} class="m-link">{n.label}</a>)}
-      <Button href="/freebies/" variant="blue" block>Get free mockups</Button>
+      <Button href="/freebies/" variant="light" block icon="gift">Get free mockups</Button>
     </div>
   </div>
 </header>
@@ -94,7 +97,7 @@ const active = (href: string) => path === href || (href !== '/' && path.startsWi
   const panel = document.querySelector<HTMLElement>('[data-menu]');
   const openBtn = document.querySelector<HTMLButtonElement>('[data-menu-open]');
   const closeBtn = document.querySelector<HTMLButtonElement>('[data-menu-close]');
-  const onScroll = () => header?.classList.toggle('is-scrolled', window.scrollY > 24);
+  const onScroll = () => header?.classList.toggle('is-scrolled', window.scrollY > 20);
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
   const setMenu = (open: boolean) => {
@@ -111,74 +114,72 @@ const active = (href: string) => path === href || (href !== '/' && path.startsWi
 
 <style>
   .announce {
-    background: var(--navy-950);
-    color: #dfe6ff;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.04em;
+    position: relative;
+    z-index: 51;
+    background: var(--night);
+    color: rgb(255 255 255 / 0.8);
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
   }
-  .announce-in {
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .announce a {
+  .announce a,
+  .announce > span {
     display: inline-flex;
-    gap: 6px;
     align-items: center;
+    gap: 10px;
+    height: 40px;
     text-decoration: none;
   }
   .announce a:hover {
     color: #fff;
+  }
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--aurora);
+    box-shadow: 0 0 10px rgb(255 92 154 / 0.8);
   }
 
   .header {
     position: sticky;
     top: 0;
     z-index: 50;
-    transition: background var(--t) var(--ease), box-shadow var(--t) var(--ease), color var(--t);
+    padding-top: 12px;
   }
   .tone-dark {
     position: absolute;
     left: 0;
     right: 0;
     top: 40px;
-    color: #fff;
   }
   .tone-dark.is-scrolled {
     position: fixed;
     top: 0;
   }
-  .is-scrolled {
-    background: rgb(255 255 255 / 0.82);
-    backdrop-filter: saturate(1.4) blur(14px);
-    box-shadow: 0 1px 0 var(--line);
-    color: var(--navy-900);
-  }
-  .tone-light {
-    background: rgb(244 246 251 / 0.85);
-    backdrop-filter: saturate(1.4) blur(14px);
-  }
   .bar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 24px;
-    height: 84px;
-    transition: height var(--t) var(--ease);
-  }
-  .is-scrolled .bar {
+    gap: 20px;
     height: 68px;
+    padding: 0 12px 0 24px;
+    border-radius: 22px;
+    transition: background var(--t) var(--ease), box-shadow var(--t) var(--ease), color var(--t);
   }
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
+  .tone-light .bar,
+  .is-scrolled .bar {
+    background: rgb(255 255 255 / 0.86);
+    backdrop-filter: saturate(1.6) blur(18px);
+    box-shadow: 0 0 0 1px var(--line), 0 18px 40px -24px rgb(18 22 48 / 0.35);
+    color: var(--ink);
+  }
+  .tone-dark:not(.is-scrolled) .bar {
+    color: #fff;
   }
   .logo img {
-    height: 27px;
+    height: 26px;
     width: auto;
   }
   .logo-light {
@@ -190,36 +191,33 @@ const active = (href: string) => path === href || (href !== '/' && path.startsWi
   .tone-dark:not(.is-scrolled) .logo-dark {
     display: none;
   }
-  .shop-tag {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    padding: 4px 8px;
-    border-radius: var(--r-pill);
-    background: var(--blue-500);
-    color: #fff;
+  .divider {
+    width: 1px;
+    height: 22px;
+    background: currentColor;
+    opacity: 0.18;
   }
   .nav {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 2px;
+    flex: 1;
   }
   .nav-link {
     display: inline-flex;
     align-items: center;
     gap: 4px;
     height: 40px;
-    padding: 0 16px;
+    padding: 0 14px;
     border-radius: var(--r-pill);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15.5px;
     font-weight: 500;
     transition: background var(--t-fast) var(--ease);
   }
   .nav-link:hover,
   .nav-link[aria-current='page'] {
-    background: rgb(20 26 46 / 0.07);
+    background: rgb(11 13 23 / 0.06);
   }
   .tone-dark:not(.is-scrolled) .nav-link:hover,
   .tone-dark:not(.is-scrolled) .nav-link[aria-current='page'] {
@@ -231,35 +229,39 @@ const active = (href: string) => path === href || (href !== '/' && path.startsWi
   .menu {
     position: absolute;
     top: 100%;
-    left: 50%;
-    padding-top: 12px;
-    transform: translate(-50%, 8px);
+    left: -40px;
+    padding-top: 14px;
+    transform: translateY(10px) scale(0.98);
+    transform-origin: top left;
     opacity: 0;
     visibility: hidden;
-    transition: opacity var(--t-fast) var(--ease), transform var(--t) var(--ease), visibility var(--t-fast);
+    transition: opacity var(--t-fast) var(--ease), transform var(--t) var(--spring), visibility var(--t-fast);
   }
   .has-menu:hover .menu,
   .has-menu:focus-within .menu {
     opacity: 1;
     visibility: visible;
-    transform: translate(-50%, 0);
+    transform: none;
   }
   .menu-in {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(220px, 1fr));
-    gap: 4px;
+    width: 560px;
     padding: 10px;
-    border-radius: var(--r-lg);
+    border-radius: 24px;
     background: #fff;
-    color: var(--navy-900);
-    box-shadow: var(--shadow-panel), 0 0 0 1px var(--line);
+    color: var(--ink);
+    box-shadow: 0 0 0 1px var(--line), var(--shadow-xl);
+  }
+  .menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
   }
   .menu-item {
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 10px 12px;
-    border-radius: var(--r-md);
+    padding: 10px;
+    border-radius: 16px;
     text-decoration: none;
     transition: background var(--t-fast);
   }
@@ -269,31 +271,45 @@ const active = (href: string) => path === href || (href !== '/' && path.startsWi
   .menu-item strong {
     display: block;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
+    color: var(--ink);
   }
   .menu-item small {
-    font-size: 13px;
-    color: var(--ink-500);
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
   }
-  .menu-ico {
-    display: grid;
-    place-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 12px;
+  .menu-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    padding: 14px 16px;
+    border-radius: 16px;
     background: var(--page);
-    color: var(--blue-500);
-    flex: none;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: background var(--t-fast);
+  }
+  .menu-foot:hover {
+    background: var(--chip);
   }
   .actions {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
   }
-  .tone-dark:not(.is-scrolled) .icon-btn {
-    background: var(--glass-dark);
-    border-color: var(--line-dark);
-    color: #fff;
+  .plain {
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+    color: inherit;
+  }
+  .tone-dark:not(.is-scrolled) .cta {
+    --bg: linear-gradient(180deg, #ffffff 0%, #eef0f5 100%);
+    --fg: var(--ink);
+    --ring: transparent;
   }
   .menu-btn {
     display: none;
@@ -303,54 +319,59 @@ const active = (href: string) => path === href || (href !== '/' && path.startsWi
     position: fixed;
     inset: 0;
     z-index: 60;
-    background: var(--navy-950);
+    background: var(--night);
     color: #fff;
     overflow-y: auto;
   }
   .mobile-in {
     display: flex;
     flex-direction: column;
-    gap: 4px;
-    padding-top: 84px;
+    gap: 2px;
+    padding-top: 20px;
     padding-bottom: 40px;
   }
+  .m-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  .m-top img {
+    height: 25px;
+    width: auto;
+  }
   .close {
-    position: absolute;
-    top: 18px;
-    right: var(--gutter);
-    background: var(--glass-dark) !important;
+    background: rgb(255 255 255 / 0.1) !important;
     color: #fff !important;
-    border-color: var(--line-dark) !important;
   }
   .m-link,
   .m-sub {
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
+    gap: 12px;
     text-decoration: none;
     padding: 14px 0;
-    border-bottom: 1px solid var(--line-dark);
+    border-bottom: 1px solid rgb(255 255 255 / 0.08);
   }
   .m-link {
-    font-family: var(--font-display);
-    font-size: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
+    justify-content: space-between;
+    font-size: 28px;
+    font-weight: 500;
     letter-spacing: -0.03em;
   }
   .m-sub {
-    padding-left: 16px;
     font-size: 17px;
-    color: #c9cfe3;
+    color: rgb(255 255 255 / 0.8);
   }
-  .m-link span,
-  .m-sub span {
-    font-family: var(--font-text);
-    font-size: 14px;
-    color: #8db8ff;
+  .m-sub span,
+  .m-link span {
+    margin-left: auto;
+    font-family: var(--mono);
+    font-size: 13px;
+    color: rgb(255 255 255 / 0.5);
   }
   .mobile :global(.btn) {
-    margin-top: 24px;
+    margin-top: 28px;
   }
   :global(html.menu-open) {
     overflow: hidden;
@@ -358,15 +379,20 @@ const active = (href: string) => path === href || (href !== '/' && path.startsWi
 
   @media (max-width: 889px) {
     .nav,
+    .divider,
     .cta,
     .search-btn {
       display: none;
+    }
+    .actions {
+      margin-left: auto;
     }
     .menu-btn {
       display: inline-grid;
     }
     .bar {
-      height: 68px;
+      height: 60px;
+      padding-left: 18px;
     }
   }
 </style>
