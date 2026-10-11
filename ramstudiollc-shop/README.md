@@ -6,7 +6,7 @@ The RAM Studio mockup shop. Customers **browse here** and **buy on Gumroad**.
 - Every **Buy** button opens the product on Gumroad. Gumroad takes the payment and delivers the files.
 - Products come from your Gumroad account with one command: `npm run sync:gumroad`.
 
-📄 Read first: [docs/01-ANALYSIS.md](docs/01-ANALYSIS.md) (how the Asylab model works) and [docs/02-PLAN.md](docs/02-PLAN.md) (what we build, in what order).
+📄 Read first: [docs/00-HANDOFF.md](docs/00-HANDOFF.md) (current task and rules), [docs/01-ANALYSIS.md](docs/01-ANALYSIS.md) (how the Asylab model works) and [docs/02-PLAN.md](docs/02-PLAN.md) (what we build, in what order).
 
 ---
 
@@ -70,6 +70,8 @@ Two options, both use the same GitHub repo:
 | `npm run preview` | Serve the built `dist/` folder to check it |
 | `npm run sync:gumroad` | Download all your Gumroad products into `src/data/products.json` |
 | `npm run sync:gumroad:dry` | Show what the sync would write, change nothing |
+| `npm run audit -- <url>` | Measure a website (fonts, sizes, spacing, sections, motion, links) → `audit/<host>/report.md` |
+| `npm run qc -- --ref <ref report.json> --ours <our report.json> --map tools/audit/qc-map.json` | Score our site against the reference; 95% = pass |
 
 ## Connect your Gumroad
 

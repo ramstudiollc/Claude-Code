@@ -13,7 +13,9 @@
     "build": "astro build",
     "preview": "astro preview",
     "sync:gumroad": "node scripts/sync-gumroad.mjs",
-    "sync:gumroad:dry": "node scripts/sync-gumroad.mjs --dry-run"
+    "sync:gumroad:dry": "node scripts/sync-gumroad.mjs --dry-run",
+    "audit": "node tools/audit/audit.mjs",
+    "qc": "node tools/audit/qc.mjs"
   },
   "dependencies": {
     "astro": "^7.3.8"

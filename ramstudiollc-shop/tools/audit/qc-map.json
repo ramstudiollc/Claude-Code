@@ -1,0 +1,11 @@
+{
+  "_note": "Maps reference URLs to ours for QC. Exact paths win over /* patterns. Update after the audit shows the real asylab URLs. 'fonts' maps a reference font family to the RAM brand font that replaces it.",
+  "pages": {
+    "/": "/",
+    "/resources": "/mockups",
+    "/resources/freebies": "/freebies",
+    "/resources/*": "/mockups/*",
+    "/post/*": "/blog/*"
+  },
+  "fonts": {}
+}
