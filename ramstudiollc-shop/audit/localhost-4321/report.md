@@ -1,5 +1,5 @@
 # Site audit — http://localhost:4321
-_Measured 2026-10-11T11:33:08.608Z → 2026-10-11T11:42:32.815Z. 24 URLs found, 15 audited in depth._
+_Measured 2026-10-11T12:06:06.839Z → 2026-10-11T12:15:32.775Z. 24 URLs found, 15 audited in depth._
 
 > Measurements only. Use them to rebuild layout, type, spacing and motion with our own code, text and images.
 
@@ -91,7 +91,7 @@ Radii: 18px (77) · 999px (49) · 50% (43) · 16px (42) · 24px (27) · 2px (24)
 
 Shadows: `rgba(18, 22, 48, 0.04) 0px 2px 4px 0px, rgba(18, 22, 48, 0.18) 0px 24px 48px -24px` (67) · `rgba(0, 0, 0, 0.7) 0px 30px 50px -20px, rgba(255, 255, 255, 0.06) 0px 0px 0px 1px` (60) · `rgba(255, 255, 255, 0.55) 0px 1.5px 0px 0px inset, rgba(0, 0, 0, 0.18) 0px -4px 8px 0px inset, rgba(255, 255, 255, 0.12) 0px 0px 0px 1px ins` (21) · `rgba(11, 13, 23, 0.08) 0px 0px 0px 1px` (14) · `rgba(11, 13, 23, 0.08) 0px 0px 0px 1px inset` (14) · `rgba(18, 22, 48, 0.05) 0px 1px 2px 0px, rgba(18, 22, 48, 0.08) 0px 4px 12px -4px, rgba(11, 13, 23, 0.08) 0px 0px 0px 1px` (8)
 
-Filters: drop-shadow(rgba(0, 0, 0, 0.25) 0px 1.5px 1.5px) (21) · blur(0px) (4) · drop-shadow(rgba(0, 0, 0, 0.4) 0px 4px 6px) (1) · hue-rotate(30.1651deg) (1) · Blend modes: —
+Filters: drop-shadow(rgba(0, 0, 0, 0.25) 0px 1.5px 1.5px) (21) · blur(0px) (4) · drop-shadow(rgba(0, 0, 0, 0.4) 0px 4px 6px) (1) · Blend modes: —
 
 Glass / backdrop-filter elements:
 | Element | Backdrop | Background | Border | Radius | Size |
@@ -141,13 +141,13 @@ First viewport at 0.3s, 0.8s, 1.5s, 2.5s, 4s after navigation — compare frames
 | h2.h2 | div | {"opacity":"0","transform":"matrix(1, 0, 0, 1, 0, 40)"} | {"opacity":"1","transform":"none"} | 1s, 1s cubic-bezier(0.16, 1, 0.3, 1), cubic-bezier(0.16, 1, 0.3, 1) delay 0s | — |
 | p.lead | div | {"opacity":"0","transform":"matrix(1, 0, 0, 1, 0, 40)"} | {"opacity":"1","transform":"none"} | 1s, 1s cubic-bezier(0.16, 1, 0.3, 1), cubic-bezier(0.16, 1, 0.3, 1) delay 0s | — |
 | article.tile | div | {"opacity":"0","transform":"matrix(1, 0, 0, 1, 0, 40)"} | {"opacity":"1","transform":"none"} | 0.45s, 0.45s cubic-bezier(0.22, 0.8, 0.24, 1), cubic-bezier(0.22, 0.8, 0.24, 1) delay 0s, 0s | — |
-| div.cursor | div | {"transform":"matrix(1, 0, 0, 1, -1.69592, 0.94218)"} | {"transform":"matrix(1, 0, 0, 1, -0.456472, 0.253596)"} | 0s ease delay 0s | point 3.2s cubic-bezier(0.22, 0.8, 0.24, 1) delay 0s |
+| div.cursor | div | {"transform":"matrix(1, 0, 0, 1, -1.91421, 1.06345)"} | {"transform":"matrix(1, 0, 0, 1, -0.308194, 0.171219)"} | 0s ease delay 0s | point 3.2s cubic-bezier(0.22, 0.8, 0.24, 1) delay 0s |
 | article.tile | div | {"opacity":"0","transform":"matrix(1, 0, 0, 1, 0, 40)"} | {"opacity":"1","transform":"none"} | 0.45s, 0.45s cubic-bezier(0.22, 0.8, 0.24, 1), cubic-bezier(0.22, 0.8, 0.24, 1) delay 0s, 0s | — |
 | article.tile | div | {"opacity":"0","transform":"matrix(1, 0, 0, 1, 0, 40)"} | {"opacity":"1","transform":"none"} | 0.45s, 0.45s cubic-bezier(0.22, 0.8, 0.24, 1), cubic-bezier(0.22, 0.8, 0.24, 1) delay 0s, 0s | — |
 | article.tile | div | {"opacity":"0","transform":"matrix(1, 0, 0, 1, 0, 40)"} | {"opacity":"1","transform":"none"} | 0.45s, 0.45s cubic-bezier(0.22, 0.8, 0.24, 1), cubic-bezier(0.22, 0.8, 0.24, 1) delay 0s, 0s | — |
 | article.tile | div | {"opacity":"0","transform":"matrix(1, 0, 0, 1, 0, 40)"} | {"opacity":"1","transform":"none"} | 0.45s, 0.45s cubic-bezier(0.22, 0.8, 0.24, 1), cubic-bezier(0.22, 0.8, 0.24, 1) delay 0s, 0s | — |
 | article.tile | div | {"opacity":"0","transform":"matrix(1, 0, 0, 1, 0, 40)"} | {"opacity":"1","transform":"none"} | 0.45s, 0.45s cubic-bezier(0.22, 0.8, 0.24, 1), cubic-bezier(0.22, 0.8, 0.24, 1) delay 0s, 0s | — |
-| span.orb | article | {"transform":"matrix(0.366545, 0.9304, -0.9304, 0.366545, 0, 0)","filter":"hue-rotate(7.61081deg)"} | {"transform":"matrix(0.00850524, -0.999964, 0.999964, 0.00850524, 0, 0)","filter":"hue-rotate(30.0541deg)"} | 0s ease delay 0s | orb-spin 12s linear delay 0s |
+| span.orb | article | {"transform":"matrix(0.38273, 0.92386, -0.92386, 0.38273, 0, 0)"} | {"transform":"matrix(0.0521467, -0.998639, 0.998639, 0.0521467, 0, 0)"} | 0s ease delay 0s | orb-spin 12s linear delay 0s |
 | p.eyebrow | div | {"opacity":"0","transform":"matrix(1, 0, 0, 1, 0, 40)"} | {"opacity":"1","transform":"none"} | 1s, 1s cubic-bezier(0.16, 1, 0.3, 1), cubic-bezier(0.16, 1, 0.3, 1) delay 0s | — |
 | h2.h2 | div | {"opacity":"0","transform":"matrix(1, 0, 0, 1, 0, 40)"} | {"opacity":"1","transform":"none"} | 1s, 1s cubic-bezier(0.16, 1, 0.3, 1), cubic-bezier(0.16, 1, 0.3, 1) delay 0s | — |
 | p.lead | div | {"opacity":"0","transform":"matrix(1, 0, 0, 1, 0, 40)"} | {"opacity":"1","transform":"none"} | 1s, 1s cubic-bezier(0.16, 1, 0.3, 1), cubic-bezier(0.16, 1, 0.3, 1) delay 0s | — |
@@ -251,7 +251,7 @@ Keyframes defined: shimmer, orb-spin, drift, rise, rise-line, point, row-in, pin
 | a.nav-link | Mockups | background 0.22s cubic-bezier(0.22, 0.8, 0.24, 1) | self.bg: rgba(0, 0, 0, 0) → rgba(11, 13, 23, 0.06) |
 | a | All mockups | color 0.22s ease | self.color: rgba(255, 255, 255, 0.6) → rgb(255, 255, 255); self.border: rgba(255, 255, 255, 0.6) → rgb(255, 255, 255) |
 | a.cat.is-in | 4 MOCKUPS Packaging Boxes, pouches, tube | transform, box-shadow 0.45s, 0.45s cubic-bezier(0.22, 0.8, 0.24, 1), cubic-bezier(0.22, 0.8, 0.24, 1) | self.transform: none → matrix(1, 0, 0, 1, 0, -6); self.shadow: rgba(18, 22, 48, 0.04) 0px 2px 4px 0px, rgba(18, 22, 48, 0.18) 0px 24px 48px -24px → rgba(18, 22, 48, 0.05) 0px 4px 10px 0px, rgba(32, 38, 87, 0.28) 0px 40px 70px -30px; img.transform: none → matrix(1.05865, 0, 0, 1.05865, 0, 0); img.width: 293 → 310 |
-| div.img | 4 MOCKUPS | all 0s ease | img.transform: matrix(1.00171, 0, 0, 1.00171, 0, 0) → matrix(1.05896, 0, 0, 1.05896, 0, 0); img.width: 294 → 310; child.transform: matrix(1.00171, 0, 0, 1.00171, 0, 0) → matrix(1.05896, 0, 0, 1.05896, 0, 0); child.width: 294 → 310 |
+| div.img | 4 MOCKUPS | all 0s ease | img.transform: matrix(1.00171, 0, 0, 1.00171, 0, 0) → matrix(1.05894, 0, 0, 1.05894, 0, 0); img.width: 294 → 310; child.transform: matrix(1.00171, 0, 0, 1.00171, 0, 0) → matrix(1.05894, 0, 0, 1.05894, 0, 0); child.width: 294 → 310 |
 | a.media | FREE 5 SCENES | all 0s ease | img.transform: none → matrix(1.05848, 0, 0, 1.05848, 0, 0); img.width: 405 → 429; child.transform: none → matrix(1.05848, 0, 0, 1.05848, 0, 0); child.width: 405 → 429 |
 | a.rev.card | APPAREL  5.0 average from 4 verified buy | transform, box-shadow 0.45s, 0.45s cubic-bezier(0.22, 0.8, 0.24, 1), cubic-bezier(0.22, 0.8, 0.24, 1) | self.transform: none → matrix(1, 0, 0, 1, 0, -6); self.shadow: rgba(18, 22, 48, 0.04) 0px 2px 4px 0px, rgba(18, 22, 48, 0.18) 0px 24px 48px -24px → rgba(18, 22, 48, 0.05) 0px 4px 10px 0px, rgba(32, 38, 87, 0.28) 0px 40px 70px -30px |
 | a.rev.card | APPAREL  5.0 average from 3 verified buy | transform, box-shadow 0.45s, 0.45s cubic-bezier(0.22, 0.8, 0.24, 1), cubic-bezier(0.22, 0.8, 0.24, 1) | self.transform: matrix(1, 0, 0, 1, 0, 40) → matrix(1, 0, 0, 1, 0, -6); self.shadow: rgba(18, 22, 48, 0.04) 0px 2px 4px 0px, rgba(18, 22, 48, 0.18) 0px 24px 48px -24px → rgba(18, 22, 48, 0.05) 0px 4px 10px 0px, rgba(32, 38, 87, 0.28) 0px 40px 70px -30px; self.opacity: 0 → 1 |
@@ -273,7 +273,7 @@ Screenshot: ![](shots/home--desktop.jpg)
 |---|---|---|---|---|---|---|---|---|
 | 0 | 40 (0.04) | #07080f | 0px / 0px | 12px |  |  | img 0 · svg 1 · video 0 · btn 0 · links 1 | [crop](shots/home--desktop--section-00.jpg) |
 | 1 | 80 (0.09) | transparent | 12px / 0px | 15px |  | 4 × 3, 111×40, gap 2px | img 3 · svg 15 · video 0 · btn 2 · links 21 | [crop](shots/home--desktop--section-01.jpg) |
-| 2 | 900 (1) | #07080f | 180px / 180px | 100px | h1 100px "Mockups that make your design look real." | 5 × 5, 15×15, gap 2px | img 60 · svg 8 · video 0 · btn 0 · links 2 | [crop](shots/home--desktop--section-02.jpg) |
+| 2 | 900 (1) | #07080f | 180px / 180px | 100px | h1 100px "Mockups that make your design look real." |  | img 60 · svg 8 · video 0 · btn 0 · links 2 | [crop](shots/home--desktop--section-02.jpg) |
 | 3 | 1411 (1.57) | #ffffff | 0px / 0px | 63.4px | h2 63.4px "Designed by people who ship real packagi"; h3 25.9px "Built for real products"; h3 25.9px "Edit in seconds" |  | img 2 · svg 3 · video 0 · btn 0 · links 0 | [crop](shots/home--desktop--section-03.jpg) |
 | 4 | 846 (0.94) | transparent | 140px / 140px | 63.4px | h2 63.4px "Find the right object, in two clicks." | 4 × 4, 313×338, gap 20px | img 4 · svg 9 · video 0 · btn 0 · links 4 | [crop](shots/home--desktop--section-04.jpg) |
 | 5 | 1482 (1.65) | transparent | 140px / 140px | 84px | h2 63.4px "Small details, big difference."; h3 25.9px "Smart-object layers"; h3 25.9px "Print-size files"; h3 25.9px "Commercial licence" | 2 × 6, 646×633, gap 20px | img 4 · svg 13 · video 0 · btn 0 · links 1 | [crop](shots/home--desktop--section-05.jpg) |
@@ -288,11 +288,11 @@ Screenshot: ![](shots/home--desktop.jpg)
 **Responsive behaviour**
 | Screen | Width | Page height | Overflow | Nav | Largest text | Section columns |
 |---|---|---|---|---|---|---|
-| desktop | 1440 | 11529 | no | menu button (5 links visible) | 259.2px | · 4 5 · 4 2 3 · 4 1 1 1 1 |
-| mobile | 390 | 15859 | no | menu button (0 links visible) | 120px | · · 5 · 1 1 1 · 1 1 1 1 1 |
-| tablet | 768 | 16024 | no | menu button (0 links visible) | 138.2px | · · 5 · 2 1 1 · 2 1 1 1 1 |
-| laptop | 1280 | 11196 | no | menu button (5 links visible) | 230.4px | · 4 5 · 3 2 3 · 3 1 1 1 1 |
-| wide | 1920 | 11838 | no | menu button (5 links visible) | 260px | · 4 5 · 4 2 3 · 4 1 1 1 1 |
+| desktop | 1440 | 11529 | no | menu button (5 links visible) | 259.2px | · 4 · · 4 2 3 · 4 1 1 1 1 |
+| mobile | 390 | 15859 | no | menu button (0 links visible) | 120px | · · · · 1 1 1 · 1 1 1 1 1 |
+| tablet | 768 | 16024 | no | menu button (0 links visible) | 138.2px | · · · · 2 1 1 · 2 1 1 1 1 |
+| laptop | 1280 | 11196 | no | menu button (5 links visible) | 230.4px | · 4 · · 3 2 3 · 3 1 1 1 1 |
+| wide | 1920 | 11838 | no | menu button (5 links visible) | 260px | · 4 · · 4 2 3 · 4 1 1 1 1 |
 
 ### http://localhost:4321/mockups/
 Template `/mockups/` · height 5052px · 5 sections · 29 requests, 951 KB · H1: "Mockups for packaging, brands and devices"
@@ -317,7 +317,7 @@ Screenshot: ![](shots/mockups--desktop.jpg)
 | wide | 1920 | 5062 | no | menu button (5 links visible) | 80px | · 4 · 2 1 |
 
 ### http://localhost:4321/category/packaging/
-Template `/category/*` · height 2692px · 5 sections · 15 requests, 543 KB · H1: "Packaging mockups"
+Template `/category/*` · height 2692px · 5 sections · 15 requests, 550 KB · H1: "Packaging mockups"
 
 Screenshot: ![](shots/category-packaging--desktop.jpg)
 
@@ -424,7 +424,7 @@ Screenshot: ![](shots/freebies--desktop.jpg)
 | mobile | 390 | 5306 | no | menu button (0 links visible) | 44px | · · · 1 1 |
 
 ### http://localhost:4321/all-access/
-Template `/all-access/` · height 3211px · 6 sections · 7 requests, 150 KB · H1: "Every mockup, one membership"
+Template `/all-access/` · height 3211px · 6 sections · 7 requests, 157 KB · H1: "Every mockup, one membership"
 
 Screenshot: ![](shots/all-access--desktop.jpg)
 
@@ -444,7 +444,7 @@ Screenshot: ![](shots/all-access--desktop.jpg)
 | mobile | 390 | 4137 | no | menu button (0 links visible) | 44px | · · · 1 1 1 |
 
 ### http://localhost:4321/mockups/free-gift-handle-box-mockup/
-Template `/mockups/*` · height 4462px · 6 sections · 19 requests, 648 KB · H1: "Free Gift Handle Box Mockup"
+Template `/mockups/*` · height 4438px · 6 sections · 19 requests, 648 KB · H1: "Free Gift Handle Box Mockup"
 
 Screenshot: ![](shots/mockups-free-gift-handle-box-mockup--desktop.jpg)
 
@@ -454,17 +454,17 @@ Screenshot: ![](shots/mockups-free-gift-handle-box-mockup--desktop.jpg)
 | 1 | 80 (0.09) | #ffffffdb | 12px / 0px | 15px |  | 4 × 3, 111×40, gap 2px | img 3 · svg 15 · video 0 · btn 2 · links 21 |  |
 | 2 | 91 (0.1) | transparent | 40px / 28px | 15px |  |  | img 0 · svg 2 · video 0 · btn 0 · links 2 |  |
 | 3 | 2931 (3.26) | #eef0f5 | 0px / 0px | 43px | h2 12px "PREVIEW SCENES"; h2 12px "ABOUT THIS MOCKUP"; h2 22px "You will Get"; h2 22px "Perfect for Showcasing Designs In:" | 1 × 7, 778×107, gap null | img 10 · svg 11 · video 0 · btn 5 · links 3 |  |
-| 4 | 664 (0.74) | transparent | 77px / 77px | 63.4px | h2 63.4px "More like this"; h3 16px "Free Foldable Cardboard Shipping Box Moc"; h3 16px "Free Kraft Paper Tube Packaging Mockup"; h3 16px "FREE Luxury Perfume Rigid Box Packaging " | 3 × 3, 421×386, gap 24px | img 6 · svg 7 · video 0 · btn 0 · links 7 |  |
+| 4 | 639 (0.71) | transparent | 77px / 77px | 37.4px | h2 37.4px "More like this"; h3 16px "Free Foldable Cardboard Shipping Box Moc"; h3 16px "Free Kraft Paper Tube Packaging Mockup"; h3 16px "FREE Luxury Perfume Rigid Box Packaging " | 3 × 3, 421×386, gap 24px | img 6 · svg 7 · video 0 · btn 0 · links 7 |  |
 | 5 | 516 (0.57) | #07080f + image | 96px / 0px | 17.3px | h2 15px "Mockups"; h2 15px "Shop"; h2 15px "Support"; h2 15px "Newsletter" | 1 × 6, 184×27, gap 12px | img 1 · svg 2 · video 0 · btn 0 · links 25 |  |
 
 **Responsive behaviour**
 | Screen | Width | Page height | Overflow | Nav | Largest text | Section columns |
 |---|---|---|---|---|---|---|
-| desktop | 1440 | 4462 | no | menu button (5 links visible) | 63.4px | · 4 · 1 3 1 |
-| mobile | 390 | 6822 | no | menu button (0 links visible) | 40px | · · · 1 1 1 |
+| desktop | 1440 | 4438 | no | menu button (5 links visible) | 43px | · 4 · 1 3 1 |
+| mobile | 390 | 6815 | no | menu button (0 links visible) | 40px | · · · 1 1 1 |
 
 ### http://localhost:4321/mockups/free-baseball-cap-mockup/
-Template `/mockups/*` · height 4934px · 6 sections · 20 requests, 596 KB · H1: "FREE Baseball Cap Mockup"
+Template `/mockups/*` · height 4909px · 6 sections · 20 requests, 596 KB · H1: "FREE Baseball Cap Mockup"
 
 Screenshot: ![](shots/mockups-free-baseball-cap-mockup--desktop.jpg)
 
@@ -474,17 +474,17 @@ Screenshot: ![](shots/mockups-free-baseball-cap-mockup--desktop.jpg)
 | 1 | 80 (0.09) | #ffffffdb | 12px / 0px | 15px |  | 4 × 3, 111×40, gap 2px | img 3 · svg 15 · video 0 · btn 2 · links 21 |  |
 | 2 | 91 (0.1) | transparent | 40px / 28px | 15px |  |  | img 0 · svg 2 · video 0 · btn 0 · links 2 |  |
 | 3 | 3403 (3.78) | #eef0f5 | 0px / 0px | 43px | h2 12px "PREVIEW SCENES"; h2 12px "ABOUT THIS MOCKUP"; h2 22px "PERFECT FOR"; h2 22px "FEATURES" | 1 × 18, 778×107, gap null | img 12 · svg 13 · video 0 · btn 6 · links 3 |  |
-| 4 | 664 (0.74) | transparent | 77px / 77px | 63.4px | h2 63.4px "More like this"; h3 16px "Free Construction Helmet Mockup"; h3 16px "FREE Safety Vest Mockup"; h3 16px "Free Foldable Cardboard Shipping Box Moc" | 3 × 3, 421×386, gap 24px | img 6 · svg 8 · video 0 · btn 0 · links 7 |  |
+| 4 | 639 (0.71) | transparent | 77px / 77px | 37.4px | h2 37.4px "More like this"; h3 16px "Free Construction Helmet Mockup"; h3 16px "FREE Safety Vest Mockup"; h3 16px "Free Foldable Cardboard Shipping Box Moc" | 3 × 3, 421×386, gap 24px | img 6 · svg 8 · video 0 · btn 0 · links 7 |  |
 | 5 | 516 (0.57) | #07080f + image | 96px / 0px | 17.3px | h2 15px "Mockups"; h2 15px "Shop"; h2 15px "Support"; h2 15px "Newsletter" | 1 × 6, 184×27, gap 12px | img 1 · svg 2 · video 0 · btn 0 · links 25 |  |
 
 **Responsive behaviour**
 | Screen | Width | Page height | Overflow | Nav | Largest text | Section columns |
 |---|---|---|---|---|---|---|
-| desktop | 1440 | 4934 | no | menu button (5 links visible) | 63.4px | · 4 · 1 3 1 |
-| mobile | 390 | 7882 | no | menu button (0 links visible) | 40px | · · · 1 1 1 |
+| desktop | 1440 | 4909 | no | menu button (5 links visible) | 43px | · 4 · 1 3 1 |
+| mobile | 390 | 7875 | no | menu button (0 links visible) | 40px | · · · 1 1 1 |
 
 ### http://localhost:4321/mockups/laptop-long-scroll-screen-mockup/
-Template `/mockups/*` · height 4588px · 6 sections · 22 requests, 604 KB · H1: "Laptop Long Scroll Screen Mockup"
+Template `/mockups/*` · height 4564px · 6 sections · 22 requests, 604 KB · H1: "Laptop Long Scroll Screen Mockup"
 
 Screenshot: ![](shots/mockups-laptop-long-scroll-screen-mockup--desktop.jpg)
 
@@ -494,17 +494,17 @@ Screenshot: ![](shots/mockups-laptop-long-scroll-screen-mockup--desktop.jpg)
 | 1 | 80 (0.09) | #ffffffdb | 12px / 0px | 15px |  | 4 × 3, 111×40, gap 2px | img 3 · svg 15 · video 0 · btn 2 · links 21 |  |
 | 2 | 91 (0.1) | transparent | 40px / 28px | 15px |  |  | img 0 · svg 2 · video 0 · btn 0 · links 2 |  |
 | 3 | 3057 (3.4) | #eef0f5 | 0px / 0px | 43px | h2 12px "PREVIEW SCENES"; h2 12px "ABOUT THIS MOCKUP"; h1 43px "Laptop Long Scroll Screen Mockup"; h2 12px "SPECIFICATIONS" | 7 × 8, 109×73, gap 10px | img 16 · svg 3 · video 0 · btn 8 · links 3 |  |
-| 4 | 664 (0.74) | transparent | 77px / 77px | 63.4px | h2 63.4px "More like this"; h3 16px "Free iMac Mockup for UI/UX & Brand Prese"; h3 16px "Free Long Scroll Extended Laptop Screen "; h3 16px "Free Foldable Cardboard Shipping Box Moc" | 3 × 3, 421×386, gap 24px | img 6 · svg 8 · video 0 · btn 0 · links 7 |  |
+| 4 | 639 (0.71) | transparent | 77px / 77px | 37.4px | h2 37.4px "More like this"; h3 16px "Free iMac Mockup for UI/UX & Brand Prese"; h3 16px "Free Long Scroll Extended Laptop Screen "; h3 16px "Free Foldable Cardboard Shipping Box Moc" | 3 × 3, 421×386, gap 24px | img 6 · svg 8 · video 0 · btn 0 · links 7 |  |
 | 5 | 516 (0.57) | #07080f + image | 96px / 0px | 17.3px | h2 15px "Mockups"; h2 15px "Shop"; h2 15px "Support"; h2 15px "Newsletter" | 1 × 6, 184×27, gap 12px | img 1 · svg 2 · video 0 · btn 0 · links 25 |  |
 
 **Responsive behaviour**
 | Screen | Width | Page height | Overflow | Nav | Largest text | Section columns |
 |---|---|---|---|---|---|---|
-| desktop | 1440 | 4588 | no | menu button (5 links visible) | 63.4px | · 4 · 7 3 1 |
-| mobile | 390 | 7246 | no | menu button (0 links visible) | 40px | · · · 3 1 1 |
+| desktop | 1440 | 4564 | no | menu button (5 links visible) | 43px | · 4 · 7 3 1 |
+| mobile | 390 | 7238 | no | menu button (0 links visible) | 40px | · · · 3 1 1 |
 
 ### http://localhost:4321/license/
-Template `/license/` · height 2086px · 5 sections · 7 requests, 155 KB · H1: "Mockup license"
+Template `/license/` · height 2063px · 5 sections · 7 requests, 148 KB · H1: "Mockup license"
 
 Screenshot: ![](shots/license--desktop.jpg)
 
@@ -512,18 +512,18 @@ Screenshot: ![](shots/license--desktop.jpg)
 |---|---|---|---|---|---|---|---|---|
 | 0 | 40 (0.04) | #07080f | 0px / 0px | 12px |  |  | img 0 · svg 1 · video 0 · btn 0 · links 1 |  |
 | 1 | 80 (0.09) | #ffffffdb | 12px / 0px | 15px |  | 4 × 3, 111×40, gap 2px | img 3 · svg 15 · video 0 · btn 2 · links 21 |  |
-| 2 | 405 (0.45) | transparent | 158.4px / 48px | 80px | h1 80px "Mockup license" |  | img 0 · svg 1 · video 0 · btn 0 · links 0 |  |
+| 2 | 383 (0.43) | transparent | 158.4px / 48px | 56px | h1 56px "Mockup license" |  | img 0 · svg 1 · video 0 · btn 0 · links 0 |  |
 | 3 | 905 (1.01) | #fff8e1 | 77px / 77px | 25.9px | h2 25.9px "You can"; h2 25.9px "You cannot"; h2 22px "Free mockups"; h2 22px "All-Access Pass" | 1 × 4, 545×27, gap 10px | img 0 · svg 0 · video 0 · btn 0 · links 1 |  |
 | 4 | 516 (0.57) | #07080f + image | 96px / 0px | 17.3px | h2 15px "Mockups"; h2 15px "Shop"; h2 15px "Support"; h2 15px "Newsletter" | 1 × 6, 184×27, gap 12px | img 1 · svg 2 · video 0 · btn 0 · links 25 |  |
 
 **Responsive behaviour**
 | Screen | Width | Page height | Overflow | Nav | Largest text | Section columns |
 |---|---|---|---|---|---|---|
-| desktop | 1440 | 2086 | no | menu button (5 links visible) | 80px | · 4 · 1 1 |
-| mobile | 390 | 3026 | no | menu button (0 links visible) | 44px | · · · 1 1 |
+| desktop | 1440 | 2063 | no | menu button (5 links visible) | 56px | · 4 · 1 1 |
+| mobile | 390 | 3022 | no | menu button (0 links visible) | 40px | · · · 1 1 |
 
 ### http://localhost:4321/faq/
-Template `/faq/` · height 2141px · 5 sections · 7 requests, 156 KB · H1: "Questions and answers."
+Template `/faq/` · height 2095px · 5 sections · 7 requests, 156 KB · H1: "Questions and answers."
 
 Screenshot: ![](shots/faq--desktop.jpg)
 
@@ -531,18 +531,18 @@ Screenshot: ![](shots/faq--desktop.jpg)
 |---|---|---|---|---|---|---|---|---|
 | 0 | 40 (0.04) | #07080f | 0px / 0px | 12px |  |  | img 0 · svg 1 · video 0 · btn 0 · links 1 |  |
 | 1 | 80 (0.09) | #ffffffdb | 12px / 0px | 15px |  | 4 × 3, 111×40, gap 2px | img 3 · svg 15 · video 0 · btn 2 · links 21 |  |
-| 2 | 452 (0.5) | transparent | 158.4px / 48px | 80px | h1 80px "Questions and answers." |  | img 0 · svg 1 · video 0 · btn 0 · links 0 |  |
+| 2 | 407 (0.45) | transparent | 158.4px / 48px | 56px | h1 56px "Questions and answers." |  | img 0 · svg 1 · video 0 · btn 0 · links 0 |  |
 | 3 | 912 (1.01) | transparent | 140px / 140px | 17.3px | h3 20.2px "Why does checkout open on Gumroad?"; h3 20.2px "Where are my files after I pay?"; h3 20.2px "Are the free mockups really free?"; h3 20.2px "Which software do I need?" | 1 × 8, 1000×66, gap 12px | img 0 · svg 16 · video 0 · btn 7 · links 1 |  |
 | 4 | 516 (0.57) | #07080f + image | 96px / 0px | 17.3px | h2 15px "Mockups"; h2 15px "Shop"; h2 15px "Support"; h2 15px "Newsletter" | 1 × 6, 184×27, gap 12px | img 1 · svg 2 · video 0 · btn 0 · links 25 |  |
 
 **Responsive behaviour**
 | Screen | Width | Page height | Overflow | Nav | Largest text | Section columns |
 |---|---|---|---|---|---|---|
-| desktop | 1440 | 2141 | no | menu button (5 links visible) | 80px | · 4 · 1 1 |
-| mobile | 390 | 2712 | no | menu button (0 links visible) | 44px | · · · 1 1 |
+| desktop | 1440 | 2095 | no | menu button (5 links visible) | 56px | · 4 · 1 1 |
+| mobile | 390 | 2704 | no | menu button (0 links visible) | 40px | · · · 1 1 |
 
 ### http://localhost:4321/contact/
-Template `/contact/` · height 1715px · 5 sections · 7 requests, 155 KB · H1: "Talk to the studio"
+Template `/contact/` · height 1692px · 5 sections · 7 requests, 155 KB · H1: "Talk to the studio"
 
 Screenshot: ![](shots/contact--desktop.jpg)
 
@@ -550,15 +550,15 @@ Screenshot: ![](shots/contact--desktop.jpg)
 |---|---|---|---|---|---|---|---|---|
 | 0 | 40 (0.04) | #07080f | 0px / 0px | 12px |  |  | img 0 · svg 1 · video 0 · btn 0 · links 1 |  |
 | 1 | 80 (0.09) | #ffffffdb | 12px / 0px | 15px |  | 4 × 3, 111×40, gap 2px | img 3 · svg 15 · video 0 · btn 2 · links 21 |  |
-| 2 | 405 (0.45) | transparent | 158.4px / 48px | 80px | h1 80px "Talk to the studio" |  | img 0 · svg 1 · video 0 · btn 0 · links 0 |  |
+| 2 | 383 (0.43) | transparent | 158.4px / 48px | 56px | h1 56px "Talk to the studio" |  | img 0 · svg 1 · video 0 · btn 0 · links 0 |  |
 | 3 | 533 (0.59) | #ffffff | 77px / 77px | 25.9px | h2 25.9px "Email"; h2 25.9px "Gumroad store"; h2 25.9px "Custom projects" | 5 × 5, 87×44, gap 10px | img 0 · svg 6 · video 0 · btn 0 · links 8 |  |
 | 4 | 516 (0.57) | #07080f + image | 96px / 0px | 17.3px | h2 15px "Mockups"; h2 15px "Shop"; h2 15px "Support"; h2 15px "Newsletter" | 1 × 6, 184×27, gap 12px | img 1 · svg 2 · video 0 · btn 0 · links 25 |  |
 
 **Responsive behaviour**
 | Screen | Width | Page height | Overflow | Nav | Largest text | Section columns |
 |---|---|---|---|---|---|---|
-| desktop | 1440 | 1715 | no | menu button (5 links visible) | 80px | · 4 · 5 1 |
-| mobile | 390 | 2766 | no | menu button (0 links visible) | 44px | · · · 3 1 |
+| desktop | 1440 | 1692 | no | menu button (5 links visible) | 56px | · 4 · 5 1 |
+| mobile | 390 | 2763 | no | menu button (0 links visible) | 40px | · · · 3 1 |
 
 ### http://localhost:4321/about/
 Template `/about/` · height 2518px · 6 sections · 7 requests, 156 KB · H1: "Mockups made by a packaging studio"

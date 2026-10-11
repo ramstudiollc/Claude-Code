@@ -1,6 +1,6 @@
 {
   "site": "http://localhost:4321",
-  "startedAt": "2026-10-11T11:33:08.608Z",
+  "startedAt": "2026-10-11T12:06:06.839Z",
   "tool": "ramstudiollc-shop/tools/audit",
   "pages": [
     {
@@ -1650,10 +1650,6 @@
               {
                 "value": "drop-shadow(rgba(0, 0, 0, 0.4) 0px 4px 6px)",
                 "count": 1
-              },
-              {
-                "value": "hue-rotate(30.1651deg)",
-                "count": 1
               }
             ],
             "blendModes": []
@@ -1840,7 +1836,7 @@
               },
               {
                 "name": "orb-spin",
-                "css": "@keyframes orb-spin { \n  100% { filter: hue-rotate(40deg); transform: rotate(360deg); }\n}"
+                "css": "@keyframes orb-spin { \n  100% { transform: rotate(360deg); }\n}"
               },
               {
                 "name": "drift",
@@ -2002,15 +1998,7 @@
                 "inputs": 0,
                 "iframes": 0
               },
-              "repeated": {
-                "container": "span.stars",
-                "count": 5,
-                "columns": 5,
-                "itemW": 15,
-                "itemH": 15,
-                "gap": "2px",
-                "scrollsX": false
-              },
+              "repeated": null,
               "carouselHint": false,
               "text": "MOCKUPS FROM A PACKAGING STUDIO Mockups that make your design look real. Smart-object PSD scenes for boxes, bags, apparel and screens. Drop in your artwork, exp",
               "screenshot": "shots/home--desktop--section-02.jpg"
@@ -2827,7 +2815,7 @@
                 "src": "http://localhost:4321/images/products/free-imac-mockup-for-ui-ux-and-brand-presentations/02.webp",
                 "alt": "",
                 "natural": "1600x1067",
-                "rendered": "384x335",
+                "rendered": "384x334",
                 "loading": "eager",
                 "format": "webp"
               },
@@ -2835,7 +2823,7 @@
                 "src": "http://localhost:4321/images/products/free-luxury-perfume-rigid-box-packaging-mockup/03.webp",
                 "alt": "",
                 "natural": "1600x1067",
-                "rendered": "417x379",
+                "rendered": "417x378",
                 "loading": "eager",
                 "format": "webp"
               },
@@ -2843,7 +2831,7 @@
                 "src": "http://localhost:4321/images/products/free-foldable-cardboard-shipping-box-mockup/01.webp",
                 "alt": "",
                 "natural": "1005x670",
-                "rendered": "457x434",
+                "rendered": "457x433",
                 "loading": "eager",
                 "format": "webp"
               },
@@ -2851,7 +2839,7 @@
                 "src": "http://localhost:4321/images/products/free-construction-helmet-mockup/01.webp",
                 "alt": "",
                 "natural": "1005x670",
-                "rendered": "505x503",
+                "rendered": "505x502",
                 "loading": "eager",
                 "format": "webp"
               },
@@ -2859,7 +2847,7 @@
                 "src": "http://localhost:4321/images/products/free-long-scroll-extended-laptop-screen-mockup/01.webp",
                 "alt": "",
                 "natural": "1005x670",
-                "rendered": "564x592",
+                "rendered": "564x591",
                 "loading": "eager",
                 "format": "webp"
               },
@@ -2875,7 +2863,7 @@
                 "src": "http://localhost:4321/images/products/free-imac-mockup-for-ui-ux-and-brand-presentations/02.webp",
                 "alt": "",
                 "natural": "1600x1067",
-                "rendered": "734x872",
+                "rendered": "734x871",
                 "loading": "eager",
                 "format": "webp"
               },
@@ -2883,7 +2871,7 @@
                 "src": "http://localhost:4321/images/products/free-luxury-perfume-rigid-box-packaging-mockup/03.webp",
                 "alt": "",
                 "natural": "1600x1067",
-                "rendered": "862x1103",
+                "rendered": "862x1101",
                 "loading": "eager",
                 "format": "webp"
               },
@@ -2907,7 +2895,7 @@
                 "src": "http://localhost:4321/images/products/free-foldable-cardboard-shipping-box-mockup/02.webp",
                 "alt": "",
                 "natural": "1600x1067",
-                "rendered": "260x174",
+                "rendered": "260x175",
                 "loading": "eager",
                 "format": "webp"
               },
@@ -2955,7 +2943,7 @@
                 "src": "http://localhost:4321/images/products/free-foldable-cardboard-shipping-box-mockup/02.webp",
                 "alt": "",
                 "natural": "1600x1067",
-                "rendered": "385x304",
+                "rendered": "385x305",
                 "loading": "eager",
                 "format": "webp"
               },
@@ -2963,7 +2951,7 @@
                 "src": "http://localhost:4321/images/products/free-construction-helmet-mockup/02.webp",
                 "alt": "",
                 "natural": "1600x1067",
-                "rendered": "418x342",
+                "rendered": "418x343",
                 "loading": "eager",
                 "format": "webp"
               },
@@ -2979,7 +2967,7 @@
                 "src": "http://localhost:4321/images/products/free-minimalist-a4-folder-mockups/03.webp",
                 "alt": "",
                 "natural": "1500x1000",
-                "rendered": "504x447",
+                "rendered": "505x448",
                 "loading": "eager",
                 "format": "webp"
               },
@@ -2987,7 +2975,7 @@
                 "src": "http://localhost:4321/images/products/free-kraft-paper-tube-packaging-mockup/01.webp",
                 "alt": "",
                 "natural": "1005x670",
-                "rendered": "311x209",
+                "rendered": "311x208",
                 "loading": "eager",
                 "format": "webp"
               },
@@ -3027,7 +3015,7 @@
                 "src": "http://localhost:4321/images/products/free-construction-helmet-mockup/03.webp",
                 "alt": "",
                 "natural": "1600x1067",
-                "rendered": "457x353",
+                "rendered": "457x352",
                 "loading": "eager",
                 "format": "webp"
               },
@@ -3043,7 +3031,7 @@
                 "src": "http://localhost:4321/images/products/free-safety-vest-mockup/01.webp",
                 "alt": "",
                 "natural": "1005x670",
-                "rendered": "560x465",
+                "rendered": "559x464",
                 "loading": "eager",
                 "format": "webp"
               },
@@ -3059,7 +3047,7 @@
                 "src": "http://localhost:4321/images/products/free-baseball-cap-mockup/02.webp",
                 "alt": "",
                 "natural": "1600x1067",
-                "rendered": "717x651",
+                "rendered": "717x650",
                 "loading": "eager",
                 "format": "webp"
               },
@@ -3067,7 +3055,7 @@
                 "src": "http://localhost:4321/images/products/free-foldable-cardboard-shipping-box-mockup/03.webp",
                 "alt": "",
                 "natural": "1600x1067",
-                "rendered": "832x794",
+                "rendered": "831x793",
                 "loading": "eager",
                 "format": "webp"
               },
@@ -3075,7 +3063,7 @@
                 "src": "http://localhost:4321/images/products/free-construction-helmet-mockup/03.webp",
                 "alt": "",
                 "natural": "1600x1067",
-                "rendered": "987x997",
+                "rendered": "986x995",
                 "loading": "eager",
                 "format": "webp"
               },
@@ -3147,7 +3135,7 @@
                 "src": "http://localhost:4321/images/products/free-kraft-paper-tube-packaging-mockup/02.webp",
                 "alt": "",
                 "natural": "1600x1067",
-                "rendered": "417x285",
+                "rendered": "417x286",
                 "loading": "eager",
                 "format": "webp"
               },
@@ -3179,7 +3167,7 @@
                 "src": "http://localhost:4321/images/products/free-minimalist-a4-folder-mockups/01.webp",
                 "alt": "",
                 "natural": "1005x670",
-                "rendered": "336x199",
+                "rendered": "335x199",
                 "loading": "eager",
                 "format": "webp"
               },
@@ -3195,7 +3183,7 @@
                 "src": "http://localhost:4321/images/products/free-luxury-perfume-rigid-box-packaging-mockup/02.webp",
                 "alt": "",
                 "natural": "1600x1067",
-                "rendered": "388x240",
+                "rendered": "387x240",
                 "loading": "eager",
                 "format": "webp"
               },
@@ -3211,7 +3199,7 @@
                 "src": "http://localhost:4321/images/products/free-kraft-paper-tube-packaging-mockup/03.webp",
                 "alt": "",
                 "natural": "1600x1067",
-                "rendered": "458x297",
+                "rendered": "457x297",
                 "loading": "eager",
                 "format": "webp"
               },
@@ -3227,7 +3215,7 @@
                 "src": "http://localhost:4321/images/products/free-minimalist-a4-folder-mockups/01.webp",
                 "alt": "",
                 "natural": "1005x670",
-                "rendered": "556x382",
+                "rendered": "556x381",
                 "loading": "eager",
                 "format": "webp"
               },
@@ -3251,7 +3239,7 @@
                 "src": "http://localhost:4321/images/products/laptop-long-scroll-screen-mockup/02.webp",
                 "alt": "",
                 "natural": "1600x1067",
-                "rendered": "809x614",
+                "rendered": "808x613",
                 "loading": "eager",
                 "format": "webp"
               },
@@ -3259,7 +3247,7 @@
                 "src": "http://localhost:4321/images/products/free-kraft-paper-tube-packaging-mockup/03.webp",
                 "alt": "",
                 "natural": "1600x1067",
-                "rendered": "946x748",
+                "rendered": "946x747",
                 "loading": "eager",
                 "format": "webp"
               },
@@ -3267,7 +3255,7 @@
                 "src": "http://localhost:4321/images/products/free-safety-vest-mockup/03.webp",
                 "alt": "",
                 "natural": "1500x1000",
-                "rendered": "1134x936",
+                "rendered": "1133x935",
                 "loading": "eager",
                 "format": "webp"
               },
@@ -4017,23 +4005,23 @@
               },
               {
                 "value": "CSSTransition | top | 450ms | cubic-bezier(0.22, 0.8, 0.24, 1) | delay 0 | iter 1 | header",
-                "count": 2
+                "count": 1
               },
               {
                 "value": "CSSTransition | background-color | 450ms | cubic-bezier(0.22, 0.8, 0.24, 1) | delay 0 | iter 1 | div",
-                "count": 2
+                "count": 1
               },
               {
                 "value": "CSSTransition | box-shadow | 450ms | cubic-bezier(0.22, 0.8, 0.24, 1) | delay 0 | iter 1 | div",
-                "count": 2
+                "count": 1
               },
               {
                 "value": "CSSTransition | color | 450ms | ease | delay 0 | iter 1 | div",
-                "count": 2
+                "count": 1
               },
               {
                 "value": "CSSTransition | box-shadow | 450ms | cubic-bezier(0.22, 0.8, 0.24, 1) | delay 0 | iter 1 | a",
-                "count": 2
+                "count": 1
               }
             ],
             "scrollLinkedElements": 6,
@@ -4253,10 +4241,10 @@
                 "el": "div.cursor",
                 "parent": "div",
                 "from": {
-                  "transform": "matrix(1, 0, 0, 1, -1.69592, 0.94218)"
+                  "transform": "matrix(1, 0, 0, 1, -1.91421, 1.06345)"
                 },
                 "to": {
-                  "transform": "matrix(1, 0, 0, 1, -0.456472, 0.253596)"
+                  "transform": "matrix(1, 0, 0, 1, -0.308194, 0.171219)"
                 },
                 "transition": "0s ease delay 0s",
                 "animation": "point 3.2s cubic-bezier(0.22, 0.8, 0.24, 1) delay 0s"
@@ -4335,12 +4323,10 @@
                 "el": "span.orb",
                 "parent": "article",
                 "from": {
-                  "transform": "matrix(0.366545, 0.9304, -0.9304, 0.366545, 0, 0)",
-                  "filter": "hue-rotate(7.61081deg)"
+                  "transform": "matrix(0.38273, 0.92386, -0.92386, 0.38273, 0, 0)"
                 },
                 "to": {
-                  "transform": "matrix(0.00850524, -0.999964, 0.999964, 0.00850524, 0, 0)",
-                  "filter": "hue-rotate(30.0541deg)"
+                  "transform": "matrix(0.0521467, -0.998639, 0.998639, 0.0521467, 0, 0)"
                 },
                 "transition": "0s ease delay 0s",
                 "animation": "orb-spin 12s linear delay 0s"
@@ -5131,9 +5117,9 @@
               "text": "4 MOCKUPS",
               "transition": "all 0s ease",
               "changes": [
-                "img.transform: matrix(1.00171, 0, 0, 1.00171, 0, 0) → matrix(1.05896, 0, 0, 1.05896, 0, 0)",
+                "img.transform: matrix(1.00171, 0, 0, 1.00171, 0, 0) → matrix(1.05894, 0, 0, 1.05894, 0, 0)",
                 "img.width: 294 → 310",
-                "child.transform: matrix(1.00171, 0, 0, 1.00171, 0, 0) → matrix(1.05896, 0, 0, 1.05896, 0, 0)",
+                "child.transform: matrix(1.00171, 0, 0, 1.00171, 0, 0) → matrix(1.05894, 0, 0, 1.05894, 0, 0)",
                 "child.width: 294 → 310"
               ]
             },
@@ -5215,11 +5201,11 @@
           },
           "network": {
             "requests": 57,
-            "bytes": 2202453,
+            "bytes": 2202439,
             "byType": {
               "document": {
                 "count": 1,
-                "bytes": 13652
+                "bytes": 13649
               },
               "image": {
                 "count": 51,
@@ -5227,7 +5213,7 @@
               },
               "stylesheet": {
                 "count": 3,
-                "bytes": 10412
+                "bytes": 10401
               },
               "font": {
                 "count": 2,
@@ -5669,15 +5655,7 @@
                 "size": 46,
                 "text": "Mockups that make"
               },
-              "repeated": {
-                "container": "span.stars",
-                "count": 5,
-                "columns": 5,
-                "itemW": 15,
-                "itemH": 15,
-                "gap": "2px",
-                "scrollsX": false
-              },
+              "repeated": null,
               "paddingY": "140px / 118px"
             },
             {
@@ -6392,15 +6370,7 @@
                 "size": 53.8,
                 "text": "Mockups that make"
               },
-              "repeated": {
-                "container": "span.stars",
-                "count": 5,
-                "columns": 5,
-                "itemW": 15,
-                "itemH": 15,
-                "gap": "2px",
-                "scrollsX": false
-              },
+              "repeated": null,
               "paddingY": "140px / 118px"
             },
             {
@@ -7129,15 +7099,7 @@
                 "size": 89.6,
                 "text": "Mockups that make"
               },
-              "repeated": {
-                "container": "span.stars",
-                "count": 5,
-                "columns": 5,
-                "itemW": 15,
-                "itemH": 15,
-                "gap": "2px",
-                "scrollsX": false
-              },
+              "repeated": null,
               "paddingY": "180px / 180px"
             },
             {
@@ -7866,15 +7828,7 @@
                 "size": 100,
                 "text": "Mockups that make"
               },
-              "repeated": {
-                "container": "span.stars",
-                "count": 5,
-                "columns": 5,
-                "itemW": 15,
-                "itemH": 15,
-                "gap": "2px",
-                "scrollsX": false
-              },
+              "repeated": null,
               "paddingY": "180px / 180px"
             },
             {
@@ -9223,7 +9177,7 @@
               },
               {
                 "name": "orb-spin",
-                "css": "@keyframes orb-spin { \n  100% { filter: hue-rotate(40deg); transform: rotate(360deg); }\n}"
+                "css": "@keyframes orb-spin { \n  100% { transform: rotate(360deg); }\n}"
               }
             ],
             "cursors": []
@@ -9330,7 +9284,7 @@
             },
             {
               "index": 2,
-              "el": "section.page-hero.center",
+              "el": "section.page-hero.center.size-lg",
               "tag": "section",
               "top": 120,
               "height": 452,
@@ -10265,10 +10219,10 @@
               "text": "FREE\n8 SCENES",
               "transition": "all 0s ease",
               "changes": [
-                "img.transform: none → matrix(1.05849, 0, 0, 1.05849, 0, 0)",
-                "img.width: 624 → 660",
-                "child.transform: none → matrix(1.05849, 0, 0, 1.05849, 0, 0)",
-                "child.width: 624 → 660"
+                "img.transform: none → matrix(1.05865, 0, 0, 1.05865, 0, 0)",
+                "img.width: 624 → 661",
+                "child.transform: none → matrix(1.05865, 0, 0, 1.05865, 0, 0)",
+                "child.width: 624 → 661"
               ]
             },
             {
@@ -10309,15 +10263,15 @@
           },
           "network": {
             "requests": 29,
-            "bytes": 950942,
+            "bytes": 950952,
             "byType": {
               "stylesheet": {
                 "count": 2,
-                "bytes": 6459
+                "bytes": 6448
               },
               "document": {
                 "count": 1,
-                "bytes": 8312
+                "bytes": 8333
               },
               "image": {
                 "count": 24,
@@ -10333,8 +10287,8 @@
               "fonts.gstatic.com"
             ],
             "fonts": [
-              "https://fonts.gstatic.com/s/geistmono/v6/or3nQ6H-1_WfwkMZI_qYFrcdmg.woff2",
-              "https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2"
+              "https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2",
+              "https://fonts.gstatic.com/s/geistmono/v6/or3nQ6H-1_WfwkMZI_qYFrcdmg.woff2"
             ],
             "scripts": []
           },
@@ -11751,7 +11705,7 @@
               {
                 "size": 17.3,
                 "count": 4,
-                "area": 8196,
+                "area": 8195,
                 "ratioToNext": 1.081
               },
               {
@@ -11763,7 +11717,7 @@
               {
                 "size": 15,
                 "count": 42,
-                "area": 162688,
+                "area": 162686,
                 "ratioToNext": 1.154
               },
               {
@@ -12528,7 +12482,7 @@
               },
               {
                 "name": "orb-spin",
-                "css": "@keyframes orb-spin { \n  100% { filter: hue-rotate(40deg); transform: rotate(360deg); }\n}"
+                "css": "@keyframes orb-spin { \n  100% { transform: rotate(360deg); }\n}"
               }
             ],
             "cursors": []
@@ -12635,7 +12589,7 @@
             },
             {
               "index": 2,
-              "el": "section.page-hero.center",
+              "el": "section.page-hero.center.size-lg",
               "tag": "section",
               "top": 120,
               "height": 405,
@@ -13218,8 +13172,8 @@
                   "transform": "matrix(1, 0, 0, 1, 0, 40)"
                 },
                 "to": {
-                  "opacity": "0.999999",
-                  "transform": "matrix(1, 0, 0, 1, 0, 5.68118e-05)"
+                  "opacity": "0.999993",
+                  "transform": "matrix(1, 0, 0, 1, 0, 0.000290926)"
                 },
                 "transition": "1s, 1s cubic-bezier(0.16, 1, 0.3, 1), cubic-bezier(0.16, 1, 0.3, 1) delay 0.24s",
                 "animation": null
@@ -13232,8 +13186,8 @@
                   "transform": "matrix(1, 0, 0, 1, 0, 40)"
                 },
                 "to": {
-                  "opacity": "0.999865",
-                  "transform": "matrix(1, 0, 0, 1, 0, 0.00540136)"
+                  "opacity": "0.999784",
+                  "transform": "matrix(1, 0, 0, 1, 0, 0.00863631)"
                 },
                 "transition": "1s, 1s cubic-bezier(0.16, 1, 0.3, 1), cubic-bezier(0.16, 1, 0.3, 1) delay 0.32s",
                 "animation": null
@@ -13357,15 +13311,15 @@
           },
           "network": {
             "requests": 15,
-            "bytes": 543279,
+            "bytes": 550346,
             "byType": {
               "document": {
                 "count": 1,
-                "bytes": 7235
+                "bytes": 7255
               },
               "stylesheet": {
                 "count": 2,
-                "bytes": 6553
+                "bytes": 6448
               },
               "image": {
                 "count": 10,
@@ -13373,7 +13327,7 @@
               },
               "font": {
                 "count": 2,
-                "bytes": 45376
+                "bytes": 52528
               }
             },
             "thirdPartyDomains": [
@@ -13381,8 +13335,8 @@
               "fonts.gstatic.com"
             ],
             "fonts": [
-              "https://fonts.gstatic.com/l/font?kit=or3NQ6H-1_WfwkMZI_qYPLs1a-t7PU0AbeE9KPxYzNiCp1OUedn8zbXmTkiS&skey=f2030a904b731103&v=v6",
-              "https://fonts.gstatic.com/l/font?kit=gyBUhwUxId8gMGYQMKR3pzfaWI_RwuNalrErE8iusq2Kkq6JNBi4zg&skey=70a816dcd17c8a3c&v=v5"
+              "https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2",
+              "https://fonts.gstatic.com/s/geistmono/v6/or3nQ6H-1_WfwkMZI_qYFrcdmg.woff2"
             ],
             "scripts": []
           },
@@ -15332,7 +15286,7 @@
               },
               {
                 "name": "orb-spin",
-                "css": "@keyframes orb-spin { \n  100% { filter: hue-rotate(40deg); transform: rotate(360deg); }\n}"
+                "css": "@keyframes orb-spin { \n  100% { transform: rotate(360deg); }\n}"
               }
             ],
             "cursors": []
@@ -15439,7 +15393,7 @@
             },
             {
               "index": 2,
-              "el": "section.page-hero.center",
+              "el": "section.page-hero.center.size-lg",
               "tag": "section",
               "top": 120,
               "height": 481,
@@ -15933,8 +15887,8 @@
                   "transform": "matrix(1, 0, 0, 1, 0, 40)"
                 },
                 "to": {
-                  "opacity": "1",
-                  "transform": "matrix(1, 0, 0, 1, 0, 1.34106e-06)"
+                  "opacity": "0.999999",
+                  "transform": "matrix(1, 0, 0, 1, 0, 5.69075e-05)"
                 },
                 "transition": "1s, 1s cubic-bezier(0.16, 1, 0.3, 1), cubic-bezier(0.16, 1, 0.3, 1) delay 0.24s",
                 "animation": null
@@ -15947,8 +15901,8 @@
                   "transform": "matrix(1, 0, 0, 1, 0, 40)"
                 },
                 "to": {
-                  "opacity": "0.999922",
-                  "transform": "matrix(1, 0, 0, 1, 0, 0.00312558)"
+                  "opacity": "0.999865",
+                  "transform": "matrix(1, 0, 0, 1, 0, 0.00540349)"
                 },
                 "transition": "1s, 1s cubic-bezier(0.16, 1, 0.3, 1), cubic-bezier(0.16, 1, 0.3, 1) delay 0.32s",
                 "animation": null
@@ -16072,11 +16026,11 @@
           },
           "network": {
             "requests": 9,
-            "bytes": 208468,
+            "bytes": 208480,
             "byType": {
               "document": {
                 "count": 1,
-                "bytes": 6906
+                "bytes": 6929
               },
               "image": {
                 "count": 4,
@@ -16084,7 +16038,7 @@
               },
               "stylesheet": {
                 "count": 2,
-                "bytes": 6459
+                "bytes": 6448
               },
               "font": {
                 "count": 2,
@@ -17995,7 +17949,7 @@
               },
               {
                 "name": "orb-spin",
-                "css": "@keyframes orb-spin { \n  100% { filter: hue-rotate(40deg); transform: rotate(360deg); }\n}"
+                "css": "@keyframes orb-spin { \n  100% { transform: rotate(360deg); }\n}"
               }
             ],
             "cursors": []
@@ -18102,7 +18056,7 @@
             },
             {
               "index": 2,
-              "el": "section.page-hero.center",
+              "el": "section.page-hero.center.size-lg",
               "tag": "section",
               "top": 120,
               "height": 481,
@@ -18813,19 +18767,19 @@
           },
           "network": {
             "requests": 13,
-            "bytes": 343226,
+            "bytes": 343241,
             "byType": {
               "document": {
                 "count": 1,
-                "bytes": 7194
-              },
-              "stylesheet": {
-                "count": 2,
-                "bytes": 6459
+                "bytes": 7220
               },
               "image": {
                 "count": 8,
                 "bytes": 277045
+              },
+              "stylesheet": {
+                "count": 2,
+                "bytes": 6448
               },
               "font": {
                 "count": 2,
@@ -20803,7 +20757,7 @@
               },
               {
                 "name": "orb-spin",
-                "css": "@keyframes orb-spin { \n  100% { filter: hue-rotate(40deg); transform: rotate(360deg); }\n}"
+                "css": "@keyframes orb-spin { \n  100% { transform: rotate(360deg); }\n}"
               }
             ],
             "cursors": []
@@ -20910,7 +20864,7 @@
             },
             {
               "index": 2,
-              "el": "section.page-hero.center",
+              "el": "section.page-hero.center.size-lg",
               "tag": "section",
               "top": 120,
               "height": 376,
@@ -21859,6 +21813,14 @@
                 "count": 60
               },
               {
+                "value": "CSSTransition | opacity | 1000ms | cubic-bezier(0.16, 1, 0.3, 1) | delay 320 | iter 1 | a",
+                "count": 60
+              },
+              {
+                "value": "CSSTransition | transform | 1000ms | cubic-bezier(0.16, 1, 0.3, 1) | delay 320 | iter 1 | a",
+                "count": 60
+              },
+              {
                 "value": "CSSTransition | opacity | 1000ms | cubic-bezier(0.16, 1, 0.3, 1) | delay 400 | iter 1 | a",
                 "count": 60
               },
@@ -21873,14 +21835,6 @@
               {
                 "value": "CSSTransition | transform | 1000ms | cubic-bezier(0.16, 1, 0.3, 1) | delay 160 | iter 1 | a",
                 "count": 55
-              },
-              {
-                "value": "CSSTransition | opacity | 1000ms | cubic-bezier(0.16, 1, 0.3, 1) | delay 320 | iter 1 | a",
-                "count": 54
-              },
-              {
-                "value": "CSSTransition | transform | 1000ms | cubic-bezier(0.16, 1, 0.3, 1) | delay 320 | iter 1 | a",
-                "count": 54
               },
               {
                 "value": "CSSTransition | opacity | 1000ms | cubic-bezier(0.16, 1, 0.3, 1) | delay 240 | iter 1 | a",
@@ -21944,7 +21898,7 @@
               }
             ],
             "scrollLinkedElements": 0,
-            "revealCandidates": 133,
+            "revealCandidates": 134,
             "reveals": [
               {
                 "el": "a.tile",
@@ -22545,6 +22499,20 @@
                   "opacity": "1",
                   "transform": "none"
                 },
+                "transition": "1s, 1s cubic-bezier(0.16, 1, 0.3, 1), cubic-bezier(0.16, 1, 0.3, 1) delay 0.32s",
+                "animation": null
+              },
+              {
+                "el": "a.tile",
+                "parent": "div",
+                "from": {
+                  "opacity": "0",
+                  "transform": "matrix(1, 0, 0, 1, 0, 40)"
+                },
+                "to": {
+                  "opacity": "1",
+                  "transform": "none"
+                },
                 "transition": "1s, 1s cubic-bezier(0.16, 1, 0.3, 1), cubic-bezier(0.16, 1, 0.3, 1) delay 0.4s",
                 "animation": null
               },
@@ -22899,7 +22867,7 @@
                 "animation": null
               }
             ],
-            "revealCount": 68
+            "revealCount": 69
           },
           "hover": [
             {
@@ -22999,19 +22967,19 @@
           },
           "network": {
             "requests": 75,
-            "bytes": 2940905,
+            "bytes": 2940920,
             "byType": {
               "document": {
                 "count": 1,
-                "bytes": 6177
+                "bytes": 6203
+              },
+              "stylesheet": {
+                "count": 2,
+                "bytes": 6448
               },
               "image": {
                 "count": 70,
                 "bytes": 2875741
-              },
-              "stylesheet": {
-                "count": 2,
-                "bytes": 6459
               },
               "font": {
                 "count": 2,
@@ -24866,7 +24834,7 @@
               },
               {
                 "name": "orb-spin",
-                "css": "@keyframes orb-spin { \n  100% { filter: hue-rotate(40deg); transform: rotate(360deg); }\n}"
+                "css": "@keyframes orb-spin { \n  100% { transform: rotate(360deg); }\n}"
               }
             ],
             "cursors": []
@@ -24971,7 +24939,7 @@
             },
             {
               "index": 2,
-              "el": "section.page-hero.center",
+              "el": "section.page-hero.center.size-lg",
               "tag": "section",
               "top": 120,
               "height": 376,
@@ -25862,11 +25830,11 @@
           },
           "network": {
             "requests": 27,
-            "bytes": 891269,
+            "bytes": 891282,
             "byType": {
               "document": {
                 "count": 1,
-                "bytes": 6653
+                "bytes": 6677
               },
               "image": {
                 "count": 22,
@@ -25874,7 +25842,7 @@
               },
               "stylesheet": {
                 "count": 2,
-                "bytes": 6459
+                "bytes": 6448
               },
               "font": {
                 "count": 2,
@@ -26398,7 +26366,7 @@
               {
                 "size": 17.3,
                 "count": 20,
-                "area": 628829,
+                "area": 628828,
                 "ratioToNext": 1.018
               },
               {
@@ -26410,7 +26378,7 @@
               {
                 "size": 16,
                 "count": 4,
-                "area": 81093,
+                "area": 81092,
                 "ratioToNext": 1.067
               },
               {
@@ -27119,7 +27087,7 @@
               },
               {
                 "name": "orb-spin",
-                "css": "@keyframes orb-spin { \n  100% { filter: hue-rotate(40deg); transform: rotate(360deg); }\n}"
+                "css": "@keyframes orb-spin { \n  100% { transform: rotate(360deg); }\n}"
               }
             ],
             "cursors": [
@@ -27229,7 +27197,7 @@
             },
             {
               "index": 2,
-              "el": "section.page-hero.center",
+              "el": "section.page-hero.center.size-lg",
               "tag": "section",
               "top": 120,
               "height": 481,
@@ -28074,15 +28042,15 @@
           },
           "network": {
             "requests": 7,
-            "bytes": 150105,
+            "bytes": 157173,
             "byType": {
               "document": {
                 "count": 1,
-                "bytes": 6929
+                "bytes": 6950
               },
               "stylesheet": {
                 "count": 2,
-                "bytes": 6553
+                "bytes": 6448
               },
               "image": {
                 "count": 2,
@@ -28090,7 +28058,7 @@
               },
               "font": {
                 "count": 2,
-                "bytes": 45376
+                "bytes": 52528
               }
             },
             "thirdPartyDomains": [
@@ -28098,8 +28066,8 @@
               "fonts.gstatic.com"
             ],
             "fonts": [
-              "https://fonts.gstatic.com/l/font?kit=gyBUhwUxId8gMGYQMKR3pzfaWI_RwuNalrErE8iusq2Kkq6JNBi4zg&skey=70a816dcd17c8a3c&v=v5",
-              "https://fonts.gstatic.com/l/font?kit=or3NQ6H-1_WfwkMZI_qYPLs1a-t7PU0AbeE9KPxYzNiCp1OUedn8zbXmTkiS&skey=f2030a904b731103&v=v6"
+              "https://fonts.gstatic.com/s/geistmono/v6/or3nQ6H-1_WfwkMZI_qYFrcdmg.woff2",
+              "https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2"
             ],
             "scripts": []
           },
@@ -28452,7 +28420,7 @@
             "width": 1440,
             "height": 900
           },
-          "pageHeight": 4462,
+          "pageHeight": 4438,
           "horizontalOverflow": false,
           "seo": {
             "title": "Free Gift Handle Box Mockup · RAM Studio",
@@ -28539,7 +28507,7 @@
             {
               "tag": "h2",
               "text": "More like this",
-              "size": 63.4,
+              "size": 37.4,
               "weight": "500",
               "family": "Geist"
             },
@@ -28640,12 +28608,6 @@
             ],
             "typeScale": [
               {
-                "size": 63.4,
-                "count": 1,
-                "area": 22070,
-                "ratioToNext": 1.474
-              },
-              {
                 "size": 43,
                 "count": 1,
                 "area": 34605,
@@ -28655,7 +28617,13 @@
                 "size": 40,
                 "count": 1,
                 "area": 4720,
-                "ratioToNext": 1.818
+                "ratioToNext": 1.07
+              },
+              {
+                "size": 37.4,
+                "count": 1,
+                "area": 7702,
+                "ratioToNext": 1.7
               },
               {
                 "size": 22,
@@ -28906,7 +28874,7 @@
                 }
               },
               {
-                "value": "Geist | 63.4px | 500 | lh 0.95 | ls -0.035em | none",
+                "value": "Geist | 37.4px | 500 | lh 0.95 | ls -0.035em | none",
                 "count": 1,
                 "sample": {
                   "tag": "h2",
@@ -29520,7 +29488,7 @@
               },
               {
                 "name": "orb-spin",
-                "css": "@keyframes orb-spin { \n  100% { filter: hue-rotate(40deg); transform: rotate(360deg); }\n}"
+                "css": "@keyframes orb-spin { \n  100% { transform: rotate(360deg); }\n}"
               }
             ],
             "cursors": []
@@ -29729,9 +29697,9 @@
               "el": "section.section-tight",
               "tag": "section",
               "top": 3142,
-              "height": 664,
+              "height": 639,
               "width": 1312,
-              "heightVH": 0.74,
+              "heightVH": 0.71,
               "bg": "transparent",
               "bgLightness": null,
               "bgImage": null,
@@ -29740,7 +29708,7 @@
                 {
                   "tag": "h2",
                   "text": "More like this",
-                  "size": 63.4
+                  "size": 37.4
                 },
                 {
                   "tag": "h3",
@@ -29759,7 +29727,7 @@
                 }
               ],
               "largestText": {
-                "size": 63.4,
+                "size": 37.4,
                 "text": "More like this"
               },
               "counts": {
@@ -29788,7 +29756,7 @@
               "index": 5,
               "el": "footer.footer.night.on-dark",
               "tag": "footer",
-              "top": 3946,
+              "top": 3922,
               "height": 516,
               "width": 1440,
               "heightVH": 0.57,
@@ -30508,7 +30476,7 @@
                 },
                 "to": {
                   "opacity": "0.99996",
-                  "transform": "matrix(1, 0, 0, 1, 0, 0.00160784)"
+                  "transform": "matrix(1, 0, 0, 1, 0, 0.00160996)"
                 },
                 "transition": "1s, 1s cubic-bezier(0.16, 1, 0.3, 1), cubic-bezier(0.16, 1, 0.3, 1) delay 0.32s",
                 "animation": null
@@ -30642,15 +30610,15 @@
           },
           "network": {
             "requests": 19,
-            "bytes": 647714,
+            "bytes": 647732,
             "byType": {
               "document": {
                 "count": 1,
-                "bytes": 7460
+                "bytes": 7469
               },
               "stylesheet": {
                 "count": 3,
-                "bytes": 7691
+                "bytes": 7700
               },
               "image": {
                 "count": 13,
@@ -30678,7 +30646,7 @@
             "width": 390,
             "height": 844
           },
-          "pageHeight": 6822,
+          "pageHeight": 6815,
           "horizontalOverflow": false,
           "nav": {
             "el": "header.header.tone-light",
@@ -30698,9 +30666,15 @@
             },
             {
               "size": 36,
-              "count": 2,
-              "area": 29131,
-              "ratioToNext": 1.636
+              "count": 1,
+              "area": 22008,
+              "ratioToNext": 1.286
+            },
+            {
+              "size": 28,
+              "count": 1,
+              "area": 4310,
+              "ratioToNext": 1.273
             },
             {
               "size": 22,
@@ -30812,7 +30786,7 @@
             {
               "tag": "h2",
               "text": "More like this",
-              "size": 36,
+              "size": 28,
               "weight": "500",
               "family": "Geist"
             },
@@ -30939,19 +30913,19 @@
             },
             {
               "index": 4,
-              "height": 1232,
-              "heightVH": 1.46,
+              "height": 1225,
+              "heightVH": 1.45,
               "bg": "transparent",
               "bgLightness": null,
               "headings": [
                 {
                   "tag": "h2",
                   "text": "More like this",
-                  "size": 36
+                  "size": 28
                 }
               ],
               "largestText": {
-                "size": 36,
+                "size": 28,
                 "text": "More like this"
               },
               "repeated": {
@@ -31023,7 +30997,7 @@
             "width": 1440,
             "height": 900
           },
-          "pageHeight": 4934,
+          "pageHeight": 4909,
           "horizontalOverflow": false,
           "seo": {
             "title": "FREE Baseball Cap Mockup · RAM Studio",
@@ -31124,7 +31098,7 @@
             {
               "tag": "h2",
               "text": "More like this",
-              "size": 63.4,
+              "size": 37.4,
               "weight": "500",
               "family": "Geist"
             },
@@ -31225,12 +31199,6 @@
             ],
             "typeScale": [
               {
-                "size": 63.4,
-                "count": 1,
-                "area": 22070,
-                "ratioToNext": 1.474
-              },
-              {
                 "size": 43,
                 "count": 1,
                 "area": 34605,
@@ -31240,7 +31208,13 @@
                 "size": 40,
                 "count": 1,
                 "area": 4720,
-                "ratioToNext": 1.818
+                "ratioToNext": 1.07
+              },
+              {
+                "size": 37.4,
+                "count": 1,
+                "area": 7702,
+                "ratioToNext": 1.7
               },
               {
                 "size": 22,
@@ -31485,7 +31459,7 @@
                 }
               },
               {
-                "value": "Geist | 63.4px | 500 | lh 0.95 | ls -0.035em | none",
+                "value": "Geist | 37.4px | 500 | lh 0.95 | ls -0.035em | none",
                 "count": 1,
                 "sample": {
                   "tag": "h2",
@@ -32090,7 +32064,7 @@
               },
               {
                 "name": "orb-spin",
-                "css": "@keyframes orb-spin { \n  100% { filter: hue-rotate(40deg); transform: rotate(360deg); }\n}"
+                "css": "@keyframes orb-spin { \n  100% { transform: rotate(360deg); }\n}"
               }
             ],
             "cursors": []
@@ -32299,9 +32273,9 @@
               "el": "section.section-tight",
               "tag": "section",
               "top": 3614,
-              "height": 664,
+              "height": 639,
               "width": 1312,
-              "heightVH": 0.74,
+              "heightVH": 0.71,
               "bg": "transparent",
               "bgLightness": null,
               "bgImage": null,
@@ -32310,7 +32284,7 @@
                 {
                   "tag": "h2",
                   "text": "More like this",
-                  "size": 63.4
+                  "size": 37.4
                 },
                 {
                   "tag": "h3",
@@ -32329,7 +32303,7 @@
                 }
               ],
               "largestText": {
-                "size": 63.4,
+                "size": 37.4,
                 "text": "More like this"
               },
               "counts": {
@@ -32358,7 +32332,7 @@
               "index": 5,
               "el": "footer.footer.night.on-dark",
               "tag": "footer",
-              "top": 4418,
+              "top": 4393,
               "height": 516,
               "width": 1440,
               "heightVH": 0.57,
@@ -33108,7 +33082,7 @@
                 },
                 "to": {
                   "opacity": "0.99996",
-                  "transform": "matrix(1, 0, 0, 1, 0, 0.00161032)"
+                  "transform": "matrix(1, 0, 0, 1, 0, 0.00161124)"
                 },
                 "transition": "1s, 1s cubic-bezier(0.16, 1, 0.3, 1), cubic-bezier(0.16, 1, 0.3, 1) delay 0.32s",
                 "animation": null
@@ -33242,11 +33216,11 @@
           },
           "network": {
             "requests": 20,
-            "bytes": 595848,
+            "bytes": 595864,
             "byType": {
               "document": {
                 "count": 1,
-                "bytes": 7844
+                "bytes": 7851
               },
               "image": {
                 "count": 14,
@@ -33254,7 +33228,7 @@
               },
               "stylesheet": {
                 "count": 3,
-                "bytes": 7691
+                "bytes": 7700
               },
               "font": {
                 "count": 2,
@@ -33278,7 +33252,7 @@
             "width": 390,
             "height": 844
           },
-          "pageHeight": 7882,
+          "pageHeight": 7875,
           "horizontalOverflow": false,
           "nav": {
             "el": "header.header.tone-light",
@@ -33298,9 +33272,15 @@
             },
             {
               "size": 36,
-              "count": 2,
-              "area": 29131,
-              "ratioToNext": 1.636
+              "count": 1,
+              "area": 22008,
+              "ratioToNext": 1.286
+            },
+            {
+              "size": 28,
+              "count": 1,
+              "area": 4310,
+              "ratioToNext": 1.273
             },
             {
               "size": 22,
@@ -33420,7 +33400,7 @@
             {
               "tag": "h2",
               "text": "More like this",
-              "size": 36,
+              "size": 28,
               "weight": "500",
               "family": "Geist"
             },
@@ -33547,19 +33527,19 @@
             },
             {
               "index": 4,
-              "height": 1244,
-              "heightVH": 1.47,
+              "height": 1236,
+              "heightVH": 1.46,
               "bg": "transparent",
               "bgLightness": null,
               "headings": [
                 {
                   "tag": "h2",
                   "text": "More like this",
-                  "size": 36
+                  "size": 28
                 }
               ],
               "largestText": {
-                "size": 36,
+                "size": 28,
                 "text": "More like this"
               },
               "repeated": {
@@ -33631,7 +33611,7 @@
             "width": 1440,
             "height": 900
           },
-          "pageHeight": 4588,
+          "pageHeight": 4564,
           "horizontalOverflow": false,
           "seo": {
             "title": "Laptop Long Scroll Screen Mockup — $14 · RAM Studio",
@@ -33683,7 +33663,7 @@
             {
               "tag": "h2",
               "text": "More like this",
-              "size": 63.4,
+              "size": 37.4,
               "weight": "500",
               "family": "Geist"
             },
@@ -33784,12 +33764,6 @@
             ],
             "typeScale": [
               {
-                "size": 63.4,
-                "count": 1,
-                "area": 22070,
-                "ratioToNext": 1.474
-              },
-              {
                 "size": 43,
                 "count": 1,
                 "area": 34605,
@@ -33799,7 +33773,13 @@
                 "size": 40,
                 "count": 1,
                 "area": 1496,
-                "ratioToNext": 2.312
+                "ratioToNext": 1.07
+              },
+              {
+                "size": 37.4,
+                "count": 1,
+                "area": 7702,
+                "ratioToNext": 2.162
               },
               {
                 "size": 17.3,
@@ -34029,7 +34009,7 @@
                 }
               },
               {
-                "value": "Geist | 63.4px | 500 | lh 0.95 | ls -0.035em | none",
+                "value": "Geist | 37.4px | 500 | lh 0.95 | ls -0.035em | none",
                 "count": 1,
                 "sample": {
                   "tag": "h2",
@@ -34638,7 +34618,7 @@
               },
               {
                 "name": "orb-spin",
-                "css": "@keyframes orb-spin { \n  100% { filter: hue-rotate(40deg); transform: rotate(360deg); }\n}"
+                "css": "@keyframes orb-spin { \n  100% { transform: rotate(360deg); }\n}"
               }
             ],
             "cursors": []
@@ -34847,9 +34827,9 @@
               "el": "section.section-tight",
               "tag": "section",
               "top": 3268,
-              "height": 664,
+              "height": 639,
               "width": 1312,
-              "heightVH": 0.74,
+              "heightVH": 0.71,
               "bg": "transparent",
               "bgLightness": null,
               "bgImage": null,
@@ -34858,7 +34838,7 @@
                 {
                   "tag": "h2",
                   "text": "More like this",
-                  "size": 63.4
+                  "size": 37.4
                 },
                 {
                   "tag": "h3",
@@ -34877,7 +34857,7 @@
                 }
               ],
               "largestText": {
-                "size": 63.4,
+                "size": 37.4,
                 "text": "More like this"
               },
               "counts": {
@@ -34906,7 +34886,7 @@
               "index": 5,
               "el": "footer.footer.night.on-dark",
               "tag": "footer",
-              "top": 4072,
+              "top": 4048,
               "height": 516,
               "width": 1440,
               "heightVH": 0.57,
@@ -35854,15 +35834,15 @@
           },
           "network": {
             "requests": 22,
-            "bytes": 603970,
+            "bytes": 603985,
             "byType": {
               "document": {
                 "count": 1,
-                "bytes": 7468
+                "bytes": 7474
               },
               "stylesheet": {
                 "count": 3,
-                "bytes": 7691
+                "bytes": 7700
               },
               "image": {
                 "count": 16,
@@ -35878,8 +35858,8 @@
               "fonts.gstatic.com"
             ],
             "fonts": [
-              "https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2",
-              "https://fonts.gstatic.com/s/geistmono/v6/or3nQ6H-1_WfwkMZI_qYFrcdmg.woff2"
+              "https://fonts.gstatic.com/s/geistmono/v6/or3nQ6H-1_WfwkMZI_qYFrcdmg.woff2",
+              "https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2"
             ],
             "scripts": []
           },
@@ -35890,7 +35870,7 @@
             "width": 390,
             "height": 844
           },
-          "pageHeight": 7246,
+          "pageHeight": 7238,
           "horizontalOverflow": false,
           "nav": {
             "el": "header.header.tone-light",
@@ -35910,9 +35890,15 @@
             },
             {
               "size": 36,
-              "count": 2,
-              "area": 29131,
-              "ratioToNext": 2.25
+              "count": 1,
+              "area": 22008,
+              "ratioToNext": 1.286
+            },
+            {
+              "size": 28,
+              "count": 1,
+              "area": 4310,
+              "ratioToNext": 1.75
             },
             {
               "size": 16,
@@ -35977,7 +35963,7 @@
             {
               "tag": "h2",
               "text": "More like this",
-              "size": 36,
+              "size": 28,
               "weight": "500",
               "family": "Geist"
             },
@@ -36104,19 +36090,19 @@
             },
             {
               "index": 4,
-              "height": 1232,
-              "heightVH": 1.46,
+              "height": 1225,
+              "heightVH": 1.45,
               "bg": "transparent",
               "bgLightness": null,
               "headings": [
                 {
                   "tag": "h2",
                   "text": "More like this",
-                  "size": 36
+                  "size": 28
                 }
               ],
               "largestText": {
-                "size": 36,
+                "size": 28,
                 "text": "More like this"
               },
               "repeated": {
@@ -36188,7 +36174,7 @@
             "width": 1440,
             "height": 900
           },
-          "pageHeight": 2086,
+          "pageHeight": 2063,
           "horizontalOverflow": false,
           "seo": {
             "title": "Mockup License — What You Can Do · RAM Studio",
@@ -36210,7 +36196,7 @@
             {
               "tag": "h1",
               "text": "Mockup license",
-              "size": 80,
+              "size": 56,
               "weight": "500",
               "family": "Geist"
             },
@@ -36309,10 +36295,10 @@
             ],
             "typeScale": [
               {
-                "size": 80,
+                "size": 56,
                 "count": 1,
-                "area": 79040,
-                "ratioToNext": 3.089
+                "area": 38721,
+                "ratioToNext": 2.162
               },
               {
                 "size": 25.9,
@@ -36335,7 +36321,7 @@
               {
                 "size": 17.3,
                 "count": 12,
-                "area": 239372,
+                "area": 239373,
                 "ratioToNext": 1.153
               },
               {
@@ -36446,7 +36432,7 @@
                 }
               },
               {
-                "value": "Geist | 80px | 500 | lh 0.95 | ls -0.035em | none",
+                "value": "Geist | 56px | 500 | lh 0.95 | ls -0.035em | none",
                 "count": 1,
                 "sample": {
                   "tag": "h1",
@@ -36745,7 +36731,7 @@
                 "count": 2
               },
               {
-                "value": "1040px",
+                "value": "728px",
                 "count": 1
               },
               {
@@ -36775,7 +36761,7 @@
                 "count": 1
               },
               {
-                "value": 1040,
+                "value": 728,
                 "count": 1
               },
               {
@@ -36931,7 +36917,7 @@
               },
               {
                 "name": "orb-spin",
-                "css": "@keyframes orb-spin { \n  100% { filter: hue-rotate(40deg); transform: rotate(360deg); }\n}"
+                "css": "@keyframes orb-spin { \n  100% { transform: rotate(360deg); }\n}"
               }
             ],
             "cursors": []
@@ -37036,12 +37022,12 @@
             },
             {
               "index": 2,
-              "el": "section.page-hero.center",
+              "el": "section.page-hero.center.size-sm",
               "tag": "section",
               "top": 120,
-              "height": 405,
+              "height": 383,
               "width": 1440,
-              "heightVH": 0.45,
+              "heightVH": 0.43,
               "bg": "transparent",
               "bgLightness": null,
               "bgImage": null,
@@ -37050,11 +37036,11 @@
                 {
                   "tag": "h1",
                   "text": "Mockup license",
-                  "size": 80
+                  "size": 56
                 }
               ],
               "largestText": {
-                "size": 80,
+                "size": 56,
                 "text": "Mockup license"
               },
               "counts": {
@@ -37075,7 +37061,7 @@
               "index": 3,
               "el": "section.section-tight",
               "tag": "section",
-              "top": 525,
+              "top": 503,
               "height": 905,
               "width": 1440,
               "heightVH": 1.01,
@@ -37135,7 +37121,7 @@
               "index": 4,
               "el": "footer.footer.night.on-dark",
               "tag": "footer",
-              "top": 1570,
+              "top": 1547,
               "height": 516,
               "width": 1440,
               "heightVH": 0.57,
@@ -37624,15 +37610,15 @@
           },
           "network": {
             "requests": 7,
-            "bytes": 155313,
+            "bytes": 148271,
             "byType": {
               "document": {
                 "count": 1,
-                "bytes": 5079
+                "bytes": 5106
               },
               "stylesheet": {
                 "count": 2,
-                "bytes": 6459
+                "bytes": 6542
               },
               "image": {
                 "count": 2,
@@ -37640,7 +37626,7 @@
               },
               "font": {
                 "count": 2,
-                "bytes": 52528
+                "bytes": 45376
               }
             },
             "thirdPartyDomains": [
@@ -37648,8 +37634,8 @@
               "fonts.gstatic.com"
             ],
             "fonts": [
-              "https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2",
-              "https://fonts.gstatic.com/s/geistmono/v6/or3nQ6H-1_WfwkMZI_qYFrcdmg.woff2"
+              "https://fonts.gstatic.com/l/font?kit=gyBUhwUxId8gMGYQMKR3pzfaWI_RwuNalrErE8iusq2Kkq6JNBi4zg&skey=70a816dcd17c8a3c&v=v5",
+              "https://fonts.gstatic.com/l/font?kit=or3NQ6H-1_WfwkMZI_qYPLs1a-t7PU0AbeE9KPxYzNiCp1OUedn8zbXmTkiS&skey=f2030a904b731103&v=v6"
             ],
             "scripts": []
           },
@@ -37660,7 +37646,7 @@
             "width": 390,
             "height": 844
           },
-          "pageHeight": 3026,
+          "pageHeight": 3022,
           "horizontalOverflow": false,
           "nav": {
             "el": "header.header.tone-light",
@@ -37673,10 +37659,10 @@
           },
           "typeScale": [
             {
-              "size": 44,
+              "size": 40,
               "count": 1,
-              "area": 14867,
-              "ratioToNext": 2
+              "area": 13516,
+              "ratioToNext": 1.818
             },
             {
               "size": 22,
@@ -37731,7 +37717,7 @@
             {
               "tag": "h1",
               "text": "Mockup license",
-              "size": 44,
+              "size": 40,
               "weight": "500",
               "family": "Geist"
             },
@@ -37830,19 +37816,19 @@
             },
             {
               "index": 2,
-              "height": 292,
-              "heightVH": 0.35,
+              "height": 288,
+              "heightVH": 0.34,
               "bg": "transparent",
               "bgLightness": null,
               "headings": [
                 {
                   "tag": "h1",
                   "text": "Mockup license",
-                  "size": 44
+                  "size": 40
                 }
               ],
               "largestText": {
-                "size": 44,
+                "size": 40,
                 "text": "Mockup license"
               },
               "repeated": null,
@@ -37934,7 +37920,7 @@
             "width": 1440,
             "height": 900
           },
-          "pageHeight": 2141,
+          "pageHeight": 2095,
           "horizontalOverflow": false,
           "seo": {
             "title": "FAQ — Buying & Using RAM Studio Mockups",
@@ -37958,7 +37944,7 @@
             {
               "tag": "h1",
               "text": "Questions and answers.",
-              "size": 80,
+              "size": 56,
               "weight": "500",
               "family": "Geist"
             },
@@ -38078,10 +38064,10 @@
             ],
             "typeScale": [
               {
-                "size": 80,
+                "size": 56,
                 "count": 2,
-                "area": 237120,
-                "ratioToNext": 4
+                "area": 116162,
+                "ratioToNext": 2.8
               },
               {
                 "size": 20,
@@ -38173,7 +38159,7 @@
                 }
               },
               {
-                "value": "Geist | 80px | 500 | lh 0.95 | ls -0.035em | none",
+                "value": "Geist | 56px | 500 | lh 0.95 | ls -0.035em | none",
                 "count": 2,
                 "sample": {
                   "tag": "h1",
@@ -38516,7 +38502,7 @@
                 "count": 2
               },
               {
-                "value": "1040px",
+                "value": "728px",
                 "count": 1
               },
               {
@@ -38542,7 +38528,7 @@
                 "count": 3
               },
               {
-                "value": 1040,
+                "value": 728,
                 "count": 2
               },
               {
@@ -38718,7 +38704,7 @@
               },
               {
                 "name": "orb-spin",
-                "css": "@keyframes orb-spin { \n  100% { filter: hue-rotate(40deg); transform: rotate(360deg); }\n}"
+                "css": "@keyframes orb-spin { \n  100% { transform: rotate(360deg); }\n}"
               }
             ],
             "cursors": []
@@ -38823,12 +38809,12 @@
             },
             {
               "index": 2,
-              "el": "section.page-hero.center",
+              "el": "section.page-hero.center.size-sm",
               "tag": "section",
               "top": 120,
-              "height": 452,
+              "height": 407,
               "width": 1440,
-              "heightVH": 0.5,
+              "heightVH": 0.45,
               "bg": "transparent",
               "bgLightness": null,
               "bgImage": null,
@@ -38837,11 +38823,11 @@
                 {
                   "tag": "h1",
                   "text": "Questions and answers.",
-                  "size": 80
+                  "size": 56
                 }
               ],
               "largestText": {
-                "size": 80,
+                "size": 56,
                 "text": "Questions and answers."
               },
               "counts": {
@@ -38862,7 +38848,7 @@
               "index": 3,
               "el": "section.section.faq",
               "tag": "section",
-              "top": 572,
+              "top": 527,
               "height": 912,
               "width": 1440,
               "heightVH": 1.01,
@@ -38922,7 +38908,7 @@
               "index": 4,
               "el": "footer.footer.night.on-dark",
               "tag": "footer",
-              "top": 1624,
+              "top": 1579,
               "height": 516,
               "width": 1440,
               "heightVH": 0.57,
@@ -39235,22 +39221,8 @@
               }
             ],
             "scrollLinkedElements": 0,
-            "revealCandidates": 17,
+            "revealCandidates": 15,
             "reveals": [
-              {
-                "el": "div.row",
-                "parent": "div",
-                "from": {
-                  "opacity": "0",
-                  "transform": "matrix(1, 0, 0, 1, 0, 40)"
-                },
-                "to": {
-                  "opacity": "1",
-                  "transform": "none"
-                },
-                "transition": "0.45s cubic-bezier(0.22, 0.8, 0.24, 1) delay 0s",
-                "animation": null
-              },
               {
                 "el": "div.row",
                 "parent": "div",
@@ -39372,7 +39344,7 @@
                 },
                 "to": {
                   "opacity": "0.999999",
-                  "transform": "matrix(1, 0, 0, 1, 0, 5.66209e-05)"
+                  "transform": "matrix(1, 0, 0, 1, 0, 5.66503e-05)"
                 },
                 "transition": "1s, 1s cubic-bezier(0.16, 1, 0.3, 1), cubic-bezier(0.16, 1, 0.3, 1) delay 0.24s",
                 "animation": null
@@ -39386,13 +39358,13 @@
                 },
                 "to": {
                   "opacity": "0.999865",
-                  "transform": "matrix(1, 0, 0, 1, 0, 0.00539711)"
+                  "transform": "matrix(1, 0, 0, 1, 0, 0.00539777)"
                 },
                 "transition": "1s, 1s cubic-bezier(0.16, 1, 0.3, 1), cubic-bezier(0.16, 1, 0.3, 1) delay 0.32s",
                 "animation": null
               }
             ],
-            "revealCount": 11
+            "revealCount": 10
           },
           "hover": [
             {
@@ -39492,15 +39464,15 @@
           },
           "network": {
             "requests": 7,
-            "bytes": 156379,
+            "bytes": 156388,
             "byType": {
               "document": {
                 "count": 1,
-                "bytes": 6145
+                "bytes": 6165
               },
               "stylesheet": {
                 "count": 2,
-                "bytes": 6459
+                "bytes": 6448
               },
               "image": {
                 "count": 2,
@@ -39528,7 +39500,7 @@
             "width": 390,
             "height": 844
           },
-          "pageHeight": 2712,
+          "pageHeight": 2704,
           "horizontalOverflow": false,
           "nav": {
             "el": "header.header.tone-light",
@@ -39541,10 +39513,10 @@
           },
           "typeScale": [
             {
-              "size": 44,
+              "size": 40,
               "count": 2,
-              "area": 44600,
-              "ratioToNext": 2.588
+              "area": 40548,
+              "ratioToNext": 2.353
             },
             {
               "size": 17,
@@ -39581,7 +39553,7 @@
             {
               "tag": "h1",
               "text": "Questions and answers.",
-              "size": 44,
+              "size": 40,
               "weight": "500",
               "family": "Geist"
             },
@@ -39701,19 +39673,19 @@
             },
             {
               "index": 2,
-              "height": 309,
-              "heightVH": 0.37,
+              "height": 301,
+              "heightVH": 0.36,
               "bg": "transparent",
               "bgLightness": null,
               "headings": [
                 {
                   "tag": "h1",
                   "text": "Questions and answers.",
-                  "size": 44
+                  "size": 40
                 }
               ],
               "largestText": {
-                "size": 44,
+                "size": 40,
                 "text": "Questions and answers."
               },
               "repeated": null,
@@ -39805,7 +39777,7 @@
             "width": 1440,
             "height": 900
           },
-          "pageHeight": 1715,
+          "pageHeight": 1692,
           "horizontalOverflow": false,
           "seo": {
             "title": "Contact RAM Studio — Mockups & Custom Work",
@@ -39827,7 +39799,7 @@
             {
               "tag": "h1",
               "text": "Talk to the studio",
-              "size": 80,
+              "size": 56,
               "weight": "500",
               "family": "Geist"
             },
@@ -39912,10 +39884,10 @@
             ],
             "typeScale": [
               {
-                "size": 80,
+                "size": 56,
                 "count": 1,
-                "area": 79040,
-                "ratioToNext": 3.089
+                "area": 38721,
+                "ratioToNext": 2.162
               },
               {
                 "size": 25.9,
@@ -40034,7 +40006,7 @@
                 }
               },
               {
-                "value": "Geist | 80px | 500 | lh 0.95 | ls -0.035em | none",
+                "value": "Geist | 56px | 500 | lh 0.95 | ls -0.035em | none",
                 "count": 1,
                 "sample": {
                   "tag": "h1",
@@ -40321,7 +40293,7 @@
                 "count": 2
               },
               {
-                "value": "1040px",
+                "value": "728px",
                 "count": 1
               },
               {
@@ -40347,7 +40319,7 @@
                 "count": 1
               },
               {
-                "value": 1040,
+                "value": 728,
                 "count": 1
               },
               {
@@ -40511,7 +40483,7 @@
               },
               {
                 "name": "orb-spin",
-                "css": "@keyframes orb-spin { \n  100% { filter: hue-rotate(40deg); transform: rotate(360deg); }\n}"
+                "css": "@keyframes orb-spin { \n  100% { transform: rotate(360deg); }\n}"
               }
             ],
             "cursors": []
@@ -40616,12 +40588,12 @@
             },
             {
               "index": 2,
-              "el": "section.page-hero.center",
+              "el": "section.page-hero.center.size-sm",
               "tag": "section",
               "top": 120,
-              "height": 405,
+              "height": 383,
               "width": 1440,
-              "heightVH": 0.45,
+              "heightVH": 0.43,
               "bg": "transparent",
               "bgLightness": null,
               "bgImage": null,
@@ -40630,11 +40602,11 @@
                 {
                   "tag": "h1",
                   "text": "Talk to the studio",
-                  "size": 80
+                  "size": 56
                 }
               ],
               "largestText": {
-                "size": 80,
+                "size": 56,
                 "text": "Talk to the studio"
               },
               "counts": {
@@ -40655,7 +40627,7 @@
               "index": 3,
               "el": "section.section-tight",
               "tag": "section",
-              "top": 525,
+              "top": 503,
               "height": 533,
               "width": 1440,
               "heightVH": 0.59,
@@ -40710,7 +40682,7 @@
               "index": 4,
               "el": "footer.footer.night.on-dark",
               "tag": "footer",
-              "top": 1199,
+              "top": 1176,
               "height": 516,
               "width": 1440,
               "heightVH": 0.57,
@@ -41090,7 +41062,7 @@
                 },
                 "to": {
                   "opacity": "0.999999",
-                  "transform": "matrix(1, 0, 0, 1, 0, 5.67531e-05)"
+                  "transform": "matrix(1, 0, 0, 1, 0, 5.65183e-05)"
                 },
                 "transition": "1s, 1s cubic-bezier(0.16, 1, 0.3, 1), cubic-bezier(0.16, 1, 0.3, 1) delay 0.24s",
                 "animation": null
@@ -41104,7 +41076,7 @@
                 },
                 "to": {
                   "opacity": "0.999865",
-                  "transform": "matrix(1, 0, 0, 1, 0, 0.00540005)"
+                  "transform": "matrix(1, 0, 0, 1, 0, 0.00539483)"
                 },
                 "transition": "1s, 1s cubic-bezier(0.16, 1, 0.3, 1), cubic-bezier(0.16, 1, 0.3, 1) delay 0.32s",
                 "animation": null
@@ -41220,15 +41192,15 @@
           },
           "network": {
             "requests": 7,
-            "bytes": 154961,
+            "bytes": 154978,
             "byType": {
               "document": {
                 "count": 1,
-                "bytes": 4727
+                "bytes": 4755
               },
               "stylesheet": {
                 "count": 2,
-                "bytes": 6459
+                "bytes": 6448
               },
               "image": {
                 "count": 2,
@@ -41244,8 +41216,8 @@
               "fonts.gstatic.com"
             ],
             "fonts": [
-              "https://fonts.gstatic.com/s/geistmono/v6/or3nQ6H-1_WfwkMZI_qYFrcdmg.woff2",
-              "https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2"
+              "https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2",
+              "https://fonts.gstatic.com/s/geistmono/v6/or3nQ6H-1_WfwkMZI_qYFrcdmg.woff2"
             ],
             "scripts": []
           },
@@ -41256,7 +41228,7 @@
             "width": 390,
             "height": 844
           },
-          "pageHeight": 2766,
+          "pageHeight": 2763,
           "horizontalOverflow": false,
           "nav": {
             "el": "header.header.tone-light",
@@ -41269,10 +41241,10 @@
           },
           "typeScale": [
             {
-              "size": 44,
+              "size": 40,
               "count": 1,
-              "area": 14867,
-              "ratioToNext": 2.2
+              "area": 13516,
+              "ratioToNext": 2
             },
             {
               "size": 20,
@@ -41315,7 +41287,7 @@
             {
               "tag": "h1",
               "text": "Talk to the studio",
-              "size": 44,
+              "size": 40,
               "weight": "500",
               "family": "Geist"
             },
@@ -41400,19 +41372,19 @@
             },
             {
               "index": 2,
-              "height": 292,
-              "heightVH": 0.35,
+              "height": 288,
+              "heightVH": 0.34,
               "bg": "transparent",
               "bgLightness": null,
               "headings": [
                 {
                   "tag": "h1",
                   "text": "Talk to the studio",
-                  "size": 44
+                  "size": 40
                 }
               ],
               "largestText": {
-                "size": 44,
+                "size": 40,
                 "text": "Talk to the studio"
               },
               "repeated": null,
@@ -42318,7 +42290,7 @@
               },
               {
                 "name": "orb-spin",
-                "css": "@keyframes orb-spin { \n  100% { filter: hue-rotate(40deg); transform: rotate(360deg); }\n}"
+                "css": "@keyframes orb-spin { \n  100% { transform: rotate(360deg); }\n}"
               }
             ],
             "cursors": []
@@ -42423,7 +42395,7 @@
             },
             {
               "index": 2,
-              "el": "section.page-hero.left",
+              "el": "section.page-hero.left.size-lg",
               "tag": "section",
               "top": 120,
               "height": 481,
@@ -43206,15 +43178,15 @@
           },
           "network": {
             "requests": 7,
-            "bytes": 155858,
+            "bytes": 155869,
             "byType": {
               "document": {
                 "count": 1,
-                "bytes": 5624
+                "bytes": 5646
               },
               "stylesheet": {
                 "count": 2,
-                "bytes": 6459
+                "bytes": 6448
               },
               "image": {
                 "count": 2,
@@ -43230,8 +43202,8 @@
               "fonts.gstatic.com"
             ],
             "fonts": [
-              "https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2",
-              "https://fonts.gstatic.com/s/geistmono/v6/or3nQ6H-1_WfwkMZI_qYFrcdmg.woff2"
+              "https://fonts.gstatic.com/s/geistmono/v6/or3nQ6H-1_WfwkMZI_qYFrcdmg.woff2",
+              "https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2"
             ],
             "scripts": []
           },
@@ -43663,5 +43635,5 @@
     ],
     "note": "First viewport at 0.3s, 0.8s, 1.5s, 2.5s, 4s after navigation — compare frames to see load animations."
   },
-  "finishedAt": "2026-10-11T11:42:32.815Z"
+  "finishedAt": "2026-10-11T12:15:32.775Z"
 }
