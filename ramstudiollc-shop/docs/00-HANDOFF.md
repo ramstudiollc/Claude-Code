@@ -1,6 +1,8 @@
 # 00 — Handoff: read this first
 
-_Last updated 2026-10-11 by the cloud session. The cloud environment could not reach asylab.com, magnific.com, freepik.com, ramstudiollc.com or gumroad.com (network policy), so the work moves to the owner's Mac, which has normal internet._
+_Last updated 2026-10-11. The first cloud session could not reach asylab.com, magnific.com, freepik.com, ramstudiollc.com or gumroad.com (network policy)._
+
+**Where to work:** first test access with `curl -s -o /dev/null -w "%{http_code}" https://www.asylab.com/`. If it returns 200 (or a 3xx), do every step **in this session** — the owner does not want to use the Terminal. If it is blocked, tell the owner to set **Network access → Full** in the cloud environment settings (title bar → environment → Edit) and start a new session.
 
 ## The owner's verdict on v0.1
 
