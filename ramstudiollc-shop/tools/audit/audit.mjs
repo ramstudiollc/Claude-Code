@@ -226,7 +226,7 @@ async function crawl() {
         const r = await ctx.request.get(n, { timeout: 15000 }).catch(() => null);
         if (r?.ok()) xml += await r.text();
       }
-      for (const m of xml.matchAll(/<loc>([^<]+)<\/loc>/g)) if (!m[1].endsWith('.xml') && m[1].startsWith(origin)) all.add(m[1]);
+      for (const m of xml.matchAll(/<loc>([^<]+)<\/loc>/g)) if (!m[1].endsWith('.xml') && m[1].startsWith(origin) && !m[1].includes('/cdn-cgi/')) all.add(m[1]);
       report.sitemapUrls = [...all].length;
     }
   } catch {}
@@ -249,7 +249,7 @@ async function crawl() {
         } catch {
           continue;
         }
-        if (u.origin !== origin || /\.(jpg|jpeg|png|webp|gif|svg|pdf|zip|mp4)$/i.test(u.pathname)) continue;
+        if (u.origin !== origin || /\.(jpg|jpeg|png|webp|gif|svg|pdf|zip|mp4)$/i.test(u.pathname) || u.pathname.startsWith('/cdn-cgi/')) continue;
         u.hash = '';
         u.search = '';
         const clean = u.href;
