@@ -1,0 +1,181 @@
+---
+import Icon from './Icon.astro';
+import Orb from './Orb.astro';
+import Button from './Button.astro';
+import { site, isSet } from '../config/site';
+import { activeCategories, stats } from '../lib/catalog';
+const year = new Date().getFullYear();
+---
+
+<footer class="footer night on-dark">
+  <div class="wrap">
+    <div class="top">
+      <div class="brand" data-reveal>
+        <a href="/" aria-label="Home"><img src={site.logo.light} alt={site.legalName} width="170" height="31" /></a>
+        <p>{stats.products} Photoshop mockups from a packaging design studio. Browse here — checkout and downloads run on Gumroad.</p>
+        <a class="mail" href={`mailto:${site.agency.email}`}><Icon name="mail" size={18} /> {site.agency.email}</a>
+      </div>
+
+      <nav aria-label="Mockups" data-reveal style="--i:1">
+        <h2 class="col-title">Mockups</h2>
+        <ul>
+          <li><a href="/mockups/">All mockups</a></li>
+          {activeCategories.map((c) => <li><a href={`/category/${c.slug}/`}>{c.name}</a></li>)}
+          <li><a href="/freebies/">Free mockups</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Shop" data-reveal style="--i:2">
+        <h2 class="col-title">Shop</h2>
+        <ul>
+          <li><a href="/gallery/">Gallery</a></li>
+          <li><a href="/all-access/">All-Access Pass</a></li>
+          <li><a href="/license/">License</a></li>
+          {isSet(site.gumroadStore) && <li><a href={site.gumroadStore} rel="noopener">Gumroad store</a></li>}
+        </ul>
+      </nav>
+
+      <nav aria-label="Support" data-reveal style="--i:3">
+        <h2 class="col-title">Support</h2>
+        <ul>
+          <li><a href="/faq/">FAQ</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href={site.agency.url} rel="noopener">Custom work</a></li>
+        </ul>
+      </nav>
+
+      {isSet(site.newsletterUrl) && (
+        <div class="news" data-reveal style="--i:4">
+          <h2 class="col-title"><Orb variant="aurora" size={18} /> Newsletter</h2>
+          <p>New mockups and free files, sent by Gumroad when they go live.</p>
+          <Button href={site.newsletterUrl} variant="light" size="sm" block icon="mail">Subscribe on Gumroad</Button>
+          <p class="fine mono">Unsubscribe any time</p>
+        </div>
+      )}
+    </div>
+
+    <div class="base">
+      <p>© {year} {site.legalName}. All rights reserved.</p>
+      <ul class="legal">
+        <li><a href="/license/">License</a></li>
+        <li><a href="/faq/">FAQ</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+      <ul class="social">
+        {site.social.filter((s) => isSet(s.url)).map((s) => <li><a href={s.url} rel="noopener">{s.label}</a></li>)}
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    border-radius: var(--r-xl) var(--r-xl) 0 0;
+    margin-top: var(--section);
+    padding-top: clamp(56px, 7vw, 96px);
+  }
+  .top {
+    display: grid;
+    grid-template-columns: 1.4fr repeat(3, 0.8fr) 1.2fr;
+    gap: 40px;
+  }
+  .brand img {
+    height: 31px;
+    width: auto;
+  }
+  .brand p,
+  .news p {
+    margin-top: 18px;
+    max-width: 32ch;
+    font-size: 15px;
+    color: rgb(255 255 255 / 0.6);
+  }
+  .news p {
+    margin: 0 0 18px;
+  }
+  .mail {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+  }
+  .mail:hover {
+    color: #8fb8ff;
+  }
+  .col-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 12px;
+  }
+  nav a,
+  .base a {
+    color: rgb(255 255 255 / 0.6);
+    font-size: 15px;
+    text-decoration: none;
+    transition: color var(--t-fast);
+  }
+  nav a:hover,
+  .base a:hover {
+    color: #fff;
+  }
+  .fine {
+    margin-top: 12px;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: rgb(255 255 255 / 0.4);
+  }
+  .base {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px 28px;
+    flex-wrap: wrap;
+    margin-top: clamp(48px, 6vw, 80px);
+    padding-block: 26px;
+    border-top: 1px solid rgb(255 255 255 / 0.08);
+    font-size: 13px;
+    color: rgb(255 255 255 / 0.45);
+  }
+  .legal,
+  .social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+  }
+  .legal {
+    margin-right: auto;
+  }
+  @media (max-width: 1199px) {
+    .top {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .brand,
+    .news {
+      grid-column: span 3;
+    }
+  }
+  @media (max-width: 889px) {
+    .top {
+      grid-template-columns: 1fr 1fr;
+    }
+    .brand,
+    .news {
+      grid-column: span 2;
+    }
+  }
+</style>

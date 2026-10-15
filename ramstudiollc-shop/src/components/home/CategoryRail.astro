@@ -1,0 +1,114 @@
+---
+import Heading from '../Heading.astro';
+import IconTile from '../IconTile.astro';
+import Icon from '../Icon.astro';
+import MockupArt from '../MockupArt.astro';
+import { activeCategories } from '../../lib/catalog';
+---
+
+<section class="section cats">
+  <div class="wrap">
+    <div class="head">
+      <Heading eyebrow="Shop by category" icon="grid" title={['Find the right object,', 'in two clicks.']} />
+    </div>
+    <div class="rail" data-stagger>
+      {activeCategories.map((cat) => (
+        <a class="cat" href={`/category/${cat.slug}/`}>
+          <div class="img">
+            {cat.cover ? <img src={cat.cover} alt="" loading="lazy" width="800" height="600" /> : <MockupArt kind={cat.art} />}
+            <span class="count badge badge-glass">{cat.count} {cat.count === 1 ? 'mockup' : 'mockups'}</span>
+          </div>
+          <div class="info">
+            <IconTile name={cat.icon} tone={cat.tone} />
+            <span class="txt">
+              <strong>{cat.name}</strong>
+              <small>{cat.blurb}</small>
+            </span>
+            <span class="go"><Icon name="arrow" size={18} /></span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .rail {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: 20px;
+  }
+  .cat {
+    display: block;
+    padding: 10px;
+    border-radius: var(--r-lg);
+    background: var(--surface);
+    box-shadow: var(--shadow-md);
+    text-decoration: none;
+    transition: transform var(--t) var(--ease), box-shadow var(--t) var(--ease);
+  }
+  .cat:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+  }
+  .img {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    border-radius: 18px;
+    overflow: hidden;
+    background: var(--surface-2);
+  }
+  .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.2s var(--ease-out);
+  }
+  .cat:hover .img img {
+    transform: scale(1.06);
+  }
+  .count {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+  }
+  .info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 8px 8px;
+  }
+  .txt {
+    flex: 1;
+    min-width: 0;
+  }
+  .txt strong {
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .txt small {
+    display: block;
+    font-size: 14px;
+    color: var(--muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .go {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    color: var(--ink);
+    box-shadow: inset 0 0 0 1px var(--line-strong);
+    transition: background var(--t-fast), color var(--t-fast), transform var(--t) var(--spring);
+  }
+  .cat:hover .go {
+    background: var(--ink);
+    color: #fff;
+    transform: rotate(-45deg);
+  }
+</style>

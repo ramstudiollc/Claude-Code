@@ -1,0 +1,159 @@
+---
+import Icon from './Icon.astro';
+import IconTile from './IconTile.astro';
+import Button from './Button.astro';
+import Heading from './Heading.astro';
+import { faq } from '../data/content';
+import { site } from '../config/site';
+
+interface Props {
+  /** Render the H2 heading block (home); the FAQ page provides its own H1. */
+  withHead?: boolean;
+}
+const { withHead = true } = Astro.props;
+const tones = ['blue', 'violet', 'orange', 'mint', 'pink', 'sun', 'ink'] as const;
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faq.items.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+---
+
+<section class="section faq">
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <div class="wrap narrow">
+    {withHead && <Heading eyebrow={faq.eyebrow} icon="spark" title={faq.title} sub={faq.sub} />}
+    <div class="list" data-stagger>
+      {faq.items.map((f, i) => (
+        <div class="row" data-acc>
+          <h3>
+            <button type="button" aria-expanded="false" aria-controls={`faq-${i}`} id={`faq-q-${i}`} data-acc-btn>
+              <IconTile name={f.icon} tone={tones[i % tones.length]} size="sm" />
+              <span class="q">{f.q}</span>
+              <span class="chev"><Icon name="chevron" size={20} /></span>
+            </button>
+          </h3>
+          <div class="panel-a" id={`faq-${i}`} role="region" aria-labelledby={`faq-q-${i}`}>
+            <div class="inner"><p class="muted">{f.a}</p></div>
+          </div>
+        </div>
+      ))}
+      <div class="row contact">
+        <div class="ct">
+          <IconTile name="mail" tone="ink" size="sm" />
+          <div>
+            <h3 class="q">{faq.contact.title}</h3>
+            <p class="muted small">{faq.contact.text}</p>
+          </div>
+        </div>
+        <Button href={`mailto:${site.agency.email}`} icon="mail" external={false}>{faq.contact.label}</Button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Smooth accordion: the answer panel animates its height via grid rows.
+  document.querySelectorAll<HTMLElement>('[data-acc]').forEach((row) => {
+    const btn = row.querySelector<HTMLButtonElement>('[data-acc-btn]')!;
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') !== 'true';
+      btn.setAttribute('aria-expanded', String(open));
+      row.classList.toggle('is-open', open);
+    });
+  });
+</script>
+
+<style>
+  .narrow {
+    max-width: calc(1000px + 2 * var(--gutter));
+  }
+  .faq :global(.heading) {
+    margin-bottom: clamp(36px, 4vw, 56px);
+  }
+  .list {
+    display: grid;
+    gap: 12px;
+  }
+  .row {
+    background: var(--surface);
+    border-radius: 22px;
+    box-shadow: var(--shadow-sm), 0 0 0 1px var(--line);
+    transition: box-shadow var(--t) var(--ease);
+  }
+  .row:hover,
+  .row.is-open {
+    box-shadow: var(--shadow-md), 0 0 0 1px var(--line);
+  }
+  h3 {
+    margin: 0;
+  }
+  button {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    padding: 16px 22px 16px 16px;
+    border: 0;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+  }
+  .q {
+    flex: 1;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+  .chev {
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--page);
+    transition: transform var(--t) var(--spring), background var(--t-fast), color var(--t-fast);
+  }
+  .is-open .chev {
+    transform: rotate(180deg);
+    background: var(--ink);
+    color: #fff;
+  }
+  .panel-a {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows var(--t) var(--ease);
+  }
+  .is-open .panel-a {
+    grid-template-rows: 1fr;
+  }
+  .inner {
+    overflow: hidden;
+  }
+  .inner p {
+    padding: 0 24px 22px 66px;
+    max-width: 70ch;
+  }
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 16px 16px 16px 16px;
+  }
+  .ct {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  @media (max-width: 889px) {
+    .inner p {
+      padding-left: 22px;
+    }
+    .q {
+      font-size: 16px;
+    }
+  }
+</style>

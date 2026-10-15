@@ -1,0 +1,41 @@
+---
+// Two-tone heading: a soft first line and a strong second line. Accepts a string or [soft, strong].
+import Eyebrow from './Eyebrow.astro';
+import { fill } from '../lib/catalog';
+interface Props {
+  title: string | string[];
+  eyebrow?: string;
+  icon?: string;
+  sub?: string;
+  level?: 'h1' | 'h2';
+  size?: 'display' | 'h1' | 'h2';
+  align?: 'left' | 'center';
+}
+const { title, eyebrow, icon, sub, level = 'h2', size = 'h2', align = 'left' } = Astro.props;
+const [soft, strong] = Array.isArray(title) ? title : [null, title];
+const Tag = level;
+---
+
+<div class:list={['heading', align]}>
+  {eyebrow && <Eyebrow text={eyebrow} icon={icon} />}
+  <Tag class={size} data-reveal>
+    {soft && <span class="tone">{fill(soft)}</span>}
+    {fill(strong as string)}
+  </Tag>
+  {sub && <p class="lead" data-reveal>{fill(sub)}</p>}
+</div>
+
+<style>
+  .lead {
+    margin-top: 20px;
+  }
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .center .lead {
+    margin-inline: auto;
+  }
+</style>

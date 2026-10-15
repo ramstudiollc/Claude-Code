@@ -1,0 +1,200 @@
+---
+import Button from '../Button.astro';
+import Icon from '../Icon.astro';
+import { home } from '../../data/content';
+import { products, stats, fill } from '../../lib/catalog';
+
+const h = home.hero;
+const withImages = products.filter((p) => p.images.length);
+// A tilted wall of real preview images, mixed across products, drifting slowly.
+const pool: string[] = [];
+for (let k = 0; k < 4; k++) for (const p of withImages) if (p.images[k]) pool.push(p.images[k]);
+const cols = [0, 1, 2, 3, 4].map((c) => pool.filter((_, i) => i % 5 === c).slice(0, 6));
+---
+
+<section class="hero on-dark">
+  <div class="mosaic" aria-hidden="true">
+    <div class="plane">
+      {cols.map((col, i) => (
+        <div class="col" style={`--dur:${[70, 85, 65, 90, 75][i]}s; --dir:${i % 2 ? 'reverse' : 'normal'}`}>
+          <div class="track">
+            {[...col, ...col].map((src) => <img src={src} alt="" width="480" height="320" loading="eager" decoding="async" />)}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+  <div class="shade" aria-hidden="true"></div>
+
+  <div class="wrap content">
+    <p class="eyebrow intro" style="--d:0"><Icon name="spark" size={16} /><span class="txt">{h.eyebrow}</span></p>
+    <h1 class="display">
+      <span class="line"><span class="intro" style="--d:1">{h.title[0]}</span></span>
+      <span class="line"><span class="intro" style="--d:2">{h.title[1]}</span></span>
+    </h1>
+    <p class="lead intro" style="--d:3">{h.sub}</p>
+    <div class="ctas intro" style="--d:4">
+      <Button href={h.primary.href} variant="light" icon="gift">
+        Get <span class="pill-tag">FREE</span> mockups
+      </Button>
+      <Button href={h.secondary.href} variant="glass" icon="grid">{h.secondary.label}</Button>
+    </div>
+    {stats.reviews > 0 && (
+      <p class="trust intro" style="--d:5">
+        <span class="stars" aria-hidden="true">{[1, 2, 3, 4, 5].map(() => <Icon name="star" size={15} />)}</span>
+        <span>{stats.rating} from {stats.reviews} Gumroad reviews</span>
+        <span class="sep"></span>
+        <span>{fill('{products} mockups · {free} free')}</span>
+      </p>
+    )}
+  </div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    min-height: max(100svh, 760px);
+    display: flex;
+    align-items: center;
+    padding: 180px 0 calc(140px + var(--r-xl));
+    background: var(--night);
+    overflow: hidden;
+    isolation: isolate;
+  }
+  .mosaic {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    perspective: 1600px;
+  }
+  .plane {
+    position: absolute;
+    top: -30%;
+    left: 22%;
+    width: 120%;
+    height: 170%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 22px;
+    transform: rotateX(28deg) rotateZ(-18deg) rotateY(-8deg);
+    transform-origin: center;
+  }
+  .col {
+    overflow: hidden;
+  }
+  .track {
+    display: grid;
+    gap: 22px;
+    animation: drift var(--dur) linear infinite;
+    animation-direction: var(--dir);
+  }
+  @keyframes drift {
+    to {
+      transform: translateY(-50%);
+    }
+  }
+  .track img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 30px 50px -20px rgb(0 0 0 / 0.7), 0 0 0 1px rgb(255 255 255 / 0.06);
+  }
+  .shade {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+      linear-gradient(90deg, rgb(7 8 15 / 0.97) 0%, rgb(7 8 15 / 0.9) 45%, rgb(7 8 15 / 0.35) 78%, rgb(7 8 15 / 0.5) 100%),
+      linear-gradient(0deg, rgb(7 8 15 / 0.8) 0%, transparent 35%),
+      radial-gradient(50% 60% at 15% 40%, rgb(47 128 255 / 0.25), transparent 70%);
+  }
+  .content {
+    position: relative;
+  }
+  .display {
+    max-width: 11.5em;
+  }
+  .line {
+    display: block;
+    overflow: hidden;
+    padding-bottom: 0.06em;
+  }
+  .line > span {
+    display: block;
+  }
+  .line:first-child {
+    color: rgb(255 255 255 / 0.55);
+  }
+  .lead {
+    margin-top: 26px;
+    max-width: 31em;
+    color: rgb(255 255 255 / 0.72);
+  }
+  .ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 36px;
+  }
+  .ctas :global(.btn-light .pill-tag) {
+    background: var(--ink);
+    color: #fff;
+  }
+  .trust {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 14px;
+    margin-top: 32px;
+    font-size: 14.5px;
+    color: rgb(255 255 255 / 0.7);
+  }
+  .stars {
+    display: inline-flex;
+    gap: 2px;
+    color: var(--sun);
+  }
+  .sep {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgb(255 255 255 / 0.35);
+  }
+  .intro {
+    animation: rise 1.1s var(--ease-out) both;
+    animation-delay: calc(var(--d, 0) * 110ms + 120ms);
+  }
+  .line > .intro {
+    animation-name: rise-line;
+  }
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+      filter: blur(8px);
+    }
+  }
+  @keyframes rise-line {
+    from {
+      transform: translateY(110%);
+    }
+  }
+  @media (max-width: 889px) {
+    .hero {
+      min-height: auto;
+      padding: 140px 0 calc(90px + var(--r-xl));
+    }
+    .plane {
+      left: -10%;
+      width: 160%;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .col:nth-child(n + 4) {
+      display: none;
+    }
+    .shade {
+      background: linear-gradient(0deg, rgb(7 8 15 / 0.95) 10%, rgb(7 8 15 / 0.7) 60%, rgb(7 8 15 / 0.5) 100%);
+    }
+  }
+</style>

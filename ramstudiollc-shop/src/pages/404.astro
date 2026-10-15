@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Button from '../components/Button.astro';
+---
+
+<Base title="Page not found · RAM Studio" noindex>
+  <PageHero eyebrow="404" title="This page is not here" sub="The mockup may have moved or been renamed.">
+    <div class="actions">
+      <Button href="/mockups/">Browse all mockups</Button>
+      <Button href="/" variant="ghost">Go to the home page</Button>
+    </div>
+  </PageHero>
+</Base>
+
+<style>
+  .actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+  }
+</style>

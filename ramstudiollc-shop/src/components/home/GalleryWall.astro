@@ -1,0 +1,96 @@
+---
+// Big live number of preview scenes over a wall of image columns that move with scroll.
+import Button from '../Button.astro';
+import { home } from '../../data/content';
+import { allImages, fill } from '../../lib/catalog';
+const w = home.wall;
+const cols = [0, 1, 2, 3, 4, 5].map((c) => allImages.filter((_, i) => i % 6 === c).slice(0, 7));
+const speeds = [0.55, -0.4, 0.75, -0.6, 0.45, -0.5];
+---
+
+{allImages.length > 0 && (
+  <section class="wall">
+    <div class="cols" aria-hidden="true">
+      {cols.map((col, i) => (
+        <div class="col">
+          <div class="track" data-speed={speeds[i]}>
+            {col.map((img) => <img src={img.src} alt="" loading="lazy" width="600" height="400" />)}
+          </div>
+        </div>
+      ))}
+    </div>
+    <div class="center">
+      <p class="count" data-reveal="zoom"><span data-countup={fill(w.count)}>{fill(w.count)}</span></p>
+      <h2 class="h2" data-reveal><span class="tone">{w.title[0]}</span>{w.title[1]}</h2>
+      <div data-reveal><Button href={w.cta.href} icon="image">{w.cta.label}</Button></div>
+    </div>
+  </section>
+)}
+
+<style>
+  .wall {
+    position: relative;
+    height: clamp(680px, 100vh, 1000px);
+    overflow: hidden;
+  }
+  .cols {
+    position: absolute;
+    inset: -14% -8%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    transform: rotate(-7deg) scale(1.05);
+  }
+  .track {
+    display: grid;
+    gap: 20px;
+    will-change: transform;
+  }
+  .track img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+  }
+  .wall::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(42% 46% at 50% 50%, var(--page) 38%, rgb(244 245 248 / 0.9) 58%, rgb(244 245 248 / 0) 100%), linear-gradient(var(--page), transparent 18%, transparent 82%, var(--page));
+    pointer-events: none;
+  }
+  .center {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    text-align: center;
+    padding-inline: var(--gutter);
+  }
+  .count {
+    font-size: clamp(120px, 18vw, 260px);
+    font-weight: 500;
+    line-height: 0.8;
+    letter-spacing: -0.07em;
+    background: var(--aurora);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .center .h2 {
+    margin-bottom: 14px;
+  }
+  @media (max-width: 889px) {
+    .cols {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .col:nth-child(n + 4) {
+      display: none;
+    }
+  }
+</style>

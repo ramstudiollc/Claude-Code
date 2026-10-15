@@ -1,0 +1,8 @@
+---
+import SimpleListPage from '../components/SimpleListPage.astro';
+import { pages } from '../data/content';
+import { freebies } from '../lib/catalog';
+const c = pages.freebies;
+---
+
+<SimpleListPage seo={c.seo} eyebrow={c.eyebrow} title={c.title} sub={c.sub} items={freebies} emptyText="No free mockups are listed yet." />

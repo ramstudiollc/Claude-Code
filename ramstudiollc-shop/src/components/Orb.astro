@@ -1,0 +1,70 @@
+---
+// Glossy 3D orb in the RAM aurora colours — decorative artwork for plans, bento cards and empty states.
+// Pure CSS: layered radial gradients give a lit sphere with a soft caustic band.
+interface Props {
+  variant?: 'warm' | 'cool' | 'aurora' | 'ink';
+  size?: number;
+  spin?: boolean;
+  class?: string;
+}
+const { variant = 'aurora', size = 48, spin = false, class: cls } = Astro.props;
+---
+
+<span class:list={['orb', `v-${variant}`, spin && 'spin', cls]} style={`--s:${size}px`} aria-hidden="true"></span>
+
+<style>
+  .orb {
+    --c1: #ffae5c;
+    --c2: #ff5c9a;
+    --c3: #6a5cff;
+    --c4: #3188ff;
+    position: relative;
+    display: inline-block;
+    flex: none;
+    width: var(--s);
+    height: var(--s);
+    border-radius: 50%;
+    background:
+      radial-gradient(35% 30% at 32% 26%, rgb(255 255 255 / 0.9), rgb(255 255 255 / 0) 70%),
+      conic-gradient(from 200deg at 55% 60%, var(--c1), var(--c2), var(--c3), var(--c4), var(--c1));
+    box-shadow:
+      inset -6px -8px 14px rgb(0 0 0 / 0.18),
+      inset 4px 6px 10px rgb(255 255 255 / 0.35),
+      0 12px 24px -10px var(--c3);
+  }
+  .orb::after {
+    content: '';
+    position: absolute;
+    inset: 18% 8% 40% 18%;
+    border-radius: 50%;
+    background: linear-gradient(120deg, rgb(255 255 255 / 0.55), transparent 60%);
+    filter: blur(2px);
+    transform: rotate(-24deg);
+  }
+  .v-warm {
+    --c1: #ffd36b;
+    --c2: #ff8a3d;
+    --c3: #ff5c9a;
+    --c4: #ffb35c;
+  }
+  .v-cool {
+    --c1: #8ec5ff;
+    --c2: #3188ff;
+    --c3: #6a5cff;
+    --c4: #b9a8ff;
+  }
+  .v-ink {
+    --c1: #565b72;
+    --c2: #1d2030;
+    --c3: #3188ff;
+    --c4: #0b0d17;
+  }
+  .spin {
+    animation: orb-spin 12s linear infinite;
+  }
+  @keyframes orb-spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+</style>

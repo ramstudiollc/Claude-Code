@@ -1,0 +1,28 @@
+---
+// Pill button. On hover it widens and an arrow slides in.
+// Renders nothing clickable when there is no destination (never href="#").
+import Icon from './Icon.astro';
+
+interface Props {
+  href?: string;
+  variant?: 'dark' | 'blue' | 'light' | 'ghost' | 'glass';
+  size?: 'md' | 'sm';
+  block?: boolean;
+  external?: boolean;
+  icon?: string;
+  class?: string;
+  [key: string]: unknown;
+}
+const { href, variant = 'dark', size = 'md', block = false, external, icon = 'arrow', class: cls, ...rest } = Astro.props;
+const classes = ['btn', variant !== 'dark' && `btn-${variant}`, size === 'sm' && 'btn-sm', block && 'btn-block', cls].filter(Boolean).join(' ');
+const isExternal = external ?? (href ? /^https?:/.test(href) : false);
+---
+
+{href ? (
+  <a class={classes} href={href} rel={isExternal ? 'noopener' : undefined} {...rest}>
+    <slot />
+    <span class="arr"><Icon name={isExternal ? 'arrow-up' : icon} size={16} /></span>
+  </a>
+) : (
+  <span class={classes} aria-disabled="true"><slot /></span>
+)}

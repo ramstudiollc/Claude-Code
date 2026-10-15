@@ -1,0 +1,25 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import ProductBrowser from '../../components/ProductBrowser.astro';
+import { activeCategories, inCategory } from '../../lib/catalog';
+
+// Only categories with products get a page — no empty pages.
+export function getStaticPaths() {
+  return activeCategories.map((category) => ({ params: { slug: category.slug }, props: { category } }));
+}
+const { category } = Astro.props as { category: (typeof activeCategories)[number] };
+const items = inCategory(category.slug);
+---
+
+<Base
+  title={`${category.name} Mockups (PSD) · RAM Studio`}
+  description={`${category.name} Photoshop mockups by RAM Studio: ${category.blurb.toLowerCase()}. Smart-object PSD files, free and paid, on Gumroad.`}
+>
+  <PageHero eyebrow={`${items.length} ${items.length === 1 ? 'mockup' : 'mockups'}`} title={`${category.name} mockups`} sub={`${category.blurb}. Smart-object PSD files — download on Gumroad.`} />
+  <section class="section-tight">
+    <div class="wrap">
+      <ProductBrowser items={items} current={category.slug} />
+    </div>
+  </section>
+</Base>

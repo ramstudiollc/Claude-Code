@@ -1,0 +1,24 @@
+---
+// The one place that decides where "Buy" goes: the product's Gumroad page.
+// No Gumroad link yet → a disabled button, never href="#".
+import Button from './Button.astro';
+import { site, isSet } from '../config/site';
+import { priceLabel, isFree, type Product } from '../lib/catalog';
+
+interface Props {
+  product: Product;
+  block?: boolean;
+}
+const { product, block = false } = Astro.props;
+const free = isFree(product);
+const label = free ? 'Download free on Gumroad' : `Buy on Gumroad · ${priceLabel(product)}`;
+const href = isSet(product.gumroadUrl) ? product.gumroadUrl : undefined;
+---
+
+{href ? (
+  <Button href={href} variant="blue" block={block} class={site.checkout === 'overlay' ? 'gumroad-button' : undefined} data-buy={product.slug}>
+    {label}
+  </Button>
+) : (
+  <Button block={block}>Coming soon to Gumroad</Button>
+)}

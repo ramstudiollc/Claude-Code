@@ -1,0 +1,109 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Button from '../components/Button.astro';
+import Icon from '../components/Icon.astro';
+import FaqList from '../components/FaqList.astro';
+import { pages, home } from '../data/content';
+import { site, isSet } from '../config/site';
+import { stats } from '../lib/catalog';
+const c = pages.allAccess;
+const yearly = isSet(site.allAccess.url);
+const lifetime = isSet(site.allAccess.lifetimeUrl);
+const perks = [`Every mockup in the shop — ${stats.products} today`, 'Every new release while the pass is active', 'The same commercial licence as single files', 'Download any time from your Gumroad Library', 'Email support from the studio'];
+---
+
+<Base title={c.seo.title} description={c.seo.description}>
+  <PageHero eyebrow={c.eyebrow} title={c.title} sub={c.sub} />
+  <section class="section-tight">
+    <div class="wrap">
+      <div class="plans panel" data-reveal>
+        <article class="plan">
+          <h2 class="h3">Yearly pass</h2>
+          <p class="muted">For studios and freelancers who mock up every week.</p>
+          {isSet(site.allAccess.yearlyPrice) ? <p class="price">{site.allAccess.yearlyPrice}</p> : <p class="soon"><span class="dot"></span>{home.pricing.soon}</p>}
+          <ul>{perks.map((k) => <li><Icon name="check" size={18} /> {k}</li>)}</ul>
+          {yearly ? <Button href={site.allAccess.url} variant="blue" block>Join on Gumroad</Button> : <Button block>Launching soon</Button>}
+        </article>
+        <article class="plan night on-dark">
+          <h2 class="h3">Lifetime pass</h2>
+          <p class="muted">Pay once. Every current and future mockup.</p>
+          {isSet(site.allAccess.lifetimePrice) ? <p class="price">{site.allAccess.lifetimePrice}</p> : <p class="soon"><span class="dot"></span>{home.pricing.soon}</p>}
+          <ul>{['Everything in the yearly pass', 'No renewals', 'All future releases'].map((k) => <li><Icon name="check" size={18} /> {k}</li>)}</ul>
+          {lifetime ? <Button href={site.allAccess.lifetimeUrl} variant="light" block>Get lifetime access</Button> : <Button block>Launching soon</Button>}
+        </article>
+      </div>
+      <p class="until small muted" data-reveal>Until the pass launches, every mockup is sold one by one on Gumroad — and {stats.free} are free.</p>
+      <div class="center" data-reveal><Button href="/freebies/" variant="ghost">Get free mockups now</Button></div>
+    </div>
+  </section>
+  <FaqList />
+</Base>
+
+<style>
+  .plans {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+  .plan {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: clamp(24px, 4vw, 44px);
+    border-radius: var(--r-lg);
+  }
+  .price {
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 56px;
+    letter-spacing: -0.05em;
+  }
+  .soon {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: 600;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--sun);
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 12px;
+    flex: 1;
+  }
+  li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  li :global(svg) {
+    color: var(--blue);
+    flex: none;
+  }
+  .on-dark li :global(svg) {
+    color: #8db8ff;
+  }
+  .until {
+    text-align: center;
+    margin-top: 28px;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  @media (max-width: 889px) {
+    .plans {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

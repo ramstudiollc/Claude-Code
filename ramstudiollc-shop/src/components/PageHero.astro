@@ -1,0 +1,75 @@
+---
+// Light page header: aurora glow, gradient label, two-tone H1, sub. Children (e.g. search) go below.
+import Icon from './Icon.astro';
+import { fill } from '../lib/catalog';
+interface Props {
+  eyebrow?: string;
+  icon?: string;
+  title: string | string[];
+  sub?: string;
+  align?: 'center' | 'left';
+  /** 'sm' for utility pages (contact, FAQ, licence). */
+  size?: 'lg' | 'sm';
+}
+const { eyebrow, icon = 'spark', title, sub, align = 'center', size = 'lg' } = Astro.props;
+const [soft, strong] = Array.isArray(title) ? title : [null, title];
+---
+
+<section class:list={['page-hero', align, `size-${size}`]}>
+  <div class="glow" aria-hidden="true"></div>
+  <div class="dots" aria-hidden="true"></div>
+  <div class="wrap">
+    {eyebrow && <p class="eyebrow" data-reveal><Icon name={icon} size={16} /><span class="txt">{fill(eyebrow)}</span></p>}
+    <h1 class="h1" data-reveal>
+      {soft && <span class="tone">{fill(soft)}</span>}
+      {fill(strong as string)}
+    </h1>
+    {sub && <p class="lead" data-reveal>{fill(sub)}</p>}
+    <slot />
+  </div>
+</section>
+
+<style>
+  .page-hero {
+    position: relative;
+    padding: clamp(80px, 11vw, 160px) 0 clamp(32px, 4vw, 48px);
+    overflow: hidden;
+    isolation: isolate;
+  }
+  .glow {
+    position: absolute;
+    inset: -30% 5% auto;
+    height: 110%;
+    z-index: -1;
+    background: radial-gradient(35% 40% at 35% 45%, rgb(255 174 92 / 0.22), transparent 70%), radial-gradient(35% 40% at 55% 50%, rgb(255 92 154 / 0.16), transparent 70%), radial-gradient(35% 40% at 70% 45%, rgb(49 136 255 / 0.2), transparent 70%);
+    filter: blur(10px);
+  }
+  .dots {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: radial-gradient(rgb(11 13 23 / 0.08) 1px, transparent 1px);
+    background-size: 22px 22px;
+    mask-image: radial-gradient(60% 60% at 50% 30%, #000, transparent 75%);
+    -webkit-mask-image: radial-gradient(60% 60% at 50% 30%, #000, transparent 75%);
+  }
+  .center {
+    text-align: center;
+  }
+  .center .eyebrow {
+    justify-content: center;
+  }
+  .center .h1 {
+    max-width: 13em;
+    margin-inline: auto;
+  }
+  .center .lead {
+    margin: 22px auto 0;
+  }
+  .left .lead {
+    margin-top: 22px;
+  }
+  .size-sm .h1 {
+    font-size: clamp(40px, 4vw, 56px);
+  }
+</style>

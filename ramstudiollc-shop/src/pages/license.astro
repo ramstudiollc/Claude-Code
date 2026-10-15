@@ -1,0 +1,78 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import { site } from '../config/site';
+---
+
+<Base title="Mockup License — What You Can Do · RAM Studio" description="The RAM Studio mockup licence in plain English: use the files in personal and commercial client work; do not resell, share or redistribute the PSD files.">
+  <PageHero size="sm" eyebrow="License" title="Mockup license" sub="Use our mockups to present your own or your clients' work, including commercial projects. Do not resell or give away the files." />
+  <section class="section-tight">
+    <div class="wrap">
+      {!site.licenseReviewed && (
+        <p class="notice" data-reveal>Draft licence. Have it reviewed, then set <code>licenseReviewed: true</code> in <code>src/config/site.ts</code> to hide this note.</p>
+      )}
+      <div class="cols">
+        <article class="panel card yes" data-reveal>
+          <h2 class="h3">You can</h2>
+          <ul>
+            <li>Use a mockup in unlimited personal and commercial projects.</li>
+            <li>Show the rendered images in portfolios, client decks, websites, ads and social media.</li>
+            <li>Use the rendered images in shop listings for products you sell.</li>
+            <li>Edit the file: colours, backgrounds, shadows and artwork.</li>
+          </ul>
+        </article>
+        <article class="panel card no" data-reveal style="--i:1">
+          <h2 class="h3">You cannot</h2>
+          <ul>
+            <li>Resell, share, sublicense or give away the PSD or any source file, edited or not.</li>
+            <li>Upload the files, or templates built from them, to marketplaces, mockup generators or asset libraries.</li>
+            <li>Claim the mockup itself as your own design.</li>
+          </ul>
+        </article>
+      </div>
+      <div class="prose more" data-reveal>
+        <h2>Free mockups</h2>
+        <p>Free mockups follow the same licence. Credit is welcome but not required.</p>
+        <h2>All-Access Pass</h2>
+        <p>Files downloaded with the pass use this same licence. If your membership ends, work you already made with those files can stay published.</p>
+        <h2>Questions</h2>
+        <p>Email <a href={`mailto:${site.agency.email}`}>{site.agency.email}</a> before you start if your use is not covered here.</p>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .notice {
+    margin-bottom: 28px;
+  }
+  .cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .card {
+    padding: clamp(24px, 4vw, 40px);
+  }
+  .card ul {
+    margin: 18px 0 0;
+    padding-left: 1.2em;
+    display: grid;
+    gap: 10px;
+    color: var(--text);
+  }
+  .yes h2 {
+    color: var(--blue);
+  }
+  .no h2 {
+    color: #d23a3a;
+  }
+  .more {
+    margin-top: 48px;
+  }
+  @media (max-width: 889px) {
+    .cols {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

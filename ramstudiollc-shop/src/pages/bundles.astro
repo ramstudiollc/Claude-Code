@@ -1,0 +1,8 @@
+---
+import SimpleListPage from '../components/SimpleListPage.astro';
+import { pages } from '../data/content';
+import { bundles } from '../lib/catalog';
+const c = pages.bundles;
+---
+
+<SimpleListPage seo={c.seo} eyebrow={c.eyebrow} title={c.title} sub={c.sub} items={bundles} emptyText="Bundles are on the way. Each category gets one once it has six sets." />

@@ -1,0 +1,31 @@
+---
+import Base from '../layouts/Base.astro';
+import Hero from '../components/home/Hero.astro';
+import Why from '../components/home/Why.astro';
+import CategoryRail from '../components/home/CategoryRail.astro';
+import Features from '../components/home/Features.astro';
+import ProductSection from '../components/home/ProductSection.astro';
+import GalleryWall from '../components/home/GalleryWall.astro';
+import Reviews from '../components/home/Reviews.astro';
+import Pricing from '../components/home/Pricing.astro';
+import AgencyBand from '../components/AgencyBand.astro';
+import FaqList from '../components/FaqList.astro';
+import { home } from '../data/content';
+import { products } from '../lib/catalog';
+
+// Featured first, then newest; six cards fill two rows of three.
+const latest = [...products.filter((p) => p.featured), ...products.filter((p) => !p.featured)].slice(0, 6);
+---
+
+<Base title={home.seo.title} description={home.seo.description} headerTone="dark">
+  <Hero />
+  <Why />
+  <CategoryRail />
+  <Features />
+  <ProductSection eyebrow={home.latest.eyebrow} icon="spark" title={home.latest.title} sub={home.latest.sub} cta={home.latest.cta} items={latest} />
+  <GalleryWall />
+  <Reviews />
+  <Pricing />
+  <FaqList />
+  <AgencyBand />
+</Base>

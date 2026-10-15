@@ -1,0 +1,369 @@
+---
+// "Inside every file" — a bento grid with small product-UI illustrations, all drawn in code.
+import Heading from '../Heading.astro';
+import IconTile from '../IconTile.astro';
+import Icon from '../Icon.astro';
+import Orb from '../Orb.astro';
+import { home } from '../../data/content';
+import { freebies, fill } from '../../lib/catalog';
+const f = home.features;
+const thumbs = freebies.filter((p) => p.images.length).slice(0, 4).map((p) => p.images[0]);
+---
+
+<section class="section features">
+  <div class="wrap">
+    <Heading eyebrow={f.eyebrow} icon="layers" title={f.title} sub={f.sub} align="center" />
+
+    <div class="bento" data-stagger>
+      <!-- 1. Smart-object layers: a mini layers panel -->
+      <article class="tile t-layers on-dark">
+        <div class="ui-layers" aria-hidden="true">
+          <div class="ui-bar"><span></span><span></span><span></span><em>Layers</em></div>
+          {f.layers.map((name, i) => (
+            <div class:list={['ui-row', i === 0 && 'is-active']} style={`--k:${i}`}>
+              <Icon name="check" size={14} />
+              <span class="sw" style={`--h:${[18, 330, 220, 260][i]}`}></span>
+              <span class="nm">{name}</span>
+              <span class="eye"><Icon name="image" size={14} /></span>
+            </div>
+          ))}
+          <div class="cursor"><Icon name="arrow-up" size={16} /></div>
+        </div>
+        <div class="copy">
+          <IconTile name="layers" tone="violet" />
+          <h3 class="h3">{f.smart.title}</h3>
+          <p>{f.smart.text}</p>
+        </div>
+      </article>
+
+      <!-- 2. Print size -->
+      <article class="tile t-print">
+        <p class="big"><span class="grad">6000</span><span class="x">×</span>4000</p>
+        <div class="ruler" aria-hidden="true">{Array.from({ length: 24 }, (_, i) => <i style={`--i:${i}`}></i>)}</div>
+        <h3 class="h3">{f.print.title}</h3>
+        <p class="muted">{f.print.text}</p>
+      </article>
+
+      <!-- 3. Licence -->
+      <article class="tile t-license">
+        <IconTile name="license" tone="mint" size="lg" />
+        <h3 class="h3">{f.license.title}</h3>
+        <p class="muted">{f.license.text}</p>
+      </article>
+
+      <!-- 4. Free samples: fanned thumbnails -->
+      <article class="tile t-free">
+        <div class="fan" aria-hidden="true">
+          {thumbs.map((src, i) => <img src={src} alt="" loading="lazy" width="320" height="213" style={`--i:${i}`} />)}
+        </div>
+        <h3 class="h3">{fill(f.free.title)}</h3>
+        <p class="muted">{f.free.text}</p>
+        <a href="/freebies/" class="link">See free mockups →</a>
+      </article>
+
+      <!-- 5. Gumroad delivery: mini receipt -->
+      <article class="tile t-gumroad">
+        <div class="receipt" aria-hidden="true">
+          <div class="r-head"><IconTile name="download" tone="orange" size="sm" /><span><strong>Your files are ready</strong><small>via Gumroad · just now</small></span></div>
+          <div class="r-line"><span>mockup-scenes.zip</span><b>Download</b></div>
+        </div>
+        <h3 class="h3">{f.gumroad.title}</h3>
+        <p class="muted">{f.gumroad.text}</p>
+      </article>
+
+      <!-- 6. Monthly releases -->
+      <article class="tile t-monthly">
+        <Orb variant="aurora" size={72} spin />
+        <h3 class="h3">{f.monthly.title}</h3>
+        <p class="muted">{f.monthly.text}</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<style>
+  .features :global(.heading) {
+    margin-bottom: clamp(40px, 5vw, 72px);
+  }
+  .bento {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-auto-rows: minmax(250px, auto);
+    gap: 20px;
+  }
+  .tile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 28px;
+    border-radius: var(--r-lg);
+    background: var(--surface);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    transition: transform var(--t) var(--ease), box-shadow var(--t) var(--ease);
+  }
+  .tile:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+  }
+  .tile p {
+    font-size: 16px;
+  }
+  .t-layers {
+    grid-column: span 2;
+    grid-row: span 2;
+    background: radial-gradient(80% 60% at 80% 0%, rgb(106 92 255 / 0.35), transparent 70%), radial-gradient(60% 50% at 0% 100%, rgb(47 128 255 / 0.25), transparent 70%), var(--night-2);
+    justify-content: space-between;
+  }
+  .t-layers .copy {
+    display: grid;
+    gap: 12px;
+    max-width: 30em;
+  }
+  .ui-layers {
+    position: relative;
+    margin: 8px 0 32px;
+    padding: 10px;
+    border-radius: 18px;
+    background: rgb(255 255 255 / 0.06);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.08), 0 0 0 1px rgb(255 255 255 / 0.08);
+    backdrop-filter: blur(10px);
+    font-size: 14px;
+    color: rgb(255 255 255 / 0.85);
+  }
+  .ui-bar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 6px 10px;
+  }
+  .ui-bar span {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: rgb(255 255 255 / 0.2);
+  }
+  .ui-bar em {
+    margin-left: 8px;
+    font-style: normal;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgb(255 255 255 / 0.5);
+  }
+  .ui-row {
+    display: grid;
+    grid-template-columns: 18px 34px 1fr auto;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    animation: row-in 0.8s var(--ease-out) both;
+    animation-delay: calc(var(--k) * 140ms + 300ms);
+  }
+  .ui-row + .ui-row {
+    margin-top: 4px;
+  }
+  .ui-row :global(svg) {
+    color: rgb(255 255 255 / 0.4);
+  }
+  .ui-row.is-active {
+    background: linear-gradient(90deg, rgb(47 128 255 / 0.55), rgb(106 92 255 / 0.4));
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.2);
+  }
+  .ui-row.is-active :global(svg) {
+    color: #fff;
+  }
+  .sw {
+    height: 24px;
+    border-radius: 7px;
+    background: linear-gradient(135deg, hsl(var(--h) 90% 70%), hsl(calc(var(--h) + 40) 80% 55%));
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.4);
+  }
+  .eye {
+    opacity: 0.6;
+  }
+  .cursor {
+    position: absolute;
+    right: 18%;
+    top: 44px;
+    color: #fff;
+    filter: drop-shadow(0 4px 6px rgb(0 0 0 / 0.4));
+    animation: point 3.2s var(--ease) infinite;
+  }
+  @keyframes point {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(-18px, 10px);
+    }
+  }
+  @keyframes row-in {
+    from {
+      opacity: 0;
+      transform: translateX(-12px);
+    }
+  }
+  .t-print {
+    grid-column: span 2;
+  }
+  .tile .big {
+    font-size: clamp(54px, 6vw, 84px);
+    font-weight: 500;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+  .big .x {
+    color: var(--soft);
+    margin: 0 0.08em;
+  }
+  .ruler {
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+    height: 22px;
+    margin-bottom: 14px;
+  }
+  .ruler i {
+    flex: 1;
+    height: 40%;
+    background: var(--line-strong);
+    border-radius: 2px;
+  }
+  .ruler i:nth-child(4n + 1) {
+    height: 100%;
+    background: var(--soft);
+  }
+  .t-license {
+    justify-content: flex-start;
+  }
+  .t-license :global(.itile) {
+    margin-bottom: auto;
+  }
+  .t-license h3 {
+    margin-top: 40px;
+  }
+  .fan {
+    position: relative;
+    height: 150px;
+    margin-bottom: auto;
+  }
+  .fan img {
+    position: absolute;
+    left: calc(var(--i) * 18%);
+    top: calc(var(--i) * 4px);
+    width: 46%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px -10px rgb(18 22 48 / 0.5), 0 0 0 3px #fff;
+    transform: rotate(calc(-8deg + var(--i) * 5deg));
+    transition: transform var(--t) var(--spring);
+  }
+  .t-free:hover .fan img {
+    transform: rotate(calc(-12deg + var(--i) * 8deg)) translateY(-6px);
+  }
+  .t-free .link {
+    margin-top: 6px;
+    align-self: flex-start;
+  }
+  .receipt {
+    margin-bottom: auto;
+    padding: 14px;
+    border-radius: 18px;
+    background: var(--page);
+    box-shadow: inset 0 0 0 1px var(--line);
+  }
+  .r-head {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .r-head strong {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .r-head small {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .r-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    background: #fff;
+    font-family: var(--mono);
+    font-size: 12px;
+    box-shadow: 0 0 0 1px var(--line);
+  }
+  .r-line b {
+    font-weight: 500;
+    color: #fff;
+    background: var(--ink);
+    padding: 4px 10px;
+    border-radius: var(--r-pill);
+  }
+  .t-gumroad,
+  .t-monthly {
+    grid-column: span 2;
+  }
+  .t-gumroad {
+    flex-direction: row;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 10px 24px;
+  }
+  .t-gumroad .receipt {
+    flex: 1 1 260px;
+    margin: 0 0 auto;
+    order: 2;
+  }
+  .t-gumroad h3,
+  .t-gumroad p {
+    flex: 1 1 100%;
+  }
+  .t-monthly {
+    justify-content: flex-start;
+  }
+  .t-monthly h3 {
+    margin-top: auto;
+  }
+  @media (max-width: 1199px) {
+    .bento {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .t-layers,
+    .t-print,
+    .t-gumroad,
+    .t-monthly {
+      grid-column: span 2;
+    }
+    .t-layers {
+      grid-row: auto;
+    }
+  }
+  @media (max-width: 889px) {
+    .bento {
+      grid-template-columns: 1fr;
+    }
+    .t-layers,
+    .t-print,
+    .t-gumroad,
+    .t-monthly {
+      grid-column: auto;
+    }
+  }
+</style>

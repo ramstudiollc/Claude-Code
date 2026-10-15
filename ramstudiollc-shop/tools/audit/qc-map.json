@@ -1,0 +1,22 @@
+{
+  "_note": "Maps reference URLs to ours. Exact paths win over /* patterns. 'roles' tells QC which flow checks apply. 'ignore' lists reference pages a Gumroad shop does not need (accounts live on Gumroad) or that are not built yet.",
+  "pages": {
+    "/": "/",
+    "/resources": "/mockups",
+    "/resources/*": "/mockups/*",
+    "/tags/*": "/category/*",
+    "/assets-gallery": "/gallery",
+    "/pricing": "/all-access",
+    "/licenses": "/license",
+    "/faq": "/faq",
+    "/about-us": "/about",
+    "/contact": "/contact"
+  },
+  "roles": {
+    "/": "home",
+    "/resources": "library",
+    "/resources/*": "product",
+    "/tags/*": "library"
+  },
+  "ignore": ["/sign-in", "/sign-up", "/forgot-password", "/cdn-cgi/*", "/chance-extra-year", "/terms-of-use", "/privacy-policy", "/cookies"]
+}
