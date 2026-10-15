@@ -4,11 +4,21 @@ The RAM Studio mockup shop. Customers **browse here** and **buy on Gumroad**.
 
 - Plain static website built with [Astro](https://astro.build). No database, no server, no payments code.
 - Every **Buy** button opens the product on Gumroad. Gumroad takes the payment and delivers the files.
-- Products come from your Gumroad account with one command: `npm run sync:gumroad`.
+- Products come from your Gumroad store with one command: `npm run import:store` (no token needed).
 
 📄 Read first: [docs/00-HANDOFF.md](docs/00-HANDOFF.md) (current task and rules), [docs/01-ANALYSIS.md](docs/01-ANALYSIS.md) (how the Asylab model works) and [docs/02-PLAN.md](docs/02-PLAN.md) (what we build, in what order).
 
 ---
+
+## Just look at the site (no install)
+
+Open `offline-preview/index.html` (in the ZIP download) with a double-click. It is a ready-built copy of the whole shop that works from your disk.
+
+## Download the project
+
+- **Without Git:** on GitHub open the repo, switch the branch to `claude/nifty-goldberg-j75pr3`, press **Code → Download ZIP**, and unzip it.
+  Direct link: https://github.com/ramstudiollc/Claude-Code/archive/refs/heads/claude/nifty-goldberg-j75pr3.zip
+- **With Git** (recommended — you can send changes back): see the next section.
 
 ## Work locally (your computer)
 
@@ -68,7 +78,9 @@ Two options, both use the same GitHub repo:
 | `npm run dev` | Start the site at http://localhost:4321 with live reload |
 | `npm run build` | Build the final website into `dist/` |
 | `npm run preview` | Serve the built `dist/` folder to check it |
-| `npm run sync:gumroad` | Download all your Gumroad products into `src/data/products.json` |
+| `npm run import:store` | Read every product from the public Gumroad store (shop.ramstudiollc.com) into `src/data/products.json` and save preview images — no token needed |
+| `npm run portable` | Make `preview-portable/`: a copy of the built site that opens from any folder (run `npm run build` first) |
+| `npm run sync:gumroad` | Same as import, but through the Gumroad API (needs a token in `.env`) |
 | `npm run sync:gumroad:dry` | Show what the sync would write, change nothing |
 | `npm run audit -- <url>` | Measure a website (fonts, sizes, spacing, sections, motion, links) → `audit/<host>/report.md` |
 | `npm run qc -- --ref <ref report.json> --ours <our report.json> --map tools/audit/qc-map.json` | Score our site against the reference; 95% = pass |
